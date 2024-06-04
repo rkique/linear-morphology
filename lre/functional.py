@@ -1,24 +1,22 @@
 #We take three methods from functional: make_prompt, find_subject_token_index, compute_hidden_states
 from dataclasses_json import DataClassJsonMixin
 from dataclasses import dataclass, field
-import models
 from typing import Any, Literal, NamedTuple, Sequence
-from lretyping import Layer, ModelInput, ModelOutput, StrSequence
+
+from lre.data import RelationSample
+import lre.models as models
+from lre.lretyping import Layer, ModelInput, ModelOutput, StrSequence
+import lre.tokenizer_utils as tokenizer_utils
+
 import baukit
-import tokenizer_utils
 import torch
+import logging
 
-'''
-An (s,o) pair. 
-'''
-@dataclass
-class RelationSample(DataClassJsonMixin):
+logger = logging.getLogger(__name__)
 
-    subject: str
-    object: str
-
-    def __str__(self) -> str:
-        return f"{self.subject} -> {self.object}"
+DEFAULT_BATCH_SIZE = 48
+DEFAULT_N_ICL_LM = 5
+DEFAULT_N_TOP_LM = 1
 
 '''
 Builds a prompt from a template string and subject.
@@ -44,6 +42,7 @@ def make_prompt(*,
     #prompt = models.maybe_prefix_eos(mt, prompt)
     return prompt
 
+#This is a misleadingly named function. It returns the subject token index but also the list of tokens.
 def find_subject_token_index(*,
                              prompt: str,
                              subject: str,
@@ -265,6 +264,59 @@ def order_1_approx(
 
     return approx
 
+@dataclass(frozen=True, kw_only=True)
+class PredictedToken(DataClassJsonMixin):
+    token: str
+    prob: float
+
+    def __str__(self) -> str:
+        return f"{self.token} -> {self.prob:.3f}"
+
+#Predicted token is (token, prob). k is used in probs.topk
+@torch.inference_mode()
+def predict_next_token(
+    *,
+    mt: models.ModelAndTokenizer,
+    prompt: str | StrSequence,
+    k: int = 5,
+    batch_size: int = DEFAULT_BATCH_SIZE,
+) -> list[list[PredictedToken]]:
+    if isinstance(prompt, str):
+        prompt = [prompt]
+    #pad all inputs left to the longest length.
+    with models.set_padding_side(mt, padding_side="left"):
+        inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
+            mt.model.device
+        )
+    with torch.inference_mode():
+        predictions = []
+        #for each batch_size group of input_ids.
+        for i in range(0, len(inputs.input_ids), batch_size):
+
+            #get model output
+            batch_outputs = mt.model(
+                input_ids=inputs.input_ids[i: i + batch_size],
+                attention_mask=inputs.attention_mask[i : i+batch_size]
+            )
+
+            #get output logits->probs->topk probs
+            next_token_probs = batch_outputs.logits[:,-1].float().softmax(dim=-1)
+            next_token_topk = next_token_probs.topk(dim=-1, k=k)
+
+            for token_ids, token_probs in zip(
+                next_token_topk.indices, next_token_topk.values
+            ):
+                predictions.append(
+                    [
+                        PredictedToken(
+                            token=mt.tokenizer.decode(token_id), prob=prob.item() #np --> py scalar
+                        )
+                        for token_id, prob in zip(token_ids, token_probs)
+                    ]
+                )
+    return predictions
+
+            
 def untuple(x: Any) -> Any:
     """If `x` is a tuple, return the first element."""
     if isinstance(x, tuple):

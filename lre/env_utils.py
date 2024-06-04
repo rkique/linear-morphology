@@ -1,7 +1,7 @@
 """Tools for reading and controlling the runtime environment."""
 import os
 import pathlib
-from lretyping import PathLike
+from lre.lretyping import PathLike
 
 ENV_DATA_DIR = "RELATIONS_DATA_DIR"
 ENV_MODELS_DIR = "RELATIONS_MODELS_DIR"

@@ -1,7 +1,7 @@
 """Utils for interacting with huggingface tokenizers."""
 from contextlib import contextmanager
 from typing import Any, Iterator, Optional, Sequence, Tuple
-from lretyping import StrSequence, Tokenizer, TokenizerOffsetMapping
+from lre.lretyping import StrSequence, Tokenizer, TokenizerOffsetMapping
 
 
 def find_token_range(
@@ -97,6 +97,7 @@ def batch_convert_ids_to_tokens(
     return [tokenizer.convert_ids_to_tokens(ids, **kwargs) for ids in batch]
 
 
+#Left padding allows each input to have the same length without starting from a pad token.
 @contextmanager
 def set_padding_side(
     tokenizer: Tokenizer, padding_side: str = "right"
