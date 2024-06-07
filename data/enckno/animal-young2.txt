@@ -1,0 +1,16 @@
+duck	duckling
+elephant	calf
+ferret	kit
+fish	fingerling/spawn/egg/larva/fry/minnmow
+fly	grub/maggot
+fox	cub/pup/puppy/whelp
+goat	kid
+goldfish	fingerling/fry
+gorilla	infant
+herring	fingerling/fry
+horse	foal/colt/filly
+insect	larva
+lion	cub
+mink	kit/cub
+monkey	infant
+muskrat	kit

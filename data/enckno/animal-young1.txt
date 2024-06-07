@@ -1,0 +1,17 @@
+ape	baby/infant
+badger	kit/cob
+bear	cub
+beaver	kit/kitten
+bee	larva
+beetle	larva
+buffalo	calf
+butterfly	larva/pupa/caterpillar/chrysalis
+camel	calf/colt
+cat	kitten
+cattle	calf/heifer
+chimpanzee	baby/infant
+cicada	nymph
+cockroach	nymph
+cricket	larva
+deer	fawn
+dog	puppy/pup/whelp

@@ -1,0 +1,17 @@
+ox	calf/stot
+panda	cub
+pig	piglet/shoat/farrow
+rabbit	bunny
+raccoon	kit/cub
+salmon	smolt
+seal	pup
+shark	cub/pup
+sheep	lamb/lambkin/cosset
+skunk	kit/kitten
+snake	hatchling/nestling
+tiger	cub
+trout	fingerling
+weasel	kit
+whale	calf
+wolf	cub/pup/puppy/whelp
+woodchuck	kit/cob

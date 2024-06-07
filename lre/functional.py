@@ -7,8 +7,8 @@ from lre.data import RelationSample
 import lre.models as models
 from lre.lretyping import Layer, ModelInput, ModelOutput, StrSequence
 import lre.tokenizer_utils as tokenizer_utils
+from baukit.baukit import TraceDict
 
-import baukit
 import torch
 import logging
 
@@ -91,7 +91,7 @@ def compute_hidden_states(
     #need models.determine_layer_paths for TraceDict
     layer_paths = models.determine_layer_paths(mt, layers=layers, return_dict=True)
     #TraceDict is an important function.
-    with baukit.TraceDict(mt.model, layer_paths.values()) as ret:
+    with TraceDict(mt.model, layer_paths.values()) as ret:
         outputs = mt.model(
             input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, **kwargs
         )
@@ -206,7 +206,7 @@ def order_1_approx(
         edit_output = None
 
     #Runs the model to produce outputs with past_key_values and use_cache from precompute
-    with baukit.TraceDict(
+    with TraceDict(
         mt.model, layers=(h_layer_name, z_layer_name), edit_output=edit_output
     ) as ret:
         outputs = mt.model(
@@ -228,7 +228,7 @@ def order_1_approx(
             hs[0, _h_index] = h
             return output
 
-        with baukit.TraceDict(
+        with TraceDict(
             mt.model, (h_layer_name, z_layer_name), edit_output=insert_h
         ) as ret:
             mt.model(
@@ -239,6 +239,7 @@ def order_1_approx(
         return untuple(ret[z_layer_name].output)[0, -1]
 
     assert h is not None
+    #weight and bias are calculated here, for a single input.
     weight = torch.autograd.functional.jacobian(compute_z_from_h, h, vectorize=True)
     bias = z[None] - h[None].mm(weight.t())
 
@@ -288,6 +289,7 @@ def predict_next_token(
         inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
             mt.model.device
         )
+    print(f'model input is {len(inputs)} tokens')
     with torch.inference_mode():
         predictions = []
         #for each batch_size group of input_ids.

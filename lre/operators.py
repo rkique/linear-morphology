@@ -9,7 +9,7 @@ import lre.models as models
 import lre.functional as functional
 from lre.lretyping import Layer
 import lre.data as data
-import baukit
+from baukit.baukit import TraceDict
 
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
@@ -41,6 +41,9 @@ class LinearRelationOutput(RelationOutput):
     def as_relation_output(self) -> RelationOutput:
         return RelationOutput(predictions=self.predictions)
 
+
+
+#Using a RelationOperator, predict top-k objects.
 @dataclass
 class LinearRelationOperator(RelationOperator):
     mt: models.ModelAndTokenizer
@@ -59,12 +62,13 @@ class LinearRelationOperator(RelationOperator):
             h: torch.Tensor | None = None,
             **kwargs: Any,
     ) -> LinearRelationOutput:
+        #If no hidden subject state:
         if h is None:
             prompt = functional.make_prompt(
                 mt=self.mt, prompt_template=self.prompt_template, subject=subject
             )
             logger.debug(f'computing h from prompt "{prompt}"')
-
+            #retrieve subject_token_index
             h_index, inputs = functional.find_subject_token_index(
                 mt=self.mt, prompt=prompt, subject=subject
             )
@@ -73,7 +77,36 @@ class LinearRelationOperator(RelationOperator):
                 mt=self.mt, layers=[self.h_layer], inputs=inputs
             )
             h = hs[:, h_index]
+        else:
+            logger.debug("using precomputed h")
 
+        #The linear approximation step: z = Wh + bias
+        z = h
+        #Relies on bias and weight being here.
+        if self.weight is not None:
+            z = z.mm(self.weight.t())
+        if self.bias is not None:
+            bias = self.bias
+            if self.beta is not None:
+                z = z * self.beta 
+            z = z + bias
+
+        #interpret z by way of lm_head & softmax
+        lm_head = self.mt.lm_head if not self.z_layer == "ln_f" else self.mt.lm_head[:1]
+        logits = lm_head(z)
+        dist = torch.softmax(logits.float(), dim=-1)
+        topk = dist.topk(dim=-1, k=k)
+        probs = topk.values.view(k).tolist()
+        token_ids = topk.indices.view(k).tolist()
+        words = [self.mt.tokenizer.decode(token_id) for token_id in token_ids]
+
+        return LinearRelationOutput(
+            predictions=[
+                functional.PredictedToken(token=w, prob=p) for w, p in zip(words, probs)
+            ],
+            h=h,
+            z=z
+        )
 
 @dataclass(frozen=True, kw_only=True)
 class LinearRelationEstimator:
@@ -97,10 +130,11 @@ class JacobianEstimator(LinearRelationEstimator):
         _warn_gt_1(samples=relation.samples, prompt_templates=relation.prompt_templates)
         
         subject = relation.samples[0].subject
-        #Takes first prompt template always (?)
+        #Takes first prompt template always 
         prompt_template = relation.prompt_templates[0]
         return self.estimate_for_subject(subject, prompt_template)
     
+    #gets J-estimate for one prompt (?)
     def estimate_for_subject(
         self, subject: str, prompt_template: str
     ) -> LinearRelationOperator:
@@ -124,8 +158,8 @@ class JacobianEstimator(LinearRelationEstimator):
             z_index=-1,
             inputs=inputs
         )
-
-        #use the new estimated (h_layer?) and z_layer.
+        #approx weight and bias sourced from order_1_approx...
+        #use the new estimated subj. rep. and obj. rep.
         return LinearRelationOperator(
             mt=self.mt,
             weight=approx.weight,
@@ -164,6 +198,9 @@ class JacobianIclEstimator(LinearRelationEstimator):
             beta=self.beta,
         ).estimate_for_subject(train.subject, prompt_template_icl)
 
+# @dataclass(frozen=True)
+# class JacobianIclMeanEstimator(LinearRelationEstimator):
+#     ...
 
 #This inherits LinearRelationEstimator so it is also called on a Relation.
 @dataclass(frozen=True)
@@ -223,7 +260,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
                 subject=sample.subject
             )
             
-            with baukit.TraceDict(
+            with TraceDict(
                 self.mt.model,
                 [h_layer_name, z_layer_name]
             ) as traces:
@@ -238,7 +275,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         offset = torch.stack(offsets).mean(dim=0)
 
         if self.mode == "icl":
-            prompt_template = function.make_prompt(
+            prompt_template = functional.make_prompt(
                 mt=self.mt,
                 prompt_template=prompt_template,
                 subject="{}",
