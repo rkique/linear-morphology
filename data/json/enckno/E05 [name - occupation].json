@@ -1,0 +1,385 @@
+{
+    "name": "name - occupation",
+    "prompt_templates": [
+        "{} was known for their work as a ",
+        "{} had the occupation of ",
+        "{} worked as a"
+    ],
+    "prompt_templates_zs": [
+        "{} was known for their work as a ",
+        "{} had the occupation of ",
+        "{} worked as a"
+    ],
+    "samples": [
+        {
+            "subject": "andersen",
+            "object": [
+                "writer",
+                "poet",
+                "author"
+            ]
+        },
+        {
+            "subject": "aristotle",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "balzac",
+            "object": [
+                "novelist",
+                "writer"
+            ]
+        },
+        {
+            "subject": "beethoven",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "caesar",
+            "object": [
+                "emperor",
+                "commander",
+                "leader"
+            ]
+        },
+        {
+            "subject": "columbus",
+            "object": [
+                "explorer"
+            ]
+        },
+        {
+            "subject": "confucius",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "dante",
+            "object": [
+                "poet"
+            ]
+        },
+        {
+            "subject": "darwin",
+            "object": [
+                "naturalist",
+                "biologist",
+                "geologist"
+            ]
+        },
+        {
+            "subject": "depp",
+            "object": [
+                "actor",
+                "producer",
+                "musician"
+            ]
+        },
+        {
+            "subject": "descartes",
+            "object": [
+                "mathematician",
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "dickens",
+            "object": [
+                "novelist",
+                "writer",
+                "critic",
+                "author"
+            ]
+        },
+        {
+            "subject": "edison",
+            "object": [
+                "inventor",
+                "businessman"
+            ]
+        },
+        {
+            "subject": "einstein",
+            "object": [
+                "physicist",
+                "scientist"
+            ]
+        },
+        {
+            "subject": "euler",
+            "object": [
+                "mathematician",
+                "physicist",
+                "astronomer",
+                "logician",
+                "engineer"
+            ]
+        },
+        {
+            "subject": "goethe",
+            "object": [
+                "poet",
+                "playwright",
+                "novelist",
+                "writer",
+                "author"
+            ]
+        },
+        {
+            "subject": "hawking",
+            "object": [
+                "physicist",
+                "scientist"
+            ]
+        },
+        {
+            "subject": "haydn",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "hegel",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "hitler",
+            "object": [
+                "dictator",
+                "politician",
+                "nazi"
+            ]
+        },
+        {
+            "subject": "hume",
+            "object": [
+                "philosopher",
+                "politician"
+            ]
+        },
+        {
+            "subject": "jolie",
+            "object": [
+                "actress",
+                "filmmaker",
+                "director",
+                "humanitarian",
+                "activist"
+            ]
+        },
+        {
+            "subject": "kant",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "kepler",
+            "object": [
+                "mathematician",
+                "physicist",
+                "astronomer",
+                "astrologer"
+            ]
+        },
+        {
+            "subject": "lincoln",
+            "object": [
+                "president"
+            ]
+        },
+        {
+            "subject": "locke",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "marx",
+            "object": [
+                "philosopher",
+                "communist"
+            ]
+        },
+        {
+            "subject": "maxwell",
+            "object": [
+                "physicist",
+                "scientist"
+            ]
+        },
+        {
+            "subject": "mencius",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "michelangelo",
+            "object": [
+                "sculptor",
+                "painter",
+                "architect",
+                "artist",
+                "poet",
+                "engineer"
+            ]
+        },
+        {
+            "subject": "moses",
+            "object": [
+                "prophet",
+                "leader"
+            ]
+        },
+        {
+            "subject": "mozart",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "napoleon",
+            "object": [
+                "emperor",
+                "leader",
+                "politician",
+                "commander"
+            ]
+        },
+        {
+            "subject": "newton",
+            "object": [
+                "scientist",
+                "mathematician",
+                "psysicist",
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "pacino",
+            "object": [
+                "actor",
+                "director",
+                "filmmaker"
+            ]
+        },
+        {
+            "subject": "pascal",
+            "object": [
+                "mathematician",
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "picasso",
+            "object": [
+                "painter",
+                "artist",
+                "sculptor",
+                "designer"
+            ]
+        },
+        {
+            "subject": "plato",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "raphael",
+            "object": [
+                "painter",
+                "artist",
+                "architect"
+            ]
+        },
+        {
+            "subject": "rembrandt",
+            "object": [
+                "painter",
+                "etcher",
+                "artist"
+            ]
+        },
+        {
+            "subject": "rousseau",
+            "object": [
+                "writer",
+                "author",
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "schwarzenegger",
+            "object": [
+                "actor",
+                "politician",
+                "governor"
+            ]
+        },
+        {
+            "subject": "shakespeare",
+            "object": [
+                "playwright",
+                "poet"
+            ]
+        },
+        {
+            "subject": "spinoza",
+            "object": [
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "stalin",
+            "object": [
+                "dictator",
+                "politician",
+                "leader",
+                "statesman"
+            ]
+        },
+        {
+            "subject": "strauss",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "tolstoi",
+            "object": [
+                "novelist",
+                "writer",
+                "philosopher"
+            ]
+        },
+        {
+            "subject": "truman",
+            "object": [
+                "president"
+            ]
+        },
+        {
+            "subject": "wagner",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "wittgenstein",
+            "object": [
+                "philosopher"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

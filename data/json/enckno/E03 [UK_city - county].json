@@ -1,0 +1,217 @@
+{
+    "name": "UK_city - county",
+    "prompt_templates": [
+        "In the United Kingdom, the city of {} is in the county of",
+        "In the UK, the city of {} resides in the county of",
+        "The city of {} in the UK belongs to the county of"
+    ],
+    "prompt_templates_zs": [
+        "In the United Kingdom, the city of {} is in the county of",
+        "In the UK, the city of {} resides in the county of",
+        "The city of {} in the UK belongs to the county of"
+    ],
+    "samples": [
+        {
+            "subject": "aberdeen",
+            "object": "aberdeenshire"
+        },
+        {
+            "subject": "bath",
+            "object": "somerset"
+        },
+        {
+            "subject": "belfast",
+            "object": "antrim"
+        },
+        {
+            "subject": "birmingham",
+            "object": "midlands"
+        },
+        {
+            "subject": "bradford",
+            "object": "yorkshire"
+        },
+        {
+            "subject": "brighton",
+            "object": "sussex"
+        },
+        {
+            "subject": "cambridge",
+            "object": "cambridgeshire"
+        },
+        {
+            "subject": "canterbury",
+            "object": "kent"
+        },
+        {
+            "subject": "cardiff",
+            "object": "glamorgan"
+        },
+        {
+            "subject": "carlisle",
+            "object": "cumbria"
+        },
+        {
+            "subject": "chester",
+            "object": "cheshire"
+        },
+        {
+            "subject": "chichester",
+            "object": "sussex"
+        },
+        {
+            "subject": "coventry",
+            "object": "midlands"
+        },
+        {
+            "subject": "crawley",
+            "object": "sussex"
+        },
+        {
+            "subject": "derby",
+            "object": "derbyshire"
+        },
+        {
+            "subject": "dundee",
+            "object": "lowlands"
+        },
+        {
+            "subject": "edinburgh",
+            "object": "lowlands"
+        },
+        {
+            "subject": "ely",
+            "object": "cambridgeshire"
+        },
+        {
+            "subject": "exeter",
+            "object": "devon"
+        },
+        {
+            "subject": "glasgow",
+            "object": "lowlands"
+        },
+        {
+            "subject": "gloucester",
+            "object": "gloucestershire"
+        },
+        {
+            "subject": "hereford",
+            "object": "herefordshire"
+        },
+        {
+            "subject": "hull",
+            "object": "yorkshire"
+        },
+        {
+            "subject": "inverness",
+            "object": "highlands"
+        },
+        {
+            "subject": "lancaster",
+            "object": "lancashire"
+        },
+        {
+            "subject": "leeds",
+            "object": "yorkshire"
+        },
+        {
+            "subject": "leicester",
+            "object": "midlands"
+        },
+        {
+            "subject": "lincoln",
+            "object": "lincolnshire"
+        },
+        {
+            "subject": "liverpool",
+            "object": "lancashire"
+        },
+        {
+            "subject": "newcastle",
+            "object": "northumberland"
+        },
+        {
+            "subject": "newport",
+            "object": "gwent"
+        },
+        {
+            "subject": "norwich",
+            "object": "norfolk"
+        },
+        {
+            "subject": "nottingham",
+            "object": "nottinghamshire"
+        },
+        {
+            "subject": "oxford",
+            "object": "oxfordshire"
+        },
+        {
+            "subject": "plymouth",
+            "object": "devon"
+        },
+        {
+            "subject": "portsmouth",
+            "object": "hampshire"
+        },
+        {
+            "subject": "preston",
+            "object": "lancashire"
+        },
+        {
+            "subject": "reading",
+            "object": "berkshire"
+        },
+        {
+            "subject": "salford",
+            "object": "manchester"
+        },
+        {
+            "subject": "salisbury",
+            "object": "wiltshire"
+        },
+        {
+            "subject": "sheffield",
+            "object": "yorkshire"
+        },
+        {
+            "subject": "southampton",
+            "object": "hampshire"
+        },
+        {
+            "subject": "stirling",
+            "object": "stirlingshire"
+        },
+        {
+            "subject": "swansea",
+            "object": "glamorgan"
+        },
+        {
+            "subject": "wakefield",
+            "object": "yorkshire"
+        },
+        {
+            "subject": "wells",
+            "object": "somerset"
+        },
+        {
+            "subject": "winchester",
+            "object": "hampshire"
+        },
+        {
+            "subject": "wolverhampton",
+            "object": "midlands"
+        },
+        {
+            "subject": "worcester",
+            "object": "worcestershire"
+        },
+        {
+            "subject": "york",
+            "object": "yorkshire"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

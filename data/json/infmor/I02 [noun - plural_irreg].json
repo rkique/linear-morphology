@@ -1,0 +1,317 @@
+{
+    "name": "noun - plural_irreg",
+    "prompt_templates": [
+        "The plural form of {} is",
+        "In the plural, {} is",
+        "{} in its plural form is"
+    ],
+    "prompt_templates_zs": [
+        "The plural form of {} is",
+        "In the plural, {} is",
+        "{} in its plural form is"
+    ],
+    "samples": [
+        {
+            "subject": "ability",
+            "object": [
+                "abilities"
+            ]
+        },
+        {
+            "subject": "academy",
+            "object": [
+                "academies"
+            ]
+        },
+        {
+            "subject": "activity",
+            "object": [
+                "activities"
+            ]
+        },
+        {
+            "subject": "agency",
+            "object": [
+                "agencies"
+            ]
+        },
+        {
+            "subject": "analysis",
+            "object": [
+                "analyses"
+            ]
+        },
+        {
+            "subject": "army",
+            "object": [
+                "armies"
+            ]
+        },
+        {
+            "subject": "authority",
+            "object": [
+                "authorities"
+            ]
+        },
+        {
+            "subject": "basis",
+            "object": [
+                "bases"
+            ]
+        },
+        {
+            "subject": "business",
+            "object": [
+                "businesses"
+            ]
+        },
+        {
+            "subject": "category",
+            "object": [
+                "categories"
+            ]
+        },
+        {
+            "subject": "century",
+            "object": [
+                "centuries"
+            ]
+        },
+        {
+            "subject": "child",
+            "object": [
+                "children"
+            ]
+        },
+        {
+            "subject": "city",
+            "object": [
+                "cities"
+            ]
+        },
+        {
+            "subject": "community",
+            "object": [
+                "communities"
+            ]
+        },
+        {
+            "subject": "country",
+            "object": [
+                "countries"
+            ]
+        },
+        {
+            "subject": "county",
+            "object": [
+                "counties"
+            ]
+        },
+        {
+            "subject": "datum",
+            "object": [
+                "data"
+            ]
+        },
+        {
+            "subject": "duty",
+            "object": [
+                "duties"
+            ]
+        },
+        {
+            "subject": "economy",
+            "object": [
+                "economies"
+            ]
+        },
+        {
+            "subject": "energy",
+            "object": [
+                "energies"
+            ]
+        },
+        {
+            "subject": "entry",
+            "object": [
+                "entries"
+            ]
+        },
+        {
+            "subject": "facility",
+            "object": [
+                "facilities"
+            ]
+        },
+        {
+            "subject": "family",
+            "object": [
+                "families"
+            ]
+        },
+        {
+            "subject": "formula",
+            "object": [
+                "formulae"
+            ]
+        },
+        {
+            "subject": "history",
+            "object": [
+                "histories"
+            ]
+        },
+        {
+            "subject": "industry",
+            "object": [
+                "industries"
+            ]
+        },
+        {
+            "subject": "library",
+            "object": [
+                "libraries"
+            ]
+        },
+        {
+            "subject": "life",
+            "object": [
+                "lives"
+            ]
+        },
+        {
+            "subject": "loss",
+            "object": [
+                "losses"
+            ]
+        },
+        {
+            "subject": "majority",
+            "object": [
+                "majorities"
+            ]
+        },
+        {
+            "subject": "memory",
+            "object": [
+                "memories"
+            ]
+        },
+        {
+            "subject": "opportunity",
+            "object": [
+                "opportunities"
+            ]
+        },
+        {
+            "subject": "policy",
+            "object": [
+                "policies"
+            ]
+        },
+        {
+            "subject": "property",
+            "object": [
+                "properties"
+            ]
+        },
+        {
+            "subject": "responsibility",
+            "object": [
+                "responsibilities"
+            ]
+        },
+        {
+            "subject": "safety",
+            "object": [
+                "safeties"
+            ]
+        },
+        {
+            "subject": "secretary",
+            "object": [
+                "secretaries"
+            ]
+        },
+        {
+            "subject": "security",
+            "object": [
+                "securities"
+            ]
+        },
+        {
+            "subject": "series",
+            "object": [
+                "series"
+            ]
+        },
+        {
+            "subject": "society",
+            "object": [
+                "societies"
+            ]
+        },
+        {
+            "subject": "species",
+            "object": [
+                "species"
+            ]
+        },
+        {
+            "subject": "story",
+            "object": [
+                "stories"
+            ]
+        },
+        {
+            "subject": "strategy",
+            "object": [
+                "strategies"
+            ]
+        },
+        {
+            "subject": "success",
+            "object": [
+                "successes"
+            ]
+        },
+        {
+            "subject": "technology",
+            "object": [
+                "technologies"
+            ]
+        },
+        {
+            "subject": "theory",
+            "object": [
+                "theories"
+            ]
+        },
+        {
+            "subject": "university",
+            "object": [
+                "universities"
+            ]
+        },
+        {
+            "subject": "variety",
+            "object": [
+                "varieties"
+            ]
+        },
+        {
+            "subject": "wife",
+            "object": [
+                "wives"
+            ]
+        },
+        {
+            "subject": "woman",
+            "object": [
+                "women"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

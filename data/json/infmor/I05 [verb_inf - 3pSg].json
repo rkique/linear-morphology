@@ -1,0 +1,317 @@
+{
+    "name": "verb_inf - 3pSg",
+    "prompt_templates": [
+        "I {}, he",
+        "I {}, she",
+        "I {}, it"
+    ],
+    "prompt_templates_zs": [
+        "I {}, he",
+        "I {}, she",
+        "I {}, it"
+    ],
+    "samples": [
+        {
+            "subject": "accept",
+            "object": [
+                "accepts"
+            ]
+        },
+        {
+            "subject": "achieve",
+            "object": [
+                "achieves"
+            ]
+        },
+        {
+            "subject": "add",
+            "object": [
+                "adds"
+            ]
+        },
+        {
+            "subject": "agree",
+            "object": [
+                "agrees"
+            ]
+        },
+        {
+            "subject": "allow",
+            "object": [
+                "allows"
+            ]
+        },
+        {
+            "subject": "appear",
+            "object": [
+                "appears"
+            ]
+        },
+        {
+            "subject": "apply",
+            "object": [
+                "applies"
+            ]
+        },
+        {
+            "subject": "ask",
+            "object": [
+                "asks"
+            ]
+        },
+        {
+            "subject": "avoid",
+            "object": [
+                "avoids"
+            ]
+        },
+        {
+            "subject": "become",
+            "object": [
+                "becomes"
+            ]
+        },
+        {
+            "subject": "believe",
+            "object": [
+                "believes"
+            ]
+        },
+        {
+            "subject": "consider",
+            "object": [
+                "considers"
+            ]
+        },
+        {
+            "subject": "consist",
+            "object": [
+                "consists"
+            ]
+        },
+        {
+            "subject": "contain",
+            "object": [
+                "contains"
+            ]
+        },
+        {
+            "subject": "continue",
+            "object": [
+                "continues"
+            ]
+        },
+        {
+            "subject": "create",
+            "object": [
+                "creates"
+            ]
+        },
+        {
+            "subject": "describe",
+            "object": [
+                "describes"
+            ]
+        },
+        {
+            "subject": "develop",
+            "object": [
+                "develops"
+            ]
+        },
+        {
+            "subject": "enable",
+            "object": [
+                "enables"
+            ]
+        },
+        {
+            "subject": "enjoy",
+            "object": [
+                "enjoys"
+            ]
+        },
+        {
+            "subject": "ensure",
+            "object": [
+                "ensures"
+            ]
+        },
+        {
+            "subject": "exist",
+            "object": [
+                "exists"
+            ]
+        },
+        {
+            "subject": "explain",
+            "object": [
+                "explains"
+            ]
+        },
+        {
+            "subject": "follow",
+            "object": [
+                "follows"
+            ]
+        },
+        {
+            "subject": "happen",
+            "object": [
+                "happens"
+            ]
+        },
+        {
+            "subject": "hear",
+            "object": [
+                "hears"
+            ]
+        },
+        {
+            "subject": "identify",
+            "object": [
+                "identifies"
+            ]
+        },
+        {
+            "subject": "improve",
+            "object": [
+                "improves"
+            ]
+        },
+        {
+            "subject": "include",
+            "object": [
+                "includes"
+            ]
+        },
+        {
+            "subject": "involve",
+            "object": [
+                "involves"
+            ]
+        },
+        {
+            "subject": "learn",
+            "object": [
+                "learns"
+            ]
+        },
+        {
+            "subject": "maintain",
+            "object": [
+                "maintains"
+            ]
+        },
+        {
+            "subject": "occur",
+            "object": [
+                "occurs"
+            ]
+        },
+        {
+            "subject": "operate",
+            "object": [
+                "operates"
+            ]
+        },
+        {
+            "subject": "prevent",
+            "object": [
+                "prevents"
+            ]
+        },
+        {
+            "subject": "promote",
+            "object": [
+                "promotes"
+            ]
+        },
+        {
+            "subject": "protect",
+            "object": [
+                "protects"
+            ]
+        },
+        {
+            "subject": "provide",
+            "object": [
+                "provides"
+            ]
+        },
+        {
+            "subject": "receive",
+            "object": [
+                "receives"
+            ]
+        },
+        {
+            "subject": "reduce",
+            "object": [
+                "reduces"
+            ]
+        },
+        {
+            "subject": "refer",
+            "object": [
+                "refers"
+            ]
+        },
+        {
+            "subject": "remain",
+            "object": [
+                "remains"
+            ]
+        },
+        {
+            "subject": "remember",
+            "object": [
+                "remembers"
+            ]
+        },
+        {
+            "subject": "represent",
+            "object": [
+                "represents"
+            ]
+        },
+        {
+            "subject": "require",
+            "object": [
+                "requires"
+            ]
+        },
+        {
+            "subject": "seem",
+            "object": [
+                "seems"
+            ]
+        },
+        {
+            "subject": "send",
+            "object": [
+                "sends"
+            ]
+        },
+        {
+            "subject": "suggest",
+            "object": [
+                "suggests"
+            ]
+        },
+        {
+            "subject": "tell",
+            "object": [
+                "tells"
+            ]
+        },
+        {
+            "subject": "understand",
+            "object": [
+                "understands"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

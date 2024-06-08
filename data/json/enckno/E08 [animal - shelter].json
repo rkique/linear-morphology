@@ -1,0 +1,394 @@
+{
+    "name": "animal - shelter",
+    "prompt_templates": [
+        "The place {} lives in is called",
+        "The {} lives in a",
+        "The {} can be found living in a {}"
+    ],
+    "prompt_templates_zs": [
+        "The place {} lives in is called",
+        "The {} lives in a",
+        "The {} can be found living in a {}"
+    ],
+    "samples": [
+        {
+            "subject": "ant",
+            "object": [
+                "anthill",
+                "insectarium",
+                "terrarium",
+                "formicarium"
+            ]
+        },
+        {
+            "subject": "ape",
+            "object": [
+                "grove",
+                "tree",
+                "cage"
+            ]
+        },
+        {
+            "subject": "baboon",
+            "object": [
+                "grove",
+                "tree",
+                "cage"
+            ]
+        },
+        {
+            "subject": "bat",
+            "object": [
+                "cave",
+                "cage"
+            ]
+        },
+        {
+            "subject": "bear",
+            "object": [
+                "den",
+                "cage"
+            ]
+        },
+        {
+            "subject": "beaver",
+            "object": [
+                "dam",
+                "river",
+                "pen"
+            ]
+        },
+        {
+            "subject": "bee",
+            "object": [
+                "hive"
+            ]
+        },
+        {
+            "subject": "cattle",
+            "object": [
+                "barn",
+                "coral"
+            ]
+        },
+        {
+            "subject": "chimpanzee",
+            "object": [
+                "grove",
+                "tree",
+                "cage"
+            ]
+        },
+        {
+            "subject": "chinchilla",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "cockroach",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "cricket",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "crocodile",
+            "object": [
+                "river",
+                "lake",
+                "pool"
+            ]
+        },
+        {
+            "subject": "crow",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "dog",
+            "object": [
+                "doghouse",
+                "home",
+                "den",
+                "kennel"
+            ]
+        },
+        {
+            "subject": "dolphin",
+            "object": [
+                "sea",
+                "sanctuary"
+            ]
+        },
+        {
+            "subject": "duck",
+            "object": [
+                "pond",
+                "nest"
+            ]
+        },
+        {
+            "subject": "fish",
+            "object": [
+                "sea",
+                "lake",
+                "river",
+                "acquarium",
+                "farm",
+                "sanctuary"
+            ]
+        },
+        {
+            "subject": "fly",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "fox",
+            "object": [
+                "den",
+                "cage"
+            ]
+        },
+        {
+            "subject": "goldfish",
+            "object": [
+                "pond",
+                "bowl",
+                "aquarium",
+                "sanctuary"
+            ]
+        },
+        {
+            "subject": "gorilla",
+            "object": [
+                "grove",
+                "tree",
+                "cage"
+            ]
+        },
+        {
+            "subject": "hamster",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "hedgehog",
+            "object": [
+                "nest",
+                "hedge",
+                "pen"
+            ]
+        },
+        {
+            "subject": "herring",
+            "object": [
+                "sea",
+                "sanctuary"
+            ]
+        },
+        {
+            "subject": "hippopotamus",
+            "object": [
+                "river",
+                "lake",
+                "pen"
+            ]
+        },
+        {
+            "subject": "hornet",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "horse",
+            "object": [
+                "stable",
+                "range",
+                "paddock",
+                "corral"
+            ]
+        },
+        {
+            "subject": "insect",
+            "object": [
+                "nest",
+                "cage",
+                "box"
+            ]
+        },
+        {
+            "subject": "lion",
+            "object": [
+                "den",
+                "cage",
+                "savannah"
+            ]
+        },
+        {
+            "subject": "locust",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "mallard",
+            "object": [
+                "nest",
+                "pond"
+            ]
+        },
+        {
+            "subject": "mole",
+            "object": [
+                "hole",
+                "nest"
+            ]
+        },
+        {
+            "subject": "monkey",
+            "object": [
+                "tree",
+                "grove",
+                "cage"
+            ]
+        },
+        {
+            "subject": "mouse",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "pig",
+            "object": [
+                "sty",
+                "pigsty",
+                "pen",
+                "pigpen"
+            ]
+        },
+        {
+            "subject": "rabbit",
+            "object": [
+                "burrow",
+                "warren",
+                "hutch",
+                "cage"
+            ]
+        },
+        {
+            "subject": "rat",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "raven",
+            "object": [
+                "nest",
+                "cage"
+            ]
+        },
+        {
+            "subject": "scorpion",
+            "object": [
+                "nest",
+                "aquarium",
+                "terrarium"
+            ]
+        },
+        {
+            "subject": "seal",
+            "object": [
+                "den",
+                "aquarium",
+                "sea"
+            ]
+        },
+        {
+            "subject": "snake",
+            "object": [
+                "nest",
+                "pit",
+                "acquarium"
+            ]
+        },
+        {
+            "subject": "spider",
+            "object": [
+                "web",
+                "acquarium",
+                "terrarium"
+            ]
+        },
+        {
+            "subject": "termite",
+            "object": [
+                "hill",
+                "terrarium"
+            ]
+        },
+        {
+            "subject": "tiger",
+            "object": [
+                "den",
+                "cage"
+            ]
+        },
+        {
+            "subject": "trout",
+            "object": [
+                "river",
+                "lake",
+                "sanctuary",
+                "aquarium",
+                "pond",
+                "tank"
+            ]
+        },
+        {
+            "subject": "wasp",
+            "object": [
+                "nest"
+            ]
+        },
+        {
+            "subject": "whale",
+            "object": [
+                "sea",
+                "sanctuary"
+            ]
+        },
+        {
+            "subject": "wolf",
+            "object": [
+                "den",
+                "cage"
+            ]
+        },
+        {
+            "subject": "woodchuck",
+            "object": [
+                "hole"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

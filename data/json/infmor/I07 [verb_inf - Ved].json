@@ -1,0 +1,315 @@
+{
+    "name": "verb_inf - Ved",
+    "prompt_templates": [
+        "If the present form is {}, the past form is",
+        "After I {} something, it has been"
+    ],
+    "prompt_templates_zs": [
+        "If the present form is {}, the past form is",
+        "After I {} something, it has been"
+    ],
+    "samples": [
+        {
+            "subject": "accept",
+            "object": [
+                "accepted"
+            ]
+        },
+        {
+            "subject": "achieve",
+            "object": [
+                "achieved"
+            ]
+        },
+        {
+            "subject": "add",
+            "object": [
+                "added"
+            ]
+        },
+        {
+            "subject": "agree",
+            "object": [
+                "agreed"
+            ]
+        },
+        {
+            "subject": "allow",
+            "object": [
+                "allowed"
+            ]
+        },
+        {
+            "subject": "announce",
+            "object": [
+                "announced"
+            ]
+        },
+        {
+            "subject": "appear",
+            "object": [
+                "appeared"
+            ]
+        },
+        {
+            "subject": "apply",
+            "object": [
+                "applied"
+            ]
+        },
+        {
+            "subject": "ask",
+            "object": [
+                "asked"
+            ]
+        },
+        {
+            "subject": "attend",
+            "object": [
+                "attended"
+            ]
+        },
+        {
+            "subject": "become",
+            "object": [
+                "became"
+            ]
+        },
+        {
+            "subject": "believe",
+            "object": [
+                "believed"
+            ]
+        },
+        {
+            "subject": "consider",
+            "object": [
+                "considered"
+            ]
+        },
+        {
+            "subject": "continue",
+            "object": [
+                "continued"
+            ]
+        },
+        {
+            "subject": "create",
+            "object": [
+                "created"
+            ]
+        },
+        {
+            "subject": "decide",
+            "object": [
+                "decided"
+            ]
+        },
+        {
+            "subject": "describe",
+            "object": [
+                "described"
+            ]
+        },
+        {
+            "subject": "develop",
+            "object": [
+                "developed"
+            ]
+        },
+        {
+            "subject": "discover",
+            "object": [
+                "discovered"
+            ]
+        },
+        {
+            "subject": "enjoy",
+            "object": [
+                "enjoyed"
+            ]
+        },
+        {
+            "subject": "ensure",
+            "object": [
+                "ensured"
+            ]
+        },
+        {
+            "subject": "establish",
+            "object": [
+                "established"
+            ]
+        },
+        {
+            "subject": "expect",
+            "object": [
+                "expected"
+            ]
+        },
+        {
+            "subject": "follow",
+            "object": [
+                "followed"
+            ]
+        },
+        {
+            "subject": "hear",
+            "object": [
+                "heard"
+            ]
+        },
+        {
+            "subject": "identify",
+            "object": [
+                "identified"
+            ]
+        },
+        {
+            "subject": "improve",
+            "object": [
+                "improved"
+            ]
+        },
+        {
+            "subject": "include",
+            "object": [
+                "included"
+            ]
+        },
+        {
+            "subject": "introduce",
+            "object": [
+                "introduced"
+            ]
+        },
+        {
+            "subject": "involve",
+            "object": [
+                "involved"
+            ]
+        },
+        {
+            "subject": "locate",
+            "object": [
+                "located"
+            ]
+        },
+        {
+            "subject": "lose",
+            "object": [
+                "lost"
+            ]
+        },
+        {
+            "subject": "manage",
+            "object": [
+                "managed"
+            ]
+        },
+        {
+            "subject": "marry",
+            "object": [
+                "married"
+            ]
+        },
+        {
+            "subject": "perform",
+            "object": [
+                "performed"
+            ]
+        },
+        {
+            "subject": "provide",
+            "object": [
+                "provided"
+            ]
+        },
+        {
+            "subject": "publish",
+            "object": [
+                "published"
+            ]
+        },
+        {
+            "subject": "receive",
+            "object": [
+                "received"
+            ]
+        },
+        {
+            "subject": "reduce",
+            "object": [
+                "reduced"
+            ]
+        },
+        {
+            "subject": "refer",
+            "object": [
+                "referred"
+            ]
+        },
+        {
+            "subject": "relate",
+            "object": [
+                "related"
+            ]
+        },
+        {
+            "subject": "remain",
+            "object": [
+                "remained"
+            ]
+        },
+        {
+            "subject": "replace",
+            "object": [
+                "replaced"
+            ]
+        },
+        {
+            "subject": "require",
+            "object": [
+                "required"
+            ]
+        },
+        {
+            "subject": "seem",
+            "object": [
+                "seemed"
+            ]
+        },
+        {
+            "subject": "send",
+            "object": [
+                "sent"
+            ]
+        },
+        {
+            "subject": "spend",
+            "object": [
+                "spent"
+            ]
+        },
+        {
+            "subject": "tell",
+            "object": [
+                "told"
+            ]
+        },
+        {
+            "subject": "understand",
+            "object": [
+                "understood"
+            ]
+        },
+        {
+            "subject": "unite",
+            "object": [
+                "united"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

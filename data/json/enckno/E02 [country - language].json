@@ -1,0 +1,217 @@
+{
+    "name": "country - language",
+    "prompt_templates": [
+        "The country of {} primarily speaks the language of",
+        "The main language spoken in {} is",
+        "In {}, the most commonly spoken language is"
+    ],
+    "prompt_templates_zs": [
+        "The country of {} primarily speaks the language of",
+        "The main language spoken in {} is",
+        "In {}, the most commonly spoken language is"
+    ],
+    "samples": [
+        {
+            "subject": "andorra",
+            "object": "catalan"
+        },
+        {
+            "subject": "argentina",
+            "object": "spanish"
+        },
+        {
+            "subject": "australia",
+            "object": "english"
+        },
+        {
+            "subject": "austria",
+            "object": "german"
+        },
+        {
+            "subject": "bahamas",
+            "object": "english"
+        },
+        {
+            "subject": "bangladesh",
+            "object": "bengali"
+        },
+        {
+            "subject": "barbados",
+            "object": "english"
+        },
+        {
+            "subject": "belize",
+            "object": "english"
+        },
+        {
+            "subject": "bolivia",
+            "object": "spanish"
+        },
+        {
+            "subject": "brazil",
+            "object": "portuguese"
+        },
+        {
+            "subject": "cambodia",
+            "object": "khmer"
+        },
+        {
+            "subject": "canada",
+            "object": "english"
+        },
+        {
+            "subject": "chile",
+            "object": "spanish"
+        },
+        {
+            "subject": "colombia",
+            "object": "spanish"
+        },
+        {
+            "subject": "cuba",
+            "object": "spanish"
+        },
+        {
+            "subject": "cyprus",
+            "object": "greek"
+        },
+        {
+            "subject": "denmark",
+            "object": "danish"
+        },
+        {
+            "subject": "ecuador",
+            "object": "spanish"
+        },
+        {
+            "subject": "egypt",
+            "object": "arabic"
+        },
+        {
+            "subject": "ethiopia",
+            "object": "amharic"
+        },
+        {
+            "subject": "fiji",
+            "object": "english"
+        },
+        {
+            "subject": "guadeloupe",
+            "object": "french"
+        },
+        {
+            "subject": "guam",
+            "object": "english"
+        },
+        {
+            "subject": "guatemala",
+            "object": "spanish"
+        },
+        {
+            "subject": "guyana",
+            "object": "english"
+        },
+        {
+            "subject": "haiti",
+            "object": "creole"
+        },
+        {
+            "subject": "iran",
+            "object": "persian"
+        },
+        {
+            "subject": "iraq",
+            "object": "arabic"
+        },
+        {
+            "subject": "ireland",
+            "object": "english"
+        },
+        {
+            "subject": "israel",
+            "object": "hebrew"
+        },
+        {
+            "subject": "jamaica",
+            "object": "english"
+        },
+        {
+            "subject": "jordan",
+            "object": "arabic"
+        },
+        {
+            "subject": "kazakhstan",
+            "object": "kazak"
+        },
+        {
+            "subject": "kosovo",
+            "object": "albanian"
+        },
+        {
+            "subject": "kuwait",
+            "object": "arabic"
+        },
+        {
+            "subject": "mexico",
+            "object": "spanish"
+        },
+        {
+            "subject": "moldova",
+            "object": "moldovan"
+        },
+        {
+            "subject": "morocco",
+            "object": "berber"
+        },
+        {
+            "subject": "mozambique",
+            "object": "portuguese"
+        },
+        {
+            "subject": "netherlands",
+            "object": "dutch"
+        },
+        {
+            "subject": "nicaragua",
+            "object": "spanish"
+        },
+        {
+            "subject": "norway",
+            "object": "norwegian"
+        },
+        {
+            "subject": "palestine",
+            "object": "arabic"
+        },
+        {
+            "subject": "peru",
+            "object": "spanish"
+        },
+        {
+            "subject": "philippines",
+            "object": "tagalog"
+        },
+        {
+            "subject": "switzerland",
+            "object": "german"
+        },
+        {
+            "subject": "syria",
+            "object": "arabic"
+        },
+        {
+            "subject": "taiwan",
+            "object": "chinese"
+        },
+        {
+            "subject": "usa",
+            "object": "english"
+        },
+        {
+            "subject": "venezuela",
+            "object": "spanish"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

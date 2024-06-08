@@ -5,11 +5,11 @@ from dataclasses_json import DataClassJsonMixin
 from collections import defaultdict
 
 
-#(s,o) text pair.
+#(s,o) or (s, o1, o2, ...) text pair.
 @dataclass(frozen=True)
 class RelationSample(DataClassJsonMixin):
     subject: str
-    object: str
+    object: str | list[str]
 
     def __str__(self) -> str:
         return f"{self.subject} -> {self.object}"

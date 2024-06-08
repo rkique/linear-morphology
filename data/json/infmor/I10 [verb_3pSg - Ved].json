@@ -1,0 +1,317 @@
+{
+    "name": "verb_3pSg - Ved",
+    "prompt_templates": [
+        "When he {} something, something has been {}",
+        "When she {} something, something has been {}",
+        "When it {} something, something has been {}"
+    ],
+    "prompt_templates_zs": [
+        "When he {} something, something has been {}",
+        "When she {} something, something has been {}",
+        "When it {} something, something has been {}"
+    ],
+    "samples": [
+        {
+            "subject": "adds",
+            "object": [
+                "added"
+            ]
+        },
+        {
+            "subject": "agrees",
+            "object": [
+                "agreed"
+            ]
+        },
+        {
+            "subject": "allows",
+            "object": [
+                "allowed"
+            ]
+        },
+        {
+            "subject": "announces",
+            "object": [
+                "announced"
+            ]
+        },
+        {
+            "subject": "appears",
+            "object": [
+                "appeared"
+            ]
+        },
+        {
+            "subject": "applies",
+            "object": [
+                "applied"
+            ]
+        },
+        {
+            "subject": "appoints",
+            "object": [
+                "appointed"
+            ]
+        },
+        {
+            "subject": "asks",
+            "object": [
+                "asked"
+            ]
+        },
+        {
+            "subject": "becomes",
+            "object": [
+                "became"
+            ]
+        },
+        {
+            "subject": "believes",
+            "object": [
+                "believed"
+            ]
+        },
+        {
+            "subject": "considers",
+            "object": [
+                "considered"
+            ]
+        },
+        {
+            "subject": "consists",
+            "object": [
+                "consisted"
+            ]
+        },
+        {
+            "subject": "contains",
+            "object": [
+                "contained"
+            ]
+        },
+        {
+            "subject": "continues",
+            "object": [
+                "continued"
+            ]
+        },
+        {
+            "subject": "creates",
+            "object": [
+                "created"
+            ]
+        },
+        {
+            "subject": "decides",
+            "object": [
+                "decided"
+            ]
+        },
+        {
+            "subject": "describes",
+            "object": [
+                "described"
+            ]
+        },
+        {
+            "subject": "develops",
+            "object": [
+                "developed"
+            ]
+        },
+        {
+            "subject": "establishes",
+            "object": [
+                "established"
+            ]
+        },
+        {
+            "subject": "expects",
+            "object": [
+                "expected"
+            ]
+        },
+        {
+            "subject": "fails",
+            "object": [
+                "failed"
+            ]
+        },
+        {
+            "subject": "follows",
+            "object": [
+                "followed"
+            ]
+        },
+        {
+            "subject": "happens",
+            "object": [
+                "happened"
+            ]
+        },
+        {
+            "subject": "hears",
+            "object": [
+                "heard"
+            ]
+        },
+        {
+            "subject": "includes",
+            "object": [
+                "included"
+            ]
+        },
+        {
+            "subject": "intends",
+            "object": [
+                "intended"
+            ]
+        },
+        {
+            "subject": "introduces",
+            "object": [
+                "introduced"
+            ]
+        },
+        {
+            "subject": "involves",
+            "object": [
+                "involved"
+            ]
+        },
+        {
+            "subject": "locates",
+            "object": [
+                "located"
+            ]
+        },
+        {
+            "subject": "loses",
+            "object": [
+                "lost"
+            ]
+        },
+        {
+            "subject": "manages",
+            "object": [
+                "managed"
+            ]
+        },
+        {
+            "subject": "marries",
+            "object": [
+                "married"
+            ]
+        },
+        {
+            "subject": "occurs",
+            "object": [
+                "occurred"
+            ]
+        },
+        {
+            "subject": "operates",
+            "object": [
+                "operated"
+            ]
+        },
+        {
+            "subject": "performs",
+            "object": [
+                "performed"
+            ]
+        },
+        {
+            "subject": "proposes",
+            "object": [
+                "proposed"
+            ]
+        },
+        {
+            "subject": "provides",
+            "object": [
+                "provided"
+            ]
+        },
+        {
+            "subject": "publishes",
+            "object": [
+                "published"
+            ]
+        },
+        {
+            "subject": "receives",
+            "object": [
+                "received"
+            ]
+        },
+        {
+            "subject": "refers",
+            "object": [
+                "referred"
+            ]
+        },
+        {
+            "subject": "relates",
+            "object": [
+                "related"
+            ]
+        },
+        {
+            "subject": "remains",
+            "object": [
+                "remained"
+            ]
+        },
+        {
+            "subject": "replaces",
+            "object": [
+                "replaced"
+            ]
+        },
+        {
+            "subject": "represents",
+            "object": [
+                "represented"
+            ]
+        },
+        {
+            "subject": "requires",
+            "object": [
+                "required"
+            ]
+        },
+        {
+            "subject": "seems",
+            "object": [
+                "seemed"
+            ]
+        },
+        {
+            "subject": "sends",
+            "object": [
+                "sent"
+            ]
+        },
+        {
+            "subject": "spends",
+            "object": [
+                "spent"
+            ]
+        },
+        {
+            "subject": "suggests",
+            "object": [
+                "suggested"
+            ]
+        },
+        {
+            "subject": "tells",
+            "object": [
+                "told"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

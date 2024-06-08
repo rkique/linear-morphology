@@ -1,0 +1,317 @@
+{
+    "name": "noun - plural_reg",
+    "prompt_templates": [
+        "The plural form of {} is",
+        "In the plural, {} is",
+        "{} in its plural form is"
+    ],
+    "prompt_templates_zs": [
+        "The plural form of {} is",
+        "In the plural, {} is",
+        "{} in its plural form is"
+    ],
+    "samples": [
+        {
+            "subject": "album",
+            "object": [
+                "albums"
+            ]
+        },
+        {
+            "subject": "application",
+            "object": [
+                "applications"
+            ]
+        },
+        {
+            "subject": "area",
+            "object": [
+                "areas"
+            ]
+        },
+        {
+            "subject": "car",
+            "object": [
+                "cars"
+            ]
+        },
+        {
+            "subject": "college",
+            "object": [
+                "colleges"
+            ]
+        },
+        {
+            "subject": "council",
+            "object": [
+                "councils"
+            ]
+        },
+        {
+            "subject": "customer",
+            "object": [
+                "customers"
+            ]
+        },
+        {
+            "subject": "day",
+            "object": [
+                "days"
+            ]
+        },
+        {
+            "subject": "death",
+            "object": [
+                "deaths"
+            ]
+        },
+        {
+            "subject": "department",
+            "object": [
+                "departments"
+            ]
+        },
+        {
+            "subject": "development",
+            "object": [
+                "developments"
+            ]
+        },
+        {
+            "subject": "difference",
+            "object": [
+                "differences"
+            ]
+        },
+        {
+            "subject": "director",
+            "object": [
+                "directors"
+            ]
+        },
+        {
+            "subject": "event",
+            "object": [
+                "events"
+            ]
+        },
+        {
+            "subject": "example",
+            "object": [
+                "examples"
+            ]
+        },
+        {
+            "subject": "fact",
+            "object": [
+                "facts"
+            ]
+        },
+        {
+            "subject": "friend",
+            "object": [
+                "friends"
+            ]
+        },
+        {
+            "subject": "god",
+            "object": [
+                "gods"
+            ]
+        },
+        {
+            "subject": "government",
+            "object": [
+                "governments"
+            ]
+        },
+        {
+            "subject": "hour",
+            "object": [
+                "hours"
+            ]
+        },
+        {
+            "subject": "idea",
+            "object": [
+                "ideas"
+            ]
+        },
+        {
+            "subject": "language",
+            "object": [
+                "languages"
+            ]
+        },
+        {
+            "subject": "law",
+            "object": [
+                "laws"
+            ]
+        },
+        {
+            "subject": "member",
+            "object": [
+                "members"
+            ]
+        },
+        {
+            "subject": "month",
+            "object": [
+                "months"
+            ]
+        },
+        {
+            "subject": "night",
+            "object": [
+                "nights"
+            ]
+        },
+        {
+            "subject": "office",
+            "object": [
+                "offices"
+            ]
+        },
+        {
+            "subject": "period",
+            "object": [
+                "periods"
+            ]
+        },
+        {
+            "subject": "player",
+            "object": [
+                "players"
+            ]
+        },
+        {
+            "subject": "population",
+            "object": [
+                "populations"
+            ]
+        },
+        {
+            "subject": "problem",
+            "object": [
+                "problems"
+            ]
+        },
+        {
+            "subject": "product",
+            "object": [
+                "products"
+            ]
+        },
+        {
+            "subject": "resource",
+            "object": [
+                "resources"
+            ]
+        },
+        {
+            "subject": "river",
+            "object": [
+                "rivers"
+            ]
+        },
+        {
+            "subject": "road",
+            "object": [
+                "roads"
+            ]
+        },
+        {
+            "subject": "role",
+            "object": [
+                "roles"
+            ]
+        },
+        {
+            "subject": "science",
+            "object": [
+                "sciences"
+            ]
+        },
+        {
+            "subject": "solution",
+            "object": [
+                "solutions"
+            ]
+        },
+        {
+            "subject": "song",
+            "object": [
+                "songs"
+            ]
+        },
+        {
+            "subject": "street",
+            "object": [
+                "streets"
+            ]
+        },
+        {
+            "subject": "student",
+            "object": [
+                "students"
+            ]
+        },
+        {
+            "subject": "system",
+            "object": [
+                "systems"
+            ]
+        },
+        {
+            "subject": "thing",
+            "object": [
+                "things"
+            ]
+        },
+        {
+            "subject": "town",
+            "object": [
+                "towns"
+            ]
+        },
+        {
+            "subject": "user",
+            "object": [
+                "users"
+            ]
+        },
+        {
+            "subject": "version",
+            "object": [
+                "versions"
+            ]
+        },
+        {
+            "subject": "village",
+            "object": [
+                "villages"
+            ]
+        },
+        {
+            "subject": "website",
+            "object": [
+                "websites"
+            ]
+        },
+        {
+            "subject": "week",
+            "object": [
+                "weeks"
+            ]
+        },
+        {
+            "subject": "year",
+            "object": [
+                "years"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

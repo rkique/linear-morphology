@@ -1,0 +1,315 @@
+{
+    "name": "Ving - verb_inf",
+    "prompt_templates": [
+        "{} is the active form of",
+        "{} is to"
+    ],
+    "prompt_templates_zs": [
+        "{} is the active form of",
+        "{} is to"
+    ],
+    "samples": [
+        {
+            "subject": "achieving",
+            "object": [
+                "achieve"
+            ]
+        },
+        {
+            "subject": "adding",
+            "object": [
+                "add"
+            ]
+        },
+        {
+            "subject": "allowing",
+            "object": [
+                "allow"
+            ]
+        },
+        {
+            "subject": "appearing",
+            "object": [
+                "appear"
+            ]
+        },
+        {
+            "subject": "applying",
+            "object": [
+                "apply"
+            ]
+        },
+        {
+            "subject": "asking",
+            "object": [
+                "ask"
+            ]
+        },
+        {
+            "subject": "attending",
+            "object": [
+                "attend"
+            ]
+        },
+        {
+            "subject": "avoiding",
+            "object": [
+                "avoid"
+            ]
+        },
+        {
+            "subject": "becoming",
+            "object": [
+                "become"
+            ]
+        },
+        {
+            "subject": "believing",
+            "object": [
+                "believe"
+            ]
+        },
+        {
+            "subject": "considering",
+            "object": [
+                "consider"
+            ]
+        },
+        {
+            "subject": "containing",
+            "object": [
+                "contain"
+            ]
+        },
+        {
+            "subject": "continuing",
+            "object": [
+                "continue"
+            ]
+        },
+        {
+            "subject": "creating",
+            "object": [
+                "create"
+            ]
+        },
+        {
+            "subject": "developing",
+            "object": [
+                "develop"
+            ]
+        },
+        {
+            "subject": "encouraging",
+            "object": [
+                "encourage"
+            ]
+        },
+        {
+            "subject": "enjoying",
+            "object": [
+                "enjoy"
+            ]
+        },
+        {
+            "subject": "ensuring",
+            "object": [
+                "ensure"
+            ]
+        },
+        {
+            "subject": "establishing",
+            "object": [
+                "establish"
+            ]
+        },
+        {
+            "subject": "existing",
+            "object": [
+                "exist"
+            ]
+        },
+        {
+            "subject": "expecting",
+            "object": [
+                "expect"
+            ]
+        },
+        {
+            "subject": "following",
+            "object": [
+                "follow"
+            ]
+        },
+        {
+            "subject": "happening",
+            "object": [
+                "happen"
+            ]
+        },
+        {
+            "subject": "identifying",
+            "object": [
+                "identify"
+            ]
+        },
+        {
+            "subject": "improving",
+            "object": [
+                "improve"
+            ]
+        },
+        {
+            "subject": "including",
+            "object": [
+                "include"
+            ]
+        },
+        {
+            "subject": "involving",
+            "object": [
+                "involve"
+            ]
+        },
+        {
+            "subject": "learning",
+            "object": [
+                "learn"
+            ]
+        },
+        {
+            "subject": "losing",
+            "object": [
+                "lose"
+            ]
+        },
+        {
+            "subject": "maintaining",
+            "object": [
+                "maintain"
+            ]
+        },
+        {
+            "subject": "managing",
+            "object": [
+                "manage"
+            ]
+        },
+        {
+            "subject": "operating",
+            "object": [
+                "operate"
+            ]
+        },
+        {
+            "subject": "performing",
+            "object": [
+                "perform"
+            ]
+        },
+        {
+            "subject": "preventing",
+            "object": [
+                "prevent"
+            ]
+        },
+        {
+            "subject": "promoting",
+            "object": [
+                "promote"
+            ]
+        },
+        {
+            "subject": "protecting",
+            "object": [
+                "protect"
+            ]
+        },
+        {
+            "subject": "providing",
+            "object": [
+                "provide"
+            ]
+        },
+        {
+            "subject": "receiving",
+            "object": [
+                "receive"
+            ]
+        },
+        {
+            "subject": "reducing",
+            "object": [
+                "reduce"
+            ]
+        },
+        {
+            "subject": "referring",
+            "object": [
+                "refer"
+            ]
+        },
+        {
+            "subject": "remaining",
+            "object": [
+                "remain"
+            ]
+        },
+        {
+            "subject": "remembering",
+            "object": [
+                "remember"
+            ]
+        },
+        {
+            "subject": "representing",
+            "object": [
+                "represent"
+            ]
+        },
+        {
+            "subject": "requiring",
+            "object": [
+                "require"
+            ]
+        },
+        {
+            "subject": "seeming",
+            "object": [
+                "seem"
+            ]
+        },
+        {
+            "subject": "sitting",
+            "object": [
+                "sit"
+            ]
+        },
+        {
+            "subject": "spending",
+            "object": [
+                "spend"
+            ]
+        },
+        {
+            "subject": "teaching",
+            "object": [
+                "teach"
+            ]
+        },
+        {
+            "subject": "telling",
+            "object": [
+                "tell"
+            ]
+        },
+        {
+            "subject": "understanding",
+            "object": [
+                "understand"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -182,6 +182,7 @@ class JacobianIclEstimator(LinearRelationEstimator):
         _check_nonempty(
             samples=relation.samples, prompt_templates=relation.prompt_templates
         )
+        #estimates for the first sample (?)
         _warn_gt_1(samples=relation.samples, prompt_templates=relation.prompt_templates)
         train = relation.samples[0]
         examples = relation.samples[1:]
@@ -190,7 +191,7 @@ class JacobianIclEstimator(LinearRelationEstimator):
         prompt_template_icl = functional.make_prompt(
             mt=self.mt, prompt_template=prompt_template, examples=examples, subject="{}"
         )
-
+        print(f'jacobian prompt_template_icl: {prompt_template_icl}')
         return JacobianEstimator(
             mt=self.mt,
             h_layer=self.h_layer,
@@ -281,7 +282,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
                 subject="{}",
                 examples=training_samples,
             )
-        
+            print(f'word2vec prompt_template_icl: {prompt_template}')
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,

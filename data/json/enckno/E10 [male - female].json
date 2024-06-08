@@ -1,0 +1,335 @@
+{
+    "name": "male - female",
+    "prompt_templates": [
+        "A female {} is known as a",
+        "The female counterpart of a {} is called a",
+        "The female equivalent of a {} is called a"
+    ],
+    "prompt_templates_zs": [
+        "A female {} is known as a",
+        "The female counterpart of a {} is called a",
+        "The female equivalent of a {} is called a"
+    ],
+    "samples": [
+        {
+            "subject": "actor",
+            "object": [
+                "actress"
+            ]
+        },
+        {
+            "subject": "batman",
+            "object": [
+                "batwoman"
+            ]
+        },
+        {
+            "subject": "boar",
+            "object": [
+                "sow"
+            ]
+        },
+        {
+            "subject": "boy",
+            "object": [
+                "girl"
+            ]
+        },
+        {
+            "subject": "brother",
+            "object": [
+                "sister"
+            ]
+        },
+        {
+            "subject": "buck",
+            "object": [
+                "doe"
+            ]
+        },
+        {
+            "subject": "bull",
+            "object": [
+                "cow"
+            ]
+        },
+        {
+            "subject": "businessman",
+            "object": [
+                "businesswoman"
+            ]
+        },
+        {
+            "subject": "chairman",
+            "object": [
+                "chairwoman"
+            ]
+        },
+        {
+            "subject": "dad",
+            "object": [
+                "mom",
+                "mum"
+            ]
+        },
+        {
+            "subject": "daddy",
+            "object": [
+                "mommy",
+                "mother",
+                "mom"
+            ]
+        },
+        {
+            "subject": "duke",
+            "object": [
+                "duchess"
+            ]
+        },
+        {
+            "subject": "emperor",
+            "object": [
+                "empress"
+            ]
+        },
+        {
+            "subject": "father",
+            "object": [
+                "mother"
+            ]
+        },
+        {
+            "subject": "fisherman",
+            "object": [
+                "fisherwoman"
+            ]
+        },
+        {
+            "subject": "fox",
+            "object": [
+                "vixen"
+            ]
+        },
+        {
+            "subject": "gentleman",
+            "object": [
+                "lady",
+                "gentlewoman",
+                "madam"
+            ]
+        },
+        {
+            "subject": "god",
+            "object": [
+                "goddess"
+            ]
+        },
+        {
+            "subject": "grandfather",
+            "object": [
+                "grandmother"
+            ]
+        },
+        {
+            "subject": "grandpa",
+            "object": [
+                "grandma"
+            ]
+        },
+        {
+            "subject": "grandson",
+            "object": [
+                "granddaughter"
+            ]
+        },
+        {
+            "subject": "groom",
+            "object": [
+                "bride"
+            ]
+        },
+        {
+            "subject": "headmaster",
+            "object": [
+                "headmistress"
+            ]
+        },
+        {
+            "subject": "heir",
+            "object": [
+                "heiress"
+            ]
+        },
+        {
+            "subject": "hero",
+            "object": [
+                "heroine"
+            ]
+        },
+        {
+            "subject": "hound",
+            "object": [
+                "bitch"
+            ]
+        },
+        {
+            "subject": "husband",
+            "object": [
+                "wife"
+            ]
+        },
+        {
+            "subject": "king",
+            "object": [
+                "queen"
+            ]
+        },
+        {
+            "subject": "lion",
+            "object": [
+                "lioness"
+            ]
+        },
+        {
+            "subject": "man",
+            "object": [
+                "woman"
+            ]
+        },
+        {
+            "subject": "manager",
+            "object": [
+                "manageress"
+            ]
+        },
+        {
+            "subject": "mister",
+            "object": [
+                "miss",
+                "missis",
+                "missus",
+                "mis'ess",
+                "mrs",
+                "ms",
+                "madam"
+            ]
+        },
+        {
+            "subject": "murderer",
+            "object": [
+                "murderess"
+            ]
+        },
+        {
+            "subject": "nephew",
+            "object": [
+                "niece"
+            ]
+        },
+        {
+            "subject": "poet",
+            "object": [
+                "poetess"
+            ]
+        },
+        {
+            "subject": "policeman",
+            "object": [
+                "policewoman"
+            ]
+        },
+        {
+            "subject": "prince",
+            "object": [
+                "princess"
+            ]
+        },
+        {
+            "subject": "ram",
+            "object": [
+                "ewe"
+            ]
+        },
+        {
+            "subject": "rooster",
+            "object": [
+                "hen"
+            ]
+        },
+        {
+            "subject": "sculptor",
+            "object": [
+                "sculptress"
+            ]
+        },
+        {
+            "subject": "sir",
+            "object": [
+                "madam"
+            ]
+        },
+        {
+            "subject": "son",
+            "object": [
+                "daughter"
+            ]
+        },
+        {
+            "subject": "stallion",
+            "object": [
+                "mare"
+            ]
+        },
+        {
+            "subject": "stepfather",
+            "object": [
+                "stepmother"
+            ]
+        },
+        {
+            "subject": "superman",
+            "object": [
+                "superwoman"
+            ]
+        },
+        {
+            "subject": "tiger",
+            "object": [
+                "tigress"
+            ]
+        },
+        {
+            "subject": "uncle",
+            "object": [
+                "aunt"
+            ]
+        },
+        {
+            "subject": "valet",
+            "object": [
+                "maid",
+                "maidservant",
+                "housemaid",
+                "chambermaid",
+                "handmaid",
+                "handmaiden",
+                "parlormaid",
+                "parlourmaid"
+            ]
+        },
+        {
+            "subject": "waiter",
+            "object": [
+                "waitress"
+            ]
+        },
+        {
+            "subject": "webmaster",
+            "object": [
+                "webmistress"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -1,0 +1,356 @@
+{
+    "name": "animal - sound",
+    "prompt_templates": [
+        "The sound that a {} makes is called a",
+        "The sound produced by a {} is known as",
+        "The {} makes a sound called a"
+    ],
+    "prompt_templates_zs": [
+        "The sound that a {} makes is called a",
+        "The sound produced by a {} is known as",
+        "The {} makes a sound called a"
+    ],
+    "samples": [
+        {
+            "subject": "alpaca",
+            "object": [
+                "bray"
+            ]
+        },
+        {
+            "subject": "bear",
+            "object": [
+                "growl"
+            ]
+        },
+        {
+            "subject": "bee",
+            "object": [
+                "buzz",
+                "hum"
+            ]
+        },
+        {
+            "subject": "beetle",
+            "object": [
+                "drone"
+            ]
+        },
+        {
+            "subject": "cat",
+            "object": [
+                "meow",
+                "meu",
+                "purr",
+                "caterwaul"
+            ]
+        },
+        {
+            "subject": "cattle",
+            "object": [
+                "moo",
+                "bellow",
+                "low"
+            ]
+        },
+        {
+            "subject": "chicken",
+            "object": [
+                "cluck",
+                "crow",
+                "cock-a-doodle-doo"
+            ]
+        },
+        {
+            "subject": "chimpanzee",
+            "object": [
+                "scream"
+            ]
+        },
+        {
+            "subject": "cicada",
+            "object": [
+                "buzz"
+            ]
+        },
+        {
+            "subject": "coyote",
+            "object": [
+                "howl"
+            ]
+        },
+        {
+            "subject": "cricket",
+            "object": [
+                "chirp"
+            ]
+        },
+        {
+            "subject": "crow",
+            "object": [
+                "caw"
+            ]
+        },
+        {
+            "subject": "deer",
+            "object": [
+                "bellow"
+            ]
+        },
+        {
+            "subject": "dog",
+            "object": [
+                "bark",
+                "growl",
+                "howl",
+                "yelp",
+                "whine",
+                "arf",
+                "bow_wow",
+                "woof"
+            ]
+        },
+        {
+            "subject": "donkey",
+            "object": [
+                "bray",
+                "hee-haw"
+            ]
+        },
+        {
+            "subject": "duck",
+            "object": [
+                "quack"
+            ]
+        },
+        {
+            "subject": "elephant",
+            "object": [
+                "trumpet"
+            ]
+        },
+        {
+            "subject": "elk",
+            "object": [
+                "bellow"
+            ]
+        },
+        {
+            "subject": "ferret",
+            "object": [
+                "dook"
+            ]
+        },
+        {
+            "subject": "fly",
+            "object": [
+                "buzz"
+            ]
+        },
+        {
+            "subject": "fox",
+            "object": [
+                "howl",
+                "yelp"
+            ]
+        },
+        {
+            "subject": "frog",
+            "object": [
+                "ribbit",
+                "croak"
+            ]
+        },
+        {
+            "subject": "goat",
+            "object": [
+                "bleat"
+            ]
+        },
+        {
+            "subject": "gorilla",
+            "object": [
+                "grunt",
+                "scream"
+            ]
+        },
+        {
+            "subject": "hornet",
+            "object": [
+                "buzz"
+            ]
+        },
+        {
+            "subject": "horse",
+            "object": [
+                "neigh",
+                "snort",
+                "whinny"
+            ]
+        },
+        {
+            "subject": "hound",
+            "object": [
+                "bark",
+                "howl",
+                "bay"
+            ]
+        },
+        {
+            "subject": "hyena",
+            "object": [
+                "laugh"
+            ]
+        },
+        {
+            "subject": "leopard",
+            "object": [
+                "growl"
+            ]
+        },
+        {
+            "subject": "lion",
+            "object": [
+                "roar",
+                "growl"
+            ]
+        },
+        {
+            "subject": "magpie",
+            "object": [
+                "chatter"
+            ]
+        },
+        {
+            "subject": "mallard",
+            "object": [
+                "quack"
+            ]
+        },
+        {
+            "subject": "monkey",
+            "object": [
+                "chatter",
+                "gibber",
+                "howl",
+                "scream"
+            ]
+        },
+        {
+            "subject": "moose",
+            "object": [
+                "bellow"
+            ]
+        },
+        {
+            "subject": "mouse",
+            "object": [
+                "squeak"
+            ]
+        },
+        {
+            "subject": "mule",
+            "object": [
+                "bray",
+                "hee-haw"
+            ]
+        },
+        {
+            "subject": "pig",
+            "object": [
+                "oink",
+                "grunt",
+                "gruff",
+                "squeal"
+            ]
+        },
+        {
+            "subject": "pigeon",
+            "object": [
+                "coo"
+            ]
+        },
+        {
+            "subject": "rat",
+            "object": [
+                "squeak"
+            ]
+        },
+        {
+            "subject": "raven",
+            "object": [
+                "caw"
+            ]
+        },
+        {
+            "subject": "seal",
+            "object": [
+                "bark"
+            ]
+        },
+        {
+            "subject": "sheep",
+            "object": [
+                "baa",
+                "bleat"
+            ]
+        },
+        {
+            "subject": "snake",
+            "object": [
+                "hiss"
+            ]
+        },
+        {
+            "subject": "songbird",
+            "object": [
+                "chirrup",
+                "chirp",
+                "tweet",
+                "sing",
+                "warble",
+                "twitter"
+            ]
+        },
+        {
+            "subject": "tiger",
+            "object": [
+                "growl",
+                "roar"
+            ]
+        },
+        {
+            "subject": "toad",
+            "object": [
+                "ribbit",
+                "croak"
+            ]
+        },
+        {
+            "subject": "turkey",
+            "object": [
+                "gobble"
+            ]
+        },
+        {
+            "subject": "wasp",
+            "object": [
+                "buzz"
+            ]
+        },
+        {
+            "subject": "whale",
+            "object": [
+                "sing"
+            ]
+        },
+        {
+            "subject": "wolf",
+            "object": [
+                "howl"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

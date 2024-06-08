@@ -1,0 +1,313 @@
+{
+    "name": "verb_Ving - Ved",
+    "prompt_templates": [
+        "After something is {}, it has {}"
+    ],
+    "prompt_templates_zs": [
+        "After something is {}, it has {}"
+    ],
+    "samples": [
+        {
+            "subject": "adding",
+            "object": [
+                "added"
+            ]
+        },
+        {
+            "subject": "agreeing",
+            "object": [
+                "agreed"
+            ]
+        },
+        {
+            "subject": "allowing",
+            "object": [
+                "allowed"
+            ]
+        },
+        {
+            "subject": "announcing",
+            "object": [
+                "announced"
+            ]
+        },
+        {
+            "subject": "appearing",
+            "object": [
+                "appeared"
+            ]
+        },
+        {
+            "subject": "applying",
+            "object": [
+                "applied"
+            ]
+        },
+        {
+            "subject": "appointing",
+            "object": [
+                "appointed"
+            ]
+        },
+        {
+            "subject": "asking",
+            "object": [
+                "asked"
+            ]
+        },
+        {
+            "subject": "attending",
+            "object": [
+                "attended"
+            ]
+        },
+        {
+            "subject": "becoming",
+            "object": [
+                "became"
+            ]
+        },
+        {
+            "subject": "considering",
+            "object": [
+                "considered"
+            ]
+        },
+        {
+            "subject": "containing",
+            "object": [
+                "contained"
+            ]
+        },
+        {
+            "subject": "continuing",
+            "object": [
+                "continued"
+            ]
+        },
+        {
+            "subject": "creating",
+            "object": [
+                "created"
+            ]
+        },
+        {
+            "subject": "deciding",
+            "object": [
+                "decided"
+            ]
+        },
+        {
+            "subject": "describing",
+            "object": [
+                "described"
+            ]
+        },
+        {
+            "subject": "developing",
+            "object": [
+                "developed"
+            ]
+        },
+        {
+            "subject": "establishing",
+            "object": [
+                "established"
+            ]
+        },
+        {
+            "subject": "existing",
+            "object": [
+                "existed"
+            ]
+        },
+        {
+            "subject": "expecting",
+            "object": [
+                "expected"
+            ]
+        },
+        {
+            "subject": "failing",
+            "object": [
+                "failed"
+            ]
+        },
+        {
+            "subject": "following",
+            "object": [
+                "followed"
+            ]
+        },
+        {
+            "subject": "hearing",
+            "object": [
+                "heard"
+            ]
+        },
+        {
+            "subject": "improving",
+            "object": [
+                "improved"
+            ]
+        },
+        {
+            "subject": "including",
+            "object": [
+                "included"
+            ]
+        },
+        {
+            "subject": "introducing",
+            "object": [
+                "introduced"
+            ]
+        },
+        {
+            "subject": "involving",
+            "object": [
+                "involved"
+            ]
+        },
+        {
+            "subject": "locating",
+            "object": [
+                "located"
+            ]
+        },
+        {
+            "subject": "losing",
+            "object": [
+                "lost"
+            ]
+        },
+        {
+            "subject": "managing",
+            "object": [
+                "managed"
+            ]
+        },
+        {
+            "subject": "marrying",
+            "object": [
+                "married"
+            ]
+        },
+        {
+            "subject": "operating",
+            "object": [
+                "operated"
+            ]
+        },
+        {
+            "subject": "performing",
+            "object": [
+                "performed"
+            ]
+        },
+        {
+            "subject": "proposing",
+            "object": [
+                "proposed"
+            ]
+        },
+        {
+            "subject": "providing",
+            "object": [
+                "provided"
+            ]
+        },
+        {
+            "subject": "publishing",
+            "object": [
+                "published"
+            ]
+        },
+        {
+            "subject": "receiving",
+            "object": [
+                "received"
+            ]
+        },
+        {
+            "subject": "reducing",
+            "object": [
+                "reduced"
+            ]
+        },
+        {
+            "subject": "relating",
+            "object": [
+                "related"
+            ]
+        },
+        {
+            "subject": "remaining",
+            "object": [
+                "remained"
+            ]
+        },
+        {
+            "subject": "replacing",
+            "object": [
+                "replaced"
+            ]
+        },
+        {
+            "subject": "representing",
+            "object": [
+                "represented"
+            ]
+        },
+        {
+            "subject": "requiring",
+            "object": [
+                "required"
+            ]
+        },
+        {
+            "subject": "sending",
+            "object": [
+                "sent"
+            ]
+        },
+        {
+            "subject": "spending",
+            "object": [
+                "spent"
+            ]
+        },
+        {
+            "subject": "suffering",
+            "object": [
+                "suffered"
+            ]
+        },
+        {
+            "subject": "teaching",
+            "object": [
+                "taught"
+            ]
+        },
+        {
+            "subject": "telling",
+            "object": [
+                "told"
+            ]
+        },
+        {
+            "subject": "understanding",
+            "object": [
+                "understood"
+            ]
+        },
+        {
+            "subject": "uniting",
+            "object": [
+                "united"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

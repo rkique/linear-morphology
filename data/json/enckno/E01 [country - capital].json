@@ -1,0 +1,217 @@
+{
+    "name": "country - capital",
+    "prompt_templates": [
+        "The country with {} as its capital is known as",
+        "The country with the capital city of {} is named",
+        "A country distinguished by {} as its capital city is known as"
+    ],
+    "prompt_templates_zs": [
+        "The country with {} as its capital is known as",
+        "The country with the capital city of {} is named",
+        "A country distinguished by {} as its capital city is known as"
+    ],
+    "samples": [
+        {
+            "subject": "abuja",
+            "object": "nigeria"
+        },
+        {
+            "subject": "amman",
+            "object": "jordan"
+        },
+        {
+            "subject": "ankara",
+            "object": "turkey"
+        },
+        {
+            "subject": "athens",
+            "object": "greece"
+        },
+        {
+            "subject": "baghdad",
+            "object": "iraq"
+        },
+        {
+            "subject": "bangkok",
+            "object": "thailand"
+        },
+        {
+            "subject": "beijing",
+            "object": "china"
+        },
+        {
+            "subject": "beirut",
+            "object": "lebanon"
+        },
+        {
+            "subject": "belgrade",
+            "object": "serbia"
+        },
+        {
+            "subject": "berlin",
+            "object": "germany"
+        },
+        {
+            "subject": "bern",
+            "object": "switzerland"
+        },
+        {
+            "subject": "brussels",
+            "object": "belgium"
+        },
+        {
+            "subject": "bucharest",
+            "object": "romania"
+        },
+        {
+            "subject": "budapest",
+            "object": "hungary"
+        },
+        {
+            "subject": "cairo",
+            "object": "egypt"
+        },
+        {
+            "subject": "canberra",
+            "object": "australia"
+        },
+        {
+            "subject": "conakry",
+            "object": "guinea"
+        },
+        {
+            "subject": "copenhagen",
+            "object": "denmark"
+        },
+        {
+            "subject": "damascus",
+            "object": "syria"
+        },
+        {
+            "subject": "dhaka",
+            "object": "bangladesh"
+        },
+        {
+            "subject": "dublin",
+            "object": "ireland"
+        },
+        {
+            "subject": "hanoi",
+            "object": "vietnam"
+        },
+        {
+            "subject": "havana",
+            "object": "cuba"
+        },
+        {
+            "subject": "helsinki",
+            "object": "finland"
+        },
+        {
+            "subject": "islamabad",
+            "object": "pakistan"
+        },
+        {
+            "subject": "jakarta",
+            "object": "indonesia"
+        },
+        {
+            "subject": "kabul",
+            "object": "afghanistan"
+        },
+        {
+            "subject": "kiev",
+            "object": "ukraine"
+        },
+        {
+            "subject": "kingston",
+            "object": "jamaica"
+        },
+        {
+            "subject": "lima",
+            "object": "peru"
+        },
+        {
+            "subject": "lisbon",
+            "object": "portugal"
+        },
+        {
+            "subject": "london",
+            "object": "england"
+        },
+        {
+            "subject": "madrid",
+            "object": "spain"
+        },
+        {
+            "subject": "manila",
+            "object": "philippines"
+        },
+        {
+            "subject": "moscow",
+            "object": "russia"
+        },
+        {
+            "subject": "nairobi",
+            "object": "kenya"
+        },
+        {
+            "subject": "oslo",
+            "object": "norway"
+        },
+        {
+            "subject": "ottawa",
+            "object": "canada"
+        },
+        {
+            "subject": "paris",
+            "object": "france"
+        },
+        {
+            "subject": "rome",
+            "object": "italy"
+        },
+        {
+            "subject": "santiago",
+            "object": "chile"
+        },
+        {
+            "subject": "sofia",
+            "object": "bulgaria"
+        },
+        {
+            "subject": "stockholm",
+            "object": "sweden"
+        },
+        {
+            "subject": "taipei",
+            "object": "taiwan"
+        },
+        {
+            "subject": "tbilisi",
+            "object": "georgia"
+        },
+        {
+            "subject": "tehran",
+            "object": "iran"
+        },
+        {
+            "subject": "tokyo",
+            "object": "japan"
+        },
+        {
+            "subject": "vienna",
+            "object": "austria"
+        },
+        {
+            "subject": "warsaw",
+            "object": "poland"
+        },
+        {
+            "subject": "zagreb",
+            "object": "croatia"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

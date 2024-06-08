@@ -3,9 +3,10 @@ from dataclasses_json import DataClassJsonMixin
 from dataclasses import dataclass, field
 from typing import Any, Literal, NamedTuple, Sequence
 
-from lre.data import RelationSample
+from lre.data import Relation,RelationSample
 import lre.models as models
 from lre.lretyping import Layer, ModelInput, ModelOutput, StrSequence
+from lre.metrics import is_nontrivial_prefix
 import lre.tokenizer_utils as tokenizer_utils
 from baukit.baukit import TraceDict
 
@@ -19,7 +20,7 @@ DEFAULT_N_ICL_LM = 5
 DEFAULT_N_TOP_LM = 1
 
 '''
-Builds a prompt from a template string and subject.
+Builds a prompt from a template string, subject, and examples. 
 '''
 def make_prompt(*,
                 prompt_template: str,
@@ -27,7 +28,8 @@ def make_prompt(*,
                 examples: Sequence[RelationSample] | None = None,
                 mt: models.ModelAndTokenizer | None = None,
                 ) -> str:
-    #replaces {} with subject.
+    #replace {} with subject.
+    # Examples will be filtered for the subject, making example preprocessing unnecessary.
     prompt = prompt_template.format(subject)
     if examples is not None:
         others = [x for x in examples if x.subject != subject]
@@ -38,11 +40,11 @@ def make_prompt(*,
             + "\n"
             + prompt
         )   
-    #TODO: uncomment this
+    #TODO: Prefix prompt with EOS token if model has no special start token.
     #prompt = models.maybe_prefix_eos(mt, prompt)
     return prompt
 
-#This is a misleadingly named function. It returns the subject token index but also the list of tokens.
+#(Misleading) Returns the subject token index, but also the list of tokens.
 def find_subject_token_index(*,
                              prompt: str,
                              subject: str,
@@ -136,6 +138,9 @@ class Order1ApproxOutput:
     logits: torch.Tensor
 
     metadata: dict = field(default_factory=dict)
+
+#z is the true object hidden state.
+#Order1ApproxOutput: w, b, {h, h_layer, h_index}, {z, z_layer, z_index}, inputs -> logits (batch_size, length, vocab_size)
 
 @torch.no_grad()
 @torch.inference_mode(mode=False)
@@ -273,7 +278,8 @@ class PredictedToken(DataClassJsonMixin):
     def __str__(self) -> str:
         return f"{self.token} -> {self.prob:.3f}"
 
-#Predicted token is (token, prob). k is used in probs.topk
+#Predicted LM token is (token, prob). k is used in probs.topk
+#returns list[list[PredictedToken]]. Why?
 @torch.inference_mode()
 def predict_next_token(
     *,
@@ -318,6 +324,44 @@ def predict_next_token(
                 )
     return predictions
 
+
+#Filters the samples associated with a relation to those known by the model.
+#Where would this be used?
+@torch.inference_mode()
+def filter_relation_samples_based_on_provided_fewshots(
+    *,
+    mt: models.ModelAndTokenizer,
+    test_relation: Relation,
+    prompt_template: str,
+    n_top_lm: int = DEFAULT_N_TOP_LM,
+    batch_size: int = DEFAULT_BATCH_SIZE,
+    examples: Sequence[RelationSample] = [],
+    subj_token_filter: Literal["all", "single", "multi"] = "all",
+) -> Relation:
+    if len(examples) > 0:
+        logger.debug(f'filtering for knowns using prompt "{prompt_template}"')
+        prompt_template = make_prompt(
+            mt=mt,
+            prompt_template=prompt_template,
+            subject="{}",
+            examples=examples
+        )
+    logger.debug(f'filtering for knowns using prompt "{prompt_template}')
+
+    test_prompts = [
+        prompt_template.format(sample.subject) for sample in test_relation.samples
+    ]
+    predictions = predict_next_token(
+        mt=mt, prompt=test_prompts, k=n_top_lm, batch_size=batch_size
+    )
+
+    filtered_samples = []
+    for sample, prediction in zip(test_relation.samples, predictions):
+        known_flag = is_nontrivial_prefix(
+            prediction=prediction[0].token, target=sample.object
+        )
+        #Log (s,o), prediction, known flag  ....
+    return test_relation.set(samples=sorted(filtered_samples, key=lambda x: x.subject))
             
 def untuple(x: Any) -> Any:
     """If `x` is a tuple, return the first element."""

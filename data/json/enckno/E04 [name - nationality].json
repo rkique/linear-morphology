@@ -1,0 +1,217 @@
+{
+    "name": "name - nationality",
+    "prompt_templates": [
+        "{} was",
+        "{} identified nationally as",
+        "{} identifies as"
+    ],
+    "prompt_templates_zs": [
+        "{} was",
+        "{} identified nationally as",
+        "{} identifies as"
+    ],
+    "samples": [
+        {
+            "subject": "aristotle",
+            "object": "greek"
+        },
+        {
+            "subject": "balzac",
+            "object": "french"
+        },
+        {
+            "subject": "beethoven",
+            "object": "german"
+        },
+        {
+            "subject": "caesar",
+            "object": "roman"
+        },
+        {
+            "subject": "confucius",
+            "object": "chinese"
+        },
+        {
+            "subject": "copernicus",
+            "object": "polish"
+        },
+        {
+            "subject": "darwin",
+            "object": "english"
+        },
+        {
+            "subject": "depp",
+            "object": "american"
+        },
+        {
+            "subject": "descartes",
+            "object": "french"
+        },
+        {
+            "subject": "dickens",
+            "object": "english"
+        },
+        {
+            "subject": "dostoyevsky",
+            "object": "russian"
+        },
+        {
+            "subject": "edison",
+            "object": "american"
+        },
+        {
+            "subject": "einstein",
+            "object": "jewish"
+        },
+        {
+            "subject": "euclid",
+            "object": "greek"
+        },
+        {
+            "subject": "fermi",
+            "object": "italian"
+        },
+        {
+            "subject": "galilei",
+            "object": "italian"
+        },
+        {
+            "subject": "gorbachev",
+            "object": "soviet"
+        },
+        {
+            "subject": "hawking",
+            "object": "english"
+        },
+        {
+            "subject": "hegel",
+            "object": "german"
+        },
+        {
+            "subject": "hitler",
+            "object": "german"
+        },
+        {
+            "subject": "homer",
+            "object": "greek"
+        },
+        {
+            "subject": "hume",
+            "object": "scottish"
+        },
+        {
+            "subject": "jolie",
+            "object": "american"
+        },
+        {
+            "subject": "kant",
+            "object": "german"
+        },
+        {
+            "subject": "kepler",
+            "object": "german"
+        },
+        {
+            "subject": "lavoisier",
+            "object": "french"
+        },
+        {
+            "subject": "leibniz",
+            "object": "german"
+        },
+        {
+            "subject": "lenin",
+            "object": "soviet"
+        },
+        {
+            "subject": "lennon",
+            "object": "english"
+        },
+        {
+            "subject": "lincoln",
+            "object": "american"
+        },
+        {
+            "subject": "locke",
+            "object": "english"
+        },
+        {
+            "subject": "machiavelli",
+            "object": "italian"
+        },
+        {
+            "subject": "marx",
+            "object": "german"
+        },
+        {
+            "subject": "maxwell",
+            "object": "scottish"
+        },
+        {
+            "subject": "mencius",
+            "object": "chinese"
+        },
+        {
+            "subject": "michelangelo",
+            "object": "italian"
+        },
+        {
+            "subject": "mozart",
+            "object": "german"
+        },
+        {
+            "subject": "napoleon",
+            "object": "french"
+        },
+        {
+            "subject": "newton",
+            "object": "english"
+        },
+        {
+            "subject": "pascal",
+            "object": "french"
+        },
+        {
+            "subject": "plato",
+            "object": "greek"
+        },
+        {
+            "subject": "raphael",
+            "object": "italian"
+        },
+        {
+            "subject": "rousseau",
+            "object": "french"
+        },
+        {
+            "subject": "spinoza",
+            "object": "dutch"
+        },
+        {
+            "subject": "stalin",
+            "object": "soviet"
+        },
+        {
+            "subject": "strauss",
+            "object": "austrian"
+        },
+        {
+            "subject": "tchaikovsky",
+            "object": "russian"
+        },
+        {
+            "subject": "tolstoi",
+            "object": "russian"
+        },
+        {
+            "subject": "truman",
+            "object": "american"
+        },
+        {
+            "subject": "wagner",
+            "object": "german"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}
