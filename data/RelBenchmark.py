@@ -59,7 +59,7 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
         targets_by_lm_correct[lm_correct].append(target)
         counts_by_lm_correct[lm_correct] += 1
 
-    print(f'For {type(operator)} on {relation.name} (out of correct): {counts_by_lm_correct}')
+    print(f'For {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
 
 json_path = "json/enckno/E01 [country - capital].json"
 with open(json_path, 'r') as file:

@@ -1,0 +1,413 @@
+{
+    "name": "person - spouse",
+    "prompt_templates": [
+        "{} is the spouse of"
+    ],
+    "prompt_templates_zs": [
+        "{} is the spouse of"
+    ],
+    "samples": [
+        {
+            "subject": "Tiberius",
+            "object": "Julia the Elder"
+        },
+        {
+            "subject": "Johann Sebastian Bach",
+            "object": "Anna Magdalena Bach"
+        },
+        {
+            "subject": "Johann Sebastian Bach",
+            "object": "Maria Barbara Bach"
+        },
+        {
+            "subject": "Richard Wagner",
+            "object": "Cosima Wagner"
+        },
+        {
+            "subject": "Richard Wagner",
+            "object": "Minna Planer"
+        },
+        {
+            "subject": "Claudius",
+            "object": "Agrippina the Younger"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Nefertari"
+        },
+        {
+            "subject": "Vladimir Lenin",
+            "object": "Nadezhda Krupskaya"
+        },
+        {
+            "subject": "Corazon Aquino",
+            "object": "Benigno Aquino Jr."
+        },
+        {
+            "subject": "Septimius Severus",
+            "object": "Julia Domna"
+        },
+        {
+            "subject": "Claudius",
+            "object": "Messalina"
+        },
+        {
+            "subject": "Nero",
+            "object": "Poppaea Sabina"
+        },
+        {
+            "subject": "Otho",
+            "object": "Poppaea Sabina"
+        },
+        {
+            "subject": "Nero",
+            "object": "Claudia Octavia"
+        },
+        {
+            "subject": "Tiberius",
+            "object": "Vipsania Agrippina"
+        },
+        {
+            "subject": "Hadrian",
+            "object": "Vibia Sabina"
+        },
+        {
+            "subject": "Roger Federer",
+            "object": "Mirka Federer"
+        },
+        {
+            "subject": "Augustus",
+            "object": "Scribonia"
+        },
+        {
+            "subject": "Commodus",
+            "object": "Bruttia Crispina"
+        },
+        {
+            "subject": "Antoninus Pius",
+            "object": "Faustina the Elder"
+        },
+        {
+            "subject": "Claudius",
+            "object": "Plautia Urgulanilla"
+        },
+        {
+            "subject": "Marcus Aurelius",
+            "object": "Faustina the Younger"
+        },
+        {
+            "subject": "Augustus",
+            "object": "Claudia"
+        },
+        {
+            "subject": "Caracalla",
+            "object": "Fulvia Plautilla"
+        },
+        {
+            "subject": "Claudius",
+            "object": "Aelia Paetina"
+        },
+        {
+            "subject": "Domitian",
+            "object": "Domitia Longina"
+        },
+        {
+            "subject": "Trajan",
+            "object": "Pompeia Plotina"
+        },
+        {
+            "subject": "Caligula",
+            "object": "Milonia Caesonia"
+        },
+        {
+            "subject": "Vespasian",
+            "object": "Domitilla the Elder"
+        },
+        {
+            "subject": "Nero",
+            "object": "Statilia Messalina"
+        },
+        {
+            "subject": "Caligula",
+            "object": "Livia Orestilla"
+        },
+        {
+            "subject": "Caligula",
+            "object": "Junia Claudilla"
+        },
+        {
+            "subject": "Lucius Verus",
+            "object": "Lucilla"
+        },
+        {
+            "subject": "Caligula",
+            "object": "Lollia Paulina"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Maathorneferure"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Isetnofret"
+        },
+        {
+            "subject": "Vitellius",
+            "object": "Galeria Fundana"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Meritamen"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Bintanath"
+        },
+        {
+            "subject": "Ferdinand Marcos",
+            "object": "Imelda Marcos"
+        },
+        {
+            "subject": "Ramesses I",
+            "object": "Sitre"
+        },
+        {
+            "subject": "Ramesses III",
+            "object": "Iset Ta-Hemdjert"
+        },
+        {
+            "subject": "Cicero",
+            "object": "Terentia"
+        },
+        {
+            "subject": "Charles Lindbergh",
+            "object": "Anne Morrow Lindbergh"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Henutmire"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Nebettawy"
+        },
+        {
+            "subject": "Augustus",
+            "object": "Livia"
+        },
+        {
+            "subject": "Vitellius",
+            "object": "Petronia"
+        },
+        {
+            "subject": "Titus",
+            "object": "Marcia Furnilla"
+        },
+        {
+            "subject": "Ramesses III",
+            "object": "Tyti"
+        },
+        {
+            "subject": "Ramesses IV",
+            "object": "Duatentopet"
+        },
+        {
+            "subject": "Ramesses III",
+            "object": "Tiye"
+        },
+        {
+            "subject": "Cyndi Lauper",
+            "object": "David Thornton"
+        },
+        {
+            "subject": "\u00c9dith Piaf",
+            "object": "Theophanis Lamboukas"
+        },
+        {
+            "subject": "Titus",
+            "object": "Arrecina Tertulla"
+        },
+        {
+            "subject": "\u00c9dith Piaf",
+            "object": "Jacques Pills"
+        },
+        {
+            "subject": "Jos\u00e9 Rizal",
+            "object": "Josephine Bracken"
+        },
+        {
+            "subject": "Nero",
+            "object": "Sporus"
+        },
+        {
+            "subject": "Nero",
+            "object": "Pythagoras"
+        },
+        {
+            "subject": "Didius Julianus",
+            "object": "Manlia Scantilla"
+        },
+        {
+            "subject": "Pertinax",
+            "object": "Flavia Titiana"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Arnoldas Abramavi\u010dius"
+        },
+        {
+            "subject": "Robert Louis Stevenson",
+            "object": "Fanny Stevenson"
+        },
+        {
+            "subject": "Fran\u00e7oise Sagan",
+            "object": "Guy Schoeller"
+        },
+        {
+            "subject": "Manuel L. Quezon",
+            "object": "Aurora Quezon"
+        },
+        {
+            "subject": "Galba",
+            "object": "Aemilia Lepida"
+        },
+        {
+            "subject": "Luigi Galvani",
+            "object": "Lucia Galeazzi Galvani"
+        },
+        {
+            "subject": "Jos\u00e9 Joaqu\u00edn Prieto",
+            "object": "Manuela Warnes y Garc\u00eda de Z\u00fa\u00f1iga"
+        },
+        {
+            "subject": "Federico Err\u00e1zuriz Za\u00f1artu",
+            "object": "Eulogia Echaurren"
+        },
+        {
+            "subject": "An\u00edbal Pinto",
+            "object": "Delfina De la Cruz Za\u00f1artu"
+        },
+        {
+            "subject": "Manuel Bulnes",
+            "object": "Enriqueta Pinto Garmendia"
+        },
+        {
+            "subject": "Francisco Antonio Pinto",
+            "object": "Luisa Garmendia Alurralde"
+        },
+        {
+            "subject": "Manuel Montt",
+            "object": "Rosario Montt Goyenechea"
+        },
+        {
+            "subject": "Cicero",
+            "object": "Publilia"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Donatas Krik\u0161taponis"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Vincas Jasiukevi\u010dius"
+        },
+        {
+            "subject": "Gary Gygax",
+            "object": "Mary Jo Powell"
+        },
+        {
+            "subject": "Gary Gygax",
+            "object": "Gail Carpenter"
+        },
+        {
+            "subject": "Ganesha",
+            "object": "consorts of Ganesha"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Donatas Kaubrys"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Julius Panka"
+        },
+        {
+            "subject": "Virginia",
+            "object": "Vytas \u0160imon\u0117lis"
+        },
+        {
+            "subject": "Ram\u00f3n Freire",
+            "object": "Manuela Caldera Mascayano"
+        },
+        {
+            "subject": "Manuel Blanco Encalada",
+            "object": "Carmen Gana L\u00f3pez"
+        },
+        {
+            "subject": "Jos\u00e9 Joaqu\u00edn P\u00e9rez",
+            "object": "Tr\u00e1nsito Flores de la Cavareda"
+        },
+        {
+            "subject": "Sigfrid Edstr\u00f6m",
+            "object": "Ruth Randall Edstr\u00f6m"
+        },
+        {
+            "subject": "Neil Armstrong",
+            "object": "Janet Shearon"
+        },
+        {
+            "subject": "Ferdinand Magellan",
+            "object": "Beatriz Barbosa"
+        },
+        {
+            "subject": "Niccol\u00f2 Machiavelli",
+            "object": "Thomas Fontaine"
+        },
+        {
+            "subject": "David Cecil, 6th Marquess of Exeter",
+            "object": "Mary Montagu Douglas Scott"
+        },
+        {
+            "subject": "Septimius Severus",
+            "object": "Paccia Marciana"
+        },
+        {
+            "subject": "Ganesha",
+            "object": "Ridhi"
+        },
+        {
+            "subject": "Ganesha",
+            "object": "Sidhi"
+        },
+        {
+            "subject": "Luigi Pirandello",
+            "object": "Maria Antonietta Portulano"
+        },
+        {
+            "subject": "David Cecil, 6th Marquess of Exeter",
+            "object": "Diana Henderson"
+        },
+        {
+            "subject": "Neil Armstrong",
+            "object": "Carol Held Knight"
+        },
+        {
+            "subject": "Ramesses II",
+            "object": "Merytre"
+        },
+        {
+            "subject": "M. C. Escher",
+            "object": "Jetta Umiker"
+        },
+        {
+            "subject": "Friedrich Hayek",
+            "object": "Helen Berta Maria von Fritsch"
+        },
+        {
+            "subject": "Friedrich Hayek",
+            "object": "Helene Bitterlich"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}
