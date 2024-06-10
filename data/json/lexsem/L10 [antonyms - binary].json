@@ -1,0 +1,457 @@
+{
+    "name": "antonyms - binary",
+    "prompt_templates": [
+        "The opposite of {} is",
+        "The inverse of {} is",
+        "Something that is {} is not"
+    ],
+    "prompt_templates_zs": [
+        "The opposite of {} is",
+        "The inverse of {} is",
+        "Something that is {} is not"
+    ],
+    "samples": [
+        {
+            "subject": "after",
+            "object": [
+                "before",
+                "earlier",
+                "previously"
+            ]
+        },
+        {
+            "subject": "ahead",
+            "object": [
+                "behind",
+                "rear",
+                "after",
+                "tail",
+                "beforehand"
+            ]
+        },
+        {
+            "subject": "anterior",
+            "object": [
+                "posterior"
+            ]
+        },
+        {
+            "subject": "backward",
+            "object": [
+                "forward",
+                "forwards",
+                "frontward",
+                "frontwards",
+                "forrad",
+                "forrard",
+                "forth",
+                "onward"
+            ]
+        },
+        {
+            "subject": "before",
+            "object": [
+                "after",
+                "subsequently",
+                "later",
+                "afterwards",
+                "afterward",
+                "ahead"
+            ]
+        },
+        {
+            "subject": "beginning",
+            "object": [
+                "end",
+                "terminal",
+                "ending",
+                "last",
+                "final",
+                "finish",
+                "finale",
+                "conclusion"
+            ]
+        },
+        {
+            "subject": "below",
+            "object": [
+                "above",
+                "higher",
+                "up"
+            ]
+        },
+        {
+            "subject": "climb",
+            "object": [
+                "descend",
+                "declivitous",
+                "downhill",
+                "downward-sloping",
+                "degressive",
+                "descendant",
+                "descendent",
+                "down",
+                "downward",
+                "downward-arching",
+                "drizzling",
+                "dropping",
+                "falling",
+                "raining"
+            ]
+        },
+        {
+            "subject": "dead",
+            "object": [
+                "alive",
+                "living",
+                "live"
+            ]
+        },
+        {
+            "subject": "decrement",
+            "object": [
+                "increment"
+            ]
+        },
+        {
+            "subject": "descend",
+            "object": [
+                "ascend",
+                "climb",
+                "rise",
+                "upward",
+                "ascendent",
+                "ascendant"
+            ]
+        },
+        {
+            "subject": "dive",
+            "object": [
+                "emerge"
+            ]
+        },
+        {
+            "subject": "down",
+            "object": [
+                "up",
+                "above",
+                "ahead",
+                "lead",
+                "leading",
+                "aweigh",
+                "dormie",
+                "dormy",
+                "heavenward",
+                "skyward",
+                "risen",
+                "sprouted",
+                "upbound",
+                "upfield",
+                "upward"
+            ]
+        },
+        {
+            "subject": "downslope",
+            "object": [
+                "upslope",
+                "ascent"
+            ]
+        },
+        {
+            "subject": "drop",
+            "object": [
+                "lift",
+                "pick_up"
+            ]
+        },
+        {
+            "subject": "dynamic",
+            "object": [
+                "static",
+                "still",
+                "unmoving",
+                "unchanging"
+            ]
+        },
+        {
+            "subject": "employ",
+            "object": [
+                "dismiss",
+                "fire",
+                "sack",
+                "displace",
+                "terminate"
+            ]
+        },
+        {
+            "subject": "exit",
+            "object": [
+                "entrance",
+                "entranceway",
+                "entryway",
+                "entry",
+                "entree"
+            ]
+        },
+        {
+            "subject": "fall",
+            "object": [
+                "rise",
+                "upward",
+                "climb"
+            ]
+        },
+        {
+            "subject": "first",
+            "object": [
+                "last",
+                "end",
+                "terminal",
+                "ending",
+                "final",
+                "finish",
+                "finale",
+                "conclusion"
+            ]
+        },
+        {
+            "subject": "forget",
+            "object": [
+                "remember",
+                "retrieve",
+                "recall",
+                "call_back",
+                "call_up",
+                "recollect"
+            ]
+        },
+        {
+            "subject": "forward",
+            "object": [
+                "backward",
+                "back",
+                "backwards",
+                "rearward",
+                "rearwards"
+            ]
+        },
+        {
+            "subject": "front",
+            "object": [
+                "back",
+                "rear",
+                "forepart"
+            ]
+        },
+        {
+            "subject": "in",
+            "object": [
+                "out",
+                "outer",
+                "exterior",
+                "outside"
+            ]
+        },
+        {
+            "subject": "inbound",
+            "object": [
+                "outbound"
+            ]
+        },
+        {
+            "subject": "inhale",
+            "object": [
+                "exhale"
+            ]
+        },
+        {
+            "subject": "input",
+            "object": [
+                "output"
+            ]
+        },
+        {
+            "subject": "inside",
+            "object": [
+                "outside",
+                "exterior",
+                "out"
+            ]
+        },
+        {
+            "subject": "interior",
+            "object": [
+                "exterior",
+                "outdoor",
+                "out-of-door",
+                "outside"
+            ]
+        },
+        {
+            "subject": "internal",
+            "object": [
+                "external",
+                "outer",
+                "outside"
+            ]
+        },
+        {
+            "subject": "inverse",
+            "object": [
+                "reverse",
+                "reversion",
+                "reversal",
+                "turnabout",
+                "turnaround"
+            ]
+        },
+        {
+            "subject": "mortal",
+            "object": [
+                "immortal"
+            ]
+        },
+        {
+            "subject": "occupied",
+            "object": [
+                "vacant",
+                "free"
+            ]
+        },
+        {
+            "subject": "off",
+            "object": [
+                "on"
+            ]
+        },
+        {
+            "subject": "out",
+            "object": [
+                "in",
+                "inside"
+            ]
+        },
+        {
+            "subject": "outward",
+            "object": [
+                "upward",
+                "up",
+                "upwards"
+            ]
+        },
+        {
+            "subject": "over",
+            "object": [
+                "under",
+                "below",
+                "beneath"
+            ]
+        },
+        {
+            "subject": "previously",
+            "object": [
+                "subsequently",
+                "later",
+                "afterwards",
+                "afterward",
+                "after",
+                "subsequent"
+            ]
+        },
+        {
+            "subject": "proceed",
+            "object": [
+                "retreat",
+                "return"
+            ]
+        },
+        {
+            "subject": "rise",
+            "object": [
+                "sink",
+                "drop",
+                "fall"
+            ]
+        },
+        {
+            "subject": "south",
+            "object": [
+                "north"
+            ]
+        },
+        {
+            "subject": "southeast",
+            "object": [
+                "southwest",
+                "northeast"
+            ]
+        },
+        {
+            "subject": "submerge",
+            "object": [
+                "emerge"
+            ]
+        },
+        {
+            "subject": "top",
+            "object": [
+                "bottom",
+                "underside",
+                "undersurface"
+            ]
+        },
+        {
+            "subject": "toward",
+            "object": [
+                "away",
+                "off",
+                "forth",
+                "aside"
+            ]
+        },
+        {
+            "subject": "true",
+            "object": [
+                "false",
+                "incorrect",
+                "wrong",
+                "mistaken"
+            ]
+        },
+        {
+            "subject": "under",
+            "object": [
+                "over",
+                "above",
+                "up"
+            ]
+        },
+        {
+            "subject": "up",
+            "object": [
+                "down",
+                "downwards",
+                "downward",
+                "downwardly"
+            ]
+        },
+        {
+            "subject": "uphill",
+            "object": [
+                "downhill",
+                "decline",
+                "fall",
+                "declivitous",
+                "downward-sloping"
+            ]
+        },
+        {
+            "subject": "west",
+            "object": [
+                "east"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

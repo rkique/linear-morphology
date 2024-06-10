@@ -1,0 +1,332 @@
+{
+    "name": "verb+tion_irreg",
+    "prompt_templates": [
+        "To {} results in",
+        "To {} is to form a"
+    ],
+    "prompt_templates_zs": [
+        "To {} results in",
+        "To {} is to form a"
+    ],
+    "samples": [
+        {
+            "subject": "accuse",
+            "object": [
+                "accusation"
+            ]
+        },
+        {
+            "subject": "admire",
+            "object": [
+                "admiration"
+            ]
+        },
+        {
+            "subject": "allege",
+            "object": [
+                "allegation"
+            ]
+        },
+        {
+            "subject": "aspire",
+            "object": [
+                "aspiration"
+            ]
+        },
+        {
+            "subject": "authorize",
+            "object": [
+                "authorization",
+                "authorisation"
+            ]
+        },
+        {
+            "subject": "characterize",
+            "object": [
+                "characterization",
+                "characterisation"
+            ]
+        },
+        {
+            "subject": "civilize",
+            "object": [
+                "civilization",
+                "civilisation"
+            ]
+        },
+        {
+            "subject": "colonize",
+            "object": [
+                "colonization"
+            ]
+        },
+        {
+            "subject": "compile",
+            "object": [
+                "compilation"
+            ]
+        },
+        {
+            "subject": "compute",
+            "object": [
+                "computation"
+            ]
+        },
+        {
+            "subject": "condense",
+            "object": [
+                "condensation"
+            ]
+        },
+        {
+            "subject": "configure",
+            "object": [
+                "configuration"
+            ]
+        },
+        {
+            "subject": "consult",
+            "object": [
+                "consulation"
+            ]
+        },
+        {
+            "subject": "continue",
+            "object": [
+                "continuation"
+            ]
+        },
+        {
+            "subject": "customize",
+            "object": [
+                "customization"
+            ]
+        },
+        {
+            "subject": "declare",
+            "object": [
+                "declaration"
+            ]
+        },
+        {
+            "subject": "degrade",
+            "object": [
+                "degradation"
+            ]
+        },
+        {
+            "subject": "deprive",
+            "object": [
+                "deprivation"
+            ]
+        },
+        {
+            "subject": "derive",
+            "object": [
+                "derivation"
+            ]
+        },
+        {
+            "subject": "determine",
+            "object": [
+                "determination"
+            ]
+        },
+        {
+            "subject": "examine",
+            "object": [
+                "examination"
+            ]
+        },
+        {
+            "subject": "expire",
+            "object": [
+                "expiration"
+            ]
+        },
+        {
+            "subject": "explore",
+            "object": [
+                "exploration"
+            ]
+        },
+        {
+            "subject": "globalize",
+            "object": [
+                "globalization",
+                "globalisation"
+            ]
+        },
+        {
+            "subject": "illumine",
+            "object": [
+                "illumination"
+            ]
+        },
+        {
+            "subject": "imagine",
+            "object": [
+                "imagination"
+            ]
+        },
+        {
+            "subject": "improvize",
+            "object": [
+                "improvization",
+                "improvisation"
+            ]
+        },
+        {
+            "subject": "inspire",
+            "object": [
+                "inspiration"
+            ]
+        },
+        {
+            "subject": "install",
+            "object": [
+                "installation",
+                "instalation"
+            ]
+        },
+        {
+            "subject": "maximize",
+            "object": [
+                "maximization",
+                "maximisation"
+            ]
+        },
+        {
+            "subject": "minimize",
+            "object": [
+                "minimization",
+                "minimisation"
+            ]
+        },
+        {
+            "subject": "modernize",
+            "object": [
+                "modernization",
+                "modernisation"
+            ]
+        },
+        {
+            "subject": "oblige",
+            "object": [
+                "obligation"
+            ]
+        },
+        {
+            "subject": "observe",
+            "object": [
+                "observation"
+            ]
+        },
+        {
+            "subject": "occupy",
+            "object": [
+                "occupation"
+            ]
+        },
+        {
+            "subject": "optimize",
+            "object": [
+                "optimization",
+                "optimisation"
+            ]
+        },
+        {
+            "subject": "organize",
+            "object": [
+                "organization"
+            ]
+        },
+        {
+            "subject": "perspire",
+            "object": [
+                "perspiration"
+            ]
+        },
+        {
+            "subject": "prepare",
+            "object": [
+                "preparation"
+            ]
+        },
+        {
+            "subject": "privatize",
+            "object": [
+                "privatization",
+                "privatisation"
+            ]
+        },
+        {
+            "subject": "randomize",
+            "object": [
+                "randomization",
+                "randomisation"
+            ]
+        },
+        {
+            "subject": "realize",
+            "object": [
+                "realization",
+                "realisation"
+            ]
+        },
+        {
+            "subject": "reorganize",
+            "object": [
+                "reorganization",
+                "reorganisation"
+            ]
+        },
+        {
+            "subject": "restore",
+            "object": [
+                "restoration"
+            ]
+        },
+        {
+            "subject": "specialize",
+            "object": [
+                "specialization",
+                "specialisation"
+            ]
+        },
+        {
+            "subject": "stabilize",
+            "object": [
+                "stabilization"
+            ]
+        },
+        {
+            "subject": "standardize",
+            "object": [
+                "standardization",
+                "standardisation"
+            ]
+        },
+        {
+            "subject": "starve",
+            "object": [
+                "starvation"
+            ]
+        },
+        {
+            "subject": "utilize",
+            "object": [
+                "utilization",
+                "utilisation"
+            ]
+        },
+        {
+            "subject": "visualize",
+            "object": [
+                "visualization"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

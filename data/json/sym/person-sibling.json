@@ -1,0 +1,413 @@
+{
+    "name": "person - sibling",
+    "prompt_templates": [
+        "The sibling of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The sibling of {} is"
+    ],
+    "samples": [
+        {
+            "subject": "Ptolemy IX Lathyros",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Ptolemy X Alexander I",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Antiochus IV Epiphanes",
+            "object": "Seleucus IV Philopator"
+        },
+        {
+            "subject": "Seleucus IV Philopator",
+            "object": "Antiochus IV Epiphanes"
+        },
+        {
+            "subject": "Antiochus III the Great",
+            "object": "Seleucus III Ceraunus"
+        },
+        {
+            "subject": "Seleucus III Ceraunus",
+            "object": "Antiochus III the Great"
+        },
+        {
+            "subject": "Baudouin of Belgium",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "Ptolemy VI",
+            "object": "Ptolemy VIII Physcon"
+        },
+        {
+            "subject": "Cleopatra IV of Egypt",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Cleopatra IV of Egypt",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Cleopatra Selene of Egypt and Syria",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Cleopatra Selene of Egypt and Syria",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Cleopatra II of Egypt",
+            "object": "Ptolemy VIII Physcon"
+        },
+        {
+            "subject": "Cleopatra I Syra",
+            "object": "Antiochus IV Epiphanes"
+        },
+        {
+            "subject": "Cleopatra I Syra",
+            "object": "Seleucus IV Philopator"
+        },
+        {
+            "subject": "Jackie Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Jaros\u0142aw Kaczy\u0144ski",
+            "object": "Lech Kaczy\u0144ski"
+        },
+        {
+            "subject": "Prince Henry of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Princess Charlotte of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Princess Viktoria of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Princess Margaret of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Georg Ratzinger",
+            "object": "Benedict XVI"
+        },
+        {
+            "subject": "Carl Friedrich von Weizs\u00e4cker",
+            "object": "Richard von Weizs\u00e4cker"
+        },
+        {
+            "subject": "Friedrich Wilhelm L\u00fcbke",
+            "object": "Heinrich L\u00fcbke"
+        },
+        {
+            "subject": "Lothar Vosseler",
+            "object": "Gerhard Schr\u00f6der"
+        },
+        {
+            "subject": "Janet Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Sophia of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Princess Jos\u00e9phine-Charlotte of Belgium",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "Jimmy Stewart",
+            "object": "Jackie Stewart"
+        },
+        {
+            "subject": "Carloman I",
+            "object": "Charlemagne"
+        },
+        {
+            "subject": "Princess St\u00e9phanie of Monaco",
+            "object": "Albert II, Prince of Monaco"
+        },
+        {
+            "subject": "La Toya Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Caroline, Princess of Hanover",
+            "object": "Albert II, Prince of Monaco"
+        },
+        {
+            "subject": "Rebbie Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Laodice III",
+            "object": "Antiochus III the Great"
+        },
+        {
+            "subject": "Sally Oldfield",
+            "object": "Mike Oldfield"
+        },
+        {
+            "subject": "Jermaine Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Marlon Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Tito Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Randy Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Antiochus Hierax",
+            "object": "Seleucus II Callinicus"
+        },
+        {
+            "subject": "Princess Marie-Esm\u00e9ralda, Lady Moncada",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "Drogo of Champagne",
+            "object": "Charles Martel"
+        },
+        {
+            "subject": "Laodice",
+            "object": "Seleucus II Callinicus"
+        },
+        {
+            "subject": "Antiochis",
+            "object": "Antiochus IV Epiphanes"
+        },
+        {
+            "subject": "Antiochis",
+            "object": "Seleucus IV Philopator"
+        },
+        {
+            "subject": "Laodice IV",
+            "object": "Antiochus IV Epiphanes"
+        },
+        {
+            "subject": "Laodice IV",
+            "object": "Seleucus IV Philopator"
+        },
+        {
+            "subject": "Tryphaena",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Tryphaena",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Antiochis",
+            "object": "Antiochus III the Great"
+        },
+        {
+            "subject": "Antiochis",
+            "object": "Seleucus III Ceraunus"
+        },
+        {
+            "subject": "Grimoald the Younger",
+            "object": "Charles Martel"
+        },
+        {
+            "subject": "Mike McGear",
+            "object": "Paul McCartney"
+        },
+        {
+            "subject": "Princess Marie-Christine of Belgium",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "James Franklin",
+            "object": "John Franklin"
+        },
+        {
+            "subject": "August Adenauer",
+            "object": "Konrad Adenauer"
+        },
+        {
+            "subject": "Bernhard von Hindenburg",
+            "object": "Paul von Hindenburg"
+        },
+        {
+            "subject": "Ptolemy Apion",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Ptolemy Apion",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Childebrand I",
+            "object": "Charles Martel"
+        },
+        {
+            "subject": "Terry Oldfield",
+            "object": "Mike Oldfield"
+        },
+        {
+            "subject": "Gisela, Abbess of Chelles",
+            "object": "Charlemagne"
+        },
+        {
+            "subject": "Ptolemy Memphites",
+            "object": "Ptolemy IX Lathyros"
+        },
+        {
+            "subject": "Ptolemy Memphites",
+            "object": "Ptolemy X Alexander I"
+        },
+        {
+            "subject": "Antiochus",
+            "object": "Antiochus IV Epiphanes"
+        },
+        {
+            "subject": "Antiochus",
+            "object": "Seleucus IV Philopator"
+        },
+        {
+            "subject": "Prince Alexandre of Belgium",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "Francesco Pacelli",
+            "object": "Pius XII"
+        },
+        {
+            "subject": "Prince Sigismund of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Prince Waldemar of Prussia",
+            "object": "Wilhelm II"
+        },
+        {
+            "subject": "Ingeborg Verdun",
+            "object": "Albert II of Belgium"
+        },
+        {
+            "subject": "Marie-Madeleine de Saint Exup\u00e9ry",
+            "object": "Antoine de Saint-Exup\u00e9ry"
+        },
+        {
+            "subject": "Simone de Saint-Exup\u00e9ry",
+            "object": "Antoine de Saint-Exup\u00e9ry"
+        },
+        {
+            "subject": "Ronni Pedersen",
+            "object": "Nicki Pedersen"
+        },
+        {
+            "subject": "Aemilia",
+            "object": "Scipio Aemilianus"
+        },
+        {
+            "subject": "Aemilia",
+            "object": "Scipio Aemilianus"
+        },
+        {
+            "subject": "Romain Maurras",
+            "object": "Charles Maurras"
+        },
+        {
+            "subject": "Joseph Maurras",
+            "object": "Charles Maurras"
+        },
+        {
+            "subject": "Apama",
+            "object": "Seleucus II Callinicus"
+        },
+        {
+            "subject": "Pepin",
+            "object": "Charlemagne"
+        },
+        {
+            "subject": "Adelais",
+            "object": "Charlemagne"
+        },
+        {
+            "subject": "Chrothais",
+            "object": "Charlemagne"
+        },
+        {
+            "subject": "David Willis",
+            "object": "Bruce Willis"
+        },
+        {
+            "subject": "Christiane Sengstack",
+            "object": "Friedrich Wilhelm Grund"
+        },
+        {
+            "subject": "Johannes Franz Richard Adenauer",
+            "object": "Konrad Adenauer"
+        },
+        {
+            "subject": "Emilie Helene Marie Louise Adenauer",
+            "object": "Konrad Adenauer"
+        },
+        {
+            "subject": "Maria Johanna Elisabeth Adenauer",
+            "object": "Konrad Adenauer"
+        },
+        {
+            "subject": "Dani\u00e8le Ricard",
+            "object": "Patrick Ricard"
+        },
+        {
+            "subject": "Meinhard Schwarzenegger",
+            "object": "Arnold Schwarzenegger"
+        },
+        {
+            "subject": "Eduard Grund",
+            "object": "Friedrich Wilhelm Grund"
+        },
+        {
+            "subject": "Ludwig Heuss",
+            "object": "Theodor Heuss"
+        },
+        {
+            "subject": "Hermann Heuss",
+            "object": "Theodor Heuss"
+        },
+        {
+            "subject": "Sarah Franklin",
+            "object": "John Franklin"
+        },
+        {
+            "subject": "Marjorie Frances Blair",
+            "object": "George Orwell"
+        },
+        {
+            "subject": "Avril Nora Blair",
+            "object": "George Orwell"
+        },
+        {
+            "subject": "Brandon Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Louise Harrison",
+            "object": "George Harrison"
+        },
+        {
+            "subject": "Titus",
+            "object": "Domitian"
+        },
+        {
+            "subject": "Domitian",
+            "object": "Titus"
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

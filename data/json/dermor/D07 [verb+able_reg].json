@@ -1,0 +1,320 @@
+{
+    "name": "verb+able_reg",
+    "prompt_templates": [
+        "If you can {} something, that thing is",
+        "Being able to {} something implies that thing is",
+        "Being able to {} something suggests that thing is"
+    ],
+    "prompt_templates_zs": [
+        "If you can {} something, that thing is",
+        "Being able to {} something implies that thing is",
+        "Being able to {} something suggests that thing is"
+    ],
+    "samples": [
+        {
+            "subject": "accept",
+            "object": [
+                "acceptable"
+            ]
+        },
+        {
+            "subject": "achieve",
+            "object": [
+                "achieveable"
+            ]
+        },
+        {
+            "subject": "adapt",
+            "object": [
+                "adaptable"
+            ]
+        },
+        {
+            "subject": "adjust",
+            "object": [
+                "adjustable"
+            ]
+        },
+        {
+            "subject": "admire",
+            "object": [
+                "admirable"
+            ]
+        },
+        {
+            "subject": "adore",
+            "object": [
+                "adorable"
+            ]
+        },
+        {
+            "subject": "advise",
+            "object": [
+                "advisable"
+            ]
+        },
+        {
+            "subject": "afford",
+            "object": [
+                "affordable"
+            ]
+        },
+        {
+            "subject": "avoid",
+            "object": [
+                "avoidable"
+            ]
+        },
+        {
+            "subject": "believe",
+            "object": [
+                "believeable",
+                "believable"
+            ]
+        },
+        {
+            "subject": "consider",
+            "object": [
+                "considerable"
+            ]
+        },
+        {
+            "subject": "contain",
+            "object": [
+                "containable"
+            ]
+        },
+        {
+            "subject": "define",
+            "object": [
+                "definable"
+            ]
+        },
+        {
+            "subject": "deliver",
+            "object": [
+                "deliverable"
+            ]
+        },
+        {
+            "subject": "discover",
+            "object": [
+                "discoverable"
+            ]
+        },
+        {
+            "subject": "dispose",
+            "object": [
+                "disposable"
+            ]
+        },
+        {
+            "subject": "download",
+            "object": [
+                "downloadable"
+            ]
+        },
+        {
+            "subject": "edit",
+            "object": [
+                "editable"
+            ]
+        },
+        {
+            "subject": "enjoy",
+            "object": [
+                "enjoyable"
+            ]
+        },
+        {
+            "subject": "execute",
+            "object": [
+                "executable"
+            ]
+        },
+        {
+            "subject": "expand",
+            "object": [
+                "expandable"
+            ]
+        },
+        {
+            "subject": "expect",
+            "object": [
+                "expectable"
+            ]
+        },
+        {
+            "subject": "explain",
+            "object": [
+                "explainable"
+            ]
+        },
+        {
+            "subject": "extend",
+            "object": [
+                "extendable"
+            ]
+        },
+        {
+            "subject": "foresee",
+            "object": [
+                "foreseeable"
+            ]
+        },
+        {
+            "subject": "identify",
+            "object": [
+                "identifiable"
+            ]
+        },
+        {
+            "subject": "imagine",
+            "object": [
+                "imaginable"
+            ]
+        },
+        {
+            "subject": "improve",
+            "object": [
+                "improvable"
+            ]
+        },
+        {
+            "subject": "inflate",
+            "object": [
+                "inflatable"
+            ]
+        },
+        {
+            "subject": "learn",
+            "object": [
+                "learnable"
+            ]
+        },
+        {
+            "subject": "maintain",
+            "object": [
+                "maintainable"
+            ]
+        },
+        {
+            "subject": "manage",
+            "object": [
+                "manageable"
+            ]
+        },
+        {
+            "subject": "observe",
+            "object": [
+                "observable"
+            ]
+        },
+        {
+            "subject": "perform",
+            "object": [
+                "performable"
+            ]
+        },
+        {
+            "subject": "predict",
+            "object": [
+                "predictable"
+            ]
+        },
+        {
+            "subject": "prefer",
+            "object": [
+                "preferable"
+            ]
+        },
+        {
+            "subject": "prevent",
+            "object": [
+                "preventable"
+            ]
+        },
+        {
+            "subject": "protect",
+            "object": [
+                "protectable"
+            ]
+        },
+        {
+            "subject": "publish",
+            "object": [
+                "publishable"
+            ]
+        },
+        {
+            "subject": "recognize",
+            "object": [
+                "recognizable",
+                "recognisable"
+            ]
+        },
+        {
+            "subject": "recommend",
+            "object": [
+                "recommendable"
+            ]
+        },
+        {
+            "subject": "rely",
+            "object": [
+                "reliable"
+            ]
+        },
+        {
+            "subject": "renew",
+            "object": [
+                "renewable"
+            ]
+        },
+        {
+            "subject": "replace",
+            "object": [
+                "replaceable"
+            ]
+        },
+        {
+            "subject": "represent",
+            "object": [
+                "representable"
+            ]
+        },
+        {
+            "subject": "survive",
+            "object": [
+                "survivable"
+            ]
+        },
+        {
+            "subject": "sustain",
+            "object": [
+                "sustainable"
+            ]
+        },
+        {
+            "subject": "understand",
+            "object": [
+                "understandable"
+            ]
+        },
+        {
+            "subject": "vary",
+            "object": [
+                "variable"
+            ]
+        },
+        {
+            "subject": "write",
+            "object": [
+                "writeable",
+                "writable"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

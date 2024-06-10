@@ -1,0 +1,320 @@
+{
+    "name": "noun+less_reg",
+    "prompt_templates": [
+        "Something without {} is",
+        "A thing missing {} is",
+        "Something that does not have {} is"
+    ],
+    "prompt_templates_zs": [
+        "Something without {} is",
+        "A thing missing {} is",
+        "Something that does not have {} is"
+    ],
+    "samples": [
+        {
+            "subject": "arm",
+            "object": [
+                "armless"
+            ]
+        },
+        {
+            "subject": "art",
+            "object": [
+                "artless"
+            ]
+        },
+        {
+            "subject": "bone",
+            "object": [
+                "boneless"
+            ]
+        },
+        {
+            "subject": "breath",
+            "object": [
+                "breathless"
+            ]
+        },
+        {
+            "subject": "carbon",
+            "object": [
+                "carbonless"
+            ]
+        },
+        {
+            "subject": "child",
+            "object": [
+                "childless"
+            ]
+        },
+        {
+            "subject": "collar",
+            "object": [
+                "collarless"
+            ]
+        },
+        {
+            "subject": "death",
+            "object": [
+                "deathless"
+            ]
+        },
+        {
+            "subject": "defence",
+            "object": [
+                "defenceless",
+                "defenseless"
+            ]
+        },
+        {
+            "subject": "effort",
+            "object": [
+                "effortless"
+            ]
+        },
+        {
+            "subject": "ego",
+            "object": [
+                "egoless"
+            ]
+        },
+        {
+            "subject": "emotion",
+            "object": [
+                "emotionless"
+            ]
+        },
+        {
+            "subject": "error",
+            "object": [
+                "errorless"
+            ]
+        },
+        {
+            "subject": "expression",
+            "object": [
+                "expressionless"
+            ]
+        },
+        {
+            "subject": "faith",
+            "object": [
+                "faithless"
+            ]
+        },
+        {
+            "subject": "friction",
+            "object": [
+                "frictionless"
+            ]
+        },
+        {
+            "subject": "friend",
+            "object": [
+                "friendless"
+            ]
+        },
+        {
+            "subject": "gender",
+            "object": [
+                "genderless"
+            ]
+        },
+        {
+            "subject": "goal",
+            "object": [
+                "goalless"
+            ]
+        },
+        {
+            "subject": "god",
+            "object": [
+                "godless"
+            ]
+        },
+        {
+            "subject": "guile",
+            "object": [
+                "guileless"
+            ]
+        },
+        {
+            "subject": "guilt",
+            "object": [
+                "guiltless"
+            ]
+        },
+        {
+            "subject": "hair",
+            "object": [
+                "hairless"
+            ]
+        },
+        {
+            "subject": "heart",
+            "object": [
+                "heartless"
+            ]
+        },
+        {
+            "subject": "heir",
+            "object": [
+                "heirless"
+            ]
+        },
+        {
+            "subject": "home",
+            "object": [
+                "homeless"
+            ]
+        },
+        {
+            "subject": "law",
+            "object": [
+                "lawless"
+            ]
+        },
+        {
+            "subject": "leg",
+            "object": [
+                "legless"
+            ]
+        },
+        {
+            "subject": "life",
+            "object": [
+                "lifeless",
+                "liveless"
+            ]
+        },
+        {
+            "subject": "luck",
+            "object": [
+                "luckless"
+            ]
+        },
+        {
+            "subject": "meat",
+            "object": [
+                "meatless"
+            ]
+        },
+        {
+            "subject": "mirth",
+            "object": [
+                "mirthless"
+            ]
+        },
+        {
+            "subject": "money",
+            "object": [
+                "moneyless"
+            ]
+        },
+        {
+            "subject": "odor",
+            "object": [
+                "odorless",
+                "odourless"
+            ]
+        },
+        {
+            "subject": "passion",
+            "object": [
+                "passionless"
+            ]
+        },
+        {
+            "subject": "path",
+            "object": [
+                "pathless"
+            ]
+        },
+        {
+            "subject": "penny",
+            "object": [
+                "penniless"
+            ]
+        },
+        {
+            "subject": "remorse",
+            "object": [
+                "remorseless"
+            ]
+        },
+        {
+            "subject": "ruth",
+            "object": [
+                "ruthless"
+            ]
+        },
+        {
+            "subject": "sensor",
+            "object": [
+                "sensorless"
+            ]
+        },
+        {
+            "subject": "sleeve",
+            "object": [
+                "sleeveless"
+            ]
+        },
+        {
+            "subject": "soul",
+            "object": [
+                "soulless"
+            ]
+        },
+        {
+            "subject": "speech",
+            "object": [
+                "speechless"
+            ]
+        },
+        {
+            "subject": "spine",
+            "object": [
+                "spineless"
+            ]
+        },
+        {
+            "subject": "tact",
+            "object": [
+                "tactless"
+            ]
+        },
+        {
+            "subject": "talent",
+            "object": [
+                "talentless"
+            ]
+        },
+        {
+            "subject": "thought",
+            "object": [
+                "thoughtless"
+            ]
+        },
+        {
+            "subject": "tooth",
+            "object": [
+                "toothless"
+            ]
+        },
+        {
+            "subject": "window",
+            "object": [
+                "windowless"
+            ]
+        },
+        {
+            "subject": "wit",
+            "object": [
+                "witless"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -1,0 +1,453 @@
+{
+    "name": "synonyms - exact",
+    "prompt_templates": [
+        "Another word for {} is ",
+        "Another way to say {} is",
+        "A different manner of saying {} is"
+    ],
+    "prompt_templates_zs": [
+        "Another word for {} is ",
+        "Another way to say {} is",
+        "A different manner of saying {} is"
+    ],
+    "samples": [
+        {
+            "subject": "airplane",
+            "object": [
+                "aeroplane",
+                "plane"
+            ]
+        },
+        {
+            "subject": "auto",
+            "object": [
+                "car",
+                "automobile",
+                "motorcar"
+            ]
+        },
+        {
+            "subject": "baby",
+            "object": [
+                "infant",
+                "babe"
+            ]
+        },
+        {
+            "subject": "bicycle",
+            "object": [
+                "bike",
+                "wheel",
+                "cycle"
+            ]
+        },
+        {
+            "subject": "child",
+            "object": [
+                "kid",
+                "youngster",
+                "minor",
+                "shaver",
+                "nipper",
+                "small_fry",
+                "tiddler",
+                "tike",
+                "tyke",
+                "fry",
+                "nestling"
+            ]
+        },
+        {
+            "subject": "cloth",
+            "object": [
+                "fabric",
+                "material",
+                "textile"
+            ]
+        },
+        {
+            "subject": "clothes",
+            "object": [
+                "clothing",
+                "apparel",
+                "dress"
+            ]
+        },
+        {
+            "subject": "confused",
+            "object": [
+                "baffled",
+                "befuddled",
+                "bemused",
+                "bewildered",
+                "confounded",
+                "lost",
+                "mazed",
+                "mixed-up"
+            ]
+        },
+        {
+            "subject": "dollars",
+            "object": [
+                "bucks"
+            ]
+        },
+        {
+            "subject": "emphasis",
+            "object": [
+                "accent",
+                "accentuaion",
+                "importance",
+                "stress",
+                "significance"
+            ]
+        },
+        {
+            "subject": "father",
+            "object": [
+                "dad",
+                "daddy"
+            ]
+        },
+        {
+            "subject": "flower",
+            "object": [
+                "blossom",
+                "bloom"
+            ]
+        },
+        {
+            "subject": "harbor",
+            "object": [
+                "seaport",
+                "haven",
+                "harbour"
+            ]
+        },
+        {
+            "subject": "help",
+            "object": [
+                "aid",
+                "assist"
+            ]
+        },
+        {
+            "subject": "hieroglyph",
+            "object": [
+                "hieroglyphic",
+                "pictogram"
+            ]
+        },
+        {
+            "subject": "homogeneous",
+            "object": [
+                "uniform",
+                "unvarying"
+            ]
+        },
+        {
+            "subject": "honest",
+            "object": [
+                "sincere",
+                "ingenuous",
+                "true",
+                "direct",
+                "truthful"
+            ]
+        },
+        {
+            "subject": "identical",
+            "object": [
+                "same",
+                "indistinguishable"
+            ]
+        },
+        {
+            "subject": "incorrect",
+            "object": [
+                "wrong",
+                "counterfactual",
+                "erroneous",
+                "inaccurate",
+                "specious",
+                "unsound",
+                "untrue",
+                "false"
+            ]
+        },
+        {
+            "subject": "intelligent",
+            "object": [
+                "clever",
+                "smart"
+            ]
+        },
+        {
+            "subject": "jewel",
+            "object": [
+                "gem",
+                "stone"
+            ]
+        },
+        {
+            "subject": "lad",
+            "object": [
+                "chap",
+                "fellow",
+                "feller",
+                "fella",
+                "gent",
+                "blighter",
+                "cuss",
+                "bloke"
+            ]
+        },
+        {
+            "subject": "lady",
+            "object": [
+                "madam",
+                "dame",
+                "ma'am",
+                "gentlewoman",
+                "madame",
+                "woman"
+            ]
+        },
+        {
+            "subject": "lazy",
+            "object": [
+                "indolent",
+                "faineant",
+                "otiose",
+                "slothful",
+                "work-shy"
+            ]
+        },
+        {
+            "subject": "list",
+            "object": [
+                "listing",
+                "enumeration"
+            ]
+        },
+        {
+            "subject": "loyal",
+            "object": [
+                "faithful",
+                "true",
+                "dependable",
+                "devoted",
+                "reliable"
+            ]
+        },
+        {
+            "subject": "market",
+            "object": [
+                "marketplace",
+                "mart",
+                "bazaar"
+            ]
+        },
+        {
+            "subject": "mend",
+            "object": [
+                "repair",
+                "fix",
+                "fixing",
+                "fixture",
+                "mending",
+                "reparation",
+                "patch",
+                "darn",
+                "darning"
+            ]
+        },
+        {
+            "subject": "mesh",
+            "object": [
+                "gauze",
+                "netting",
+                "veiling",
+                "hairnet",
+                "reseau",
+                "net",
+                "save-all",
+                "snood",
+                "sparker",
+                "tulle",
+                "wirework",
+                "grillwork"
+            ]
+        },
+        {
+            "subject": "monument",
+            "object": [
+                "memorial"
+            ]
+        },
+        {
+            "subject": "mother",
+            "object": [
+                "mom",
+                "mommy",
+                "mum"
+            ]
+        },
+        {
+            "subject": "murder",
+            "object": [
+                "slaying",
+                "slay",
+                "execution"
+            ]
+        },
+        {
+            "subject": "new",
+            "object": [
+                "modern",
+                "recent"
+            ]
+        },
+        {
+            "subject": "obsolete",
+            "object": [
+                "outdated",
+                "out-of-date",
+                "superannuated"
+            ]
+        },
+        {
+            "subject": "organized",
+            "object": [
+                "arranged",
+                "configured",
+                "corporate",
+                "incorporated",
+                "re-formed",
+                "reorganized",
+                "reorganised"
+            ]
+        },
+        {
+            "subject": "package",
+            "object": [
+                "parcel",
+                "pack",
+                "packet",
+                "bundle"
+            ]
+        },
+        {
+            "subject": "phone",
+            "object": [
+                "telephone",
+                "cell",
+                "cellphone",
+                "smartphone"
+            ]
+        },
+        {
+            "subject": "portion",
+            "object": [
+                "part",
+                "component_part",
+                "component",
+                "constituent"
+            ]
+        },
+        {
+            "subject": "railway",
+            "object": [
+                "railroad"
+            ]
+        },
+        {
+            "subject": "rational",
+            "object": [
+                "logical",
+                "coherent",
+                "reasonable",
+                "sane"
+            ]
+        },
+        {
+            "subject": "reasonable",
+            "object": [
+                "sensible"
+            ]
+        },
+        {
+            "subject": "rock",
+            "object": [
+                "stone"
+            ]
+        },
+        {
+            "subject": "shore",
+            "object": [
+                "coast",
+                "strand",
+                "bank",
+                "beach",
+                ""
+            ]
+        },
+        {
+            "subject": "snake",
+            "object": [
+                "serpent",
+                "ophidian"
+            ]
+        },
+        {
+            "subject": "sofa",
+            "object": [
+                "couch",
+                "lounge"
+            ]
+        },
+        {
+            "subject": "spouse",
+            "object": [
+                "partner",
+                "mate",
+                "better_half"
+            ]
+        },
+        {
+            "subject": "style",
+            "object": [
+                "manner",
+                "mode",
+                "fashion",
+                "way"
+            ]
+        },
+        {
+            "subject": "sweets",
+            "object": [
+                "confectionery",
+                "dessert",
+                "confection"
+            ]
+        },
+        {
+            "subject": "villain",
+            "object": [
+                "scoundrel",
+                "rascal"
+            ]
+        },
+        {
+            "subject": "vocabulary",
+            "object": [
+                "lexicon",
+                "wordbook",
+                "dictionary",
+                "glossary"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

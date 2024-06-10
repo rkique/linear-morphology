@@ -1,0 +1,317 @@
+{
+    "name": "verb+er_irreg",
+    "prompt_templates": [
+        "If you {} something, you are a",
+        "If someone {} something, they are a",
+        "To {}, one must be an "
+    ],
+    "prompt_templates_zs": [
+        "If you {} something, you are a",
+        "If someone {} something, they are a",
+        "To {}, one must be an "
+    ],
+    "samples": [
+        {
+            "subject": "achieve",
+            "object": [
+                "achiever"
+            ]
+        },
+        {
+            "subject": "advertise",
+            "object": [
+                "advertiser"
+            ]
+        },
+        {
+            "subject": "announce",
+            "object": [
+                "announcer"
+            ]
+        },
+        {
+            "subject": "bake",
+            "object": [
+                "baker"
+            ]
+        },
+        {
+            "subject": "begin",
+            "object": [
+                "beginner"
+            ]
+        },
+        {
+            "subject": "believe",
+            "object": [
+                "believer"
+            ]
+        },
+        {
+            "subject": "borrow",
+            "object": [
+                "borrower"
+            ]
+        },
+        {
+            "subject": "choreograph",
+            "object": [
+                "choreographer"
+            ]
+        },
+        {
+            "subject": "compose",
+            "object": [
+                "composer"
+            ]
+        },
+        {
+            "subject": "consume",
+            "object": [
+                "consumer"
+            ]
+        },
+        {
+            "subject": "contend",
+            "object": [
+                "contender"
+            ]
+        },
+        {
+            "subject": "defend",
+            "object": [
+                "defender"
+            ]
+        },
+        {
+            "subject": "deliver",
+            "object": [
+                "deliverer"
+            ]
+        },
+        {
+            "subject": "destroy",
+            "object": [
+                "destroyer"
+            ]
+        },
+        {
+            "subject": "determine",
+            "object": [
+                "determiner"
+            ]
+        },
+        {
+            "subject": "develop",
+            "object": [
+                "developer"
+            ]
+        },
+        {
+            "subject": "discover",
+            "object": [
+                "discoverer"
+            ]
+        },
+        {
+            "subject": "eat",
+            "object": [
+                "eater"
+            ]
+        },
+        {
+            "subject": "entertain",
+            "object": [
+                "entertainer"
+            ]
+        },
+        {
+            "subject": "examine",
+            "object": [
+                "examiner"
+            ]
+        },
+        {
+            "subject": "explore",
+            "object": [
+                "explorer"
+            ]
+        },
+        {
+            "subject": "follow",
+            "object": [
+                "follower"
+            ]
+        },
+        {
+            "subject": "interpret",
+            "object": [
+                "interpreter"
+            ]
+        },
+        {
+            "subject": "intrude",
+            "object": [
+                "intruder"
+            ]
+        },
+        {
+            "subject": "learn",
+            "object": [
+                "learner"
+            ]
+        },
+        {
+            "subject": "listen",
+            "object": [
+                "listener"
+            ]
+        },
+        {
+            "subject": "lose",
+            "object": [
+                "loser"
+            ]
+        },
+        {
+            "subject": "manage",
+            "object": [
+                "manager"
+            ]
+        },
+        {
+            "subject": "molest",
+            "object": [
+                "molester"
+            ]
+        },
+        {
+            "subject": "mourn",
+            "object": [
+                "mourner"
+            ]
+        },
+        {
+            "subject": "observe",
+            "object": [
+                "observer"
+            ]
+        },
+        {
+            "subject": "offend",
+            "object": [
+                "offender"
+            ]
+        },
+        {
+            "subject": "organise",
+            "object": [
+                "organiser"
+            ]
+        },
+        {
+            "subject": "organize",
+            "object": [
+                "organizer"
+            ]
+        },
+        {
+            "subject": "perform",
+            "object": [
+                "performer"
+            ]
+        },
+        {
+            "subject": "preach",
+            "object": [
+                "preacher"
+            ]
+        },
+        {
+            "subject": "promote",
+            "object": [
+                "promoter"
+            ]
+        },
+        {
+            "subject": "provide",
+            "object": [
+                "provider"
+            ]
+        },
+        {
+            "subject": "publish",
+            "object": [
+                "publisher"
+            ]
+        },
+        {
+            "subject": "receive",
+            "object": [
+                "receiver"
+            ]
+        },
+        {
+            "subject": "recommend",
+            "object": [
+                "recommender"
+            ]
+        },
+        {
+            "subject": "send",
+            "object": [
+                "sender"
+            ]
+        },
+        {
+            "subject": "skydive",
+            "object": [
+                "skydiver"
+            ]
+        },
+        {
+            "subject": "slay",
+            "object": [
+                "slayer"
+            ]
+        },
+        {
+            "subject": "speak",
+            "object": [
+                "speaker"
+            ]
+        },
+        {
+            "subject": "subscribe",
+            "object": [
+                "subscriber"
+            ]
+        },
+        {
+            "subject": "suffer",
+            "object": [
+                "sufferer"
+            ]
+        },
+        {
+            "subject": "teach",
+            "object": [
+                "teacher"
+            ]
+        },
+        {
+            "subject": "tell",
+            "object": [
+                "teller"
+            ]
+        },
+        {
+            "subject": "write",
+            "object": [
+                "writer"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

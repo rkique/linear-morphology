@@ -199,10 +199,76 @@ class JacobianIclEstimator(LinearRelationEstimator):
             beta=self.beta,
         ).estimate_for_subject(train.subject, prompt_template_icl)
 
-# @dataclass(frozen=True)
-# class JacobianIclMeanEstimator(LinearRelationEstimator):
-#     ...
+@dataclass(frozen=True)
+class JacobianIclMeanEstimator(LinearRelationEstimator):
+    h_layer: Layer
+    z_layer: Layer | None = None
+    beta: float | None = None
+    rank: int | None = None
 
+    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
+        _check_nonempty(
+            samples=relation.samples, prompt_templates=relation.prompt_templates
+        )
+        _warn_gt_1(prompt_templates=relation.prompt_templates)
+
+        samples = relation.samples
+        prompt_template = relation.prompt_templates[0]
+
+        approxes = []
+        for sample in samples:
+            prompt = functional.make_prompt(
+                mt=self.mt,
+                prompt_template=prompt_template,
+                subject=sample.subject,
+                examples=samples,
+            )
+            logger.debug("estimating J for prompt:\n" + prompt)
+            
+            #tokenized inputs!
+            h_index, inputs = functional.find_subject_token_index(
+                mt=self.mt,
+                prompt=prompt,
+                subject=sample.subject
+            )
+            logger.debug(f"subject={sample.subject}, h_index={h_index}")
+
+            #utilizing order_1_approx, but nothing from JacobianIclEstimator
+            approx = functional.order_1_approx(
+                h_layer=self.h_layer,
+                h_index=h_index,
+                z_layer=self.z_layer,
+                z_index=-1,
+                inputs=inputs,
+            )
+            approxes.append(approx)
+        #take mean to get J and b
+        weight = torch.stack([approx.weight for approx in approxes]).mean(dim=0)
+        bias = torch.stack([approx.bias for approx in approxes]).mean(dim=0)
+        
+        prompt_template_icl = functional.make_prompt(
+            mt=self.mt,
+            prompt_template=prompt_template,
+            examples=samples,
+            subject="{}"
+        )
+        
+        if self.rank is not None:
+            weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
+        
+        #TODO: add metadata
+        operator = LinearRelationOperator(
+            mt=self.mt,
+            weight=weight,
+            bias=bias,
+            h_layer=self.h_layer,
+            z_layer=approxes[0].z_layer,
+            prompt_template=prompt_template_icl,
+            beta=self.beta
+        )
+        
+        return operator
+    
 #This inherits LinearRelationEstimator so it is also called on a Relation.
 @dataclass(frozen=True)
 class Word2VecIclEstimator(LinearRelationEstimator):
@@ -219,7 +285,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         device = models.determine_device(self.mt)
         dtype = models.determine_dtype(self.mt)
         samples = relation.samples
-        #implying subject immediately predicts object (?)
+        #zs mode seems to be no-context (prompt directly followed by "")
         prompt_template = (
             self.mt.tokenizer.eos_token + " {}" if self.mode == "zs" else relation.prompt_templates[0]
         )
@@ -242,10 +308,12 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #We want to calculate Expected(o - s)
         #For each sample
         for sample_idx in range(len(training_samples)):
-            #Make a prompt from sample
+            #Make a prompt from the sample
             sample = training_samples[sample_idx]
+
             if self.mode == "zs":
                 prompt = prompt_template.format(sample.subject)
+            #omitting the sample_idx.
             elif self.mode == "icl":
                 prompt = functional.make_prompt(
                     mt=self.mt,

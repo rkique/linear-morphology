@@ -1,0 +1,317 @@
+{
+    "name": "verb+ment_irreg",
+    "prompt_templates": [
+        "To {} results in a",
+        "To {} brings about a"
+    ],
+    "prompt_templates_zs": [
+        "To {} results in a",
+        "To {} brings about a"
+    ],
+    "samples": [
+        {
+            "subject": "accomplish",
+            "object": [
+                "accomplishment"
+            ]
+        },
+        {
+            "subject": "achieve",
+            "object": [
+                "achievement"
+            ]
+        },
+        {
+            "subject": "acknowledge",
+            "object": [
+                "acknowledgement"
+            ]
+        },
+        {
+            "subject": "adjust",
+            "object": [
+                "adjustment"
+            ]
+        },
+        {
+            "subject": "advertise",
+            "object": [
+                "advertisement",
+                "advertizement"
+            ]
+        },
+        {
+            "subject": "agree",
+            "object": [
+                "agreement"
+            ]
+        },
+        {
+            "subject": "align",
+            "object": [
+                "alignment"
+            ]
+        },
+        {
+            "subject": "amend",
+            "object": [
+                "amendment"
+            ]
+        },
+        {
+            "subject": "amuse",
+            "object": [
+                "amusement"
+            ]
+        },
+        {
+            "subject": "announce",
+            "object": [
+                "announcement"
+            ]
+        },
+        {
+            "subject": "appoint",
+            "object": [
+                "appointment"
+            ]
+        },
+        {
+            "subject": "arrange",
+            "object": [
+                "arrangement"
+            ]
+        },
+        {
+            "subject": "assess",
+            "object": [
+                "assessment"
+            ]
+        },
+        {
+            "subject": "assign",
+            "object": [
+                "assignment"
+            ]
+        },
+        {
+            "subject": "commit",
+            "object": [
+                "commitment"
+            ]
+        },
+        {
+            "subject": "detach",
+            "object": [
+                "detachment"
+            ]
+        },
+        {
+            "subject": "develop",
+            "object": [
+                "development"
+            ]
+        },
+        {
+            "subject": "disagree",
+            "object": [
+                "disagreement"
+            ]
+        },
+        {
+            "subject": "disappoint",
+            "object": [
+                "disappointment"
+            ]
+        },
+        {
+            "subject": "displace",
+            "object": [
+                "displacement"
+            ]
+        },
+        {
+            "subject": "embarrass",
+            "object": [
+                "embarrassment"
+            ]
+        },
+        {
+            "subject": "encourage",
+            "object": [
+                "encouragement"
+            ]
+        },
+        {
+            "subject": "endorse",
+            "object": [
+                "endorsement"
+            ]
+        },
+        {
+            "subject": "enforce",
+            "object": [
+                "enforcement"
+            ]
+        },
+        {
+            "subject": "engage",
+            "object": [
+                "engagement"
+            ]
+        },
+        {
+            "subject": "enhance",
+            "object": [
+                "enhancement"
+            ]
+        },
+        {
+            "subject": "enjoy",
+            "object": [
+                "enjoyment"
+            ]
+        },
+        {
+            "subject": "enlighten",
+            "object": [
+                "enlightenment"
+            ]
+        },
+        {
+            "subject": "enroll",
+            "object": [
+                "enrollment",
+                "enrolment"
+            ]
+        },
+        {
+            "subject": "entertain",
+            "object": [
+                "entertainment"
+            ]
+        },
+        {
+            "subject": "entitle",
+            "object": [
+                "entitlement"
+            ]
+        },
+        {
+            "subject": "equip",
+            "object": [
+                "equipment"
+            ]
+        },
+        {
+            "subject": "establish",
+            "object": [
+                "establishment"
+            ]
+        },
+        {
+            "subject": "excite",
+            "object": [
+                "excitement"
+            ]
+        },
+        {
+            "subject": "fulfil",
+            "object": [
+                "fulfilment"
+            ]
+        },
+        {
+            "subject": "fulfill",
+            "object": [
+                "fulfillment"
+            ]
+        },
+        {
+            "subject": "harass",
+            "object": [
+                "harassment"
+            ]
+        },
+        {
+            "subject": "impair",
+            "object": [
+                "impairment"
+            ]
+        },
+        {
+            "subject": "improve",
+            "object": [
+                "improvement"
+            ]
+        },
+        {
+            "subject": "infringe",
+            "object": [
+                "infringement"
+            ]
+        },
+        {
+            "subject": "invest",
+            "object": [
+                "investment"
+            ]
+        },
+        {
+            "subject": "involve",
+            "object": [
+                "involvement"
+            ]
+        },
+        {
+            "subject": "manage",
+            "object": [
+                "management"
+            ]
+        },
+        {
+            "subject": "punish",
+            "object": [
+                "punishment"
+            ]
+        },
+        {
+            "subject": "redevelop",
+            "object": [
+                "redevelopment"
+            ]
+        },
+        {
+            "subject": "reimburse",
+            "object": [
+                "reimbursement"
+            ]
+        },
+        {
+            "subject": "reinforce",
+            "object": [
+                "reinforcement"
+            ]
+        },
+        {
+            "subject": "replace",
+            "object": [
+                "replacement"
+            ]
+        },
+        {
+            "subject": "require",
+            "object": [
+                "requirement"
+            ]
+        },
+        {
+            "subject": "resent",
+            "object": [
+                "resentment"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

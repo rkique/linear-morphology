@@ -1,0 +1,367 @@
+{
+    "name": "over+adj_reg",
+    "prompt_templates": [
+        "If something is too {}, it is",
+        "When something is overly {}, it is",
+        "if it is too {}, then it is"
+    ],
+    "prompt_templates_zs": [
+        "If something is too {}, it is",
+        "When something is overly {}, it is",
+        "if it is too {}, then it is"
+    ],
+    "samples": [
+        {
+            "subject": "ambitious",
+            "object": [
+                "overambitious",
+                "over-ambitious"
+            ]
+        },
+        {
+            "subject": "arching",
+            "object": [
+                "overarching",
+                "over-arching"
+            ]
+        },
+        {
+            "subject": "booked",
+            "object": [
+                "overbooked",
+                "over-booked"
+            ]
+        },
+        {
+            "subject": "charged",
+            "object": [
+                "overcharged",
+                "over-charged"
+            ]
+        },
+        {
+            "subject": "compensated",
+            "object": [
+                "overcompensated",
+                "over-compensated"
+            ]
+        },
+        {
+            "subject": "confident",
+            "object": [
+                "overconfident",
+                "over-confident"
+            ]
+        },
+        {
+            "subject": "cooked",
+            "object": [
+                "overcooked",
+                "over-cooked"
+            ]
+        },
+        {
+            "subject": "crowded",
+            "object": [
+                "overcrowded",
+                "over-crowded"
+            ]
+        },
+        {
+            "subject": "developed",
+            "object": [
+                "overdeveloped",
+                "over-developed"
+            ]
+        },
+        {
+            "subject": "done",
+            "object": [
+                "overdone",
+                "over-done"
+            ]
+        },
+        {
+            "subject": "dressed",
+            "object": [
+                "overdressed",
+                "over-dressed"
+            ]
+        },
+        {
+            "subject": "enthusiastic",
+            "object": [
+                "overenthusiastic",
+                "over-enthusiastic"
+            ]
+        },
+        {
+            "subject": "excited",
+            "object": [
+                "overexcited",
+                "over-excited"
+            ]
+        },
+        {
+            "subject": "exposed",
+            "object": [
+                "overexposed",
+                "over-exposed"
+            ]
+        },
+        {
+            "subject": "filled",
+            "object": [
+                "overfilled",
+                "over-filled"
+            ]
+        },
+        {
+            "subject": "grown",
+            "object": [
+                "overgrown",
+                "over-grown"
+            ]
+        },
+        {
+            "subject": "heard",
+            "object": [
+                "overheard",
+                "over-heard"
+            ]
+        },
+        {
+            "subject": "heated",
+            "object": [
+                "overheated",
+                "over-heated"
+            ]
+        },
+        {
+            "subject": "inflated",
+            "object": [
+                "overinflated",
+                "over-inflated"
+            ]
+        },
+        {
+            "subject": "laid",
+            "object": [
+                "overlaid",
+                "over-laid"
+            ]
+        },
+        {
+            "subject": "loaded",
+            "object": [
+                "overloaded",
+                "over-loaded"
+            ]
+        },
+        {
+            "subject": "optimistic",
+            "object": [
+                "overoptimistic",
+                "over-optimistic"
+            ]
+        },
+        {
+            "subject": "paid",
+            "object": [
+                "overpaid",
+                "over-paid"
+            ]
+        },
+        {
+            "subject": "painted",
+            "object": [
+                "overpainted",
+                "over-painted"
+            ]
+        },
+        {
+            "subject": "played",
+            "object": [
+                "overplayed",
+                "over-played"
+            ]
+        },
+        {
+            "subject": "populated",
+            "object": [
+                "overpopulated",
+                "over-populated"
+            ]
+        },
+        {
+            "subject": "powered",
+            "object": [
+                "overpowered",
+                "over-powered"
+            ]
+        },
+        {
+            "subject": "protected",
+            "object": [
+                "overprotected",
+                "over-protected"
+            ]
+        },
+        {
+            "subject": "protective",
+            "object": [
+                "overprotective",
+                "over-protective"
+            ]
+        },
+        {
+            "subject": "qualified",
+            "object": [
+                "overqualified",
+                "over-qualified"
+            ]
+        },
+        {
+            "subject": "represented",
+            "object": [
+                "overrepresented",
+                "over-represented"
+            ]
+        },
+        {
+            "subject": "saturated",
+            "object": [
+                "oversaturated",
+                "over-saturated"
+            ]
+        },
+        {
+            "subject": "shadowed",
+            "object": [
+                "overshadowed",
+                "over-shadowed"
+            ]
+        },
+        {
+            "subject": "simplified",
+            "object": [
+                "oversimplified",
+                "over-simplified"
+            ]
+        },
+        {
+            "subject": "sized",
+            "object": [
+                "oversized",
+                "over-sized"
+            ]
+        },
+        {
+            "subject": "sold",
+            "object": [
+                "oversold",
+                "over-sold"
+            ]
+        },
+        {
+            "subject": "spent",
+            "object": [
+                "overspent",
+                "over-spent"
+            ]
+        },
+        {
+            "subject": "stated",
+            "object": [
+                "overstated",
+                "over-stated"
+            ]
+        },
+        {
+            "subject": "stimulated",
+            "object": [
+                "overstimulated",
+                "over-stimulated"
+            ]
+        },
+        {
+            "subject": "stocked",
+            "object": [
+                "overstocked",
+                "over-stocked"
+            ]
+        },
+        {
+            "subject": "strained",
+            "object": [
+                "overstrained",
+                "over-strained"
+            ]
+        },
+        {
+            "subject": "stressed",
+            "object": [
+                "overstressed",
+                "over-stressed"
+            ]
+        },
+        {
+            "subject": "stretched",
+            "object": [
+                "overstretched",
+                "over-stretched"
+            ]
+        },
+        {
+            "subject": "subscribed",
+            "object": [
+                "oversubscribed",
+                "over-subscribed"
+            ]
+        },
+        {
+            "subject": "taken",
+            "object": [
+                "overtaken",
+                "over-taken"
+            ]
+        },
+        {
+            "subject": "thrown",
+            "object": [
+                "overthrown",
+                "over-thrown"
+            ]
+        },
+        {
+            "subject": "turned",
+            "object": [
+                "overturned",
+                "over-turned"
+            ]
+        },
+        {
+            "subject": "used",
+            "object": [
+                "overused",
+                "over-used"
+            ]
+        },
+        {
+            "subject": "written",
+            "object": [
+                "overwritten",
+                "over-written"
+            ]
+        },
+        {
+            "subject": "zealous",
+            "object": [
+                "overzealous",
+                "over-zealous"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

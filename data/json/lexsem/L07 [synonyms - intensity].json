@@ -1,0 +1,521 @@
+{
+    "name": "synonyms - intensity",
+    "prompt_templates": [
+        "A more intense word for {} is ",
+        "A more extreme version of {} is ",
+        "An intensified form of {} is "
+    ],
+    "prompt_templates_zs": [
+        "A more intense word for {} is ",
+        "A more extreme version of {} is ",
+        "An intensified form of {} is "
+    ],
+    "samples": [
+        {
+            "subject": "afraid",
+            "object": [
+                "terrified",
+                "horrified",
+                "scared",
+                "stiff",
+                "petrified",
+                "fearful",
+                "panicky"
+            ]
+        },
+        {
+            "subject": "angry",
+            "object": [
+                "furious",
+                "enraged",
+                "outraged",
+                "aggrivated",
+                "irate",
+                "seething"
+            ]
+        },
+        {
+            "subject": "ask",
+            "object": [
+                "beg",
+                "implore",
+                "pray",
+                "entreat",
+                "supplicate",
+                "insist"
+            ]
+        },
+        {
+            "subject": "bad",
+            "object": [
+                "awful",
+                "atrocious",
+                "abominable",
+                "dreadful",
+                "painful",
+                "terrible",
+                "unspeakable"
+            ]
+        },
+        {
+            "subject": "boring",
+            "object": [
+                "tedious",
+                "deadening",
+                "dull",
+                "ho-hum",
+                "irksome",
+                "tiresome",
+                "wearisome"
+            ]
+        },
+        {
+            "subject": "cat",
+            "object": [
+                "lion",
+                "tiger",
+                "leopard",
+                "panther",
+                "jaguar"
+            ]
+        },
+        {
+            "subject": "chuckle",
+            "object": [
+                "laugh",
+                "guffaw",
+                "chortle",
+                "guffaw",
+                "snicker",
+                "snigger",
+                "titter",
+                "roar"
+            ]
+        },
+        {
+            "subject": "confused",
+            "object": [
+                "lost",
+                "bewildered",
+                "trapped",
+                "desperate"
+            ]
+        },
+        {
+            "subject": "creative",
+            "object": [
+                "ingenious",
+                "inventive",
+                "demiurgic",
+                "deviceful",
+                "innovational",
+                "innovative",
+                "innovatory",
+                "original",
+                "originative"
+            ]
+        },
+        {
+            "subject": "cry",
+            "object": [
+                "scream",
+                "shriek",
+                "screech",
+                "screeching"
+            ]
+        },
+        {
+            "subject": "damp",
+            "object": [
+                "drenched",
+                "dripping",
+                "saturated",
+                "soaked",
+                "soaking",
+                "sodden",
+                "sopping",
+                "soppy",
+                "soused",
+                "wringing-wet"
+            ]
+        },
+        {
+            "subject": "dinner",
+            "object": [
+                "feast",
+                "banquet",
+                "fiesta"
+            ]
+        },
+        {
+            "subject": "dislike",
+            "object": [
+                "hate",
+                "abhor",
+                "detest",
+                "loathe",
+                "abominate",
+                "execrate",
+                "contemn",
+                "despise",
+                "scorn",
+                "disdain"
+            ]
+        },
+        {
+            "subject": "doze",
+            "object": [
+                "sleep",
+                "slumber"
+            ]
+        },
+        {
+            "subject": "drizzle",
+            "object": [
+                "rain",
+                "shower",
+                "raifall",
+                "deluge"
+            ]
+        },
+        {
+            "subject": "excited",
+            "object": [
+                "agitated",
+                "nervous"
+            ]
+        },
+        {
+            "subject": "faith",
+            "object": [
+                "fanatism",
+                "fanaticism",
+                "zealotry"
+            ]
+        },
+        {
+            "subject": "giggle",
+            "object": [
+                "laugh",
+                "guffaw",
+                "chortle",
+                "guffaw",
+                "snicker",
+                "snigger",
+                "titter",
+                "roar"
+            ]
+        },
+        {
+            "subject": "guilty",
+            "object": [
+                "remorseful",
+                "sorrowful",
+                "unworthy"
+            ]
+        },
+        {
+            "subject": "happy",
+            "object": [
+                "ecstatic",
+                "enraptured",
+                "rapturous",
+                "rapt",
+                "rhapsodic"
+            ]
+        },
+        {
+            "subject": "house",
+            "object": [
+                "palace",
+                "castle"
+            ]
+        },
+        {
+            "subject": "hungry",
+            "object": [
+                "starving",
+                "famished",
+                "peckish",
+                "ravenous",
+                "starved"
+            ]
+        },
+        {
+            "subject": "indulge",
+            "object": [
+                "pamper",
+                "spoil",
+                "coddle"
+            ]
+        },
+        {
+            "subject": "interesting",
+            "object": [
+                "exciting",
+                "exhilarant",
+                "exhilarating",
+                "exhilarative",
+                "eye-popping",
+                "inspiring",
+                "intoxicating",
+                "rousing",
+                "stimulating",
+                "stirring",
+                "arresting",
+                "interesting",
+                "intriguing",
+                "moving",
+                "provocative",
+                "heady",
+                "thrilling"
+            ]
+        },
+        {
+            "subject": "irritate",
+            "object": [
+                "enrage",
+                "incense",
+                "infuriate",
+                "ire",
+                "mad",
+                "madden",
+                "steam",
+                "umbrage"
+            ]
+        },
+        {
+            "subject": "jog",
+            "object": [
+                "run",
+                "scarper",
+                "flee",
+                "fly"
+            ]
+        },
+        {
+            "subject": "lake",
+            "object": [
+                "sea",
+                "ocean"
+            ]
+        },
+        {
+            "subject": "like",
+            "object": [
+                "love",
+                "care",
+                "fond",
+                "crush",
+                "infatuate"
+            ]
+        },
+        {
+            "subject": "love",
+            "object": [
+                "adore",
+                "fetishize",
+                "idolize",
+                "idolise",
+                "worship",
+                "hero-worship",
+                "revere"
+            ]
+        },
+        {
+            "subject": "monkey",
+            "object": [
+                "gorilla"
+            ]
+        },
+        {
+            "subject": "nap",
+            "object": [
+                "sleep",
+                "slumber"
+            ]
+        },
+        {
+            "subject": "necessary",
+            "object": [
+                "essential",
+                "indispensable",
+                "vital",
+                "required"
+            ]
+        },
+        {
+            "subject": "opposed",
+            "object": [
+                "averse",
+                "antipathetic",
+                "antipathetical",
+                "indisposed",
+                "loath",
+                "loth"
+            ]
+        },
+        {
+            "subject": "pain",
+            "object": [
+                "torment",
+                "torture",
+                "agony"
+            ]
+        },
+        {
+            "subject": "pony",
+            "object": [
+                "horse"
+            ]
+        },
+        {
+            "subject": "poorly",
+            "object": [
+                "afflicted",
+                "sick",
+                "ill",
+                "stricken"
+            ]
+        },
+        {
+            "subject": "rain",
+            "object": [
+                "deluge",
+                "shower"
+            ]
+        },
+        {
+            "subject": "sad",
+            "object": [
+                "desparate",
+                "despondent",
+                "despairing",
+                "desponding",
+                "forlorn",
+                "hopeless",
+                "melancholy"
+            ]
+        },
+        {
+            "subject": "sea",
+            "object": [
+                "ocean"
+            ]
+        },
+        {
+            "subject": "snack",
+            "object": [
+                "meal",
+                "eat"
+            ]
+        },
+        {
+            "subject": "sniffles",
+            "object": [
+                "pneumonia"
+            ]
+        },
+        {
+            "subject": "soon",
+            "object": [
+                "immediately",
+                "promptly",
+                "straightaway"
+            ]
+        },
+        {
+            "subject": "strong",
+            "object": [
+                "powerful",
+                "forceful",
+                "super",
+                "potent"
+            ]
+        },
+        {
+            "subject": "tasty",
+            "object": [
+                "delicious",
+                "delectable",
+                "luscious",
+                "pleasant-tasting",
+                "scrumptious",
+                "toothsome",
+                "yummy",
+                "mouth-watering",
+                "ambrosial",
+                "heavenly"
+            ]
+        },
+        {
+            "subject": "tired",
+            "object": [
+                "exhausted",
+                "drained"
+            ]
+        },
+        {
+            "subject": "unfortunate",
+            "object": [
+                "tragic",
+                "woeful",
+                "grievous",
+                "wretched",
+                "miserable",
+                "awful",
+                "lamentable",
+                "regrettable",
+                "desperate",
+                "hopeless",
+                "disastrous"
+            ]
+        },
+        {
+            "subject": "unhappy",
+            "object": [
+                "miserable",
+                "suffering",
+                "wretched"
+            ]
+        },
+        {
+            "subject": "want",
+            "object": [
+                "crave",
+                "hunger",
+                "thirst",
+                "starve",
+                "lust"
+            ]
+        },
+        {
+            "subject": "warm",
+            "object": [
+                "hot",
+                "fiery",
+                "flaming",
+                "heated",
+                "red-hot",
+                "sizzling",
+                "sensual",
+                "sultry",
+                "torrid",
+                "white-hot"
+            ]
+        },
+        {
+            "subject": "well",
+            "object": [
+                "flourishing",
+                "robust",
+                "booming",
+                "prospering",
+                "prosperous",
+                "thriving"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

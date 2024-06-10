@@ -1,0 +1,317 @@
+{
+    "name": "adj+ly_reg",
+    "prompt_templates": [
+        "The adjective form of {} is",
+        "The adjective derived from {} is",
+        "The descriptive form of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The adjective form of {} is",
+        "The adjective derived from {} is",
+        "The descriptive form of {} is"
+    ],
+    "samples": [
+        {
+            "subject": "according",
+            "object": [
+                "accordingly"
+            ]
+        },
+        {
+            "subject": "actual",
+            "object": [
+                "actually"
+            ]
+        },
+        {
+            "subject": "additional",
+            "object": [
+                "additionally"
+            ]
+        },
+        {
+            "subject": "apparent",
+            "object": [
+                "apparently"
+            ]
+        },
+        {
+            "subject": "beautiful",
+            "object": [
+                "beautifully"
+            ]
+        },
+        {
+            "subject": "clinical",
+            "object": [
+                "clinically"
+            ]
+        },
+        {
+            "subject": "creative",
+            "object": [
+                "creatively"
+            ]
+        },
+        {
+            "subject": "critical",
+            "object": [
+                "critically"
+            ]
+        },
+        {
+            "subject": "cultural",
+            "object": [
+                "culturally"
+            ]
+        },
+        {
+            "subject": "decided",
+            "object": [
+                "decidedly"
+            ]
+        },
+        {
+            "subject": "different",
+            "object": [
+                "differently"
+            ]
+        },
+        {
+            "subject": "digital",
+            "object": [
+                "digitally"
+            ]
+        },
+        {
+            "subject": "effective",
+            "object": [
+                "effectively"
+            ]
+        },
+        {
+            "subject": "environmental",
+            "object": [
+                "environmentally"
+            ]
+        },
+        {
+            "subject": "extensive",
+            "object": [
+                "extensively"
+            ]
+        },
+        {
+            "subject": "famous",
+            "object": [
+                "famously"
+            ]
+        },
+        {
+            "subject": "federal",
+            "object": [
+                "federally"
+            ]
+        },
+        {
+            "subject": "financial",
+            "object": [
+                "financially"
+            ]
+        },
+        {
+            "subject": "global",
+            "object": [
+                "globally"
+            ]
+        },
+        {
+            "subject": "historical",
+            "object": [
+                "historically"
+            ]
+        },
+        {
+            "subject": "huge",
+            "object": [
+                "hugely"
+            ]
+        },
+        {
+            "subject": "immediate",
+            "object": [
+                "immediately"
+            ]
+        },
+        {
+            "subject": "important",
+            "object": [
+                "importantly"
+            ]
+        },
+        {
+            "subject": "increasing",
+            "object": [
+                "increasingly"
+            ]
+        },
+        {
+            "subject": "interesting",
+            "object": [
+                "interestingly"
+            ]
+        },
+        {
+            "subject": "internal",
+            "object": [
+                "internally"
+            ]
+        },
+        {
+            "subject": "international",
+            "object": [
+                "internationally"
+            ]
+        },
+        {
+            "subject": "legal",
+            "object": [
+                "legally"
+            ]
+        },
+        {
+            "subject": "mental",
+            "object": [
+                "mentally"
+            ]
+        },
+        {
+            "subject": "nice",
+            "object": [
+                "nicely"
+            ]
+        },
+        {
+            "subject": "obvious",
+            "object": [
+                "obviously"
+            ]
+        },
+        {
+            "subject": "physical",
+            "object": [
+                "physically"
+            ]
+        },
+        {
+            "subject": "political",
+            "object": [
+                "politically"
+            ]
+        },
+        {
+            "subject": "popular",
+            "object": [
+                "popularly"
+            ]
+        },
+        {
+            "subject": "practical",
+            "object": [
+                "practically"
+            ]
+        },
+        {
+            "subject": "previous",
+            "object": [
+                "previously"
+            ]
+        },
+        {
+            "subject": "rare",
+            "object": [
+                "rarely"
+            ]
+        },
+        {
+            "subject": "regional",
+            "object": [
+                "regionally"
+            ]
+        },
+        {
+            "subject": "serious",
+            "object": [
+                "seriously"
+            ]
+        },
+        {
+            "subject": "sexual",
+            "object": [
+                "sexually"
+            ]
+        },
+        {
+            "subject": "significant",
+            "object": [
+                "significantly"
+            ]
+        },
+        {
+            "subject": "similar",
+            "object": [
+                "similarly"
+            ]
+        },
+        {
+            "subject": "strong",
+            "object": [
+                "strongly"
+            ]
+        },
+        {
+            "subject": "subsequent",
+            "object": [
+                "subsequently"
+            ]
+        },
+        {
+            "subject": "successful",
+            "object": [
+                "successfully"
+            ]
+        },
+        {
+            "subject": "traditional",
+            "object": [
+                "traditionally"
+            ]
+        },
+        {
+            "subject": "typical",
+            "object": [
+                "typically"
+            ]
+        },
+        {
+            "subject": "unique",
+            "object": [
+                "uniquely"
+            ]
+        },
+        {
+            "subject": "virtual",
+            "object": [
+                "virtually"
+            ]
+        },
+        {
+            "subject": "visual",
+            "object": [
+                "visually"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

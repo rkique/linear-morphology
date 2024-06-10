@@ -1,0 +1,380 @@
+{
+    "name": "meronyms - member",
+    "prompt_templates": [
+        "A {} is a member of a",
+        "A {} is a part of a",
+        "A {} belongs to a"
+    ],
+    "prompt_templates_zs": [
+        "A {} is a member of a",
+        "A {} is a part of a",
+        "A {} belongs to a"
+    ],
+    "samples": [
+        {
+            "subject": "acrobat",
+            "object": [
+                "troupe"
+            ]
+        },
+        {
+            "subject": "antelope",
+            "object": [
+                "herd"
+            ]
+        },
+        {
+            "subject": "bee",
+            "object": [
+                "swarm",
+                "hive",
+                "colony",
+                "drift",
+                "cast",
+                "nest",
+                "rabble",
+                "stand"
+            ]
+        },
+        {
+            "subject": "bird",
+            "object": [
+                "flock"
+            ]
+        },
+        {
+            "subject": "book",
+            "object": [
+                "library",
+                "shelf",
+                "collection",
+                "accounting",
+                "accounting_system",
+                "method_of_accounting"
+            ]
+        },
+        {
+            "subject": "calf",
+            "object": [
+                "cattle",
+                "herd"
+            ]
+        },
+        {
+            "subject": "car",
+            "object": [
+                "train",
+                "procession"
+            ]
+        },
+        {
+            "subject": "cat",
+            "object": [
+                "clowder",
+                "glaring",
+                "clutter",
+                "pounce"
+            ]
+        },
+        {
+            "subject": "cattle",
+            "object": [
+                "herd"
+            ]
+        },
+        {
+            "subject": "christian",
+            "object": [
+                "congregation",
+                "church",
+                "parish"
+            ]
+        },
+        {
+            "subject": "citizen",
+            "object": [
+                "citizenry",
+                "country",
+                "state"
+            ]
+        },
+        {
+            "subject": "college",
+            "object": [
+                "university"
+            ]
+        },
+        {
+            "subject": "county",
+            "object": [
+                "state",
+                "country"
+            ]
+        },
+        {
+            "subject": "cow",
+            "object": [
+                "herd"
+            ]
+        },
+        {
+            "subject": "crow",
+            "object": [
+                "murder"
+            ]
+        },
+        {
+            "subject": "division",
+            "object": [
+                "company",
+                "business",
+                "platoon",
+                "battle_group"
+            ]
+        },
+        {
+            "subject": "elephant",
+            "object": [
+                "herd"
+            ]
+        },
+        {
+            "subject": "employee",
+            "object": [
+                "staff",
+                "company"
+            ]
+        },
+        {
+            "subject": "fish",
+            "object": [
+                "school"
+            ]
+        },
+        {
+            "subject": "flower",
+            "object": [
+                "bouquet",
+                "bunch"
+            ]
+        },
+        {
+            "subject": "galaxy",
+            "object": [
+                "universe"
+            ]
+        },
+        {
+            "subject": "goose",
+            "object": [
+                "gaggle"
+            ]
+        },
+        {
+            "subject": "juror",
+            "object": [
+                "jury"
+            ]
+        },
+        {
+            "subject": "kitten",
+            "object": [
+                "litter"
+            ]
+        },
+        {
+            "subject": "letter",
+            "object": [
+                "alphabet"
+            ]
+        },
+        {
+            "subject": "lion",
+            "object": [
+                "pride"
+            ]
+        },
+        {
+            "subject": "listener",
+            "object": [
+                "audience"
+            ]
+        },
+        {
+            "subject": "member",
+            "object": [
+                "club",
+                "team",
+                "group",
+                "band",
+                "community"
+            ]
+        },
+        {
+            "subject": "musician",
+            "object": [
+                "orchestra",
+                "band"
+            ]
+        },
+        {
+            "subject": "nomad",
+            "object": [
+                "horde"
+            ]
+        },
+        {
+            "subject": "page",
+            "object": [
+                "book",
+                "notebook",
+                "website",
+                "web-site"
+            ]
+        },
+        {
+            "subject": "parishioner",
+            "object": [
+                "parish",
+                "church"
+            ]
+        },
+        {
+            "subject": "person",
+            "object": [
+                "society",
+                "company",
+                "party",
+                "world"
+            ]
+        },
+        {
+            "subject": "photo",
+            "object": [
+                "album",
+                "collection",
+                "library"
+            ]
+        },
+        {
+            "subject": "player",
+            "object": [
+                "team",
+                "group",
+                "orchestra"
+            ]
+        },
+        {
+            "subject": "policeman",
+            "object": [
+                "police"
+            ]
+        },
+        {
+            "subject": "secretary",
+            "object": [
+                "staff"
+            ]
+        },
+        {
+            "subject": "senator",
+            "object": [
+                "senate",
+                "house"
+            ]
+        },
+        {
+            "subject": "sheep",
+            "object": [
+                "flock"
+            ]
+        },
+        {
+            "subject": "shrub",
+            "object": [
+                "shrubbery"
+            ]
+        },
+        {
+            "subject": "singer",
+            "object": [
+                "choir",
+                "band",
+                "duo",
+                "trio",
+                "quartet"
+            ]
+        },
+        {
+            "subject": "soldier",
+            "object": [
+                "army",
+                "unit",
+                "division",
+                "troop"
+            ]
+        },
+        {
+            "subject": "song",
+            "object": [
+                "album",
+                "collection",
+                "antology",
+                "library"
+            ]
+        },
+        {
+            "subject": "spouse",
+            "object": [
+                "couple",
+                "relationship",
+                "family"
+            ]
+        },
+        {
+            "subject": "star",
+            "object": [
+                "constellation",
+                "galaxy"
+            ]
+        },
+        {
+            "subject": "state",
+            "object": [
+                "country",
+                "province"
+            ]
+        },
+        {
+            "subject": "student",
+            "object": [
+                "class",
+                "school"
+            ]
+        },
+        {
+            "subject": "tree",
+            "object": [
+                "forest",
+                "wood",
+                "grove"
+            ]
+        },
+        {
+            "subject": "wolf",
+            "object": [
+                "pack"
+            ]
+        },
+        {
+            "subject": "word",
+            "object": [
+                "paragraph",
+                "sentence",
+                "text"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

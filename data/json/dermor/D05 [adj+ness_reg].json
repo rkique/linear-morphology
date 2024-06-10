@@ -1,0 +1,317 @@
+{
+    "name": "adj+ness_reg",
+    "prompt_templates": [
+        "The state of being {} is",
+        "The quality of being {} is",
+        "The noun form of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The state of being {} is",
+        "The quality of being {} is",
+        "The noun form of {} is"
+    ],
+    "samples": [
+        {
+            "subject": "amazing",
+            "object": [
+                "amazingness"
+            ]
+        },
+        {
+            "subject": "attractive",
+            "object": [
+                "attractiveness"
+            ]
+        },
+        {
+            "subject": "aware",
+            "object": [
+                "awareness"
+            ]
+        },
+        {
+            "subject": "broken",
+            "object": [
+                "brokenness"
+            ]
+        },
+        {
+            "subject": "careful",
+            "object": [
+                "carefulness"
+            ]
+        },
+        {
+            "subject": "cheap",
+            "object": [
+                "cheapness"
+            ]
+        },
+        {
+            "subject": "competitive",
+            "object": [
+                "competitiveness"
+            ]
+        },
+        {
+            "subject": "connected",
+            "object": [
+                "connectedness"
+            ]
+        },
+        {
+            "subject": "conscious",
+            "object": [
+                "consciousness"
+            ]
+        },
+        {
+            "subject": "creative",
+            "object": [
+                "creativeness"
+            ]
+        },
+        {
+            "subject": "dangerous",
+            "object": [
+                "dangerousness"
+            ]
+        },
+        {
+            "subject": "devoted",
+            "object": [
+                "devotedness"
+            ]
+        },
+        {
+            "subject": "directed",
+            "object": [
+                "directedness"
+            ]
+        },
+        {
+            "subject": "distinct",
+            "object": [
+                "distinctness"
+            ]
+        },
+        {
+            "subject": "distinctive",
+            "object": [
+                "distinctiveness"
+            ]
+        },
+        {
+            "subject": "effective",
+            "object": [
+                "effectiveness"
+            ]
+        },
+        {
+            "subject": "extensive",
+            "object": [
+                "extensiveness"
+            ]
+        },
+        {
+            "subject": "fixed",
+            "object": [
+                "fixedness"
+            ]
+        },
+        {
+            "subject": "foreign",
+            "object": [
+                "foreignness"
+            ]
+        },
+        {
+            "subject": "happy",
+            "object": [
+                "happiness"
+            ]
+        },
+        {
+            "subject": "helpful",
+            "object": [
+                "helpfulness"
+            ]
+        },
+        {
+            "subject": "hidden",
+            "object": [
+                "hiddenness"
+            ]
+        },
+        {
+            "subject": "hot",
+            "object": [
+                "hotness"
+            ]
+        },
+        {
+            "subject": "huge",
+            "object": [
+                "hugeness"
+            ]
+        },
+        {
+            "subject": "impressive",
+            "object": [
+                "impressiveness"
+            ]
+        },
+        {
+            "subject": "innovative",
+            "object": [
+                "innovativeness"
+            ]
+        },
+        {
+            "subject": "interesting",
+            "object": [
+                "interestingness"
+            ]
+        },
+        {
+            "subject": "mad",
+            "object": [
+                "madness"
+            ]
+        },
+        {
+            "subject": "marked",
+            "object": [
+                "markedness"
+            ]
+        },
+        {
+            "subject": "massive",
+            "object": [
+                "massiveness"
+            ]
+        },
+        {
+            "subject": "nice",
+            "object": [
+                "niceness"
+            ]
+        },
+        {
+            "subject": "obvious",
+            "object": [
+                "obviousness"
+            ]
+        },
+        {
+            "subject": "odd",
+            "object": [
+                "oddness"
+            ]
+        },
+        {
+            "subject": "prepared",
+            "object": [
+                "preparedness"
+            ]
+        },
+        {
+            "subject": "pure",
+            "object": [
+                "pureness"
+            ]
+        },
+        {
+            "subject": "random",
+            "object": [
+                "randomness"
+            ]
+        },
+        {
+            "subject": "rare",
+            "object": [
+                "rareness"
+            ]
+        },
+        {
+            "subject": "reasonable",
+            "object": [
+                "reasonableness"
+            ]
+        },
+        {
+            "subject": "related",
+            "object": [
+                "relatedness"
+            ]
+        },
+        {
+            "subject": "righteous",
+            "object": [
+                "righteousness"
+            ]
+        },
+        {
+            "subject": "sacred",
+            "object": [
+                "sacredness"
+            ]
+        },
+        {
+            "subject": "sad",
+            "object": [
+                "sadness"
+            ]
+        },
+        {
+            "subject": "same",
+            "object": [
+                "sameness"
+            ]
+        },
+        {
+            "subject": "serious",
+            "object": [
+                "seriousness"
+            ]
+        },
+        {
+            "subject": "situated",
+            "object": [
+                "situatedness"
+            ]
+        },
+        {
+            "subject": "strange",
+            "object": [
+                "strangeness"
+            ]
+        },
+        {
+            "subject": "unique",
+            "object": [
+                "uniqueness"
+            ]
+        },
+        {
+            "subject": "useful",
+            "object": [
+                "usefulness"
+            ]
+        },
+        {
+            "subject": "vast",
+            "object": [
+                "vastness"
+            ]
+        },
+        {
+            "subject": "weak",
+            "object": [
+                "weakness"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -1,0 +1,318 @@
+{
+    "name": "un+adj_reg",
+    "prompt_templates": [
+        "The opposite of {} is",
+        "{} contrasts with ",
+        "The inverse of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The opposite of {} is",
+        "{} contrasts with ",
+        "The inverse of {} is"
+    ],
+    "samples": [
+        {
+            "subject": "able",
+            "object": [
+                "unable"
+            ]
+        },
+        {
+            "subject": "acceptable",
+            "object": [
+                "unacceptable"
+            ]
+        },
+        {
+            "subject": "affected",
+            "object": [
+                "unaffected"
+            ]
+        },
+        {
+            "subject": "authorized",
+            "object": [
+                "unauthorized",
+                "unauthorised"
+            ]
+        },
+        {
+            "subject": "available",
+            "object": [
+                "unavailable"
+            ]
+        },
+        {
+            "subject": "avoidable",
+            "object": [
+                "unavoidable"
+            ]
+        },
+        {
+            "subject": "aware",
+            "object": [
+                "unaware"
+            ]
+        },
+        {
+            "subject": "believable",
+            "object": [
+                "unbelievable"
+            ]
+        },
+        {
+            "subject": "biased",
+            "object": [
+                "unbiased"
+            ]
+        },
+        {
+            "subject": "certain",
+            "object": [
+                "uncertain"
+            ]
+        },
+        {
+            "subject": "changed",
+            "object": [
+                "unchanged"
+            ]
+        },
+        {
+            "subject": "comfortable",
+            "object": [
+                "uncomfortable"
+            ]
+        },
+        {
+            "subject": "conditional",
+            "object": [
+                "unconditional"
+            ]
+        },
+        {
+            "subject": "conscious",
+            "object": [
+                "unconscious"
+            ]
+        },
+        {
+            "subject": "controlled",
+            "object": [
+                "uncontrolled"
+            ]
+        },
+        {
+            "subject": "desirable",
+            "object": [
+                "undesirable"
+            ]
+        },
+        {
+            "subject": "employed",
+            "object": [
+                "unemployed"
+            ]
+        },
+        {
+            "subject": "expected",
+            "object": [
+                "unexpected"
+            ]
+        },
+        {
+            "subject": "finished",
+            "object": [
+                "unfinished"
+            ]
+        },
+        {
+            "subject": "forgettable",
+            "object": [
+                "unforgettable"
+            ]
+        },
+        {
+            "subject": "fortunate",
+            "object": [
+                "unfortunate"
+            ]
+        },
+        {
+            "subject": "happy",
+            "object": [
+                "unhappy"
+            ]
+        },
+        {
+            "subject": "healthy",
+            "object": [
+                "unhealthy"
+            ]
+        },
+        {
+            "subject": "identified",
+            "object": [
+                "unidentified"
+            ]
+        },
+        {
+            "subject": "intended",
+            "object": [
+                "unintended"
+            ]
+        },
+        {
+            "subject": "interrupted",
+            "object": [
+                "uninterrupted"
+            ]
+        },
+        {
+            "subject": "known",
+            "object": [
+                "unknown"
+            ]
+        },
+        {
+            "subject": "lawful",
+            "object": [
+                "unlawful"
+            ]
+        },
+        {
+            "subject": "lucky",
+            "object": [
+                "unlucky"
+            ]
+        },
+        {
+            "subject": "noticed",
+            "object": [
+                "unnoticed"
+            ]
+        },
+        {
+            "subject": "paid",
+            "object": [
+                "unpaid"
+            ]
+        },
+        {
+            "subject": "pleasant",
+            "object": [
+                "unpleasant"
+            ]
+        },
+        {
+            "subject": "popular",
+            "object": [
+                "unpopular"
+            ]
+        },
+        {
+            "subject": "predictable",
+            "object": [
+                "unpredictable"
+            ]
+        },
+        {
+            "subject": "published",
+            "object": [
+                "unpublished"
+            ]
+        },
+        {
+            "subject": "realistic",
+            "object": [
+                "unrealistic"
+            ]
+        },
+        {
+            "subject": "reasonable",
+            "object": [
+                "unreasonable"
+            ]
+        },
+        {
+            "subject": "related",
+            "object": [
+                "unrelated"
+            ]
+        },
+        {
+            "subject": "reliable",
+            "object": [
+                "unreliable"
+            ]
+        },
+        {
+            "subject": "resolved",
+            "object": [
+                "unresolved"
+            ]
+        },
+        {
+            "subject": "restricted",
+            "object": [
+                "unrestricted"
+            ]
+        },
+        {
+            "subject": "satisfactory",
+            "object": [
+                "unsatisfactory"
+            ]
+        },
+        {
+            "subject": "specified",
+            "object": [
+                "unspecified"
+            ]
+        },
+        {
+            "subject": "successful",
+            "object": [
+                "unsuccessful"
+            ]
+        },
+        {
+            "subject": "suitable",
+            "object": [
+                "unsuitable"
+            ]
+        },
+        {
+            "subject": "sustainable",
+            "object": [
+                "unsustainable"
+            ]
+        },
+        {
+            "subject": "used",
+            "object": [
+                "unused"
+            ]
+        },
+        {
+            "subject": "usual",
+            "object": [
+                "unusual"
+            ]
+        },
+        {
+            "subject": "veiled",
+            "object": [
+                "unveiled"
+            ]
+        },
+        {
+            "subject": "wanted",
+            "object": [
+                "unwanted"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

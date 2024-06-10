@@ -1,0 +1,318 @@
+{
+    "name": "re+verb_reg",
+    "prompt_templates": [
+        "To {} again is to",
+        "To {} a second time is to",
+        "Repeating {} means"
+    ],
+    "prompt_templates_zs": [
+        "To {} again is to",
+        "To {} a second time is to",
+        "Repeating {} means"
+    ],
+    "samples": [
+        {
+            "subject": "acquire",
+            "object": [
+                "reacquire"
+            ]
+        },
+        {
+            "subject": "adjust",
+            "object": [
+                "readjust"
+            ]
+        },
+        {
+            "subject": "appear",
+            "object": [
+                "reappear"
+            ]
+        },
+        {
+            "subject": "apply",
+            "object": [
+                "reapply"
+            ]
+        },
+        {
+            "subject": "appoint",
+            "object": [
+                "reappoint"
+            ]
+        },
+        {
+            "subject": "arrange",
+            "object": [
+                "rearrange"
+            ]
+        },
+        {
+            "subject": "assess",
+            "object": [
+                "reassess"
+            ]
+        },
+        {
+            "subject": "assign",
+            "object": [
+                "reassign"
+            ]
+        },
+        {
+            "subject": "assure",
+            "object": [
+                "reassure"
+            ]
+        },
+        {
+            "subject": "calculate",
+            "object": [
+                "recalculate"
+            ]
+        },
+        {
+            "subject": "cognize",
+            "object": [
+                "recognize"
+            ]
+        },
+        {
+            "subject": "commend",
+            "object": [
+                "recommend"
+            ]
+        },
+        {
+            "subject": "configure",
+            "object": [
+                "reconfigure"
+            ]
+        },
+        {
+            "subject": "confirm",
+            "object": [
+                "reconfirm"
+            ]
+        },
+        {
+            "subject": "connect",
+            "object": [
+                "reconnect"
+            ]
+        },
+        {
+            "subject": "consider",
+            "object": [
+                "reconsider"
+            ]
+        },
+        {
+            "subject": "create",
+            "object": [
+                "recreate"
+            ]
+        },
+        {
+            "subject": "decorate",
+            "object": [
+                "redecorate"
+            ]
+        },
+        {
+            "subject": "deem",
+            "object": [
+                "redeem"
+            ]
+        },
+        {
+            "subject": "define",
+            "object": [
+                "redefine"
+            ]
+        },
+        {
+            "subject": "develop",
+            "object": [
+                "redevelop"
+            ]
+        },
+        {
+            "subject": "discover",
+            "object": [
+                "rediscover"
+            ]
+        },
+        {
+            "subject": "distribute",
+            "object": [
+                "redistribute"
+            ]
+        },
+        {
+            "subject": "emerge",
+            "object": [
+                "reemerge"
+            ]
+        },
+        {
+            "subject": "engage",
+            "object": [
+                "reengage"
+            ]
+        },
+        {
+            "subject": "establish",
+            "object": [
+                "reestablish"
+            ]
+        },
+        {
+            "subject": "evaluate",
+            "object": [
+                "reevaluate"
+            ]
+        },
+        {
+            "subject": "examine",
+            "object": [
+                "reexamine"
+            ]
+        },
+        {
+            "subject": "generate",
+            "object": [
+                "regenerate"
+            ]
+        },
+        {
+            "subject": "grow",
+            "object": [
+                "regrow"
+            ]
+        },
+        {
+            "subject": "install",
+            "object": [
+                "reinstall"
+            ]
+        },
+        {
+            "subject": "integrate",
+            "object": [
+                "reintegrate"
+            ]
+        },
+        {
+            "subject": "interpret",
+            "object": [
+                "reinterpret"
+            ]
+        },
+        {
+            "subject": "introduce",
+            "object": [
+                "reintroduce"
+            ]
+        },
+        {
+            "subject": "invest",
+            "object": [
+                "reinvest"
+            ]
+        },
+        {
+            "subject": "investigate",
+            "object": [
+                "reinvestigate"
+            ]
+        },
+        {
+            "subject": "learn",
+            "object": [
+                "relearn"
+            ]
+        },
+        {
+            "subject": "locate",
+            "object": [
+                "relocate"
+            ]
+        },
+        {
+            "subject": "marry",
+            "object": [
+                "remarry"
+            ]
+        },
+        {
+            "subject": "negotiate",
+            "object": [
+                "renegotiate"
+            ]
+        },
+        {
+            "subject": "occur",
+            "object": [
+                "reoccur"
+            ]
+        },
+        {
+            "subject": "organize",
+            "object": [
+                "reorganize",
+                "reorganise"
+            ]
+        },
+        {
+            "subject": "publish",
+            "object": [
+                "republish"
+            ]
+        },
+        {
+            "subject": "send",
+            "object": [
+                "resend"
+            ]
+        },
+        {
+            "subject": "solve",
+            "object": [
+                "resolve"
+            ]
+        },
+        {
+            "subject": "submit",
+            "object": [
+                "resubmit"
+            ]
+        },
+        {
+            "subject": "tell",
+            "object": [
+                "retell"
+            ]
+        },
+        {
+            "subject": "unite",
+            "object": [
+                "reunite"
+            ]
+        },
+        {
+            "subject": "upload",
+            "object": [
+                "reupload"
+            ]
+        },
+        {
+            "subject": "write",
+            "object": [
+                "rewrite"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

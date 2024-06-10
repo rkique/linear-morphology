@@ -1,0 +1,467 @@
+{
+    "name": "meronyms - substance",
+    "prompt_templates": [
+        "A {} is made up of",
+        "A {} is comprised of",
+        "{} is made from"
+    ],
+    "prompt_templates_zs": [
+        "A {} is made up of",
+        "A {} is comprised of",
+        "{} is made from"
+    ],
+    "samples": [
+        {
+            "subject": "atmosphere",
+            "object": [
+                "gas",
+                "oxygen",
+                "hydrogen",
+                "nitrogen",
+                "ozone"
+            ]
+        },
+        {
+            "subject": "bag",
+            "object": [
+                "leather",
+                "fabric",
+                "plastic"
+            ]
+        },
+        {
+            "subject": "beach",
+            "object": [
+                "sand",
+                "silicon",
+                "rocks",
+                "pebbles",
+                "atomic_number_14",
+                "si"
+            ]
+        },
+        {
+            "subject": "beard",
+            "object": [
+                "hair"
+            ]
+        },
+        {
+            "subject": "body",
+            "object": [
+                "flesh",
+                "bones"
+            ]
+        },
+        {
+            "subject": "boots",
+            "object": [
+                "leather",
+                "canvas"
+            ]
+        },
+        {
+            "subject": "bottle",
+            "object": [
+                "glass",
+                "plastic"
+            ]
+        },
+        {
+            "subject": "bowl",
+            "object": [
+                "glass",
+                "china",
+                "aluminium",
+                "wood",
+                "steel",
+                "plastic",
+                "clay"
+            ]
+        },
+        {
+            "subject": "box",
+            "object": [
+                "cardboard",
+                "tin",
+                "boxwood",
+                "turkish_boxwood"
+            ]
+        },
+        {
+            "subject": "bread",
+            "object": [
+                "flour",
+                "yeast",
+                ""
+            ]
+        },
+        {
+            "subject": "bronze",
+            "object": [
+                "copper",
+                "tin",
+                "cu",
+                "atomic_number_29"
+            ]
+        },
+        {
+            "subject": "candy",
+            "object": [
+                "sugar",
+                "nougat",
+                "chocolate",
+                "gelatin",
+                "molasses",
+                "syrup",
+                "honey",
+                "fruit",
+                "nuts"
+            ]
+        },
+        {
+            "subject": "chocolate",
+            "object": [
+                "cocoa",
+                "bean",
+                "cacao",
+                "cacao_bean",
+                "cocoa_bean"
+            ]
+        },
+        {
+            "subject": "clothing",
+            "object": [
+                "fabric",
+                "leather",
+                ""
+            ]
+        },
+        {
+            "subject": "cloud",
+            "object": [
+                "vapor",
+                "water",
+                "vapour",
+                "water_vapour",
+                "water_vapor"
+            ]
+        },
+        {
+            "subject": "cocktail",
+            "object": [
+                "alcohol",
+                "juice",
+                "water"
+            ]
+        },
+        {
+            "subject": "concrete",
+            "object": [
+                "silicon",
+                "cement",
+                "water",
+                "sand",
+                "atomic_number_14",
+                "si"
+            ]
+        },
+        {
+            "subject": "desk",
+            "object": [
+                "wood",
+                "metal",
+                "steel"
+            ]
+        },
+        {
+            "subject": "diamond",
+            "object": [
+                "carbon"
+            ]
+        },
+        {
+            "subject": "doorknob",
+            "object": [
+                "metal",
+                "steel",
+                "bronze",
+                "wood"
+            ]
+        },
+        {
+            "subject": "flag",
+            "object": [
+                "fabric",
+                "paper"
+            ]
+        },
+        {
+            "subject": "glacier",
+            "object": [
+                "ice",
+                "water",
+                "oxygen",
+                "hydrogen",
+                "h",
+                "h2o",
+                "atomic_number_8",
+                "atomic_number_1",
+                "o",
+                "water_ice"
+            ]
+        },
+        {
+            "subject": "glass",
+            "object": [
+                "silicone"
+            ]
+        },
+        {
+            "subject": "house",
+            "object": [
+                "bricks",
+                "cement",
+                "wood",
+                "clay"
+            ]
+        },
+        {
+            "subject": "ice",
+            "object": [
+                "water",
+                "oxygen",
+                "hydrogen",
+                "water",
+                "h2o",
+                "atomic_number_1",
+                "atomic_number_8",
+                "h",
+                "o"
+            ]
+        },
+        {
+            "subject": "icicle",
+            "object": [
+                "ice",
+                "water"
+            ]
+        },
+        {
+            "subject": "jam",
+            "object": [
+                "fruit",
+                "sugar",
+                "berries"
+            ]
+        },
+        {
+            "subject": "jeans",
+            "object": [
+                "fabric",
+                "denim"
+            ]
+        },
+        {
+            "subject": "lawn",
+            "object": [
+                "grass"
+            ]
+        },
+        {
+            "subject": "lens",
+            "object": [
+                "glass",
+                "plastic"
+            ]
+        },
+        {
+            "subject": "mirror",
+            "object": [
+                "glass",
+                "bronze"
+            ]
+        },
+        {
+            "subject": "money",
+            "object": [
+                "paper",
+                "metal",
+                "silver",
+                "gold",
+                "iron",
+                "copper",
+                "tin"
+            ]
+        },
+        {
+            "subject": "ocean",
+            "object": [
+                "water"
+            ]
+        },
+        {
+            "subject": "omelette",
+            "object": [
+                "eggs",
+                "egg",
+                "milk",
+                "cheese"
+            ]
+        },
+        {
+            "subject": "pastry",
+            "object": [
+                "flour",
+                "egg",
+                "butter",
+                "filling"
+            ]
+        },
+        {
+            "subject": "penny",
+            "object": [
+                "metal",
+                "alloy",
+                "bronze",
+                "nickel",
+                "zinc",
+                "copper",
+                "tin"
+            ]
+        },
+        {
+            "subject": "pill",
+            "object": [
+                "medicine",
+                "drug"
+            ]
+        },
+        {
+            "subject": "plastic",
+            "object": [
+                "polymer",
+                "oil",
+                "gas",
+                "coal"
+            ]
+        },
+        {
+            "subject": "roof",
+            "object": [
+                "shingles",
+                "tiles",
+                "wood",
+                "metal"
+            ]
+        },
+        {
+            "subject": "sea",
+            "object": [
+                "water"
+            ]
+        },
+        {
+            "subject": "snow",
+            "object": [
+                "water",
+                "oxygen",
+                "hydrogen",
+                "flake",
+                "ice",
+                "snowflake",
+                "snowflakes",
+                "h2o",
+                "atomic_number_1",
+                "atomic_number_8",
+                "h",
+                "o"
+            ]
+        },
+        {
+            "subject": "spoon",
+            "object": [
+                "aluminium",
+                "wood",
+                "steel"
+            ]
+        },
+        {
+            "subject": "steel",
+            "object": [
+                "iron",
+                "pearlite",
+                "carbon",
+                "cementite",
+                "ferrite",
+                "iron_carbide",
+                "fe",
+                "atomic_number_26",
+                "alpha_iron"
+            ]
+        },
+        {
+            "subject": "table",
+            "object": [
+                "wood",
+                "metal",
+                "plastic"
+            ]
+        },
+        {
+            "subject": "wall",
+            "object": [
+                "cement",
+                "bricks",
+                "stones",
+                "rocks",
+                "wood",
+                "cardboard",
+                "board",
+                "plank",
+                "clay",
+                "mud"
+            ]
+        },
+        {
+            "subject": "water",
+            "object": [
+                "oxygen",
+                "hydrogen",
+                "water",
+                "h2o",
+                "atomic_number_1",
+                "atomic_number_8",
+                "h",
+                "o"
+            ]
+        },
+        {
+            "subject": "wig",
+            "object": [
+                "hair"
+            ]
+        },
+        {
+            "subject": "wine",
+            "object": [
+                "grapes",
+                "grape"
+            ]
+        },
+        {
+            "subject": "wire",
+            "object": [
+                "metal"
+            ]
+        },
+        {
+            "subject": "yogurt",
+            "object": [
+                "milk"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

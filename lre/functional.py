@@ -90,9 +90,8 @@ def compute_hidden_states(
             mt.model.device
         )
 
-    #need models.determine_layer_paths for TraceDict
+    #TraceDict follows the layer paths.
     layer_paths = models.determine_layer_paths(mt, layers=layers, return_dict=True)
-    #TraceDict is an important function.
     with TraceDict(mt.model, layer_paths.values()) as ret:
         outputs = mt.model(
             input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, **kwargs
@@ -295,7 +294,7 @@ def predict_next_token(
         inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
             mt.model.device
         )
-    print(f'model input is {len(inputs)} tokens')
+    print(f'model input is {inputs[0]}')
     with torch.inference_mode():
         predictions = []
         #for each batch_size group of input_ids.
