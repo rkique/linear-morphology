@@ -34,6 +34,7 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
     clozed_answers = []
     #For each sample...
     for x in relation.samples:
+        print(f'x is {type(x)} before make_prompt')
         #make the prompt
         cloze_prompt = functional.make_prompt(
             prompt_template=prompt_template,
@@ -102,7 +103,7 @@ for json_path in file_paths:
         
         relation = Relation.from_dict(data)
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
-        
+
         logging.info(f'[{relation.name}] Loading GPT-J and tokenizer')
         model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
         logging.info('Model loaded')
