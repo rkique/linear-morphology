@@ -35,13 +35,12 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
     #For each sample...
     for x in relation.samples:
         #make the prompt
-        cloze_template = functional.make_prompt(
+        cloze_prompt = functional.make_prompt(
             prompt_template=prompt_template,
             subject=x,
             examples = relation.samples
             )
-        
-        cloze_prompt = cloze_template.format(x.subject)
+        # cloze_prompt = cloze_template.format(x.subject)
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
 

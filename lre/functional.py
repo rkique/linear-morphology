@@ -25,14 +25,14 @@ Builds a prompt from a template string, subject, and examples.
 '''
 def make_prompt(*,
                 prompt_template: str,
-                subject: str,
+                subject: RelationSample,
                 examples: Sequence[RelationSample] | None = None,
                 mt: models.ModelAndTokenizer | None = None,
                 ) -> str:
     #replace {} with subject.
     #Modified to work with multiple objects
     # Examples are already filtered for the subject, no need to do that.
-    prompt = prompt_template
+    prompt = prompt_template.format(subject.subject)
     if examples is not None:
             objects = []
             others = [x for x in examples if x.subject != subject]
@@ -47,6 +47,7 @@ def make_prompt(*,
                         + "\n"
                         + prompt
                     )
+            
     #TODO: Prefix prompt with EOS token if model has no special start token.
     #prompt = models.maybe_prefix_eos(mt, prompt)
     return prompt
