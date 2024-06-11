@@ -344,13 +344,14 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)
 
-        if self.mode == "icl":
-            prompt_template = functional.make_prompt(
-                mt=self.mt,
-                prompt_template=prompt_template,
-                subject="{}",
-                examples=training_samples,
-            )
+        # if self.mode == "icl":
+        #     prompt_template = functional.make_prompt(
+        #         mt=self.mt,
+        #         prompt_template=prompt_template,
+        #         subject="{}",
+        #         examples=training_samples,
+        #     )
+        
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,
