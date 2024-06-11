@@ -32,7 +32,7 @@ def make_prompt(*,
     #replace {} with subject.
     #Modified to work with multiple objects
     # Examples are already filtered for the subject, no need to do that.
-    print(f'the subject is {subject} with type {type(subject)}')
+    #print(f'the subject is {subject} with type {type(subject)}')
     prompt = prompt_template.format(subject.subject)
     if examples is not None:
             objects = []

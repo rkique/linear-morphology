@@ -311,7 +311,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         for sample_idx in range(len(training_samples)):
             #Make a prompt from the sample
             sample = training_samples[sample_idx]
-            print(f"sample in w2v has type {type(sample)}")
+            #print(f"sample in w2v has type {type(sample)}")
             if self.mode == "zs":
                 prompt = prompt_template.format(sample.subject)
             #omitting the sample_idx.
@@ -319,7 +319,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
                 prompt = functional.make_prompt(
                     mt=self.mt,
                     prompt_template=prompt_template,
-                    subject=sample.subject,
+                    subject=sample,
                     examples=training_samples[0:sample_idx]
                     + training_samples[sample_idx + 1 :],
                 )
