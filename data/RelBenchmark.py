@@ -99,6 +99,8 @@ model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16
 logging.info('Model loaded')
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 logging.info('Tokenizer loaded')
+model.to(device)
+logging.info('Model put on cuda')
 tokenizer.pad_token = tokenizer.eos_token
 mt = models.ModelAndTokenizer(model,tokenizer)
 #8 ICL examples, 50 different samples total.
