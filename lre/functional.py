@@ -17,40 +17,26 @@ import logging
 logger = logging.getLogger(__name__)
 
 DEFAULT_BATCH_SIZE = 1
-DEFAULT_N_ICL_LM = 5 #not used
+DEFAULT_N_ICL = 8 #not used
 DEFAULT_N_TOP_LM = 1
 
-'''
-Builds a prompt from a template string, subject, and examples. 
-'''
-def make_prompt(*,
-                prompt_template: str,
-                subject: RelationSample,
-                examples: Sequence[RelationSample] | None = None,
-                mt: models.ModelAndTokenizer | None = None,
-                ) -> str:
-    #replace {} with subject.
-    #Modified to work with multiple objects
-    # Examples are already filtered for the subject, no need to do that.
-    #print(f'the subject is {subject} with type {type(subject)}')
-    prompt = prompt_template.format(subject.subject)
-    if examples is not None:
-            objects = []
-            others = [x for x in examples if x.subject != subject]
-            for x in others:
-                for object in x.object:
-                    objects.append((x.subject, object))
-            objects = random.sample(objects, 8)
-            prompt = (
-                        "\n".join(
-                            prompt_template.format(x[0]) + f" {x[1]}" for x in objects
-                        )
-                        + "\n"
-                        + prompt
-                    )
-            
-    #TODO: Prefix prompt with EOS token if model has no special start token.
-    #prompt = models.maybe_prefix_eos(mt, prompt)
+#Build a prompt from a template string, target, and examples. 
+#Defaults to using the first object.
+def make_prompt(template: str,
+                target: RelationSample,
+                examples: list[RelationSample]) -> str:
+    
+    prompt = template.format(target.subject)
+    others = [x for x in examples if x != target]
+    others = random.sample(others, DEFAULT_N_ICL)
+    prompt = (
+                "\n".join(
+                    template.format(x.subject) + f" {x.object[0]}" for x in others
+                )
+                + "\n"
+                + prompt
+            )
+    #prompt = models.maybe_prefix_eos(mt, prompt) (?)
     return prompt
 
 #(Misleading) Returns the subject token index, but also the list of tokens.

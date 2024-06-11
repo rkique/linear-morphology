@@ -5,15 +5,15 @@ from dataclasses_json import DataClassJsonMixin
 from collections import defaultdict
 
 
-#(s,o) or (s, o1, o2, ...) text pair.
+#(s, [o1, o2, ...]) text pair.
 @dataclass(frozen=True)
 class RelationSample(DataClassJsonMixin):
     subject: str
-    object: str | list[str]
+    object: list[str]
 
     def __str__(self) -> str:
         return f"{self.subject} -> {self.object}"
-    
+
 #z may refer to the hidden layer (?)
 #_domain is an explicit list of possible subjects, accessed from @property domain
 #_range is an explicit list of possible objects.

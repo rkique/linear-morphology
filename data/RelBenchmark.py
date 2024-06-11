@@ -1,7 +1,7 @@
 import sys
 import json
 sys.path.append('..')
-from lre.data import Relation, RelationSample
+from lre.data import Relation, RelationSample, Sequence
 from lre.operators import JacobianIclEstimator, Word2VecIclEstimator
 import lre.functional as functional
 import lre.models as models
@@ -27,44 +27,41 @@ logger.addHandler(logging.StreamHandler())
 
 counts_by_lm_correct: dict[bool, int] = defaultdict(int)
 
-def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8, k=5):
+def test_operator_on_relation(operator, relation, mt, h_layer, z_layer):
     logger.info(f'starting test: {operator} on {relation}')
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
     #For each sample...
     for x in relation.samples:
-        #print(f'x is {type(x)} before make_prompt')
-        #make the prompt
         cloze_prompt = functional.make_prompt(
-            prompt_template=prompt_template,
-            subject=x,
+            template = prompt_template, 
+            target = x,
             examples = relation.samples
             )
-        # cloze_prompt = cloze_template.format(x.subject)
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
 
-    #LM prediction
-    start_time = time.time()
-    logging.info(f'starting next token prediction')
-    outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts, k=k)
+    #LM PREDICTION
+    #start_time = time.time()
+    outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts)
     preds_lm =  [[x.token for x in xs] for xs in outputs_lm]
     recall_lm = metrics.recall(preds_lm, clozed_answers)
-    end_time = time.time()
-    logging.info(f'total LM prediction time: {end_time - start_time} seconds with recall {recall_lm}')
+    #end_time = time.time()
+    #logging.info(f'total LM prediction time: {end_time - start_time} seconds with recall {recall_lm}')
 
-    #operator prediction
+    #OPERATOR PREDICTION
     start_time = time.time()
     logging.info(f'starting operator prediction')
     operator = operator(mt=mt, h_layer=h_layer, z_layer=z_layer)
     operator = operator(relation)
     end_time = time.time()
+
     logging.info(f'total operator prediction time: {end_time - start_time} seconds')
 
     outputs_lre = []
     for sample in relation.samples:
-        output_lre = operator(sample, k=k)
+        output_lre = operator(sample)
         outputs_lre.append(output_lre.predictions)
 
     #remember that predictions is made up of (token,probs)
@@ -73,16 +70,15 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
 
     preds_by_lm_correct = defaultdict(list)
     targets_by_lm_correct = defaultdict(list)
-
-    #if the LM was correct, append pred_lre to preds_by_lm_correct (sth like {True: 5, False: 2})
+    
     for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
         lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
         preds_by_lm_correct[lm_correct].append(pred_lre)
         targets_by_lm_correct[lm_correct].append(target)
         counts_by_lm_correct[lm_correct] += 1
+        logging.info(f'{pred_lre},{target}')
 
-    logging.info(f'for {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
-
+    logging.info(f'{relation.name} with {len(relation.samples)} total): {counts_by_lm_correct}')
 import os
 
 def all_file_paths(directory):
@@ -103,19 +99,12 @@ for json_path in file_paths:
         
         relation = Relation.from_dict(data)
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
-
-        logging.info(f'[{relation.name}] Loading GPT-J and tokenizer')
         model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
-        logging.info('Model loaded')
         model.to(device)
-        logging.info('Model put on cuda')
-
         tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
         logging.info('Tokenizer loaded')
         tokenizer.pad_token = tokenizer.eos_token
-
         mt = models.ModelAndTokenizer(model,tokenizer)
-
         #8 ICL examples, 50 different samples total.
         test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
         #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
