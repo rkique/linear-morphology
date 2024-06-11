@@ -45,9 +45,9 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
 
+    #should print 50 (?)
     for prompt in clozed_prompts:
         print(f'Prompt: \n{prompt}\n')
-
 
     #LM prediction
     start_time = time.time()
@@ -94,10 +94,12 @@ with open(json_path, 'r') as file:
 relation = Relation.from_dict(data)
 
 device = "cuda"
+logging.info(f'Loading GPT-J and tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+logging.info('Model loaded')
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+logging.info('Tokenizer loaded')
 tokenizer.pad_token = tokenizer.eos_token
-
 mt = models.ModelAndTokenizer(model,tokenizer)
 #8 ICL examples, 50 different samples total.
 test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
