@@ -7,6 +7,8 @@ import lre.functional as functional
 import lre.models as models
 import lre.metrics as metrics
 from collections import defaultdict
+from transformers import GPTJForCausalLM, AutoTokenizer
+import torch
 import random
 
 counts_by_lm_correct: dict[bool, int] = defaultdict(int)
@@ -68,6 +70,10 @@ with open(json_path, 'r') as file:
 relation = Relation.from_dict(data)
 
 device = "cuda"
-mt = models.load_model("gptj", device=device, fp16=True)
+model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+mt = models.ModelAndTokenizer(model,tokenizer)
+
+#8 ICL examples, 50 different samples total.
 test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
 test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
