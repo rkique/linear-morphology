@@ -105,4 +105,4 @@ tokenizer.pad_token = tokenizer.eos_token
 mt = models.ModelAndTokenizer(model,tokenizer)
 #8 ICL examples, 50 different samples total.
 test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
-test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
+#test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
