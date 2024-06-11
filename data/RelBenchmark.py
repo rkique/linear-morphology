@@ -17,6 +17,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
+    filename='word2vec_results.txt',
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
@@ -123,4 +124,3 @@ for json_path in file_paths:
     #8 ICL examples, 50 different samples total.
     test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
     #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
-    
