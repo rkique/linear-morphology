@@ -87,22 +87,40 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
 
     print(f'For {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
 
-json_path = "json/enckno/E01 [country - capital].json"
-with open(json_path, 'r') as file:
-    data = json.load(file)
 
-relation = Relation.from_dict(data)
+
+import os
+
+def all_file_paths(directory):
+    file_paths = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            relative_path = os.path.relpath(os.path.join(root, file), directory)
+            file_paths.append(relative_path)
+    return file_paths
+directory = 'json'
+file_paths = all_file_paths('json')
 
 device = "cuda"
-logging.info(f'Loading GPT-J and tokenizer')
-model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
-logging.info('Model loaded')
-tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
-logging.info('Tokenizer loaded')
-model.to(device)
-logging.info('Model put on cuda')
-tokenizer.pad_token = tokenizer.eos_token
-mt = models.ModelAndTokenizer(model,tokenizer)
-#8 ICL examples, 50 different samples total.
-test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
-#test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
+
+for json_path in file_paths:
+    with open(json_path, 'r') as file:
+        data = json.load(file)
+
+    relation = Relation.from_dict(data)
+    logging.info(f'[{relation.name}] Loading GPT-J and tokenizer')
+    model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+    logging.info('Model loaded')
+    model.to(device)
+    logging.info('Model put on cuda')
+
+    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+    logging.info('Tokenizer loaded')
+    tokenizer.pad_token = tokenizer.eos_token
+
+    mt = models.ModelAndTokenizer(model,tokenizer)
+
+    #8 ICL examples, 50 different samples total.
+    test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
+    #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
+    
