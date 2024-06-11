@@ -34,7 +34,7 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
     clozed_answers = []
     #For each sample...
     for x in relation.samples:
-        print(f'x is {type(x)} before make_prompt')
+        #print(f'x is {type(x)} before make_prompt')
         #make the prompt
         cloze_prompt = functional.make_prompt(
             prompt_template=prompt_template,
@@ -64,7 +64,7 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
 
     outputs_lre = []
     for sample in relation.samples:
-        output_lre = operator(sample.subject, k=k)
+        output_lre = operator(sample, k=k)
         outputs_lre.append(output_lre.predictions)
 
     #remember that predictions is made up of (token,probs)

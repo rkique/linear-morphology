@@ -9,6 +9,7 @@ import lre.models as models
 import lre.functional as functional
 from lre.lretyping import Layer
 import lre.data as data
+from lre.data import RelationSample
 from baukit.baukit import TraceDict
 
 logger = logging.getLogger(__name__)
@@ -57,7 +58,7 @@ class LinearRelationOperator(RelationOperator):
 
     def __call__(
             self,
-            subject: str,
+            subject: RelationSample,
             k: int = 5,
             h: torch.Tensor | None = None,
             **kwargs: Any,
@@ -70,7 +71,7 @@ class LinearRelationOperator(RelationOperator):
             logger.debug(f'computing h from prompt "{prompt}"')
             #retrieve subject_token_index
             h_index, inputs = functional.find_subject_token_index(
-                mt=self.mt, prompt=prompt, subject=subject
+                mt=self.mt, prompt=prompt, subject=subject.subject
             )
 
             [[hs], _] = functional.compute_hidden_states(
@@ -351,7 +352,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #         subject="{}",
         #         examples=training_samples,
         #     )
-        
+
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,
