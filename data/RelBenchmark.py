@@ -1,46 +1,70 @@
 import sys
 import json
-sys.path.append('..')
 from lre.data import Relation, RelationSample
 from lre.operators import JacobianIclEstimator, Word2VecIclEstimator
 import lre.functional as functional
 import lre.models as models
 import lre.metrics as metrics
+import lre.logging_utils as logging_utils
 from collections import defaultdict
 from transformers import GPTJForCausalLM, AutoTokenizer
 import torch
 import random
+import time
+import logging
+
+sys.path.append('..')
+logger = logging.getLogger(__name__)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format = logging_utils.DEFAULT_FORMAT,
+    datefmt=logging_utils.DEFAULT_DATEFMT,
+    stream=sys.stdout
+)
 
 counts_by_lm_correct: dict[bool, int] = defaultdict(int)
 
 def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8, k=5):
-    #assemble in-context prompts with 8 ICL samples
+    logger.info(f'starting test: {operator} on {relation}')
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
+    #For each sample...
     for x in relation.samples:
-        clozed_samples = [s for s in relation.samples if s != x]
-        clozed_samples = random.sample(clozed_samples, n_icl)
+        samples_without_x = [s for s in relation.samples if s != x]
+        #assemble in-context prompt with randomly selected ICL samples
+        samples_without_x = random.sample(samples_without_x, n_icl)
+        #make the prompt
         cloze_template = functional.make_prompt(
             prompt_template=prompt_template,
             subject="{}",
-            examples = clozed_samples
+            examples = samples_without_x
             )
         cloze_prompt = cloze_template.format(x.subject)
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
 
-    for prompt in (clozed_prompts):
+    for prompt in clozed_prompts:
         print(f'Prompt: \n{prompt}\n')
 
-    #LM prediction. max-tokens: 2048
+
+    #LM prediction
+    start_time = time.time()
+    logging.info(f'starting next token prediction')
     outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts, k=k)
     preds_lm =  [[x.token for x in xs] for xs in outputs_lm]
     recall_lm = metrics.recall(preds_lm, clozed_answers)
+    end_time = time.time()
+    logging.info(f'total LM prediction time: {end_time - start_time} seconds with recall {recall_lm}')
 
-    #operator prediction. this part is intensive.
+    #operator prediction
+    start_time = time.time()
+    logging.info(f'starting operator prediction')
     operator = operator(mt=mt, h_layer=h_layer, z_layer=z_layer)
     operator = operator(relation)
+    end_time = time.time()
+    logging.info(f'total operator prediction time: {end_time - start_time} seconds')
 
     outputs_lre = []
     for sample in relation.samples:
