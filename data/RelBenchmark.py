@@ -21,8 +21,9 @@ logging.basicConfig(
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
-    stream=sys.stdout
 )
+
+logger.addHandler(logging.StreamHandler())
 
 counts_by_lm_correct: dict[bool, int] = defaultdict(int)
 
