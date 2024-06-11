@@ -13,203 +13,320 @@
     "samples": [
         {
             "subject": "aristotle",
-            "object": "greek"
+            "object": [
+                "greek"
+            ]
         },
         {
             "subject": "balzac",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "beethoven",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "caesar",
-            "object": "roman"
+            "object": [
+                "roman"
+            ]
         },
         {
             "subject": "confucius",
-            "object": "chinese"
+            "object": [
+                "chinese"
+            ]
         },
         {
             "subject": "copernicus",
-            "object": "polish"
+            "object": [
+                "polish"
+            ]
         },
         {
             "subject": "darwin",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "depp",
-            "object": "american"
+            "object": [
+                "american"
+            ]
         },
         {
             "subject": "descartes",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "dickens",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "dostoyevsky",
-            "object": "russian"
+            "object": [
+                "russian"
+            ]
         },
         {
             "subject": "edison",
-            "object": "american"
+            "object": [
+                "american"
+            ]
         },
         {
             "subject": "einstein",
-            "object": "jewish"
+            "object": [
+                "jewish",
+                "german",
+                "american"
+            ]
         },
         {
             "subject": "euclid",
-            "object": "greek"
+            "object": [
+                "greek"
+            ]
         },
         {
             "subject": "fermi",
-            "object": "italian"
+            "object": [
+                "italian"
+            ]
         },
         {
             "subject": "galilei",
-            "object": "italian"
+            "object": [
+                "italian"
+            ]
         },
         {
             "subject": "gorbachev",
-            "object": "soviet"
+            "object": [
+                "soviet",
+                "russian"
+            ]
         },
         {
             "subject": "hawking",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "hegel",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "hitler",
-            "object": "german"
+            "object": [
+                "german",
+                "austrian"
+            ]
         },
         {
             "subject": "homer",
-            "object": "greek"
+            "object": [
+                "greek"
+            ]
         },
         {
             "subject": "hume",
-            "object": "scottish"
+            "object": [
+                "scottish",
+                "british"
+            ]
         },
         {
             "subject": "jolie",
-            "object": "american"
+            "object": [
+                "american"
+            ]
         },
         {
             "subject": "kant",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "kepler",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "lavoisier",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "leibniz",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "lenin",
-            "object": "soviet"
+            "object": [
+                "soviet",
+                "russian"
+            ]
         },
         {
             "subject": "lennon",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "lincoln",
-            "object": "american"
+            "object": [
+                "american"
+            ]
         },
         {
             "subject": "locke",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "machiavelli",
-            "object": "italian"
+            "object": [
+                "italian"
+            ]
         },
         {
             "subject": "marx",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "maxwell",
-            "object": "scottish"
+            "object": [
+                "scottish",
+                "british"
+            ]
         },
         {
             "subject": "mencius",
-            "object": "chinese"
+            "object": [
+                "chinese"
+            ]
         },
         {
             "subject": "michelangelo",
-            "object": "italian"
+            "object": [
+                "italian"
+            ]
         },
         {
             "subject": "mozart",
-            "object": "german"
+            "object": [
+                "german",
+                "austrian"
+            ]
         },
         {
             "subject": "napoleon",
-            "object": "french"
+            "object": [
+                "french",
+                "corsican",
+                "italian"
+            ]
         },
         {
             "subject": "newton",
-            "object": "english"
+            "object": [
+                "english",
+                "british"
+            ]
         },
         {
             "subject": "pascal",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "plato",
-            "object": "greek"
+            "object": [
+                "greek"
+            ]
         },
         {
             "subject": "raphael",
-            "object": "italian"
+            "object": [
+                "italian"
+            ]
         },
         {
             "subject": "rousseau",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "spinoza",
-            "object": "dutch"
+            "object": [
+                "dutch"
+            ]
         },
         {
             "subject": "stalin",
-            "object": "soviet"
+            "object": [
+                "soviet",
+                "georgian"
+            ]
         },
         {
             "subject": "strauss",
-            "object": "austrian"
+            "object": [
+                "austrian"
+            ]
         },
         {
             "subject": "tchaikovsky",
-            "object": "russian"
+            "object": [
+                "russian"
+            ]
         },
         {
             "subject": "tolstoi",
-            "object": "russian"
+            "object": [
+                "russian"
+            ]
         },
         {
             "subject": "truman",
-            "object": "american"
+            "object": [
+                "american"
+            ]
         },
         {
             "subject": "wagner",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         }
     ],
     "_domain": null,

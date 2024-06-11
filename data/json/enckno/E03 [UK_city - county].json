@@ -13,203 +13,303 @@
     "samples": [
         {
             "subject": "aberdeen",
-            "object": "aberdeenshire"
+            "object": [
+                "aberdeenshire"
+            ]
         },
         {
             "subject": "bath",
-            "object": "somerset"
+            "object": [
+                "somerset"
+            ]
         },
         {
             "subject": "belfast",
-            "object": "antrim"
+            "object": [
+                "antrim"
+            ]
         },
         {
             "subject": "birmingham",
-            "object": "midlands"
+            "object": [
+                "midlands"
+            ]
         },
         {
             "subject": "bradford",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         },
         {
             "subject": "brighton",
-            "object": "sussex"
+            "object": [
+                "sussex"
+            ]
         },
         {
             "subject": "cambridge",
-            "object": "cambridgeshire"
+            "object": [
+                "cambridgeshire"
+            ]
         },
         {
             "subject": "canterbury",
-            "object": "kent"
+            "object": [
+                "kent"
+            ]
         },
         {
             "subject": "cardiff",
-            "object": "glamorgan"
+            "object": [
+                "glamorgan"
+            ]
         },
         {
             "subject": "carlisle",
-            "object": "cumbria"
+            "object": [
+                "cumbria"
+            ]
         },
         {
             "subject": "chester",
-            "object": "cheshire"
+            "object": [
+                "cheshire"
+            ]
         },
         {
             "subject": "chichester",
-            "object": "sussex"
+            "object": [
+                "sussex"
+            ]
         },
         {
             "subject": "coventry",
-            "object": "midlands"
+            "object": [
+                "midlands"
+            ]
         },
         {
             "subject": "crawley",
-            "object": "sussex"
+            "object": [
+                "sussex"
+            ]
         },
         {
             "subject": "derby",
-            "object": "derbyshire"
+            "object": [
+                "derbyshire"
+            ]
         },
         {
             "subject": "dundee",
-            "object": "lowlands"
+            "object": [
+                "lowlands"
+            ]
         },
         {
             "subject": "edinburgh",
-            "object": "lowlands"
+            "object": [
+                "lowlands"
+            ]
         },
         {
             "subject": "ely",
-            "object": "cambridgeshire"
+            "object": [
+                "cambridgeshire"
+            ]
         },
         {
             "subject": "exeter",
-            "object": "devon"
+            "object": [
+                "devon"
+            ]
         },
         {
             "subject": "glasgow",
-            "object": "lowlands"
+            "object": [
+                "lowlands"
+            ]
         },
         {
             "subject": "gloucester",
-            "object": "gloucestershire"
+            "object": [
+                "gloucestershire"
+            ]
         },
         {
             "subject": "hereford",
-            "object": "herefordshire"
+            "object": [
+                "herefordshire"
+            ]
         },
         {
             "subject": "hull",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         },
         {
             "subject": "inverness",
-            "object": "highlands"
+            "object": [
+                "highlands"
+            ]
         },
         {
             "subject": "lancaster",
-            "object": "lancashire"
+            "object": [
+                "lancashire"
+            ]
         },
         {
             "subject": "leeds",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         },
         {
             "subject": "leicester",
-            "object": "midlands"
+            "object": [
+                "midlands"
+            ]
         },
         {
             "subject": "lincoln",
-            "object": "lincolnshire"
+            "object": [
+                "lincolnshire"
+            ]
         },
         {
             "subject": "liverpool",
-            "object": "lancashire"
+            "object": [
+                "lancashire"
+            ]
         },
         {
             "subject": "newcastle",
-            "object": "northumberland"
+            "object": [
+                "northumberland"
+            ]
         },
         {
             "subject": "newport",
-            "object": "gwent"
+            "object": [
+                "gwent"
+            ]
         },
         {
             "subject": "norwich",
-            "object": "norfolk"
+            "object": [
+                "norfolk"
+            ]
         },
         {
             "subject": "nottingham",
-            "object": "nottinghamshire"
+            "object": [
+                "nottinghamshire"
+            ]
         },
         {
             "subject": "oxford",
-            "object": "oxfordshire"
+            "object": [
+                "oxfordshire"
+            ]
         },
         {
             "subject": "plymouth",
-            "object": "devon"
+            "object": [
+                "devon"
+            ]
         },
         {
             "subject": "portsmouth",
-            "object": "hampshire"
+            "object": [
+                "hampshire"
+            ]
         },
         {
             "subject": "preston",
-            "object": "lancashire"
+            "object": [
+                "lancashire"
+            ]
         },
         {
             "subject": "reading",
-            "object": "berkshire"
+            "object": [
+                "berkshire"
+            ]
         },
         {
             "subject": "salford",
-            "object": "manchester"
+            "object": [
+                "manchester"
+            ]
         },
         {
             "subject": "salisbury",
-            "object": "wiltshire"
+            "object": [
+                "wiltshire"
+            ]
         },
         {
             "subject": "sheffield",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         },
         {
             "subject": "southampton",
-            "object": "hampshire"
+            "object": [
+                "hampshire"
+            ]
         },
         {
             "subject": "stirling",
-            "object": "stirlingshire"
+            "object": [
+                "stirlingshire"
+            ]
         },
         {
             "subject": "swansea",
-            "object": "glamorgan"
+            "object": [
+                "glamorgan"
+            ]
         },
         {
             "subject": "wakefield",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         },
         {
             "subject": "wells",
-            "object": "somerset"
+            "object": [
+                "somerset"
+            ]
         },
         {
             "subject": "winchester",
-            "object": "hampshire"
+            "object": [
+                "hampshire"
+            ]
         },
         {
             "subject": "wolverhampton",
-            "object": "midlands"
+            "object": [
+                "midlands"
+            ]
         },
         {
             "subject": "worcester",
-            "object": "worcestershire"
+            "object": [
+                "worcestershire"
+            ]
         },
         {
             "subject": "york",
-            "object": "yorkshire"
+            "object": [
+                "yorkshire"
+            ]
         }
     ],
     "_domain": null,

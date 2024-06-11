@@ -266,7 +266,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
             prompt_template=prompt_template_icl,
             beta=self.beta
         )
-        
+
         return operator
     
 #This inherits LinearRelationEstimator so it is also called on a Relation.
@@ -289,7 +289,8 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         prompt_template = (
             self.mt.tokenizer.eos_token + " {}" if self.mode == "zs" else relation.prompt_templates[0]
         )
-        
+        logging.info(f'[relation call] using {relation.prompt_templates[0]}')
+
         H_stack: list[torch.Tensor] = []
         Z_stack: list[torch.Tensor] = []
 
@@ -350,7 +351,6 @@ class Word2VecIclEstimator(LinearRelationEstimator):
                 subject="{}",
                 examples=training_samples,
             )
-            print(f'word2vec prompt_template_icl: {prompt_template}')
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,

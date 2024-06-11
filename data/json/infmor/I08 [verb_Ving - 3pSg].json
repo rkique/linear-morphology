@@ -1,10 +1,10 @@
 {
     "name": "verb_Ving - 3pSg",
     "prompt_templates": [
-        "When something is {}, it {}"
+        "When something is {}, it"
     ],
     "prompt_templates_zs": [
-        "When something is {}, it {}"
+        "When something is {}, it"
     ],
     "samples": [
         {

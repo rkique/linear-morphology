@@ -1,10 +1,10 @@
 {
     "name": "verb_Ving - Ved",
     "prompt_templates": [
-        "After something is {}, it has {}"
+        "After something is {}, it has"
     ],
     "prompt_templates_zs": [
-        "After something is {}, it has {}"
+        "After something is {}, it has"
     ],
     "samples": [
         {

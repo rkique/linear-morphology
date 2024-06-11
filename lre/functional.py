@@ -10,13 +10,14 @@ from lre.metrics import is_nontrivial_prefix
 import lre.tokenizer_utils as tokenizer_utils
 from baukit.baukit import TraceDict
 
+import random
 import torch
 import logging
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_BATCH_SIZE = 48
-DEFAULT_N_ICL_LM = 5
+DEFAULT_BATCH_SIZE = 1
+DEFAULT_N_ICL_LM = 5 #not used
 DEFAULT_N_TOP_LM = 1
 
 '''
@@ -29,17 +30,23 @@ def make_prompt(*,
                 mt: models.ModelAndTokenizer | None = None,
                 ) -> str:
     #replace {} with subject.
-    # Examples will be filtered for the subject, making example preprocessing unnecessary.
-    prompt = prompt_template.format(subject)
+    #Modified to work with multiple objects
+    # Examples are already filtered for the subject, no need to do that.
+    prompt = prompt_template
     if examples is not None:
-        others = [x for x in examples if x.subject != subject]
-        prompt = (
-            "\n".join(
-                prompt_template.format(x.subject) + f" {x.object}" for x in others
-            )
-            + "\n"
-            + prompt
-        )   
+            objects = []
+            others = [x for x in examples if x.subject != subject]
+            for x in others:
+                for object in x.object:
+                    objects.append((x.subject, object))
+            objects = random.sample(objects, 8)
+            prompt = (
+                        "\n".join(
+                            prompt_template.format(x[0]) + f" {x[1]}" for x in objects
+                        )
+                        + "\n"
+                        + prompt
+                    )
     #TODO: Prefix prompt with EOS token if model has no special start token.
     #prompt = models.maybe_prefix_eos(mt, prompt)
     return prompt
@@ -291,9 +298,7 @@ def predict_next_token(
         prompt = [prompt]
     #pad all inputs left to the longest length.
     with models.set_padding_side(mt, padding_side="left"):
-        inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
-            mt.model.device
-        )
+        inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to("cuda")
     print(f'model input is {inputs[0]}')
     with torch.inference_mode():
         predictions = []

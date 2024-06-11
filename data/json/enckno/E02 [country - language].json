@@ -13,203 +13,330 @@
     "samples": [
         {
             "subject": "andorra",
-            "object": "catalan"
+            "object": [
+                "catalan"
+            ]
         },
         {
             "subject": "argentina",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "australia",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "austria",
-            "object": "german"
+            "object": [
+                "german"
+            ]
         },
         {
             "subject": "bahamas",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "bangladesh",
-            "object": "bengali"
+            "object": [
+                "bengali",
+                "bangla"
+            ]
         },
         {
             "subject": "barbados",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "belize",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "bolivia",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "brazil",
-            "object": "portuguese"
+            "object": [
+                "portuguese"
+            ]
         },
         {
             "subject": "cambodia",
-            "object": "khmer"
+            "object": [
+                "khmer"
+            ]
         },
         {
             "subject": "canada",
-            "object": "english"
+            "object": [
+                "english",
+                "french"
+            ]
         },
         {
             "subject": "chile",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "colombia",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "cuba",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "cyprus",
-            "object": "greek"
+            "object": [
+                "greek",
+                "turkish"
+            ]
         },
         {
             "subject": "denmark",
-            "object": "danish"
+            "object": [
+                "danish",
+                "faroese",
+                "greenlandic",
+                "german"
+            ]
         },
         {
             "subject": "ecuador",
-            "object": "spanish"
+            "object": [
+                "spanish",
+                "quechua"
+            ]
         },
         {
             "subject": "egypt",
-            "object": "arabic"
+            "object": [
+                "arabic"
+            ]
         },
         {
             "subject": "ethiopia",
-            "object": "amharic"
+            "object": [
+                "amharic"
+            ]
         },
         {
             "subject": "fiji",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "guadeloupe",
-            "object": "french"
+            "object": [
+                "french"
+            ]
         },
         {
             "subject": "guam",
-            "object": "english"
+            "object": [
+                "english",
+                "chamorro"
+            ]
         },
         {
             "subject": "guatemala",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "guyana",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "haiti",
-            "object": "creole"
+            "object": [
+                "creole",
+                "french"
+            ]
         },
         {
             "subject": "iran",
-            "object": "persian"
+            "object": [
+                "persian"
+            ]
         },
         {
             "subject": "iraq",
-            "object": "arabic"
+            "object": [
+                "arabic",
+                "kurdish"
+            ]
         },
         {
             "subject": "ireland",
-            "object": "english"
+            "object": [
+                "english",
+                "irish",
+                "gaelic"
+            ]
         },
         {
             "subject": "israel",
-            "object": "hebrew"
+            "object": [
+                "hebrew",
+                "arabic"
+            ]
         },
         {
             "subject": "jamaica",
-            "object": "english"
+            "object": [
+                "english",
+                "creole"
+            ]
         },
         {
             "subject": "jordan",
-            "object": "arabic"
+            "object": [
+                "arabic"
+            ]
         },
         {
             "subject": "kazakhstan",
-            "object": "kazak"
+            "object": [
+                "kazak",
+                "qazaq",
+                "russian"
+            ]
         },
         {
             "subject": "kosovo",
-            "object": "albanian"
+            "object": [
+                "albanian",
+                "serbian"
+            ]
         },
         {
             "subject": "kuwait",
-            "object": "arabic"
+            "object": [
+                "arabic"
+            ]
         },
         {
             "subject": "mexico",
-            "object": "spanish"
+            "object": [
+                "spanish",
+                "nahuatl"
+            ]
         },
         {
             "subject": "moldova",
-            "object": "moldovan"
+            "object": [
+                "moldovan",
+                "romanian"
+            ]
         },
         {
             "subject": "morocco",
-            "object": "berber"
+            "object": [
+                "berber",
+                "arabic"
+            ]
         },
         {
             "subject": "mozambique",
-            "object": "portuguese"
+            "object": [
+                "portuguese"
+            ]
         },
         {
             "subject": "netherlands",
-            "object": "dutch"
+            "object": [
+                "dutch",
+                "frisian"
+            ]
         },
         {
             "subject": "nicaragua",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "norway",
-            "object": "norwegian"
+            "object": [
+                "norwegian",
+                "bokm\u00e5l",
+                "bokmal",
+                "nynorsk"
+            ]
         },
         {
             "subject": "palestine",
-            "object": "arabic"
+            "object": [
+                "arabic"
+            ]
         },
         {
             "subject": "peru",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         },
         {
             "subject": "philippines",
-            "object": "tagalog"
+            "object": [
+                "tagalog",
+                "filipino"
+            ]
         },
         {
             "subject": "switzerland",
-            "object": "german"
+            "object": [
+                "german",
+                "french",
+                "italian"
+            ]
         },
         {
             "subject": "syria",
-            "object": "arabic"
+            "object": [
+                "arabic"
+            ]
         },
         {
             "subject": "taiwan",
-            "object": "chinese"
+            "object": [
+                "chinese"
+            ]
         },
         {
             "subject": "usa",
-            "object": "english"
+            "object": [
+                "english"
+            ]
         },
         {
             "subject": "venezuela",
-            "object": "spanish"
+            "object": [
+                "spanish"
+            ]
         }
     ],
     "_domain": null,

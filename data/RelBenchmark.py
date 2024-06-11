@@ -34,22 +34,16 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
     clozed_answers = []
     #For each sample...
     for x in relation.samples:
-        samples_without_x = [s for s in relation.samples if s != x]
-        #assemble in-context prompt with randomly selected ICL samples
-        samples_without_x = random.sample(samples_without_x, n_icl)
         #make the prompt
         cloze_template = functional.make_prompt(
             prompt_template=prompt_template,
-            subject="{}",
-            examples = samples_without_x
+            subject=x,
+            examples = relation.samples
             )
+        
         cloze_prompt = cloze_template.format(x.subject)
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
-
-    #should print 50 (?)
-    for prompt in clozed_prompts:
-        print(f'Prompt: \n{prompt}\n')
 
     #LM prediction
     start_time = time.time()
@@ -106,20 +100,20 @@ device = "cuda"
 for json_path in file_paths:
     with open('json/' + json_path, 'r') as file:
         data = json.load(file)
+        
+        relation = Relation.from_dict(data)
+        logging.info(f'[{relation.name}] Loading GPT-J and tokenizer')
+        model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+        logging.info('Model loaded')
+        model.to(device)
+        logging.info('Model put on cuda')
 
-    relation = Relation.from_dict(data)
-    logging.info(f'[{relation.name}] Loading GPT-J and tokenizer')
-    model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
-    logging.info('Model loaded')
-    model.to(device)
-    logging.info('Model put on cuda')
+        tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+        logging.info('Tokenizer loaded')
+        tokenizer.pad_token = tokenizer.eos_token
 
-    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
-    logging.info('Tokenizer loaded')
-    tokenizer.pad_token = tokenizer.eos_token
+        mt = models.ModelAndTokenizer(model,tokenizer)
 
-    mt = models.ModelAndTokenizer(model,tokenizer)
-
-    #8 ICL examples, 50 different samples total.
-    test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
-    #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)
+        #8 ICL examples, 50 different samples total.
+        test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27, k=5)
+        #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27, k=5)

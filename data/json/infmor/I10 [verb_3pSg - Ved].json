@@ -1,14 +1,14 @@
 {
     "name": "verb_3pSg - Ved",
     "prompt_templates": [
-        "When he {} something, something has been {}",
-        "When she {} something, something has been {}",
-        "When it {} something, something has been {}"
+        "When he {} something, something has been",
+        "When she {} something, something has been",
+        "When it {} something, something has been"
     ],
     "prompt_templates_zs": [
-        "When he {} something, something has been {}",
-        "When she {} something, something has been {}",
-        "When it {} something, something has been {}"
+        "When he {} something, something has been",
+        "When she {} something, something has been",
+        "When it {} something, something has been"
     ],
     "samples": [
         {

@@ -13,203 +13,305 @@
     "samples": [
         {
             "subject": "abuja",
-            "object": "nigeria"
+            "object": [
+                "nigeria"
+            ]
         },
         {
             "subject": "amman",
-            "object": "jordan"
+            "object": [
+                "jordan"
+            ]
         },
         {
             "subject": "ankara",
-            "object": "turkey"
+            "object": [
+                "turkey"
+            ]
         },
         {
             "subject": "athens",
-            "object": "greece"
+            "object": [
+                "greece"
+            ]
         },
         {
             "subject": "baghdad",
-            "object": "iraq"
+            "object": [
+                "iraq"
+            ]
         },
         {
             "subject": "bangkok",
-            "object": "thailand"
+            "object": [
+                "thailand"
+            ]
         },
         {
             "subject": "beijing",
-            "object": "china"
+            "object": [
+                "china"
+            ]
         },
         {
             "subject": "beirut",
-            "object": "lebanon"
+            "object": [
+                "lebanon"
+            ]
         },
         {
             "subject": "belgrade",
-            "object": "serbia"
+            "object": [
+                "serbia"
+            ]
         },
         {
             "subject": "berlin",
-            "object": "germany"
+            "object": [
+                "germany"
+            ]
         },
         {
             "subject": "bern",
-            "object": "switzerland"
+            "object": [
+                "switzerland"
+            ]
         },
         {
             "subject": "brussels",
-            "object": "belgium"
+            "object": [
+                "belgium"
+            ]
         },
         {
             "subject": "bucharest",
-            "object": "romania"
+            "object": [
+                "romania"
+            ]
         },
         {
             "subject": "budapest",
-            "object": "hungary"
+            "object": [
+                "hungary"
+            ]
         },
         {
             "subject": "cairo",
-            "object": "egypt"
+            "object": [
+                "egypt"
+            ]
         },
         {
             "subject": "canberra",
-            "object": "australia"
+            "object": [
+                "australia"
+            ]
         },
         {
             "subject": "conakry",
-            "object": "guinea"
+            "object": [
+                "guinea"
+            ]
         },
         {
             "subject": "copenhagen",
-            "object": "denmark"
+            "object": [
+                "denmark"
+            ]
         },
         {
             "subject": "damascus",
-            "object": "syria"
+            "object": [
+                "syria"
+            ]
         },
         {
             "subject": "dhaka",
-            "object": "bangladesh"
+            "object": [
+                "bangladesh"
+            ]
         },
         {
             "subject": "dublin",
-            "object": "ireland"
+            "object": [
+                "ireland"
+            ]
         },
         {
             "subject": "hanoi",
-            "object": "vietnam"
+            "object": [
+                "vietnam"
+            ]
         },
         {
             "subject": "havana",
-            "object": "cuba"
+            "object": [
+                "cuba"
+            ]
         },
         {
             "subject": "helsinki",
-            "object": "finland"
+            "object": [
+                "finland"
+            ]
         },
         {
             "subject": "islamabad",
-            "object": "pakistan"
+            "object": [
+                "pakistan"
+            ]
         },
         {
             "subject": "jakarta",
-            "object": "indonesia"
+            "object": [
+                "indonesia"
+            ]
         },
         {
             "subject": "kabul",
-            "object": "afghanistan"
+            "object": [
+                "afghanistan"
+            ]
         },
         {
             "subject": "kiev",
-            "object": "ukraine"
+            "object": [
+                "ukraine"
+            ]
         },
         {
             "subject": "kingston",
-            "object": "jamaica"
+            "object": [
+                "jamaica"
+            ]
         },
         {
             "subject": "lima",
-            "object": "peru"
+            "object": [
+                "peru"
+            ]
         },
         {
             "subject": "lisbon",
-            "object": "portugal"
+            "object": [
+                "portugal"
+            ]
         },
         {
             "subject": "london",
-            "object": "england"
+            "object": [
+                "england",
+                "uk",
+                "britain"
+            ]
         },
         {
             "subject": "madrid",
-            "object": "spain"
+            "object": [
+                "spain"
+            ]
         },
         {
             "subject": "manila",
-            "object": "philippines"
+            "object": [
+                "philippines"
+            ]
         },
         {
             "subject": "moscow",
-            "object": "russia"
+            "object": [
+                "russia"
+            ]
         },
         {
             "subject": "nairobi",
-            "object": "kenya"
+            "object": [
+                "kenya"
+            ]
         },
         {
             "subject": "oslo",
-            "object": "norway"
+            "object": [
+                "norway"
+            ]
         },
         {
             "subject": "ottawa",
-            "object": "canada"
+            "object": [
+                "canada"
+            ]
         },
         {
             "subject": "paris",
-            "object": "france"
+            "object": [
+                "france"
+            ]
         },
         {
             "subject": "rome",
-            "object": "italy"
+            "object": [
+                "italy"
+            ]
         },
         {
             "subject": "santiago",
-            "object": "chile"
+            "object": [
+                "chile"
+            ]
         },
         {
             "subject": "sofia",
-            "object": "bulgaria"
+            "object": [
+                "bulgaria"
+            ]
         },
         {
             "subject": "stockholm",
-            "object": "sweden"
+            "object": [
+                "sweden"
+            ]
         },
         {
             "subject": "taipei",
-            "object": "taiwan"
+            "object": [
+                "taiwan"
+            ]
         },
         {
             "subject": "tbilisi",
-            "object": "georgia"
+            "object": [
+                "georgia"
+            ]
         },
         {
             "subject": "tehran",
-            "object": "iran"
+            "object": [
+                "iran"
+            ]
         },
         {
             "subject": "tokyo",
-            "object": "japan"
+            "object": [
+                "japan"
+            ]
         },
         {
             "subject": "vienna",
-            "object": "austria"
+            "object": [
+                "austria"
+            ]
         },
         {
             "subject": "warsaw",
-            "object": "poland"
+            "object": [
+                "poland"
+            ]
         },
         {
             "subject": "zagreb",
-            "object": "croatia"
+            "object": [
+                "croatia"
+            ]
         }
     ],
     "_domain": null,
