@@ -1,6 +1,9 @@
 #Given a relation dataset, this script filters the relation samples to those which are known by the LM. 
 
 import json
+import sys
+sys.path.append('..')
+
 from lre.functional import filter_relation_samples
 from lre.data import Relation, RelationSample
 import torch
