@@ -89,8 +89,6 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
 
     print(f'For {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
 
-
-
 import os
 
 def all_file_paths(directory):
@@ -106,7 +104,7 @@ file_paths = all_file_paths('json')
 device = "cuda"
 
 for json_path in file_paths:
-    with open(json_path, 'r') as file:
+    with open('json/' + json_path, 'r') as file:
         data = json.load(file)
 
     relation = Relation.from_dict(data)
