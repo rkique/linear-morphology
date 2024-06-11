@@ -38,7 +38,7 @@ tokenizer = AutoTokenizer.from_pretrained(GPT_J_PATH)
 tokenizer.pad_token = tokenizer.eos_token
 mt = models.ModelAndTokenizer(model,tokenizer)
 
-rel_path = 'json/enckno/E06 [animal - youth]'
+rel_path = 'data/json/enckno/E06 [animal - youth]'
 json_path = f'{rel_path}.json'
 
 with open(json_path, 'r') as file:
