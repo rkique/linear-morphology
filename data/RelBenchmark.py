@@ -1,5 +1,6 @@
 import sys
 import json
+sys.path.append('..')
 from lre.data import Relation, RelationSample
 from lre.operators import JacobianIclEstimator, Word2VecIclEstimator
 import lre.functional as functional
@@ -13,7 +14,6 @@ import random
 import time
 import logging
 
-sys.path.append('..')
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
