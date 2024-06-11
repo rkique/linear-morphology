@@ -81,7 +81,7 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer, n_icl=8,
         targets_by_lm_correct[lm_correct].append(target)
         counts_by_lm_correct[lm_correct] += 1
 
-    print(f'For {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
+    logging.info(f'for {type(operator)} on {relation.name} (out of correct, with {len(relation.samples)} total): {counts_by_lm_correct}')
 
 import os
 

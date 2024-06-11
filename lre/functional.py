@@ -331,10 +331,9 @@ def predict_next_token(
     return predictions
 
 
-#Filters the samples associated with a relation to those known by the model.
-#Where would this be used?
+#Filters samples based on the prompt being known.
 @torch.inference_mode()
-def filter_relation_samples_based_on_provided_fewshots(
+def filter_relation_samples(
     *,
     mt: models.ModelAndTokenizer,
     test_relation: Relation,
@@ -366,7 +365,7 @@ def filter_relation_samples_based_on_provided_fewshots(
         known_flag = is_nontrivial_prefix(
             prediction=prediction[0].token, target=sample.object
         )
-        #Log (s,o), prediction, known flag  ....
+        logger.info()
     return test_relation.set(samples=sorted(filtered_samples, key=lambda x: x.subject))
             
 def untuple(x: Any) -> Any:
