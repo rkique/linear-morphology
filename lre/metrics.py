@@ -17,8 +17,8 @@ def is_nontrivial_prefix(prediction: str, target: str) -> bool:
     #     print(f"{prediction} matches {target}")
     return len(prediction) > 0 and target.startswith(prediction)
 
-def any_is_nontrivial_prefix(predictions: StrSequence, target: str) -> bool:
-    return any(is_nontrivial_prefix(p, target) for p in predictions)
+def any_is_nontrivial_prefix(predictions: StrSequence, targets: list[str]) -> bool:
+    return any(any(is_nontrivial_prefix(p, target) for p in predictions) for target in targets)
 
 #TODO: look at tokenized outputs.
 #recall@1: top1 is correct, recall@2: top2 is correct.
