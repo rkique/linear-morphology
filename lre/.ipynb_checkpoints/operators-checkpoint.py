@@ -4,6 +4,7 @@ import logging
 from typing import Any, Literal
 from dataclasses import dataclass, field
 import torch
+import copy
 
 import lre.models as models
 import lre.functional as functional
@@ -15,7 +16,8 @@ from baukit.baukit import TraceDict
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
 
-BETA = 2.25
+BETA = 15
+DEFAULT_N_ICL = 8
 
 @dataclass
 class PredictedToken(DataClassJsonMixin):
@@ -83,9 +85,10 @@ class LinearRelationOperator(RelationOperator):
 
         #The linear approximation step: z = Wh + bias
         z = h
-        #Relies on bias and weight being here.
         if self.weight is not None:
             z = z.mm(self.weight.t())
+            
+        #Uses beta here IF there is a bias.
         if self.bias is not None:
             bias = self.bias
             if self.beta is not None:
@@ -111,7 +114,9 @@ class LinearRelationOperator(RelationOperator):
 
 @dataclass(frozen=True, kw_only=True)
 class LinearRelationEstimator:
-    """Abstract method for estimating a linear relation operator."""
+    """Abstract method for estimating a linear relation operator.
+    Uses multiple ModelAndTokenizers to process.
+    """
 
     mt: models.ModelAndTokenizer
 
@@ -183,14 +188,16 @@ class JacobianIclEstimator(LinearRelationEstimator):
         _check_nonempty(
             samples=relation.samples, prompt_templates=relation.prompt_templates
         )
-        #estimates for the first sample (?)
+        #estimates for the first sample
         _warn_gt_1(samples=relation.samples, prompt_templates=relation.prompt_templates)
         train = relation.samples[0]
         examples = relation.samples[1:]
         prompt_template = relation.prompt_templates[0]
         #Make a prompt with every other sample
         prompt_template_icl = functional.make_prompt(
-            mt=self.mt, prompt_template=prompt_template, examples=examples, subject="{}"
+            template=prompt_template,
+            examples=examples, 
+            target="{}"
         )
         print(f'jacobian prompt_template_icl: {prompt_template_icl}')
         return JacobianEstimator(
@@ -213,58 +220,60 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         )
         _warn_gt_1(prompt_templates=relation.prompt_templates)
 
-        samples = relation.samples
+        samples = random.sample(relation.samples, DEFAULT_N_ICL)
         prompt_template = relation.prompt_templates[0]
-
         approxes = []
-        for sample in samples:
-            prompt = functional.make_prompt(
-                mt=self.mt,
-                prompt_template=prompt_template,
-                subject=sample.subject,
-                examples=samples,
-            )
-            logger.debug("estimating J for prompt:\n" + prompt)
-            
-            #tokenized inputs!
-            h_index, inputs = functional.find_subject_token_index(
-                mt=self.mt,
-                prompt=prompt,
-                subject=sample.subject
-            )
-            logger.debug(f"subject={sample.subject}, h_index={h_index}")
-
-            #utilizing order_1_approx, but nothing from JacobianIclEstimator
-            approx = functional.order_1_approx(
-                h_layer=self.h_layer,
-                h_index=h_index,
-                z_layer=self.z_layer,
-                z_index=-1,
-                inputs=inputs,
-            )
+        for i in range(0, len(samples)):
+            sample = samples[i]
+            def sample_to_approx(mt, sample, samples, prompt_template, device):
+                prompt = functional.make_prompt(
+                    template=prompt_template,
+                    target=sample,
+                    examples=samples,
+                )
+                h_index, inputs = functional.find_subject_token_index(
+                    mt=mt,
+                    prompt=prompt,
+                    subject=sample.subject,
+                    device=device,
+                )
+                approx = functional.order_1_approx(
+                    mt=mt,
+                    prompt=prompt,
+                    h_layer=self.h_layer,
+                    h_index=h_index,
+                    z_layer=self.z_layer,
+                    z_index=-1,
+                    inputs=inputs,
+                    device=device
+                )
+                return approx
+                logger.info(f"[Jacobian] FINISHED order_1_approx {i}/{len(samples)}")
+            approx = sample_to_approx(self.mt, sample, samples, prompt_template, 'cuda:0')
             approxes.append(approx)
+            
         #take mean to get J and b
         weight = torch.stack([approx.weight for approx in approxes]).mean(dim=0)
         bias = torch.stack([approx.bias for approx in approxes]).mean(dim=0)
         
-        prompt_template_icl = functional.make_prompt(
-            mt=self.mt,
-            prompt_template=prompt_template,
-            examples=samples,
-            subject="{}"
-        )
+        # prompt_template_icl = functional.make_prompt(
+        #     mt=mt,
+        #     prompt_template=prompt_template,
+        #     examples=samples,
+        #     subject="{}"
+        # )
         
         if self.rank is not None:
             weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
         
         #TODO: add metadata
         operator = LinearRelationOperator(
-            mt=self.mt,
+            mt=mt,
             weight=weight,
             bias=bias,
             h_layer=self.h_layer,
             z_layer=approxes[0].z_layer,
-            prompt_template=prompt_template_icl,
+            prompt_template=prompt_template,
             beta=self.beta
         )
 
@@ -338,7 +347,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
             h = functional.untuple(traces[h_layer_name].output)[0][h_index].detach()
             z = functional.untuple(traces[z_layer_name].output)[0][-1].detach()
             #(o - s)
-            offsets.append((z - h*BETA))
+            offsets.append((z - h * BETA))
         
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)

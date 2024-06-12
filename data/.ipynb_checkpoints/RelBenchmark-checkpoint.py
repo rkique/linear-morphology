@@ -10,9 +10,13 @@ import lre.logging_utils as logging_utils
 from collections import defaultdict
 from transformers import GPTJForCausalLM, AutoTokenizer
 import torch
+import torch.nn as nn
 import random
 import time
 import logging
+import copy
+
+DEFAULT_N_ICL = 8 
 
 logger = logging.getLogger(__name__)
 
@@ -27,17 +31,31 @@ logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
 counts_by_lre_correct: dict[bool, int] = defaultdict(int)
 
-def test_operator_on_relation(operator, relation, mt, h_layer, z_layer):
+logging.info('loading model + tokenizer')
+model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+
+model.to('cuda:0')
+    
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+tokenizer.pad_token = tokenizer.eos_token
+
+mt = models.ModelAndTokenizer(model,tokenizer)
+
+logging.info('model + tokenizer loaded')
+
+def test_operator_on_relation(operator, relation, h_layer, z_layer):
     logger.info(f'starting test: {operator} on {relation}')
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
     #For each sample...
     for x in relation.samples:
+        samples = [x] + random.sample(relation.samples, DEFAULT_N_ICL - 1)
+        print(f'{samples} samples)')
         cloze_prompt = functional.make_prompt(
             template = prompt_template, 
             target = x,
-            examples = relation.samples
+            examples = samples
             )
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
@@ -56,7 +74,6 @@ def test_operator_on_relation(operator, relation, mt, h_layer, z_layer):
     operator = operator(mt=mt, h_layer=h_layer, z_layer=z_layer)
     operator = operator(relation)
     end_time = time.time()
-
     logging.info(f'total operator prediction time: {end_time - start_time} seconds')
 
     outputs_lre = []
@@ -94,27 +111,19 @@ def all_file_paths(directory):
 directory = 'json'
 file_paths = all_file_paths('json')
 
-device = "cuda"
 
-model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
-model.to(device)
-tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
-tokenizer.pad_token = tokenizer.eos_token
-mt = models.ModelAndTokenizer(model,tokenizer)
-logging.info('model + tokenizer loaded')
-
-def test_operator_on_json(operator, json_path, mt, h_layer, z_layer):
+def test_operator_on_json(operator, json_path, h_layer, z_layer):
     with open(json_path, 'r') as file:
         data = json.load(file)
         relation = Relation.from_dict(data)
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
-        test_operator_on_relation(operator, relation, mt, 5, 27)
+        test_operator_on_relation(operator, relation, 5, 27)
 
 json_path = 'json/enckno/E06 [animal - youth].json'
-#test_operator_on_json(Word2VecIclEstimator, json_path, mt, 5, 27)
-test_operator_on_json(JacobianIclMeanEstimator, json_path, mt, 5, 27)
+#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
 #for json_path in file_paths:
 #    json_path = 'json/' + json_path
-    #test_operator_on_json(Word2VecIclEstimator, json_path, mt, 5, 27)
-    #test_operator_on_json(JacobianIclMeanEstimator, json_path, mt, 5, 27)
+    #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+    #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
