@@ -2,7 +2,7 @@ import sys
 import json
 sys.path.append('..')
 from lre.data import Relation, RelationSample, Sequence
-from lre.operators import JacobianIclEstimator, Word2VecIclEstimator
+from lre.operators import JacobianIclMeanEstimator, Word2VecIclEstimator
 import lre.functional as functional
 import lre.models as models
 import lre.metrics as metrics
@@ -96,18 +96,25 @@ file_paths = all_file_paths('json')
 
 device = "cuda"
 
-for json_path in file_paths:
-    with open('json/' + json_path, 'r') as file:
+model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+model.to(device)
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+tokenizer.pad_token = tokenizer.eos_token
+mt = models.ModelAndTokenizer(model,tokenizer)
+logging.info('model + tokenizer loaded')
+
+def test_operator_on_json(operator, json_path, mt, h_layer, z_layer):
+    with open(json_path, 'r') as file:
         data = json.load(file)
-        
         relation = Relation.from_dict(data)
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
-        model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
-        model.to(device)
-        tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
-        logging.info('Tokenizer loaded')
-        tokenizer.pad_token = tokenizer.eos_token
-        mt = models.ModelAndTokenizer(model,tokenizer)
-        #8 ICL examples, 50 different samples total.
-        test_operator_on_relation(Word2VecIclEstimator, relation, mt, 5, 27)
-        #test_operator_on_relation(JacobianIclEstimator, relation, mt, 5, 27)
+        test_operator_on_relation(operator, relation, mt, 5, 27)
+
+json_path = 'json/enckno/E06 [animal - youth].json'
+#test_operator_on_json(Word2VecIclEstimator, json_path, mt, 5, 27)
+test_operator_on_json(JacobianIclMeanEstimator, json_path, mt, 5, 27)
+
+#for json_path in file_paths:
+#    json_path = 'json/' + json_path
+    #test_operator_on_json(Word2VecIclEstimator, json_path, mt, 5, 27)
+    #test_operator_on_json(JacobianIclMeanEstimator, json_path, mt, 5, 27)
