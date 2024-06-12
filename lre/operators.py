@@ -268,7 +268,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         
         #TODO: add metadata
         operator = LinearRelationOperator(
-            mt=mt,
+            mt=self.mt,
             weight=weight,
             bias=bias,
             h_layer=self.h_layer,
