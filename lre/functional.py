@@ -1,7 +1,7 @@
 #We take three methods from functional: make_prompt, find_subject_token_index, compute_hidden_states
 from dataclasses_json import DataClassJsonMixin
 from dataclasses import dataclass, field
-from typing import Any, Literal, NamedTuple, Sequence
+from typing import Any, Literal, NamedTuple, Sequence, Optional
 
 from lre.data import Relation,RelationSample
 import lre.models as models
@@ -24,19 +24,20 @@ DEFAULT_N_TOP_LM = 1
 #Defaults to using the first object.
 def make_prompt(template: str,
                 target: RelationSample,
-                examples: list[RelationSample]) -> str:
+                examples: Optional[list[RelationSample]] = None) -> str:
     
     prompt = template.format(target.subject)
-    others = [x for x in examples if x != target]
-    others = random.sample(others, DEFAULT_N_ICL)
-    prompt = (
-                "\n".join(
-                    template.format(x.subject) + f" {x.object[0]}" for x in others
-                )
-                + "\n"
-                + prompt
-            )
-    #prompt = models.maybe_prefix_eos(mt, prompt) (?)
+    if examples != None:
+      others = [x for x in examples if x != target]
+      others = random.sample(others, DEFAULT_N_ICL)
+      prompt = (
+                  "\n".join(
+                      template.format(x.subject) + f" {x.object[0]}" for x in others
+                  )
+                  + "\n"
+                  + prompt
+              )
+      #prompt = models.maybe_prefix_eos(mt, prompt) (?)
     return prompt
 
 #(Misleading) Returns the subject token index, but also the list of tokens.
