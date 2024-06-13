@@ -20,10 +20,10 @@ DEFAULT_N_ICL = 8
 
 logger = logging.getLogger(__name__)
 
-RESULTS_FILE = 'debug_results_w2v.txt'
+RESULTS_FILE = 'w2v_adj_comp.txt'
 
 logging.basicConfig(
-    filename='debug_prompting_w2v.txt',
+    filename='w2v_adj_comp.txt',
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
@@ -55,11 +55,12 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer,beta):
         cloze_prompt = functional.make_prompt(
             template = prompt_template, 
             target = x,
-            examples = samples
+            examples = samples,
+            sep_token="\n"
             )
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
-    logging.info(f'clozed_answers is {clozed_answers}')
+    #logging.info(f'clozed_answers is {clozed_answers}')
     #LM PREDICTION
     outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts)
     preds_lm =  [[x.token for x in xs] for xs in outputs_lm]
@@ -86,7 +87,7 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer,beta):
     targets_by_lre_correct = defaultdict(list)
 
     log_msg = ""
-    for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
+    for prompt, pred_lm, pred_lre, target in zip(clozed_prompts, preds_lm, preds_lre, clozed_answers):
         lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
         if lm_correct:
           lre_correct = metrics.any_is_nontrivial_prefix(pred_lre, target)
@@ -127,12 +128,12 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer,beta):
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
         test_operator_on_relation(operator, relation, 5, 27,beta)
 
-#json_path = 'json/infmor/I10 [verb_3pSg - Ved].json'
-#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27, 1)
+json_path = 'json/infmor/I03 [adj - comparative].json'
+test_operator_on_json(Word2VecIclEstimator, json_path, 5, 5, 2.25)
 #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
-beta = 1
-for json_path in file_paths:
-    json_path = 'json/' + json_path
-    test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27, beta)
+# beta = 1
+# for json_path in file_paths:
+#     json_path = 'json/' + json_path
+#     test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27, beta)
     #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)

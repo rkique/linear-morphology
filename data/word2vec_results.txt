@@ -8012,3 +8012,439 @@
 2024-06-13 10:43:37 root INFO     weight size is torch.Size([4096, 4096])
 2024-06-13 10:43:37 root INFO     [order_1_approx] weight calculation finished
 2024-06-13 10:43:37 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 10:47:40 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 10:47:40 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 10:47:40 root INFO     total operator prediction time: 1935.0070130825043 seconds
+2024-06-13 10:47:42 root INFO     [' hill', ' nest', ' forest', ' anth', ' colony'] matches ['anthill', 'insectarium', 'terrarium', 'formicarium'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' jungle', ' tree', ' hill', ' cave'] matches ['grove', 'tree', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' cave', ' nest', ' hole', ' hill'] matches ['cave', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' cave', ' jungle', ' den'] matches ['den', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' hole', ' forest', ' hill', ' river', ' pond'] matches ['dam', 'river', 'pen'] is True
+2024-06-13 10:47:42 root INFO     [' hive', ' nest', ' hill', ' h', ' garden'] matches ['hive'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' farm', ' hill', ' jungle', ' pond'] matches ['barn', 'coral'] is False
+2024-06-13 10:47:42 root INFO     [' house', ' home', ' nest', ' hole', ' pond'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' nest', ' pond', ' hole'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' swamp', ' jungle', ' river', ' pond'] matches ['river', 'lake', 'pool'] is True
+2024-06-13 10:47:42 root INFO     [' nest', ' forest', ' tree', ' hill', ' hole'] matches ['nest', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' home', ' house', ' nest', ' forest', ' den'] matches ['doghouse', 'home', 'den', 'kennel'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' sea', ' river', ' lake', ' cave'] matches ['sea', 'sanctuary'] is True
+2024-06-13 10:47:42 root INFO     [' pond', ' lake', ' forest', ' swamp', ' river'] matches ['pond', 'nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' pond', ' lake', ' river', ' sea'] matches ['sea', 'lake', 'river', 'acquarium', 'farm', 'sanctuary'] is True
+2024-06-13 10:47:42 root INFO     [' nest', ' forest', ' pond', ' river', ' lake'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' hole', ' den', ' nest'] matches ['den', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' pond', ' lake', ' water', ' river', ' pool'] matches ['pond', 'bowl', 'aquarium', 'sanctuary'] is True
+2024-06-13 10:47:42 root INFO     [' hole', ' house', ' home', ' hill', ' forest'] matches ['nest', 'cage'] is False
+2024-06-13 10:47:42 root INFO     [' hole', ' hill', ' forest', ' nest', ' cave'] matches ['nest', 'hedge', 'pen'] is True
+2024-06-13 10:47:42 root INFO     [' river', ' hill', ' forest', ' pond', ' lake'] matches ['sea', 'sanctuary'] is False
+2024-06-13 10:47:42 root INFO     [' nest', ' hill', ' forest', ' hole', ' house'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' farm', ' home', ' grass'] matches ['stable', 'range', 'paddock', 'corral'] is False
+2024-06-13 10:47:42 root INFO     [' forest', ' nest', ' hill', ' hive', ' pond'] matches ['nest', 'cage', 'box'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' jungle', ' hill', ' den', ' zoo'] matches ['den', 'cage', 'savannah'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' nest', ' tree', ' hole'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' pond', ' lake', ' forest', ' river', ' swamp'] matches ['nest', 'pond'] is True
+2024-06-13 10:47:42 root INFO     [' hill', ' hole', ' cave', ' nest', ' forest'] matches ['hole', 'nest'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' jungle', ' tree', ' hill', ' gro'] matches ['tree', 'grove', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hole', ' hill', ' house', ' nest'] matches ['nest', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' farm', ' hill', ' swamp', ' jungle'] matches ['sty', 'pigsty', 'pen', 'pigpen'] is False
+2024-06-13 10:47:42 root INFO     [' forest', ' hole', ' grass', ' hill', ' nest'] matches ['burrow', 'warren', 'hutch', 'cage'] is False
+2024-06-13 10:47:42 root INFO     [' hole', ' house', ' forest', ' home', ' hill'] matches ['nest', 'cage'] is False
+2024-06-13 10:47:42 root INFO     [' nest', ' forest', ' hill', ' tree', ' cave'] matches ['nest', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' hole', ' forest', ' cave', ' hill', ' house'] matches ['nest', 'aquarium', 'terrarium'] is False
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' cave', ' hole', ' nest'] matches ['den', 'aquarium', 'sea'] is False
+2024-06-13 10:47:42 root INFO     [' forest', ' hole', ' hill', ' nest', ' cave'] matches ['nest', 'pit', 'acquarium'] is True
+2024-06-13 10:47:42 root INFO     [' web', ' nest', ' hole', ' home', ' cave'] matches ['web', 'acquarium', 'terrarium'] is True
+2024-06-13 10:47:42 root INFO     [' hill', ' hole', ' nest', ' forest', ' cave'] matches ['hill', 'terrarium'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' jungle', ' hill', ' den', ' cave'] matches ['den', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' river', ' forest', ' lake', ' pond', ' hill'] matches ['river', 'lake', 'sanctuary', 'aquarium', 'pond', 'tank'] is True
+2024-06-13 10:47:42 root INFO     [' nest', ' hole', ' hill', ' house', ' forest'] matches ['nest'] is True
+2024-06-13 10:47:42 root INFO     [' sea', ' forest', ' ocean', ' hill', ' nest'] matches ['sea', 'sanctuary'] is True
+2024-06-13 10:47:42 root INFO     [' forest', ' hill', ' den', ' jungle', ' cave'] matches ['den', 'cage'] is True
+2024-06-13 10:47:42 root INFO     [' hole', ' hill', ' forest', ' bur', ' nest'] matches ['hole'] is True
+2024-06-13 10:47:42 root INFO     animal - shelter (50) total: defaultdict(<class 'int'>, {True: 966, False: 567})
+2024-06-13 10:47:42 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='name - nationality', prompt_templates=['{} was', '{} identified nationally as', '{} identifies as'], prompt_templates_zs=['{} was', '{} identified nationally as', '{} identifies as'], samples=[RelationSample(subject='aristotle', object=['greek']), RelationSample(subject='balzac', object=['french']), RelationSample(subject='beethoven', object=['german']), RelationSample(subject='caesar', object=['roman']), RelationSample(subject='confucius', object=['chinese']), RelationSample(subject='copernicus', object=['polish']), RelationSample(subject='darwin', object=['english', 'british']), RelationSample(subject='depp', object=['american']), RelationSample(subject='descartes', object=['french']), RelationSample(subject='dickens', object=['english', 'british']), RelationSample(subject='dostoyevsky', object=['russian']), RelationSample(subject='edison', object=['american']), RelationSample(subject='einstein', object=['jewish', 'german', 'american']), RelationSample(subject='euclid', object=['greek']), RelationSample(subject='fermi', object=['italian']), RelationSample(subject='galilei', object=['italian']), RelationSample(subject='gorbachev', object=['soviet', 'russian']), RelationSample(subject='hawking', object=['english', 'british']), RelationSample(subject='hegel', object=['german']), RelationSample(subject='hitler', object=['german', 'austrian']), RelationSample(subject='homer', object=['greek']), RelationSample(subject='hume', object=['scottish', 'british']), RelationSample(subject='jolie', object=['american']), RelationSample(subject='kant', object=['german']), RelationSample(subject='kepler', object=['german']), RelationSample(subject='lavoisier', object=['french']), RelationSample(subject='leibniz', object=['german']), RelationSample(subject='lenin', object=['soviet', 'russian']), RelationSample(subject='lennon', object=['english', 'british']), RelationSample(subject='lincoln', object=['american']), RelationSample(subject='locke', object=['english', 'british']), RelationSample(subject='machiavelli', object=['italian']), RelationSample(subject='marx', object=['german']), RelationSample(subject='maxwell', object=['scottish', 'british']), RelationSample(subject='mencius', object=['chinese']), RelationSample(subject='michelangelo', object=['italian']), RelationSample(subject='mozart', object=['german', 'austrian']), RelationSample(subject='napoleon', object=['french', 'corsican', 'italian']), RelationSample(subject='newton', object=['english', 'british']), RelationSample(subject='pascal', object=['french']), RelationSample(subject='plato', object=['greek']), RelationSample(subject='raphael', object=['italian']), RelationSample(subject='rousseau', object=['french']), RelationSample(subject='spinoza', object=['dutch']), RelationSample(subject='stalin', object=['soviet', 'georgian']), RelationSample(subject='strauss', object=['austrian']), RelationSample(subject='tchaikovsky', object=['russian']), RelationSample(subject='tolstoi', object=['russian']), RelationSample(subject='truman', object=['american']), RelationSample(subject='wagner', object=['german'])], _domain=None, _range=None)
+2024-06-13 10:47:44 root INFO     starting operator prediction
+2024-06-13 10:47:44 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-06-13 10:47:45 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 10:51:47 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 10:51:47 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 10:51:47 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 10:55:48 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 10:55:48 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 10:55:48 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 10:59:50 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 10:59:50 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 10:59:50 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:03:53 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:03:53 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:03:53 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:07:53 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:07:53 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:07:53 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:11:54 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:11:54 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:11:54 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:15:54 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:15:54 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:15:54 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:19:55 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:19:55 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:19:55 root INFO     total operator prediction time: 1930.843556880951 seconds
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' english', ' sp', ' r'] matches ['greek'] is True
+2024-06-13 11:19:58 root INFO     [' french', ' it', ' english', ' g', ' r'] matches ['french'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' aust', ' english', ' r'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' r', ' english', ' french'] matches ['roman'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' ch', ' english', ' g', ' r'] matches ['chinese'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' g', ' r', ' euro'] matches ['polish'] is False
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' b', ' g', ' r'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' french', ' g', ' r'] matches ['american'] is False
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' french', ' g', ' sp'] matches ['french'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' g', ' r', ' b'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' r', ' english', ' g', ' a'] matches ['russian'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' americ', ' g', ' r'] matches ['american'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' sw', ' r', ' aust'] matches ['jewish', 'german', 'american'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' g', ' r', ' french'] matches ['greek'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' r', ' g', ' a'] matches ['italian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' r', ' g', ' ch'] matches ['italian'] is True
+2024-06-13 11:19:58 root INFO     [' r', ' it', ' english', ' g', ' ch'] matches ['soviet', 'russian'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' r', ' g', ' a'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' english', ' r', ' a'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' r', ' english', ' germ'] matches ['german', 'austrian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' r', ' english', ' americ'] matches ['greek'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' b', ' g', ' french'] matches ['scottish', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' french', ' r', ' americ'] matches ['american'] is True
+2024-06-13 11:19:58 root INFO     [' g', ' it', ' english', ' r', ' aust'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' english', ' r', ' a'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' french', ' english', ' g', ' r'] matches ['french'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' french', ' euro', ' sw'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' r', ' g', ' english', ' a'] matches ['soviet', 'russian'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' g', ' r', ' b'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' americ', ' b', ' g'] matches ['american'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' americ', ' g', ' b'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' g', ' french', ' r'] matches ['italian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' r', ' english', ' g', ' b'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     [' an', 'atur', ' posit', ' est', ' Prelude'] matches ['scottish', 'british'] is False
+2024-06-13 11:19:58 root INFO     [' it', ' ch', ' english', ' g', ' r'] matches ['chinese'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' ital', ' r', ' g'] matches ['italian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' g', ' r', ' sp'] matches ['german', 'austrian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' french', ' english', ' g', ' r'] matches ['french', 'corsican', 'italian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' english', ' g', ' french', ' r'] matches ['english', 'british'] is True
+2024-06-13 11:19:58 root INFO     [' french', ' g', ' it', ' english', ' r'] matches ['french'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' r', ' english', ' sp'] matches ['greek'] is True
+2024-06-13 11:19:58 root INFO     [' french', ' it', ' g', ' r', ' english'] matches ['italian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' french', ' english', ' r', ' g'] matches ['french'] is True
+2024-06-13 11:19:58 root INFO     [' r', ' it', ' g', ' english', ' ch'] matches ['soviet', 'georgian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' english', ' r', ' aust'] matches ['austrian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' r', ' g', ' english', ' sw'] matches ['russian'] is True
+2024-06-13 11:19:58 root INFO     [' it', ' g', ' r', ' english', ' french'] matches ['russian'] is True
+2024-06-13 11:19:58 root INFO     [' english', ' it', ' americ', ' r', ' g'] matches ['american'] is True
+2024-06-13 11:19:58 root INFO     [' g', ' it', ' r', ' sw', ' a'] matches ['german'] is True
+2024-06-13 11:19:58 root INFO     name - nationality (50) total: defaultdict(<class 'int'>, {True: 1012, False: 570})
+2024-06-13 11:19:58 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='male - female', prompt_templates=['A female {} is known as a', 'The female counterpart of a {} is called a', 'The female equivalent of a {} is called a'], prompt_templates_zs=['A female {} is known as a', 'The female counterpart of a {} is called a', 'The female equivalent of a {} is called a'], samples=[RelationSample(subject='actor', object=['actress']), RelationSample(subject='batman', object=['batwoman']), RelationSample(subject='boar', object=['sow']), RelationSample(subject='boy', object=['girl']), RelationSample(subject='brother', object=['sister']), RelationSample(subject='buck', object=['doe']), RelationSample(subject='bull', object=['cow']), RelationSample(subject='businessman', object=['businesswoman']), RelationSample(subject='chairman', object=['chairwoman']), RelationSample(subject='dad', object=['mom', 'mum']), RelationSample(subject='daddy', object=['mommy', 'mother', 'mom']), RelationSample(subject='duke', object=['duchess']), RelationSample(subject='emperor', object=['empress']), RelationSample(subject='father', object=['mother']), RelationSample(subject='fisherman', object=['fisherwoman']), RelationSample(subject='fox', object=['vixen']), RelationSample(subject='gentleman', object=['lady', 'gentlewoman', 'madam']), RelationSample(subject='god', object=['goddess']), RelationSample(subject='grandfather', object=['grandmother']), RelationSample(subject='grandpa', object=['grandma']), RelationSample(subject='grandson', object=['granddaughter']), RelationSample(subject='groom', object=['bride']), RelationSample(subject='headmaster', object=['headmistress']), RelationSample(subject='heir', object=['heiress']), RelationSample(subject='hero', object=['heroine']), RelationSample(subject='hound', object=['bitch']), RelationSample(subject='husband', object=['wife']), RelationSample(subject='king', object=['queen']), RelationSample(subject='lion', object=['lioness']), RelationSample(subject='man', object=['woman']), RelationSample(subject='manager', object=['manageress']), RelationSample(subject='mister', object=['miss', 'missis', 'missus', "mis'ess", 'mrs', 'ms', 'madam']), RelationSample(subject='murderer', object=['murderess']), RelationSample(subject='nephew', object=['niece']), RelationSample(subject='poet', object=['poetess']), RelationSample(subject='policeman', object=['policewoman']), RelationSample(subject='prince', object=['princess']), RelationSample(subject='ram', object=['ewe']), RelationSample(subject='rooster', object=['hen']), RelationSample(subject='sculptor', object=['sculptress']), RelationSample(subject='sir', object=['madam']), RelationSample(subject='son', object=['daughter']), RelationSample(subject='stallion', object=['mare']), RelationSample(subject='stepfather', object=['stepmother']), RelationSample(subject='superman', object=['superwoman']), RelationSample(subject='tiger', object=['tigress']), RelationSample(subject='uncle', object=['aunt']), RelationSample(subject='valet', object=['maid', 'maidservant', 'housemaid', 'chambermaid', 'handmaid', 'handmaiden', 'parlormaid', 'parlourmaid']), RelationSample(subject='waiter', object=['waitress']), RelationSample(subject='webmaster', object=['webmistress'])], _domain=None, _range=None)
+2024-06-13 11:20:00 root INFO     starting operator prediction
+2024-06-13 11:20:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-06-13 11:20:00 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:24:04 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:24:04 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:24:04 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:28:06 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:28:06 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:28:07 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:32:08 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:32:08 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:32:08 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:36:09 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:36:09 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:36:09 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:40:10 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:40:10 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:40:10 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:44:08 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:44:08 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:44:08 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:48:08 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:48:08 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:48:08 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:52:11 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:52:11 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:52:11 root INFO     total operator prediction time: 1931.1946804523468 seconds
+2024-06-13 11:52:14 root INFO     [' male', ' man', ' gentleman', ' s', ' lady'] matches ['actress'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' male', ' s', ' d'] matches ['batwoman'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' brother', ' gentleman', ' man', ' s'] matches ['sow'] is True
+2024-06-13 11:52:14 root INFO     [' brother', ' male', ' nephew', ' son', ' boy'] matches ['sister'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' d', ' s', ' lady', ' boy'] matches ['doe'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' s', ' brother', ' d', ' man'] matches ['cow'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' business', ' s', ' boss', ' gentleman'] matches ['businesswoman'] is True
+2024-06-13 11:52:14 root INFO     [' boss', ' lady', ' m', ' sir', ' male'] matches ['chairwoman'] is False
+2024-06-13 11:52:14 root INFO     [' dad', ' son', ' father', ' male', ' brother'] matches ['mom', 'mum'] is False
+2024-06-13 11:52:14 root INFO     [' daddy', ' d', ' son', ' s', ' dad'] matches ['mommy', 'mother', 'mom'] is False
+2024-06-13 11:52:14 root INFO     [' d', ' lady', ' lord', ' gentleman', ' male'] matches ['duchess'] is True
+2024-06-13 11:52:14 root INFO     [' prince', ' master', ' male', ' lady', ' s'] matches ['empress'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' s', ' lady', ' d', ' man'] matches ['fisherwoman'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' d', ' s', ' m'] matches ['vixen'] is False
+2024-06-13 11:52:14 root INFO     [' gentleman', ' male', ' lady', ' man', ' sir'] matches ['lady', 'gentlewoman', 'madam'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' god', ' s', ' d', ' master'] matches ['goddess'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' grand', ' father', ' sir', ' uncle'] matches ['grandmother'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' grand', ' brother', ' uncle', ' sir'] matches ['grandma'] is True
+2024-06-13 11:52:14 root INFO     [' nephew', ' brother', ' male', ' son', ' grandson'] matches ['granddaughter'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' male', ' d', ' s', ' female'] matches ['bride'] is False
+2024-06-13 11:52:14 root INFO     [' master', ' boss', ' sir', ' male', ' m'] matches ['headmistress'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' s', ' female', ' n', ' son'] matches ['heiress'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' s', ' male', ' d'] matches ['heroine'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' d', ' h', ' s', ' n'] matches ['bitch'] is False
+2024-06-13 11:52:14 root INFO     [' husband', ' brother', ' male', ' wife', ' man'] matches ['wife'] is True
+2024-06-13 11:52:14 root INFO     [' prince', ' king', ' lord', ' male', ' lady'] matches ['queen'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' male', ' s', ' female', ' m'] matches ['lioness'] is False
+2024-06-13 11:52:14 root INFO     [' manager', ' boss', ' lady', ' m', ' female'] matches ['manageress'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' gentleman', ' sir', ' man', ' lady'] matches ['miss', 'missis', 'missus', "mis'ess", 'mrs', 'ms', 'madam'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' d', ' m', ' s'] matches ['murderess'] is True
+2024-06-13 11:52:14 root INFO     [' nephew', ' brother', ' niece', ' n', ' male'] matches ['niece'] is True
+2024-06-13 11:52:14 root INFO     [' lady', ' d', ' female', ' s', ' b'] matches ['poetess'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' male', ' female', ' m', ' d'] matches ['policewoman'] is False
+2024-06-13 11:52:14 root INFO     [' prince', ' male', ' gentleman', ' princess', ' lord'] matches ['princess'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' s', ' brother', ' m', ' sir'] matches ['ewe'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' brother', ' s', ' boy', ' man'] matches ['hen'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' d', ' mistress', ' m'] matches ['sculptress'] is False
+2024-06-13 11:52:14 root INFO     [' sir', ' gentleman', ' male', ' lady', ' master'] matches ['madam'] is False
+2024-06-13 11:52:14 root INFO     [' male', ' lady', ' s', ' female', ' gentleman'] matches ['mare'] is False
+2024-06-13 11:52:14 root INFO     [' brother', ' male', ' s', ' husband', ' father'] matches ['stepmother'] is True
+2024-06-13 11:52:14 root INFO     [' male', ' lady', ' female', ' man', ' s'] matches ['superwoman'] is True
+2024-06-13 11:52:14 root INFO     [' lady', ' female', ' s', ' m', ' d'] matches ['tigress'] is False
+2024-06-13 11:52:14 root INFO     [' brother', ' uncle', ' nephew', ' n', ' male'] matches ['aunt'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' gentleman', ' male', ' s', ' d'] matches ['maid', 'maidservant', 'housemaid', 'chambermaid', 'handmaid', 'handmaiden', 'parlormaid', 'parlourmaid'] is False
+2024-06-13 11:52:14 root INFO     [' waiter', ' male', ' sir', ' gentleman', ' host'] matches ['waitress'] is False
+2024-06-13 11:52:14 root INFO     [' lady', ' mistress', ' m', ' master', ' house'] matches ['webmistress'] is False
+2024-06-13 11:52:14 root INFO     male - female (50) total: defaultdict(<class 'int'>, {True: 1027, False: 601})
+2024-06-13 11:52:14 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='name - occupation', prompt_templates=['{} was known for their work as a ', '{} had the occupation of ', '{} worked as a'], prompt_templates_zs=['{} was known for their work as a ', '{} had the occupation of ', '{} worked as a'], samples=[RelationSample(subject='andersen', object=['writer', 'poet', 'author']), RelationSample(subject='aristotle', object=['philosopher']), RelationSample(subject='balzac', object=['novelist', 'writer']), RelationSample(subject='beethoven', object=['composer']), RelationSample(subject='caesar', object=['emperor', 'commander', 'leader']), RelationSample(subject='columbus', object=['explorer']), RelationSample(subject='confucius', object=['philosopher']), RelationSample(subject='dante', object=['poet']), RelationSample(subject='darwin', object=['naturalist', 'biologist', 'geologist']), RelationSample(subject='depp', object=['actor', 'producer', 'musician']), RelationSample(subject='descartes', object=['mathematician', 'philosopher']), RelationSample(subject='dickens', object=['novelist', 'writer', 'critic', 'author']), RelationSample(subject='edison', object=['inventor', 'businessman']), RelationSample(subject='einstein', object=['physicist', 'scientist']), RelationSample(subject='euler', object=['mathematician', 'physicist', 'astronomer', 'logician', 'engineer']), RelationSample(subject='goethe', object=['poet', 'playwright', 'novelist', 'writer', 'author']), RelationSample(subject='hawking', object=['physicist', 'scientist']), RelationSample(subject='haydn', object=['composer']), RelationSample(subject='hegel', object=['philosopher']), RelationSample(subject='hitler', object=['dictator', 'politician', 'nazi']), RelationSample(subject='hume', object=['philosopher', 'politician']), RelationSample(subject='jolie', object=['actress', 'filmmaker', 'director', 'humanitarian', 'activist']), RelationSample(subject='kant', object=['philosopher']), RelationSample(subject='kepler', object=['mathematician', 'physicist', 'astronomer', 'astrologer']), RelationSample(subject='lincoln', object=['president']), RelationSample(subject='locke', object=['philosopher']), RelationSample(subject='marx', object=['philosopher', 'communist']), RelationSample(subject='maxwell', object=['physicist', 'scientist']), RelationSample(subject='mencius', object=['philosopher']), RelationSample(subject='michelangelo', object=['sculptor', 'painter', 'architect', 'artist', 'poet', 'engineer']), RelationSample(subject='moses', object=['prophet', 'leader']), RelationSample(subject='mozart', object=['composer']), RelationSample(subject='napoleon', object=['emperor', 'leader', 'politician', 'commander']), RelationSample(subject='newton', object=['scientist', 'mathematician', 'psysicist', 'philosopher']), RelationSample(subject='pacino', object=['actor', 'director', 'filmmaker']), RelationSample(subject='pascal', object=['mathematician', 'philosopher']), RelationSample(subject='picasso', object=['painter', 'artist', 'sculptor', 'designer']), RelationSample(subject='plato', object=['philosopher']), RelationSample(subject='raphael', object=['painter', 'artist', 'architect']), RelationSample(subject='rembrandt', object=['painter', 'etcher', 'artist']), RelationSample(subject='rousseau', object=['writer', 'author', 'philosopher']), RelationSample(subject='schwarzenegger', object=['actor', 'politician', 'governor']), RelationSample(subject='shakespeare', object=['playwright', 'poet']), RelationSample(subject='spinoza', object=['philosopher']), RelationSample(subject='stalin', object=['dictator', 'politician', 'leader', 'statesman']), RelationSample(subject='strauss', object=['composer']), RelationSample(subject='tolstoi', object=['novelist', 'writer', 'philosopher']), RelationSample(subject='truman', object=['president']), RelationSample(subject='wagner', object=['composer']), RelationSample(subject='wittgenstein', object=['philosopher'])], _domain=None, _range=None)
+2024-06-13 11:52:16 root INFO     starting operator prediction
+2024-06-13 11:52:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-06-13 11:52:16 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 11:56:19 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 11:56:19 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 11:56:19 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:00:22 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:00:22 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:00:22 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:04:25 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:04:25 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:04:25 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:08:25 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:08:25 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:08:25 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:12:28 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:12:28 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:12:29 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:16:32 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:16:32 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:16:32 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:20:34 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:20:34 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:20:34 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:24:34 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:24:34 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:24:34 root INFO     total operator prediction time: 1937.887217760086 seconds
+2024-06-13 12:24:36 root INFO     [' writer', ' philosopher', ' poet', ' ', ' author'] matches ['writer', 'poet', 'author'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' scientist', ' thinker', ' writer', ' '] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' philosopher', ' poet', ' author', ' novelist'] matches ['novelist', 'writer'] is True
+2024-06-13 12:24:36 root INFO     [' composer', ' musician', ' philosopher', ' poet', ' '] matches ['composer'] is True
+2024-06-13 12:24:36 root INFO     [' politician', ' poet', ' leader', ' philosopher', ' writer'] matches ['emperor', 'commander', 'leader'] is True
+2024-06-13 12:24:36 root INFO     [' ', ' writer', ' poet', ' philosopher', ' scientist'] matches ['explorer'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' thinker', ' writer', ' ', ' political'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' philosopher', ' writer', ' ', ' composer'] matches ['poet'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' scientist', ' writer', ' poet', ' '] matches ['naturalist', 'biologist', 'geologist'] is False
+2024-06-13 12:24:36 root INFO     [' writer', ' philosopher', ' ', ' poet', ' scientist'] matches ['actor', 'producer', 'musician'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' thinker', ' mathematician', ' writer', ' scientist'] matches ['mathematician', 'philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' poet', ' ', ' author', ' philosopher'] matches ['novelist', 'writer', 'critic', 'author'] is True
+2024-06-13 12:24:36 root INFO     [' scientist', ' writer', ' philosopher', ' ', ' inventor'] matches ['inventor', 'businessman'] is True
+2024-06-13 12:24:36 root INFO     [' scientist', ' physicist', ' philosopher', ' mathematician', ' thinker'] matches ['physicist', 'scientist'] is True
+2024-06-13 12:24:36 root INFO     [' mathematician', ' scientist', ' philosopher', ' physicist', ' '] matches ['mathematician', 'physicist', 'astronomer', 'logician', 'engineer'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' writer', ' philosopher', ' ', ' author'] matches ['poet', 'playwright', 'novelist', 'writer', 'author'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' writer', ' ', ' scientist', ' poet'] matches ['physicist', 'scientist'] is True
+2024-06-13 12:24:36 root INFO     [' composer', ' writer', ' poet', ' ', ' musician'] matches ['composer'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' poet', ' writer', ' ', ' composer'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' politician', ' political', ' dictator', ' ', ' writer'] matches ['dictator', 'politician', 'nazi'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' writer', ' poet', ' ', ' scientist'] matches ['philosopher', 'politician'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' writer', ' ', ' philosopher', ' scientist'] matches ['actress', 'filmmaker', 'director', 'humanitarian', 'activist'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' ', ' mathematician', ' thinker', ' scientist'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' scientist', ' mathematician', ' physicist', ' ', ' philosopher'] matches ['mathematician', 'physicist', 'astronomer', 'astrologer'] is True
+2024-06-13 12:24:36 root INFO     [' politician', ' political', ' philosopher', ' states', ' writer'] matches ['president'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' writer', ' politician', ' ', ' poet'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' political', ' politician', ' revolutionary', ' writer'] matches ['philosopher', 'communist'] is True
+2024-06-13 12:24:36 root INFO     ['e', 'f', 'rom', '\n', '-'] matches ['physicist', 'scientist'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' poet', ' writer', ' thinker', ' '] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' ', ' painter', ' composer', ' philosopher'] matches ['sculptor', 'painter', 'architect', 'artist', 'poet', 'engineer'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' philosopher', ' poet', ' scientist', ' '] matches ['prophet', 'leader'] is False
+2024-06-13 12:24:36 root INFO     [' composer', ' poet', ' writer', ' musician', ' '] matches ['composer'] is True
+2024-06-13 12:24:36 root INFO     [' politician', ' leader', ' military', ' states', ' '] matches ['emperor', 'leader', 'politician', 'commander'] is True
+2024-06-13 12:24:36 root INFO     [' scientist', ' mathematician', ' philosopher', ' physicist', ' '] matches ['scientist', 'mathematician', 'psysicist', 'philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' ', ' philosopher', ' writer', ' politician', ' poet'] matches ['actor', 'director', 'filmmaker'] is False
+2024-06-13 12:24:36 root INFO     [' philosopher', ' scientist', ' mathematician', ' writer', ' '] matches ['mathematician', 'philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' poet', ' ', ' painter', ' composer'] matches ['painter', 'artist', 'sculptor', 'designer'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' ', ' writer', ' scientist', ' thinker'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' painter', ' writer', ' ', ' composer'] matches ['painter', 'artist', 'architect'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' writer', ' ', ' poet', ' painter'] matches ['painter', 'etcher', 'artist'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' philosopher', ' poet', ' ', ' politician'] matches ['writer', 'author', 'philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' ', ' writer', ' politician', ' poet', ' scientist'] matches ['actor', 'politician', 'governor'] is True
+2024-06-13 12:24:36 root INFO     [' poet', ' writer', ' dram', ' play', ' philosopher'] matches ['playwright', 'poet'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' writer', ' ', ' poet', ' mathematician'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' ', ' politician', ' philosopher', ' writer', ' political'] matches ['dictator', 'politician', 'leader', 'statesman'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' poet', ' philosopher', ' ', ' author'] matches ['novelist', 'writer', 'philosopher'] is True
+2024-06-13 12:24:36 root INFO     [' writer', ' poet', ' politician', ' philosopher', ' '] matches ['president'] is False
+2024-06-13 12:24:36 root INFO     [' composer', ' writer', ' poet', ' musician', ' '] matches ['composer'] is True
+2024-06-13 12:24:36 root INFO     [' philosopher', ' thinker', ' writer', ' ', ' poet'] matches ['philosopher'] is True
+2024-06-13 12:24:36 root INFO     name - occupation (50) total: defaultdict(<class 'int'>, {True: 1067, False: 610})
+2024-06-13 12:24:36 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='country - language', prompt_templates=['The country of {} primarily speaks the language of', 'The main language spoken in {} is', 'In {}, the most commonly spoken language is'], prompt_templates_zs=['The country of {} primarily speaks the language of', 'The main language spoken in {} is', 'In {}, the most commonly spoken language is'], samples=[RelationSample(subject='andorra', object=['catalan']), RelationSample(subject='argentina', object=['spanish']), RelationSample(subject='australia', object=['english']), RelationSample(subject='austria', object=['german']), RelationSample(subject='bahamas', object=['english']), RelationSample(subject='bangladesh', object=['bengali', 'bangla']), RelationSample(subject='barbados', object=['english']), RelationSample(subject='belize', object=['english']), RelationSample(subject='bolivia', object=['spanish']), RelationSample(subject='brazil', object=['portuguese']), RelationSample(subject='cambodia', object=['khmer']), RelationSample(subject='canada', object=['english', 'french']), RelationSample(subject='chile', object=['spanish']), RelationSample(subject='colombia', object=['spanish']), RelationSample(subject='cuba', object=['spanish']), RelationSample(subject='cyprus', object=['greek', 'turkish']), RelationSample(subject='denmark', object=['danish', 'faroese', 'greenlandic', 'german']), RelationSample(subject='ecuador', object=['spanish', 'quechua']), RelationSample(subject='egypt', object=['arabic']), RelationSample(subject='ethiopia', object=['amharic']), RelationSample(subject='fiji', object=['english']), RelationSample(subject='guadeloupe', object=['french']), RelationSample(subject='guam', object=['english', 'chamorro']), RelationSample(subject='guatemala', object=['spanish']), RelationSample(subject='guyana', object=['english']), RelationSample(subject='haiti', object=['creole', 'french']), RelationSample(subject='iran', object=['persian']), RelationSample(subject='iraq', object=['arabic', 'kurdish']), RelationSample(subject='ireland', object=['english', 'irish', 'gaelic']), RelationSample(subject='israel', object=['hebrew', 'arabic']), RelationSample(subject='jamaica', object=['english', 'creole']), RelationSample(subject='jordan', object=['arabic']), RelationSample(subject='kazakhstan', object=['kazak', 'qazaq', 'russian']), RelationSample(subject='kosovo', object=['albanian', 'serbian']), RelationSample(subject='kuwait', object=['arabic']), RelationSample(subject='mexico', object=['spanish', 'nahuatl']), RelationSample(subject='moldova', object=['moldovan', 'romanian']), RelationSample(subject='morocco', object=['berber', 'arabic']), RelationSample(subject='mozambique', object=['portuguese']), RelationSample(subject='netherlands', object=['dutch', 'frisian']), RelationSample(subject='nicaragua', object=['spanish']), RelationSample(subject='norway', object=['norwegian', 'bokmål', 'bokmal', 'nynorsk']), RelationSample(subject='palestine', object=['arabic']), RelationSample(subject='peru', object=['spanish']), RelationSample(subject='philippines', object=['tagalog', 'filipino']), RelationSample(subject='switzerland', object=['german', 'french', 'italian']), RelationSample(subject='syria', object=['arabic']), RelationSample(subject='taiwan', object=['chinese']), RelationSample(subject='usa', object=['english']), RelationSample(subject='venezuela', object=['spanish'])], _domain=None, _range=None)
+2024-06-13 12:24:38 root INFO     starting operator prediction
+2024-06-13 12:24:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-06-13 12:24:38 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:28:38 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:28:38 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:28:38 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:32:40 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:32:40 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:32:40 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:36:41 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:36:42 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:36:42 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:40:43 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:40:43 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:40:44 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:44:46 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:44:46 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:44:46 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:48:49 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:48:49 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:48:49 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:52:51 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:52:51 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:52:51 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 12:56:55 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 12:56:55 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 12:56:55 root INFO     total operator prediction time: 1936.8366978168488 seconds
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' d'] matches ['catalan'] is False
+2024-06-13 12:56:58 root INFO     [' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' b', ' ang'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' french', ' d'] matches ['german'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' b'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' b', ' g', ' french'] matches ['bengali', 'bangla'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' b', ' french', ' g'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' b', ' d'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' port', ' french', ' b'] matches ['portuguese'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' g', ' sp', ' d'] matches ['khmer'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['english', 'french'] is True
+2024-06-13 12:56:58 root INFO     [' sp', ' english', ' french', ' g', ' d'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' b', ' g'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' g', ' sp', ' french', ' b'] matches ['greek', 'turkish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' d', ' g', ' french'] matches ['danish', 'faroese', 'greenlandic', 'german'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['spanish', 'quechua'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' french', ' d'] matches ['arabic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' g', ' sp', ' french', ' d'] matches ['amharic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' b', ' french', ' g'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' cre'] matches ['french'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['english', 'chamorro'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' gu'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' b'] matches ['creole', 'french'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['persian'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['arabic', 'kurdish'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' b', ' french'] matches ['english', 'irish', 'gaelic'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' d', ' b'] matches ['hebrew', 'arabic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' b', ' french', ' g'] matches ['english', 'creole'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' d'] matches ['arabic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['kazak', 'qazaq', 'russian'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['albanian', 'serbian'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' d'] matches ['arabic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' french', ' b'] matches ['spanish', 'nahuatl'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['moldovan', 'romanian'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' d'] matches ['berber', 'arabic'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' b', ' d'] matches ['portuguese'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['dutch', 'frisian'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' d', ' g'] matches ['norwegian', 'bokmål', 'bokmal', 'nynorsk'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' french', ' ar'] matches ['arabic'] is True
+2024-06-13 12:56:58 root INFO     [' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' b', ' g', ' french'] matches ['tagalog', 'filipino'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' d'] matches ['german', 'french', 'italian'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' french', ' sp', ' g', ' ar'] matches ['arabic'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' d'] matches ['chinese'] is False
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' g', ' french', ' b'] matches ['english'] is True
+2024-06-13 12:56:58 root INFO     [' english', ' sp', ' french', ' g', ' b'] matches ['spanish'] is True
+2024-06-13 12:56:58 root INFO     country - language (50) total: defaultdict(<class 'int'>, {True: 1100, False: 627})
+2024-06-13 12:56:58 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='things - color', prompt_templates=['A female {} is known as a', 'The female counterpart of a {} is called a', 'The female equivalent of a {} is called a'], prompt_templates_zs=['A female {} is known as a', 'The female counterpart of a {} is called a', 'The female equivalent of a {} is called a'], samples=[RelationSample(subject='ant', object=['black', 'brown', 'red']), RelationSample(subject='apple', object=['red', 'orange', 'yellow', 'golden']), RelationSample(subject='blackboard', object=['black', 'green']), RelationSample(subject='blood', object=['red']), RelationSample(subject='blueberry', object=['blue', 'black']), RelationSample(subject='broccoli', object=['green']), RelationSample(subject='bruise', object=['blue', 'purple']), RelationSample(subject='cabbage', object=['green']), RelationSample(subject='carrot', object=['orange', 'red', 'yellow']), RelationSample(subject='cauliflower', object=['white', 'green', 'yellow', 'yellowish']), RelationSample(subject='celery', object=['green', 'white', 'brown']), RelationSample(subject='cherry', object=['red', 'yellow', 'black']), RelationSample(subject='chocolate', object=['white', 'brown', 'black']), RelationSample(subject='cloud', object=['white', 'gray', 'grey']), RelationSample(subject='coal', object=['black']), RelationSample(subject='coffee', object=['black', 'brown']), RelationSample(subject='cranberry', object=['red', 'purple', 'pink']), RelationSample(subject='cream', object=['white']), RelationSample(subject='crow', object=['black']), RelationSample(subject='cucumber', object=['green']), RelationSample(subject='emerald', object=['green']), RelationSample(subject='fridge', object=['white', 'silver', 'black']), RelationSample(subject='frog', object=['green', 'brown', 'grey', 'gray']), RelationSample(subject='grapes', object=['black', 'red', 'green', 'purple']), RelationSample(subject='grass', object=['green']), RelationSample(subject='leaves', object=['green', 'red', 'yellow']), RelationSample(subject='milk', object=['white']), RelationSample(subject='paper', object=['white', 'color']), RelationSample(subject='parsley', object=['green']), RelationSample(subject='peony', object=['red', 'white', 'pink', 'purple']), RelationSample(subject='pepper', object=['black', 'red', 'green', 'yellow', 'orange']), RelationSample(subject='potato', object=['brown']), RelationSample(subject='radish', object=['red', 'pink', 'white', 'green', 'black']), RelationSample(subject='raven', object=['black']), RelationSample(subject='rose', object=['red', 'yellow', 'pink', 'white', 'blue']), RelationSample(subject='ruby', object=['red']), RelationSample(subject='salt', object=['white']), RelationSample(subject='sapphire', object=['blue']), RelationSample(subject='sea', object=['blue', 'green', 'gray', 'grey']), RelationSample(subject='sky', object=['blue', 'gray', 'grey']), RelationSample(subject='snow', object=['white']), RelationSample(subject='soil', object=['black', 'brown', 'dark']), RelationSample(subject='spinach', object=['green']), RelationSample(subject='sugar', object=['white', 'brown']), RelationSample(subject='sun', object=['yellow', 'gold']), RelationSample(subject='swan', object=['white', 'black', 'gray', 'grey']), RelationSample(subject='tea', object=['black', 'green', 'white', 'red', 'brown', 'yellow']), RelationSample(subject='tomato', object=['red']), RelationSample(subject='toothpaste', object=['white']), RelationSample(subject='yoghurt', object=['white', 'pink'])], _domain=None, _range=None)
+2024-06-13 12:57:00 root INFO     starting operator prediction
+2024-06-13 12:57:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-06-13 12:57:00 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:01:04 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:01:04 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:01:04 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:05:09 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:05:09 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:05:09 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:09:11 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:09:11 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:09:11 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:13:12 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:13:12 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:13:12 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:17:14 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:17:14 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:17:14 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:21:15 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:21:15 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:21:15 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:25:17 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:25:17 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:25:17 root INFO     [order_1_approx] starting weight calculation
+2024-06-13 13:29:18 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-13 13:29:18 root INFO     [order_1_approx] weight calculation finished
+2024-06-13 13:29:18 root INFO     total operator prediction time: 1938.6397330760956 seconds
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' blue', ' green'] matches ['black', 'brown', 'red'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'orange', 'yellow', 'golden'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' black', ' red', ' green', ' yellow'] matches ['black', 'green'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' blue', ' green'] matches ['red'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' yellow', ' green', ' blue'] matches ['blue', 'black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' green', ' white', ' blue'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' green', ' yellow', ' blue'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['orange', 'red', 'yellow'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' red', ' yellow', ' green', ' blue'] matches ['white', 'green', 'yellow', 'yellowish'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' green', ' yellow', ' blue'] matches ['green', 'white', 'brown'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' yellow', ' green', ' blue'] matches ['red', 'yellow', 'black'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' red', ' yellow', ' black', ' green'] matches ['white', 'brown', 'black'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' blue', ' yellow', ' green', ' red'] matches ['white', 'gray', 'grey'] is True
+2024-06-13 13:29:21 root INFO     [' black', ' white', ' yellow', ' red', ' green'] matches ['black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' yellow', ' green', ' black'] matches ['black', 'brown'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'purple', 'pink'] is True
+2024-06-13 13:29:21 root INFO     [' yellow', ' white', ' red', ' green', ' blue'] matches ['white'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' white', ' yellow', ' black', ' green'] matches ['black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' green', ' yellow', ' blue', ' white'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' red', ' green', ' yellow', ' blue'] matches ['white', 'silver', 'black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' green', ' white', ' blue'] matches ['green', 'brown', 'grey', 'gray'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['black', 'red', 'green', 'purple'] is True
+2024-06-13 13:29:21 root INFO     [' yellow', ' white', ' green', ' blue', ' red'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' green', ' red', ' yellow', ' white', ' blue'] matches ['green', 'red', 'yellow'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' red', ' green', ' blue'] matches ['white'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' red', ' green', ' yellow', ' blue'] matches ['white', 'color'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'white', 'pink', 'purple'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' black'] matches ['black', 'red', 'green', 'yellow', 'orange'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' black'] matches ['red', 'pink', 'white', 'green', 'black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' black', ' white', ' blue', ' yellow'] matches ['black'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'yellow', 'pink', 'white', 'blue'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' white', ' green', ' blue'] matches ['red'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' red', ' yellow', ' blue', ' green'] matches ['white'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' blue', ' white', ' green'] matches ['blue'] is True
+2024-06-13 13:29:21 root INFO     [' blue', ' red', ' green', ' white', ' yellow'] matches ['blue', 'green', 'gray', 'grey'] is True
+2024-06-13 13:29:21 root INFO     [' blue', ' white', ' yellow', ' red', ' green'] matches ['blue', 'gray', 'grey'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' blue', ' red', ' green'] matches ['white'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' red', ' blue', ' green'] matches ['black', 'brown', 'dark'] is False
+2024-06-13 13:29:21 root INFO     [' red', ' green', ' yellow', ' white', ' blue'] matches ['green'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' red', ' green', ' black'] matches ['white', 'brown'] is True
+2024-06-13 13:29:21 root INFO     [' yellow', ' red', ' white', ' blue', ' green'] matches ['yellow', 'gold'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' blue', ' red', ' green'] matches ['white', 'black', 'gray', 'grey'] is True
+2024-06-13 13:29:21 root INFO     [' yellow', ' white', ' red', ' green', ' black'] matches ['black', 'green', 'white', 'red', 'brown', 'yellow'] is True
+2024-06-13 13:29:21 root INFO     [' red', ' yellow', ' green', ' white', ' blue'] matches ['red'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' red', ' green', ' blue'] matches ['white'] is True
+2024-06-13 13:29:21 root INFO     [' white', ' yellow', ' red', ' green', ' blue'] matches ['white', 'pink'] is True
+2024-06-13 13:29:21 root INFO     things - color (50) total: defaultdict(<class 'int'>, {True: 1147, False: 628})

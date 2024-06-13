@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 import itertools
 import logging
 from typing import Any, Literal
@@ -82,12 +83,13 @@ class LinearRelationOperator(RelationOperator):
         else:
             logger.info("using precomputed h")
 
-        #The linear approximation step: z = Wh + bias
+        #The linear approximation step: o = Ws
         z = h
         if self.weight is not None:
             z = z.mm(self.weight.t())
-            
-        #Uses beta here IF there is a bias.
+
+        #o = Ws + b
+        #o = Ws * beta + b (IF there is a bias)
         if self.bias is not None:
             bias = self.bias
             if self.beta is not None:
@@ -222,20 +224,20 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
         prompt_template = relation.prompt_templates[0]
         approxes = []
+        mt = self.mt
         for i in range(0, len(samples)):
             sample = samples[i]
-            def sample_to_approx(mt, sample, samples, prompt_template, device):
-                prompt = functional.make_prompt(
+            prompt = functional.make_prompt(
                     template=prompt_template,
                     target=sample,
                     examples=samples,
                 )
-                h_index, inputs = functional.find_subject_token_index(
+            h_index, inputs = functional.find_subject_token_index(
                     mt=mt,
                     prompt=prompt,
                     subject=sample.subject
-                )
-                approx = functional.order_1_approx(
+            )
+            approx = functional.order_1_approx(
                     mt=mt,
                     prompt=prompt,
                     h_layer=self.h_layer,
@@ -244,9 +246,10 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                     z_index=-1,
                     inputs=inputs
                 )
-                return approx
-                logger.info(f"[Jacobian] FINISHED order_1_approx {i}/{len(samples)}")
-            approx = sample_to_approx(self.mt, sample, samples, prompt_template, 'cuda:0')
+            ts = datetime.now().strftime("%d%H%M")
+            torch.save(approx.weight, f'approx/{relation.name}_weight_{i}_{ts}.pt')
+            torch.save(approx.bias, f'approx/{relation.name}_bias_{i}_{ts}.pt')
+            logger.info(f"[Jacobian] FINISHED order_1_approx {i+1}/{len(samples)}")
             approxes.append(approx)
             
         #take mean to get J and b
@@ -285,9 +288,6 @@ class Word2VecIclEstimator(LinearRelationEstimator):
     mode: Literal["icl", "zs"] = "icl"
 
     def __call__(self, relation: data.Relation, beta: int) -> LinearRelationOperator:
-        _check_nonempty(
-            samples=relation.samples, prompt_templates=relation.prompt_templates
-        )
         _warn_gt_1(prompt_templates=relation.prompt_templates)
         device = models.determine_device(self.mt)
         dtype = models.determine_dtype(self.mt)
@@ -296,7 +296,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         prompt_template = (
             self.mt.tokenizer.eos_token + " {}" if self.mode == "zs" else relation.prompt_templates[0]
         )
-        logging.info(f'[relation call] using {relation.prompt_templates[0]}')
+        logging.info(f'[W2VEstimator call] using {relation.prompt_templates[0]}')
 
         H_stack: list[torch.Tensor] = []
         Z_stack: list[torch.Tensor] = []
@@ -344,7 +344,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
             h = functional.untuple(traces[h_layer_name].output)[0][h_index].detach()
             z = functional.untuple(traces[z_layer_name].output)[0][-1].detach()
             #(o - s)
-            offsets.append((z - h * beta))
+            offsets.append((z - h))
         
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)

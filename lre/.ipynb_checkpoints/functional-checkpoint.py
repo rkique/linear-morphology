@@ -24,17 +24,18 @@ DEFAULT_N_TOP_LM = 1
 #Defaults to using the first object.
 def make_prompt(template: str,
                 target: RelationSample,
-                examples: Optional[list[RelationSample]] = None) -> str:
+                examples: Optional[list[RelationSample]] = None,
+                sep_token: str = "\n") -> str:
     
     prompt = template.format(target.subject)
     if examples != None:
       others = [x for x in examples if x != target]
       random.shuffle(others)
       prompt = (
-                  "\n".join(
+                  sep_token.join(
                       template.format(x.subject) + f" {x.object[0]}" for x in others
                   )
-                  + "\n"
+                  + sep_token
                   + prompt
               )
       #prompt = models.maybe_prefix_eos(mt, prompt) (?)
@@ -171,37 +172,30 @@ def order_1_approx(
     """
     device = models.determine_device(mt)
     #z-layer should be last.
-    if z_layer is None:
-        z_layer = models.determine_layers(mt)[-1]
-    if z_index is None:
-        z_index = -1
-    if inputs is None:
-        inputs = mt.tokenizer(prompt, return_tensors="pt").to(device)
+    z_layer = z_layer or models.determine_layers(mt)[-1]
+    z_index = z_index or -1
+    inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
     inputs = inputs.to(device)
     # Precompute everything up to the subject, if there is anything before it.
+    # Why is this here? What does it mean
     past_key_values = None
     input_ids = inputs.input_ids
-    _h_index = h_index
     # calculates LM outputs if h_index > 0
-    if _h_index > 0:
-        outputs = mt.model(input_ids=input_ids[:, :_h_index], use_cache=True)
+    if h_index > 0:
+        outputs = mt.model(input_ids=input_ids[:, :h_index], use_cache=True)
         past_key_values = outputs.past_key_values
-        input_ids = input_ids[:, _h_index:]
-        _h_index = 0
-    #sets flag for precomputing
+        input_ids = input_ids[:, h_index:]
+        h_index = 0
     use_cache = past_key_values is not None
-
-    # Precompute initial h and z.
     [h_layer_name, z_layer_name] = models.determine_layer_paths(mt, [h_layer, z_layer])
-    #defines an edit_output function 
     edit_output: function | None = None
+
     if h is not None:
         def edit_output(output: tuple, layer: str) -> tuple:
             if layer != h_layer_name:
                 return output
-            untuple(output)[:, _h_index] = h
+            untuple(output)[:, h_index] = h
             return output
-
     else:
         edit_output = None
 
@@ -214,20 +208,18 @@ def order_1_approx(
             use_cache=use_cache,
             past_key_values=past_key_values,
         )
-    h = untuple(ret[h_layer_name].output)[0, _h_index]
+    h = untuple(ret[h_layer_name].output)[0, h_index]
     z = untuple(ret[z_layer_name].output)[0, z_index]
 
-    #If edit_output is provided, it should be a function that takes
-    #two arguments: output, and the layer name; and then it returns the
-    #modified output.
+    #edit_output: output, layer name -> modified output.
     
     def compute_z_from_h(h: torch.Tensor) -> torch.Tensor:
-        #edit_output to insert h.
+        #insert h at _h_index, and return output.
         def insert_h(output: tuple, layer: str) -> tuple:
             hs = untuple(output)
             if layer != h_layer_name:
                 return output
-            hs[0, _h_index] = h
+            hs[0, h_index] = h
             return output
 
         with TraceDict(
@@ -239,19 +231,18 @@ def order_1_approx(
                 past_key_values=past_key_values,
                 use_cache=use_cache,
             )
-        output = untuple(ret[z_layer_name].output)[0, -1]
-        return output.half().to(device)
+        z = untuple(ret[z_layer_name].output)[0, -1]
+        return z.half().to(device)
 
     assert h is not None
     logging.info("[order_1_approx] starting weight calculation")
-    #input must be converted to half
     h = h.half().to(device)
     weight = torch.autograd.functional.jacobian(compute_z_from_h, h).half().to(device)
-    #weight = torch.zeros(torch.Size([4096, 4096])).half().to(device)
+    #weight = torch.eye(4096).half().to(device)
     logging.info(f'weight size is {weight.size()}')
     logging.info("[order_1_approx] weight calculation finished")
 
-    #weight and bias are calculated here, for a single input.
+    #bias = z - Jh
     bias = z[None] - h[None].mm(weight.t()) #None expands dims.
 
     #move inputs, logits to cpu

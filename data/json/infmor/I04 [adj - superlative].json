@@ -1,12 +1,12 @@
 {
     "name": "adj - superlative",
     "prompt_templates": [
-        "When something is the most {}, it is",
-        "If something is the most {}, it is"
+        "If something is the most {}, it is",
+        "When something is the most {}, it is"
     ],
     "prompt_templates_zs": [
-        "When something is the most {}, it is",
-        "If something is the most {}, it is"
+        "If something is the most {}, it is",
+        "When something is the most {}, it is"
     ],
     "samples": [
         {

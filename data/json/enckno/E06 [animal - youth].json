@@ -6,6 +6,7 @@
         "When a {} is young, it is called a"
     ],
     "prompt_templates_zs": [
+        "{}",
         "The offspring of a {} is referred to as a",
         "The young version of {} is",
         "When a {} is young, it is called a"

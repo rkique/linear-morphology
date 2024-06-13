@@ -22,7 +22,7 @@ DEFAULT_N_ICL = 8
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
-    filename='J_results.txt',
+    filename='J_RelBenchmark_log_extended.txt',
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,

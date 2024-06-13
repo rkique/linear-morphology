@@ -1,0 +1,315 @@
+{
+    "name": "adj - superlative",
+    "prompt_templates": [
+        "If something is the most {}, it is",
+        "When something is the most {}, it is"
+    ],
+    "prompt_templates_zs": [
+        "If something is the most {}, it is",
+        "When something is the most {}, it is"
+    ],
+    "samples": [
+        {
+            "subject": "able",
+            "object": [
+                "ablest"
+            ]
+        },
+        {
+            "subject": "angry",
+            "object": [
+                "angriest"
+            ]
+        },
+        {
+            "subject": "cheap",
+            "object": [
+                "cheapest"
+            ]
+        },
+        {
+            "subject": "clever",
+            "object": [
+                "cleverest"
+            ]
+        },
+        {
+            "subject": "costly",
+            "object": [
+                "costliest"
+            ]
+        },
+        {
+            "subject": "cruel",
+            "object": [
+                "cruelest"
+            ]
+        },
+        {
+            "subject": "cute",
+            "object": [
+                "cutest"
+            ]
+        },
+        {
+            "subject": "dense",
+            "object": [
+                "densest"
+            ]
+        },
+        {
+            "subject": "dumb",
+            "object": [
+                "dumbest"
+            ]
+        },
+        {
+            "subject": "fierce",
+            "object": [
+                "fiercest"
+            ]
+        },
+        {
+            "subject": "handy",
+            "object": [
+                "handiest"
+            ]
+        },
+        {
+            "subject": "happy",
+            "object": [
+                "happiest"
+            ]
+        },
+        {
+            "subject": "hardy",
+            "object": [
+                "hardiest"
+            ]
+        },
+        {
+            "subject": "harsh",
+            "object": [
+                "harshest"
+            ]
+        },
+        {
+            "subject": "healthy",
+            "object": [
+                "healthiest"
+            ]
+        },
+        {
+            "subject": "hot",
+            "object": [
+                "hottest"
+            ]
+        },
+        {
+            "subject": "huge",
+            "object": [
+                "hugest"
+            ]
+        },
+        {
+            "subject": "hungry",
+            "object": [
+                "hungriest"
+            ]
+        },
+        {
+            "subject": "lazy",
+            "object": [
+                "laziest"
+            ]
+        },
+        {
+            "subject": "lengthy",
+            "object": [
+                "lengthiest"
+            ]
+        },
+        {
+            "subject": "lucky",
+            "object": [
+                "luckiest"
+            ]
+        },
+        {
+            "subject": "merry",
+            "object": [
+                "merriest"
+            ]
+        },
+        {
+            "subject": "mild",
+            "object": [
+                "mildest"
+            ]
+        },
+        {
+            "subject": "nasty",
+            "object": [
+                "nastiest"
+            ]
+        },
+        {
+            "subject": "neat",
+            "object": [
+                "neatest"
+            ]
+        },
+        {
+            "subject": "nice",
+            "object": [
+                "nicest"
+            ]
+        },
+        {
+            "subject": "noisy",
+            "object": [
+                "noisiest"
+            ]
+        },
+        {
+            "subject": "polite",
+            "object": [
+                "politest"
+            ]
+        },
+        {
+            "subject": "proud",
+            "object": [
+                "proudest"
+            ]
+        },
+        {
+            "subject": "pure",
+            "object": [
+                "purest"
+            ]
+        },
+        {
+            "subject": "rare",
+            "object": [
+                "rarest"
+            ]
+        },
+        {
+            "subject": "risky",
+            "object": [
+                "riskiest"
+            ]
+        },
+        {
+            "subject": "rude",
+            "object": [
+                "rudest"
+            ]
+        },
+        {
+            "subject": "sad",
+            "object": [
+                "saddest"
+            ]
+        },
+        {
+            "subject": "scary",
+            "object": [
+                "scariest"
+            ]
+        },
+        {
+            "subject": "sexy",
+            "object": [
+                "sexiest"
+            ]
+        },
+        {
+            "subject": "shiny",
+            "object": [
+                "shiniest"
+            ]
+        },
+        {
+            "subject": "strange",
+            "object": [
+                "strangest"
+            ]
+        },
+        {
+            "subject": "strict",
+            "object": [
+                "strictest"
+            ]
+        },
+        {
+            "subject": "strong",
+            "object": [
+                "strongest"
+            ]
+        },
+        {
+            "subject": "subtle",
+            "object": [
+                "subtlest"
+            ]
+        },
+        {
+            "subject": "sunny",
+            "object": [
+                "sunniest"
+            ]
+        },
+        {
+            "subject": "tasty",
+            "object": [
+                "tastiest"
+            ]
+        },
+        {
+            "subject": "tiny",
+            "object": [
+                "tiniest"
+            ]
+        },
+        {
+            "subject": "tricky",
+            "object": [
+                "trickiest"
+            ]
+        },
+        {
+            "subject": "ugly",
+            "object": [
+                "ugliest"
+            ]
+        },
+        {
+            "subject": "vague",
+            "object": [
+                "vaguest"
+            ]
+        },
+        {
+            "subject": "weak",
+            "object": [
+                "weakest"
+            ]
+        },
+        {
+            "subject": "wealthy",
+            "object": [
+                "wealthiest"
+            ]
+        },
+        {
+            "subject": "weird",
+            "object": [
+                "weirdest"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

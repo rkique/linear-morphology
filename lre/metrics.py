@@ -9,13 +9,14 @@ import numpy as np
 from dataclasses_json import DataClassJsonMixin
 
 #matching any character prefix makes for a potentially flawed analysis: does it work in practice?
+#Let's match 2+ characters in the prediction.
 
 def is_nontrivial_prefix(prediction: str, target: str) -> bool:
     target = target.lower().strip()
     prediction = prediction.lower().strip()
     # if len(prediction) > 0 and target.startswith(prediction):
     #     print(f"{prediction} matches {target}")
-    return len(prediction) > 0 and target.startswith(prediction)
+    return len(prediction) > 1 and target.startswith(prediction)
 
 def any_is_nontrivial_prefix(predictions: StrSequence, targets: list[str]) -> bool:
     return any(any(is_nontrivial_prefix(p, target) for p in predictions) for target in targets)

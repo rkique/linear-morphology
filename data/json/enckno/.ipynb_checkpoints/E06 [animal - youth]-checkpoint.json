@@ -1,13 +1,14 @@
 {
     "name": "animal - youth",
     "prompt_templates": [
-        "The young version of {} is",
         "The offspring of a {} is referred to as a",
+        "The young version of {} is",
         "When a {} is young, it is called a"
     ],
     "prompt_templates_zs": [
-        "The young version of {} is",
+        "{}",
         "The offspring of a {} is referred to as a",
+        "The young version of {} is",
         "When a {} is young, it is called a"
     ],
     "samples": [

@@ -15,6 +15,7 @@ import random
 import time
 import logging
 import copy
+import os
 
 DEFAULT_N_ICL = 8 
 
@@ -34,7 +35,7 @@ counts_by_lre_correct: dict[bool, int] = defaultdict(int)
 logging.info('loading model + tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
 
-model.to('cuda:1')
+model.to('cuda:0')
     
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer.pad_token = tokenizer.eos_token
@@ -48,7 +49,6 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
-    #For each sample...
     for x in relation.samples:
         samples = [x] + random.sample(relation.samples, DEFAULT_N_ICL - 1)
         print(f'{samples} samples)')
@@ -61,12 +61,9 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
         clozed_answers.append(x.object)
 
     #LM PREDICTION
-    #start_time = time.time()
     outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts)
     preds_lm =  [[x.token for x in xs] for xs in outputs_lm]
     recall_lm = metrics.recall(preds_lm, clozed_answers)
-    #end_time = time.time()
-    #logging.info(f'total LM prediction time: {end_time - start_time} seconds with recall {recall_lm}')
 
     #OPERATOR PREDICTION
     start_time = time.time()
@@ -89,7 +86,7 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
     targets_by_lre_correct = defaultdict(list)
 
     log_msg = ""
-    #we have len(clozed_answers) opportunities to get something correct.
+    
     for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
         lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
         if lm_correct:
@@ -100,14 +97,16 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
           preds_by_lre_correct[lre_correct].append(pred_lre)
           targets_by_lre_correct[lre_correct].append(target)
           counts_by_lre_correct[lre_correct] += 1
-    log_overall = f'{relation.name} ({len(relation.samples)}) total: {counts_by_lre_correct}'
+            
+    correct_lre_ct = counts_by_lre_correct.get(True, 0)
+    incorrect_lre_ct = counts_by_lre_correct.get(False, 0)
+    log_overall = f'{beta},{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
+    
     logging.info(log_overall)
     
     with open("J_RelBenchmark_log.txt", "a+") as file:
         file.write(log_msg)
         file.write(log_overall)
-    
-import os
 
 def all_file_paths(directory):
     file_paths = []
@@ -116,6 +115,7 @@ def all_file_paths(directory):
             relative_path = os.path.relpath(os.path.join(root, file), directory)
             file_paths.append(relative_path)
     return file_paths
+    
 directory = 'json'
 file_paths = all_file_paths('json')
 

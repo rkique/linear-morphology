@@ -1486,4 +1486,291 @@ UK_city - county (50) total: defaultdict(<class 'int'>, {True: 885, False: 557})
 [' m', ' gob', ' squ', ' c', ' cry'] matches ['gobble'] is True
 [' scream', ' buzz', ' ch', ' his', ' scree'] matches ['buzz'] is True
 [' how', ' roar', ' grow', ' b', ' bark'] matches ['howl'] is True
-animal - sound (50) total: defaultdict(<class 'int'>, {True: 930, False: 558})
+animal - sound (50) total: defaultdict(<class 'int'>, {True: 930, False: 558})[' hill', ' nest', ' forest', ' anth', ' colony'] matches ['anthill', 'insectarium', 'terrarium', 'formicarium'] is True
+[' forest', ' jungle', ' tree', ' hill', ' cave'] matches ['grove', 'tree', 'cage'] is True
+[' forest', ' cave', ' nest', ' hole', ' hill'] matches ['cave', 'cage'] is True
+[' forest', ' hill', ' cave', ' jungle', ' den'] matches ['den', 'cage'] is True
+[' hole', ' forest', ' hill', ' river', ' pond'] matches ['dam', 'river', 'pen'] is True
+[' hive', ' nest', ' hill', ' h', ' garden'] matches ['hive'] is True
+[' forest', ' farm', ' hill', ' jungle', ' pond'] matches ['barn', 'coral'] is False
+[' house', ' home', ' nest', ' hole', ' pond'] matches ['nest'] is True
+[' forest', ' hill', ' nest', ' pond', ' hole'] matches ['nest'] is True
+[' forest', ' swamp', ' jungle', ' river', ' pond'] matches ['river', 'lake', 'pool'] is True
+[' nest', ' forest', ' tree', ' hill', ' hole'] matches ['nest', 'cage'] is True
+[' home', ' house', ' nest', ' forest', ' den'] matches ['doghouse', 'home', 'den', 'kennel'] is True
+[' forest', ' sea', ' river', ' lake', ' cave'] matches ['sea', 'sanctuary'] is True
+[' pond', ' lake', ' forest', ' swamp', ' river'] matches ['pond', 'nest'] is True
+[' forest', ' pond', ' lake', ' river', ' sea'] matches ['sea', 'lake', 'river', 'acquarium', 'farm', 'sanctuary'] is True
+[' nest', ' forest', ' pond', ' river', ' lake'] matches ['nest'] is True
+[' forest', ' hill', ' hole', ' den', ' nest'] matches ['den', 'cage'] is True
+[' pond', ' lake', ' water', ' river', ' pool'] matches ['pond', 'bowl', 'aquarium', 'sanctuary'] is True
+[' hole', ' house', ' home', ' hill', ' forest'] matches ['nest', 'cage'] is False
+[' hole', ' hill', ' forest', ' nest', ' cave'] matches ['nest', 'hedge', 'pen'] is True
+[' river', ' hill', ' forest', ' pond', ' lake'] matches ['sea', 'sanctuary'] is False
+[' nest', ' hill', ' forest', ' hole', ' house'] matches ['nest'] is True
+[' forest', ' hill', ' farm', ' home', ' grass'] matches ['stable', 'range', 'paddock', 'corral'] is False
+[' forest', ' nest', ' hill', ' hive', ' pond'] matches ['nest', 'cage', 'box'] is True
+[' forest', ' jungle', ' hill', ' den', ' zoo'] matches ['den', 'cage', 'savannah'] is True
+[' forest', ' hill', ' nest', ' tree', ' hole'] matches ['nest'] is True
+[' pond', ' lake', ' forest', ' river', ' swamp'] matches ['nest', 'pond'] is True
+[' hill', ' hole', ' cave', ' nest', ' forest'] matches ['hole', 'nest'] is True
+[' forest', ' jungle', ' tree', ' hill', ' gro'] matches ['tree', 'grove', 'cage'] is True
+[' forest', ' hole', ' hill', ' house', ' nest'] matches ['nest', 'cage'] is True
+[' forest', ' farm', ' hill', ' swamp', ' jungle'] matches ['sty', 'pigsty', 'pen', 'pigpen'] is False
+[' forest', ' hole', ' grass', ' hill', ' nest'] matches ['burrow', 'warren', 'hutch', 'cage'] is False
+[' hole', ' house', ' forest', ' home', ' hill'] matches ['nest', 'cage'] is False
+[' nest', ' forest', ' hill', ' tree', ' cave'] matches ['nest', 'cage'] is True
+[' hole', ' forest', ' cave', ' hill', ' house'] matches ['nest', 'aquarium', 'terrarium'] is False
+[' forest', ' hill', ' cave', ' hole', ' nest'] matches ['den', 'aquarium', 'sea'] is False
+[' forest', ' hole', ' hill', ' nest', ' cave'] matches ['nest', 'pit', 'acquarium'] is True
+[' web', ' nest', ' hole', ' home', ' cave'] matches ['web', 'acquarium', 'terrarium'] is True
+[' hill', ' hole', ' nest', ' forest', ' cave'] matches ['hill', 'terrarium'] is True
+[' forest', ' jungle', ' hill', ' den', ' cave'] matches ['den', 'cage'] is True
+[' river', ' forest', ' lake', ' pond', ' hill'] matches ['river', 'lake', 'sanctuary', 'aquarium', 'pond', 'tank'] is True
+[' nest', ' hole', ' hill', ' house', ' forest'] matches ['nest'] is True
+[' sea', ' forest', ' ocean', ' hill', ' nest'] matches ['sea', 'sanctuary'] is True
+[' forest', ' hill', ' den', ' jungle', ' cave'] matches ['den', 'cage'] is True
+[' hole', ' hill', ' forest', ' bur', ' nest'] matches ['hole'] is True
+animal - shelter (50) total: defaultdict(<class 'int'>, {True: 966, False: 567})[' it', ' g', ' english', ' sp', ' r'] matches ['greek'] is True
+[' french', ' it', ' english', ' g', ' r'] matches ['french'] is True
+[' it', ' g', ' aust', ' english', ' r'] matches ['german'] is True
+[' it', ' g', ' r', ' english', ' french'] matches ['roman'] is True
+[' it', ' ch', ' english', ' g', ' r'] matches ['chinese'] is True
+[' it', ' english', ' g', ' r', ' euro'] matches ['polish'] is False
+[' english', ' it', ' b', ' g', ' r'] matches ['english', 'british'] is True
+[' it', ' english', ' french', ' g', ' r'] matches ['american'] is False
+[' it', ' english', ' french', ' g', ' sp'] matches ['french'] is True
+[' english', ' it', ' g', ' r', ' b'] matches ['english', 'british'] is True
+[' it', ' r', ' english', ' g', ' a'] matches ['russian'] is True
+[' english', ' it', ' americ', ' g', ' r'] matches ['american'] is True
+[' it', ' g', ' sw', ' r', ' aust'] matches ['jewish', 'german', 'american'] is True
+[' it', ' english', ' g', ' r', ' french'] matches ['greek'] is True
+[' it', ' english', ' r', ' g', ' a'] matches ['italian'] is True
+[' it', ' english', ' r', ' g', ' ch'] matches ['italian'] is True
+[' r', ' it', ' english', ' g', ' ch'] matches ['soviet', 'russian'] is True
+[' english', ' it', ' r', ' g', ' a'] matches ['english', 'british'] is True
+[' it', ' g', ' english', ' r', ' a'] matches ['german'] is True
+[' it', ' g', ' r', ' english', ' germ'] matches ['german', 'austrian'] is True
+[' it', ' g', ' r', ' english', ' americ'] matches ['greek'] is True
+[' english', ' it', ' b', ' g', ' french'] matches ['scottish', 'british'] is True
+[' it', ' english', ' french', ' r', ' americ'] matches ['american'] is True
+[' g', ' it', ' english', ' r', ' aust'] matches ['german'] is True
+[' it', ' g', ' english', ' r', ' a'] matches ['german'] is True
+[' it', ' french', ' english', ' g', ' r'] matches ['french'] is True
+[' it', ' g', ' french', ' euro', ' sw'] matches ['german'] is True
+[' it', ' r', ' g', ' english', ' a'] matches ['soviet', 'russian'] is True
+[' english', ' it', ' g', ' r', ' b'] matches ['english', 'british'] is True
+[' it', ' english', ' americ', ' b', ' g'] matches ['american'] is True
+[' english', ' it', ' americ', ' g', ' b'] matches ['english', 'british'] is True
+[' it', ' english', ' g', ' french', ' r'] matches ['italian'] is True
+[' it', ' r', ' english', ' g', ' b'] matches ['german'] is True
+[' an', 'atur', ' posit', ' est', ' Prelude'] matches ['scottish', 'british'] is False
+[' it', ' ch', ' english', ' g', ' r'] matches ['chinese'] is True
+[' it', ' english', ' ital', ' r', ' g'] matches ['italian'] is True
+[' it', ' english', ' g', ' r', ' sp'] matches ['german', 'austrian'] is True
+[' it', ' french', ' english', ' g', ' r'] matches ['french', 'corsican', 'italian'] is True
+[' it', ' english', ' g', ' french', ' r'] matches ['english', 'british'] is True
+[' french', ' g', ' it', ' english', ' r'] matches ['french'] is True
+[' it', ' g', ' r', ' english', ' sp'] matches ['greek'] is True
+[' french', ' it', ' g', ' r', ' english'] matches ['italian'] is True
+[' it', ' french', ' english', ' r', ' g'] matches ['french'] is True
+[' r', ' it', ' g', ' english', ' ch'] matches ['soviet', 'georgian'] is True
+[' it', ' g', ' english', ' r', ' aust'] matches ['austrian'] is True
+[' it', ' r', ' g', ' english', ' sw'] matches ['russian'] is True
+[' it', ' g', ' r', ' english', ' french'] matches ['russian'] is True
+[' english', ' it', ' americ', ' r', ' g'] matches ['american'] is True
+[' g', ' it', ' r', ' sw', ' a'] matches ['german'] is True
+name - nationality (50) total: defaultdict(<class 'int'>, {True: 1012, False: 570})[' male', ' man', ' gentleman', ' s', ' lady'] matches ['actress'] is False
+[' lady', ' female', ' male', ' s', ' d'] matches ['batwoman'] is False
+[' male', ' brother', ' gentleman', ' man', ' s'] matches ['sow'] is True
+[' brother', ' male', ' nephew', ' son', ' boy'] matches ['sister'] is False
+[' male', ' d', ' s', ' lady', ' boy'] matches ['doe'] is True
+[' male', ' s', ' brother', ' d', ' man'] matches ['cow'] is False
+[' male', ' business', ' s', ' boss', ' gentleman'] matches ['businesswoman'] is True
+[' boss', ' lady', ' m', ' sir', ' male'] matches ['chairwoman'] is False
+[' dad', ' son', ' father', ' male', ' brother'] matches ['mom', 'mum'] is False
+[' daddy', ' d', ' son', ' s', ' dad'] matches ['mommy', 'mother', 'mom'] is False
+[' d', ' lady', ' lord', ' gentleman', ' male'] matches ['duchess'] is True
+[' prince', ' master', ' male', ' lady', ' s'] matches ['empress'] is False
+[' male', ' s', ' lady', ' d', ' man'] matches ['fisherwoman'] is False
+[' lady', ' female', ' d', ' s', ' m'] matches ['vixen'] is False
+[' gentleman', ' male', ' lady', ' man', ' sir'] matches ['lady', 'gentlewoman', 'madam'] is True
+[' male', ' god', ' s', ' d', ' master'] matches ['goddess'] is True
+[' male', ' grand', ' father', ' sir', ' uncle'] matches ['grandmother'] is True
+[' male', ' grand', ' brother', ' uncle', ' sir'] matches ['grandma'] is True
+[' nephew', ' brother', ' male', ' son', ' grandson'] matches ['granddaughter'] is False
+[' lady', ' male', ' d', ' s', ' female'] matches ['bride'] is False
+[' master', ' boss', ' sir', ' male', ' m'] matches ['headmistress'] is False
+[' lady', ' s', ' female', ' n', ' son'] matches ['heiress'] is False
+[' lady', ' female', ' s', ' male', ' d'] matches ['heroine'] is False
+[' lady', ' d', ' h', ' s', ' n'] matches ['bitch'] is False
+[' husband', ' brother', ' male', ' wife', ' man'] matches ['wife'] is True
+[' prince', ' king', ' lord', ' male', ' lady'] matches ['queen'] is False
+[' lady', ' male', ' s', ' female', ' m'] matches ['lioness'] is False
+[' manager', ' boss', ' lady', ' m', ' female'] matches ['manageress'] is True
+[' male', ' gentleman', ' sir', ' man', ' lady'] matches ['miss', 'missis', 'missus', "mis'ess", 'mrs', 'ms', 'madam'] is False
+[' lady', ' female', ' d', ' m', ' s'] matches ['murderess'] is True
+[' nephew', ' brother', ' niece', ' n', ' male'] matches ['niece'] is True
+[' lady', ' d', ' female', ' s', ' b'] matches ['poetess'] is False
+[' lady', ' male', ' female', ' m', ' d'] matches ['policewoman'] is False
+[' prince', ' male', ' gentleman', ' princess', ' lord'] matches ['princess'] is True
+[' male', ' s', ' brother', ' m', ' sir'] matches ['ewe'] is False
+[' male', ' brother', ' s', ' boy', ' man'] matches ['hen'] is False
+[' lady', ' female', ' d', ' mistress', ' m'] matches ['sculptress'] is False
+[' sir', ' gentleman', ' male', ' lady', ' master'] matches ['madam'] is False
+[' male', ' lady', ' s', ' female', ' gentleman'] matches ['mare'] is False
+[' brother', ' male', ' s', ' husband', ' father'] matches ['stepmother'] is True
+[' male', ' lady', ' female', ' man', ' s'] matches ['superwoman'] is True
+[' lady', ' female', ' s', ' m', ' d'] matches ['tigress'] is False
+[' brother', ' uncle', ' nephew', ' n', ' male'] matches ['aunt'] is False
+[' lady', ' gentleman', ' male', ' s', ' d'] matches ['maid', 'maidservant', 'housemaid', 'chambermaid', 'handmaid', 'handmaiden', 'parlormaid', 'parlourmaid'] is False
+[' waiter', ' male', ' sir', ' gentleman', ' host'] matches ['waitress'] is False
+[' lady', ' mistress', ' m', ' master', ' house'] matches ['webmistress'] is False
+male - female (50) total: defaultdict(<class 'int'>, {True: 1027, False: 601})[' writer', ' philosopher', ' poet', ' ', ' author'] matches ['writer', 'poet', 'author'] is True
+[' philosopher', ' scientist', ' thinker', ' writer', ' '] matches ['philosopher'] is True
+[' writer', ' philosopher', ' poet', ' author', ' novelist'] matches ['novelist', 'writer'] is True
+[' composer', ' musician', ' philosopher', ' poet', ' '] matches ['composer'] is True
+[' politician', ' poet', ' leader', ' philosopher', ' writer'] matches ['emperor', 'commander', 'leader'] is True
+[' ', ' writer', ' poet', ' philosopher', ' scientist'] matches ['explorer'] is False
+[' philosopher', ' thinker', ' writer', ' ', ' political'] matches ['philosopher'] is True
+[' poet', ' philosopher', ' writer', ' ', ' composer'] matches ['poet'] is True
+[' philosopher', ' scientist', ' writer', ' poet', ' '] matches ['naturalist', 'biologist', 'geologist'] is False
+[' writer', ' philosopher', ' ', ' poet', ' scientist'] matches ['actor', 'producer', 'musician'] is False
+[' philosopher', ' thinker', ' mathematician', ' writer', ' scientist'] matches ['mathematician', 'philosopher'] is True
+[' writer', ' poet', ' ', ' author', ' philosopher'] matches ['novelist', 'writer', 'critic', 'author'] is True
+[' scientist', ' writer', ' philosopher', ' ', ' inventor'] matches ['inventor', 'businessman'] is True
+[' scientist', ' physicist', ' philosopher', ' mathematician', ' thinker'] matches ['physicist', 'scientist'] is True
+[' mathematician', ' scientist', ' philosopher', ' physicist', ' '] matches ['mathematician', 'physicist', 'astronomer', 'logician', 'engineer'] is True
+[' poet', ' writer', ' philosopher', ' ', ' author'] matches ['poet', 'playwright', 'novelist', 'writer', 'author'] is True
+[' philosopher', ' writer', ' ', ' scientist', ' poet'] matches ['physicist', 'scientist'] is True
+[' composer', ' writer', ' poet', ' ', ' musician'] matches ['composer'] is True
+[' philosopher', ' poet', ' writer', ' ', ' composer'] matches ['philosopher'] is True
+[' politician', ' political', ' dictator', ' ', ' writer'] matches ['dictator', 'politician', 'nazi'] is True
+[' philosopher', ' writer', ' poet', ' ', ' scientist'] matches ['philosopher', 'politician'] is True
+[' poet', ' writer', ' ', ' philosopher', ' scientist'] matches ['actress', 'filmmaker', 'director', 'humanitarian', 'activist'] is False
+[' philosopher', ' ', ' mathematician', ' thinker', ' scientist'] matches ['philosopher'] is True
+[' scientist', ' mathematician', ' physicist', ' ', ' philosopher'] matches ['mathematician', 'physicist', 'astronomer', 'astrologer'] is True
+[' politician', ' political', ' philosopher', ' states', ' writer'] matches ['president'] is False
+[' philosopher', ' writer', ' politician', ' ', ' poet'] matches ['philosopher'] is True
+[' philosopher', ' political', ' politician', ' revolutionary', ' writer'] matches ['philosopher', 'communist'] is True
+['e', 'f', 'rom', '\n', '-'] matches ['physicist', 'scientist'] is False
+[' philosopher', ' poet', ' writer', ' thinker', ' '] matches ['philosopher'] is True
+[' poet', ' ', ' painter', ' composer', ' philosopher'] matches ['sculptor', 'painter', 'architect', 'artist', 'poet', 'engineer'] is True
+[' writer', ' philosopher', ' poet', ' scientist', ' '] matches ['prophet', 'leader'] is False
+[' composer', ' poet', ' writer', ' musician', ' '] matches ['composer'] is True
+[' politician', ' leader', ' military', ' states', ' '] matches ['emperor', 'leader', 'politician', 'commander'] is True
+[' scientist', ' mathematician', ' philosopher', ' physicist', ' '] matches ['scientist', 'mathematician', 'psysicist', 'philosopher'] is True
+[' ', ' philosopher', ' writer', ' politician', ' poet'] matches ['actor', 'director', 'filmmaker'] is False
+[' philosopher', ' scientist', ' mathematician', ' writer', ' '] matches ['mathematician', 'philosopher'] is True
+[' writer', ' poet', ' ', ' painter', ' composer'] matches ['painter', 'artist', 'sculptor', 'designer'] is True
+[' philosopher', ' ', ' writer', ' scientist', ' thinker'] matches ['philosopher'] is True
+[' poet', ' painter', ' writer', ' ', ' composer'] matches ['painter', 'artist', 'architect'] is True
+[' philosopher', ' writer', ' ', ' poet', ' painter'] matches ['painter', 'etcher', 'artist'] is True
+[' writer', ' philosopher', ' poet', ' ', ' politician'] matches ['writer', 'author', 'philosopher'] is True
+[' ', ' writer', ' politician', ' poet', ' scientist'] matches ['actor', 'politician', 'governor'] is True
+[' poet', ' writer', ' dram', ' play', ' philosopher'] matches ['playwright', 'poet'] is True
+[' philosopher', ' writer', ' ', ' poet', ' mathematician'] matches ['philosopher'] is True
+[' ', ' politician', ' philosopher', ' writer', ' political'] matches ['dictator', 'politician', 'leader', 'statesman'] is True
+[' writer', ' poet', ' philosopher', ' ', ' author'] matches ['novelist', 'writer', 'philosopher'] is True
+[' writer', ' poet', ' politician', ' philosopher', ' '] matches ['president'] is False
+[' composer', ' writer', ' poet', ' musician', ' '] matches ['composer'] is True
+[' philosopher', ' thinker', ' writer', ' ', ' poet'] matches ['philosopher'] is True
+name - occupation (50) total: defaultdict(<class 'int'>, {True: 1067, False: 610})[' english', ' french', ' sp', ' g', ' d'] matches ['catalan'] is False
+[' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+[' english', ' sp', ' g', ' b', ' ang'] matches ['english'] is True
+[' english', ' sp', ' g', ' french', ' d'] matches ['german'] is True
+[' english', ' french', ' sp', ' g', ' b'] matches ['english'] is True
+[' english', ' sp', ' b', ' g', ' french'] matches ['bengali', 'bangla'] is True
+[' english', ' sp', ' b', ' french', ' g'] matches ['english'] is True
+[' english', ' sp', ' french', ' b', ' d'] matches ['english'] is True
+[' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+[' english', ' sp', ' port', ' french', ' b'] matches ['portuguese'] is True
+[' english', ' french', ' g', ' sp', ' d'] matches ['khmer'] is False
+[' english', ' sp', ' french', ' g', ' b'] matches ['english', 'french'] is True
+[' sp', ' english', ' french', ' g', ' d'] matches ['spanish'] is True
+[' english', ' sp', ' french', ' b', ' g'] matches ['spanish'] is True
+[' english', ' sp', ' french', ' g', ' b'] matches ['spanish'] is True
+[' english', ' g', ' sp', ' french', ' b'] matches ['greek', 'turkish'] is True
+[' english', ' sp', ' d', ' g', ' french'] matches ['danish', 'faroese', 'greenlandic', 'german'] is True
+[' english', ' sp', ' french', ' g', ' b'] matches ['spanish', 'quechua'] is True
+[' english', ' sp', ' g', ' french', ' d'] matches ['arabic'] is False
+[' english', ' g', ' sp', ' french', ' d'] matches ['amharic'] is False
+[' english', ' sp', ' b', ' french', ' g'] matches ['english'] is True
+[' english', ' french', ' sp', ' g', ' cre'] matches ['french'] is True
+[' english', ' sp', ' french', ' g', ' b'] matches ['english', 'chamorro'] is True
+[' english', ' sp', ' french', ' g', ' gu'] matches ['spanish'] is True
+[' english', ' sp', ' french', ' g', ' b'] matches ['english'] is True
+[' english', ' french', ' sp', ' g', ' b'] matches ['creole', 'french'] is True
+[' english', ' sp', ' french', ' g', ' d'] matches ['persian'] is False
+[' english', ' sp', ' french', ' g', ' b'] matches ['arabic', 'kurdish'] is False
+[' english', ' sp', ' g', ' b', ' french'] matches ['english', 'irish', 'gaelic'] is True
+[' english', ' sp', ' g', ' d', ' b'] matches ['hebrew', 'arabic'] is False
+[' english', ' sp', ' b', ' french', ' g'] matches ['english', 'creole'] is True
+[' english', ' french', ' sp', ' g', ' d'] matches ['arabic'] is False
+[' english', ' sp', ' french', ' g', ' d'] matches ['kazak', 'qazaq', 'russian'] is False
+[' english', ' sp', ' french', ' g', ' d'] matches ['albanian', 'serbian'] is False
+[' english', ' french', ' sp', ' g', ' d'] matches ['arabic'] is False
+[' english', ' sp', ' g', ' french', ' b'] matches ['spanish', 'nahuatl'] is True
+[' english', ' sp', ' french', ' g', ' d'] matches ['moldovan', 'romanian'] is False
+[' english', ' french', ' sp', ' g', ' d'] matches ['berber', 'arabic'] is False
+[' english', ' sp', ' french', ' b', ' d'] matches ['portuguese'] is False
+[' english', ' sp', ' french', ' g', ' d'] matches ['dutch', 'frisian'] is True
+[' english', ' sp', ' french', ' g', ' d'] matches ['spanish'] is True
+[' english', ' sp', ' french', ' d', ' g'] matches ['norwegian', 'bokmål', 'bokmal', 'nynorsk'] is False
+[' english', ' sp', ' g', ' french', ' ar'] matches ['arabic'] is True
+[' sp', ' english', ' french', ' g', ' b'] matches ['spanish'] is True
+[' english', ' sp', ' b', ' g', ' french'] matches ['tagalog', 'filipino'] is False
+[' english', ' french', ' sp', ' g', ' d'] matches ['german', 'french', 'italian'] is True
+[' english', ' french', ' sp', ' g', ' ar'] matches ['arabic'] is True
+[' english', ' sp', ' french', ' g', ' d'] matches ['chinese'] is False
+[' english', ' sp', ' g', ' french', ' b'] matches ['english'] is True
+[' english', ' sp', ' french', ' g', ' b'] matches ['spanish'] is True
+country - language (50) total: defaultdict(<class 'int'>, {True: 1100, False: 627})[' red', ' yellow', ' white', ' blue', ' green'] matches ['black', 'brown', 'red'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'orange', 'yellow', 'golden'] is True
+[' white', ' black', ' red', ' green', ' yellow'] matches ['black', 'green'] is True
+[' red', ' yellow', ' white', ' blue', ' green'] matches ['red'] is True
+[' red', ' white', ' yellow', ' green', ' blue'] matches ['blue', 'black'] is True
+[' red', ' yellow', ' green', ' white', ' blue'] matches ['green'] is True
+[' red', ' white', ' green', ' yellow', ' blue'] matches ['green'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['orange', 'red', 'yellow'] is True
+[' white', ' red', ' yellow', ' green', ' blue'] matches ['white', 'green', 'yellow', 'yellowish'] is True
+[' red', ' white', ' green', ' yellow', ' blue'] matches ['green', 'white', 'brown'] is True
+[' red', ' white', ' yellow', ' green', ' blue'] matches ['red', 'yellow', 'black'] is True
+[' white', ' red', ' yellow', ' black', ' green'] matches ['white', 'brown', 'black'] is True
+[' white', ' blue', ' yellow', ' green', ' red'] matches ['white', 'gray', 'grey'] is True
+[' black', ' white', ' yellow', ' red', ' green'] matches ['black'] is True
+[' red', ' white', ' yellow', ' green', ' black'] matches ['black', 'brown'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'purple', 'pink'] is True
+[' yellow', ' white', ' red', ' green', ' blue'] matches ['white'] is True
+[' red', ' white', ' yellow', ' black', ' green'] matches ['black'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['green'] is True
+[' red', ' green', ' yellow', ' blue', ' white'] matches ['green'] is True
+[' white', ' red', ' green', ' yellow', ' blue'] matches ['white', 'silver', 'black'] is True
+[' red', ' yellow', ' green', ' white', ' blue'] matches ['green', 'brown', 'grey', 'gray'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['black', 'red', 'green', 'purple'] is True
+[' yellow', ' white', ' green', ' blue', ' red'] matches ['green'] is True
+[' green', ' red', ' yellow', ' white', ' blue'] matches ['green', 'red', 'yellow'] is True
+[' white', ' yellow', ' red', ' green', ' blue'] matches ['white'] is True
+[' white', ' red', ' green', ' yellow', ' blue'] matches ['white', 'color'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['green'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'white', 'pink', 'purple'] is True
+[' red', ' yellow', ' white', ' green', ' black'] matches ['black', 'red', 'green', 'yellow', 'orange'] is True
+[' red', ' yellow', ' white', ' green', ' black'] matches ['red', 'pink', 'white', 'green', 'black'] is True
+[' red', ' black', ' white', ' blue', ' yellow'] matches ['black'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['red', 'yellow', 'pink', 'white', 'blue'] is True
+[' red', ' yellow', ' white', ' green', ' blue'] matches ['red'] is True
+[' white', ' red', ' yellow', ' blue', ' green'] matches ['white'] is True
+[' red', ' yellow', ' blue', ' white', ' green'] matches ['blue'] is True
+[' blue', ' red', ' green', ' white', ' yellow'] matches ['blue', 'green', 'gray', 'grey'] is True
+[' blue', ' white', ' yellow', ' red', ' green'] matches ['blue', 'gray', 'grey'] is True
+[' white', ' yellow', ' blue', ' red', ' green'] matches ['white'] is True
+[' white', ' yellow', ' red', ' blue', ' green'] matches ['black', 'brown', 'dark'] is False
+[' red', ' green', ' yellow', ' white', ' blue'] matches ['green'] is True
+[' white', ' yellow', ' red', ' green', ' black'] matches ['white', 'brown'] is True
+[' yellow', ' red', ' white', ' blue', ' green'] matches ['yellow', 'gold'] is True
+[' white', ' yellow', ' blue', ' red', ' green'] matches ['white', 'black', 'gray', 'grey'] is True
+[' yellow', ' white', ' red', ' green', ' black'] matches ['black', 'green', 'white', 'red', 'brown', 'yellow'] is True
+[' red', ' yellow', ' green', ' white', ' blue'] matches ['red'] is True
+[' white', ' yellow', ' red', ' green', ' blue'] matches ['white'] is True
+[' white', ' yellow', ' red', ' green', ' blue'] matches ['white', 'pink'] is True
+things - color (50) total: defaultdict(<class 'int'>, {True: 1147, False: 628})
