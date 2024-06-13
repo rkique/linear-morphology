@@ -15,14 +15,15 @@ import random
 import time
 import logging
 import copy
-import os
 
 DEFAULT_N_ICL = 8 
 
 logger = logging.getLogger(__name__)
 
+RESULTS_FILE = 'debug_results_w2v.txt'
+
 logging.basicConfig(
-    filename='J_results.txt',
+    filename='debug_prompting_w2v.txt',
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
@@ -30,12 +31,10 @@ logging.basicConfig(
 
 logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
-counts_by_lre_correct: dict[bool, int] = defaultdict(int)
-
 logging.info('loading model + tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
 
-model.to('cuda:0')
+model.to('cuda:1')
     
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer.pad_token = tokenizer.eos_token
@@ -44,14 +43,15 @@ mt = models.ModelAndTokenizer(model,tokenizer)
 
 logging.info('model + tokenizer loaded')
 
-def test_operator_on_relation(operator, relation, h_layer, z_layer):
+def test_operator_on_relation(operator, relation, h_layer, z_layer,beta):
+    counts_by_lre_correct: dict[bool, int] = defaultdict(int)
     logger.info(f'starting test: {operator} on {relation}')
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
+    #For each sample...
     for x in relation.samples:
         samples = [x] + random.sample(relation.samples, DEFAULT_N_ICL - 1)
-        print(f'{samples} samples)')
         cloze_prompt = functional.make_prompt(
             template = prompt_template, 
             target = x,
@@ -59,7 +59,7 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
             )
         clozed_prompts.append(cloze_prompt)
         clozed_answers.append(x.object)
-
+    logging.info(f'clozed_answers is {clozed_answers}')
     #LM PREDICTION
     outputs_lm = functional.predict_next_token(mt=mt, prompt=clozed_prompts)
     preds_lm =  [[x.token for x in xs] for xs in outputs_lm]
@@ -69,7 +69,7 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
     start_time = time.time()
     logging.info(f'starting operator prediction')
     operator = operator(mt=mt, h_layer=h_layer, z_layer=z_layer)
-    operator = operator(relation)
+    operator = operator(relation,beta)
     end_time = time.time()
     logging.info(f'total operator prediction time: {end_time - start_time} seconds')
 
@@ -86,7 +86,6 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
     targets_by_lre_correct = defaultdict(list)
 
     log_msg = ""
-    
     for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
         lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
         if lm_correct:
@@ -100,13 +99,16 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
             
     correct_lre_ct = counts_by_lre_correct.get(True, 0)
     incorrect_lre_ct = counts_by_lre_correct.get(False, 0)
-    log_overall = f'{beta},{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
+    
+    log_overall = f'{beta},{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}'
     
     logging.info(log_overall)
     
-    with open("J_RelBenchmark_log.txt", "a+") as file:
+    with open(RESULTS_FILE, "a+") as file:
         file.write(log_msg)
         file.write(log_overall)
+    
+import os
 
 def all_file_paths(directory):
     file_paths = []
@@ -115,22 +117,22 @@ def all_file_paths(directory):
             relative_path = os.path.relpath(os.path.join(root, file), directory)
             file_paths.append(relative_path)
     return file_paths
-    
 directory = 'json'
 file_paths = all_file_paths('json')
 
-def test_operator_on_json(operator, json_path, h_layer, z_layer):
+def test_operator_on_json(operator, json_path, h_layer, z_layer,beta):
     with open(json_path, 'r') as file:
         data = json.load(file)
         relation = Relation.from_dict(data)
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
-        test_operator_on_relation(operator, relation, 5, 27)
+        test_operator_on_relation(operator, relation, 5, 27,beta)
 
-#json_path = 'json/enckno/E06 [animal - youth].json'
-#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+#json_path = 'json/infmor/I10 [verb_3pSg - Ved].json'
+#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27, 1)
 #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
+beta = 1
 for json_path in file_paths:
     json_path = 'json/' + json_path
-    #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-    test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+    test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27, beta)
+    #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)

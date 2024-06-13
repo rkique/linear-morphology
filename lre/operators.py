@@ -16,7 +16,6 @@ from baukit.baukit import TraceDict
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
 
-BETA = 15
 DEFAULT_N_ICL = 8
 
 @dataclass
@@ -234,8 +233,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 h_index, inputs = functional.find_subject_token_index(
                     mt=mt,
                     prompt=prompt,
-                    subject=sample.subject,
-                    device=device,
+                    subject=sample.subject
                 )
                 approx = functional.order_1_approx(
                     mt=mt,
@@ -244,8 +242,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                     h_index=h_index,
                     z_layer=self.z_layer,
                     z_index=-1,
-                    inputs=inputs,
-                    device=device
+                    inputs=inputs
                 )
                 return approx
                 logger.info(f"[Jacobian] FINISHED order_1_approx {i}/{len(samples)}")
@@ -287,7 +284,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
     scaling_factor: float | None = None
     mode: Literal["icl", "zs"] = "icl"
 
-    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
+    def __call__(self, relation: data.Relation, beta: int) -> LinearRelationOperator:
         _check_nonempty(
             samples=relation.samples, prompt_templates=relation.prompt_templates
         )
@@ -337,7 +334,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
                 prompt=prompt,
                 subject=sample.subject
             )
-            
+            inputs = inputs.to(device)
             with TraceDict(
                 self.mt.model,
                 [h_layer_name, z_layer_name]
@@ -347,7 +344,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
             h = functional.untuple(traces[h_layer_name].output)[0][h_index].detach()
             z = functional.untuple(traces[z_layer_name].output)[0][-1].detach()
             #(o - s)
-            offsets.append((z - h * BETA))
+            offsets.append((z - h * beta))
         
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)

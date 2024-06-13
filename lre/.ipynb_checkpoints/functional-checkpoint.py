@@ -45,11 +45,10 @@ def find_subject_token_index(*,
                              prompt: str,
                              subject: str,
                              offset: int = -1,
-                             mt: models.ModelAndTokenizer, device: str) -> tuple[int, ModelInput]:
-    inputs = mt.tokenizer(prompt, return_tensors="pt", return_offsets_mapping=True).to(
-      device
-    )
-    offset_mapping = inputs.pop("offset_mapping")
+                             mt: models.ModelAndTokenizer) -> tuple[int, ModelInput]:
+    device = models.determine_device(mt)
+    inputs = mt.tokenizer(prompt, return_tensors="pt", return_offsets_mapping=True)
+    offset_mapping = inputs.pop("offset_mapping").to(device)
     if "token_type_ids" in inputs:  # llama tokenizer has this annoying field
         inputs.pop("token_type_ids")
     # Find the last occurrence of the subject
@@ -75,9 +74,9 @@ def compute_hidden_states(
     layers: Sequence[Layer],
     prompt: str | StrSequence | None = None,
     inputs: ModelInput | None = None,
-    device: str,
     **kwargs: Any,
 ) -> ComputeHiddenStatesOutput:
+    device = models.determine_device(mt)
     if (prompt is None) == (inputs is None):
         raise ValueError("Must pass either `prompt` or `inputs`, not both.")
 
@@ -86,7 +85,7 @@ def compute_hidden_states(
         inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
             device
         )
-
+    inputs = inputs.to(device)
     #TraceDict follows the layer paths.
     layer_paths = models.determine_layer_paths(mt, layers=layers, return_dict=True)
     with TraceDict(mt.model, layer_paths.values()) as ret:
@@ -150,7 +149,6 @@ def order_1_approx(
     z_layer: Layer | None = None,
     z_index: int | None = None,
     inputs: ModelInput | None = None,
-    device: str
 ) -> Order1ApproxOutput:
     """Compute a first-order approximation of the LM between `h` and `z`.
 
@@ -171,6 +169,7 @@ def order_1_approx(
         The approximation.
 
     """
+    device = models.determine_device(mt)
     #z-layer should be last.
     if z_layer is None:
         z_layer = models.determine_layers(mt)[-1]
@@ -178,7 +177,7 @@ def order_1_approx(
         z_index = -1
     if inputs is None:
         inputs = mt.tokenizer(prompt, return_tensors="pt").to(device)
-
+    inputs = inputs.to(device)
     # Precompute everything up to the subject, if there is anything before it.
     past_key_values = None
     input_ids = inputs.input_ids
@@ -247,7 +246,9 @@ def order_1_approx(
     logging.info("[order_1_approx] starting weight calculation")
     #input must be converted to half
     h = h.half().to(device)
-    weight = torch.autograd.functional.jacobian(compute_z_from_h, h)
+    weight = torch.autograd.functional.jacobian(compute_z_from_h, h).half().to(device)
+    #weight = torch.zeros(torch.Size([4096, 4096])).half().to(device)
+    logging.info(f'weight size is {weight.size()}')
     logging.info("[order_1_approx] weight calculation finished")
 
     #weight and bias are calculated here, for a single input.
@@ -294,11 +295,12 @@ def predict_next_token(
     k: int = 5,
     batch_size: int = DEFAULT_BATCH_SIZE,
 ) -> list[list[PredictedToken]]:
+    device = models.determine_device(mt)
     if isinstance(prompt, str):
         prompt = [prompt]
     #pad all inputs left to the longest length.
     with models.set_padding_side(mt, padding_side="left"):
-        inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to("cuda")
+        inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(device)
     print(f'model input is {inputs[0]}')
     with torch.inference_mode():
         predictions = []

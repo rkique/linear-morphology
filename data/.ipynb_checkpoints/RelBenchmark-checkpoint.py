@@ -21,7 +21,7 @@ DEFAULT_N_ICL = 8
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
-    filename='word2vec_results.txt',
+    filename='J_results.txt',
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
@@ -34,7 +34,7 @@ counts_by_lre_correct: dict[bool, int] = defaultdict(int)
 logging.info('loading model + tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
 
-model.to('cuda:0')
+model.to('cuda:1')
     
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer.pad_token = tokenizer.eos_token
@@ -87,18 +87,26 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
 
     preds_by_lre_correct = defaultdict(list)
     targets_by_lre_correct = defaultdict(list)
-    
+
+    log_msg = ""
+    #we have len(clozed_answers) opportunities to get something correct.
     for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
         lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
         if lm_correct:
           lre_correct = metrics.any_is_nontrivial_prefix(pred_lre, target)
-          logging.info(f'{pred_lre} matches {target} is {lre_correct}')
+          log_target = f'{pred_lre} matches {target} is {lre_correct}'
+          logging.info(log_target)
+          log_msg += (log_target + "\n")
           preds_by_lre_correct[lre_correct].append(pred_lre)
           targets_by_lre_correct[lre_correct].append(target)
           counts_by_lre_correct[lre_correct] += 1
-          #logging.info(f'{pred_lre},{target}')
-
-    logging.info(f'{relation.name} ({len(relation.samples)}) total: {counts_by_lre_correct}')
+    log_overall = f'{relation.name} ({len(relation.samples)}) total: {counts_by_lre_correct}'
+    logging.info(log_overall)
+    
+    with open("J_RelBenchmark_log.txt", "a+") as file:
+        file.write(log_msg)
+        file.write(log_overall)
+    
 import os
 
 def all_file_paths(directory):
@@ -111,7 +119,6 @@ def all_file_paths(directory):
 directory = 'json'
 file_paths = all_file_paths('json')
 
-
 def test_operator_on_json(operator, json_path, h_layer, z_layer):
     with open(json_path, 'r') as file:
         data = json.load(file)
@@ -119,11 +126,11 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer):
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
         test_operator_on_relation(operator, relation, 5, 27)
 
-json_path = 'json/enckno/E06 [animal - youth].json'
+#json_path = 'json/enckno/E06 [animal - youth].json'
 #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+#test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
-#for json_path in file_paths:
-#    json_path = 'json/' + json_path
+for json_path in file_paths:
+    json_path = 'json/' + json_path
     #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-    #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+    test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
