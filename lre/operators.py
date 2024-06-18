@@ -220,8 +220,8 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
             samples=relation.samples, prompt_templates=relation.prompt_templates
         )
         #_warn_gt_1(prompt_templates=relation.prompt_templates)
+        approxes = []
         def prompt_to_approx(mt, prompt_template, samples, prompt_kind):
-            #approxes = []
             for i in range(0, len(samples)):
                 sample = samples[i]
                 prompt = functional.make_prompt(
@@ -237,6 +237,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 approx = functional.order_1_approx(
                         mt=mt,
                         prompt=prompt,
+                        subject=sample.subject,
                         h_layer=self.h_layer,
                         h_index=h_index,
                         z_layer=self.z_layer,
@@ -246,7 +247,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 #ts = datetime.now().strftime("%d%H%M")
 
                 logger.info(f"{prompt_kind} [Jacobian] Finished order_1_approx for {sample}")
-                #approxes.append(approx)
+                approxes.append(approx)
         
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
         prompt_template1 = relation.prompt_templates[0]
@@ -255,11 +256,11 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         mt = self.mt
         
         prompt_to_approx(mt, prompt_template1, samples, "sem1")
-        prompt_to_approx(mt, prompt_template2, samples, "sem2")
+        #prompt_to_approx(mt, prompt_template2, samples, "sem2")
         # prompt_to_approx(mt, nocontext_template, samples, "noc")
-
-        weight = torch.eye(4096)
-        bias = torch.ones(4096)
+        
+        # weight = torch.eye(4096)
+        # bias = torch.ones(4096)
         
         if self.rank is not None:
             weight = functional.low_rank_approx(matrix=weight,rank =self.rank)

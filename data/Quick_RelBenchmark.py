@@ -18,6 +18,7 @@ import copy
 import os
 
 DEFAULT_N_ICL = 8 
+device = 'cuda:0'
 
 logger = logging.getLogger(__name__)
 
@@ -35,7 +36,7 @@ logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 logging.info('loading model + tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
 
-model.to('cuda:0')
+model.to(device)
     
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer.pad_token = tokenizer.eos_token
@@ -130,7 +131,7 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer):
 #json_path = 'json/lexsem/L10 [antonyms - binary].json'
 json_path = 'json/enckno/E06 [animal - youth].json'
 #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-test_operator_on_json(JacobianIclMeanEstimator, json_path, 10, 27)
+test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
 # for json_path in file_paths:
 #     test_operator_on_json(JacobianIclMeanEstimator, "json/"+json_path, 5, 27)
