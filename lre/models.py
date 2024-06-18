@@ -71,7 +71,6 @@ class ModelAndTokenizer:
         elif isinstance(self.model, transformers.GPT2LMHeadModel):
             return "gpt2-xl"
         else:
-            # TODO(evan): Can probably do better than failing.
             raise ValueError(f"unknown model name: {type(self.model).__name__}")
 
     def to_(self, device: Optional[Device]) -> None:

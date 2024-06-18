@@ -1,0 +1,212 @@
+2024-06-14 10:59:48 root INFO     loading model + tokenizer
+2024-06-14 11:00:04 root INFO     model + tokenizer loaded
+2024-06-14 11:00:04 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='noun - plural_reg', prompt_templates=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], prompt_templates_zs=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], samples=[RelationSample(subject='album', object=['albums']), RelationSample(subject='application', object=['applications']), RelationSample(subject='area', object=['areas']), RelationSample(subject='car', object=['cars']), RelationSample(subject='college', object=['colleges']), RelationSample(subject='council', object=['councils']), RelationSample(subject='customer', object=['customers']), RelationSample(subject='day', object=['days']), RelationSample(subject='death', object=['deaths']), RelationSample(subject='department', object=['departments']), RelationSample(subject='development', object=['developments']), RelationSample(subject='difference', object=['differences']), RelationSample(subject='director', object=['directors']), RelationSample(subject='event', object=['events']), RelationSample(subject='example', object=['examples']), RelationSample(subject='fact', object=['facts']), RelationSample(subject='friend', object=['friends']), RelationSample(subject='god', object=['gods']), RelationSample(subject='government', object=['governments']), RelationSample(subject='hour', object=['hours']), RelationSample(subject='idea', object=['ideas']), RelationSample(subject='language', object=['languages']), RelationSample(subject='law', object=['laws']), RelationSample(subject='member', object=['members']), RelationSample(subject='month', object=['months']), RelationSample(subject='night', object=['nights']), RelationSample(subject='office', object=['offices']), RelationSample(subject='period', object=['periods']), RelationSample(subject='player', object=['players']), RelationSample(subject='population', object=['populations']), RelationSample(subject='problem', object=['problems']), RelationSample(subject='product', object=['products']), RelationSample(subject='resource', object=['resources']), RelationSample(subject='river', object=['rivers']), RelationSample(subject='road', object=['roads']), RelationSample(subject='role', object=['roles']), RelationSample(subject='science', object=['sciences']), RelationSample(subject='solution', object=['solutions']), RelationSample(subject='song', object=['songs']), RelationSample(subject='street', object=['streets']), RelationSample(subject='student', object=['students']), RelationSample(subject='system', object=['systems']), RelationSample(subject='thing', object=['things']), RelationSample(subject='town', object=['towns']), RelationSample(subject='user', object=['users']), RelationSample(subject='version', object=['versions']), RelationSample(subject='village', object=['villages']), RelationSample(subject='website', object=['websites']), RelationSample(subject='week', object=['weeks']), RelationSample(subject='year', object=['years'])], _domain=None, _range=None)
+2024-06-14 11:02:06 root INFO     loading model + tokenizer
+2024-06-14 11:02:23 root INFO     model + tokenizer loaded
+2024-06-14 11:02:23 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='noun - plural_reg', prompt_templates=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], prompt_templates_zs=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], samples=[RelationSample(subject='album', object=['albums']), RelationSample(subject='application', object=['applications']), RelationSample(subject='area', object=['areas']), RelationSample(subject='car', object=['cars']), RelationSample(subject='college', object=['colleges']), RelationSample(subject='council', object=['councils']), RelationSample(subject='customer', object=['customers']), RelationSample(subject='day', object=['days']), RelationSample(subject='death', object=['deaths']), RelationSample(subject='department', object=['departments']), RelationSample(subject='development', object=['developments']), RelationSample(subject='difference', object=['differences']), RelationSample(subject='director', object=['directors']), RelationSample(subject='event', object=['events']), RelationSample(subject='example', object=['examples']), RelationSample(subject='fact', object=['facts']), RelationSample(subject='friend', object=['friends']), RelationSample(subject='god', object=['gods']), RelationSample(subject='government', object=['governments']), RelationSample(subject='hour', object=['hours']), RelationSample(subject='idea', object=['ideas']), RelationSample(subject='language', object=['languages']), RelationSample(subject='law', object=['laws']), RelationSample(subject='member', object=['members']), RelationSample(subject='month', object=['months']), RelationSample(subject='night', object=['nights']), RelationSample(subject='office', object=['offices']), RelationSample(subject='period', object=['periods']), RelationSample(subject='player', object=['players']), RelationSample(subject='population', object=['populations']), RelationSample(subject='problem', object=['problems']), RelationSample(subject='product', object=['products']), RelationSample(subject='resource', object=['resources']), RelationSample(subject='river', object=['rivers']), RelationSample(subject='road', object=['roads']), RelationSample(subject='role', object=['roles']), RelationSample(subject='science', object=['sciences']), RelationSample(subject='solution', object=['solutions']), RelationSample(subject='song', object=['songs']), RelationSample(subject='street', object=['streets']), RelationSample(subject='student', object=['students']), RelationSample(subject='system', object=['systems']), RelationSample(subject='thing', object=['things']), RelationSample(subject='town', object=['towns']), RelationSample(subject='user', object=['users']), RelationSample(subject='version', object=['versions']), RelationSample(subject='village', object=['villages']), RelationSample(subject='website', object=['websites']), RelationSample(subject='week', object=['weeks']), RelationSample(subject='year', object=['years'])], _domain=None, _range=None)
+2024-06-14 11:02:26 root INFO     starting operator prediction
+2024-06-14 11:02:26 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:06:20 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:06:20 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:06:21 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 1/8
+2024-06-14 11:06:21 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:16:10 root INFO     loading model + tokenizer
+2024-06-14 11:16:27 root INFO     model + tokenizer loaded
+2024-06-14 11:16:27 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='noun - plural_irreg', prompt_templates=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], prompt_templates_zs=['The plural form of {} is', 'In the plural, {} is', '{} in its plural form is'], samples=[RelationSample(subject='ability', object=['abilities']), RelationSample(subject='academy', object=['academies']), RelationSample(subject='activity', object=['activities']), RelationSample(subject='agency', object=['agencies']), RelationSample(subject='analysis', object=['analyses']), RelationSample(subject='army', object=['armies']), RelationSample(subject='authority', object=['authorities']), RelationSample(subject='basis', object=['bases']), RelationSample(subject='business', object=['businesses']), RelationSample(subject='category', object=['categories']), RelationSample(subject='century', object=['centuries']), RelationSample(subject='child', object=['children']), RelationSample(subject='city', object=['cities']), RelationSample(subject='community', object=['communities']), RelationSample(subject='country', object=['countries']), RelationSample(subject='county', object=['counties']), RelationSample(subject='datum', object=['data']), RelationSample(subject='duty', object=['duties']), RelationSample(subject='economy', object=['economies']), RelationSample(subject='energy', object=['energies']), RelationSample(subject='entry', object=['entries']), RelationSample(subject='facility', object=['facilities']), RelationSample(subject='family', object=['families']), RelationSample(subject='formula', object=['formulae']), RelationSample(subject='history', object=['histories']), RelationSample(subject='industry', object=['industries']), RelationSample(subject='library', object=['libraries']), RelationSample(subject='life', object=['lives']), RelationSample(subject='loss', object=['losses']), RelationSample(subject='majority', object=['majorities']), RelationSample(subject='memory', object=['memories']), RelationSample(subject='opportunity', object=['opportunities']), RelationSample(subject='policy', object=['policies']), RelationSample(subject='property', object=['properties']), RelationSample(subject='responsibility', object=['responsibilities']), RelationSample(subject='safety', object=['safeties']), RelationSample(subject='secretary', object=['secretaries']), RelationSample(subject='security', object=['securities']), RelationSample(subject='series', object=['series']), RelationSample(subject='society', object=['societies']), RelationSample(subject='species', object=['species']), RelationSample(subject='story', object=['stories']), RelationSample(subject='strategy', object=['strategies']), RelationSample(subject='success', object=['successes']), RelationSample(subject='technology', object=['technologies']), RelationSample(subject='theory', object=['theories']), RelationSample(subject='university', object=['universities']), RelationSample(subject='variety', object=['varieties']), RelationSample(subject='wife', object=['wives']), RelationSample(subject='woman', object=['women'])], _domain=None, _range=None)
+2024-06-14 11:16:29 root INFO     starting operator prediction
+2024-06-14 11:16:29 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:20:26 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:20:26 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:20:26 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 1/8
+2024-06-14 11:20:27 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:24:22 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:24:22 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:24:23 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 2/8
+2024-06-14 11:24:23 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:28:18 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:28:18 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:28:19 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 3/8
+2024-06-14 11:28:19 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:32:19 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:32:19 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:32:20 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 4/8
+2024-06-14 11:32:20 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:36:20 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:36:20 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:36:21 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 5/8
+2024-06-14 11:36:21 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:40:22 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:40:22 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:40:23 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 6/8
+2024-06-14 11:40:23 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:44:23 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:44:23 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:44:24 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 7/8
+2024-06-14 11:44:24 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:48:23 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:48:23 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:48:24 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 8/8
+2024-06-14 11:48:24 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:52:22 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:52:22 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:52:23 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 1/8
+2024-06-14 11:52:23 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 11:56:18 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 11:56:18 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 11:56:19 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 2/8
+2024-06-14 11:56:19 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:00:16 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:00:16 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:00:17 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 3/8
+2024-06-14 12:00:17 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:04:14 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:04:14 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:04:15 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 4/8
+2024-06-14 12:04:15 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:08:13 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:08:13 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:08:14 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 5/8
+2024-06-14 12:08:14 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:12:13 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:12:13 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:12:14 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 6/8
+2024-06-14 12:12:14 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:16:10 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:16:10 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:16:11 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 7/8
+2024-06-14 12:16:11 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:20:07 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:20:07 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:20:08 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 8/8
+2024-06-14 12:20:08 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:24:06 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:24:06 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:24:07 lre.operators INFO     noc[Jacobian] Finished order_1_approx 1/8
+2024-06-14 12:24:07 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:28:01 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:28:01 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:28:02 lre.operators INFO     noc[Jacobian] Finished order_1_approx 2/8
+2024-06-14 12:28:02 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:32:02 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:32:02 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:32:03 lre.operators INFO     noc[Jacobian] Finished order_1_approx 3/8
+2024-06-14 12:32:03 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:36:03 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:36:03 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:36:04 lre.operators INFO     noc[Jacobian] Finished order_1_approx 4/8
+2024-06-14 12:36:04 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:40:04 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:40:04 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:40:05 lre.operators INFO     noc[Jacobian] Finished order_1_approx 5/8
+2024-06-14 12:40:05 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:44:06 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:44:06 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:44:07 lre.operators INFO     noc[Jacobian] Finished order_1_approx 6/8
+2024-06-14 12:44:07 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:48:07 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:48:07 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:48:08 lre.operators INFO     noc[Jacobian] Finished order_1_approx 7/8
+2024-06-14 12:48:08 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 12:52:07 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 12:52:07 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 12:52:08 lre.operators INFO     noc[Jacobian] Finished order_1_approx 8/8
+2024-06-14 16:09:59 root INFO     loading model + tokenizer
+2024-06-14 16:10:16 root INFO     model + tokenizer loaded
+2024-06-14 16:10:16 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-14 16:10:19 root INFO     starting operator prediction
+2024-06-14 16:10:19 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:14:12 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:14:12 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:14:13 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 1/8
+2024-06-14 16:14:14 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:18:10 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:18:10 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:18:11 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 2/8
+2024-06-14 16:18:11 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:22:08 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:22:08 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:22:09 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 3/8
+2024-06-14 16:22:09 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:26:06 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:26:06 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:26:07 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 4/8
+2024-06-14 16:26:07 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:30:03 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:30:03 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:30:04 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 5/8
+2024-06-14 16:30:04 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:34:01 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:34:01 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:34:02 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 6/8
+2024-06-14 16:34:02 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:37:58 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:37:58 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:37:59 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 7/8
+2024-06-14 16:37:59 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:41:52 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:41:52 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:41:53 lre.operators INFO     sem1[Jacobian] Finished order_1_approx 8/8
+2024-06-14 16:41:53 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:45:47 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:45:47 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:45:48 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 1/8
+2024-06-14 16:45:49 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:49:43 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:49:43 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:49:44 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 2/8
+2024-06-14 16:49:44 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:53:40 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:53:40 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:53:41 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 3/8
+2024-06-14 16:53:41 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 16:57:36 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 16:57:36 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 16:57:37 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 4/8
+2024-06-14 16:57:37 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:01:32 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:01:32 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:01:33 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 5/8
+2024-06-14 17:01:33 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:05:27 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:05:27 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:05:27 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 6/8
+2024-06-14 17:05:28 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:09:22 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:09:22 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:09:23 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 7/8
+2024-06-14 17:09:23 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:13:19 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:13:19 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:13:20 lre.operators INFO     sem2[Jacobian] Finished order_1_approx 8/8
+2024-06-14 17:13:20 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:17:14 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:17:14 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:17:15 lre.operators INFO     noc[Jacobian] Finished order_1_approx 1/8
+2024-06-14 17:17:15 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:21:08 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:21:08 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:21:09 lre.operators INFO     noc[Jacobian] Finished order_1_approx 2/8
+2024-06-14 17:21:09 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:25:06 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:25:06 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:25:07 lre.operators INFO     noc[Jacobian] Finished order_1_approx 3/8
+2024-06-14 17:25:07 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:29:02 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:29:02 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:29:03 lre.operators INFO     noc[Jacobian] Finished order_1_approx 4/8
+2024-06-14 17:29:04 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:32:55 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:32:55 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:32:56 lre.operators INFO     noc[Jacobian] Finished order_1_approx 5/8
+2024-06-14 17:32:56 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:36:50 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:36:50 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:36:51 lre.operators INFO     noc[Jacobian] Finished order_1_approx 6/8
+2024-06-14 17:36:51 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:40:48 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:40:48 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:40:49 lre.operators INFO     noc[Jacobian] Finished order_1_approx 7/8
+2024-06-14 17:40:49 root INFO     [order_1_approx] starting weight calculation
+2024-06-14 17:44:45 root INFO     weight size is torch.Size([4096, 4096])
+2024-06-14 17:44:45 root INFO     [order_1_approx] weight calculation finished
+2024-06-14 17:44:46 lre.operators INFO     noc[Jacobian] Finished order_1_approx 8/8

@@ -219,49 +219,47 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         _check_nonempty(
             samples=relation.samples, prompt_templates=relation.prompt_templates
         )
-        _warn_gt_1(prompt_templates=relation.prompt_templates)
+        #_warn_gt_1(prompt_templates=relation.prompt_templates)
+        def prompt_to_approx(mt, prompt_template, samples, prompt_kind):
+            #approxes = []
+            for i in range(0, len(samples)):
+                sample = samples[i]
+                prompt = functional.make_prompt(
+                        template=prompt_template,
+                        target=sample,
+                        examples=samples,
+                    )
+                h_index, inputs = functional.find_subject_token_index(
+                        mt=mt,
+                        prompt=prompt,
+                        subject=sample.subject
+                )
+                approx = functional.order_1_approx(
+                        mt=mt,
+                        prompt=prompt,
+                        h_layer=self.h_layer,
+                        h_index=h_index,
+                        z_layer=self.z_layer,
+                        z_index=-1,
+                        inputs=inputs
+                    )
+                #ts = datetime.now().strftime("%d%H%M")
 
-        samples = random.sample(relation.samples, DEFAULT_N_ICL)
-        prompt_template = relation.prompt_templates[0]
-        approxes = []
-        mt = self.mt
-        for i in range(0, len(samples)):
-            sample = samples[i]
-            prompt = functional.make_prompt(
-                    template=prompt_template,
-                    target=sample,
-                    examples=samples,
-                )
-            h_index, inputs = functional.find_subject_token_index(
-                    mt=mt,
-                    prompt=prompt,
-                    subject=sample.subject
-            )
-            approx = functional.order_1_approx(
-                    mt=mt,
-                    prompt=prompt,
-                    h_layer=self.h_layer,
-                    h_index=h_index,
-                    z_layer=self.z_layer,
-                    z_index=-1,
-                    inputs=inputs
-                )
-            ts = datetime.now().strftime("%d%H%M")
-            torch.save(approx.weight, f'approx/{relation.name}_weight_{i}_{ts}.pt')
-            torch.save(approx.bias, f'approx/{relation.name}_bias_{i}_{ts}.pt')
-            logger.info(f"[Jacobian] FINISHED order_1_approx {i+1}/{len(samples)}")
-            approxes.append(approx)
-            
-        #take mean to get J and b
-        weight = torch.stack([approx.weight for approx in approxes]).mean(dim=0)
-        bias = torch.stack([approx.bias for approx in approxes]).mean(dim=0)
+                logger.info(f"{prompt_kind} [Jacobian] Finished order_1_approx for {sample}")
+                #approxes.append(approx)
         
-        # prompt_template_icl = functional.make_prompt(
-        #     mt=mt,
-        #     prompt_template=prompt_template,
-        #     examples=samples,
-        #     subject="{}"
-        # )
+        samples = random.sample(relation.samples, DEFAULT_N_ICL)
+        prompt_template1 = relation.prompt_templates[0]
+        prompt_template2 = relation.prompt_templates[1]
+        nocontext_template = "{} "
+        mt = self.mt
+        
+        prompt_to_approx(mt, prompt_template1, samples, "sem1")
+        prompt_to_approx(mt, prompt_template2, samples, "sem2")
+        # prompt_to_approx(mt, nocontext_template, samples, "noc")
+
+        weight = torch.eye(4096)
+        bias = torch.ones(4096)
         
         if self.rank is not None:
             weight = functional.low_rank_approx(matrix=weight,rank =self.rank)

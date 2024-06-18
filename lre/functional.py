@@ -152,32 +152,23 @@ def order_1_approx(
     inputs: ModelInput | None = None,
 ) -> Order1ApproxOutput:
     """Compute a first-order approximation of the LM between `h` and `z`.
-
-    Very simply, this computes the Jacobian of z with respect to h, as well as
-    z - Jh to approximate the bias.
-
-    Args:
-        mt: The model.
-        prompt: Prompt to approximate.
         h_layer: Layer to take h from.
         h_index: Token index for h.
-        h: will calculate approximation based on this hidden state, if provided.
         z_layer: Layer to take z from.
         z_index: Token index for z.
         inputs: Precomputed tokenized inputs, recomputed if not set.
-
     Returns:
         The approximation.
 
     """
     device = models.determine_device(mt)
-    #z-layer should be last.
+    #the object token pos defaults to last.
     z_layer = z_layer or models.determine_layers(mt)[-1]
     z_index = z_index or -1
     inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
     inputs = inputs.to(device)
+    
     # Precompute everything up to the subject, if there is anything before it.
-    # Why is this here? What does it mean
     past_key_values = None
     input_ids = inputs.input_ids
     # calculates LM outputs if h_index > 0
@@ -190,19 +181,19 @@ def order_1_approx(
     [h_layer_name, z_layer_name] = models.determine_layer_paths(mt, [h_layer, z_layer])
     edit_output: function | None = None
 
-    if h is not None:
-        def edit_output(output: tuple, layer: str) -> tuple:
-            if layer != h_layer_name:
-                return output
-            untuple(output)[:, h_index] = h
-            return output
-    else:
-        edit_output = None
+    # if h is not None:
+    #     def edit_output(output: tuple, layer: str) -> tuple:
+    #         if layer != h_layer_name:
+    #             return output
+    #         untuple(output)[:, h_index] = h
+    #         return output
+    # else:
+    #     edit_output = None
+
+    edit_output = None
 
     #Runs the model while tracking with TraceDict.
-    with TraceDict(
-        mt.model, layers=(h_layer_name, z_layer_name), edit_output=edit_output
-    ) as ret:
+    with TraceDict(mt.model, layers=(h_layer_name, z_layer_name), edit_output=edit_output) as ret:
         outputs = mt.model(
             input_ids=input_ids,
             use_cache=use_cache,
@@ -241,7 +232,6 @@ def order_1_approx(
     #weight = torch.eye(4096).half().to(device)
     logging.info(f'weight size is {weight.size()}')
     logging.info("[order_1_approx] weight calculation finished")
-
     #bias = z - Jh
     bias = z[None] - h[None].mm(weight.t()) #None expands dims.
 

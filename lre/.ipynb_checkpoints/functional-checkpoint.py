@@ -152,20 +152,11 @@ def order_1_approx(
     inputs: ModelInput | None = None,
 ) -> Order1ApproxOutput:
     """Compute a first-order approximation of the LM between `h` and `z`.
-
-    Very simply, this computes the Jacobian of z with respect to h, as well as
-    z - Jh to approximate the bias.
-
-    Args:
-        mt: The model.
-        prompt: Prompt to approximate.
         h_layer: Layer to take h from.
         h_index: Token index for h.
-        h: will calculate approximation based on this hidden state, if provided.
         z_layer: Layer to take z from.
         z_index: Token index for z.
         inputs: Precomputed tokenized inputs, recomputed if not set.
-
     Returns:
         The approximation.
 
@@ -176,6 +167,7 @@ def order_1_approx(
     z_index = z_index or -1
     inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
     inputs = inputs.to(device)
+    
     # Precompute everything up to the subject, if there is anything before it.
     # Why is this here? What does it mean
     past_key_values = None
@@ -241,7 +233,6 @@ def order_1_approx(
     #weight = torch.eye(4096).half().to(device)
     logging.info(f'weight size is {weight.size()}')
     logging.info("[order_1_approx] weight calculation finished")
-
     #bias = z - Jh
     bias = z[None] - h[None].mm(weight.t()) #None expands dims.
 

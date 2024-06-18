@@ -1,0 +1,1449 @@
+['DA', 'dl', ' gal', ' del', ' al'] matches ['albums'] is True
+['DA', 'GD', 'DL', 'dl', 'AF'] matches ['applications'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['areas'] is False
+['DA', 'GD', 'dl', 'DL', ' gal'] matches ['cars'] is False
+['DA', 'dl', 'GD', 'DL', ' gal'] matches ['colleges'] is False
+[' ', ' (', '\n', ' [', ' and'] matches ['councils'] is False
+[' ', '\n', ' (', ' customers', ' and'] matches ['customers'] is True
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['days'] is True
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['deaths'] is False
+[' ', ' departments', '\n', ' (', ' and'] matches ['departments'] is True
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['developments'] is False
+[' ', ' (', '\n', ' [', ' and'] matches ['differences'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['directors'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['events'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['examples'] is False
+['DA', 'AF', 'GD', 'DL', 'dl'] matches ['facts'] is False
+['DA', 'GD', 'dl', 'AF', 'DL'] matches ['friends'] is False
+['DA', 'GD', 'dl', ' gal', 'DL'] matches ['gods'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['governments'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['hours'] is False
+[' ', ' (', '\n', ' [', ' and'] matches ['ideas'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['languages'] is False
+['DA', 'dl', 'DL', 'GD', 'AF'] matches ['laws'] is False
+['DA', 'dl', 'GD', 'DL', 'MC'] matches ['members'] is False
+['DA', 'dl', 'GD', 'DL', 'MC'] matches ['months'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['nights'] is False
+['DA', 'dl', 'GD', 'DL', 'AF'] matches ['offices'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['periods'] is False
+['DA', 'dl', 'DL', 'GD', 'AF'] matches ['players'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['populations'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['problems'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['products'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['resources'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['rivers'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['roads'] is False
+['DA', 'dl', 'DL', 'GD', ' gal'] matches ['roles'] is False
+['DA', 'GD', 'DL', 'dl', 'AF'] matches ['sciences'] is False
+[' ', '\n', ' (', ' solutions', ' and'] matches ['solutions'] is True
+['DA', 'dl', 'GD', 'DL', ' gal'] matches ['songs'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['streets'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['students'] is False
+['DA', 'GD', 'DL', 'dl', 'AF'] matches ['systems'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['things'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['towns'] is False
+['DA', 'GD', 'DL', 'dl', 'AF'] matches ['users'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['versions'] is False
+[' ', ' (', ' cities', '\n', ' ['] matches ['villages'] is False
+[' ', ' websites', ' (', '\n', ' and'] matches ['websites'] is True
+['DA', 'GD', 'dl', 'DL', ' gal'] matches ['weeks'] is False
+['DA', 'GD', 'dl', 'DL', 'AF'] matches ['years'] is False
+noun - plural_reg,50,6,44
+[' ob', '-', ' int', '--', 'Int'] matches ['accepted'] is False
+[' ', ' has', ' achieved', ' performed', ' was'] matches ['achieved'] is True
+[' ob', '-', ' int', '--', 'Int'] matches ['added'] is False
+[' ob', '-', ' int', '--', ' inter'] matches ['agreed'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['allowed'] is False
+[' ', ' announced', ' made', ' has', ' will'] matches ['announced'] is True
+[' ', ' appeared', ' has', ' occurred', ' will'] matches ['appeared'] is True
+[' ob', '-', ' int', '--', 'Int'] matches ['applied'] is False
+[' ob', '-', ' int', 'Int', '--'] matches ['asked'] is False
+[' ', ' attended', ' has', ' is', ' received'] matches ['attended'] is True
+[' ', ' became', ' has', ' performed', ' was'] matches ['became'] is True
+[' ', ' believed', ' has', ' is', ' will'] matches ['believed'] is True
+[' ob', '-', ' int', '--', 'Int'] matches ['considered'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['continued'] is False
+[' ob', '-', ' int', '--', ' inter'] matches ['created'] is False
+[' ', ' decided', ' involved', ' considered', ' has'] matches ['decided'] is True
+[' ', ' described', ' related', ' referred', ' is'] matches ['described'] is True
+[' ob', '-', ' int', '--', 'Int'] matches ['developed'] is False
+[' ', ' discovered', ' received', ' found', ' considered'] matches ['discovered'] is True
+[' ', ' received', ' has', ' will', ' involved'] matches ['enjoyed'] is False
+[' ', ' has', ' is', ' was', ' will'] matches ['ensured'] is False
+[' ob', '-', ' int', '--', ' inter'] matches ['established'] is False
+[' ', ' is', ' has', ' expected', ' will'] matches ['expected'] is True
+[' ob', '-', ' int', '--', 'Int'] matches ['followed'] is False
+[' ', ' has', ' received', ' was', ' will'] matches ['heard'] is False
+[' ', ' is', ' has', ' involved', ' was'] matches ['identified'] is False
+[' ob', '-', ' int', '--', ' inter'] matches ['improved'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['included'] is False
+[' introduced', ' ', ' received', ' involved', ' brought'] matches ['introduced'] is True
+[' ', ' involved', ' has', ' was', ' is'] matches ['involved'] is True
+[' ', ' is', ' has', ' was', ' will'] matches ['located'] is False
+[' ', '\n', ' has', ' will', ' is'] matches ['lost'] is False
+[' ', ' involved', ' was', ' received', ' is'] matches ['managed'] is False
+[' ', ' will', ' has', ' was', ' related'] matches ['married'] is False
+[' performed', ' ', ' was', ' has', ' is'] matches ['performed'] is True
+[' ', ' provided', ' involved', ' performed', ' received'] matches ['provided'] is True
+[' ', ' published', ' performed', ' has', ' reported'] matches ['published'] is True
+[' received', ' ', ' has', ' receives', ' involved'] matches ['received'] is True
+[' ', ' involved', ' has', ' received', ' used'] matches ['reduced'] is False
+[' ', ' referred', ' received', ' related', ' referenced'] matches ['referred'] is True
+[' related', ' ', ' involved', ' has', ' relates'] matches ['related'] is True
+[' ', ' has', ' will', ' is', ' was'] matches ['remained'] is False
+[' ob', '-', ' int', '--', ' inter'] matches ['replaced'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['required'] is False
+[' ', ' has', ' is', ' was', ' will'] matches ['seemed'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['sent'] is False
+[' ', ' has', ' will', ' involved', ' was'] matches ['spent'] is False
+[' ob', '-', ' int', '--', 'Int'] matches ['told'] is False
+[' understood', ' ', ' explained', ' is', ' has'] matches ['understood'] is True
+[' ', ' has', ' involved', ' will', ' is'] matches ['united'] is False
+verb_inf - Ved,50,25,75
+['emb', 'Emb', 'comm', ' intellectually', ' altogether'] matches ['added'] is False
+[' ', ' said', ' told', ' asked', ' wrote'] matches ['agreed'] is False
+[' ', ' said', ' was', ' made', ' told'] matches ['allowed'] is False
+[' ', ' announced', ' said', ' told', ' made'] matches ['announced'] is True
+[' ', ' said', ' was', ' became', ' wrote'] matches ['appeared'] is False
+[' ', ' said', ' made', ' wrote', ' was'] matches ['applied'] is False
+[' ', ' said', ' told', ' was', ' made'] matches ['appointed'] is False
+['emb', 'Emb', 'comm', ' intellectually', 'em'] matches ['asked'] is False
+[' ', ' said', ' was', ' began', ' became'] matches ['attended'] is False
+[' ', ' said', ' became', ' was', ' wrote'] matches ['became'] is True
+[' ', ' said', ' was', ' considered', ' discussed'] matches ['considered'] is True
+['emb', 'Emb', 'comm', ' intellectually', 'em'] matches ['contained'] is False
+[' ', ' continued', ' began', ' was', ' said'] matches ['continued'] is True
+[' created', ' ', ' wrote', ' said', ' produced'] matches ['created'] is True
+[' ', ' told', ' said', ' decided', ' announced'] matches ['decided'] is True
+[' ', ' described', ' wrote', ' said', ' told'] matches ['described'] is True
+[' ', ' created', ' revealed', ' began', ' became'] matches ['developed'] is False
+[' ', ' created', ' caused', ' became', ' stated'] matches ['established'] is False
+['emb', 'Emb', 'comm', ' intellectually', 'em'] matches ['existed'] is False
+[' ', ' said', ' was', ' asked', ' requested'] matches ['expected'] is False
+[' ', ' said', ' made', ' was', ' told'] matches ['failed'] is False
+[' ', ' was', ' wrote', ' said', ' caused'] matches ['followed'] is False
+[' ', ' said', ' was', ' told', ' made'] matches ['heard'] is False
+[' ', ' said', ' became', ' wrote', ' made'] matches ['improved'] is False
+['emb', 'Emb', 'comm', ' intellectually', 'em'] matches ['included'] is False
+[' ', ' introduced', ' became', ' announced', ' began'] matches ['introduced'] is True
+[' ', ' was', ' involved', ' said', ' occurred'] matches ['involved'] is True
+[' ', ' said', ' told', ' caused', ' made'] matches ['located'] is False
+[' ', ' said', ' wrote', ' told', ' made'] matches ['lost'] is False
+[' ', ' was', ' became', ' made', ' said'] matches ['managed'] is False
+[' ', ' said', ' was', ' became', ' told'] matches ['married'] is False
+[' ', ' was', ' said', ' caused', ' did'] matches ['operated'] is False
+['emb', 'Emb', ' intellectually', 'comm', ' altogether'] matches ['performed'] is False
+[' ', ' suggested', ' proposed', ' requested', ' said'] matches ['proposed'] is True
+[' ', ' provided', ' said', ' stated', ' made'] matches ['provided'] is True
+[' published', ' wrote', ' ', ' written', ' said'] matches ['published'] is True
+[' received', ' ', ' was', ' said', ' became'] matches ['received'] is True
+[' ', ' made', ' became', ' brought', ' said'] matches ['reduced'] is False
+[' ', ' related', ' said', ' revealed', ' told'] matches ['related'] is True
+[' ', ' was', ' became', ' were', ' made'] matches ['remained'] is False
+[' ', ' was', ' became', ' wrote', ' said'] matches ['replaced'] is False
+[' ', ' represented', ' said', ' wrote', ' presented'] matches ['represented'] is True
+[' ', ' required', ' was', ' said', ' requested'] matches ['required'] is True
+[' ', ' said', ' sent', ' wrote', ' told'] matches ['sent'] is True
+[' ', ' said', ' was', ' wrote', ' began'] matches ['spent'] is False
+[' ', ' said', ' was', ' caused', ' became'] matches ['suffered'] is False
+[' ', ' told', ' taught', ' said', ' wrote'] matches ['taught'] is True
+['emb', 'Emb', 'comm', ' intellectually', 'em'] matches ['told'] is False
+[' ', ' was', ' understood', ' became', ' explained'] matches ['understood'] is True
+[' ', ' became', ' said', ' caused', ' made'] matches ['united'] is False
+verb_Ving - Ved,50,44,106
+['OG', 'Arm', 'Auth', 'Angel', 'Authent'] matches ['ablest'] is False
+[' most', ' greatest', ' ', ' biggest', ' hardest'] matches ['angriest'] is False
+[' most', ' cheapest', ' least', ' easiest', ' best'] matches ['cheapest'] is True
+[' most', ' greatest', ' best', ' biggest', ' '] matches ['cleverest'] is False
+[' most', ' cheapest', ' least', ' cost', ' greatest'] matches ['costliest'] is True
+[' most', ' cruel', ' greatest', ' ', ' biggest'] matches ['cruelest'] is True
+[' most', ' cut', ' c', ' greatest', ' biggest'] matches ['cutest'] is True
+[' most', ' dens', ' ', ' hardest', ' least'] matches ['densest'] is True
+[' most', ' dumb', ' biggest', ' ', ' greatest'] matches ['dumbest'] is True
+[' most', ' ', ' biggest', ' greatest', ' best'] matches ['fiercest'] is False
+[' most', ' hand', ' easiest', ' hardest', ' hands'] matches ['handiest'] is True
+['OG', 'Arm', 'Angel', 'Auth', 'Authent'] matches ['happiest'] is False
+[' hardest', ' most', ' h', ' hand', ' easiest'] matches ['hardiest'] is False
+[' hars', ' most', ' hardest', ' h', ' greatest'] matches ['harshest'] is True
+['Arm', 'OG', 'Auth', 'Angel', 'Authent'] matches ['healthiest'] is False
+['OG', 'Arm', 'Auth', 'Authent', 'GO'] matches ['hottest'] is False
+['OG', 'Arm', 'Auth', 'Authent', 'Amazon'] matches ['hugest'] is False
+[' most', ' hottest', ' hardest', ' biggest', ' greatest'] matches ['hungriest'] is False
+[' most', ' easiest', ' least', ' luck', ' '] matches ['laziest'] is False
+[' most', ' biggest', ' greatest', ' least', ' easiest'] matches ['lengthiest'] is False
+[' luck', ' most', ' biggest', ' ', ' happiest'] matches ['luckiest'] is True
+[' most', ' happiest', ' greatest', ' best', ' h'] matches ['merriest'] is False
+[' most', ' biggest', ' ', ' greatest', ' least'] matches ['mildest'] is False
+[' most', ' easiest', ' greatest', ' least', ' '] matches ['neatest'] is False
+['OG', 'Arm', 'Auth', 'Angel', 'GO'] matches ['nicest'] is False
+[' most', ' biggest', ' ', ' least', ' busiest'] matches ['noisiest'] is False
+[' most', ' ', ' least', ' best', ' biggest'] matches ['politest'] is False
+[' most', ' proud', ' greatest', ' ', ' biggest'] matches ['proudest'] is True
+['Arm', 'OG', 'Auth', 'Authent', 'Amazon'] matches ['purest'] is False
+[' most', ' greatest', ' ', ' least', ' best'] matches ['rarest'] is False
+[' most', ' least', ' hottest', ' ', ' greatest'] matches ['riskiest'] is False
+[' most', ' ', ' greatest', ' biggest', ' busiest'] matches ['rudest'] is False
+[' most', ' happiest', ' sadd', ' hardest', ' '] matches ['saddest'] is True
+[' most', ' sc', ' ', ' least', ' safest'] matches ['scariest'] is True
+[' most', ' sex', ' hottest', ' least', ' '] matches ['sexiest'] is True
+[' most', ' sh', ' biggest', ' h', ' hottest'] matches ['shiniest'] is True
+[' most', ' strang', ' greatest', ' ', ' biggest'] matches ['strangest'] is True
+[' most', ' strict', ' least', ' ', ' hardest'] matches ['strictest'] is True
+['Arm', 'OG', 'Auth', 'Angel', 'Amazon'] matches ['strongest'] is False
+[' most', ' ', ' slightest', ' least', ' greatest'] matches ['subtlest'] is False
+[' most', ' happiest', ' funn', ' sun', ' biggest'] matches ['sunniest'] is True
+[' most', ' tast', ' best', ' hottest', ' '] matches ['tastiest'] is True
+['Arm', 'OG', 'Auth', 'Angel', 'Authent'] matches ['tiniest'] is False
+[' most', ' trick', ' easiest', ' hardest', ' biggest'] matches ['trickiest'] is True
+[' most', ' ', ' biggest', ' easiest', ' least'] matches ['vaguest'] is False
+['OG', 'Arm', 'Auth', 'Amazon', 'Author'] matches ['weakest'] is False
+[' most', ' wealthiest', ' greatest', ' richest', ' biggest'] matches ['wealthiest'] is True
+[' most', ' ', ' weird', ' best', ' least'] matches ['weirdest'] is True
+adj - superlative,50,65,133
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['accepts'] is False
+[' ', ' achieves', ' makes', ' is', ' creates'] matches ['achieves'] is True
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['adds'] is False
+[' vou', 'OP', 'ju', 'g', ' ob'] matches ['agrees'] is False
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['allows'] is False
+[' is', ' appears', ' ', ' makes', ' becomes'] matches ['appears'] is True
+[' vou', 'OP', 'ju', ' ob', 'g'] matches ['applies'] is False
+[' vou', 'OP', 'ju', 'g', 'kn'] matches ['asks'] is False
+[' vou', 'OP', 'ju', ' ob', 'g'] matches ['avoids'] is False
+[' becomes', ' is', ' ', ' makes', ' will'] matches ['becomes'] is True
+[' ', ' is', ' believes', ' makes', ' becomes'] matches ['believes'] is True
+[' vou', 'OP', 'ju', 'g', 'kn'] matches ['considers'] is False
+[' is', ' ', ' happens', ' has', ' will'] matches ['consists'] is False
+[' is', ' ', ' requires', ' contains', ' involves'] matches ['contains'] is True
+[' vou', 'OP', 'ju', 'kn', 'g'] matches ['continues'] is False
+[' vou', 'OP', 'ju', 'g', ' ob'] matches ['creates'] is False
+[' is', ' describes', ' ', ' represents', ' will'] matches ['describes'] is True
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['develops'] is False
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['enables'] is False
+[' is', ' ', ' makes', ' will', ' does'] matches ['enjoys'] is False
+[' is', ' ', ' ensures', ' makes', ' requires'] matches ['ensures'] is True
+[' vou', 'OP', 'ju', ' ob', 'g'] matches ['exists'] is False
+[' explains', ' ', ' is', ' makes', ' will'] matches ['explains'] is True
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['follows'] is False
+[' happens', ' makes', ' is', ' ', ' will'] matches ['happens'] is True
+[' is', ' ', ' makes', ' will', ' has'] matches ['hears'] is False
+[' ', ' is', ' makes', ' becomes', ' will'] matches ['identifies'] is False
+[' vou', 'OP', 'ju', ' ob', 'g'] matches ['improves'] is False
+[' vou', 'OP', 'ju', 'g', 'kn'] matches ['includes'] is False
+[' involves', ' ', ' is', ' makes', ' requires'] matches ['involves'] is True
+[' vou', 'OP', 'ju', 'kn', 'g'] matches ['learns'] is False
+[' is', ' ', ' makes', ' requires', ' will'] matches ['maintains'] is False
+[' is', ' occurs', ' ', ' happens', ' makes'] matches ['occurs'] is True
+[' ', ' is', ' makes', ' requires', ' operates'] matches ['operates'] is True
+[' is', ' ', ' makes', ' prevents', ' causes'] matches ['prevents'] is True
+[' promotes', ' ', ' makes', ' is', ' requires'] matches ['promotes'] is True
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['protects'] is False
+[' provides', ' ', ' is', ' makes', ' requires'] matches ['provides'] is True
+[' is', ' ', ' receives', ' requires', ' becomes'] matches ['receives'] is True
+[' ', ' reduces', ' is', ' makes', ' causes'] matches ['reduces'] is True
+[' is', ' ', ' requires', ' refers', ' makes'] matches ['refers'] is True
+[' is', ' ', ' requires', ' makes', ' will'] matches ['remains'] is False
+[' vou', 'OP', 'ju', 'g', ' ob'] matches ['remembers'] is False
+[' vou', 'OP', 'ju', 'g', 'nb'] matches ['represents'] is False
+[' vou', 'OP', 'ju', 'nb', 'kn'] matches ['requires'] is False
+[' is', ' ', ' makes', ' seems', ' will'] matches ['seems'] is True
+[' vou', 'OP', 'ju', 'g', 'kn'] matches ['sends'] is False
+[' vou', 'OP', 'ju', 'nb', 'g'] matches ['suggests'] is False
+[' vou', 'OP', 'ju', 'g', 'kn'] matches ['tells'] is False
+[' ', ' is', ' makes', ' will', ' becomes'] matches ['understands'] is False
+verb_inf - 3pSg,50,84,164
+[' ', ' achieve', ' make', ' ensure', ' accomplish'] matches ['achieve'] is True
+[' unwittingly', ' inadvertently', ' endorsing', ' appropriate', '998'] matches ['add'] is False
+[' ', ' allow', ' require', ' enable', ' make'] matches ['allow'] is True
+[' ', ' appear', ' be', ' require', ' allow'] matches ['appear'] is True
+[' ', ' apply', ' require', ' allow', ' enforce'] matches ['apply'] is True
+[' unwittingly', ' inadvertently', '998', ' endorsing', ' oneself'] matches ['ask'] is False
+[' ', ' allow', ' attend', ' be', ' apply'] matches ['attend'] is True
+[' ', ' allow', ' avoid', ' make', ' be'] matches ['avoid'] is True
+[' ', ' be', ' become', ' make', ' allow'] matches ['become'] is True
+[' ', ' believe', ' be', ' allow', ' ensure'] matches ['believe'] is True
+[' ', ' consider', ' be', ' allow', ' require'] matches ['consider'] is True
+[' unwittingly', ' inadvertently', ' endorsing', ' appropriate', '998'] matches ['contain'] is False
+[' ', ' continue', ' remain', ' establish', ' be'] matches ['continue'] is True
+[' ', ' create', ' make', ' bring', ' establish'] matches ['create'] is True
+[' ', ' develop', ' establish', ' require', ' provide'] matches ['develop'] is True
+[' ', ' encourage', ' require', ' allow', ' enable'] matches ['encourage'] is True
+[' ', ' be', ' allow', ' enjoy', ' make'] matches ['enjoy'] is True
+[' ', ' ensure', ' require', ' make', ' assure'] matches ['ensure'] is True
+[' ', ' establish', ' ensure', ' require', ' make'] matches ['establish'] is True
+[' unwittingly', ' inadvertently', ' endorsing', '998', ' appropriate'] matches ['exist'] is False
+[' ', ' expect', ' require', ' be', ' ensure'] matches ['expect'] is True
+[' ', ' require', ' be', ' encourage', ' provide'] matches ['follow'] is False
+[' ', ' be', ' make', ' become', ' occur'] matches ['happen'] is False
+[' ', ' require', ' provide', ' refer', ' make'] matches ['identify'] is False
+[' ', ' improve', ' provide', ' encourage', ' make'] matches ['improve'] is True
+[' unwittingly', ' inadvertently', ' endorsing', ' appropriate', '998'] matches ['include'] is False
+[' ', ' involve', ' require', ' be', ' imply'] matches ['involve'] is True
+[' unwittingly', ' inadvertently', ' endorsing', ' appropriate', ' oneself'] matches ['learn'] is False
+[' ', ' make', ' allow', ' be', ' require'] matches ['lose'] is False
+[' ', ' maintain', ' remain', ' require', ' establish'] matches ['maintain'] is True
+[' ', ' require', ' make', ' allow', ' manage'] matches ['manage'] is True
+[' ', ' require', ' operate', ' establish', ' remain'] matches ['operate'] is True
+[' unwittingly', ' inadvertently', ' appropriate', ' endorsing', ' oneself'] matches ['perform'] is False
+[' ', ' allow', ' provide', ' require', ' prevent'] matches ['prevent'] is True
+[' ', ' promote', ' encourage', ' require', ' bring'] matches ['promote'] is True
+[' ', ' provide', ' establish', ' require', ' ensure'] matches ['protect'] is False
+[' ', ' provide', ' require', ' make', ' bring'] matches ['provide'] is True
+[' ', ' receive', ' be', ' require', ' remain'] matches ['receive'] is True
+[' ', ' reduce', ' require', ' bring', ' encourage'] matches ['reduce'] is True
+[' ', ' refer', ' require', ' be', ' relate'] matches ['refer'] is True
+[' ', ' remain', ' require', ' be', ' allow'] matches ['remain'] is True
+[' ', ' be', ' refer', ' remain', ' make'] matches ['remember'] is False
+[' ', ' require', ' represent', ' provide', ' refer'] matches ['represent'] is True
+[' require', ' ', ' enforce', ' ensure', ' provide'] matches ['require'] is True
+[' ', ' be', ' make', ' require', ' allow'] matches ['seem'] is False
+[' ', ' be', ' allow', ' require', ' remain'] matches ['sit'] is False
+[' ', ' be', ' provide', ' make', ' require'] matches ['spend'] is False
+[' ', ' teach', ' require', ' allow', ' make'] matches ['teach'] is True
+[' unwittingly', ' inadvertently', '998', ' endorsing', ' oneself'] matches ['tell'] is False
+[' ', ' require', ' establish', ' ensure', ' be'] matches ['understand'] is False
+Ving - verb_inf,50,116,182
+[' ', ' appeared', ' created', ' has', ' added'] matches ['added'] is True
+[' ', ' appeared', ' declared', ' (', ' appointed'] matches ['agreed'] is False
+[' enables', ' ob', ' entails', ' imposes', ' ostensibly'] matches ['allowed'] is False
+[' ', ' announced', ' appeared', ' declared', ' appointed'] matches ['announced'] is True
+[' appeared', ' ', ' appears', ' occurred', ' created'] matches ['appeared'] is True
+[' ', ' appeared', ' applied', ' represented', ' occurred'] matches ['applied'] is True
+[' ', ' appointed', ' appeared', ' created', ' ('] matches ['appointed'] is True
+[' ob', ' enables', ' entails', ' ostensibly', ' imposes'] matches ['asked'] is False
+[' ', ' appeared', ' created', ' became', ' ('] matches ['became'] is True
+[' ', ' believed', ' appeared', ' (', ' has'] matches ['believed'] is True
+[' ', ' considered', ' appeared', ' (', ' has'] matches ['considered'] is True
+[' ', ' constituted', ' appeared', ' consisted', ' is'] matches ['consisted'] is True
+[' ', ' contained', ' contains', ' appeared', ' represented'] matches ['contained'] is True
+[' ', ' appeared', ' created', ' continued', ' constituted'] matches ['continued'] is True
+[' created', ' ', ' creates', ' caused', ' established'] matches ['created'] is True
+[' ', ' declared', ' decided', ' appeared', ' appointed'] matches ['decided'] is True
+[' ', ' described', ' represented', ' appeared', ' created'] matches ['described'] is True
+[' ', ' created', ' established', ' appeared', ' ('] matches ['developed'] is False
+[' established', ' ', ' created', ' constituted', ' appeared'] matches ['established'] is True
+[' ', ' appeared', ' represented', ' expected', ' ('] matches ['expected'] is True
+[' ', ' appeared', ' created', ' (', ' provided'] matches ['failed'] is False
+[' ', ' appeared', ' created', ' caused', ' occurred'] matches ['followed'] is False
+[' ', ' appeared', ' has', ' occurred', ' caused'] matches ['happened'] is False
+[' ', ' has', ' appeared', ' heard', ' represented'] matches ['heard'] is True
+[' ob', ' enables', ' entails', ' ostensibly', 'Emb'] matches ['included'] is False
+[' ', ' represented', ' appeared', ' intended', ' ('] matches ['intended'] is True
+[' ', ' introduced', ' presented', ' appeared', ' created'] matches ['introduced'] is True
+[' ', ' involved', ' appeared', ' (', ' occurred'] matches ['involved'] is True
+[' ', ' located', ' appeared', ' created', ' ('] matches ['located'] is True
+[' ', ' appeared', ' (', ' created', ' has'] matches ['lost'] is False
+[' ', ' appeared', ' created', ' represented', ' appointed'] matches ['managed'] is False
+[' ', ' appointed', ' has', ' created', ' ('] matches ['married'] is False
+[' ', ' occurred', ' appeared', ' caused', ' created'] matches ['occurred'] is True
+[' ', ' appeared', ' occurred', ' established', ' represented'] matches ['operated'] is False
+[' performed', ' ', ' appeared', ' represented', ' presented'] matches ['performed'] is True
+[' ', ' proposed', ' provided', ' presented', ' prescribed'] matches ['proposed'] is True
+[' provided', ' ', ' provides', ' presented', ' created'] matches ['provided'] is True
+[' ', ' published', ' established', ' created', ' appeared'] matches ['published'] is True
+[' ', ' received', ' appeared', ' created', ' has'] matches ['received'] is True
+[' ', ' referred', ' represented', ' appeared', ' ('] matches ['referred'] is True
+[' ', ' represented', ' appeared', ' referred', ' constituted'] matches ['related'] is False
+[' ', ' appeared', ' remained', ' required', ' ('] matches ['remained'] is True
+[' ', ' replaced', ' appeared', ' created', ' represented'] matches ['replaced'] is True
+[' represented', ' ', ' represents', ' appeared', ' presented'] matches ['represented'] is True
+[' ob', ' enables', ' entails', ' ostensibly', ' imposes'] matches ['required'] is False
+[' ', ' appeared', ' appears', ' seemed', ' ('] matches ['seemed'] is True
+[' ', ' appeared', ' sent', ' has', ' represented'] matches ['sent'] is True
+[' ', ' created', ' appeared', ' provided', ' has'] matches ['spent'] is False
+[' ', ' suggested', ' appeared', ' required', ' represented'] matches ['suggested'] is True
+[' ', ' appeared', ' declared', ' has', ' stated'] matches ['told'] is False
+verb_3pSg - Ved,50,150,198
+[' oneself', ' forgiveness', ' others', ' unfor', ' emotionally'] matches ['adds'] is False
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['advertises'] is False
+[' ', ' is', ' appears', ' does', ' has'] matches ['allows'] is False
+[' is', ' appears', ' ', ' occurs', ' has'] matches ['appears'] is True
+[' ', ' applies', ' is', ' appears', ' has'] matches ['applies'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['asks'] is False
+[' is', ' ', ' becomes', ' has', ' does'] matches ['becomes'] is True
+[' believes', ' ', ' is', ' considers', ' has'] matches ['believes'] is True
+[' is', ' ', ' considers', ' has', ' does'] matches ['considers'] is True
+[' is', ' ', ' exists', ' occurs', ' has'] matches ['consists'] is False
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['contains'] is False
+[' ', ' continues', ' is', ' occurs', ' has'] matches ['continues'] is True
+[' creates', ' is', ' ', ' exists', ' produces'] matches ['creates'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['depends'] is False
+[' ', ' is', ' describes', ' appears', ' has'] matches ['describes'] is True
+[' develops', ' ', ' is', ' creates', ' does'] matches ['develops'] is True
+[' ', ' is', ' discovers', ' develops', ' occurs'] matches ['discovers'] is True
+[' ', ' is', ' enables', ' occurs', ' has'] matches ['enables'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['exists'] is False
+[' ', ' is', ' explains', ' appears', ' understands'] matches ['explains'] is True
+[' ', ' is', ' has', ' occurs', ' follows'] matches ['follows'] is True
+[' is', ' happens', ' occurs', ' ', ' does'] matches ['happens'] is True
+[' is', ' ', ' hears', ' has', ' does'] matches ['hears'] is True
+[' is', ' ', ' improves', ' develops', ' has'] matches ['improves'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['includes'] is False
+[' ', ' is', ' involves', ' occurs', ' has'] matches ['involves'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['learns'] is False
+[' is', ' ', ' does', ' has', ' appears'] matches ['loses'] is False
+[' ', ' is', ' has', ' does', ' develops'] matches ['manages'] is False
+[' occurs', ' is', ' ', ' appears', ' happens'] matches ['occurs'] is True
+[' operates', ' ', ' is', ' occurs', ' does'] matches ['operates'] is True
+[' oneself', ' forgiveness', ' others', ' unfor', ' emotionally'] matches ['performs'] is False
+[' ', ' is', ' promotes', ' develops', ' has'] matches ['promotes'] is True
+[' provides', ' ', ' is', ' has', ' develops'] matches ['provides'] is True
+[' publishes', ' is', ' ', ' creates', ' produces'] matches ['publishes'] is True
+[' receives', ' is', ' ', ' has', ' accepts'] matches ['receives'] is True
+[' ', ' is', ' has', ' appears', ' does'] matches ['reduces'] is False
+[' ', ' is', ' refers', ' appears', ' has'] matches ['refers'] is True
+[' ', ' is', ' occurs', ' has', ' involves'] matches ['relates'] is False
+[' ', ' is', ' remains', ' has', ' appears'] matches ['remains'] is True
+[' represents', ' is', ' ', ' appears', ' considers'] matches ['represents'] is True
+[' ', ' is', ' requires', ' has', ' does'] matches ['requires'] is True
+[' ', ' is', ' seems', ' appears', ' has'] matches ['seems'] is True
+[' is', ' ', ' has', ' appears', ' exists'] matches ['sits'] is False
+[' is', ' ', ' has', ' does', ' spends'] matches ['spends'] is True
+[' ', ' is', ' suggests', ' appears', ' has'] matches ['suggests'] is True
+[' ', ' is', ' teaches', ' does', ' has'] matches ['teaches'] is True
+[' oneself', ' forgiveness', ' unfor', ' others', ' emotionally'] matches ['tells'] is False
+[' ', ' is', ' has', ' does', ' considers'] matches ['thanks'] is False
+[' understands', ' is', ' ', ' appears', ' has'] matches ['understands'] is True
+verb_Ving - 3pSg,50,182,216
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['abilities'] is False
+[' ', '\n', ' armies', ' and', ' -'] matches ['academies'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['activities'] is False
+['OG', 'go', ' Mon', 'GO', 'og'] matches ['agencies'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['analyses'] is False
+[' ', ' armies', ' military', '\n', ' and'] matches ['armies'] is True
+[' authorities', ' ', '\n', ' governments', ' and'] matches ['authorities'] is True
+[' ', '\n', ' and', ' (', ' -'] matches ['bases'] is False
+['OG', ' Mon', 'go', 'GO', ' GO'] matches ['businesses'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['categories'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['centuries'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['children'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['cities'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['communities'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['countries'] is False
+[' ', ' counties', '\n', ' count', ' countries'] matches ['counties'] is True
+[' ', '\n', ' and', ' (', ' data'] matches ['data'] is True
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['duties'] is False
+[' ', ' countries', ' economies', '\n', ' governments'] matches ['economies'] is True
+['OG', 'go', ' Mon', 'GO', 'og'] matches ['energies'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['entries'] is False
+[' ', '\n', ' facilities', ' (', ' -'] matches ['facilities'] is True
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['families'] is False
+[' ', '\n', ' and', ' (', ' -'] matches ['formulae'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['histories'] is False
+[' ', ' industries', '\n', ' countries', ' and'] matches ['industries'] is True
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['libraries'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['lives'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['losses'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['majorities'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['memories'] is False
+[' ', '\n', ' and', ' (', ' the'] matches ['opportunities'] is False
+['OG', 'go', ' Mon', 'GO', 'og'] matches ['policies'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['properties'] is False
+[' ', '\n', ' -', ' governments', ' ('] matches ['responsibilities'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['safeties'] is False
+[' ', '\n', ' and', ' -', ' the'] matches ['secretaries'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['securities'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['series'] is False
+[' ', ' countries', '\n', ' societies', ' governments'] matches ['societies'] is True
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['species'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['stories'] is False
+[' ', ' strategies', '\n', ' and', ' policies'] matches ['strategies'] is True
+['OG', ' Mon', 'go', 'GO', ' GO'] matches ['successes'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['technologies'] is False
+[' theories', ' ', '\n', ' military', ' the'] matches ['theories'] is True
+[' ', '\n', ' universities', ' governments', ' ('] matches ['universities'] is True
+[' ', '\n', ' countries', ' (', ' types'] matches ['varieties'] is False
+['OG', ' Mon', 'go', 'GO', ' GO'] matches ['wives'] is False
+['OG', ' Mon', 'go', 'GO', 'og'] matches ['women'] is False
+noun - plural_irreg,50,193,255
+['Shell', 'Ball', 'shell', 'Del', 'alo'] matches ['ablest'] is False
+[' most', ' hars', ' hardest', ' ', ' f'] matches ['angriest'] is False
+[' most', ' hardest', ' cheapest', ' least', ' '] matches ['cheapest'] is True
+[' most', ' ', ' least', ' hardest', ' biggest'] matches ['cleverest'] is False
+[' most', ' hardest', ' cost', ' least', ' '] matches ['costliest'] is True
+[' cruel', ' most', ' hars', ' hardest', ' '] matches ['cruelest'] is True
+[' most', ' cut', ' ', ' toughest', ' biggest'] matches ['cutest'] is True
+[' dens', ' most', ' hardest', ' ', ' hars'] matches ['densest'] is True
+[' most', ' dumb', ' hardest', ' ', ' toughest'] matches ['dumbest'] is True
+[' most', ' fierce', ' hars', ' f', ' hardest'] matches ['fiercest'] is True
+[' most', ' hand', ' hardest', ' ', ' hands'] matches ['handiest'] is True
+['Shell', 'Ball', 'shell', 'Del', 'sel'] matches ['happiest'] is False
+[' hardest', ' most', ' hars', ' hard', ' toughest'] matches ['hardiest'] is True
+[' hars', ' hardest', ' harsh', ' most', ' toughest'] matches ['harshest'] is True
+['Shell', 'Ball', 'shell', 'Del', 'ELD'] matches ['healthiest'] is False
+['Shell', 'Ball', 'shell', 'alo', 'Del'] matches ['hottest'] is False
+['Shell', 'Ball', 'shell', 'Del', 'alo'] matches ['hugest'] is False
+[' most', ' hardest', ' ', ' f', ' greed'] matches ['hungriest'] is False
+[' most', ' laz', ' least', ' ', ' hardest'] matches ['laziest'] is True
+[' most', ' hardest', ' largest', ' biggest', ' '] matches ['lengthiest'] is False
+[' most', ' luck', ' hardest', ' ', ' least'] matches ['luckiest'] is True
+[' most', ' hardest', ' hars', ' ', ' least'] matches ['merriest'] is False
+[' most', ' ', ' mild', ' hardest', ' hars'] matches ['mildest'] is True
+[' most', ' hardest', ' toughest', ' least', ' '] matches ['neatest'] is False
+['Shell', 'Ball', 'shell', 'Del', 'zon'] matches ['nicest'] is False
+[' most', ' no', ' ', ' hardest', ' biggest'] matches ['noisiest'] is True
+[' most', ' ', ' least', ' hardest', ' biggest'] matches ['politest'] is False
+[' most', ' proud', ' hardest', ' bold', ' '] matches ['proudest'] is True
+['Shell', 'Ball', 'shell', 'alo', 'Del'] matches ['purest'] is False
+[' most', ' hardest', ' hars', ' rare', ' '] matches ['rarest'] is True
+[' most', ' risk', ' hardest', ' hars', ' '] matches ['riskiest'] is True
+[' most', ' ', ' hars', ' hardest', ' rude'] matches ['rudest'] is True
+[' most', ' hardest', ' hars', ' ', ' sadd'] matches ['saddest'] is True
+[' most', ' scare', ' hars', ' hardest', ' sc'] matches ['scariest'] is True
+[' most', ' sex', ' least', ' ', ' hardest'] matches ['sexiest'] is True
+[' most', ' sh', ' hardest', ' ', ' biggest'] matches ['shiniest'] is True
+[' most', ' strang', ' hardest', ' hars', ' '] matches ['strangest'] is True
+[' strict', ' most', ' hars', ' hardest', ' toughest'] matches ['strictest'] is True
+['Shell', 'Ball', 'shell', 'Del', 'alo'] matches ['strongest'] is False
+[' most', ' ', ' subtle', ' slightest', ' least'] matches ['subtlest'] is True
+[' most', ' funn', ' sun', ' hardest', ' '] matches ['sunniest'] is True
+[' most', ' least', ' tast', ' hardest', ' toughest'] matches ['tastiest'] is True
+['Shell', 'Ball', 'shell', 'Del', 'Mel'] matches ['tiniest'] is False
+[' most', ' trick', ' hardest', ' toughest', ' hars'] matches ['trickiest'] is True
+[' most', ' ', ' vague', ' vain', ' v'] matches ['vaguest'] is True
+['Shell', 'Ball', 'shell', 'alo', 'Del'] matches ['weakest'] is False
+[' most', ' hardest', ' wealthiest', ' ', ' biggest'] matches ['wealthiest'] is True
+[' most', ' weird', ' ', ' hardest', ' least'] matches ['weirdest'] is True
+adj - superlative,50,224,272
+[' ', '\n', ' determination', ' examination', ' investigation'] matches ['accusation'] is False
+[' ', ' determination', ' examination', '\n', ' ('] matches ['admiration'] is False
+[' ', ' determination', ' examination', '\n', ' ('] matches ['allegation'] is False
+[' ', ' determination', '\n', ' (', ' examination'] matches ['aspiration'] is False
+[' ', ' authorization', ' determination', '\n', ' administration'] matches ['authorization', 'authorisation'] is True
+[' ', ' determination', ' characterization', '\n', ' analysis'] matches ['characterization', 'characterisation'] is True
+[' ', '\n', ' determination', ' (', ' modern'] matches ['civilization', 'civilisation'] is False
+[' ', ' determination', '\n', ' examination', ' ('] matches ['colonization'] is False
+[' ', ' compilation', ' determination', '\n', ' evaluation'] matches ['compilation'] is True
+[' computation', ' ', ' determination', ' computing', ' calculation'] matches ['computation'] is True
+[' ', ' determination', ' cond', '\n', ' ('] matches ['condensation'] is True
+[' ', ' determination', ' configuration', '\n', ' examination'] matches ['configuration'] is True
+['-', ' ref', ' reg', ' intellectual', ' soul'] matches ['continuation'] is False
+[' ', ' customization', '\n', ' determination', ' modification'] matches ['customization'] is True
+[' ', ' declaration', ' determination', ' definition', ' decl'] matches ['declaration'] is True
+[' ', ' determination', '\n', ' de', ' degradation'] matches ['degradation'] is True
+[' ', ' determination', ' de', ' elimination', ' dep'] matches ['deprivation'] is True
+[' ', ' deriv', ' determination', ' differentiation', ' deduction'] matches ['derivation'] is True
+[' determination', ' ', ' examination', ' evaluation', '\n'] matches ['determination'] is True
+[' examination', ' ', ' determination', ' investigation', ' analysis'] matches ['examination'] is True
+[' ', ' determination', ' exposition', '\n', ' expiration'] matches ['expiration'] is True
+[' ', ' exploration', ' examination', ' investigation', ' discovery'] matches ['exploration'] is True
+[' ', ' determination', '\n', ' definition', ' ('] matches ['globalization', 'globalisation'] is False
+[' ', ' determination', ' examination', '\n', ' investigation'] matches ['illumination'] is False
+[' ', ' determination', ' imagination', '\n', ' ('] matches ['imagination'] is True
+[' ', '\n', ' determination', ' (', ' implementation'] matches ['improvization', 'improvisation'] is False
+[' ', ' determination', ' inspiration', ' investigation', '\n'] matches ['inspiration'] is True
+['-', ' ref', ' reg', ' intellectual', ' soul'] matches ['installation', 'instalation'] is False
+[' ', ' determination', ' optimization', ' maxim', '\n'] matches ['maximization', 'maximisation'] is True
+[' ', ' determination', ' minim', ' optimization', '\n'] matches ['minimization', 'minimisation'] is True
+[' ', ' modern', '\n', ' modernization', ' determination'] matches ['modernization', 'modernisation'] is True
+[' ', ' determination', '\n', ' (', ' examination'] matches ['obligation'] is False
+[' ', ' observation', ' examination', ' determination', ' investigation'] matches ['observation'] is True
+[' ', ' determination', ' examination', ' occupation', '\n'] matches ['occupation'] is True
+[' optimization', ' ', ' optim', ' determination', ' improvement'] matches ['optimization', 'optimisation'] is True
+[' ', ' organization', ' determination', '\n', ' ('] matches ['organization'] is True
+[' ', ' determination', '\n', ' (', ' examination'] matches ['perspiration'] is False
+[' ', ' preparation', ' determination', ' examination', ' pre'] matches ['preparation'] is True
+[' ', '\n', ' (', ' determination', ' analysis'] matches ['privatization', 'privatisation'] is False
+[' ', ' determination', '\n', ' analysis', ' elimination'] matches ['randomization', 'randomisation'] is False
+[' ', ' realization', ' determination', ' conclusion', '\n'] matches ['realization', 'realisation'] is True
+[' ', ' organization', ' re', ' determination', ' reorgan'] matches ['reorganization', 'reorganisation'] is True
+[' ', ' restoration', ' determination', ' re', '\n'] matches ['restoration'] is True
+[' ', ' specialization', '\n', ' determination', ' specification'] matches ['specialization', 'specialisation'] is True
+[' ', ' determination', '\n', ' examination', ' evaluation'] matches ['stabilization'] is False
+[' ', ' standard', ' determination', '\n', ' ('] matches ['standardization', 'standardisation'] is True
+[' ', ' determination', '\n', ' examination', ' ('] matches ['starvation'] is False
+[' ', ' utilization', ' determination', '\n', ' examination'] matches ['utilization', 'utilisation'] is True
+[' ', ' determination', ' examination', '\n', ' investigation'] matches ['visualization'] is False
+verb+tion_irreg,50,255,290
+[' re', ' rec', ' recon', ' ', ' recover'] matches ['reacquire'] is True
+[' ind', ' ty', ' re', ' mat', ' one'] matches ['readjust'] is True
+[' re', ' rec', ' recon', ' ', ' rep'] matches ['reappear'] is True
+[' ind', ' ty', ' mat', 'ETF', ' one'] matches ['reapply'] is False
+[' re', ' rec', ' ', ' rep', ' recon'] matches ['reappoint'] is True
+[' re', ' rearr', ' ', ' rec', ' recon'] matches ['rearrange'] is True
+[' re', ' rec', ' reass', ' rese', ' recon'] matches ['reassess'] is True
+[' re', ' reass', ' rec', ' ', ' rem'] matches ['reassign'] is True
+[' re', ' rec', ' recon', ' reass', ' '] matches ['reassure'] is True
+[' re', ' rec', ' recon', ' ', ' res'] matches ['recalculate'] is True
+[' re', ' rec', ' recon', ' recognize', ' '] matches ['recognize'] is True
+[' re', ' rec', ' rem', ' ', ' recon'] matches ['recommend'] is True
+[' re', ' recon', ' rec', ' ', ' ref'] matches ['reconfigure'] is True
+[' re', ' recon', ' rec', ' confirm', ' '] matches ['reconfirm'] is True
+[' ind', ' ty', 'ETF', ' mat', ' one'] matches ['reconnect'] is False
+[' ind', ' ty', 'ETF', ' mat', ' one'] matches ['reconsider'] is False
+[' ind', ' ty', ' re', 'ETF', ' mat'] matches ['recreate'] is True
+[' re', ' rec', ' recon', ' ', ' red'] matches ['redecorate'] is True
+[' re', ' rec', ' ', ' rem', ' recon'] matches ['redeem'] is True
+[' ind', ' ty', 'ETF', ' one', ' mat'] matches ['redefine'] is False
+[' ind', ' ty', 'ETF', ' mat', ' re'] matches ['redevelop'] is True
+[' re', ' rec', ' recon', ' discover', ' recover'] matches ['rediscover'] is True
+[' re', ' rec', ' ', ' res', ' recon'] matches ['redistribute'] is True
+[' re', ' rec', ' ', ' rem', ' recon'] matches ['reemerge'] is True
+[' re', ' ', ' rec', ' recon', ' rem'] matches ['reengage'] is True
+[' ind', ' ty', 'ETF', ' re', ' mat'] matches ['reestablish'] is True
+[' ind', ' ty', 'ETF', ' mat', ' re'] matches ['reevaluate'] is True
+[' re', ' rec', ' recon', ' rem', ' ref'] matches ['reexamine'] is True
+[' re', ' rec', ' ', ' recon', ' res'] matches ['regenerate'] is True
+[' ind', ' ty', 'ETF', ' mat', ' one'] matches ['regrow'] is False
+[' ind', ' ty', 'ETF', ' one', ' tip'] matches ['reinstall'] is False
+[' re', ' rec', ' recon', ' resolve', ' res'] matches ['reintegrate'] is True
+[' ind', ' ty', 'ETF', ' one', ' re'] matches ['reinterpret'] is True
+[' re', ' rec', ' recon', ' res', ' '] matches ['reintroduce'] is True
+[' ind', ' ty', 'ETF', ' one', ' re'] matches ['reinvest'] is True
+[' re', ' rec', ' recon', ' resolve', ' res'] matches ['reinvestigate'] is True
+[' ind', ' ty', ' re', 'ETF', ' mat'] matches ['relearn'] is True
+[' re', ' rec', ' ', ' relocate', ' recon'] matches ['relocate'] is True
+[' re', ' rem', ' rec', ' ', ' res'] matches ['remarry'] is True
+[' re', ' rec', ' recon', ' ', ' resolve'] matches ['renegotiate'] is True
+[' re', ' rec', ' ', ' recon', ' rem'] matches ['reoccur'] is True
+[' re', ' reorgan', ' recon', ' rec', ' rearr'] matches ['reorganize', 'reorganise'] is True
+[' re', ' rec', ' ', ' rep', ' recon'] matches ['republish'] is True
+[' ind', ' ty', 'ETF', ' one', ' re'] matches ['resend'] is True
+[' re', ' resolve', ' res', ' rec', ' recon'] matches ['resolve'] is True
+[' ind', ' ty', 'ETF', ' mat', ' one'] matches ['resubmit'] is False
+[' ind', ' ty', 'ETF', ' mat', ' tip'] matches ['retell'] is False
+[' re', ' rec', ' ', ' rem', ' reun'] matches ['reunite'] is True
+[' ind', ' ty', ' upt', 'ETF', ' one'] matches ['reupload'] is False
+[' ind', ' ty', 'ETF', ' mat', ' one'] matches ['rewrite'] is False
+re+verb_reg,50,295,300
+[' ', ' improvement', ' endorsement', '\n', ' amendment'] matches ['accomplishment'] is False
+[' ', ' improvement', ' achievement', ' enactment', ' endorsement'] matches ['achievement'] is True
+[' ', ' acknowledgement', ' endorsement', ' acknowledgment', ' approval'] matches ['acknowledgement'] is True
+[' to', ' en', '-', ' mat', ' cos'] matches ['adjustment'] is False
+[' ', ' endorsement', ' advertisement', '\n', ' approval'] matches ['advertisement', 'advertizement'] is True
+[' to', ' en', '-', ' mat', ' cos'] matches ['agreement'] is False
+[' to', ' en', '-', ' mat', ' cos'] matches ['alignment'] is False
+[' amendment', ' ', ' endorsement', ' enactment', ' amend'] matches ['amendment'] is True
+[' ', ' amendment', ' endorsement', '\n', ' recommendation'] matches ['amusement'] is False
+[' ', ' announcement', ' endorsement', ' enactment', ' amendment'] matches ['announcement'] is True
+[' ', ' appointment', ' approval', ' endorsement', ' recommendation'] matches ['appointment'] is True
+[' ', ' arrangement', ' amendment', ' endorsement', ' agreement'] matches ['arrangement'] is True
+[' assessment', ' ', ' evaluation', ' endorsement', ' appraisal'] matches ['assessment'] is True
+[' ', ' assignment', ' assessment', ' endorsement', ' approval'] matches ['assignment'] is True
+[' to', ' en', '-', ' mat', ' cos'] matches ['commitment'] is False
+[' ', ' endorsement', ' assessment', ' amendment', ' adoption'] matches ['detachment'] is False
+[' to', ' en', '-', ' mat', ' cos'] matches ['development'] is False
+[' ', ' agreement', ' endorsement', ' approval', ' recommendation'] matches ['disagreement'] is False
+[' ', ' approval', ' endorsement', ' improvement', ' recommendation'] matches ['disappointment'] is False
+[' ', ' endorsement', '\n', ' adoption', ' involvement'] matches ['displacement'] is False
+[' ', ' endorsement', ' en', ' improvement', ' enactment'] matches ['embarrassment'] is False
+[' encouragement', ' ', ' endorsement', ' recommendation', ' encourage'] matches ['encouragement'] is True
+[' endorsement', ' ', ' recommendation', ' approval', ' adoption'] matches ['endorsement'] is True
+[' enforcement', ' enforce', ' ', ' enactment', ' endorsement'] matches ['enforcement'] is True
+[' ', ' engagement', ' involvement', ' endorsement', ' enactment'] matches ['engagement'] is True
+[' enhancement', ' ', ' improvement', ' endorsement', ' amendment'] matches ['enhancement'] is True
+[' ', ' endorsement', ' improvement', ' appreciation', ' enjoyment'] matches ['enjoyment'] is True
+[' ', ' endorsement', ' improvement', ' enactment', ' amendment'] matches ['enlightenment'] is False
+[' ', ' endorsement', ' enactment', ' enrol', ' adoption'] matches ['enrollment', 'enrolment'] is True
+[' ', ' endorsement', ' consideration', ' entertainment', '\n'] matches ['entertainment'] is True
+[' ', ' endorsement', ' enactment', '\n', ' entitlement'] matches ['entitlement'] is True
+[' ', ' endorsement', ' improvement', ' equipment', '\n'] matches ['equipment'] is True
+[' en', ' to', '-', ' mat', ' est'] matches ['establishment'] is True
+[' ', ' endorsement', ' approval', '\n', ' encouragement'] matches ['excitement'] is False
+[' ', ' fulfil', ' endorsement', ' approval', ' enactment'] matches ['fulfilment'] is True
+[' ', ' fulfil', ' fulfillment', ' endorsement', ' improvement'] matches ['fulfillment'] is True
+[' ', ' endorsement', ' assessment', ' enactment', ' recommendation'] matches ['harassment'] is False
+[' ', ' improvement', ' impairment', ' amendment', ' endorsement'] matches ['impairment'] is True
+[' to', ' en', '-', ' mat', ' cos'] matches ['improvement'] is False
+[' ', ' infringement', ' endorsement', ' amendment', ' improvement'] matches ['infringement'] is True
+[' en', ' to', '-', ' mat', ' cos'] matches ['investment'] is False
+[' ', ' involvement', ' endorsement', ' enactment', ' amendment'] matches ['involvement'] is True
+[' ', ' management', ' amendment', ' administration', ' endorsement'] matches ['management'] is True
+[' ', ' enforcement', ' amendment', ' endorsement', ' enactment'] matches ['punishment'] is False
+[' development', ' ', ' redevelopment', ' improvement', ' adoption'] matches ['redevelopment'] is True
+[' ', ' reimbursement', ' endorsement', '\n', ' recommendation'] matches ['reimbursement'] is True
+[' ', ' endorsement', ' reinforcement', ' improvement', ' enforcement'] matches ['reinforcement'] is True
+[' to', ' en', '-', ' mat', ' cos'] matches ['replacement'] is False
+[' en', ' to', '-', ' mat', ' cos'] matches ['requirement'] is False
+[' to', ' en', '-', ' mat', ' cos'] matches ['resentment'] is False
+verb+ment_irreg,50,324,321
+[' empty', ' no', 'ND', 'nar', ' OD'] matches ['armless'] is False
+[' empty', 'ND', ' no', 'nar', ' OD'] matches ['artless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['boneless'] is False
+[' breath', ' bl', ' unf', ' un', ' without'] matches ['breathless'] is True
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['carbonless'] is False
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['childless'] is False
+[' empty', ' no', 'ND', ' OD', ' don'] matches ['collarless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['deathless'] is False
+[' unf', ' un', ' innocent', ' non', ' und'] matches ['defenceless', 'defenseless'] is False
+[' unf', ' un', ' less', ' ', ' non'] matches ['effortless'] is False
+[' g', ' ', ' non', ' less', ' un'] matches ['egoless'] is False
+[' un', ' emotion', ' unf', ' non', ' mindless'] matches ['emotionless'] is True
+[' empty', 'ND', ' no', ' OD', ' er'] matches ['errorless'] is True
+[' empty', 'ND', ' OD', ' no', 'nar'] matches ['expressionless'] is False
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['faithless'] is False
+[' unf', ' fl', ' non', ' un', ' '] matches ['frictionless'] is False
+[' empty', 'ND', ' no', ' OD', ' un'] matches ['friendless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['genderless'] is False
+[' empty', 'ND', ' no', ' OD', 'nar'] matches ['goalless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['godless'] is False
+[' un', ' innocent', ' unf', ' ', ' non'] matches ['guileless'] is False
+[' innocent', ' guilt', ' un', ' ', ' unf'] matches ['guiltless'] is True
+[' empty', 'ND', ' OD', ' no', 'nar'] matches ['hairless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['heartless'] is False
+[' ', ' unf', ' innocent', ' un', ' less'] matches ['heirless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['homeless'] is False
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['lawless'] is False
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['legless'] is False
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['lifeless', 'liveless'] is False
+[' empty', ' no', ' OD', ' un', 'ND'] matches ['luckless'] is False
+[' empty', ' no', ' un', ' don', 'ND'] matches ['meatless'] is False
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['moneyless'] is False
+['ND', ' empty', ' OD', ' no', 'nar'] matches ['odorless', 'odourless'] is True
+[' passion', ' unf', ' un', ' ', ' less'] matches ['passionless'] is True
+[' empty', 'ND', ' OD', ' no', ' don'] matches ['pathless'] is False
+[' un', ' non', ' penn', ' unf', ' p'] matches ['penniless'] is True
+[' un', ' non', ' unf', ' less', ' '] matches ['remorseless'] is False
+[' un', ' unf', ' ', ' non', ' less'] matches ['ruthless'] is False
+[' non', ' un', ' senseless', ' s', ' less'] matches ['sensorless'] is False
+[' non', ' less', ' unf', ' un', ' skin'] matches ['sleeveless'] is False
+[' soul', ' sou', ' spirit', ' sin', ' lifeless'] matches ['soulless'] is True
+[' empty', 'ND', ' OD', ' no', 'nar'] matches ['speechless'] is False
+[' un', ' non', ' sp', ' unf', ' '] matches ['spineless'] is True
+[' non', ' ', ' unt', ' unf', ' bland'] matches ['tactless'] is False
+[' un', ' unf', ' ', ' talent', ' less'] matches ['talentless'] is True
+[' empty', ' no', 'ND', ' OD', ' don'] matches ['thoughtless'] is False
+[' tooth', ' non', ' un', ' unf', ' '] matches ['toothless'] is True
+[' empty', 'ND', ' no', ' OD', ' don'] matches ['windowless'] is False
+[' empty', ' no', ' un', ' OD', ' don'] matches ['witless'] is False
+noun+less_reg,50,335,359
+[' over', ' overd', ' overs', ' overly', ' overe'] matches ['overambitious', 'over-ambitious'] is True
+['orf', 'onel', 'oling', 'oller', 'oll'] matches ['overarching', 'over-arching'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overbooked', 'over-booked'] is True
+['orf', 'onel', 'oling', 'oll', 'oller'] matches ['overcharged', 'over-charged'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overcompensated', 'over-compensated'] is True
+[' over', ' overd', ' overs', ' overc', ' overe'] matches ['overconfident', 'over-confident'] is True
+['orf', 'onel', 'ollen', 'oller', 'oling'] matches ['overcooked', 'over-cooked'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overcrowded', 'over-crowded'] is True
+['orf', 'onel', 'oling', 'oll', 'oller'] matches ['overdeveloped', 'over-developed'] is False
+['orf', 'onel', 'oling', 'oller', 'oll'] matches ['overdone', 'over-done'] is False
+[' over', ' overd', ' overs', ' overe', ' overc'] matches ['overdressed', 'over-dressed'] is True
+[' over', ' overs', ' overd', ' overe', ' overly'] matches ['overenthusiastic', 'over-enthusiastic'] is True
+[' over', ' overs', ' overd', ' overe', ' overc'] matches ['overexcited', 'over-excited'] is True
+[' over', ' overs', ' overe', ' overd', ' overc'] matches ['overexposed', 'over-exposed'] is True
+['onel', 'orf', 'oling', 'oll', 'ollen'] matches ['overfilled', 'over-filled'] is False
+['orf', 'onel', 'oller', 'oling', 'ollen'] matches ['overgrown', 'over-grown'] is False
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['overheard', 'over-heard'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overheated', 'over-heated'] is True
+[' over', ' overd', ' overs', ' overc', ' overe'] matches ['overinflated', 'over-inflated'] is True
+[' over', ' overs', ' overd', ' overc', ' overly'] matches ['overlaid', 'over-laid'] is True
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['overloaded', 'over-loaded'] is False
+[' over', ' overs', ' overd', ' overly', ' overc'] matches ['overoptimistic', 'over-optimistic'] is True
+['onel', 'orf', 'oling', 'oll', 'oller'] matches ['overpaid', 'over-paid'] is False
+['onel', 'orf', 'oling', 'oll', 'oller'] matches ['overpainted', 'over-painted'] is False
+['orf', 'onel', 'oling', 'oller', 'oll'] matches ['overplayed', 'over-played'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overpopulated', 'over-populated'] is True
+['orf', 'onel', 'oling', 'oller', 'ollen'] matches ['overpowered', 'over-powered'] is False
+['orf', 'onel', 'oling', 'oller', 'ollen'] matches ['overprotected', 'over-protected'] is False
+[' over', ' overd', ' overc', ' overs', ' overw'] matches ['overprotective', 'over-protective'] is True
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['overqualified', 'over-qualified'] is False
+['orf', 'onel', 'oling', 'oll', 'oller'] matches ['overrepresented', 'over-represented'] is False
+[' overs', ' over', ' overd', ' overc', ' overe'] matches ['oversaturated', 'over-saturated'] is True
+[' over', ' overd', ' overs', ' overc', ' overe'] matches ['overshadowed', 'over-shadowed'] is True
+[' over', ' overs', ' overd', ' overc', ' overly'] matches ['oversimplified', 'over-simplified'] is True
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['oversized', 'over-sized'] is False
+['onel', 'orf', 'oling', 'ollen', 'oll'] matches ['oversold', 'over-sold'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overspent', 'over-spent'] is True
+['orf', 'onel', 'oller', 'oling', 'oll'] matches ['overstated', 'over-stated'] is False
+[' overs', ' over', ' overd', ' overly', ' overe'] matches ['overstimulated', 'over-stimulated'] is True
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overstocked', 'over-stocked'] is True
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overstrained', 'over-strained'] is True
+[' over', ' overs', ' overd', ' overe', ' overc'] matches ['overstressed', 'over-stressed'] is True
+['orf', 'onel', 'ollen', 'oling', 'oller'] matches ['overstretched', 'over-stretched'] is False
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['oversubscribed', 'over-subscribed'] is True
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overtaken', 'over-taken'] is True
+[' over', ' overs', ' overd', ' overc', ' overe'] matches ['overthrown', 'over-thrown'] is True
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['overturned', 'over-turned'] is False
+['onel', 'orf', 'oling', 'oller', 'oll'] matches ['overused', 'over-used'] is False
+['orf', 'onel', 'oller', 'oling', 'oll'] matches ['overwritten', 'over-written'] is False
+[' over', ' overd', ' overs', ' overe', ' overc'] matches ['overzealous', 'over-zealous'] is True
+over+adj_reg,50,362,382
+[' ', ' being', ' aw', ' (', '\n'] matches ['amazingness'] is False
+[' attractiveness', ' ', ' att', ' (', ' being'] matches ['attractiveness'] is True
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['awareness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['brokenness'] is False
+[' ', ' being', ' (', ' a', '\n'] matches ['carefulness'] is False
+[' ', ' being', ' (', ' un', ' worth'] matches ['cheapness'] is False
+[' MB', 'MB', 'BL', ' Mill', ' mind'] matches ['competitiveness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['connectedness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['consciousness'] is False
+[' creativity', ' ', ' being', ' creat', ' creative'] matches ['creativeness'] is True
+[' ', ' being', ' (', ' worth', ' a'] matches ['dangerousness'] is False
+[' ', ' being', '\n', ' un', ' self'] matches ['devotedness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['directedness'] is False
+[' ', ' distinct', ' being', ' (', ' un'] matches ['distinctness'] is True
+[' ', ' being', ' (', ' un', '\n'] matches ['distinctiveness'] is False
+[' MB', 'MB', ' Mill', ' mind', 'BL'] matches ['effectiveness'] is False
+[' ', ' being', ' (', '\n', ' un'] matches ['extensiveness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['fixedness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['foreignness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['happiness'] is False
+[' ', ' helpful', ' being', ' usefulness', ' un'] matches ['helpfulness'] is True
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['hiddenness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['hotness'] is False
+[' MB', 'MB', 'BL', ' Mill', ' mind'] matches ['hugeness'] is False
+[' ', ' (', ' being', ' un', '\n'] matches ['impressiveness'] is False
+[' ', ' un', ' being', ' (', '\n'] matches ['innovativeness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['interestingness'] is False
+[' MB', 'MB', ' mind', ' Mill', 'BL'] matches ['madness'] is False
+[' MB', 'MB', 'BL', ' mind', ' Mill'] matches ['markedness'] is False
+[' MB', 'MB', ' Mill', ' mind', 'BL'] matches ['massiveness'] is False
+[' MB', 'MB', 'BL', ' Mill', ' mind'] matches ['niceness'] is False
+[' ', ' un', ' (', ' being', '\n'] matches ['obviousness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['oddness'] is False
+[' ', ' being', ' (', ' un', ' presence'] matches ['preparedness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['pureness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['randomness'] is False
+[' ', ' being', ' (', '\n', ' a'] matches ['rareness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['reasonableness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['relatedness'] is False
+[' MB', 'MB', ' mind', 'BL', ' Mill'] matches ['righteousness'] is False
+[' ', ' (', ' worth', ' being', ' a'] matches ['sacredness'] is False
+[' ', ' being', ' (', ' a', '\n'] matches ['sadness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['sameness'] is False
+[' MB', ' mind', ' Mill', 'MB', 'BL'] matches ['seriousness'] is False
+[' ', ' being', ' (', ' situation', ' un'] matches ['situatedness'] is False
+[' ', ' interesting', ' strang', ' un', ' being'] matches ['strangeness'] is True
+[' MB', 'MB', ' Mill', ' mind', 'BL'] matches ['uniqueness'] is False
+[' usefulness', ' ', ' worth', ' being', ' un'] matches ['usefulness'] is True
+[' ', ' being', ' (', '\n', ' a'] matches ['vastness'] is False
+[' MB', ' mind', 'MB', ' Mill', 'BL'] matches ['weakness'] is False
+adj+ness_reg,50,368,426
+['det', ' off', 'Off', 'out', ' overl'] matches ['unable'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unacceptable'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unaffected'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unauthorized', 'unauthorised'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unavailable'] is False
+[' un', ' non', ' ', ' not', ' impossible'] matches ['unavoidable'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unaware'] is False
+[' un', ' not', ' non', ' ', ' unre'] matches ['unbelievable'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unbiased'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['uncertain'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unchanged'] is False
+[' un', ' ', ' not', ' non', ' uncon'] matches ['uncomfortable'] is True
+[' non', ' un', ' ', ' not', ' unc'] matches ['unconditional'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unconscious'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['uncontrolled'] is False
+[' un', ' ', ' non', ' not', ' undesirable'] matches ['undesirable'] is True
+['det', ' off', 'Off', 'out', ' overl'] matches ['unemployed'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unexpected'] is False
+['det', ' off', 'Off', 'out', ' overl'] matches ['unfinished'] is False
+[' un', ' ', ' not', ' non', ' unre'] matches ['unforgettable'] is True
+[' un', ' non', ' not', ' ', ' unf'] matches ['unfortunate'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unhappy'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unhealthy'] is False
+['det', ' off', 'Off', 'out', ' overl'] matches ['unidentified'] is False
+[' un', ' not', ' non', ' ', ' unexpected'] matches ['unintended'] is True
+['det', ' off', 'Off', 'out', ' overl'] matches ['uninterrupted'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unknown'] is False
+[' un', ' ', ' not', ' non', ' unexpected'] matches ['unlawful'] is True
+[' un', ' not', ' ', ' non', ' unf'] matches ['unlucky'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unnoticed'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unpaid'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unpleasant'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unpopular'] is False
+[' un', ' unpredictable', ' ', ' unexpected', ' non'] matches ['unpredictable'] is True
+['det', ' off', 'Off', 'out', ' overl'] matches ['unpublished'] is False
+[' un', ' non', ' ', ' not', ' unrealistic'] matches ['unrealistic'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unreasonable'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unrelated'] is False
+[' unreliable', ' un', ' unre', ' non', ' '] matches ['unreliable'] is True
+[' un', ' ', ' not', ' unre', ' non'] matches ['unresolved'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unrestricted'] is False
+[' un', ' ', ' not', ' non', ' unsatisf'] matches ['unsatisfactory'] is True
+['det', ' off', 'Off', 'out', 'off'] matches ['unspecified'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unsuccessful'] is False
+[' un', ' not', ' non', ' ', ' unsu'] matches ['unsuitable'] is True
+[' un', ' non', ' ', ' not', ' unre'] matches ['unsustainable'] is True
+['det', ' off', 'Off', 'out', ' overl'] matches ['unused'] is False
+['det', ' off', 'Off', 'out', 'off'] matches ['unusual'] is False
+[' un', ' ', ' not', ' non', ' unre'] matches ['unveiled'] is True
+[' un', ' ', ' not', ' unexpected', ' non'] matches ['unwanted'] is True
+un+adj_reg,50,387,457
+[' viewpoints', ' international', ' views', ' Ug', ' guild'] matches ['accordingly'] is False
+[' viewpoints', ' international', ' guild', ' public', ' views'] matches ['actually'] is False
+[' additionally', ' ', ' in', ' furthermore', ' importantly'] matches ['additionally'] is True
+[' ', ' interestingly', ' apparently', ' obviously', ' evidently'] matches ['apparently'] is True
+[' interestingly', ' ', ' importantly', ' certainly', ' effectively'] matches ['beautifully'] is False
+[' international', ' viewpoints', ' guild', ' public', ' worldview'] matches ['clinically'] is False
+[' creatively', ' interestingly', ' effectively', ' ', ' importantly'] matches ['creatively'] is True
+[' viewpoints', ' international', ' guild', ' worldview', ' views'] matches ['critically'] is False
+[' international', ' viewpoints', ' worldview', ' guild', ' public'] matches ['culturally'] is False
+[' ', ' importantly', ' definitely', ' certainly', ' in'] matches ['decidedly'] is False
+[' viewpoints', ' international', ' guild', ' views', ' Ug'] matches ['differently'] is False
+[' international', ' viewpoints', ' guild', ' Ug', ' worldview'] matches ['digitally'] is False
+[' viewpoints', ' international', ' ep', ' Ug', ' worldview'] matches ['effectively'] is False
+[' importantly', ' effectively', ' essentially', ' ', ' interestingly'] matches ['environmentally'] is False
+[' ', ' importantly', ' essentially', ' in', ' effectively'] matches ['extensively'] is False
+[' international', ' viewpoints', ' public', ' views', ' guild'] matches ['famously'] is False
+[' ', ' generally', ' in', ' importantly', ' essentially'] matches ['federally'] is False
+[' viewpoints', ' international', ' views', ' guild', ' worldview'] matches ['financially'] is False
+[' international', ' viewpoints', ' geopolitical', ' worldview', ' guild'] matches ['globally'] is False
+[' historically', ' interestingly', ' importantly', ' in', ' '] matches ['historically'] is True
+[' viewpoints', ' international', ' guild', ' views', ' Ug'] matches ['hugely'] is False
+[' ', ' definitely', ' importantly', ' certainly', ' in'] matches ['immediately'] is False
+[' viewpoints', ' international', ' public', ' views', ' guild'] matches ['importantly'] is False
+[' viewpoints', ' international', ' ep', ' views', ' worldview'] matches ['increasingly'] is False
+[' viewpoints', ' international', ' views', ' Ug', ' guild'] matches ['interestingly'] is False
+[' international', ' viewpoints', ' guild', ' views', ' worldview'] matches ['internally'] is False
+[' international', ' viewpoints', ' geopolitical', ' worldview', ' guild'] matches ['internationally'] is True
+[' viewpoints', ' international', ' guild', ' public', ' views'] matches ['legally'] is False
+[' viewpoints', ' international', ' guild', ' ep', ' worldview'] matches ['mentally'] is False
+[' viewpoints', ' international', ' guild', ' views', ' Ug'] matches ['nicely'] is False
+[' obviously', ' interestingly', ' importantly', ' ', ' certainly'] matches ['obviously'] is True
+[' viewpoints', ' international', ' worldview', ' ep', ' views'] matches ['physically'] is False
+[' viewpoints', ' international', ' geopolitical', ' public', ' views'] matches ['politically'] is False
+[' viewpoints', ' international', ' public', ' views', ' guild'] matches ['popularly'] is False
+[' importantly', ' ', ' effectively', ' practically', ' actually'] matches ['practically'] is True
+[' ', ' interestingly', ' importantly', ' in', ' additionally'] matches ['previously'] is False
+[' ', ' in', ' certainly', ' interestingly', ' typically'] matches ['rarely'] is False
+[' ', ' importantly', ' generally', ' in', ' significantly'] matches ['regionally'] is False
+[' international', ' viewpoints', ' guild', ' public', ' views'] matches ['seriously'] is False
+[' viewpoints', ' international', ' guild', ' views', ' worldview'] matches ['sexually'] is False
+[' viewpoints', ' international', ' public', ' ep', ' views'] matches ['significantly'] is False
+[' viewpoints', ' international', ' guild', ' views', ' public'] matches ['similarly'] is False
+[' international', ' viewpoints', ' views', ' guild', ' Ug'] matches ['strongly'] is False
+[' ', ' additionally', ' in', ' importantly', ' subsequently'] matches ['subsequently'] is True
+[' viewpoints', ' international', ' views', ' Ug', ' guild'] matches ['successfully'] is False
+[' international', ' viewpoints', ' worldview', ' guild', ' views'] matches ['traditionally'] is False
+[' typically', ' ', ' generally', ' interestingly', ' usually'] matches ['typically'] is True
+[' international', ' Ug', ' viewpoints', ' guild', ' views'] matches ['uniquely'] is False
+[' viewpoints', ' international', ' views', ' Ug', ' voluntary'] matches ['virtually'] is False
+[' viewpoints', ' views', ' international', ' worldview', ' Ug'] matches ['visually'] is False
+adj+ly_reg,50,396,498
+[' ', ' de', ' provider', ' challenger', ' champion'] matches ['achiever'] is False
+[' ', ' advertis', ' provider', ' pro', ' promoter'] matches ['advertiser'] is True
+[' ', ' pro', ' advertis', ' de', ' proclaim'] matches ['announcer'] is False
+[' ', ' b', ' provider', ' p', ' borrower'] matches ['baker'] is False
+[' aff', ' po', ' gal', 'FAQ', ' ax'] matches ['beginner'] is False
+[' ', ' believer', ' provider', ' de', ' pro'] matches ['believer'] is True
+[' ', ' borrower', ' provider', ' pro', ' debtor'] matches ['borrower'] is True
+[' ', ' pro', ' re', ' -', ' provider'] matches ['choreographer'] is False
+[' ', ' composer', ' com', ' comp', ' compose'] matches ['composer'] is True
+[' ', ' consumer', ' provider', ' pro', ' cons'] matches ['consumer'] is True
+[' ', ' contender', ' contestant', ' cont', ' contend'] matches ['contender'] is True
+[' defender', ' defendant', ' defend', ' ', ' def'] matches ['defender'] is True
+[' del', ' ', ' de', ' deliver', ' provider'] matches ['deliverer'] is True
+[' aff', ' gal', ' po', ' ax', 'FAQ'] matches ['destroyer'] is False
+[' ', ' determin', ' de', ' del', ' defender'] matches ['determiner'] is True
+[' gal', 'FAQ', ' aff', ' po', ' ax'] matches ['developer'] is False
+[' discover', ' disc', ' ', ' discovery', ' developer'] matches ['discoverer'] is True
+[' gal', 'FAQ', ' aff', ' ax', ' po'] matches ['eater'] is False
+[' ', ' entertain', ' ent', ' provider', ' de'] matches ['entertainer'] is True
+[' ', ' examiner', ' examine', ' investigator', ' provider'] matches ['examiner'] is True
+[' ', ' pro', ' provider', ' explorer', ' explo'] matches ['explorer'] is True
+[' gal', 'FAQ', ' aff', ' po', ' ax'] matches ['follower'] is False
+[' aff', ' gal', 'FAQ', ' ax', ' po'] matches ['interpreter'] is False
+[' ', ' intruder', ' offender', ' perpetrator', ' pro'] matches ['intruder'] is True
+[' gal', ' league', ' aff', ' ax', 'FAQ'] matches ['learner'] is False
+[' ', ' listener', ' p', ' del', ' lender'] matches ['listener'] is True
+[' ', ' del', ' pro', ' l', ' -'] matches ['loser'] is False
+[' ', ' manager', ' provider', ' controller', ' m'] matches ['manager'] is True
+[' ', ' m', ' perpetrator', ' p', ' offender'] matches ['molester'] is False
+[' ', ' m', ' pro', ' borrower', ' trou'] matches ['mourner'] is False
+[' ', ' provider', ' observer', ' pro', ' ob'] matches ['observer'] is True
+[' ', ' offender', ' defendant', ' perpetrator', ' delinquent'] matches ['offender'] is True
+[' ', ' provider', ' pro', ' -', ' organizer'] matches ['organiser'] is False
+[' ', ' organizer', ' provider', ' pro', ' -'] matches ['organizer'] is True
+[' performer', ' per', ' ', ' provider', ' perform'] matches ['performer'] is True
+[' preacher', ' ', ' pre', ' pro', ' provider'] matches ['preacher'] is True
+[' promoter', ' ', ' pro', ' promot', ' prom'] matches ['promoter'] is True
+[' provider', ' ', ' provide', ' prov', ' pro'] matches ['provider'] is True
+[' ', ' publisher', ' pro', ' provider', ' producer'] matches ['publisher'] is True
+[' receiver', ' ', ' recipient', ' provider', ' re'] matches ['receiver'] is True
+[' recommend', ' ', ' recomm', ' recommendation', ' recommended'] matches ['recommender'] is True
+[' aff', ' gal', ' ax', ' po', 'FAQ'] matches ['sender'] is False
+[' ', ' de', ' del', ' d', ' provider'] matches ['skydiver'] is False
+[' ', ' del', ' defender', ' victim', ' assailant'] matches ['slayer'] is False
+[' aff', 'FAQ', ' gal', ' po', ' ax'] matches ['speaker'] is False
+[' ', ' subscriber', ' sub', ' pro', ' subscribe'] matches ['subscriber'] is True
+[' ', ' suff', ' victim', ' offender', ' pro'] matches ['sufferer'] is True
+[' ', ' teacher', ' educator', ' instructor', ' provider'] matches ['teacher'] is True
+['FAQ', ' gal', ' aff', ' po', ' ax'] matches ['teller'] is False
+[' aff', ' ax', ' gal', ' po', 'FAQ'] matches ['writer'] is False
+verb+er_irreg,50,425,519
+[' legitimate', ' creditor', ' accountant', ' officer', ' el'] matches ['acceptable'] is False
+[' ', ' manageable', ' capable', ' reasonable', ' feasible'] matches ['achieveable'] is False
+[' legitimate', ' el', ' accountant', ' ethical', ' officer'] matches ['adaptable'] is False
+[' legitimate', ' accountant', ' officer', ' el', ' creditor'] matches ['adjustable'] is False
+[' ', ' manageable', ' reasonable', ' capable', ' imaginable'] matches ['admirable'] is False
+[' ', ' capable', ' manageable', ' reasonable', ' able'] matches ['adorable'] is False
+[' ', ' reasonable', ' advisable', ' manageable', ' capable'] matches ['advisable'] is True
+[' ', ' capable', ' manageable', ' feasible', ' affordable'] matches ['affordable'] is True
+[' legitimate', ' el', ' creditor', ' ethical', ' officer'] matches ['avoidable'] is False
+[' ', ' believable', ' reasonable', ' conceivable', ' capable'] matches ['believeable', 'believable'] is True
+[' legitimate', ' creditor', ' accountant', ' officer', ' el'] matches ['considerable'] is False
+[' ', ' contain', ' capable', ' manageable', ' maintain'] matches ['containable'] is True
+[' legitimate', ' creditor', ' el', ' officer', ' accountant'] matches ['definable'] is False
+[' ', ' capable', ' manageable', ' reasonable', ' deliver'] matches ['deliverable'] is True
+[' ', ' discover', ' manageable', ' reasonable', ' capable'] matches ['discoverable'] is True
+[' ', ' dispose', ' manageable', ' disposable', ' reasonable'] matches ['disposable'] is True
+[' legitimate', ' creditor', ' officer', ' accountant', ' el'] matches ['downloadable'] is False
+[' legitimate', ' el', ' ethical', ' creditor', ' officer'] matches ['editable'] is False
+[' ', ' manageable', ' reasonable', ' capable', ' maintain'] matches ['enjoyable'] is False
+[' legitimate', ' officer', ' creditor', ' el', ' accountant'] matches ['executable'] is False
+[' ', ' expand', ' extend', ' manageable', ' capable'] matches ['expandable'] is True
+[' ', ' reasonable', ' expect', ' manageable', ' capable'] matches ['expectable'] is True
+[' ', ' reasonable', ' manageable', ' capable', ' conceivable'] matches ['explainable'] is False
+[' ', ' extend', ' manageable', ' ext', ' capable'] matches ['extendable'] is True
+[' ', ' reasonable', ' manageable', ' capable', ' feasible'] matches ['foreseeable'] is False
+[' ', ' manageable', ' capable', ' reasonable', ' maintain'] matches ['identifiable'] is False
+[' ', ' imaginable', ' manageable', ' capable', ' conceivable'] matches ['imaginable'] is True
+[' legitimate', ' el', ' officer', ' creditor', ' ethical'] matches ['improvable'] is False
+[' ', ' manageable', ' reasonable', ' capable', ' in'] matches ['inflatable'] is True
+[' legitimate', ' el', ' officer', ' creditor', ' accountant'] matches ['learnable'] is False
+[' maintain', ' ', ' manageable', ' reasonable', ' capable'] matches ['maintainable'] is True
+[' manageable', ' ', ' manage', ' capable', ' maintain'] matches ['manageable'] is True
+[' ', ' manageable', ' maintain', ' reasonable', ' capable'] matches ['observable'] is False
+[' ', ' manageable', ' capable', ' maintain', ' reasonable'] matches ['performable'] is False
+[' ', ' reasonable', ' capable', ' manageable', ' predictable'] matches ['predictable'] is True
+[' ', ' preferable', ' capable', ' reasonable', ' pre'] matches ['preferable'] is True
+[' ', ' prevent', ' manageable', ' reasonable', ' maintain'] matches ['preventable'] is True
+[' legitimate', ' creditor', ' officer', ' accountant', ' ethical'] matches ['protectable'] is False
+[' ', ' manageable', ' maintain', ' reasonable', ' publish'] matches ['publishable'] is True
+[' ', ' manageable', ' reasonable', ' capable', ' recognizable'] matches ['recognizable', 'recognisable'] is True
+[' recommend', ' ', ' reasonable', ' manageable', ' recommended'] matches ['recommendable'] is True
+[' legitimate', ' creditor', ' officer', ' el', ' ethical'] matches ['reliable'] is False
+[' ', ' reasonable', ' manageable', ' maintain', ' capable'] matches ['renewable'] is False
+[' legitimate', ' el', ' officer', ' creditor', ' accountant'] matches ['replaceable'] is False
+[' legitimate', ' creditor', ' officer', ' accountant', ' ethical'] matches ['representable'] is False
+[' ', ' manageable', ' sustainable', ' maintain', ' reasonable'] matches ['survivable'] is False
+[' sustainable', ' ', ' maintain', ' manageable', ' reasonable'] matches ['sustainable'] is True
+[' ', ' manageable', ' reasonable', ' understandable', ' capable'] matches ['understandable'] is True
+[' ', ' capable', ' manageable', ' reasonable', ' adjustable'] matches ['variable'] is False
+[' legitimate', ' officer', ' creditor', ' accountant', ' ethical'] matches ['writeable', 'writable'] is False
+verb+able_reg,50,447,547
+[' window', ' bedroom', ' p', ' roof', ' st'] matches ['bedroom', 'room', 'bathroom', 'kitchen', 'kitchenette', 'living_room', 'pantry', 'toilet', 'shower_room'] is True
+[' lawn', ' garden', ' lover', '\n', ' d'] matches ['feathers', 'plume', 'preen', 'croup', 'calamus', 'fowl', 'drumstick', 'syrinx', 'bill', 'rump', 'vane', 'barb', 'quill', 'shaft', 'pecker', 'pennon', 'feet', 'giblets', 'alula', 'talon', 'foot', 'pinion', 'wing', 'wishbone', 'nib', 'sac', 'giblet', 'furcula', 'bird', 'neb', 'feather', 'gland', 'oyster', 'thigh', 'plumage', 'web', 'hindquarters', 'beak', "parson's_nose", 'wishing_bone', "pope's_nose", 'spurious_wing', 'bastard_wing', 'croupe', 'air_sac', 'quill_feather', 'uropygium', "bird's_foot", 'uropygial', 'second_joint', 'uropygial_gland', 'preen_gland', 'flight_feather', 'dark_meat'] is False
+[' lawn', ' garden', '\n', ' d', ' lover'] matches ['bristle', 'hold', 'shank', 'grip', 'handgrip', 'handle', 'head', 'stem'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['seats', 'conductor', 'window', 'driver', 'roof'] is False
+[' lawn', ' garden', '\n', ' lover', ' d'] matches ['bit'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['engine', 'armrest', 'headrest', 'grille', 'hinge', 'tailpipe', 'suspension', 'hood', 'horn', 'hooter', 'petrol', 'pintle', 'trunk', 'floorboard', 'bar', 'gas', 'buffer', 'door', 'stabilizer', 'seat', 'window', 'exhaust', 'tailfin', 'back', 'luggage', 'pedal', 'cowling', 'seatbelt', 'high', 'wing', 'gasoline', 'fin', 'cowl', 'silencer', 'gun', 'compartment', 'rear', 'radiator', 'accessory', 'sunroof', 'roof', 'lights', 'bumper', 'glove', 'bag', 'cushion', 'backrest', 'accelerator', 'fender', 'third', 'throttle', 'bonnet', 'air', 'gear', 'muffler', 'mirror', 'shock', 'reverse', 'anti-sway_bar', 'tail_fin', 'accelerator_pedal', 'car_seat', 'automobile_horn', 'anti-sway', 'automobile_engine', 'gasoline_engine', 'car_door', 'shock_absorber', 'luggage_compartment', 'glove_compartment', 'bumper_guard', 'exhaust_system', 'first_gear', 'high_gear', 'rear_window', 'sunshine-roof', 'third_gear', 'air_bag', 'doorlock', 'petrol_engine', 'automobile_trunk', 'auto_accessory', 'inlet_manifold', 'horn_button', 'running_board', 'stabilizer_bar', 'motor_horn', 'exhaust_manifold', 'exhaust_pipe', 'radiator_grille', 'low_gear', 'flexible_joint', 'head_restraint', 'hood_ornament', 'exhaust_valve', 'car_mirror', 'gas_pedal', 'seat_belt', 'reverse_gear', 'car_horn', 'car_window', 'suspension_system'] is False
+[' lawn', ' garden', ' lover', ' d', '\n'] matches ['donjon', 'tower', 'turret', 'gate', 'dungeon', 'moat', 'keep', 'great_hall'] is False
+[' lawn', ' garden', ' lover', ' d', '\n'] matches ['whiskers', 'coat', 'paw', 'paws', 'fur', 'eyes', 'back', 'claws', 'tail', 'teeth'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['seat', 'armrest', 'headrest', 'armrests', 'rest', 'pad', 'back', 'leg', 'backrest', 'legs'] is False
+[' lawn', ' garden', ' lover', '\n', ' d'] matches ['altar', 'choir', 'vestry', 'transept', 'apse', 'sanctuary', 'rood', 'screen', 'bema', 'nave', 'tower', 'sacristy', 'corner', 'chancel', 'amen', 'chapel', 'apsis', 'side', 'narthex', 'presbytery', 'side_chapel', 'lady_chapel', 'church_tower', 'rood_screen', 'amen_corner'] is False
+[' lawn', ' garden', '\n', ' d', ' lover'] matches ['teeth', 'shaft', 'grip', 'tooth', 'handle'] is False
+[' lawn', ' garden', ' lover', '\n', ' d'] matches ['hour', 'forenoon', 'eventide', 'nanosecond', 'noonday', 'femtosecond', 'hr', 'minutes', 'microsecond', 'msec', 'time', 'midnight', 'sec', 'nighttime', 'min', 'morning', 'noon', 'evening', 'dark', 'picosecond', 'daytime', 'minute', 'daylight', 's', 'high', 'even', 'quarter', 'morn', 'noontide', 'second', 'afternoon', 'twelve', 'millisecond', 'midday', 'midafternoon', 'attosecond', 'night', 'morning_time', 'high_noon', 'half-hour', 'twelve_noon', 'late-night_hour', 'early-morning_hour', 'lights-out', '60_minutes', 'small_hours', '30_minutes', '15_minutes', 'quarter-hour'] is False
+[' window', ' st', ' p', ' sp', ' roof'] matches ['antler', 'antlers', 'withers', 'flag', 'scut'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['cent'] is False
+[' lawn', ' garden', '\n', ' d', ' lover'] matches ['hinge', 'keyhole', 'threshold', 'doorframe', 'bolt', 'deadbolt', 'doorjamb', 'tumbler', 'doorpost', 'doorstep', 'doorcase', 'case', 'lock', 'casing', 'doorsill'] is False
+[' lawn', ' garden', ' lover', ' d', '\n'] matches ['sleeve', 'slide', 'plastron', 'zip', 'zipper', 'fastener', 'hemline', 'bodice', 'neckline', 'waistline', 'belt', 'slide_fastener', 'zip_fastener'] is False
+[' lawn', ' garden', ' lover', ' d', '\n'] matches ['extension', 'name'] is False
+[' lawn', ' garden', ' d', ' lover', ' b'] matches ['petal', 'leaf', 'anther', 'style', 'perianth', 'placenta', 'stamen', 'pistil', 'ovary', 'corolla', 'carpel', 'envelope', 'sepal', 'calyx', 'stigma', 'chlamys', 'petals', 'corona', 'perigonium', 'perigone', 'flower_petal', 'floral_leaf', 'floral_envelope', 'gynostegium'] is False
+[' window', ' st', ' p', ' ', ' sp'] matches ['megabit', 'kbit', 'kb', 'kilobit', 'mb', 'mbit'] is False
+[' p', ' st', ' window', ' par', ' bell'] matches ['string', 'deck', 'pegs', 'fret', 'strings', 'frets', 'peg', 'fingerboard'] is True
+[' lawn', ' garden', ' lover', ' d', '\n'] matches ['trigger', 'holder', 'safety', 'extractor', 'clip', 'magazine', 'barrel', 'hammer', 'viewfinder', 'gunsight', 'stock', 'cartridge', 'remover', 'chamber', 'ejector', 'cock', 'catch', 'finder', 'mechanism', 'gunstock', 'lock', 'action', 'muzzle', 'key', 'gunlock', 'cartridge_holder', 'gun_muzzle', 'gun-sight', 'action_mechanism', 'gun_chamber', 'gun_trigger', 'firing_mechanism', 'safety_lock', 'cartridge_extractor', 'firing_chamber', 'cartridge_ejector', 'view_finder', 'cartridge_clip', 'gun_barrel', 'safety_catch', 'cartridge_remover'] is False
+[' window', ' st', ' p', ' roof', ' bell'] matches ['dock', 'facility', 'anchorage', 'landing', 'docking', 'dockage', 'anchorage_ground', 'docking_facility', 'landing_place', 'landing_stage'] is False
+[' window', ' st', ' p', ' c', ' windows'] matches ['cell', 'cellblock', 'guard', 'police', 'prison_cell', 'jail_cell'] is False
+[' st', ' m', ' sp', ' p', ' bell'] matches ['bead', 'stone', 'wire', 'beads', 'gemstone', 'gem', 'metal', 'gold', 'silver', 'platina', 'bead', 'beads', 'jewel'] is True
+[' window', ' st', ' p', ' ', ' bell'] matches ['millilitre', 'cc', 'ml', 'milliliter', 'cl', 'dl', 'deciliter', 'mil', 'cubic_centimetre', 'centiliter', 'decilitre', 'cubic_centimeter', 'centilitre', 'cubic_millimeter', 'cubic_millimetre'] is False
+[' lawn', ' garden', ' d', ' lover', ' b'] matches ['scene', 'subtitles', 'footage', 'credit', 'episode', 'shot', 'sequence', 'credits', 'caption'] is False
+[' window', ' p', ' ', ' st', ' windows'] matches ['hyphenation', 'punctuation', 'punctuation_mark', 'word_division', 'spelling'] is False
+[' window', ' p', ' piano', ' roof', ' music'] matches ['keyboard', 'clavier', 'loud', 'hammer', 'sounding', 'pedal', 'sustaining', 'soft', 'fingerboard', 'soundboard', 'action', 'board', 'key', 'fallboard', 'piano_action', 'action_mechanism', 'damper_block', 'fall-board', 'sounding_board', 'sustaining_pedal', 'loud_pedal', 'piano_damper', 'piano_keyboard', 'sound_hole', 'soft_pedal'] is True
+[' lawn', ' garden', ' d', ' b', ' lover'] matches ['crust', 'cheese', 'filling', 'fruit', 'apple', 'berries', 'glazing', 'pastry', 'icing'] is False
+[' window', ' st', ' p', ' bell', ' '] matches ['stanza', 'canto', 'prosody', 'rime', 'line', 'rhyme', 'verse', 'poetic_rhythm', 'rhythmic_pattern', 'verse_line', 'line_of_verse', 'line_of_poetry'] is True
+[' lawn', ' garden', ' d', ' lover', ' b'] matches ['bar', 'barroom', 'taproom', 'saloon', 'ginmill'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['receiver', 'tuner', 'radio', 'demodulator', 'transmitter', 'detector', 'receiving', 'set', 'amplifier', 'wireless', 'radio_transmitter', 'receiving_set', 'radio_receiver', 'radio_set'] is False
+[' st', ' window', ' p', ' ', ' m'] matches ['harbor', 'seaport', 'dock', 'haven', 'anchorage', 'landing', 'harbour', 'dockage', 'anchorage_ground', 'docking_facility', 'landing_place', 'landing_stage'] is False
+[' lawn', ' garden', ' d', '\n', ' lover'] matches ['button', 'dickie', 'collar', 'dickey', 'sleeve', 'buttons', 'dicky', 'pocket', 'shirttail', 'shirtsleeve', 'shirtfront', 'shirt_button'] is False
+[' st', ' window', ' p', ' roof', ' '] matches ['movement', 'part'] is False
+[' window', ' roof', ' p', ' st', ' '] matches ['step', 'riser', 'landing', 'tread', 'stair', 'stairhead'] is True
+[' lawn', ' garden', '\n', ' lover', ' d'] matches ['blade', 'forte', 'hilt', 'peak', 'foible', 'point', 'pommel', 'haft', 'tip', 'knob', 'helve', 'knife_edge', 'cutting_edge'] is False
+[' lawn', ' garden', ' d', ' lover', '\n'] matches ['tabletop', 'tableware', 'leg', 'legs'] is False
+[' window', ' st', ' roof', ' bell', ' sp'] matches ['spout', 'handle', 'knob', 'lid', 'body', 'belly', 'base', 'filter', 'tea_filter'] is True
+[' p', ' st', ' window', ' bell', ' par'] matches ['receiver', 'mouthpiece', 'dial', 'wire', 'screen', 'display', 'telephone_receiver'] is False
+[' window', ' st', ' ', ' p', ' bell'] matches ['kilogram', 'mg', 'gm', 'hg', 'grain', 'milligram', 'hundredweight', 'kilo', 'mcg', 'dag', 'carat', 'microgram', 'gramme', 'quintal', 'ng', 'gram', 'dg', 'g', 'kg', 'decigram', 'nanogram', 'myriagram', 'centner', 'metric_grain', 'myg', 'dekagram', 'decagram', 'metric_hundredweight', 'obolus', 'doppelzentner', 'hectogram', 'dkg'] is False
+[' st', ' p', ' ', ' m', ' window'] matches ['chest', 'arse', 'shoulder', 'bum', 'midriff', 'groin', 'deltoid', 'diaphragm', 'lat', 'pectoralis', 'behind', 'gluteus', 'middle', 'stomach', 'teres', 'thorax', 'tush', 'ab', 'rump', 'breastbone', 'buns', 'gladiolus', 'haunch', 'backside', 'buttocks', 'serratus', 'pectoral', 'stern', 'navel', 'paunch', 'seat', 'mediastinum', 'ass', 'axilla', 'back', 'belly', 'bottom', 'omphalos', 'fundament', 'acromion', 'derriere', 'hindgut', 'gut', 'gallbladder', 'saddle', 'cheek', 'waist', 'butt', 'bowel', 'keister', 'bellybutton', 'pectus', 'prat', 'loins', 'abdominal', 'rear', 'dorsum', 'posterior', 'venter', 'small', 'abdomen', 'umbilicus', 'armpit', 'waistline', 'sternum', 'scapula', 'glute', 'manubrium', 'fanny', 'side', 'midsection', 'pecs', 'hip', 'buttock', 'intestine', 'breast', 'can', 'tail', 'hindquarters', 'xiphoid_process', 'thoracic_vertebra', 'abdominal_wall', 'musculus_deltoideus', 'abdominal_cavity', 'arteria_circumflexa_scapulae', 'arteria_glutes', 'arteria_axillaris', 'axillary_fossa', 'arteria_colica', 'articulatio_humeri', 'shoulder_joint', 'gall_bladder', 'spare_tire', 'arteria_circumflexa_humeri', 'serratus_muscles', 'axillary_artery', 'gluteus_muscle', 'love_handle', 'latissimus_dorsi', 'pectoral_muscle', 'tooshie', 'abdominal_muscle', 'circumflex_humeral_artery', 'abdominal_aorta', 'vena_thoracica', 'musculus_pectoralis', 'hypochondrium', 'area_of_cardiac_dullness', 'glenoid_cavity', 'rib_cage', 'thoracic_aorta', 'omphalus', 'circumflex_scapular_artery', 'acromial_process', 'shoulder_bone', 'tail_end', 'rear_end', 'gluteal_muscle', 'inguen', 'shoulder_blade', 'rotator_cuff', 'corpus_sternum', 'dorsal_vertebra', 'teres_muscle', 'thoracic_cavity', 'axillary_cavity', 'chest_cavity', 'deltoid_muscle', 'belly_button', 'gluteal_artery', 'thoracic_vein', 'glenoid_fossa', 'nates', 'colic_artery', 'lumbar_vertebra', 'hind_end'] is True
+[' window', ' st', ' bell', ' sp', ' p'] matches ['leg', 'stand'] is True
+[' window', ' p', ' st', ' roof', ' bell'] matches ['keyboard', 'typewriter', 'carriage', 'tab', 'ribbon', 'shift', 'backspace', 'action', 'key', 'typewriter_carriage', 'backspace_key', 'action_mechanism', 'typewriter_keyboard', 'shift_key', 'space_bar', 'tab_key', 'typewriter_ribbon', 'backspacer'] is False
+[' lawn', ' garden', ' lover', '\n', ' d'] matches ['pane', 'sash', 'windowpane', 'window', 'fastener', 'glass', 'frame', 'case', 'windowsill', 'mullion', 'jamb', 'lock', 'casing', 'sash_lock', 'window_glass', 'sash_fastener', 'pane_of_glass', 'window_lock', 'window_sash', 'window_frame'] is False
+meronyms - part,50,456,583
+[' ', ' m', ' d', ' l', ' a'] matches ['aeroplane', 'plane'] is False
+[' t', 'ubb', ' m', ' res', ' cob'] matches ['car', 'automobile', 'motorcar'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['infant', 'babe'] is False
+[' ', ' m', ' d', ' l', ' b'] matches ['bike', 'wheel', 'cycle'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['fabric', 'material', 'textile'] is False
+[' ', ' d', ' t', ' l', ' m'] matches ['clothing', 'apparel', 'dress'] is False
+[' ', ' d', ' m', ' l', ' g'] matches ['baffled', 'befuddled', 'bemused', 'bewildered', 'confounded', 'lost', 'mazed', 'mixed-up'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['accent', 'accentuaion', 'importance', 'stress', 'significance'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['dad', 'daddy'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['blossom', 'bloom'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['aid', 'assist'] is False
+[' ', ' d', ' p', ' g', ' t'] matches ['hieroglyphic', 'pictogram'] is False
+[' ', ' d', ' m', ' l', ' g'] matches ['uniform', 'unvarying'] is False
+[' ', ' d', ' m', ' l', ' real'] matches ['sincere', 'ingenuous', 'true', 'direct', 'truthful'] is False
+[' ', ' d', ' m', ' same', ' t'] matches ['same', 'indistinguishable'] is True
+[' ', ' m', ' d', ' t', ' a'] matches ['wrong', 'counterfactual', 'erroneous', 'inaccurate', 'specious', 'unsound', 'untrue', 'false'] is False
+[' ', ' m', ' d', ' smart', ' g'] matches ['clever', 'smart'] is True
+[' ', ' d', ' l', ' g', ' w'] matches ['gem', 'stone'] is False
+[' ', ' d', ' l', ' m', ' g'] matches ['madam', 'dame', "ma'am", 'gentlewoman', 'madame', 'woman'] is False
+[' ', ' d', ' l', ' t', ' g'] matches ['indolent', 'faineant', 'otiose', 'slothful', 'work-shy'] is False
+['ubb', ' t', ' m', ' cob', 'With'] matches ['listing', 'enumeration'] is False
+[' ', ' l', ' d', ' m', ' g'] matches ['faithful', 'true', 'dependable', 'devoted', 'reliable'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['marketplace', 'mart', 'bazaar'] is False
+[' ', ' d', ' m', ' l', ' one'] matches ['repair', 'fix', 'fixing', 'fixture', 'mending', 'reparation', 'patch', 'darn', 'darning'] is False
+[' ', ' d', ' l', ' g', ' t'] matches ['gauze', 'netting', 'veiling', 'hairnet', 'reseau', 'net', 'save-all', 'snood', 'sparker', 'tulle', 'wirework', 'grillwork'] is False
+[' ', ' d', ' m', ' g', ' t'] matches ['memorial'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['mom', 'mommy', 'mum'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['modern', 'recent'] is False
+[' ', ' m', ' d', ' t', ' l'] matches ['outdated', 'out-of-date', 'superannuated'] is False
+[' t', 'ubb', ' m', ' res', ' cob'] matches ['parcel', 'pack', 'packet', 'bundle'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['telephone', 'cell', 'cellphone', 'smartphone'] is False
+[' ', ' d', ' t', ' l', ' g'] matches ['railroad'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['logical', 'coherent', 'reasonable', 'sane'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['stone'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['coast', 'strand', 'bank', 'beach', ''] is False
+[' ', ' d', ' l', ' s', ' g'] matches ['serpent', 'ophidian'] is False
+[' ', ' d', ' l', ' m', ' p'] matches ['couch', 'lounge'] is False
+[' ', ' d', ' m', ' p', ' t'] matches ['partner', 'mate', 'better_half'] is False
+[' t', 'ubb', ' m', ' cob', ' res'] matches ['manner', 'mode', 'fashion', 'way'] is False
+[' ', ' d', ' t', ' l', ' c'] matches ['confectionery', 'dessert', 'confection'] is False
+[' ', ' d', ' m', ' l', ' t'] matches ['scoundrel', 'rascal'] is False
+[' ', ' d', ' t', ' m', ' l'] matches ['lexicon', 'wordbook', 'dictionary', 'glossary'] is False
+synonyms - exact,50,458,623
+[' afraid', ' scared', ' ', ' g', ' frightened'] matches ['terrified', 'horrified', 'scared', 'stiff', 'petrified', 'fearful', 'panicky'] is True
+[' angry', ' upset', ' g', ' annoyed', ' mad'] matches ['furious', 'enraged', 'outraged', 'aggrivated', 'irate', 'seething'] is False
+[' gossip', ' sed', 'c', ' sexually', ' hum'] matches ['beg', 'implore', 'pray', 'entreat', 'supplicate', 'insist'] is False
+[' gossip', ' sed', 'c', ' hum', ' sexually'] matches ['awful', 'atrocious', 'abominable', 'dreadful', 'painful', 'terrible', 'unspeakable'] is False
+[' bored', ' ', ' g', ' enjoy', ' delighted'] matches ['tedious', 'deadening', 'dull', 'ho-hum', 'irksome', 'tiresome', 'wearisome'] is False
+[' ', ' g', ' happy', ' m', ' enjoy'] matches ['laugh', 'guffaw', 'chortle', 'guffaw', 'snicker', 'snigger', 'titter', 'roar'] is False
+[' bored', ' delighted', ' annoyed', ' confused', ' angry'] matches ['lost', 'bewildered', 'trapped', 'desperate'] is False
+[' ', ' enjoy', ' bored', ' g', ' happy'] matches ['ingenious', 'inventive', 'demiurgic', 'deviceful', 'innovational', 'innovative', 'innovatory', 'original', 'originative'] is False
+[' gossip', ' sed', 'c', ' gir', ' hum'] matches ['scream', 'shriek', 'screech', 'screeching'] is False
+[' g', ' ', ' d', ' m', ' enjoy'] matches ['feast', 'banquet', 'fiesta'] is False
+[' enjoy', ' dislike', ' love', ' g', ' '] matches ['hate', 'abhor', 'detest', 'loathe', 'abominate', 'execrate', 'contemn', 'despise', 'scorn', 'disdain'] is False
+[' ', ' g', ' d', ' m', ' enjoy'] matches ['sleep', 'slumber'] is False
+[' ', ' g', ' d', ' m', ' enjoy'] matches ['rain', 'shower', 'raifall', 'deluge'] is False
+[' g', ' happy', ' ', ' enjoy', ' be'] matches ['laugh', 'guffaw', 'chortle', 'guffaw', 'snicker', 'snigger', 'titter', 'roar'] is False
+[' g', ' happy', ' ', ' angry', ' sad'] matches ['remorseful', 'sorrowful', 'unworthy'] is False
+[' g', ' ', ' be', ' d', ' enjoy'] matches ['palace', 'castle'] is False
+[' hungry', ' g', ' ', ' thirsty', ' d'] matches ['starving', 'famished', 'peckish', 'ravenous', 'starved'] is False
+[' gossip', ' sed', 'c', ' hum', ' sexually'] matches ['exciting', 'exhilarant', 'exhilarating', 'exhilarative', 'eye-popping', 'inspiring', 'intoxicating', 'rousing', 'stimulating', 'stirring', 'arresting', 'interesting', 'intriguing', 'moving', 'provocative', 'heady', 'thrilling'] is False
+[' ', ' enjoy', ' g', ' be', ' m'] matches ['enrage', 'incense', 'infuriate', 'ire', 'mad', 'madden', 'steam', 'umbrage'] is False
+[' ', ' g', ' m', ' enjoy', ' happy'] matches ['run', 'scarper', 'flee', 'fly'] is False
+[' gossip', ' sed', ' sexually', 'c', ' hum'] matches ['sea', 'ocean'] is False
+[' gossip', ' sed', 'c', ' gir', ' sexually'] matches ['love', 'care', 'fond', 'crush', 'infatuate'] is False
+[' gossip', ' sed', 'c', ' sexually', ' gir'] matches ['adore', 'fetishize', 'idolize', 'idolise', 'worship', 'hero-worship', 'revere'] is False
+[' gossip', ' sed', ' gir', 'c', ' hum'] matches ['gorilla'] is False
+[' ', ' g', ' enjoy', ' d', ' m'] matches ['sleep', 'slumber'] is False
+[' gossip', ' sed', 'c', ' sexually', ' gir'] matches ['essential', 'indispensable', 'vital', 'required'] is False
+[' gossip', ' sed', 'c', ' sexually', ' gir'] matches ['torment', 'torture', 'agony'] is False
+[' ', ' g', ' d', ' m', ' j'] matches ['horse'] is False
+[' ', ' g', ' enjoy', ' m', ' be'] matches ['afflicted', 'sick', 'ill', 'stricken'] is False
+[' gossip', ' sed', 'c', ' gir', ' sexually'] matches ['deluge', 'shower'] is False
+[' happy', ' g', ' sad', ' delighted', ' upset'] matches ['desparate', 'despondent', 'despairing', 'desponding', 'forlorn', 'hopeless', 'melancholy'] is False
+[' gossip', ' sed', 'c', ' gir', ' sexually'] matches ['ocean'] is False
+[' ', ' g', ' enjoy', ' m', ' d'] matches ['meal', 'eat'] is False
+[' gossip', ' sed', ' hum', 'c', ' sexually'] matches ['immediately', 'promptly', 'straightaway'] is False
+[' gossip', ' sed', 'c', ' sexually', ' hum'] matches ['powerful', 'forceful', 'super', 'potent'] is False
+[' ', ' g', ' enjoy', ' m', ' d'] matches ['delicious', 'delectable', 'luscious', 'pleasant-tasting', 'scrumptious', 'toothsome', 'yummy', 'mouth-watering', 'ambrosial', 'heavenly'] is False
+[' tired', ' bored', ' exhausted', ' excited', ' happy'] matches ['exhausted', 'drained'] is True
+[' ', ' g', ' happy', ' be', ' unhappy'] matches ['tragic', 'woeful', 'grievous', 'wretched', 'miserable', 'awful', 'lamentable', 'regrettable', 'desperate', 'hopeless', 'disastrous'] is False
+[' happy', ' unhappy', ' sad', ' delighted', ' upset'] matches ['miserable', 'suffering', 'wretched'] is False
+[' gossip', ' sed', 'c', ' sexually', ' hum'] matches ['crave', 'hunger', 'thirst', 'starve', 'lust'] is False
+[' gossip', ' sed', 'c', ' sexually', ' hum'] matches ['hot', 'fiery', 'flaming', 'heated', 'red-hot', 'sizzling', 'sensual', 'sultry', 'torrid', 'white-hot'] is False
+synonyms - intensity,50,460,662
+[' clothes', ' furniture', ' clothing', ' appliance', ' '] matches ['chair', 'seat', 'piece_of_furniture', 'article_of_furniture', 'furnishing', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' appliance', ' clothing', ' item', ' device'] matches ['appliance', 'mixer', 'kitchen_utensil', 'utensil', 'implement', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' item', ' cloth', ' article'] matches ['jewelry', 'band', 'strip', 'slip', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'jewellery', 'adornment', 'decoration', 'ornament', 'ornamentation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' ', ' cloth'] matches ['jewelry', 'jewellery', 'adornment', 'decoration', 'ornament', 'ornamentation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', ''] is False
+[' ', ' ch', ' cl', ' m', ' g'] matches ['dessert', 'baked_goods', 'food', 'solid_food', 'course', 'nutriment', 'nourishment', 'nutrition', 'sustenance', 'aliment', 'alimentation', 'victuals', 'food', 'nutrient', 'substance', 'matter', 'physical_entity', 'entity'] is False
+[' ', ' ch', ' cl', ' m', ' g'] matches ['device', 'machine', 'gadget', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'expert', 'person', 'individual', 'someone', 'somebody', 'mortal', 'soul', 'causal_agent', 'cause', 'causal_agency', 'organism', 'being', 'physical_entity', 'living_thing', 'animate_thing', 'entity', 'unit', 'object', 'physical_object', ''] is False
+[' clothes', ' clothing', ' cloth', ' item', ' '] matches ['pastry', 'bun', 'roll', 'bread', 'breadstuff', 'staff_of_life', 'baked_goods', 'starches', 'food', 'solid_food', 'foodstuff', 'food_product', 'solid', 'food', 'nutrient', 'matter', 'substance', 'physical_entity', 'entity'] is False
+[' ', ' ch', ' cl', ' m', ' g'] matches ['tableware', 'crockery', 'dishware', 'ware', 'article', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'container'] is False
+[' clothes', ' clothing', ' cloth', ' garment', ' item'] matches ['fabric', 'cloth', 'material', 'textile', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' item', ' appliance', ' device'] matches ['toiletry', 'toilet_articles', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' furniture', ' appliance', ' clothing', ' item'] matches ['furniture', 'table', 'piece_of_furniture', 'article_of_furniture', 'furnishing', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' item', ' appliance', ' '] matches ['journal', 'writing', 'written_material', 'piece_of_writing', 'written_communication', 'written_language', 'black_and_white', 'communication', 'abstraction', 'abstract_entity', 'entity', 'journal', 'book', 'volume', 'product', 'production', 'creation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' appliance', ' clothes', ' device', ' kitchen', ' machine'] matches ['appliance', 'machine', 'entity', 'unit', 'object', 'physical_object', 'white_goods', 'home_appliance', 'household_appliance', 'durables', 'durable_goods', 'consumer_durables', 'consumer_goods', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' ', ' ch', ' cl', ' m', ' clothes'] matches ['clothes', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' appliance', ' clothes', ' device', ' clothing', ' kitchen'] matches ['appliance', 'icebox', 'white_goods', 'home_appliance', 'household_appliance', 'appliance', 'durables', 'durable_goods', 'consumer_durables', 'consumer_goods', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' item', ' ', ' device'] matches ['fuel', 'hydrocarbon', 'substance', 'organic_compound', 'matter', 'compound', 'chemical_compound', 'physical_entity', 'chemical', 'chemical_substance', 'entity', 'material', 'stuff', 'substance', 'part', 'portion', 'component_part', 'component', 'constituent', 'relation', 'abstraction', 'abstract_entity'] is False
+[' clothes', ' item', ' clothing', ' ', ' appliance'] matches ['citrus', 'citrus_fruit', 'citrous_fruit', 'fruit', 'edible_fruit', 'fruit', 'produce', 'green_goods', 'green_groceries', 'garden_truck', 'food', 'matter', 'natural_object', 'physical_entity', 'unit', 'entity', 'object', 'physical_object'] is False
+[' clothes', ' clothing', ' item', ' appliance', ' '] matches ['sandwich', 'snack_food', 'dish', 'nutriment', 'nourishment', 'nutrition', 'sustenance', 'aliment', 'alimentation', 'victuals', 'food', 'nutrient', 'substance', 'matter', 'physical_entity', 'entity', 'beef', 'boeuf', 'meat', 'food', 'solid_food', 'solid', 'matter', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' garment', ' cloth'] matches ['clothes', 'coat', 'overgarment', 'outer_garment', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' clothes', ' clothing', ' cloth', ' ', ' garment'] matches ['trousers', 'pants', 'workwear', 'garment', 'clothing', 'clothes', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' clothes', ' appliance', ' device', ' clothing', ' item'] matches ['utensil', 'physical_entity', 'entity', 'unit', 'object', 'physical_object', 'squeezer', 'kitchen_utensil', 'implement', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' ', ' garment'] matches ['citrus', 'citrus_fruit', 'citrous_fruit', 'fruit', 'edible_fruit', 'fruit', 'produce', 'green_goods', 'green_groceries', 'garden_truck', 'food', 'matter', 'natural_object', 'physical_entity', 'unit', 'entity', 'object', 'physical_object'] is False
+[' clothes', ' clothing', ' item', ' ', ' article'] matches ['makeup', 'make-up', 'war_paint', 'cosmetic', 'toiletry', 'toilet_articles', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' article', ' accessory'] matches ['jewelry', 'jewellery', 'adornment', 'decoration', 'ornament', 'ornamentation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' cloth', ' device'] matches ['book', 'volume', 'product', 'production', 'creation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'portable_computer', 'personal_computer', 'pc', 'microcomputer', 'digital_computer', 'computer', 'computing_machine', 'computing_device', 'data_processor', 'electronic_computer', 'information_processing_system', 'machine', 'device', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' cloth', ' item', ' '] matches ['pad', 'pad_of_paper', 'tablet', 'paper', 'material', 'stuff', 'substance', 'matter', 'part', 'portion', 'component_part', 'component', 'constituent', 'physical_entity', 'relation', 'entity', 'abstraction', 'abstract_entity'] is False
+[' clothes', ' clothing', ' item', ' cloth', ' '] matches ['food', 'dough', 'concoction', 'mixture', 'intermixture', 'foodstuff', 'food_product', 'food', 'nutrient', 'substance', 'matter', 'physical_entity', 'entity', 'baked_goods', 'solid_food', 'solid', 'matter', 'physical_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' ', ' cloth'] matches ['fruit', 'drupe', 'stone_fruit', 'edible_fruit', 'fruit', 'produce', 'green_goods', 'green_groceries', 'garden_truck', 'food', 'matter', 'natural_object', 'physical_entity', 'unit', 'entity', 'object', 'physical_object'] is False
+[' ', ' ch', ' cl', ' m', ' g'] matches ['picture', 'image', 'representation', 'creation', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' ', ' ch', ' cl', ' m', ' clothes'] matches ['pastry', 'baked_goods', 'food', 'solid_food', 'solid', 'matter', 'physical_entity', 'entity', 'indo-european', 'indo-european_language', 'indo-hittite', 'natural_language', 'tongue', 'language', 'linguistic_communication', 'communication', 'abstraction', 'abstract_entity', 'entity'] is False
+[' clothes', ' clothing', ' item', ' ', ' cloth'] matches ['fruit', 'drupe', 'stone_fruit', 'edible_fruit', 'fruit', 'produce', 'green_goods', 'green_groceries', 'garden_truck', 'food', 'matter', 'natural_object', 'physical_entity', 'unit', 'entity', 'object', 'physical_object'] is False
+[' clothes', ' item', ' clothing', ' ', ' cloth'] matches ['card', 'correspondence', 'first_class', '1st_class', 'first-class_mail', '1st-class_mail', 'written_communication', 'written_language', 'black_and_white', 'mail', 'communication', 'message', 'abstraction', 'abstract_entity', 'entity'] is False
+[' clothes', ' item', ' clothing', ' article', ' device'] matches ['furniture', 'support', 'piece_of_furniture', 'article_of_furniture', 'furnishing', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' ', ' ch', ' cl', ' m', ' clothes'] matches ['clothes', 'garment', 'clothing', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' clothes', ' clothing', ' cloth', ' garment', ' dress'] matches ['clothes', 'garment', 'clothing', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' clothes', ' furniture', ' clothing', ' item', ' '] matches ['furniture', 'seat', 'piece_of_furniture', 'article_of_furniture', 'furnishing', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' device', ' item', ' clothing', ' appliance'] matches ['device', 'machine', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' clothes', ' clothing', ' cloth', ' garment', ' item'] matches ['clothes', 'garment', 'clothing', 'article_of_clothing', 'vesture', 'wear', 'wearable', 'habiliment', 'consumer_goods', 'covering', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', ''] is True
+[' appliance', ' clothes', ' device', ' item', ' clothing'] matches ['appliance', 'entity', 'unit', 'object', 'physical_object', 'kitchen_appliance', 'home_appliance', 'household_appliance', 'durables', 'durable_goods', 'consumer_durables', 'consumer_goods', 'commodity', 'trade_good', 'good', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is True
+[' ', ' ch', ' cl', ' m', ' g'] matches ['device', 'machine', 'receiver', 'receiving_system', 'set', 'electronic_equipment', 'equipment', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity', 'broadcasting', 'telecommunication', 'telecom', 'medium', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+[' clothes', ' item', ' clothing', ' article', ' appliance'] matches ['jar', 'vessel', 'container', 'artifact', 'artefact', 'unit', 'object', 'physical_object', 'physical_entity', 'entity'] is False
+hypernyms - misc,50,476,687
+['\n', '...', ' ', ' (', ' Lounge'] matches ['pouch', 'backpack', 'knapsack', 'packsack', 'rucksack', 'haversack', 'beanbag', 'bladder', 'pouch', 'carryall', 'holdall', 'tote', 'tote', 'drawstring', 'dust', 'vacuum', 'envelope', 'gasbag', 'gamebag', 'golf', 'gunnysack', 'gunny', 'burlap', 'ice', 'mailbag', 'postbag', 'nosebag', 'feedbag', 'pannier', 'plastic', 'purse', 'ragbag', 'rosin', 'sachet', 'sack', 'poke', 'paper', 'carrier', 'saddlebag', 'sandbag', 'schoolbag', 'shopping', 'sick_bag', 'sickbag', 'skin', 'sleeping', 'sweat', 'tea', 'toilet', 'sponge', 'tool', 'tucker-bag'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['ferry', 'ark', 'barge', 'flatboat', 'hoy', 'lighter', 'bumboat', 'canal_boat', 'narrow_boat', 'narrowboat', 'ferryboat', 'fireboat', 'gondola', 'guard_boat', 'gunboat', 'junk', 'longboat', 'lugger', 'mackinaw', 'mackinaw', 'mailboat', 'mail', 'packet', 'packet', 'motorboat', 'powerboat', 'pilot', 'police', 'punt', 'river_boat', 'scow', 'sea_boat', 'small_boat', 'steamboat', 'surfboat', 'tender_boat', 'pinnace', 'cutter_boat', 'tugboat', 'tug', 'towboat', 'tower_boat', 'motorboat', 'yacht', 'sail', 'row', 'canoe', 'kayak', 'paddle', 'paddle_boat'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['paperback', 'album', 'folio', 'hardback', 'hardcover', 'journal', 'novel', 'order', 'paper-back', 'softback', 'soft-cover', 'picture', 'sketchbook', 'sketch', 'notebook'] is False
+['\n', '...', ' ', ' Lounge', ' ('] matches ['toothbrush', 'bottlebrush', 'bristle', 'clothesbrush', 'hairbrush', 'nailbrush', 'paintbrush', 'sable', 'scrub', 'scrubbing', 'scrubber', 'shaving_brush'] is False
+[' ', ' s', ' d', ' m', ' p'] matches ['hamburger', 'cheeseburger', '50', '50_burger', 'angus_burger', 'banquet_burger', 'barbecue_burger', 'bøfsandwich', 'utter_burge', 'buffalo_burger', 'california_burger', 'chili_burger', 'curry_burger', 'hamdog', 'salmon_burger', 'rice_burger', 'veggie_burger'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['camcorder', 'box_camera', 'box_kodak', 'candid_camera', 'digital_camera', 'flash_camera', 'motion-picture_camera', 'movie_camera', 'cine-camera', 'point-and-shoot_camera', 'point-and-shoot', 'polaroid_camera', 'polaroid_land_camera', 'polaroid', 'portrait_camera', 'reflex_camera', 'webcam', 'webcamera', 'sound_camera'] is False
+[' ', ' s', ' p', ' apple', ' t'] matches ['lollipop', 'candy_bar', 'carob_bar', 'hard_candy', 'brandyball', 'patty', 'bonbon', 'brittle', 'toffee', 'toffy', 'butterscotch', 'candy_cane', 'candy_corn', 'caramel', 'cotton_candy', 'spun_sugar', 'candyfloss', 'dragee', 'fondant', 'fudge', 'gumdrop', 'honey_crisp', 'mint', 'mint_candy', 'horehound', 'jelly_bean', 'jelly_egg', 'kiss', 'candy_kiss', 'licorice', 'liquorice', 'life_saver', 'sucker', 'all-day_sucker', 'lozenge', 'marshmallow', 'marzipan', 'marchpane', 'nougat', 'nougat_bar', 'nut_bar', 'peanut_bar', 'popcorn_ball', 'praline', 'rock_candy', 'rock', 'sugar_candy', 'sugarplum', 'taffy', 'truffle', 'chocolate_truffle', 'turkish_delight', 'easter_egg'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['chapel', 'abbey', 'basilica', 'cathedral', 'duomo', 'kirk'] is False
+[' ', ' s', ' apple', ' p', ' m'] matches ['lemon', 'orange', 'lime', 'mandarin', 'tangerine', 'yuzu'] is False
+['\n', '...', ' ', ' Lounge', ' ('] matches ['thundercloud', 'cirrocumulus', 'cirrocumulus', 'cirrostratus', 'cirrus', 'contrail', 'condensation', 'trail', 'cumulonimbus', 'cumulonimbus', 'cumulus', 'nacreous', 'nebule', 'nimbus', 'rain', 'storm', 'stratus', 'mushroom', 'smoke'] is False
+['\n', ' ', '...', ' (', ' Lounge'] matches ['choker', 'ruff', 'ruffle', 'clerical', 'roman_collar', 'dog_collar', 'eton_collar', 'rabato_collar', 'rebato_collar', 'turtleneck', 'polo-neck', 'neckpiece'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['white', 'black', 'blue', 'green', 'red', 'yello', 'orange', 'vermilion', 'amber', 'chartreuse', 'teal', 'violet', 'magenta', 'rose', 'azure', 'cyan', 'indigo', 'purple', 'brown'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['laptop', 'desktop', 'tablet', 'smartphone', 'supercomputer', 'iphone', 'ipad'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['bag', 'handbag', 'pocketbook', 'purse', 'basket', 'handbasket', 'bin', 'bowl', 'pipe', 'bowl', 'box', 'bread-bin', 'breadbox', 'bunker', 'can', 'tin', 'canister', 'cannister', 'capsule', 'cargo', 'case', 'display', 'showcase', 'vitrine', 'cassette', 'cup', 'cylinder', 'dice', 'cup', 'box', 'dish', 'dispenser', 'drawer', 'dumpster', 'empty', 'envelope', 'glass', 'bag', 'bottle', 'mailer', 'manger', 'trough', 'measure', 'mold', 'mould', 'cast', 'package', 'parcel', 'pan', 'pod', 'pot', 'flowerpot', 'flask', 'receptacle', 'reliquary', 'saltcellar', 'savings', 'bank', 'coin', 'money', 'bank', 'scuttle', 'coal', 'scuttle', 'shaker', 'spoon', 'thimble', 'capsule', 'vessel', 'basket', 'bin', 'waste-paper', 'wastebasket', 'waste', 'file', 'can', 'pot', 'workbasket', 'workbox', 'workbag'] is False
+[' kitchen', ' ', ' s', ' dish', ' t'] matches ['pot', 'baster', 'chafing', 'dish', 'cooker', 'sheet', 'tray', 'enamelware', 'grid', 'gridiron', 'griddle', 'pan', 'poacher', 'skimmer', 'steamer', 'turner'] is True
+['\n', ' ', '...', ' Lounge', ' ('] matches ['teacup', 'beaker', 'chalice', 'goblet', 'coffee_cup', 'dixie', 'paper_cup', 'grace', 'kylix', 'cylix', 'mustache_cup', 'moustache_cup', 'scyphus', 'grail'] is False
+[' ', ' p', ' table', ' s', ' m'] matches ['pincushion', 'pillow', 'air', 'inflatable', 'gaddi', 'hassock', 'headrest', 'pillow', 'seat'] is False
+[' table', ' kitchen', ' ', ' s', ' p'] matches ['knife', 'fork', 'spoon', 'tablefork', 'teaspoon', 'dessert_spoon', 'salad_fork', 'carving_fork'] is True
+[' ', ' s', ' d', ' m', ' p'] matches ['cake', 'ambrosia', 'baked_alaska', 'blancmange', 'charlotte', 'compote', 'fruit_compote', 'dumpling', 'flan', 'frozen_dessert', 'junket', 'mold', 'mould', 'mousse', 'pavlova', 'peach_melba', 'pudding', 'pud', 'pudding', 'syllabub', 'sillabub', 'tiramisu', 'whip', 'zabaglione', 'sabayon', 'charlotte_russe', 'apple_dumpling', 'frozen_custard', 'soft_ice_cream', 'frozen_pudding', 'frozen_yogurt', 'ice-cream_cake', 'icebox_cake', 'ice-cream_cone', 'ice-cream_sundae', 'sundae', 'ice', 'frappe', 'ice_cream', 'icecream', 'ice_lolly', 'lolly', 'lollipop', 'popsicle', 'ice_milk', 'parfait', 'sherbert', 'sherbet', 'snowball', 'snowball', 'split', 'chocolate_mousse', 'trifle', 'brown_betty', 'chocolate_pudding', 'duff', 'plum_duff', 'flummery', 'nesselrode', 'nesselrode_pudding', 'pease_pudding', 'plum_pudding', 'christmas_pudding', 'roly-poly', 'roly-poly_pudding', 'steamed_pudding', 'suet_pudding', 'tapioca_pudding', 'vanilla_pudding', 'prune_whip', 'water_ice', 'sorbet', 'chocolate_ice_cream', 'neapolitan_ice_cream', 'peach_ice_cream', 'strawberry_ice_cream', 'tutti-frutti', 'vanilla_ice_cream', 'banana_split', 'tipsy_cake', 'spotted_dick', 'choc-ice'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['gown', 'caftan', 'kaftan', 'chemise', 'sack', 'shift', 'coatdress', 'cocktail_dress', 'sheath', 'dirndl', 'gown', 'jumper', 'pinafore', 'pinny', 'kirtle', 'morning', 'evening', 'muumuu', 'polonaise', 'sari', 'saree', 'shirtdress', 'strapless', 'sundress'] is False
+[' ', ' s', ' p', ' t', ' d'] matches ['tambourine', 'bass_drum', 'gran_casa', 'bongo', 'bongo_drum', 'snare_drum', 'snare', 'side_drum', 'tabor', 'tabour', 'tambour', 'tenor_drum', 'tom-tom', 'timbrel', 'djembe', 'doumbek', 'darbuka'] is False
+[' ', ' s', ' car', ' p', ' t'] matches ['anger', 'choler', 'ire', 'anxiety', 'conditioned_emotional_response', 'cer', 'conditioned_emotion', 'emotional_state', 'spirit', 'fear', 'fearfulness', 'fright', 'fear', 'reverence', 'awe', 'veneration', 'hate', 'hatred', 'joy', 'joyousness', 'joyfulness', 'love', 'annoyance', 'chafe', 'vexation', 'bad_temper', 'ill_temper', 'dander', 'hackles', 'fury', 'rage', 'madness', 'huffiness', 'indignation', 'outrage', 'infuriation', 'enragement', 'umbrage', 'offense', 'offence', 'angst', 'anxiousness', 'disquiet', 'concern', 'care', 'fear', 'discomfiture', 'discomposure', 'disconcertion', 'disconcertment', 'edginess', 'uneasiness', 'inquietude', 'disquietude', 'insecurity', 'jitteriness', 'jumpiness', 'nervousness', 'restiveness', 'scruple', 'qualm', 'misgiving', 'sinking', 'sinking_feeling', 'worry', 'trouble', 'ecstasy', 'rapture', 'transport', 'exaltation', 'raptus', 'embarrassment', 'gratification', 'satisfaction', 'happiness', 'felicity', 'state', 'unhappiness', 'alarm', 'dismay', 'consternation', 'apprehension', 'apprehensiveness', 'dread', 'creeps', 'frisson', 'shiver', 'chill', 'quiver', 'shudder', 'thrill', 'tingle', 'horror', 'hysteria', 'intimidation', 'panic', 'terror', 'affright', 'scare', 'panic_attack', 'stage_fright', 'timidity', 'timidness', 'timorousness', 'abhorrence', 'abomination', 'detestation', 'execration', 'loathing', 'odium', 'despisal', 'despising', 'hostility', 'enmity', 'ill_will', 'malevolence', 'malignity', 'misanthropy', 'misogamy', 'misogyny', 'misogynism', 'misology', 'misoneism', 'misopedia', 'murderousness', 'elation', 'high_spirits', 'lightness', 'exhilaration', 'excitement', 'exuberance', 'exultation', 'jubilance', 'jubilancy', 'jubilation', 'agape', 'agape', 'agape_love', 'amorousness', 'enamoredness', 'ardor', 'ardour', 'benevolence', 'devotion', 'devotedness', 'filial_love', 'heartstrings', 'lovingness', 'caring', 'loyalty', 'puppy_love', 'calf_love', 'crush', 'infatuation', 'worship', 'adoration', 'aggravation', 'exasperation', 'displeasure', 'frustration', 'harassment', 'torment', 'pique', 'temper', 'irritation', 'fit', 'tantrum', 'scene', 'conniption', 'irascibility', 'short_temper', 'spleen', 'quick_temper', 'lividity', 'wrath', 'dudgeon', 'high_dudgeon', 'willies', 'comfort', 'quality_of_life', 'blessedness', 'beatitude', 'beatification', 'radiance', 'embitterment', 'sadness', 'sorrow', 'sorrowfulness', 'chill', 'pall', 'foreboding', 'premonition', 'presentiment', 'boding', 'gloom', 'gloominess', 'somberness', 'sombreness', 'suspense', 'trepidation', 'swivet', 'cold_feet', 'diffidence', 'self-doubt', 'self-distrust', 'shyness', 'aggression', 'aggressiveness', 'animosity', 'animus', 'bad_blood', 'antagonism', 'belligerence', 'belligerency', 'class_feeling', 'resentment', 'bitterness', 'gall', 'rancor', 'rancour', 'maleficence', 'malice', 'maliciousness', 'spite', 'spitefulness', 'venom', 'vindictiveness', 'vengefulness', 'misocainea', 'euphoria', 'euphory', 'bang', 'boot', 'charge', 'rush', 'flush', 'thrill', 'kick', 'intoxication', 'titillation', 'triumph', 'beneficence', 'warmheartedness', 'warmth', 'nirvana', 'enlightenment', 'mourning', 'bereavement', 'poignance', 'poignancy', 'presage', 'shadow', 'hesitance', 'hesitancy', 'unassertiveness', 'warpath', 'envy', 'enviousness', 'grudge', 'score', 'grievance', 'heartburning', 'sulkiness', 'huffishness', 'covetousness', 'jealousy', 'green-eyed_monster', 'penis_envy'] is True
+[' ', ' s', ' t', ' m', ' p'] matches ['thermos', 'ampulla', 'canteen', 'erlenmeyer_flask', 'hipflask', 'pocket_flask', 'round-bottom_flask', 'vacuum_flask', 'vacuum_bottle', 'dewar_flask', 'dewar', 'thermos_bottle', 'thermos_flask'] is False
+[' ', ' guitar', ' s', ' d', ' p'] matches ['ukulele', 'bass', 'bass_guitar', 'acoustic_guitar', 'cittern', 'cithern', 'cither', 'citole', 'gittern', 'electric_guitar', 'hawaiian', 'steel', 'uke'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['rifle', 'air', 'airgun', 'antiaircraft', 'flak', 'flack', 'pom-pom', 'ack-ack', 'breechloader', 'cannon', 'firearm', 'piece', 'small-arm', 'gas', 'minute', 'quaker', 'set', 'spring', 'whaling'] is False
+[' ', ' s', ' v', ' p', ' car'] matches ['diamond', 'ruby', 'pearl', 'emerald', 'sapphire'] is False
+[' ', ' s', ' d', ' p', ' to'] matches ['bracelet', 'bead', 'bijou', 'bling', 'bling_bling', 'bangle', 'clip', 'cufflink', 'earring', 'jewel', 'gem', 'precious_stone', 'necklace', 'pin', 'ring', 'band', 'tie_clip', 'bugle', 'anklet', 'ankle_bracelet', 'armilla', 'pendant_earring', 'drop_earring', 'eardrop', 'crown_jewel', 'diamond', 'emerald', 'pearl', 'ruby', 'sapphire', 'solitaire', 'chain', 'chain', 'string', 'strand', 'choker', 'collar', 'dog_collar', 'neckband', 'brooch', 'broach', 'breastpin', 'scatter_pin', 'stickpin', 'tie_tack', 'tiepin', 'scarfpin', 'annulet', 'engagement_ring', 'mourning_ring', 'ringlet', 'signet_ring', 'seal_ring', 'wedding_ring', 'wedding_band', 'ice', 'sparkler', 'seed_pearl', 'sunburst'] is False
+[' ', ' s', ' p', ' t', ' m'] matches ['blender', 'liquidizer', 'liquidiser', 'eggbeater', 'eggwhisk', 'electric', 'whisk'] is False
+['\n', '...', ' ', ' (', 'f'] matches ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'jan', 'feb', 'mar', 'apr', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'] is False
+[' ', ' s', ' p', ' car', ' paint'] matches ['watercolor', 'abstraction', 'cityscape', 'daub', 'distemper', 'finger-painting', 'icon', 'ikon', 'landscape', 'miniature', 'illumination', 'monochrome', 'mural', 'wall', 'nude', 'nude_painting', 'oil', 'pentimento', 'sand', 'seascape', 'waterscape', 'semi-abstraction', 'still_life', 'tanka', 'water-color', 'watercolour', 'water-colour', 'fresco', 'graffitti'] is False
+[' s', ' ', ' t', ' p', ' j'] matches ['haiku', 'abecedarius', 'alcaic', 'alcaic_verse', 'ballad', 'lay', 'ballade', 'blank_verse', 'elegy', 'lament', 'epic_poem', 'heroic_poem', 'epic', 'epos', 'free_verse', 'vers_libre', 'lyric', 'lyric_poem', 'rondeau', 'rondel', 'sonnet', 'tanka', 'terza_rima', 'verse', 'rhyme', 'versicle'] is False
+['\n', '...', ' ', ' Lounge', ' ('] matches ['spring', 'harvest', 'haying', 'fall', 'autumn', 'springtime', 'summer', 'summertime', 'winter', 'wintertime', 'rainy', 'dry', 'growing', 'seedtime', 'sheepshearing', 'holiday', 'high', 'peak', 'off-season', 'preseason', 'baseball', 'basketball', 'exhibition', 'concert', 'fishing', 'football', 'hockey', 'hunting', 'social', 'theatrical', 'whitsun', 'whitsuntide', 'whitweek'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['chair', 'bench', 'box', 'ottoman', 'pouf', 'pouffe', 'puff', 'hassock', 'sofa', 'couch', 'lounge', 'stool', 'toilet'] is True
+[' ', ' s', ' table', ' t', ' box'] matches ['bookshelf', 'hob', 'mantel', 'mantelpiece', 'mantle', 'mantlepiece', 'chimneypiece', 'overmantel', 'berm'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['polo', 'camise', 'dashiki', 'daishiki', 'dress', 'evening', 'hair', 'jersey', 't-shirt', 'tee', 'kurta', 'sport', 'tank', 'work-shirt'] is False
+[' ', ' d', ' p', ' s', ' car'] matches ['sneakers', 'anklet', 'baby_shoes', 'balmoral', 'blucher', 'bowling_shoes', 'brogan', 'brogue', 'clodhopper', 'work_shoes', 'calceus', 'chopine', 'platform_shoes', 'chukka', 'boots', 'cleats', 'congress_shoes', 'gaiters', 'flipper_shoes', 'fin_shoes', 'ghillie', 'gillie', 'gym_shoes', 'tennis_shoes', 'loafers', 'moccasins', 'mocassins', 'oxford_shoes', 'pump_shoes', 'running_shoes', 'sabot', 'wooden_shoes', 'sandals', 'slingbacks', 'sling_shoes', 'walker_shoes', 'walking_shoes', 'wedgie', 'wing_shoes', 'tip_shoes', 'stiletto', 'heeled'] is False
+[' table', ' ', ' p', ' t', ' desk'] matches ['divan', 'diwan', 'convertible_sofa', 'daybed', 'loveseat', 'settee', 'squab'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['lullaby', 'religious_song', 'anthem', 'aria', 'ballad', 'lay', 'barcarole', 'barcarolle', 'ditty', 'dirge', 'coronach', 'lament', 'requiem', 'threnody', 'drinking_song', 'folk_song', 'folksong', 'folk_ballad', 'lied', 'love_song', 'love-song', 'cradlesong', 'berceuse', 'oldie', 'golden_oldie', 'partsong', 'prothalamion', 'prothalamium', 'roundelay', 'scolion', 'banquet_song', 'serenade', 'torch_song', 'work_song'] is False
+[' s', ' ', ' p', ' m', ' kitchen'] matches ['pepper', 'allspice', 'ajwain', 'cumin', 'caraway_seed', 'cardamom', 'cassia', 'cayenne', 'celery_seeds', 'chile_pepper', 'chile', 'cinnamon', 'clove', 'coriander', 'dill', 'fennel', 'fenugreek', 'frankincense', 'galangal', 'garlic', 'ginger', 'horseradish', 'jalapeño', 'juniper', 'licorice', 'mace', 'mustard', 'nutmeg', 'onion', 'paprika', 'peppercorns', 'saffron', 'savory', 'sesame', 'anise', 'sumac', 'tabasco', 'tamarind', 'turmeric', 'five_spice_powder', 'ginger', 'powdered_ginger', 'chinese_anise', 'star_anise', 'star_aniseed'] is False
+[' ', ' p', ' d', ' t', ' s'] matches ['turtleneck', 'cardigan', 'pullover', 'slipover', 'turtle', 'polo-neck'] is False
+['\n', '...', ' ', ' (', 'f'] matches ['rake', 'abrader', 'abradant', 'bender', 'clincher', 'comb', 'cutting_implement', 'drill', 'eolith', 'fork', 'gang', 'garden_tool', 'lawn_tool', 'grapnel', 'grapple', 'grappler', 'grappling_hook', 'grappling_iron', 'hack', 'hand_tool', 'hoe', 'jack', 'jaws_of_life', 'neolith', 'paleolith', 'pestle', 'muller', 'pounder', 'plow', 'plough', 'power_tool', 'punch', 'puncher', 'ram', 'rounder', 'saw_set', 'shaping_tool', 'strickle', 'stylus', 'style', 'tamp', 'tamper', 'tamping_bar', 'tap', 'upset', 'swage'] is False
+[' ', ' t', ' s', ' table', ' p'] matches ['doll', 'ball', 'balloon', 'cockhorse', 'dolly', 'dollhouse', 'house', 'frisbee', 'hobby', 'hobbyhorse', 'rocking', 'horse', 'hula-hoop', 'jack-in-the-box', 'jungle', 'gym', 'jumping', 'jack', 'kaleidoscope', 'kite', 'lego', 'meccano', 'shooter', 'pinata', 'pinwheel', 'playhouse', 'wendy', 'pogo', 'stick', 'popgun', 'rattle', 'sandbox', 'sandpile', 'sandpit', 'seesaw', 'teeter', 'teeter-totter', 'teetertotter', 'teeterboard', 'tilting', 'board', 'dandle', 'slide', 'playground', 'sliding', 'slingshot', 'sling', 'catapult', 'stick', 'horse', 'swing', 'teddy', 'bear', 'top', 'whirligig', 'teetotum', 'spinning', 'train', 'water_pistol', 'gun', 'squirt', 'squirter', 'yo-yo'] is False
+[' ', ' d', ' car', ' p', ' s'] matches ['jeans', 'bellbottom_trousers', 'bell-bottoms', 'bellbottom_pants', 'breeches', 'knee_breeches', 'knee_pants', 'knickerbockers', 'knickers', 'chino', 'churidars', 'cords', 'corduroys', 'flannel', 'gabardine', 'tweed', 'white', 'jean', 'blue_jean', 'denim', 'jodhpurs', 'jodhpur_breeches', 'riding_breeches', 'long_trousers', 'long_pants', 'pajama', 'pyjama', 'pantaloon', 'pedal_pusher', 'toreador_pants', 'salwar', 'shalwar', 'short_pants', 'shorts', 'trunks', 'slacks', 'stretch_pants', 'sweat_pants', 'sweatpants', 'trews', 'britches', 'buckskins', 'plus_fours', 'trunk_hose', "levi's", 'levis', 'bermuda_shorts', 'jamaica_shorts', 'hot_pants', 'lederhosen'] is False
+['\n', '...', ' ', ' (', ' Lounge'] matches ['gun', 'bow', 'bow', 'arrow', 'dart', 'knucks', 'knuckles', 'flamethrower', 'knife', 'missile', 'pike', 'projectile', 'slasher', 'sling', 'spear', 'lance', 'shaft', 'stun', 'baton', 'sword', 'blade', 'brand', 'steel', 'tomahawk', 'hatchet', 'fire'] is False
+[' ', ' s', ' m', ' p', ' t'] matches ['monday', 'workday', 'working_day', 'work_day', 'feria', 'mon', 'tuesday', 'tues', 'wednesday', 'midweek', 'wed', 'thursday', 'th', 'friday', 'fri', 'saturday', 'sabbatum', 'sat'] is False
+hyponyms - misc,50,480,728
+[' rept', ' dinosaur', ' rapt', ' mammal', ' bird'] matches ['dinosaur', 'reptile', 'bird', 'archosaur', 'archosaurian', 'archosaurian_reptile', ''] is True
+[' snake', ' rept', ' bird', ' rapt', ' mammal'] matches ['snake', 'reptile', 'boa', 'serpent', 'ophidian'] is True
+[' rear', '\n', ' rural', ' p', ' r'] matches ['insect', 'invertebrate', 'creature', 'beast', 'hymenopteran', 'being', 'animal', 'organism', 'fauna', 'arthropod', 'hymenopterous_insect', 'animate_being', 'physical_hymenopteron', 'physical_entity', 'hymenopter', 'living_thing'] is False
+[' rodent', ' mammal', ' rept', ' bird', ' rapt'] matches ['rodent', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'gnawer', 'animate_being', 'living_thing', 'placental_mammal', 'craniate', ''] is True
+[' rear', '\n', ' p', ' rural', ' r'] matches ['insect', 'invertebrate', 'creature', 'beast', 'hymenopteran', 'being', 'animal', 'insect', 'organism', 'fauna', 'arthropod', 'hymenopterous_insect', 'animate_being', 'hymenopteron', 'hymenopter', 'living_thing'] is False
+[' rept', ' bird', ' rodent', ' insect', ' mammal'] matches ['insect', 'invertebrate', 'creature', 'beast', 'being', 'animal', 'insect', 'organism', 'fauna', 'arthropod', 'animate_being', 'living_thing'] is True
+[' mammal', ' f', ' rapt', ' bird', ' rept'] matches ['bovid', 'mammal', 'bison', 'cow', 'vertebrate', 'creature', 'ungulate', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'artiodactyl', 'ruminant', 'chordate', 'eutherian', 'mammalian', 'bovine', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_hoofed_mammal', 'physical_entity', 'even-toed_ungulate', 'artiodactyl_mammal', 'living_thing'] is True
+[' bird', ' rept', ' insect', ' rapt', ' animal'] matches ['insect', 'creature', 'beast', 'lepidopteran', 'animal', 'organism', 'fauna', 'arthropod', 'lepidopterous_insect', 'lepidopteron', 'animate_being', 'living_thing'] is True
+[' rear', '\n', ' p', ' rural', ' r'] matches ['feline', 'beast', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'felid', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'animate_being', 'placental_mammal', 'craniate', ''] is False
+[' bird', ' f', ' av', ' rept', ' rapt'] matches ['fowl', 'bird', 'vertebrate', 'poultry', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'poultry', 'chordate', 'domestic_fowl', 'animate_being', 'gallinaceous_bird', 'craniate', 'gallinacean', 'living_thing'] is True
+[' mammal', ' rept', ' pr', ' rodent', ' animal'] matches ['primate', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'hominid', 'chordate', 'eutherian', 'mammal', 'ape', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_physical_entity', 'living_thing'] is True
+[' rodent', ' mammal', ' rept', ' bird', ' f'] matches ['rodent', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'gnawer', 'animate_being', 'living_thing', 'placental_mammal', 'craniate', ''] is True
+[' rept', ' snake', ' bird', ' rapt', ' rodent'] matches ['snake', 'reptile', 'elapid', 'elapid_snake', 'serpent', 'ophidian'] is True
+[' rodent', ' bird', ' ', ' p', ' rat'] matches ['insect', 'invertebrate', 'creature', 'beast', 'dictyopterous_insect', 'being', 'animal', 'organism', 'fauna', 'arthropod', 'animate_being', 'physical_entity', 'living_thing'] is False
+[' rear', '\n', ' rural', ' p', ' r'] matches ['bovid', 'mammal', 'cattle', 'vertebrate', 'creature', 'ungulate', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'artiodactyl', 'ruminant', 'chordate', 'eutherian', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_hoofed_mammal', 'physical_entity', 'even-toed_ungulate', 'artiodactyl_mammal', 'living_thing'] is False
+[' rapt', ' rodent', ' mammal', ' bird', ' rept'] matches ['canine', 'vertebrate', 'creature', 'beast', 'canid', 'being', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'eutherian', 'mammal', 'mammalian', 'animate_being', 'eutherian_mammal', 'locomote', 'placental_mammal', 'craniate', 'domesticated_animal', 'physical_entity', 'domestic_animal', 'living_thing'] is True
+[' mammal', ' rodent', ' f', ' rapt', ' animal'] matches ['bovid', 'mammal', 'vertebrate', 'creature', 'ungulate', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'artiodactyl', 'ruminant', 'chordate', 'eutherian', 'mammalian', 'bovine', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_hoofed_mammal', 'physical_entity', 'even-toed_ungulate', 'artiodactyl_mammal', 'living_thing'] is True
+[' rear', '\n', ' rural', ' p', ' r'] matches ['canine', 'vertebrate', 'creature', 'beast', 'canid', 'being', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'eutherian', 'mammal', 'mammalian', 'animate_being', 'eutherian_mammal', 'locomote', 'placental_mammal', 'craniate', 'domesticated_animal', 'physical_entity', 'domestic_animal', 'living_thing'] is False
+[' bird', ' av', ' rept', ' f', ' mammal'] matches ['fowl', 'bird', 'vertebrate', 'poultry', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'poultry', 'chordate', 'domestic_fowl', 'waterfowl', 'water_fowl', 'animate_being', 'anseriform_bird', 'craniate', 'living_thing'] is True
+[' rapt', ' bird', ' rept', ' mammal', ' f'] matches ['raptor', 'bird', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'chordate', 'animate_being', 'craniate', 'iving_thing', 'raptorial_bird', 'bird_of_prey', ''] is True
+[' rapt', ' bird', ' f', ' rept', ' av'] matches ['raptor', 'bird', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'chordate', 'animate_being', 'craniate', 'living_thing', 'raptorial_bird', 'bird_of_prey', ''] is True
+[' rear', '\n', ' p', ' rural', 'ait'] matches ['canine', 'vertebrate', 'creature', 'beast', 'canid', 'being', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'eutherian', 'mammal', 'mammalian', 'animate_being', 'eutherian_mammal', 'locomote', 'placental_mammal', 'craniate', 'domesticated_animal', 'physical_entity', 'domestic_animal', 'living_thing'] is False
+[' bird', ' mammal', ' rept', ' rodent', ' rapt'] matches ['primate', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'ape', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_physical_entity', 'living_thing'] is True
+[' mammal', ' f', ' rodent', ' animal', ' bird'] matches ['bovid', 'mammal', 'vertebrate', 'ungulate', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'artiodactyl', 'chordate', 'eutherian', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'hoofed_mammal', 'even-toed_ungulate', 'artiodactyl_mammal', 'living_thing'] is True
+[' bird', ' f', ' rept', ' av', ' mammal'] matches ['fowl', 'bird', 'vertebrate', 'poultry', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'poultry', 'chordate', 'domestic_fowl', 'waterfowl', 'water_fowl', 'animate_being', 'anseriform_bird', 'craniate', 'living_thing'] is True
+[' mammal', ' rept', ' rodent', ' animal', ' '] matches ['primate', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'hominid', 'chordate', 'eutherian', 'mammal', 'ape', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_physical_entity', 'living_thing'] is True
+[' rear', '\n', ' p', ' rural', ' r'] matches ['raptor', 'bird', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'chordate', 'animate_being', 'craniate', 'living_thing', 'raptorial_bird', 'bird_of_prey', ''] is False
+[' rear', '\n', ' rural', ' p', ' r'] matches ['primate', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'hominid', 'chordate', 'eutherian', 'mammal', 'ape', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_physical_entity', 'living_thing'] is False
+[' rapt', ' rodent', ' rept', ' bird', ' mammal'] matches ['canine', 'vertebrate', 'creature', 'beast', 'canid', 'being', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'eutherian', 'mammal', 'mammalian', 'animate_being', 'eutherian_mammal', 'locomote', 'placental_mammal', 'craniate', 'domesticated_animal', 'physical_entity', 'domestic_animal', 'living_thing'] is True
+[' mammal', ' rapt', ' rept', ' f', ' rodent'] matches ['feline', 'cat', 'beast', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'felid', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'animate_being', 'placental_mammal', 'craniate', 'big_cat'] is True
+[' mammal', ' rept', ' f', ' rapt', ' rodent'] matches ['feline', 'cat', 'beast', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'causal_agent', 'chordate', 'felid', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'animate_being', 'placental_mammal', 'craniate', 'big_cat'] is True
+[' mammal', ' rapt', ' bird', ' rept', ' animal'] matches ['feline', 'cat', 'beast', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'felid', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'animate_being', 'placental_mammal', 'craniate', 'big_cat'] is True
+[' rept', ' bird', ' snake', ' rapt', ' rodent'] matches ['snake', 'reptile', 'elapid', 'elapid_snake', 'serpent', 'ophidian'] is True
+[' rear', '\n', ' rural', ' p', ' r'] matches ['rodent', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'gnawer', 'animate_being', 'living_thing', 'placental_mammal', 'craniate', ''] is False
+[' mammal', ' rept', ' bird', ' pr', ' rapt'] matches ['primate', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'placental', 'hominid', 'chordate', 'eutherian', 'mammal', 'ape', 'mammalian', 'animate_being', 'eutherian_mammal', 'placental_mammal', 'craniate', 'physical_physical_entity', 'living_thing'] is True
+[' rear', '\n', ' p', ' rural', ' r'] matches ['raptor', 'bird', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'chordate', 'animate_being', 'craniate', 'living_thing', 'raptorial_bird', 'bird_of_prey', ''] is False
+[' mammal', ' bird', ' animal', ' rodent', ' rapt'] matches ['bovid', 'mammal', 'horse', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'eutherian', 'mammal', 'equine', 'mammalian', 'equid', 'living_thing', 'odd-toed_ungulate', 'animate_being', 'eutherian_mammal', 'perissodactyl', 'placental_mammal', 'craniate', 'hoofed_mammal', 'physical_entity', 'perissodactyl_mammal', 'equus_caballus'] is True
+[' rodent', ' mammal', ' rept', ' bird', ' f'] matches ['rodent', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'gnawer', 'animate_being', 'living_thing', 'placental_mammal', 'craniate', ''] is True
+[' bird', ' rodent', ' rept', ' rapt', ' f'] matches ['fowl', 'bird', 'vertebrate', 'poultry', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'poultry', 'chordate', 'wild_fowl', 'wildfowl', 'animate_being', 'gallinaceous_bird', 'craniate', 'gallinacean', 'living_thing'] is True
+[' rept', ' snake', ' mammal', ' rodent', ' '] matches ['snake', 'reptile', 'pit_viper', 'serpent', 'ophidian'] is True
+[' rodent', ' mammal', ' bird', ' rapt', ' rept'] matches ['rodent', 'vertebrate', 'creature', 'beast', 'animal', 'organism', 'fauna', 'placental', 'chordate', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'gnawer', 'animate_being', 'living_thing', 'placental_mammal', 'craniate', ''] is True
+[' rept', ' dinosaur', ' bird', ' mammal', ' '] matches ['dinosaur', 'reptile', 'armored_dinosaur', 'archosaur', 'archosaurian', 'archosaurian_reptile', ''] is True
+[' rept', ' mammal', ' f', ' animal', ' rapt'] matches ['feline', 'cat', 'beast', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'felid', 'eutherian', 'mammal', 'mammalian', 'eutherian_mammal', 'animate_being', 'placental_mammal', 'craniate', 'big_cat'] is True
+[' rept', ' bird', ' rapt', ' mammal', ' '] matches ['dinosaur', 'reptile', 'ceratopsian', 'horned_dinosaur', 'archosaur', 'archosaurian', 'archosaurian_reptile', ''] is True
+[' bird', ' f', ' rapt', ' rodent', ' av'] matches ['fowl', 'bird', 'vertebrate', 'poultry', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'poultry', 'chordate', 'domestic_fowl', 'animate_being', 'gallinaceous_bird', 'craniate', 'gallinacean', 'living_thing'] is True
+[' rept', ' dinosaur', ' bird', ' rapt', ' mammal'] matches ['dinosaur', 'reptile', 'theropod', 'theropod_dinosaur', 'bird-footed_dinosaur', 'archosaur', 'archosaurian', 'archosaurian_reptile', ''] is True
+[' rept', ' rapt', ' bird', ' mammal', ' '] matches ['dinosaur', 'reptile', 'maniraptor', 'archosaur', 'archosaurian', 'archosaurian_reptile', ''] is True
+[' bird', ' rept', ' snake', ' rodent', ' mammal'] matches ['snake', 'reptile', 'snake', 'serpent', 'ophidian'] is True
+[' bird', ' rept', ' rapt', ' mammal', ' rodent'] matches ['raptor', 'bird', 'vertebrate', 'creature', 'beast', 'being', 'animal', 'organism', 'fauna', 'chordate', 'animate_being', 'craniate', 'living_thing', 'raptorial_bird', 'bird_of_prey', ''] is True
+[' rear', '\n', ' rural', ' p', ' r'] matches ['canine', 'vertebrate', 'creature', 'beast', 'canid', 'being', 'animal', 'organism', 'fauna', 'placental', 'carnivore', 'chordate', 'eutherian', 'mammal', 'mammalian', 'animate_being', 'eutherian_mammal', 'locomote', 'placental_mammal', 'craniate', 'domesticated_animal', 'physical_entity', 'domestic_animal', 'living_thing'] is False
+hypernyms - animals,50,518,740
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['before', 'earlier', 'previously'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['behind', 'rear', 'after', 'tail', 'beforehand'] is False
+[' ', '\n', ' to', ' back', ' the'] matches ['posterior'] is False
+[' ', ' forward', ' backward', ' back', '\n'] matches ['forward', 'forwards', 'frontward', 'frontwards', 'forrad', 'forrard', 'forth', 'onward'] is True
+['sl', ' afterwards', ' afterward', ' sl', ' esc'] matches ['after', 'subsequently', 'later', 'afterwards', 'afterward', 'ahead'] is True
+[' ', ' end', '\n', ' back', ' to'] matches ['end', 'terminal', 'ending', 'last', 'final', 'finish', 'finale', 'conclusion'] is True
+['sl', ' afterwards', ' afterward', ' esc', ' sl'] matches ['above', 'higher', 'up'] is False
+[' ', '\n', ' down', ' fall', ' not'] matches ['descend', 'declivitous', 'downhill', 'downward-sloping', 'degressive', 'descendant', 'descendent', 'down', 'downward', 'downward-arching', 'drizzling', 'dropping', 'falling', 'raining'] is True
+['sl', ' afterwards', ' afterward', 'default', ' sl'] matches ['alive', 'living', 'live'] is False
+[' ', '\n', ' to', ' down', ' back'] matches ['increment'] is False
+[' ', '\n', ' down', ' descend', ' to'] matches ['ascend', 'climb', 'rise', 'upward', 'ascendent', 'ascendant'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['up', 'above', 'ahead', 'lead', 'leading', 'aweigh', 'dormie', 'dormy', 'heavenward', 'skyward', 'risen', 'sprouted', 'upbound', 'upfield', 'upward'] is False
+[' ', '\n', ' down', ' back', ' not'] matches ['upslope', 'ascent'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['lift', 'pick_up'] is False
+[' ', '\n', ' to', ' not', ' in'] matches ['static', 'still', 'unmoving', 'unchanging'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['dismiss', 'fire', 'sack', 'displace', 'terminate'] is False
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['entrance', 'entranceway', 'entryway', 'entry', 'entree'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['rise', 'upward', 'climb'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['last', 'end', 'terminal', 'ending', 'final', 'finish', 'finale', 'conclusion'] is False
+[' ', ' back', '\n', ' come', ' not'] matches ['remember', 'retrieve', 'recall', 'call_back', 'call_up', 'recollect'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['backward', 'back', 'backwards', 'rearward', 'rearwards'] is False
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['back', 'rear', 'forepart'] is False
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['out', 'outer', 'exterior', 'outside'] is False
+[' ', ' out', '\n', ' in', ' down'] matches ['outbound'] is True
+[' ', '\n', ' out', ' to', ' the'] matches ['exhale'] is False
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['output'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['outside', 'exterior', 'out'] is False
+[' ', '\n', ' to', ' and', ' outside'] matches ['exterior', 'outdoor', 'out-of-door', 'outside'] is True
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['external', 'outer', 'outside'] is False
+[' ', '\n', ' to', ' in', ' not'] matches ['immortal'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['vacant', 'free'] is False
+['sl', ' afterwards', ' afterward', 'default', ' sl'] matches ['on'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['in', 'inside'] is False
+['sl', ' afterwards', ' afterward', ' sl', ' esc'] matches ['under', 'below', 'beneath'] is False
+[' ', '\n', ' later', ' to', ' not'] matches ['subsequently', 'later', 'afterwards', 'afterward', 'after', 'subsequent'] is True
+[' ', '\n', ' back', ' return', ' to'] matches ['retreat', 'return'] is True
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['sink', 'drop', 'fall'] is False
+['sl', ' afterwards', ' afterward', ' esc', ' sl'] matches ['north'] is False
+[' ', '\n', ' to', ' south', ' down'] matches ['southwest', 'northeast'] is True
+[' ', '\n', ' to', ' fall', ' not'] matches ['emerge'] is False
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['bottom', 'underside', 'undersurface'] is False
+[' ', ' toward', ' away', '\n', ' to'] matches ['away', 'off', 'forth', 'aside'] is True
+['sl', ' afterwards', ' afterward', 'default', ' esc'] matches ['false', 'incorrect', 'wrong', 'mistaken'] is False
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['over', 'above', 'up'] is False
+['sl', ' afterwards', ' afterward', ' esc', ' sl'] matches ['down', 'downwards', 'downward', 'downwardly'] is False
+[' ', ' down', '\n', ' downward', ' back'] matches ['downhill', 'decline', 'fall', 'declivitous', 'downward-sloping'] is True
+['sl', ' afterwards', ' afterward', ' esc', 'default'] matches ['east'] is False
+antonyms - binary,50,529,776
+[' metal', ' stone', ' water', ' wood', ' '] matches ['gas', 'oxygen', 'hydrogen', 'nitrogen', 'ozone'] is False
+[' plumbing', ' fabric', ' interior', ' arm', ' material'] matches ['leather', 'fabric', 'plastic'] is True
+[' cloth', ' stone', ' wood', ' paper', ' water'] matches ['sand', 'silicon', 'rocks', 'pebbles', 'atomic_number_14', 'si'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' wood'] matches ['hair'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' material'] matches ['flesh', 'bones'] is False
+[' cloth', ' wood', ' ', ' metal', ' iron'] matches ['leather', 'canvas'] is False
+[' metal', ' wood', ' glass', ' water', ' paper'] matches ['glass', 'plastic'] is True
+[' plumbing', ' arm', ' interior', ' fabric', ' material'] matches ['glass', 'china', 'aluminium', 'wood', 'steel', 'plastic', 'clay'] is False
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['cardboard', 'tin', 'boxwood', 'turkish_boxwood'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' wood'] matches ['flour', 'yeast', ''] is False
+[' stone', ' metal', ' wood', ' rock', ' iron'] matches ['copper', 'tin', 'cu', 'atomic_number_29'] is False
+[' stone', ' wood', ' ', ' paper', ' rock'] matches ['sugar', 'nougat', 'chocolate', 'gelatin', 'molasses', 'syrup', 'honey', 'fruit', 'nuts'] is False
+[' wood', ' metal', ' paper', ' stone', ' iron'] matches ['cocoa', 'bean', 'cacao', 'cacao_bean', 'cocoa_bean'] is False
+[' cloth', ' clothes', ' paper', ' fabric', ' metal'] matches ['fabric', 'leather', ''] is True
+[' plumbing', ' interior', ' fabric', ' arm', ' wood'] matches ['vapor', 'water', 'vapour', 'water_vapour', 'water_vapor'] is False
+[' water', ' ', ' wood', ' metal', ' iron'] matches ['alcohol', 'juice', 'water'] is True
+[' stone', ' wood', ' rock', ' concrete', ' metal'] matches ['silicon', 'cement', 'water', 'sand', 'atomic_number_14', 'si'] is False
+[' wood', ' paper', ' stone', ' cloth', ' '] matches ['wood', 'metal', 'steel'] is True
+[' stone', ' rock', ' wood', ' metal', ' '] matches ['carbon'] is False
+[' wood', ' stone', ' metal', ' ', ' iron'] matches ['metal', 'steel', 'bronze', 'wood'] is True
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['fabric', 'paper'] is True
+[' stone', ' rock', ' metal', ' wood', ' '] matches ['ice', 'water', 'oxygen', 'hydrogen', 'h', 'h2o', 'atomic_number_8', 'atomic_number_1', 'o', 'water_ice'] is False
+[' plumbing', ' fabric', ' interior', ' arm', ' wood'] matches ['silicone'] is False
+[' wood', ' ', ' water', ' iron', ' paper'] matches ['bricks', 'cement', 'wood', 'clay'] is True
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['water', 'oxygen', 'hydrogen', 'water', 'h2o', 'atomic_number_1', 'atomic_number_8', 'h', 'o'] is False
+[' metal', ' wood', ' stone', ' ', ' iron'] matches ['ice', 'water'] is False
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['fruit', 'sugar', 'berries'] is False
+[' metal', ' cloth', ' iron', ' ', ' paper'] matches ['fabric', 'denim'] is False
+[' grass', ' paper', ' stone', ' wood', ' cloth'] matches ['grass'] is True
+[' paper', ' stone', ' metal', ' wood', ' glass'] matches ['glass', 'plastic'] is True
+[' stone', ' metal', ' wood', ' paper', ' glass'] matches ['glass', 'bronze'] is True
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['paper', 'metal', 'silver', 'gold', 'iron', 'copper', 'tin'] is False
+[' water', ' stone', ' rock', ' ', ' wood'] matches ['water'] is True
+[' ', ' metal', ' iron', ' paper', ' wood'] matches ['eggs', 'egg', 'milk', 'cheese'] is False
+[' wood', ' paper', ' cloth', ' ', ' metal'] matches ['flour', 'egg', 'butter', 'filling'] is False
+[' wood', ' metal', ' iron', ' paper', ' stone'] matches ['metal', 'alloy', 'bronze', 'nickel', 'zinc', 'copper', 'tin'] is True
+[' plumbing', ' fabric', ' arm', ' interior', ' wood'] matches ['medicine', 'drug'] is False
+[' metal', ' stone', ' wood', ' paper', ' iron'] matches ['polymer', 'oil', 'gas', 'coal'] is False
+[' wood', ' stone', ' water', ' metal', ' '] matches ['shingles', 'tiles', 'wood', 'metal'] is True
+[' plumbing', ' interior', ' arm', ' fabric', ' material'] matches ['water'] is False
+[' paper', ' stone', ' wood', ' snow', ' rock'] matches ['water', 'oxygen', 'hydrogen', 'flake', 'ice', 'snowflake', 'snowflakes', 'h2o', 'atomic_number_1', 'atomic_number_8', 'h', 'o'] is True
+[' metal', ' wood', ' ', ' iron', ' paper'] matches ['aluminium', 'wood', 'steel'] is True
+[' plumbing', ' fabric', ' arm', ' interior', ' wood'] matches ['iron', 'pearlite', 'carbon', 'cementite', 'ferrite', 'iron_carbide', 'fe', 'atomic_number_26', 'alpha_iron'] is False
+[' plumbing', ' arm', ' fabric', ' interior', ' wood'] matches ['wood', 'metal', 'plastic'] is True
+[' plumbing', ' interior', ' fabric', ' arm', ' material'] matches ['cement', 'bricks', 'stones', 'rocks', 'wood', 'cardboard', 'board', 'plank', 'clay', 'mud'] is False
+[' plumbing', ' interior', ' arm', ' fabric', ' material'] matches ['oxygen', 'hydrogen', 'water', 'h2o', 'atomic_number_1', 'atomic_number_8', 'h', 'o'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' material'] matches ['hair'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' material'] matches ['grapes', 'grape'] is False
+[' plumbing', ' fabric', ' arm', ' interior', ' wood'] matches ['metal'] is False
+[' ', ' metal', ' wood', ' stone', ' cloth'] matches ['milk'] is False
+meronyms - substance,50,546,809
+[' mob', ' ', ' parliament', ' murder', ' band'] matches ['troupe'] is False
+[' ', ' murder', ' band', ' g', ' mob'] matches ['herd'] is False
+['Or', 'H', 'Eastern', 'Buff', 'ED'] matches ['swarm', 'hive', 'colony', 'drift', 'cast', 'nest', 'rabble', 'stand'] is False
+['Or', 'H', 'Eastern', 'ED', 'SPA'] matches ['flock'] is False
+['Or', 'H', 'Eastern', 'SPA', 'ED'] matches ['library', 'shelf', 'collection', 'accounting', 'accounting_system', 'method_of_accounting'] is False
+[' ', ' band', ' g', ' army', ' murder'] matches ['cattle', 'herd'] is False
+[' herd', ' ', ' band', ' flock', ' g'] matches ['herd'] is True
+[' church', ' ', ' congregation', ' g', ' mob'] matches ['congregation', 'church', 'parish'] is True
+[' parliament', ' assembly', ' crowd', ' society', ' '] matches ['citizenry', 'country', 'state'] is False
+['Or', 'Eastern', 'H', 'ED', 'Buff'] matches ['university'] is False
+[' ', ' assembly', ' army', ' jury', ' murder'] matches ['state', 'country'] is False
+['Or', 'H', 'Eastern', 'Buff', 'Pros'] matches ['herd'] is False
+['Or', 'Eastern', 'H', 'ED', 'Pros'] matches ['company', 'business', 'platoon', 'battle_group'] is False
+[' army', ' ', ' mob', ' parliament', ' murder'] matches ['herd'] is False
+[' assembly', ' army', ' ', ' society', ' crowd'] matches ['staff', 'company'] is False
+['Or', 'H', 'Eastern', 'ED', 'Pros'] matches ['school'] is False
+['Or', 'H', 'Eastern', 'ED', 'Buff'] matches ['bouquet', 'bunch'] is False
+[' mob', ' army', ' ', ' g', ' assembly'] matches ['universe'] is False
+[' jury', ' assembly', ' parliament', ' ', ' mob'] matches ['jury'] is True
+[' ', ' murder', ' g', ' band', ' c'] matches ['litter'] is False
+[' army', ' mob', ' murder', ' parliament', ' '] matches ['pride'] is False
+['Or', 'Eastern', 'H', 'ED', 'Buff'] matches ['club', 'team', 'group', 'band', 'community'] is False
+[' band', ' mob', ' assembly', ' ', ' society'] matches ['orchestra', 'band'] is True
+[' army', ' mob', ' ', ' parliament', ' murder'] matches ['horde'] is False
+['Or', 'H', 'Eastern', 'SPA', 'ED'] matches ['book', 'notebook', 'website', 'web-site'] is False
+[' ', ' assembly', ' g', ' mob', ' parliament'] matches ['parish', 'church'] is False
+['Or', 'H', 'Eastern', 'ED', 'Pros'] matches ['society', 'company', 'party', 'world'] is False
+['Or', 'Eastern', 'H', 'ED', 'SPA'] matches ['album', 'collection', 'library'] is False
+['Or', 'Eastern', 'H', 'ED', 'Pros'] matches ['team', 'group', 'orchestra'] is True
+[' ', ' mob', ' police', ' army', ' g'] matches ['police'] is True
+[' parliament', ' assembly', ' ', ' c', ' society'] matches ['staff'] is False
+[' parliament', ' assembly', ' ', ' legislature', ' jury'] matches ['senate', 'house'] is False
+[' flock', ' army', ' mob', ' murder', ' band'] matches ['flock'] is True
+[' choir', ' assembly', ' band', ' ', ' flock'] matches ['choir', 'band', 'duo', 'trio', 'quartet'] is True
+[' army', ' militia', ' assembly', ' band', ' mob'] matches ['army', 'unit', 'division', 'troop'] is True
+[' ', ' society', ' assembly', ' family', ' congregation'] matches ['couple', 'relationship', 'family'] is True
+['Or', 'Eastern', 'H', 'ED', 'SPA'] matches ['constellation', 'galaxy'] is False
+['Or', 'Eastern', 'H', 'ED', 'SPA'] matches ['country', 'province'] is False
+['Or', 'Eastern', 'H', 'ED', 'Pros'] matches ['class', 'school'] is False
+['Or', 'H', 'Eastern', 'ED', 'Pros'] matches ['forest', 'wood', 'grove'] is False
+['Or', 'H', 'Eastern', 'SPA', 'ED'] matches ['pack'] is False
+['Or', 'Eastern', 'H', 'Pros', 'ED'] matches ['paragraph', 'sentence', 'text'] is False
+meronyms - member,50,556,841
+[' north', ' l', ' sc', ' northern', ' d'] matches ['aberdeenshire'] is False
+['ix', 'ere', 'stores', 'orn', 'oris'] matches ['somerset'] is False
+[' w', ' west', ' north', ' wel', ' l'] matches ['antrim'] is False
+[' war', ' mid', ' west', ' l', ' bir'] matches ['midlands'] is True
+[' cam', ' sus', ' l', ' west', ' c'] matches ['cambridgeshire'] is True
+['ix', 'ere', 'stores', 'orn', 'storage'] matches ['cheshire'] is False
+[' l', ' not', ' der', ' north', ' le'] matches ['derbyshire'] is True
+[' l', ' sus', ' y', ' north', ' east'] matches ['cambridgeshire'] is False
+[' dev', ' west', ' w', ' north', ' c'] matches ['devon'] is True
+[' sus', ' sh', ' west', ' north', ' l'] matches ['gloucestershire'] is False
+[' west', ' w', ' sh', ' sus', ' war'] matches ['herefordshire'] is False
+[' north', ' c', ' sc', ' west', ' high'] matches ['highlands'] is True
+[' le', ' not', ' north', ' west', ' sh'] matches ['midlands'] is False
+[' north', ' y', ' ty', ' northern', ' new'] matches ['northumberland'] is True
+[' nor', ' north', ' east', ' l', ' y'] matches ['norfolk'] is True
+[' not', ' l', ' east', ' mid', ' north'] matches ['nottinghamshire'] is True
+[' ox', ' sus', ' l', ' west', ' y'] matches ['oxfordshire'] is True
+[' dev', ' west', ' w', ' sus', ' y'] matches ['devon'] is True
+['ix', 'ere', 'stores', 'orn', 'storage'] matches ['berkshire'] is False
+[' l', ' north', ' y', ' west', ' sus'] matches ['manchester'] is False
+[' sh', ' sus', ' north', ' wil', ' west'] matches ['wiltshire'] is True
+[' west', ' w', ' war', ' wor', ' sh'] matches ['worcestershire'] is True
+UK_city - county,50,568,851

@@ -21,8 +21,11 @@ DEFAULT_N_ICL = 8
 
 logger = logging.getLogger(__name__)
 
+RESULTS_FILE = "RelBenchmark_log.txt"
+LOGGING_FILE = "RelBenchmark_log_extended.txt"
+
 logging.basicConfig(
-    filename='J_results.txt',
+    filename=LOGGING_FILE,
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
@@ -35,7 +38,7 @@ counts_by_lre_correct: dict[bool, int] = defaultdict(int)
 logging.info('loading model + tokenizer')
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
 
-model.to('cuda:0')
+model.to('cuda:1')
     
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer.pad_token = tokenizer.eos_token
@@ -100,11 +103,11 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
             
     correct_lre_ct = counts_by_lre_correct.get(True, 0)
     incorrect_lre_ct = counts_by_lre_correct.get(False, 0)
-    log_overall = f'{beta},{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
+    log_overall = f'{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
     
     logging.info(log_overall)
     
-    with open("J_RelBenchmark_log.txt", "a+") as file:
+    with open(RESULTS_FILE, "a+") as file:
         file.write(log_msg)
         file.write(log_overall)
 
@@ -118,7 +121,6 @@ def all_file_paths(directory):
     
 directory = 'json'
 file_paths = all_file_paths('json')
-
 def test_operator_on_json(operator, json_path, h_layer, z_layer):
     with open(json_path, 'r') as file:
         data = json.load(file)
@@ -126,11 +128,11 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer):
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
         test_operator_on_relation(operator, relation, 5, 27)
 
-#json_path = 'json/enckno/E06 [animal - youth].json'
+json_path = 'json/enckno/E06 [animal - youth].json'
 #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-#test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
-for json_path in file_paths:
-    json_path = 'json/' + json_path
-    #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-    test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+# for json_path in file_paths:
+#     json_path = 'json/' + json_path
+#     #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+#     test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
