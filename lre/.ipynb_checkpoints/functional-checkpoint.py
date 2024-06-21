@@ -148,7 +148,7 @@ def order_1_approx(
     subject: str,
     h_layer: Layer,
     h_index: int,
-    h: torch.Tensor | None = None,
+    s_o_layer: Layer,
     z_layer: Layer | None = None,
     z_index: int | None = None,
     inputs: ModelInput | None = None,
@@ -156,6 +156,7 @@ def order_1_approx(
     """Compute a first-order approximation of the LM between `h` and `z`.
         h_layer: Layer to take h from.
         h_index: Token index for h.
+        s_o_layer: The layer at which s -> o switch happens.
         z_layer: Layer to take z from.
         z_index: Token index for z.
         inputs: Precomputed tokenized inputs, recomputed if not set.
@@ -165,164 +166,155 @@ def order_1_approx(
     approxes = []
     device = models.determine_device(mt)
     
-    for j in range(h_layer, z_layer):
-        z_layer = j + 1 #z_layer or models.determine_layers(mt)[-1]
-        z_index = z_index # or -1
-        inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
-        inputs = inputs.to(device)
+    z_layer = z_layer or models.determine_layers(mt)[-1]
+    z_index = z_index # or -1
+    inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
+    inputs = inputs.to(device)
+    
+    past_key_values = None
+    input_ids = inputs.input_ids
+    _h_index = h_index
+    if _h_index > 0:
+        outputs = mt.model(input_ids=input_ids[:, :_h_index], use_cache=True)
+        past_key_values = outputs.past_key_values
+        input_ids = input_ids[:, _h_index:]
+        _h_index = 0
+    use_cache = past_key_values is not None
+
+    [h_layer_name, pre_s_o_name, 
+     post_s_o_name, z_layer_name] = models.determine_layer_paths(model=mt, 
+                                                                 layers=[h_layer, s_o_layer,
+                                                                 s_o_layer + 1, z_layer])
+
+    #edit to s_start
+    edit_output: function | None = None
+    # if s_start is not None:
+    #     def edit_output(output: tuple, layer: str) -> tuple:
+    #         untuple(output)[:, _h_index] = s_start
+    #         return output
+    # else:
+    # edit_output = None
         
-        # Precompute everything up to the subject (h_index), if there is anything before it.
-        past_key_values = None
-        input_ids = inputs.input_ids
-        _h_index = h_index
-        if _h_index > 0:
-            outputs = mt.model(input_ids=input_ids[:, :_h_index], use_cache=True)
-            past_key_values = outputs.past_key_values
-            input_ids = input_ids[:, _h_index:]
-            _h_index = 0
-        use_cache = past_key_values is not None
+    #Runs the model while tracking with TraceDict
+    with TraceDict(mt.model, layers=(h_layer_name, pre_s_o_name, post_s_o_name, z_layer_name), edit_output=edit_output) as ret:
+        outputs = mt.model(
+            input_ids=input_ids,
+            use_cache=False,
+            past_key_values=past_key_values,
+        )
+    
+    s_start = untuple(ret[h_layer_name].output)[0, _h_index] #s_start
+    s_j = untuple(ret[pre_s_o_name].output)[0, _h_index] #s_j
+    o_j1 = untuple(ret[post_s_o_name].output)[0, z_index] #o_j+1
+    z = untuple(ret[z_layer_name].output)[0, z_index] #z
 
-            
-        # [H and Z LAYER NAMES] are for [j and j+1 LAYERS]
-        [h_layer_name, z_layer_name] = models.determine_layer_paths(mt, [j, j+1])
+    logging.info(f"""[order_1_approx] weight calculation finished \n
+                    s_start: {s_start} \n
+                    s_j: {s_j} \n
+                    o_j1: {o_j1} \n
+                    z: {z} \n
+                """)
+    
+    #edit to s_j
+    def edit_output(output: tuple, layer: str) -> tuple:
+        untuple(output)[:, _h_index] = s_j
+        return output
 
-
-        #edit to h
-        edit_output: function | None = None
-        if h is not None:
-            def edit_output(output: tuple, layer: str) -> tuple:
-                untuple(output)[:, _h_index] = h
+    #pre_s_o_name -> post_s_o_name
+    def compute_o_from_s(s_j: torch.Tensor) -> torch.Tensor:
+        def insert_s_j(output: tuple, layer: str) -> tuple:
+            hs = untuple(output)
+            if layer != pre_s_o_name:
+                logger.warn(f"[o from s] layer {layer} does not match {pre_s_o_name}")
                 return output
-        else:
-            edit_output = None
-            
-        #Runs the model while tracking with TraceDict
-        with TraceDict(mt.model, layers=(h_layer_name, z_layer_name), edit_output=edit_output) as ret:
-            outputs = mt.model(
-                input_ids=input_ids,
-                use_cache=False,
-                past_key_values=past_key_values,
-            )
-        s_j = untuple(ret[h_layer_name].output)[0, _h_index] #s_j
-        o_j = untuple(ret[h_layer_name].output)[0, z_index] #o_j
-
-        s_j1 = untuple(ret[z_layer_name].output)[0, _h_index] #s_j+1
-        o_j1 = untuple(ret[z_layer_name].output)[0, z_index] #o_j+1
-
-        logging.info(f"""[order_1_approx] weight calculation finished \n
-                        s_j: {s_j} \n
-                        o_j: {o_j} \n
-                        s_j1: {s_j1} \n
-                        o_j1: {o_j1} \n
-                    """)
-        
-        #edit to s_j
-        def edit_output(output: tuple, layer: str) -> tuple:
-            untuple(output)[:, _h_index] = s_j
+            hs[0, _h_index] = s_j #insert in subj position
             return output
-            
-        def compute_o_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
-            
-            def insert_s_j(output: tuple, layer: str) -> tuple:
-                hs = untuple(output)
-                if layer != h_layer_name:
-                    logger.warn(f"[insert_s_j] layer {layer} does not match {h_layer_name}")
-                    return output
-                hs[0, _h_index] = s_j
-                return output
-                
-            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_s_j) as ret:
-                mt.model(input_ids=input_ids, past_key_values=past_key_values, use_cache=False)
-            z = untuple(ret[z_layer_name].output)[0, -1] #obj position
-            return z.half().to(device)
+        with TraceDict(mt.model, (pre_s_o_name, post_s_o_name), edit_output=insert_s_j) as ret:
+            mt.model(input_ids=input_ids, past_key_values=past_key_values, use_cache=False)
+        z = untuple(ret[post_s_o_name].output)[0, -1] #output in obj position
+        return z.half().to(device)
 
-        def compute_s_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
-            
-            def insert_s_j(output: tuple, layer: str) -> tuple:
-                hs = untuple(output)
-                if layer != h_layer_name:
-                    logger.warn(f"[insert_s_j] layer {layer} does not match {h_layer_name}")
-                    return output
-                hs[0, _h_index] = s_j
+    #h_layer_name -> pre_s_o_name
+    def compute_s_from_s(s_start: torch.Tensor) -> torch.Tensor:
+        def insert_s_j(output: tuple, layer: str) -> tuple:
+            hs = untuple(output)
+            if layer != h_layer_name:
+                logger.warn(f"[s from s] layer {layer} does not match {h_layer_name}")
                 return output
-                
-            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_s_j) as ret:
-                mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
-            _h = untuple(ret[z_layer_name].output)[0, _h_index] #subj position
-            return _h.half().to(device)
-
-        logging.info(f"[order_1_approx] starting weight calculation for {prompt}")
-        s_j = s_j.half().to(device)
-        o_j = o_j.half().to(device)
-        #hypothesis: the representation follows s --> ... --> s --> o --> ... --> o
-        s_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_s_j, s_j).half().to(device)
-        s_s_weight = torch.autograd.functional.jacobian(compute_s_j1_from_s_j, s_j).half().to(device)
-        
-        #edit to o_j
-        def edit_output(output: tuple, layer: str) -> tuple:
-            untuple(output)[:, -1] = o_j
+            hs[0, _h_index] = s_start #insert in subj position
             return output
-            
-        def compute_o_j1_from_o_j(o_j: torch.Tensor) -> torch.Tensor:
-            def insert_o_j(output: tuple, layer: str) -> tuple:
-                hs = untuple(output)
-                if layer != h_layer_name:
-                    logger.warn(f"[insert_o_j] layer {layer} does not match {h_layer_name}; no gradient calculated")
-                    return output
-                hs[0, -1] = o_j
+        with TraceDict(mt.model, (h_layer_name, pre_s_o_name), edit_output=insert_s_j) as ret:
+            mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
+        _h = untuple(ret[pre_s_o_name].output)[0, _h_index] #output in subj position
+        return _h.half().to(device)
+
+    logging.info(f"[order_1_approx] starting weight calculation for {prompt}")
+    s_j = s_j.half().to(device)
+    s_start = s_start.half().to(device)
+    
+    #hypothesis: the representation follows s --> ... --> s --> o --> ... --> o
+    s_o_weight = torch.autograd.functional.jacobian(compute_o_from_s, s_j).half().to(device)
+    s_s_weight = torch.autograd.functional.jacobian(compute_s_from_s, s_start).half().to(device)
+    
+    #edit to o_j
+    def edit_output(output: tuple, layer: str) -> tuple:
+        untuple(output)[:, -1] = o_j1
+        return output
+        
+    #post_s_o_name -> z_layer_name
+    def compute_o_from_o(o_j1: torch.Tensor) -> torch.Tensor:
+        def insert_o_j(output: tuple, layer: str) -> tuple:
+            hs = untuple(output)
+            if layer != h_layer_name:
+                logger.warn(f"[insert_o_j] layer {layer} does not match {post_s_o_name}")
                 return output
-            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_o_j) as ret:
-                mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
-            z = untuple(ret[z_layer_name].output)[0, -1] #obj position
-            return z.half().to(device)
-            
-        o_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_o_j, o_j).half().to(device)
+            hs[0, -1] = o_j1 #insert in obj position
+            return output
+        with TraceDict(mt.model, (post_s_o_name, z_layer_name), edit_output=insert_o_j) as ret:
+            mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
+        z = untuple(ret[z_layer_name].output)[0, -1] #output in obj position
+        return z.half().to(device)
         
-        #weight = torch.eye(4096).half().to(device)
-        # logging.info(f'weight size is {weight.size()}')
-        logging.info(f"""[order_1_approx] weight calculation finished \n
-                        s_o: {s_o_weight} \n
-                        s_s: {s_s_weight} \n
-                        o_o: {o_o_weight} \n
-                    """)
-        #bias = s_(i+1) - J s_i
-        s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
-        s_s_bias = s_j1[None] - s_j[None].mm(s_s_weight.t())
-        o_o_bias = o_j1[None] - o_j[None].mm(o_o_weight.t())
+    o_o_weight = torch.autograd.functional.jacobian(compute_o_from_o, o_j1).half().to(device)
+    
+    #weight = torch.eye(4096).half().to(device)
+    # logging.info(f'weight size is {weight.size()}')
+    logging.info(f"""[order_1_approx] weight calculation finished \n
+                    s_o: {s_o_weight} \n
+                    s_s: {s_s_weight} \n
+                    o_o: {o_o_weight} \n
+                """)
+    
+    #bias = s_(i+1) - J s_i
+    o_o_bias = z[None] - o_j1[None].mm(o_o_weight.t())
+    s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
+    s_s_bias = s_j[None] - s_start[None].mm(s_s_weight.t())
 
-        directory = Path(f'wapprox/{subject}')
-        
-        if not directory.exists():
-            directory.mkdir(parents=True, exist_ok=True)
+    torch.save(s_o_weight, f'kapprox/{subject}/s_o_weight_{s_o_layer}.pt')
+    torch.save(s_s_weight, f'kapprox/{subject}/s_s_weight_{s_o_layer}.pt')
+    torch.save(o_o_weight, f'kapprox/{subject}/o_o_weight_{s_o_layer}.pt')
 
-        torch.save(s_o_weight, f'wapprox/{subject}/s_o_weight_h_{j}.pt')
-        torch.save(s_s_weight, f'wapprox/{subject}/s_s_weight_h_{j}.pt')
-        torch.save(o_o_weight, f'wapprox/{subject}/o_o_weight_h_{j}.pt')
+    torch.save(s_o_bias, f'kapprox/{subject}/s_o_bias_{s_o_layer}.pt')
+    torch.save(s_s_bias, f'kapprox/{subject}/s_s_bias_{s_o_layer}.pt')
+    torch.save(o_o_bias, f'kapprox/{subject}/o_o_bias_{s_o_layer}.pt')
 
-        torch.save(s_o_bias, f'wapprox/{subject}/s_o_bias_h_{j}.pt')
-        torch.save(s_s_bias, f'wapprox/{subject}/s_s_bias_h_{j}.pt')
-        torch.save(o_o_bias, f'wapprox/{subject}/o_o_bias_h_{j}.pt')
-
-        torch.save(s_j, f'wapprox/{subject}/hs_h_{j}.pt')
-        torch.save(o_j, f'wapprox/{subject}/hs_o_{j}.pt')
-        torch.save(s_j1, f'wapprox/{subject}/hs_h_{j+1}.pt')
-        torch.save(o_j1, f'wapprox/{subject}/hs_o_{j+1}.pt')
-
-        # torch.save(weight, f'wapprox/{subject}/weight_{j}_{j+1}.pt')
-        # torch.save(bias, f'wapprox/{subject}/bias_{j}_{j+1}.pt')
-        
-        # approx = {h: h, z:z, h_layer: j, z_layer: j+1,
-        #           weight: weight, bias: bias, 
-        #           inputs: inputs.to("cpu"),
-        #           outputs: outputs.logits.cpu()
-        #          }
-        #move inputs, logits to cpu
-        #approx = Order1ApproxOutput(h=h,h_layer=h_layer,h_index=h_index,z=z,z_layer=z_layer,z_index=z_index,
-         #                           weight=weight,bias=bias,inputs=inputs.to("cpu"),logits=outputs.logits.cpu())
-        # approxes.append(approx)
-        # NB(evan): Something about the jacobian computation causes a lot of memory
-        # fragmentation, or some kind of memory leak. This seems to help.
-        torch.cuda.empty_cache()
+    torch.save(s_start, f'kapprox/{subject}/hs_s_start_{s_o_layer}.pt')
+    torch.save(s_j, f'kapprox/{subject}/hs_s_j_{s_o_layer}.pt')
+    torch.save(o_j1, f'kapprox/{subject}/hs_o_j1_{s_o_layer}.pt')
+    torch.save(z, f'kapprox/{subject}/hs_z_{s_o_layer}.pt')
+    
+    # approx = {h: h, z:z, h_layer: j, z_layer: j+1,
+    #           weight: weight, bias: bias, 
+    #           inputs: inputs.to("cpu"),
+    #           outputs: outputs.logits.cpu()
+    #          }
+    #move inputs, logits to cpu
+    #approx = Order1ApproxOutput(h=h,h_layer=h_layer,h_index=h_index,z=z,z_layer=z_layer,z_index=z_index,
+     #                           weight=weight,bias=bias,inputs=inputs.to("cpu"),logits=outputs.logits.cpu())
+    # approxes.append(approx)
+    # NB(evan): Something about the jacobian computation causes a lot of memory
+    # fragmentation, or some kind of memory leak. This seems to help.
+    torch.cuda.empty_cache()
 
     return approxes
 
