@@ -22,7 +22,7 @@ device = 'cuda:0'
 
 logger = logging.getLogger(__name__)
 
-RESULTS_FILE = 'results/Antonym_Binary.txt'
+RESULTS_FILE = 'results/individual_layer_approxes.txt'
 
 logging.basicConfig(
     filename=RESULTS_FILE,
@@ -47,13 +47,13 @@ logging.info('model + tokenizer loaded')
 
 def test_operator_on_relation(operator, relation, h_layer, z_layer):
     counts_by_lre_correct: dict[bool, int] = defaultdict(int)
-    logger.info(f'starting test: {operator} on {relation}')
+    logger.info(f'starting test: {operator} on {relation.name}')
     prompt_template = relation.prompt_templates[0]
     clozed_prompts = []
     clozed_answers = []
     for x in relation.samples:
         samples = [x] + random.sample(relation.samples, DEFAULT_N_ICL - 1)
-        print(f'{samples} samples)')
+        #print(f'{samples} samples)')
         cloze_prompt = functional.make_prompt(
             template = prompt_template, 
             target = x,
@@ -69,46 +69,46 @@ def test_operator_on_relation(operator, relation, h_layer, z_layer):
 
     #OPERATOR PREDICTION
     start_time = time.time()
-    logging.info(f'starting operator prediction')
+    logging.info(f'building operator {relation.name}')
     operator = operator(mt=mt, h_layer=h_layer, z_layer=z_layer, beta=3.75)
     operator = operator(relation)
     end_time = time.time()
     logging.info(f'total operator prediction time: {end_time - start_time} seconds')
 
-    outputs_lre = []
-    for sample in relation.samples:
-        output_lre = operator(sample)
-        outputs_lre.append(output_lre.predictions)
+    # outputs_lre = []
+    # for sample in relation.samples:
+    #     output_lre = operator(sample)
+    #     outputs_lre.append(output_lre.predictions)
 
-    #remember that predictions is made up of (token,probs)
-    preds_lre = [[x.token for x in xs] for xs in outputs_lre]
-    recall_lre = metrics.recall(preds_lre, clozed_answers)
+    # #remember that predictions is made up of (token,probs)
+    # preds_lre = [[x.token for x in xs] for xs in outputs_lre]
+    # recall_lre = metrics.recall(preds_lre, clozed_answers)
 
-    preds_by_lre_correct = defaultdict(list)
-    targets_by_lre_correct = defaultdict(list)
+    # preds_by_lre_correct = defaultdict(list)
+    # targets_by_lre_correct = defaultdict(list)
 
-    log_msg = ""
+    # log_msg = ""
     
-    for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
-        lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
-        if lm_correct:
-          lre_correct = metrics.any_is_nontrivial_prefix(pred_lre, target)
-          log_target = f'{pred_lre} matches {target} is {lre_correct}'
-          logging.info(log_target)
-          log_msg += (log_target + "\n")
-          preds_by_lre_correct[lre_correct].append(pred_lre)
-          targets_by_lre_correct[lre_correct].append(target)
-          counts_by_lre_correct[lre_correct] += 1
+    # for pred_lm, pred_lre, target in zip(preds_lm, preds_lre, clozed_answers):
+    #     lm_correct = metrics.any_is_nontrivial_prefix(pred_lm, target)
+    #     if lm_correct:
+    #       lre_correct = metrics.any_is_nontrivial_prefix(pred_lre, target)
+    #       log_target = f'{pred_lre} matches {target} is {lre_correct}'
+    #       logging.info(log_target)
+    #       log_msg += (log_target + "\n")
+    #       preds_by_lre_correct[lre_correct].append(pred_lre)
+    #       targets_by_lre_correct[lre_correct].append(target)
+    #       counts_by_lre_correct[lre_correct] += 1
             
-    correct_lre_ct = counts_by_lre_correct.get(True, 0)
-    incorrect_lre_ct = counts_by_lre_correct.get(False, 0)
-    log_overall = f'{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
+    # correct_lre_ct = counts_by_lre_correct.get(True, 0)
+    # incorrect_lre_ct = counts_by_lre_correct.get(False, 0)
+    # log_overall = f'{relation.name},{len(relation.samples)},{correct_lre_ct},{incorrect_lre_ct}\n'
     
-    logging.info(log_overall)
+    # logging.info(log_overall)
     
-    with open(RESULTS_FILE, "a+") as file:
-        file.write(log_msg)
-        file.write(log_overall)
+    # with open(RESULTS_FILE, "a+") as file:
+    #     file.write(log_msg)
+    #     file.write(log_overall)
 
 def all_file_paths(directory):
     file_paths = []
@@ -116,6 +116,7 @@ def all_file_paths(directory):
         for file in files:
             relative_path = os.path.relpath(os.path.join(root, file), directory)
             file_paths.append(relative_path)
+    random.shuffle(file_paths)
     return file_paths
     
 directory = 'json'
@@ -128,12 +129,14 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer):
         assert all(isinstance(sample, RelationSample) for sample in relation.samples)
         test_operator_on_relation(operator, relation, h_layer, z_layer)
 
-#json_path = 'json/lexsem/L10 [antonyms - binary].json'
-json_path = 'json/enckno/E06 [animal - youth].json'
-#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
-test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+# json_path = 'json/lexsem/L10 [antonyms - binary].json'
+#json_path = 'json/enckno/E06 [animal - youth].json'
 
-# for json_path in file_paths:
-#     test_operator_on_json(JacobianIclMeanEstimator, "json/"+json_path, 5, 27)
+json_path = 'ceo/company-ceo.json'
+#test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+# test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
+
+for json_path in file_paths:
+    test_operator_on_json(JacobianIclMeanEstimator, "json/"+json_path, 1, 27)
 #     json_path = 'json/' + json_path
 #     #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)

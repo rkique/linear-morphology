@@ -14,6 +14,7 @@ import lre.data as data
 from lre.data import RelationSample
 from baukit.baukit import TraceDict
 
+import os
 from pathlib import Path
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
@@ -209,6 +210,22 @@ class JacobianIclEstimator(LinearRelationEstimator):
             beta=self.beta,
         ).estimate_for_subject(train.subject, prompt_template_icl)
 
+
+def read_prompts(root_dir):
+    subjects = []
+    prompts = []
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        if dirpath == root_dir:
+            continue
+        if 'prompt.txt' in filenames:
+            file_path = os.path.join(dirpath, 'prompt.txt')
+            with open(file_path, 'r') as file:
+                prompt = file.read()
+                words = prompt.split()
+                subjects.append(words[-2])
+                prompts.append(prompt)
+    return (subjects,prompts)
+    
 @dataclass(frozen=True)
 class JacobianIclMeanEstimator(LinearRelationEstimator):
     h_layer: Layer
@@ -223,51 +240,50 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         #_warn_gt_1(prompt_templates=relation.prompt_templates)
         approxes = []
         def prompt_to_approx(mt, prompt_template, samples, prompt_kind):
-            for s_o in range(20,27):
-                for i in range(0, len(samples)):
-                    sample = samples[i]
-                    prompt = functional.make_prompt(
-                            template=prompt_template,
-                            target=sample,
-                            examples=samples,
-                        )
-                    h_index, inputs = functional.find_subject_token_index(
-                            mt=mt,
-                            prompt=prompt,
-                            subject=sample.subject
+            for sample in samples:
+                prompt = functional.make_prompt(
+                        template=prompt_template,
+                        target=sample,
+                        examples=samples,
                     )
+            
+                h_index, inputs = functional.find_subject_token_index(
+                        mt=mt,
+                        prompt=prompt,
+                        subject=sample.subject
+                )
+                directory = Path(f'capprox/{sample.subject}')
+                
+                if not directory.exists():
+                    directory.mkdir(parents=True, exist_ok=True)
                     
-                    directory = Path(f'kapprox/{sample.subject}')
+                pth = f'capprox/{sample.subject}/prompt.txt'
+                with open(pth, 'w') as file:
+                    file.write(prompt)
                     
-                    if not directory.exists():
-                        directory.mkdir(parents=True, exist_ok=True)
-                        
-                    pth = f'kapprox/{sample.subject}/prompt_{s_o}.txt'
-                    with open(pth, 'w') as file:
-                        file.write(prompt)
-                        
-                    approx = functional.order_1_approx(
-                            mt=mt,
-                            prompt=prompt,
-                            subject=sample.subject,
-                            h_layer=self.h_layer,
-                            h_index=h_index,
-                            s_o_layer=s_o,
-                            z_layer=self.z_layer,
-                            z_index=-1,
-                            inputs=inputs
-                        )
-                logger.info(f"{prompt_kind} [Jacobian] Finished order_1_approx for {sample} with s o layer {s_o}")
+                approx = functional.order_1_approx(
+                        mt=mt,
+                        prompt=prompt,
+                        prompt_kind=prompt_kind,
+                        subject=sample.subject,
+                        h_layer=self.h_layer,
+                        h_index=h_index,
+                        z_layer=self.z_layer,
+                        z_index=-1,
+                        inputs=inputs
+                    )
+            
+                logger.info(f"{prompt_kind} [Jacobian] Finished order_1_approx for {prompt}")
                 approxes.append(approx)
         
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
         prompt_template1 = relation.prompt_templates[0]
-        prompt_template2 = relation.prompt_templates[1]
-        nocontext_template = "{} "
+        # prompt_template2 = relation.prompt_templates[1]
+        # nocontext_template = "{} "
         mt = self.mt
         
         prompt_to_approx(mt, prompt_template1, samples, "sem1")
-        #prompt_to_approx(mt, prompt_template2, samples, "sem2")
+        # prompt_to_approx(mt, prompt_template2, samples, "sem2")
         # prompt_to_approx(mt, nocontext_template, samples, "noc")
         
         # weight = torch.eye(4096)
@@ -275,6 +291,8 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         
         if self.rank is not None:
             weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
+
+        return None
         
         #TODO: add metadata
         operator = LinearRelationOperator(
