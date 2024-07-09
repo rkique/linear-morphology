@@ -1,14 +1,12 @@
 {
     "name": "things - color",
     "prompt_templates": [
-        "A female {} is known as a",
-        "The female counterpart of a {} is called a",
-        "The female equivalent of a {} is called a"
+        "The {} is colored",
+        "The color of {} is",
     ],
     "prompt_templates_zs": [
-        "A female {} is known as a",
-        "The female counterpart of a {} is called a",
-        "The female equivalent of a {} is called a"
+        "The {} is colored",
+        "The color of {} is",
     ],
     "samples": [
         {

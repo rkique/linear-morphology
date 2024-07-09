@@ -8,4 +8,7 @@ data/wapprox
 data/kapprox
 data/capprox
 data/qapprox
+data/ln_approx
+data/env
+data/*
 ceo

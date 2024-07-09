@@ -1,14 +1,14 @@
 {
     "name": "synonyms - intensity",
     "prompt_templates": [
-        "A more intense word for {} is ",
-        "A more extreme version of {} is ",
-        "An intensified form of {} is "
+        "A more intense word for {} is",
+        "A more extreme version of {} is",
+        "An intensified form of {} is"
     ],
     "prompt_templates_zs": [
-        "A more intense word for {} is ",
-        "A more extreme version of {} is ",
-        "An intensified form of {} is "
+        "A more intense word for {} is",
+        "A more extreme version of {} is",
+        "An intensified form of {} is"
     ],
     "samples": [
         {

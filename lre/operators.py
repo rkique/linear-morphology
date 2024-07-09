@@ -239,6 +239,12 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         )
         #_warn_gt_1(prompt_templates=relation.prompt_templates)
         approxes = []
+
+        #MAKE RELATION FOLDER
+        directory = Path(f'ln_approx/{relation.name}')
+        if not directory.exists():
+            directory.mkdir(parents=True, exist_ok=True)
+            
         def prompt_to_approx(mt, prompt_template, samples, prompt_kind):
             for sample in samples:
                 prompt = functional.make_prompt(
@@ -252,12 +258,13 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                         prompt=prompt,
                         subject=sample.subject
                 )
-                directory = Path(f'capprox/{sample.subject}')
+                #MAKE RELATION SAMPLE FOLDER
+                directory = Path(f'ln_approx/{relation.name}/{sample.subject}')
                 
                 if not directory.exists():
                     directory.mkdir(parents=True, exist_ok=True)
-                    
-                pth = f'capprox/{sample.subject}/prompt.txt'
+                
+                pth = f'ln_approx/{relation.name}/{sample.subject}/prompt.txt'
                 with open(pth, 'w') as file:
                     file.write(prompt)
                     
@@ -265,6 +272,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                         mt=mt,
                         prompt=prompt,
                         prompt_kind=prompt_kind,
+                        relation_name=relation.name,
                         subject=sample.subject,
                         h_layer=self.h_layer,
                         h_index=h_index,

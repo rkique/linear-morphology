@@ -8,16 +8,12 @@ import lre.models as models
 from lre.lretyping import Layer, ModelInput, ModelOutput, StrSequence
 from lre.metrics import is_nontrivial_prefix, any_is_nontrivial_prefix
 import lre.tokenizer_utils as tokenizer_utils
-from baukit.baukit import TraceDict, parameter_names, get_parameter
+from baukit.baukit import TraceDict
 
 import random
 import torch
-import torch.nn as nn
 import logging
 from pathlib import Path
-
-import numpy as np
-from llra.build import layer_norm
 
 logger = logging.getLogger(__name__)
 
@@ -171,138 +167,148 @@ def order_1_approx(
     approxes = []
     device = models.determine_device(mt)
     
-    def save_grads(h_layer_name, h_ln_layer_name, z_ln_layer_name, z_layer_name,
-                   mt, prompt, prompt_kind, relation_name, subject, h_index, 
-                   h, z_index, inputs):
-
-        #z_layer = z_layer or models.determine_layers(mt)[-1]
+    def save_grads(h_layer, z_layer, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs):
+        z_layer = z_layer or models.determine_layers(mt)[-1]
         z_index = -1
         inputs = inputs or mt.tokenizer(prompt, return_tensors="pt").to(device)
         inputs = inputs.to(device)
         
         # Precompute everything up to the subject (h_index), if there is anything before it.
         # past_key_values = None
-        input_ids = inputs.input_ids
-
-        #USE the FULL INPUT TOKEN STRING to allow LayerNormed s_j to work (no slicing to [h_index:])
-    
+        # input_ids = inputs.input_ids
+        # _h_index = h_index
         # if _h_index > 0:
         #     outputs = mt.model(input_ids=input_ids[:, :_h_index], use_cache=True)
         #     past_key_values = outputs.past_key_values
-        #    
         #     input_ids = input_ids[:, _h_index:]
         #     _h_index = 0
         # use_cache = past_key_values is not None
+        
+        # layer transformer.h.27
+        # transformer.h.5.ln_1
+        
+        #SET H_LAYER_NAME TO AFTER LAYERNORM
+        [h_layer_name, z_layer_name] = models.determine_layer_paths(mt, [h_layer, z_layer])
+        #h_layer_name = h_layer_name + '.ln_1'
+        logging.info(f'{h_layer_name=} {z_layer_name=}')
 
-        print(f'{input_ids=} {input_ids.shape=}')
-        print(f'{h_layer_name=}  {h_ln_layer_name=}  {z_ln_layer_name}  {z_layer_name=}')
-        
-        #Runs the model and sets up layer hooks with TraceDict
-        with TraceDict(mt.model, layers=(h_layer_name,
-                                         h_ln_layer_name,
-                                         z_ln_layer_name,
-                                         z_layer_name)) as ret:
-            outputs =  mt.model(input_ids=input_ids, use_cache=True)
-            past_key_values = outputs.past_key_values
+        #edit _h_index to s_j
+        def edit_output(output: tuple, layer: str) -> tuple:
+            if layer != h_layer_name:
+                return output
+            untuple(output)[:, _h_index] = s_j
+            return output
             
-        use_cache = past_key_values is not None
-        
-        s_j = ret[h_layer_name].output[0][0, h_index] #s_j
-        ln_s_j = ret[h_ln_layer_name].output[0, h_index] #layer-normed s_j
-        ln_o_j1 = ret[z_ln_layer_name].output[0][0, -1] #layer-normed (right before) o_j1
-        o_j1 = ret[z_layer_name].output[0][0, -1] #o_j1
-        
-        print(f'{s_j.shape=} {ln_s_j.shape=} {ln_o_j1.shape=}')
-        
-        h_layer = h_layer_name.split(".")[2]
-        z_layer = z_layer_name.split(".")[2]
-        
-        def o_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
+        #Runs the model while tracking with TraceDict
+        with TraceDict(mt.model, layers=(h_layer_name, z_layer_name), edit_output=edit_output) as ret:
+            outputs = mt.model(
+                input_ids=input_ids,
+                use_cache=False,
+                past_key_values=past_key_values,
+            )
+            
+        s_j = untuple(ret[h_layer_name].output)[0, _h_index] #s_j
+        o_j = untuple(ret[h_layer_name].output)[0, z_index] #o_j
+        s_j1 = untuple(ret[z_layer_name].output)[0, _h_index] #s_j+1
+        o_j1 = untuple(ret[z_layer_name].output)[0, z_index] #o_j+1
+    
+        logging.info(f"""[order_1_approx] weight calculation finished \n
+                        s_j: {s_j} \n
+                        o_j: {o_j} \n
+                        s_j1: {s_j1} \n
+                        o_j1: {o_j1} \n
+                    """)
+    
+        def compute_o_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
             
             def insert_s_j(output: tuple, layer: str) -> tuple:
                 hs = untuple(output)
                 if layer != h_layer_name:
                     logger.warn(f"[insert_s_j] layer {layer} does not match {h_layer_name}")
                     return output
-                hs[0, h_index] = s_j
+                hs[0, _h_index] = s_j
+                return output
                 
-            with TraceDict(mt.model, (h_layer_name, z_layer_name), 
-                                    edit_output=insert_s_j) as ret:
-                mt.model(input_ids=input_ids, 
-                         use_cache=use_cache,
-                        past_key_values=past_key_values)
-            z = untuple(ret[z_layer_name].output)[0, -1]
+            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_s_j) as ret:
+                mt.model(input_ids=input_ids, past_key_values=past_key_values, use_cache=False)
+            z = untuple(ret[z_layer_name].output)[0, -1] #obj position
             return z.half().to(device)
-
-        def ln_o_j1_from_ln_s_j(ln_s_j: torch.Tensor) -> torch.Tensor:
             
-            def insert_ln_s_j(output: tuple, layer: str) -> tuple:
+        def compute_s_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
+            
+            def insert_s_j(output: tuple, layer: str) -> tuple:
                 hs = untuple(output)
-                if layer != h_ln_layer_name:
-                    logger.warn(f"[insert_s_j] layer {layer} does not match {h_ln_layer_name}")
+                if layer != h_layer_name:
+                    logger.warn(f"[insert_s_j] layer {layer} does not match {h_layer_name}")
                     return output
-                hs[0, h_index] = ln_s_j
-            
-            with TraceDict(mt.model, (h_ln_layer_name, z_ln_layer_name),
-                                       edit_output=insert_ln_s_j) as ret:
-                mt.model(input_ids=input_ids,
-                        use_cache=use_cache,
-                        past_key_values=past_key_values)
-            z = untuple(ret[z_ln_layer_name].output)[0, -1]
-            return z.half().to(device)
-
+                hs[0, _h_index] = s_j
+                return output
+                
+            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_s_j) as ret:
+                mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
+            _h = untuple(ret[z_layer_name].output)[0, _h_index] #subj position
+            return _h.half().to(device)
+    
         logging.info(f"[order_1_approx] starting weight calculation for {prompt}")
-        
         s_j = s_j.half().to(device)
-        ln_s_j = ln_s_j.half().to(device)
-        ln_o_j1 = ln_o_j1.half().to(device)
-        o_j1 = o_j1.half().to(device)
+        o_j = o_j.half().to(device)
 
-        s_o_weight = torch.autograd.functional.jacobian(o_j1_from_s_j, s_j).half().to(device)
-        ln_s_o_weight = torch.autograd.functional.jacobian(ln_o_j1_from_ln_s_j,
-                                                           ln_s_j).half().to(device)
+        s_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_s_j, s_j).half().to(device)
+        #s_s_weight = torch.autograd.functional.jacobian(compute_s_j1_from_s_j, s_j).half().to(device)
         
-        s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
-        ln_s_o_bias = ln_o_j1[None] - ln_s_j[None].mm(ln_s_o_weight.t())  
+        #edit to o_j
+        def edit_output(output: tuple, layer: str) -> tuple:
+            if layer != h_layer_name:
+                return output
+            untuple(output)[:, -1] = o_j
+            return output
+            
+        def compute_o_j1_from_o_j(o_j: torch.Tensor) -> torch.Tensor:
+            def insert_o_j(output: tuple, layer: str) -> tuple:
+                hs = untuple(output)
+                if layer != h_layer_name:
+                    logger.warn(f"[insert_o_j] layer {layer} does not match {h_layer_name}")
+                    return output
+                hs[0, -1] = o_j
+                return output
+            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_o_j) as ret:
+                mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
+            z = untuple(ret[z_layer_name].output)[0, -1] #obj position
+            return z.half().to(device)
+            
+        #o_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_o_j, o_j).half().to(device)
+
+        #s_o_weight = torch.eye(4096).half().to(device)
+        # s_s_weight = torch.eye(4096).half().to(device)
+        # o_o_weight = torch.eye(4096).half().to(device)
+        
+        #weight = torch.eye(4096).half().to(device)
         
         logging.info(f"""[order_1_approx] weight calculation finished \n
-                        {s_j=} \n
-                        {ln_s_j=} \n
-                        {ln_o_j1=} \n
-                        {o_j1=} \n
-                        s_o_weight: {s_o_weight} \n
-                        ln_s_o_weight: {ln_s_o_weight} \n
-                        {s_o_bias=} \n
-                        {ln_s_o_bias=}
+                        s_o: {s_o_weight} \n
                     """)
         
-        torch.save(s_o_weight, f'ln_approx/{relation_name}/{subject}/s_o_weight_{h_layer}_{z_layer}.pt')
-        torch.save(s_o_bias, f'ln_approx/{relation_name}/{subject}/s_o_bias_{h_layer}_{z_layer}.pt')
-        torch.save(ln_s_o_weight, f'ln_approx/{relation_name}/{subject}/ln_s_o_weight_{h_layer}_{z_layer}.pt')
-        torch.save(ln_s_o_bias, f'ln_approx/{relation_name}/{subject}/ln_s_o_bias_{h_layer}_{z_layer}.pt')
-
-    # 5 -> 6.ln_1 -> ... -> 27.ln_1 -> 27
+        s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
+        #s_s_bias = s_j1[None] - s_j[None].mm(s_s_weight.t())
+        #o_o_bias = o_j1[None] - o_j[None].mm(o_o_weight.t())
     
-    save_grads("transformer.h.5", 
-               "transformer.h.6.ln_1", 
-               "transformer.h.27.ln_1", 
-               "transformer.h.27",
-               mt, prompt, prompt_kind, relation_name, subject,
-               h_index, h, z_index, inputs)
+            
+        torch.save(s_o_weight, f'dapprox/{relation_name}/{subject}/s_o_weight_{h_layer}_{z_layer}.pt')
+        torch.save(s_o_bias, f'dapprox/{relation_name}/{subject}/s_o_bias_{h_layer}_{z_layer}.pt')
+        
+        # torch.save(s_s_weight, f'dapprox/{relation_name}/{subject}/s_s_weight_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
+        # torch.save(s_s_bias, f'dapprox/{relation_name}/{subject}/s_s_bias_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
     
+        # torch.save(o_o_weight, f'dapprox/{relation_name}/{subject}/o_o_weight_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
+        # torch.save(o_o_bias, f'dapprox/{relation_name}/{subject}/o_o_bias_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
+    
+    save_grads(5, 27, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
     # save_grads(21, 26, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
     # save_grads(26, 27, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
     
-    # save_grads(1, 27, mt, 
-    # prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-
-    # save_grads("transformer.h.1", "transformer.h.27", mt, 
-    #        prompt, prompt_kind,
-    #        relation_name, subject, h_index, h, z_index, inputs)
-
+    #save_grads(1, 27, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
     # for j in range(h_layer, z_layer):
-    #     save_grads(f"transformer.h.{j}",f"transformer.h.{j+1}", mt, 
-    #     prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
+    #     save_grads(j, j, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
 
     # NB(evan): Something about the jacobian computation causes a lot of memory
     # fragmentation, or some kind of memory leak. This seems to help.
@@ -310,9 +316,6 @@ def order_1_approx(
 
     return None
 
-#We try to reproduce the LN process so we can apply it before the LN LRE.
-#The weight and bias are applied per element, but the same per layer.
-            
 @dataclass(frozen=True, kw_only=True)
 class PredictedToken(DataClassJsonMixin):
     token: str

@@ -1,12 +1,12 @@
 {
     "name": "synonyms - exact",
     "prompt_templates": [
-        "Another word for {} is ",
+        "Another word for {} is",
         "Another way to say {} is",
         "A different manner of saying {} is"
     ],
     "prompt_templates_zs": [
-        "Another word for {} is ",
+        "Another word for {} is",
         "Another way to say {} is",
         "A different manner of saying {} is"
     ],
