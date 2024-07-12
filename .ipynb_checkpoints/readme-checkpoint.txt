@@ -1,0 +1,2 @@
+This is the repository containing code accompanying the paper "Jacobian Relational Approximation Captures Morphology".
+ChatGPT was referenced for data visualization and processing purposes. It was also used to demonstrate features from libraries from which experiment code was written.

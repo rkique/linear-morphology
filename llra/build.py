@@ -289,3 +289,30 @@ def get_hidden_states(mt, prompt, subject, h_layer):
         mt = mt, layers = [h_layer], inputs = inputs)
     return hs, h_index
 
+def tp(tensor):
+    return tensor.cpu().detach().numpy()
+
+def attn_mlp(hs, i):
+    res = hs
+    position_ids = torch.tensor(list(range(0, hs.shape[1]))).to(device)
+    attn_outputs = mt.model.transformer.h[i].attn(hs, position_ids=position_ids)
+    attn_output = attn_outputs[0]
+    mlp =  mt.model.transformer.h[i].mlp(hs)
+    hs = attn_output + mlp + res
+    return hs
+
+#for a specific relation. TODO: extend to other relations
+def get_final_state(mt, sample):
+    prompt = f"""The falcon falls into the category of raptor
+    The mouse falls into the category of rodent
+    The vulture falls into the category of raptor
+    The cat falls into the category of feline
+    The mamba falls into the category of snake
+    The eagle falls into the category of raptor
+    The chimpanzee falls into the category of primate
+    The {sample.subject} falls into the category of {sample.object[0]}"""
+    hs = get_hidden_state(mt, prompt, sample.object[0], 27)
+    return hs
+    
+    
+    

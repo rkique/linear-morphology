@@ -23,7 +23,7 @@ device = 'cuda:1'
 logger = logging.getLogger(__name__)
 
 #(MAKE SURE TO CHANGE THIS EACH RUN)
-RESULTS_FILE = 'results/Tuesday_Cuda1.txt'
+RESULTS_FILE = 'results/Friday_Cuda1_MakeWeights.txt'
 
 logging.basicConfig(
     filename=RESULTS_FILE,
@@ -101,7 +101,7 @@ def test_operator_on_json(operator, json_path, h_layer, z_layer):
 #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
 #test_operator_on_json(JacobianIclMeanEstimator, json_path, 5, 27)
 
-file_paths = ['json/infmor/I02 [noun - plural_irreg].json','json/infmor/I06r [Ving - verb_inf].json','json/infmor/I09 [verb_Ving - Ved].json','json/infmor/I07 [verb_inf - Ved].json','json/infmor/I05 [verb_inf - 3pSg].json','json/infmor/I08 [verb_Ving - 3pSg].json','json/infmor/I01 [noun - plural_reg].json','json/infmor/I10 [verb_3pSg - Ved].json','json/infmor/I04 [adj - superlative].json','json/dermor/D08 [verb+er_irreg].json','json/dermor/D04 [over+adj_reg].json','json/dermor/D03 [adj+ly_reg].json','json/dermor/D09 [verb+tion_irreg].json','json/dermor/D07 [verb+able_reg].json','json/dermor/D02 [un+adj_reg].json','json/dermor/D06 [re+verb_reg].json','json/dermor/D05 [adj+ness_reg].json','json/dermor/D01 [noun+less_reg].json','json/dermor/D10 [verb+ment_irreg].json']
+file_paths = ['json/lexsem/L06 [meronyms - part].json','json/lexsem/L08 [synonyms - exact].json','json/lexsem/L02 [hypernyms - misc].json','json/lexsem/L04 [meronyms - substance].json','json/lexsem/L07 [synonyms - intensity].json','json/lexsem/L01 [hypernyms - animals].json','json/lexsem/L03 [hyponyms - misc].json','json/lexsem/L10 [antonyms - binary].json','json/lexsem/L05 [meronyms - member].json','json/enckno/E04 [name - nationality].json','json/enckno/E02 [country - language].json','json/enckno/E08 [animal - shelter].json','json/enckno/E10 [male - female].json','json/enckno/E05 [name - occupation].json','json/enckno/E01 [country - capital].json','json/enckno/E09 [things - color].json','json/enckno/E07 [animal - sound].json','json/enckno/E06 [animal - youth].json','json/enckno/E03 [UK_city - county].json']
 
 for json_path in file_paths:
     print(f'reading in {json_path}')
