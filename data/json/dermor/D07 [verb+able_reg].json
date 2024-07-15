@@ -5,6 +5,9 @@
         "Being able to {} something implies that thing is",
         "Being able to {} something suggests that thing is"
     ],
+    "syntax_templates": [
+        "Adding 'able' to the end of {} gives"
+    ],
     "prompt_templates_zs": [
         "If you can {} something, that thing is",
         "Being able to {} something implies that thing is",

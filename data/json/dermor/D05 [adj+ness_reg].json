@@ -5,6 +5,9 @@
         "The quality of being {} is",
         "The noun form of {} is"
     ],
+    "syntax_templates": [
+        "Adding 'ness' to the end of {} gives"
+    ],
     "prompt_templates_zs": [
         "The state of being {} is",
         "The quality of being {} is",

@@ -5,6 +5,9 @@
         "{} contrasts with ",
         "The inverse of {} is"
     ],
+    "syntax_templates": [
+        "Adding 'un' to {} gives"
+    ],
     "prompt_templates_zs": [
         "The opposite of {} is",
         "{} contrasts with ",

@@ -5,6 +5,9 @@
         "When something is overly {}, it is",
         "if it is too {}, then it is"
     ],
+    "syntax_templates": [
+        "Adding 'over' to the beginning of {} gives"
+    ],
     "prompt_templates_zs": [
         "If something is too {}, it is",
         "When something is overly {}, it is",

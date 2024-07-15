@@ -5,6 +5,9 @@
         "To {} a second time is to",
         "Repeating {} means"
     ],
+    "syntax_templates": [
+        "Adding 're' to the beginning of {} gives"
+    ],
     "prompt_templates_zs": [
         "To {} again is to",
         "To {} a second time is to",

@@ -5,6 +5,9 @@
         "A thing missing {} is",
         "Something that does not have {} is"
     ],
+    "syntax_templates": [
+        "{} without 'less' is"
+    ],
     "prompt_templates_zs": [
         "Something without {} is",
         "A thing missing {} is",

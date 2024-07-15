@@ -5,6 +5,9 @@
         "The adjective derived from {} is",
         "The descriptive form of {} is"
     ],
+    "syntax_templates": [
+        "Adding 'ly' to the beginning of {} gives"
+    ],
     "prompt_templates_zs": [
         "The adjective form of {} is",
         "The adjective derived from {} is",

@@ -404,7 +404,108 @@ class Word2VecIclEstimator(LinearRelationEstimator):
 
         return operator
 
+@dataclass(frozen=True)
+class LearnedLinearEstimator(LinearRelationEstimator):
+    h_layer: Layer
+    z_layer: Layer | None = None
+    mode: Literal["zs", "icl"] = "zs"
+    n_steps: int = 100
+    lr: float = 5e-2
+    weight_decay: float = 2e-2
 
+    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
+
+        device = models.determine_device(self.mt)
+        dtype = models.determine_dtype(self.mt)
+        samples = relation.samples
+        prompt_template = (
+            self.mt.tokenizer.eos_token + " {}"
+            if self.mode == "zs"
+            else relation.prompt_templates[0]
+        )
+
+        H_stack: list[torch.Tensor] = []
+        Z_stack: list[torch.Tensor] = []
+
+        if self.z_layer is None:
+            z_layer = models.determine_layers(self.mt)[-1]
+
+        h_layer_name, z_layer_name = models.determine_layer_paths(
+            self.mt, [self.h_layer, z_layer]
+        )
+
+        for sample in samples:
+            if self.mode == "zs":
+                prompt = prompt_template.format(sample.subject)
+            elif self.mode == "icl":
+                prompt = functional.make_prompt(
+                    mt=self.mt,
+                    prompt_template=prompt_template,
+                    subject=sample.subject,
+                    examples=samples,
+                )
+            h_index, inputs = functional.find_subject_token_index(
+                mt=self.mt,
+                prompt=prompt,
+                subject=sample.subject,
+            )
+
+            with baukit.TraceDict(
+                self.mt.model,
+                [h_layer_name, z_layer_name],
+            ) as traces:
+                self.mt.model(**inputs)
+            #stack of subject hidden states
+            H_stack.append(
+                functional.untuple(traces[h_layer_name].output)[0][h_index].detach()
+            )
+            #stack of object hidden states
+            Z_stack.append(
+                functional.untuple(traces[z_layer_name].output)[0][-1].detach()
+            )
+        #to matrix
+        H = torch.stack(H_stack, dim=0).to(torch.float32)
+        Z = torch.stack(Z_stack, dim=0).to(torch.float32)
+
+        #4096
+        n_embd = models.determine_hidden_size(self.mt)
+        #[4096, 4096],[1, 4096]
+        weight = torch.empty(n_embd, n_embd, device=device)
+        bias = torch.empty(1, n_embd, device=device)
+        weight.requires_grad = True
+        bias.requires_grad = True
+
+        optimizer = torch.optim.Adam(
+            [weight, bias], lr=self.lr, weight_decay=self.weight_decay
+        )
+
+        #attempt to learn the relation between H and Z through MSE loss over n_steps
+        for _ in range(self.n_steps):
+            Z_hat = H.mm(weight.t()) + bias
+            loss = (Z - Z_hat).square().mean()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+        if self.mode == "icl":
+            prompt_template = functional.make_prompt(
+                mt = self.mt,
+                prompt_template=prompt_template,
+                subject="{}",
+                examples=samples
+            )
+        
+        operator = LinearRelationOperator(
+            mt = self.mt,
+            weight=weight.detach().to(dtype).to(device)
+            bias=bias.detach().to(dtype).to(device),
+            h_layer=self.h_layer,
+            z_layer=z_layer,
+            prompt_template=prompt_template,
+        )
+
+        return operator
+            
 #these are both strange niche methods
 #Checks that all keys do not pair to empty lists.
 def _check_nonempty(**values: list) -> None:
