@@ -104,13 +104,6 @@ def compute_hidden_states(
         s_j1 = untuple(ret[z_layer_name].output)[0, _h_index] #s_j+1
         o_j1 = untuple(ret[z_layer_name].output)[0, -1] #o_j+1
     
-        # logging.info(f"""[order_1_approx] weight calculation finished \n
-        #                 s_j: {s_j} \n
-        #                 o_j: {o_j} \n
-        #                 s_j1: {s_j1} \n
-        #                 o_j1: {o_j1} \n
-        #             """)
-    
         def compute_o_j1_from_s_j(s_j: torch.Tensor) -> torch.Tensor:
             def insert_s_j(output: tuple, layer: str) -> tuple:
                 hs = untuple(output)
@@ -144,66 +137,12 @@ def compute_hidden_states(
         o_j = o_j.half().to(device)
 
         s_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_s_j, s_j).half().to(device)
-        #s_s_weight = torch.autograd.functional.jacobian(compute_s_j1_from_s_j, s_j).half().to(device)
-        
-        #edit to o_j
-        def edit_output(output: tuple, layer: str) -> tuple:
-            if layer != h_layer_name:
-                return output
-            untuple(output)[:, -1] = o_j
-            return output
-            
-        def compute_o_j1_from_o_j(o_j: torch.Tensor) -> torch.Tensor:
-            def insert_o_j(output: tuple, layer: str) -> tuple:
-                hs = untuple(output)
-                if layer != h_layer_name:
-                    logger.warn(f"[insert_o_j] layer {layer} does not match {h_layer_name}")
-                    return output
-                hs[0, -1] = o_j
-                return output
-            with TraceDict(mt.model, (h_layer_name, z_layer_name), edit_output=insert_o_j) as ret:
-                mt.model(input_ids=input_ids,past_key_values=past_key_values, use_cache=use_cache)
-            z = untuple(ret[z_layer_name].output)[0, -1] #obj position
-            return z.half().to(device)
-            
-        #o_o_weight = torch.autograd.functional.jacobian(compute_o_j1_from_o_j, o_j).half().to(device)
-
-        #s_o_weight = torch.eye(4096).half().to(device)
-        # s_s_weight = torch.eye(4096).half().to(device)
-        # o_o_weight = torch.eye(4096).half().to(device)
-        
-        #weight = torch.eye(4096).half().to(device)
-        
-        logging.info(f"""[order_1_approx] weight calculation finished \n
-                        s_o: {s_o_weight} \n
-                    """)
-
         s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
-        #s_s_bias = s_j1[None] - s_j[None].mm(s_s_weight.t())
-        #o_o_bias = o_j1[None] - o_j[None].mm(o_o_weight.t())
+
     
         torch.save(s_o_weight, f'dapprox/{relation_name}/{subject}/s_o_weight_{h_layer_name}_{z_layer_name}.pt')
         torch.save(s_o_bias, f'dapprox/{relation_name}/{subject}/s_o_bias_{h_layer_name}_{z_layer_name}.pt')
         
-        # torch.save(s_s_weight, f'dapprox/{relation_name}/{subject}/s_s_weight_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
-        # torch.save(s_s_bias, f'dapprox/{relation_name}/{subject}/s_s_bias_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
-    
-        # torch.save(o_o_weight, f'dapprox/{relation_name}/{subject}/o_o_weight_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
-        # torch.save(o_o_bias, f'dapprox/{relation_name}/{subject}/o_o_bias_{h_layer}_{z_layer}.pt')# _{prompt_kind}.pt')
-
-    # layer transformer.h.27
-    # transformer.h.5.ln_1
-    # save_grads("transformer.h.5.ln_1", "transformer.h.27", mt, 
-    #            prompt, prompt_kind,
-    #            relation_name, subject, h_index, h, z_index, inputs)
-    
-    
-    # save_grads(21, 26, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-    # save_grads(26, 27, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-    
-    # save_grads(1, 27, mt, 
-    # prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-
     save_grads("transformer.h.1", "transformer.h.27", mt, 
            prompt, prompt_kind,
            relation_name, subject, h_index, h, z_index, inputs)
@@ -211,9 +150,7 @@ def compute_hidden_states(
     for j in range(h_layer, z_layer):
         save_grads(f"transformer.h.{j}",f"transformer.h.{j+1}", mt, 
         prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-
-    # NB(evan): Something about the jacobian computation causes a lot of memory
-    # fragmentation, or some kind of memory leak. This seems to help.
+        
     torch.cuda.empty_cache()
 
     return None

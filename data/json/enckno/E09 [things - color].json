@@ -2,11 +2,11 @@
     "name": "things - color",
     "prompt_templates": [
         "The {} is colored",
-        "The color of {} is",
+        "The color of {} is"
     ],
     "prompt_templates_zs": [
         "The {} is colored",
-        "The color of {} is",
+        "The color of {} is"
     ],
     "samples": [
         {

@@ -18,10 +18,12 @@ logger.addHandler(handler)
 device = None
 lm_params = {}
 
+#set the device for this module.
 def determine_device(mt):
     global device
     device = models.determine_device(mt)
 
+#determine model parameters for use in LLRA below.
 def determine_params(mt):
     global lm_params
     model = mt.model
@@ -43,6 +45,11 @@ def determine_params(mt):
     lm_params[ln_f_w_name] = weight.to(device)
     lm_params[ln_f_b_name] = bias.to(device)
 
+def get_position_ids(mt, prompt):
+    inputs = mt.tokenizer(prompt, return_tensors="pt").to(device)
+    return inputs.position_ids
+    
+#record a single weight and bias (for debugging purposes)
 def sample_weights_biases(subject, kind, i, samples) -> dict:
     layer_dict = {"i": i}
     weights = []
@@ -55,10 +62,6 @@ def sample_weights_biases(subject, kind, i, samples) -> dict:
     layer_dict[f'{kind}_weight'] = weight
     layer_dict[f'{kind}_bias'] = bias
     return layer_dict
-
-def get_position_ids(mt, prompt):
-    inputs = mt.tokenizer(prompt, return_tensors="pt").to(device)
-    return inputs.position_ids
     
 #handles either individual paths at layer i, or intervals [i,j]
 def wb_paths(wdir: str, sample: str, kind: str, i: int, j: int) -> tuple:
@@ -77,6 +80,7 @@ def mean_weights_biases(wdir: str, kind: str, samples: list, i, j=None) -> dict:
     layer_dict = {"i": i}
     weights = []
     biases = []
+    samples = [x for x in samples if x != '.ipynb_checkpoints']
     for sample in samples:
         (weight_path, bias_path) = wb_paths(wdir, sample, kind, i, j=j)
         #load s_s_weight and s_s_bias
@@ -261,11 +265,6 @@ def get_object(mt, z, k=5):
     words = [mt.tokenizer.decode(token_id) for token_id in token_ids]
     return (words, probs)
 
-def layer_norm(x: torch.Tensor, dim, eps: float = 0.00001) -> torch.Tensor:
-    mean = torch.mean(x, dim=dim, keepdim=True)
-    var = torch.square(x - mean).mean(dim=dim, keepdim=True)
-    return (x - mean) / torch.sqrt(var + eps)
-
 #returns the hidden state of subject for a prompt.
 def get_hidden_state(mt, prompt, subject, h_layer):
     device = models.determine_device(mt)
@@ -279,19 +278,25 @@ def get_hidden_state(mt, prompt, subject, h_layer):
     h = h.to(device)
     return h
 
+#returns the hidden states for a prompt, and the subject index.
 def get_hidden_states(mt, prompt, subject, h_layer):
     device = models.determine_device(mt)
     prompt = prompt.format(subject)
     h_index, inputs = functional.find_subject_token_index(
         mt = mt, prompt=prompt, subject=subject)
-    # print(f'h_index is {h_index}, inputs is {inputs}')
+    token = mt.tokenizer.convert_ids_to_tokens([inputs.input_ids[:,h_index]])
+    #print(f'h_index is {h_index}, token is {token}')
     [[hs], _] = functional.compute_hidden_states(
         mt = mt, layers = [h_layer], inputs = inputs)
     return hs, h_index
 
-def tp(tensor):
-    return tensor.cpu().detach().numpy()
-
+#This actually gets the state before the sample.object[0] token.
+#This allows get_object to predict the sample.object[0] token.
+def get_final_state(mt, sample, prompt):
+    hs, h_index = get_hidden_states(mt, prompt, sample.object[0], 27)
+    #print(f"got {sample.object[0]} from {prompt}, {h_index} out of {len(hs[0])}")
+    return hs[:, h_index - 1]
+    
 def attn_mlp(hs, i):
     res = hs
     position_ids = torch.tensor(list(range(0, hs.shape[1]))).to(device)
@@ -301,18 +306,9 @@ def attn_mlp(hs, i):
     hs = attn_output + mlp + res
     return hs
 
-#for a specific relation. TODO: extend to other relations
-def get_final_state(mt, sample):
-    prompt = f"""The falcon falls into the category of raptor
-    The mouse falls into the category of rodent
-    The vulture falls into the category of raptor
-    The cat falls into the category of feline
-    The mamba falls into the category of snake
-    The eagle falls into the category of raptor
-    The chimpanzee falls into the category of primate
-    The {sample.subject} falls into the category of {sample.object[0]}"""
-    hs = get_hidden_state(mt, prompt, sample.object[0], 27)
-    return hs
-    
-    
+# From-scratch implementation of nn.LayerNorm
+def layer_norm(x: torch.Tensor, dim, eps: float = 0.00001) -> torch.Tensor:
+    mean = torch.mean(x, dim=dim, keepdim=True)
+    var = torch.square(x - mean).mean(dim=dim, keepdim=True)
+    return (x - mean) / torch.sqrt(var + eps)
     

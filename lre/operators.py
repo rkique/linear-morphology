@@ -20,6 +20,8 @@ logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
 
 DEFAULT_N_ICL = 8
+START, END = 6, 27
+APPROX_FOLDER = f'spaced_er_{START}_{END}_approx'
 
 @dataclass
 class PredictedToken(DataClassJsonMixin):
@@ -47,8 +49,6 @@ class LinearRelationOutput(RelationOutput):
 
     def as_relation_output(self) -> RelationOutput:
         return RelationOutput(predictions=self.predictions)
-
-
 
 #Using a RelationOperator, predict top-k objects.
 @dataclass
@@ -126,91 +126,6 @@ class LinearRelationEstimator:
     def __call__(self, relation: data.Relation) -> LinearRelationOperator:
         raise NotImplementedError
 
-@dataclass(frozen=True, kw_only=True)
-class JacobianEstimator(LinearRelationEstimator):
-    h_layer: Layer
-    z_layer: Layer | None = None
-    beta: float | None = None
-
-    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
-        _check_nonempty(
-            samples=relation.samples, prompt_templates=relation.prompt_templates
-        )
-        _warn_gt_1(samples=relation.samples, prompt_templates=relation.prompt_templates)
-        
-        subject = relation.samples[0].subject
-        #Takes first prompt template always 
-        prompt_template = relation.prompt_templates[0]
-        return self.estimate_for_subject(subject, prompt_template)
-    
-    #gets J-estimate for one prompt (?)
-    def estimate_for_subject(
-        self, subject: str, prompt_template: str
-    ) -> LinearRelationOperator:
-        prompt = functional.make_prompt(
-            mt=self.mt, prompt_template=prompt_template, subject=subject
-        )
-        logger.debug(f"estimating J for prompt: \n" + prompt)
-
-        h_index, inputs = functional.find_subject_token_index(
-            mt=self.mt, prompt=prompt, subject=subject
-        )
-        logger.debug(f"subject={subject}, h_index={h_index}")
-
-        #estimates h and z
-        approx = functional.order_1_approx(
-            mt=self.mt,
-            prompt=prompt,
-            h_layer=self.h_layer,
-            h_index=h_index,
-            z_layer=self.z_layer,
-            z_index=-1,
-            inputs=inputs
-        )
-        #approx weight and bias sourced from order_1_approx...
-        #use the new estimated subj. rep. and obj. rep.
-        return LinearRelationOperator(
-            mt=self.mt,
-            weight=approx.weight,
-            bias=approx.bias,
-            h_layer=approx.h_layer,
-            z_layer=approx.z_layer,
-            prompt_template=prompt_template,
-            beta=self.beta,
-            metadata=approx.metadata
-        )
-    
-@dataclass(frozen=True)
-class JacobianIclEstimator(LinearRelationEstimator):
-    h_layer: Layer
-    z_layer: Layer | None = None
-    beta: float | None = None
-
-    #this is called on a Relation to create a LinearRelationOperator
-    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
-        _check_nonempty(
-            samples=relation.samples, prompt_templates=relation.prompt_templates
-        )
-        #estimates for the first sample
-        _warn_gt_1(samples=relation.samples, prompt_templates=relation.prompt_templates)
-        train = relation.samples[0]
-        examples = relation.samples[1:]
-        prompt_template = relation.prompt_templates[0]
-        #Make a prompt with every other sample
-        prompt_template_icl = functional.make_prompt(
-            template=prompt_template,
-            examples=examples, 
-            target="{}"
-        )
-        print(f'jacobian prompt_template_icl: {prompt_template_icl}')
-        return JacobianEstimator(
-            mt=self.mt,
-            h_layer=self.h_layer,
-            z_layer=self.z_layer,
-            beta=self.beta,
-        ).estimate_for_subject(train.subject, prompt_template_icl)
-
-
 def read_prompts(root_dir):
     subjects = []
     prompts = []
@@ -241,7 +156,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
         approxes = []
 
         #MAKE RELATION FOLDER
-        directory = Path(f'ln_approx/{relation.name}')
+        directory = Path(f'{APPROX_FOLDER}/{relation.name}')
         if not directory.exists():
             directory.mkdir(parents=True, exist_ok=True)
             
@@ -259,12 +174,12 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                         subject=sample.subject
                 )
                 #MAKE RELATION SAMPLE FOLDER
-                directory = Path(f'ln_approx/{relation.name}/{sample.subject}')
+                directory = Path(f'{APPROX_FOLDER}/{relation.name}/{sample.subject}')
                 
                 if not directory.exists():
                     directory.mkdir(parents=True, exist_ok=True)
                 
-                pth = f'ln_approx/{relation.name}/{sample.subject}/prompt.txt'
+                pth = f'{APPROX_FOLDER}/{relation.name}/{sample.subject}/prompt.txt'
                 with open(pth, 'w') as file:
                     file.write(prompt)
                     
@@ -285,22 +200,69 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 approxes.append(approx)
         
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
-        prompt_template1 = relation.prompt_templates[0]
-        # prompt_template2 = relation.prompt_templates[1]
-        # nocontext_template = "{} "
-        mt = self.mt
+        spaced_list = [['subscribe', 'intrude', 'recommend', 'receive', 'organize', 'write', 'provide', 'discover'],
+                        ['subscribe', 'observe', 'recommend', 'develop', 'consume', 'organize', 'lose', 'offend'],
+                       ['subscribe', 'borrow', 'announce', 'defend', 'mourn', 'examine', 'believe', 'molest'],
+                       ['promote', 'send', 'intrude', 'receive', 'listen', 'explore', 'provide', 'suffer']]
+#         spaced_dict = {'name - nationality':['caesar', 'beethoven', 'strauss', 'newton', 'hitler', 'wagner', 'edison', 'copernicus'],
+# 'animal - youth':['fox', 'muskrat', 'ferret', 'panda', 'cat', 'horse', 'beetle', 'lion'],
+# 'verb_Ving - 3pSg':['performing', 'receiving', 'referring', 'publishing', 'becoming', 'happening', 'appearing', 'continuing'],
+# 'noun+less_reg':['gender', 'guilt', 'error', 'defence', 'penny', 'god', 'window', 'art'],
+# 'verb+able_reg':['avoid', 'expect', 'predict', 'understand', 'expand', 'renew', 'discover', 'achieve'],
+# 'UK_city - county':['salford', 'belfast', 'norwich', 'nottingham', 'exeter', 'oxford', 'salisbury', 'ely'],
+# 'antonyms - binary':['internal', 'top', 'proceed', 'decrement', 'front', 'beginning', 'drop', 'backward'],
+# 'verb_inf - 3pSg':['prevent', 'believe', 'apply', 'promote', 'include', 'contain', 'receive', 'achieve'],
+# 're+verb_reg':['send', 'adjust', 'engage', 'configure', 'calculate', 'deem', 'organize', 'investigate'],
+# 'verb_inf - Ved':['believe', 'receive', 'provide', 'discover', 'perform', 'refer', 'add', 'remain'],
+# 'country - language':['colombia', 'denmark', 'usa', 'ecuador', 'guam', 'bolivia', 'guadeloupe', 'israel'],
+# 'meronyms - part':['guitar', 'door', 'sonata', 'comb', 'radio', 'pub', 'chair', 'table'],
+# 'verb_Ving - Ved':['replacing', 'receiving', 'requiring', 'asking', 'considering', 'telling', 'following', 'allowing'],
+# 'animal - shelter':['dog', 'snake', 'wasp', 'hamster', 'cockroach', 'fly', 'raven', 'crow'],
+# 'hypernyms - misc':['blender', 'fridge', 'cup', 'pie', 'desk', 'necklace', 'sweater', 'jeans'],
+# 'meronyms - substance':['doorknob', 'chocolate', 'yogurt', 'beach', 'glass', 'cloud', 'jeans', 'glacier'],
+# 'noun - plural_irreg':['army', 'child', 'species', 'memory', 'family', 'story', 'security', 'analysis'],
+# 'un+adj_reg':['published', 'realistic', 'predictable', 'resolved', 'known', 'expected', 'desirable', 'suitable'],
+# 'verb+ment_irreg':['replace', 'impair', 'disagree', 'engage', 'excite', 'agree', 'achieve', 'manage'],
+# 'adj+ness_reg':['reasonable', 'impressive', 'directed', 'same', 'helpful', 'competitive', 'huge', 'strange'],
+# 'over+adj_reg':['represented', 'heated', 'confident', 'enthusiastic', 'optimistic', 'turned', 'spent', 'stressed'],
+# 'verb+er_irreg':['promote', 'determine', 'borrow', 'tell', 'provide', 'listen', 'announce', 'offend'],
+# 'adj+ly_reg':['mental', 'huge', 'clinical', 'regional', 'strong', 'political', 'global', 'obvious'],
+# 'name - occupation':['raphael', 'haydn', 'picasso', 'darwin', 'plato', 'edison', 'pacino', 'caesar'],
+# 'synonyms - intensity':['giggle', 'snack', 'guilty', 'interesting', 'strong', 'soon', 'like', 'tasty'],
+# 'animal - sound':['seal', 'chimpanzee', 'monkey', 'lion', 'songbird', 'mule', 'deer', 'mouse'],
+# 'noun - plural_reg':['death', 'member', 'period', 'product', 'year', 'customer', 'office', 'area'],
+# 'Ving - verb_inf':['improving', 'teaching', 'involving', 'operating', 'reducing', 'enjoying', 'following', 'establishing'],
+# 'male - female':['emperor', 'fisherman', 'superman', 'waiter', 'bull', 'grandfather', 'sculptor', 'stepfather'],
+# 'verb_3pSg - Ved':['believes', 'intends', 'manages', 'becomes', 'appears', 'allows', 'follows', 'applies'],
+# 'meronyms - member':['spouse', 'bee', 'word', 'calf', 'lion', 'kitten', 'galaxy', 'county'],
+# 'things - color':['ruby', 'milk', 'apple', 'celery', 'pepper', 'sapphire', 'cabbage', 'peony'],
+# 'hyponyms - misc':['weapon', 'cutlery', 'sofa', 'painting', 'brush', 'computer', 'cup', 'church'],
+# 'adj - superlative':['mild', 'wealthy', 'merry', 'happy', 'shiny', 'able', 'noisy', 'hardy'],
+# 'verb+tion_irreg':['prepare', 'standardize', 'privatize', 'maximize', 'organize', 'determine', 'visualize', 'imagine'],
+# 'synonyms - exact':['shore', 'child', 'portion', 'sweets', 'market', 'homogeneous', 'organized', 'incorrect'],
+# 'hypernyms - animals':['falcon', 'fox', 'viper', 'jackal', 'vulture', 'orangutan', 'goat', 'chimpanzee'],
+# 'country - capital':['santiago', 'tokyo', 'bangkok', 'beijing', 'madrid', 'rome', 'hanoi', 'zagreb']}
         
-        prompt_to_approx(mt, prompt_template1, samples, "sem1")
-        # prompt_to_approx(mt, prompt_template2, samples, "sem2")
-        # prompt_to_approx(mt, nocontext_template, samples, "noc")
-        
-        # weight = torch.eye(4096)
-        # bias = torch.ones(4096)
-        
-        if self.rank is not None:
-            weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
-
-        return None
+#         if relation.name not in spaced_dict.keys():
+#             print(f'{relation.name} not found, continuing')
+#             return None
+            
+#         spaced_samples = spaced_dict[relation.name]
+        for spaced_samples in spaced_list:
+            spaced_samples = ['write']
+            print(f'samples is {spaced_samples}')
+            samples = [sample for sample in relation.samples if sample.subject in spaced_samples]
+            prompt_template1 = relation.prompt_templates[0]
+            mt = self.mt
+            prompt_to_approx(mt, prompt_template1, samples, "sem1")
+            
+            # weight = torch.eye(4096)
+            # bias = torch.ones(4096)
+            
+            if self.rank is not None:
+                weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
+    
+            return None
         
         #TODO: add metadata
         operator = LinearRelationOperator(
@@ -497,7 +459,7 @@ class LearnedLinearEstimator(LinearRelationEstimator):
         
         operator = LinearRelationOperator(
             mt = self.mt,
-            weight=weight.detach().to(dtype).to(device)
+            weight=weight.detach().to(dtype).to(device),
             bias=bias.detach().to(dtype).to(device),
             h_layer=self.h_layer,
             z_layer=z_layer,
