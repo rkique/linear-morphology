@@ -7,11 +7,12 @@ import lre.functional as functional
 from baukit.baukit import parameter_names, get_parameter
 
 import os
+import transformers
 from dataclasses import dataclass, field
 
 import logging
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.WARNING)
+logger.setLevel(logging.INFO)
 handler = logging.StreamHandler(sys.stdout)
 logger.addHandler(handler)
 
@@ -21,7 +22,8 @@ lm_params = {}
 #set the device for this module.
 def determine_device(mt):
     global device
-    device = models.determine_device(mt)
+    device = "cuda:0"
+    #device = models.determine_device(mt)
 
 #determine model parameters for use in LLRA below.
 def determine_params(mt):
@@ -104,12 +106,16 @@ def mean_weights_biases(wdir: str, kind: str, samples: list, i, j=None) -> dict:
 #for retrieving individual weights or biases (ex: building an LRE)
 def mean_weight_or_bias(wdir, kind, samples):
     weights = []
+    #print(f'{device=}')
     for sample in samples:
-        weight_path = f"{wdir}/{sample}/{kind}.pt"
-        #load s_s_weight and s_s_bias
-        weight = torch.load(weight_path).to(device)
-        #append to lists
-        weights.append(weight)
+        try:
+            weight_path = f"{wdir}/{sample}/{kind}.pt"
+            #load s_s_weight and s_s_bias
+            weight = torch.load(weight_path).to(device)
+            #append to lists
+            weights.append(weight)
+        except:
+            logger.info(f'{weight_path} does not exist, skipping')
     mean_weight = torch.stack(weights).mean(dim=0).to(device)
     return mean_weight
 
@@ -254,16 +260,24 @@ class LLRA:
     
 #Given an output hidden state
 #Returns the lm's next token prediction for a (4096) embedding.
-#lm_head applies LayerNorm and then a linear map to get the token-space (50400)
-# (1,4096) -layernorm, linear-> (1,50400) -softmax-> (1,50400) -topk-> (1,5)
+#lm_head applies LayerNorm, and then a linear map to get the token-space (50400)
+#tokenizer.decode is token-text
 def get_object(mt, z, k=5):
-    logits = mt.lm_head(z)
-    dist = torch.softmax(logits.float(), dim=-1)
+    
+    if isinstance(mt.model, transformers.models.gemma2.modeling_gemma2.Gemma2ForCausalLM):
+        z = z.to(dtype=torch.bfloat16)
+        logits = mt.model.lm_head(z)
+        
+    else:
+        logits = mt.lm_head(z)
+        
+    logits = logits.float()
+    dist = torch.softmax(logits, dim=-1)
     topk = dist.topk(k=k, dim=-1)
     probs = topk.values.view(5).tolist()
     token_ids = topk.indices.view(5).tolist()
     words = [mt.tokenizer.decode(token_id) for token_id in token_ids]
-    return (words, probs)
+    return (token_ids, probs)
 
 #returns the hidden state of subject for a prompt.
 def get_hidden_state(mt, prompt, subject, h_layer):

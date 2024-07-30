@@ -82,51 +82,57 @@ def viz(x_min, x_max, y_min,y_max, title, objs_to_viz,
     
         pg = polygon(proj_obj_hss)
         plt.plot(pg[:, 0], pg[:, 1], color='green', linestyle='dashed', linewidth=0.5)
+
+    if 'arrow' in kwargs.keys():
+        plt.scatter(0,0, marker='+', alpha=0.8)
+
+    ##################################
+    ###            Ws GREY         ###
+    ##################################
+
+    x0 = proj_subj_hss[:,0]
+    y0 = proj_subj_hss[:,1]
+    for text, x, y in zip(objs_to_viz, x0, y0):
+        if 'arrow' in kwargs.keys():
+            plt.arrow(x,y, -x, -y, color='lightcoral', alpha=0.5)
+        annotations.append(plt.annotate(text, 
+                     (x, y), 
+                     fontsize=6,
+                     color='lightgrey', 
+                     va='center',
+                     alpha=0.8))
         
     ##################################
     ###            Ws PINK         ###
     ##################################
     
-    if proj_subj_hss is not None and 'ws' in kwargs.keys():
-        x0 = proj_subj_hss[:,0]
-        y0 = proj_subj_hss[:,1]
+    if proj_no_bias_hss is not None and 'ws' in kwargs.keys():
         
         x1 = proj_no_bias_hss[:,0]
         y1 = proj_no_bias_hss[:,1]
-
-        for text, x, y, nx, ny in zip(objs_to_viz, x0, y0, x1, y1):
+        for text, x, y in zip(objs_to_viz, x1, y1):
             annotations.append(plt.annotate(text, 
-                         (x, y), 
-                         fontsize=6,
-                         color='lightgrey', 
-                         va='center',
-                         alpha=0.8))
-            
-            #plt.arrow(x,y, -x, -y, color='lightcoral', alpha=0.5)
-            #plt.arrow(0,0, nx, ny, color='lightcoral', alpha=0.5)
-            
-            r2, phi2 = cart2pol(nx, ny)
-            annotations.append(plt.annotate(text, 
-                         (nx,ny), 
+                         (x,y), 
                          fontsize=6,
                          color='lightcoral', 
                          va='center',
                          alpha=0.8))
-            pass
     
     ##################################
-    ###           BWs WHEAT        ###
+    ###           BWs PINK        ###
     ##################################
     
     if proj_scaled_no_bias_hss is not None and 'Bws' in kwargs.keys():
-        x = proj_scaled_no_bias_hss[:,0]
-        y = proj_scaled_no_bias_hss[:,1]
         
-        for text, x, y in zip(objs_to_viz, x, y):
+        x2 = proj_scaled_no_bias_hss[:,0]
+        y2 = proj_scaled_no_bias_hss[:,1]
+        for text, x, y in zip(objs_to_viz, x2, y2):
+            if 'arrow' in kwargs.keys():
+                plt.arrow(0,0, x, y, color='lightcoral', alpha=0.5)
             annotations.append(plt.annotate(text, 
                          (x, y), 
                          fontsize=6,
-                         color='wheat', 
+                         color='lightcoral', 
                          va='center',
                          alpha=0.8))
     
@@ -139,8 +145,7 @@ def viz(x_min, x_max, y_min,y_max, title, objs_to_viz,
         x2 = proj_reg_hss[:,0]
         y2 = proj_reg_hss[:,1]
         
-        for text, _x, _y, x, y in zip(objs_to_viz, x1, y1, x2, y2):
-            print(x,y)
+        for text, x, y in zip(objs_to_viz, x2, y2):
             annotations.append(plt.annotate(text, 
                          (x, y), 
                          fontsize=6,

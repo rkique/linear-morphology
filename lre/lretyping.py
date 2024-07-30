@@ -12,13 +12,14 @@ PathLike = str | pathlib.Path
 Device = str | torch.device
 
 # Throughout this codebase, we use HuggingFace model implementations.
-Model = (
-    transformers.GPT2LMHeadModel
+Model = (transformers.GPT2LMHeadModel
     | transformers.GPTJForCausalLM
     | transformers.GPTNeoXForCausalLM
     | transformers.LlamaForCausalLM
-)
-Tokenizer = transformers.PreTrainedTokenizerFast
+    | transformers.models.gemma2.modeling_gemma2.Gemma2ForCausalLM)
+
+Tokenizer = transformers.PreTrainedTokenizerFast | transformers.AutoTokenizer
+
 TokenizerOffsetMapping = Sequence[tuple[int, int]]
 ModelInput = transformers.BatchEncoding
 ModelOutput = transformers.modeling_outputs.CausalLMOutput

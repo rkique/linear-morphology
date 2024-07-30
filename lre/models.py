@@ -31,6 +31,8 @@ LLAMA_13B_NAME = "llama-13b"
 LLAMA_30B_NAME = "llama-30b"
 LLAMA_NAME_SHORT = "llama"
 
+DEVICE_NUM = 1
+
 DOWNLOADABLE_MODELS = frozenset({GPT_J_NAME, GPT_NEO_X_NAME, "gpt2-xl"})
 
 
@@ -89,11 +91,11 @@ def unwrap_model(value: Model | ModelAndTokenizer) -> Model:
     return value
 
 
-def unwrap_tokenizer(tokenizer: ModelAndTokenizer | Tokenizer) -> Tokenizer:
+def unwrap_tokenizer(value: ModelAndTokenizer | Tokenizer) -> Tokenizer:
     """Unwrap the tokenizer."""
-    if isinstance(tokenizer, ModelAndTokenizer):
-        return tokenizer.tokenizer
-    return tokenizer
+    if isinstance(value, ModelAndTokenizer):
+        return value.tokenizer
+    return value
 
 
 def determine_embedding_layer_path(model: ModelAndTokenizer | Model) -> str:
@@ -171,12 +173,10 @@ def determine_layer_paths(
         Mapping from layer number to layer path.
 
     """
-    model = unwrap_model(model)
+    model = model.model
 
     if layers is None:
         layers = determine_layers(model)
-
-    assert isinstance(model, Model), type(model)
 
     layer_paths: dict[Layer, str] = {}
     for layer in layers:
@@ -194,36 +194,38 @@ def determine_layer_paths(
             layer_path = f"gpt_neox.layers.{layer_index}"
         elif isinstance(model, transformers.LlamaForCausalLM):
             layer_path = f"model.layers.{layer_index}"
+        elif isinstance(model, transformers.models.gemma2.modeling_gemma2.Gemma2ForCausalLM):
+            layer_path = f"model.layers.{layer_index}"
+        elif isinstance(model, transformers.models.llama.modeling_llama.LlamaForCausalLM):
+            layer_path = f"model.layers.{layer_index}"
         else:
             layer_path = f"transformer.h.{layer_index}"
         layer_paths[layer] = layer_path
 
     return layer_paths if return_dict else tuple(layer_paths[la] for la in layers)
 
-
 def determine_hidden_size(model: ModelAndTokenizer | Model) -> int:
     """Determine hidden rep size for the model."""
     model = unwrap_model(model)
     return model.config.hidden_size
-
 
 def determine_device(model: ModelAndTokenizer | Model) -> torch.device | None:
     """Determine device model is running on."""
     parameter = any_parameter(model)
     return parameter.device if parameter is not None else None
 
-
 def determine_dtype(model: ModelAndTokenizer | Model) -> torch.dtype | None:
     """Determine dtype of model."""
     parameter = any_parameter(model)
     return parameter.dtype if parameter is not None else None
 
-
 def any_parameter(model: ModelAndTokenizer | Model) -> torch.nn.Parameter | None:
     """Get any example parameter for the model."""
     model = unwrap_model(model)
-    return next(iter(model.parameters()), None)
-
+    if model.__class__ == 'lre.models.ModelAndTokenizer':
+        return next(iter(model.model.parameters()), None)
+    else:
+        return next(iter(model.parameters()), None)
 
 def tokenize_words(
     tokenizer: ModelAndTokenizer | Tokenizer,
@@ -285,7 +287,8 @@ def set_padding_side(
     tokenizer: Tokenizer | ModelAndTokenizer, padding_side: str = "right"
 ) -> Iterator[None]:
     """Wrap `tokenizer_utils.set_padding_side`."""
-    tokenizer = unwrap_tokenizer(tokenizer)
+    tokenizer = tokenizer.tokenizer
+    #print(f'{type(tokenizer)=}')
     with tokenizer_utils.set_padding_side(tokenizer, padding_side=padding_side):
         yield
 

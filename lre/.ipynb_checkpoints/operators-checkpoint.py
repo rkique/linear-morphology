@@ -19,9 +19,8 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
 
-DEFAULT_N_ICL = 8
-START, END = 6, 27
-APPROX_FOLDER = f'spaced_er_{START}_{END}_approx'
+from lre.functional import START_LAYER, END_LAYER, H_LAYER_NAME,\
+                        Z_LAYER_NAME, APPROX_FOLDER, DEFAULT_N_ICL
 
 @dataclass
 class PredictedToken(DataClassJsonMixin):
@@ -200,69 +199,18 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 approxes.append(approx)
         
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
-        spaced_list = [['subscribe', 'intrude', 'recommend', 'receive', 'organize', 'write', 'provide', 'discover'],
-                        ['subscribe', 'observe', 'recommend', 'develop', 'consume', 'organize', 'lose', 'offend'],
-                       ['subscribe', 'borrow', 'announce', 'defend', 'mourn', 'examine', 'believe', 'molest'],
-                       ['promote', 'send', 'intrude', 'receive', 'listen', 'explore', 'provide', 'suffer']]
-#         spaced_dict = {'name - nationality':['caesar', 'beethoven', 'strauss', 'newton', 'hitler', 'wagner', 'edison', 'copernicus'],
-# 'animal - youth':['fox', 'muskrat', 'ferret', 'panda', 'cat', 'horse', 'beetle', 'lion'],
-# 'verb_Ving - 3pSg':['performing', 'receiving', 'referring', 'publishing', 'becoming', 'happening', 'appearing', 'continuing'],
-# 'noun+less_reg':['gender', 'guilt', 'error', 'defence', 'penny', 'god', 'window', 'art'],
-# 'verb+able_reg':['avoid', 'expect', 'predict', 'understand', 'expand', 'renew', 'discover', 'achieve'],
-# 'UK_city - county':['salford', 'belfast', 'norwich', 'nottingham', 'exeter', 'oxford', 'salisbury', 'ely'],
-# 'antonyms - binary':['internal', 'top', 'proceed', 'decrement', 'front', 'beginning', 'drop', 'backward'],
-# 'verb_inf - 3pSg':['prevent', 'believe', 'apply', 'promote', 'include', 'contain', 'receive', 'achieve'],
-# 're+verb_reg':['send', 'adjust', 'engage', 'configure', 'calculate', 'deem', 'organize', 'investigate'],
-# 'verb_inf - Ved':['believe', 'receive', 'provide', 'discover', 'perform', 'refer', 'add', 'remain'],
-# 'country - language':['colombia', 'denmark', 'usa', 'ecuador', 'guam', 'bolivia', 'guadeloupe', 'israel'],
-# 'meronyms - part':['guitar', 'door', 'sonata', 'comb', 'radio', 'pub', 'chair', 'table'],
-# 'verb_Ving - Ved':['replacing', 'receiving', 'requiring', 'asking', 'considering', 'telling', 'following', 'allowing'],
-# 'animal - shelter':['dog', 'snake', 'wasp', 'hamster', 'cockroach', 'fly', 'raven', 'crow'],
-# 'hypernyms - misc':['blender', 'fridge', 'cup', 'pie', 'desk', 'necklace', 'sweater', 'jeans'],
-# 'meronyms - substance':['doorknob', 'chocolate', 'yogurt', 'beach', 'glass', 'cloud', 'jeans', 'glacier'],
-# 'noun - plural_irreg':['army', 'child', 'species', 'memory', 'family', 'story', 'security', 'analysis'],
-# 'un+adj_reg':['published', 'realistic', 'predictable', 'resolved', 'known', 'expected', 'desirable', 'suitable'],
-# 'verb+ment_irreg':['replace', 'impair', 'disagree', 'engage', 'excite', 'agree', 'achieve', 'manage'],
-# 'adj+ness_reg':['reasonable', 'impressive', 'directed', 'same', 'helpful', 'competitive', 'huge', 'strange'],
-# 'over+adj_reg':['represented', 'heated', 'confident', 'enthusiastic', 'optimistic', 'turned', 'spent', 'stressed'],
-# 'verb+er_irreg':['promote', 'determine', 'borrow', 'tell', 'provide', 'listen', 'announce', 'offend'],
-# 'adj+ly_reg':['mental', 'huge', 'clinical', 'regional', 'strong', 'political', 'global', 'obvious'],
-# 'name - occupation':['raphael', 'haydn', 'picasso', 'darwin', 'plato', 'edison', 'pacino', 'caesar'],
-# 'synonyms - intensity':['giggle', 'snack', 'guilty', 'interesting', 'strong', 'soon', 'like', 'tasty'],
-# 'animal - sound':['seal', 'chimpanzee', 'monkey', 'lion', 'songbird', 'mule', 'deer', 'mouse'],
-# 'noun - plural_reg':['death', 'member', 'period', 'product', 'year', 'customer', 'office', 'area'],
-# 'Ving - verb_inf':['improving', 'teaching', 'involving', 'operating', 'reducing', 'enjoying', 'following', 'establishing'],
-# 'male - female':['emperor', 'fisherman', 'superman', 'waiter', 'bull', 'grandfather', 'sculptor', 'stepfather'],
-# 'verb_3pSg - Ved':['believes', 'intends', 'manages', 'becomes', 'appears', 'allows', 'follows', 'applies'],
-# 'meronyms - member':['spouse', 'bee', 'word', 'calf', 'lion', 'kitten', 'galaxy', 'county'],
-# 'things - color':['ruby', 'milk', 'apple', 'celery', 'pepper', 'sapphire', 'cabbage', 'peony'],
-# 'hyponyms - misc':['weapon', 'cutlery', 'sofa', 'painting', 'brush', 'computer', 'cup', 'church'],
-# 'adj - superlative':['mild', 'wealthy', 'merry', 'happy', 'shiny', 'able', 'noisy', 'hardy'],
-# 'verb+tion_irreg':['prepare', 'standardize', 'privatize', 'maximize', 'organize', 'determine', 'visualize', 'imagine'],
-# 'synonyms - exact':['shore', 'child', 'portion', 'sweets', 'market', 'homogeneous', 'organized', 'incorrect'],
-# 'hypernyms - animals':['falcon', 'fox', 'viper', 'jackal', 'vulture', 'orangutan', 'goat', 'chimpanzee'],
-# 'country - capital':['santiago', 'tokyo', 'bangkok', 'beijing', 'madrid', 'rome', 'hanoi', 'zagreb']}
-        
-#         if relation.name not in spaced_dict.keys():
-#             print(f'{relation.name} not found, continuing')
-#             return None
-            
-#         spaced_samples = spaced_dict[relation.name]
-        for spaced_samples in spaced_list:
-            spaced_samples = ['write']
-            print(f'samples is {spaced_samples}')
-            samples = [sample for sample in relation.samples if sample.subject in spaced_samples]
-            prompt_template1 = relation.prompt_templates[0]
-            mt = self.mt
-            prompt_to_approx(mt, prompt_template1, samples, "sem1")
+            #samples = [sample for sample in relation.samples if sample.subject in spaced_samples]
+        prompt_template1 = relation.prompt_templates[0]
+        mt = self.mt
+        prompt_to_approx(mt, prompt_template1, samples, "sem1")
             
             # weight = torch.eye(4096)
             # bias = torch.ones(4096)
             
-            if self.rank is not None:
-                weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
+        if self.rank is not None:
+            weight = functional.low_rank_approx(matrix=weight,rank =self.rank)
     
-            return None
+        return None
         
         #TODO: add metadata
         operator = LinearRelationOperator(
@@ -285,16 +233,15 @@ class Word2VecIclEstimator(LinearRelationEstimator):
     scaling_factor: float | None = None
     mode: Literal["icl", "zs"] = "icl"
 
-    def __call__(self, relation: data.Relation, beta: int) -> LinearRelationOperator:
+    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
         _warn_gt_1(prompt_templates=relation.prompt_templates)
+        h_layer = START_LAYER
+        z_layer = END_LAYER
         device = models.determine_device(self.mt)
         dtype = models.determine_dtype(self.mt)
         samples = relation.samples
-        #zs mode seems to be no-context (prompt directly followed by "")
-        prompt_template = (
-            self.mt.tokenizer.eos_token + " {}" if self.mode == "zs" else relation.prompt_templates[0]
-        )
-        logging.info(f'[W2VEstimator call] using {relation.prompt_templates[0]}')
+        prompt_template = relation.prompt_templates[0]
+        logging.info(f'[W2VEstimator] using {START_LAYER} and {END_LAYER} layers on {relation.name}')
 
         H_stack: list[torch.Tensor] = []
         Z_stack: list[torch.Tensor] = []
@@ -308,7 +255,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         z_layer_name = models.determine_layer_paths(self.mt, [z_layer])[0]
 
         training_samples = relation.samples
-        
+        #print(f'{training_samples=}')
         offsets = []
 
         #Calculate Expected(o - s)
@@ -347,6 +294,18 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)
 
+        #MAKE RELATION SAMPLE FOLDER
+        directory = Path(f'{APPROX_FOLDER}/{relation.name}/{sample.subject}')
+        
+        if not directory.exists():
+            directory.mkdir(parents=True, exist_ok=True)
+        
+        pth = f'{APPROX_FOLDER}/{relation.name}/{sample.subject}/prompt.txt'
+        
+        with open(pth, 'w') as file:
+            file.write(prompt)
+            torch.save(offset, f'{APPROX_FOLDER}/{relation.name}/offset_{h_layer}_{z_layer}.pt')
+                    
         # if self.mode == "icl":
         #     prompt_template = functional.make_prompt(
         #         mt=self.mt,
@@ -354,7 +313,8 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #         subject="{}",
         #         examples=training_samples,
         #     )
-
+        return None
+        
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,

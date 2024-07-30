@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from typing import Sequence
-import lre.functional
 #ArrayLike is list OR tuple OR np.array OR tensor
 #StrSequence is list OR tuple of strings
 from lre.lretyping import ArrayLike, StrSequence

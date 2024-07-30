@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from typing import Sequence
-import lre.functional
 #ArrayLike is list OR tuple OR np.array OR tensor
 #StrSequence is list OR tuple of strings
 from lre.lretyping import ArrayLike, StrSequence
@@ -11,6 +10,8 @@ from dataclasses_json import DataClassJsonMixin
 #matching any character prefix makes for a potentially flawed analysis: does it work in practice?
 #Let's match 2+ characters in the prediction.
 
+
+#Checks if a prediction is a substring of the target string.
 def is_nontrivial_prefix(prediction: str, target: str) -> bool:
     target = target.lower().strip()
     prediction = prediction.lower().strip()

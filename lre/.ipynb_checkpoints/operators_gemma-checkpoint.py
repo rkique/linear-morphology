@@ -8,7 +8,7 @@ import torch
 import copy
 
 import lre.models as models
-import lre.functional as functional
+import lre.functional_gemma as functional
 from lre.lretyping import Layer
 import lre.data as data
 from lre.data import RelationSample
@@ -19,8 +19,9 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 from dataclasses_json import DataClassJsonMixin
 
-from lre.functional import START_LAYER, END_LAYER, H_LAYER_NAME,\
-                        Z_LAYER_NAME, APPROX_FOLDER, DEFAULT_N_ICL
+DEFAULT_N_ICL = 8
+START, END = 24, 41
+APPROX_FOLDER = f'gemma_{START}_{END}_approx'
 
 @dataclass
 class PredictedToken(DataClassJsonMixin):
@@ -199,7 +200,7 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
                 approxes.append(approx)
         
         samples = random.sample(relation.samples, DEFAULT_N_ICL)
-            #samples = [sample for sample in relation.samples if sample.subject in spaced_samples]
+        #samples = [sample for sample in relation.samples if sample.subject in spaced_samples]
         prompt_template1 = relation.prompt_templates[0]
         mt = self.mt
         prompt_to_approx(mt, prompt_template1, samples, "sem1")
@@ -233,15 +234,16 @@ class Word2VecIclEstimator(LinearRelationEstimator):
     scaling_factor: float | None = None
     mode: Literal["icl", "zs"] = "icl"
 
-    def __call__(self, relation: data.Relation) -> LinearRelationOperator:
+    def __call__(self, relation: data.Relation, beta: int) -> LinearRelationOperator:
         _warn_gt_1(prompt_templates=relation.prompt_templates)
-        h_layer = START_LAYER
-        z_layer = END_LAYER
         device = models.determine_device(self.mt)
         dtype = models.determine_dtype(self.mt)
         samples = relation.samples
-        prompt_template = relation.prompt_templates[0]
-        logging.info(f'[W2VEstimator] using {START_LAYER} and {END_LAYER} layers on {relation.name}')
+        #zs mode seems to be no-context (prompt directly followed by "")
+        prompt_template = (
+            self.mt.tokenizer.eos_token + " {}" if self.mode == "zs" else relation.prompt_templates[0]
+        )
+        logging.info(f'[W2VEstimator call] using {relation.prompt_templates[0]}')
 
         H_stack: list[torch.Tensor] = []
         Z_stack: list[torch.Tensor] = []
@@ -255,7 +257,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         z_layer_name = models.determine_layer_paths(self.mt, [z_layer])[0]
 
         training_samples = relation.samples
-        #print(f'{training_samples=}')
+        
         offsets = []
 
         #Calculate Expected(o - s)
@@ -294,18 +296,6 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #Averages offset over each sample pair.
         offset = torch.stack(offsets).mean(dim=0)
 
-        #MAKE RELATION SAMPLE FOLDER
-        directory = Path(f'{APPROX_FOLDER}/{relation.name}/{sample.subject}')
-        
-        if not directory.exists():
-            directory.mkdir(parents=True, exist_ok=True)
-        
-        pth = f'{APPROX_FOLDER}/{relation.name}/{sample.subject}/prompt.txt'
-        
-        with open(pth, 'w') as file:
-            file.write(prompt)
-            torch.save(offset, f'{APPROX_FOLDER}/{relation.name}/offset_{h_layer}_{z_layer}.pt')
-                    
         # if self.mode == "icl":
         #     prompt_template = functional.make_prompt(
         #         mt=self.mt,
@@ -313,8 +303,7 @@ class Word2VecIclEstimator(LinearRelationEstimator):
         #         subject="{}",
         #         examples=training_samples,
         #     )
-        return None
-        
+
         operator = LinearRelationOperator(
             mt = self.mt,
             weight=None,

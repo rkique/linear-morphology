@@ -1,4 +1,8 @@
-#We take three methods from functional: make_prompt, find_subject_token_index, compute_hidden_states
+## Plan of Attack
+## Identify layer names in Layer_Weights_gemma (jupyter notebook)
+## call first_order_approx with gemma weights (also in jpyter)
+## Write functional_gemma.py to call first_order_approx with the appropriate name#We take three methods from functional: make_prompt, find_subject_token_index, compute_hidden_states
+
 from dataclasses_json import DataClassJsonMixin
 from dataclasses import dataclass, field
 from typing import Any, Literal, NamedTuple, Sequence, Optional
@@ -17,13 +21,14 @@ import logging
 from pathlib import Path
 
 import numpy as np
-from llra.build import layer_norm
 
 logger = logging.getLogger(__name__)
 
 DEFAULT_BATCH_SIZE = 1
 DEFAULT_N_ICL = 8 
 DEFAULT_N_TOP_LM = 1
+START, END = 24, 41
+APPROX_FOLDER = f'gemma_{START}_{END}_approx'
 
 #Build a prompt from a template string, target, and examples. 
 #Defaults to using the first object.
@@ -36,6 +41,7 @@ def make_prompt(template: str,
     if examples != None:
       others = [x for x in examples if x != target]
       random.shuffle(others)
+      #was x.object[0]
       prompt = (
                   sep_token.join(
                       template.format(x.subject) + f" {x.object[0]}" for x in others
@@ -55,16 +61,19 @@ def find_subject_token_index(*,
     device = models.determine_device(mt)
     inputs = mt.tokenizer(prompt, return_tensors="pt", return_offsets_mapping=True)
     offset_mapping = inputs.pop("offset_mapping").to(device)
+
     if "token_type_ids" in inputs:  # llama tokenizer has this annoying field
         inputs.pop("token_type_ids")
+        
     # Find the last occurrence of the subject
     subject_i, subject_j = tokenizer_utils.find_token_range(
         prompt, subject, offset_mapping=offset_mapping[0], occurrence=-1
     )
+    #convert the offset to an absolute index.
     subject_token_index = tokenizer_utils.offset_to_absolute_index(
         subject_i, subject_j, offset
     )
-
+    # print(f"subject_token_index is {subject_token_index}")
     return subject_token_index, inputs
 
 class ComputeHiddenStatesOutput(NamedTuple):
@@ -208,11 +217,11 @@ def order_1_approx(
         use_cache = past_key_values is not None
         
         s_j = ret[h_layer_name].output[0][0, h_index] #s_j
-        ln_s_j = ret[h_ln_layer_name].output[0, h_index] #layer-normed s_j
-        ln_o_j1 = ret[z_ln_layer_name].output[0][0, -1] #layer-normed (right before) o_j1
+        # ln_s_j = ret[h_ln_layer_name].output[0][0, h_index] #layer-normed s_j
+        # ln_o_j1 = ret[z_ln_layer_name].output[0][0, -1] #layer-normed (right before) o_j1
         o_j1 = ret[z_layer_name].output[0][0, -1] #o_j1
         
-        print(f'{s_j.shape=} {ln_s_j.shape=} {ln_o_j1.shape=}')
+        # print(f'{s_j.shape=} {ln_s_j.shape=} {ln_o_j1.shape=}')
         
         h_layer = h_layer_name.split(".")[2]
         z_layer = z_layer_name.split(".")[2]
@@ -234,78 +243,51 @@ def order_1_approx(
             z = untuple(ret[z_layer_name].output)[0, -1]
             return z.half().to(device)
 
-        def ln_o_j1_from_ln_s_j(ln_s_j: torch.Tensor) -> torch.Tensor:
+        # def ln_o_j1_from_ln_s_j(ln_s_j: torch.Tensor) -> torch.Tensor:
             
-            def insert_ln_s_j(output: tuple, layer: str) -> tuple:
-                hs = untuple(output)
-                if layer != h_ln_layer_name:
-                    logger.warn(f"[insert_s_j] layer {layer} does not match {h_ln_layer_name}")
-                    return output
-                hs[0, h_index] = ln_s_j
+        #     def insert_ln_s_j(output: tuple, layer: str) -> tuple:
+        #         hs = untuple(output)
+        #         if layer != h_ln_layer_name:
+        #             logger.warn(f"[insert_s_j] layer {layer} does not match {h_ln_layer_name}")
+        #             return output
+        #         hs[0, h_index] = ln_s_j
             
-            with TraceDict(mt.model, (h_ln_layer_name, z_ln_layer_name),
-                                       edit_output=insert_ln_s_j) as ret:
-                mt.model(input_ids=input_ids,
-                        use_cache=use_cache,
-                        past_key_values=past_key_values)
-            z = untuple(ret[z_ln_layer_name].output)[0, -1]
-            return z.half().to(device)
+        #     with TraceDict(mt.model, (h_ln_layer_name, z_ln_layer_name),
+        #                                edit_output=insert_ln_s_j) as ret:
+        #         mt.model(input_ids=input_ids,
+        #                 use_cache=use_cache,
+        #                 past_key_values=past_key_values)
+        #     z = untuple(ret[z_ln_layer_name].output)[0, -1]
+        #     return z.half().to(device)
+
 
         logging.info(f"[order_1_approx] starting weight calculation for {prompt}")
         
         s_j = s_j.half().to(device)
-        ln_s_j = ln_s_j.half().to(device)
-        ln_o_j1 = ln_o_j1.half().to(device)
         o_j1 = o_j1.half().to(device)
 
         s_o_weight = torch.autograd.functional.jacobian(o_j1_from_s_j, s_j).half().to(device)
-        ln_s_o_weight = torch.autograd.functional.jacobian(ln_o_j1_from_ln_s_j,
-                                                           ln_s_j).half().to(device)
-        
         s_o_bias = o_j1[None] - s_j[None].mm(s_o_weight.t())
-        ln_s_o_bias = ln_o_j1[None] - ln_s_j[None].mm(ln_s_o_weight.t())  
         
         logging.info(f"""[order_1_approx] weight calculation finished \n
                         {s_j=} \n
-                        {ln_s_j=} \n
-                        {ln_o_j1=} \n
                         {o_j1=} \n
                         s_o_weight: {s_o_weight} \n
-                        ln_s_o_weight: {ln_s_o_weight} \n
                         {s_o_bias=} \n
-                        {ln_s_o_bias=}
                     """)
         
-        torch.save(s_o_weight, f'ln_approx/{relation_name}/{subject}/s_o_weight_{h_layer}_{z_layer}.pt')
-        torch.save(s_o_bias, f'ln_approx/{relation_name}/{subject}/s_o_bias_{h_layer}_{z_layer}.pt')
-        torch.save(ln_s_o_weight, f'ln_approx/{relation_name}/{subject}/ln_s_o_weight_{h_layer}_{z_layer}.pt')
-        torch.save(ln_s_o_bias, f'ln_approx/{relation_name}/{subject}/ln_s_o_bias_{h_layer}_{z_layer}.pt')
+        torch.save(s_o_weight, f'{APPROX_FOLDER}/{relation_name}/{subject}/s_o_weight_{h_layer}_{z_layer}.pt')
+        torch.save(s_o_bias, f'{APPROX_FOLDER}/{relation_name}/{subject}/s_o_bias_{h_layer}_{z_layer}.pt')
 
     # 5 -> 6.ln_1 -> ... -> 27.ln_1 -> 27
     
-    save_grads("transformer.h.5", 
-               "transformer.h.6.ln_1", 
-               "transformer.h.27.ln_1", 
-               "transformer.h.27",
+    save_grads(f"model.layers.{START}", 
+               "", 
+               "", 
+               f"model.layers.{END}",
                mt, prompt, prompt_kind, relation_name, subject,
                h_index, h, z_index, inputs)
     
-    # save_grads(21, 26, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-    # save_grads(26, 27, mt, prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-    
-    # save_grads(1, 27, mt, 
-    # prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-
-    # save_grads("transformer.h.1", "transformer.h.27", mt, 
-    #        prompt, prompt_kind,
-    #        relation_name, subject, h_index, h, z_index, inputs)
-
-    # for j in range(h_layer, z_layer):
-    #     save_grads(f"transformer.h.{j}",f"transformer.h.{j+1}", mt, 
-    #     prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
-
-    # NB(evan): Something about the jacobian computation causes a lot of memory
-    # fragmentation, or some kind of memory leak. This seems to help.
     torch.cuda.empty_cache()
 
     return None
