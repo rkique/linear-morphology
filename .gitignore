@@ -10,5 +10,5 @@ data/capprox
 data/qapprox
 data/ln_approx
 data/env
-data/*
+data/*/*
 ceo
