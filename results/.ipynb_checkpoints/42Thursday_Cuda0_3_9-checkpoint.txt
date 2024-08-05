@@ -1,0 +1,5 @@
+2024-08-01 14:47:27 __main__ INFO     name - nationality,7,11,18,7,19,2,19,0,0
+2024-08-01 14:47:27 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 14:47:28 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 14:48:51 __main__ INFO     animal - youth,7,19,32,15,28,6,31,0,0
+2024-08-01 14:50:21 __main__ INFO     verb_Ving - 3pSg,7,37,42,15,42,0,0,0,0

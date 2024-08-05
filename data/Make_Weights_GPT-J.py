@@ -1,3 +1,6 @@
+#This script was used to generate weight and bias Jacobians for GPT-J.
+#Given: folder paths and device number
+#Utilizes functions in lre/operators.py and lre/functional.py to write Jacobians to file.
 import sys
 import json
 sys.path.append('..')
@@ -125,11 +128,8 @@ file_paths = [
  'json/lexsem/L06 [meronyms - part].json'
 ]
 
-#disregard any numbers here
-
+#The number parameters here are obsolete, functional.py specifies the weights made.
 for json_path in file_paths:
     print(f'reading in {json_path}')
-    train_operator_on_json(Word2VecIclEstimator, json_path, 6,27) #not used
-    #train_operator_on_json(JacobianIclMeanEstimator, json_path, 1, 27)
-    #json_path = 'json/' + json_path
-    #test_operator_on_json(Word2VecIclEstimator, json_path, 5, 27)
+    #train_operator_on_json(Word2VecIclEstimator, json_path, 6,27)
+    train_operator_on_json(JacobianIclMeanEstimator, json_path, 1, 27)

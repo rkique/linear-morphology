@@ -1,3 +1,17 @@
+#This is a modified version of functional.py
+#from Hernandez et. al. "Linearity of Relation Decoding in Transformer LMs" (2023)
+#Instead of creating weight+bias and testing in the same process, 
+#Saves weight+bias to a folder, which should be tested separately.
+
+
+#Given: the name of the folder to save weight+bias to,
+#       start layer name,
+#       end layer name
+
+#Saves weight+bias for the Jacobian
+# @ start_layer @ last_subject_token --> @ end_layer @ object_token
+#to the specified folder
+
 from dataclasses_json import DataClassJsonMixin
 from dataclasses import dataclass, field
 from typing import Any, Literal, NamedTuple, Sequence, Optional
@@ -21,7 +35,7 @@ from llra.build import layer_norm
 
 logger = logging.getLogger(__name__)
 
-START_LAYER, END_LAYER = 10,31
+START_LAYER, END_LAYER = 4,31
 APPROX_FOLDER = f'llama_{START_LAYER}_{END_LAYER}_approx'
 H_LAYER_NAME = f'model.layers.{START_LAYER}'
 Z_LAYER_NAME = f'model.layers.{END_LAYER}'
@@ -48,7 +62,6 @@ def make_prompt(template: str,
                   + sep_token
                   + prompt
               )
-      #prompt = models.maybe_prefix_eos(mt, prompt) (?)
     return prompt
 
 #Returns the subject token index, but also the list of tokens.
@@ -202,19 +215,10 @@ def order_1_approx(
     save_grads(H_LAYER_NAME, Z_LAYER_NAME, mt,
                prompt, prompt_kind, relation_name, subject,
                h_index, h, z_index, inputs)
-    
-    # save_grads("transformer.h.1", "transformer.h.27", mt, 
-    #        prompt, prompt_kind,
-    #        relation_name, subject, h_index, h, z_index, inputs)
-
-    # for j in range(h_layer, z_layer):
-    #     save_grads(f"transformer.h.{j}",f"transformer.h.{j+1}", mt, 
-    #     prompt, prompt_kind, relation_name, subject, h_index, h, z_index, inputs)
 
     # NB(evan): Something about the jacobian computation causes a lot of memory
     # fragmentation, or some kind of memory leak. This seems to help.
     torch.cuda.empty_cache()
-
     return None
 
 @dataclass(frozen=True, kw_only=True)

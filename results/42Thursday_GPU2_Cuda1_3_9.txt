@@ -1,0 +1,168 @@
+2024-08-01 14:49:20 __main__ INFO     name - nationality,7,10,19,8,18,3,19,0,0
+2024-08-01 14:49:20 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 14:49:20 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 14:49:53 __main__ INFO     animal - youth,7,17,30,15,26,7,26,0,0
+2024-08-01 14:50:39 __main__ INFO     verb_Ving - 3pSg,7,38,42,15,42,0,0,0,0
+2024-08-01 14:51:49 __main__ INFO     noun+less_reg,7,40,42,40,42,0,0,0,0
+2024-08-01 14:53:17 __main__ INFO     verb+able_reg,7,35,40,32,41,0,0,0,0
+2024-08-01 14:54:28 __main__ INFO     UK_city - county,7,7,12,6,10,0,0,0,0
+2024-08-01 14:55:47 __main__ INFO     antonyms - binary,7,27,37,28,34,0,0,0,0
+2024-08-01 14:57:08 __main__ INFO     verb_inf - 3pSg,7,42,42,41,42,0,0,0,0
+2024-08-01 14:58:19 __main__ INFO     re+verb_reg,7,34,35,18,33,36,36,0,0
+2024-08-01 14:59:40 __main__ INFO     verb_inf - Ved,7,40,41,35,41,0,0,0,0
+2024-08-01 15:01:10 __main__ INFO     country - language,7,21,32,6,34,7,35,0,0
+2024-08-01 15:02:36 __main__ INFO     meronyms - part,7,14,27,14,27,4,27,0,0
+2024-08-01 15:04:03 __main__ INFO     verb_Ving - Ved,7,40,41,18,41,0,0,0,0
+2024-08-01 15:05:24 __main__ INFO     animal - shelter,7,15,25,5,23,8,24,0,0
+2024-08-01 15:06:50 __main__ INFO     hypernyms - misc,7,17,24,12,24,5,26,0,0
+2024-08-01 15:08:11 __main__ INFO     meronyms - substance,7,21,33,10,33,3,34,0,0
+2024-08-01 15:09:31 __main__ INFO     noun - plural_irreg,7,42,42,42,42,0,0,0,0
+2024-08-01 15:10:52 __main__ INFO     un+adj_reg,7,39,42,34,40,3,42,0,0
+2024-08-01 15:12:08 __main__ INFO     verb+ment_irreg,7,42,42,39,41,1,41,0,0
+2024-08-01 15:13:19 __main__ INFO     adj+ness_reg,7,36,36,35,35,1,36,0,0
+2024-08-01 15:14:34 __main__ INFO     over+adj_reg,7,30,42,2,42,42,42,0,0
+2024-08-01 15:16:06 __main__ INFO     verb+er_irreg,7,31,40,33,40,0,0,0,0
+2024-08-01 15:17:24 __main__ INFO     adj+ly_reg,7,38,41,36,42,0,0,0,0
+2024-08-01 15:18:49 __main__ INFO     name - occupation,7,28,38,13,37,4,34,0,0
+2024-08-01 15:19:50 __main__ INFO     synonyms - intensity,7,6,22,4,14,1,18,0,0
+2024-08-01 15:20:49 __main__ INFO     animal - sound,7,21,26,14,24,2,28,0,0
+2024-08-01 15:21:59 __main__ INFO     noun - plural_reg,7,42,42,42,42,0,0,0,0
+2024-08-01 15:23:10 __main__ INFO     Ving - verb_inf,7,36,42,26,42,0,0,0,0
+2024-08-01 15:24:13 __main__ INFO     male - female,7,12,28,13,26,0,0,0,0
+2024-08-01 15:25:23 __main__ INFO     verb_3pSg - Ved,7,42,42,35,41,0,0,0,0
+2024-08-01 15:26:26 __main__ INFO     meronyms - member,7,18,28,9,26,5,24,0,0
+2024-08-01 15:27:28 __main__ INFO     things - color,7,26,33,9,34,22,33,0,0
+2024-08-01 15:28:26 __main__ INFO     hyponyms - misc,7,5,20,7,20,1,20,0,0
+2024-08-01 15:29:34 __main__ INFO     adj - superlative,7,32,37,31,37,0,0,0,0
+2024-08-01 15:30:41 __main__ INFO     verb+tion_irreg,7,41,41,37,41,0,0,0,0
+2024-08-01 15:31:41 __main__ INFO     synonyms - exact,7,3,19,3,19,0,0,0,0
+2024-08-01 15:32:47 __main__ INFO     hypernyms - animals,7,33,36,19,37,9,33,0,0
+2024-08-01 15:33:44 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_weight_8_27.pt does not exist, skipping
+2024-08-01 15:33:45 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_bias_8_27.pt does not exist, skipping
+2024-08-01 15:34:17 __main__ INFO     country - capital,7,21,28,21,30,1,34,0,0
+2024-08-01 15:35:03 __main__ INFO     name - nationality,7,10,19,6,21,3,20,0,0
+2024-08-01 15:35:03 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 15:35:03 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 15:35:42 __main__ INFO     animal - youth,7,19,30,15,27,8,27,0,0
+2024-08-01 15:36:29 __main__ INFO     verb_Ving - 3pSg,7,38,42,13,42,0,0,0,0
+2024-08-01 15:37:18 __main__ INFO     noun+less_reg,7,41,41,39,40,0,0,0,0
+2024-08-01 15:38:13 __main__ INFO     verb+able_reg,7,35,41,28,40,0,0,0,0
+2024-08-01 15:38:59 __main__ INFO     UK_city - county,7,7,12,7,10,0,0,0,0
+2024-08-01 15:39:58 __main__ INFO     antonyms - binary,7,27,35,27,35,0,0,0,0
+2024-08-01 15:41:26 __main__ INFO     verb_inf - 3pSg,7,42,42,41,42,0,0,0,0
+2024-08-01 15:42:39 __main__ INFO     re+verb_reg,7,35,36,16,33,34,35,0,0
+2024-08-01 15:44:13 __main__ INFO     verb_inf - Ved,7,39,41,35,41,0,0,0,0
+2024-08-01 15:45:45 __main__ INFO     country - language,7,21,34,5,34,8,32,0,0
+2024-08-01 15:47:10 __main__ INFO     meronyms - part,7,13,22,11,27,3,23,0,0
+2024-08-01 15:48:26 __main__ INFO     verb_Ving - Ved,7,40,41,14,41,0,0,0,0
+2024-08-01 15:49:33 __main__ INFO     animal - shelter,7,17,28,6,25,10,31,0,0
+2024-08-01 15:50:36 __main__ INFO     hypernyms - misc,7,19,26,13,25,5,24,0,0
+2024-08-01 15:51:34 __main__ INFO     meronyms - substance,7,19,35,11,31,4,32,0,0
+2024-08-01 15:52:35 __main__ INFO     noun - plural_irreg,7,41,42,41,42,0,0,0,0
+2024-08-01 15:53:38 __main__ INFO     un+adj_reg,7,40,42,32,42,1,42,0,0
+2024-08-01 15:54:43 __main__ INFO     verb+ment_irreg,7,42,42,39,41,1,41,0,0
+2024-08-01 15:55:44 __main__ INFO     adj+ness_reg,7,37,37,35,37,1,37,0,0
+2024-08-01 15:56:50 __main__ INFO     over+adj_reg,7,32,42,2,42,42,42,0,0
+2024-08-01 15:57:58 __main__ INFO     verb+er_irreg,7,32,41,35,41,0,0,0,0
+2024-08-01 15:59:02 __main__ INFO     adj+ly_reg,7,39,42,34,39,0,0,0,0
+2024-08-01 16:00:04 __main__ INFO     name - occupation,7,26,37,20,34,5,36,0,0
+2024-08-01 16:01:01 __main__ INFO     synonyms - intensity,7,8,20,7,20,0,0,0,0
+2024-08-01 16:01:57 __main__ INFO     animal - sound,7,21,25,15,25,4,27,0,0
+2024-08-01 16:03:03 __main__ INFO     noun - plural_reg,7,42,42,42,42,0,0,0,0
+2024-08-01 16:04:07 __main__ INFO     Ving - verb_inf,7,37,42,26,42,0,0,0,0
+2024-08-01 16:05:07 __main__ INFO     male - female,7,10,31,12,27,0,0,0,0
+2024-08-01 16:06:13 __main__ INFO     verb_3pSg - Ved,7,42,42,35,42,0,0,0,0
+2024-08-01 16:07:12 __main__ INFO     meronyms - member,7,19,29,9,29,5,26,0,0
+2024-08-01 16:08:10 __main__ INFO     things - color,7,23,35,8,33,23,35,0,0
+2024-08-01 16:09:07 __main__ INFO     hyponyms - misc,7,7,25,6,25,0,0,0,0
+2024-08-01 16:10:12 __main__ INFO     adj - superlative,7,32,37,30,38,0,0,0,0
+2024-08-01 16:11:19 __main__ INFO     verb+tion_irreg,7,40,41,37,42,0,0,0,0
+2024-08-01 16:12:18 __main__ INFO     synonyms - exact,7,2,18,3,19,0,0,0,0
+2024-08-01 16:13:23 __main__ INFO     hypernyms - animals,7,31,35,18,38,13,34,0,0
+2024-08-01 16:13:52 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_weight_8_27.pt does not exist, skipping
+2024-08-01 16:13:53 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_bias_8_27.pt does not exist, skipping
+2024-08-01 16:14:24 __main__ INFO     country - capital,7,20,28,20,28,1,33,0,0
+2024-08-01 16:14:56 __main__ INFO     name - nationality,7,11,19,6,18,3,18,0,0
+2024-08-01 16:14:56 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 16:14:56 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 16:15:29 __main__ INFO     animal - youth,7,19,30,14,26,6,30,0,0
+2024-08-01 16:16:10 __main__ INFO     verb_Ving - 3pSg,7,38,42,14,42,0,0,0,0
+2024-08-01 16:16:45 __main__ INFO     noun+less_reg,7,40,41,39,41,0,0,0,0
+2024-08-01 16:17:29 __main__ INFO     verb+able_reg,7,35,39,33,39,0,0,0,0
+2024-08-01 16:18:01 __main__ INFO     UK_city - county,7,7,11,6,11,0,0,0,0
+2024-08-01 16:18:44 __main__ INFO     antonyms - binary,7,27,36,29,37,0,0,0,0
+2024-08-01 16:19:26 __main__ INFO     verb_inf - 3pSg,7,42,42,41,42,0,0,0,0
+2024-08-01 16:20:01 __main__ INFO     re+verb_reg,7,32,34,15,32,35,36,0,0
+2024-08-01 16:20:50 __main__ INFO     verb_inf - Ved,7,39,41,36,41,0,0,0,0
+2024-08-01 16:21:33 __main__ INFO     country - language,7,20,33,5,34,8,34,0,0
+2024-08-01 16:22:08 __main__ INFO     meronyms - part,7,14,28,15,28,3,28,0,0
+2024-08-01 16:22:52 __main__ INFO     verb_Ving - Ved,7,40,41,15,41,0,0,0,0
+2024-08-01 16:23:30 __main__ INFO     animal - shelter,7,16,26,7,26,8,25,0,0
+2024-08-01 16:24:08 __main__ INFO     hypernyms - misc,7,19,25,13,25,4,25,0,0
+2024-08-01 16:24:48 __main__ INFO     meronyms - substance,7,21,35,11,31,4,34,0,0
+2024-08-01 16:25:29 __main__ INFO     noun - plural_irreg,7,42,42,42,42,1,42,0,0
+2024-08-01 16:26:15 __main__ INFO     un+adj_reg,7,40,42,32,42,3,42,0,0
+2024-08-01 16:26:59 __main__ INFO     verb+ment_irreg,7,42,42,40,42,1,41,0,0
+2024-08-01 16:27:38 __main__ INFO     adj+ness_reg,7,37,37,35,37,0,0,0,0
+2024-08-01 16:28:25 __main__ INFO     over+adj_reg,7,33,42,2,42,41,42,0,0
+2024-08-01 16:29:18 __main__ INFO     verb+er_irreg,7,32,40,33,40,0,0,0,0
+2024-08-01 16:30:02 __main__ INFO     adj+ly_reg,7,38,41,34,42,0,0,0,0
+2024-08-01 16:30:50 __main__ INFO     name - occupation,7,28,35,13,33,4,36,0,0
+2024-08-01 16:31:30 __main__ INFO     synonyms - intensity,7,6,15,5,17,0,0,0,0
+2024-08-01 16:32:14 __main__ INFO     animal - sound,7,18,25,16,23,3,27,0,0
+2024-08-01 16:33:02 __main__ INFO     noun - plural_reg,7,42,42,42,42,0,0,0,0
+2024-08-01 16:33:59 __main__ INFO     Ving - verb_inf,7,37,42,29,42,0,0,0,0
+2024-08-01 16:34:50 __main__ INFO     male - female,7,12,28,12,30,0,0,0,0
+2024-08-01 16:35:48 __main__ INFO     verb_3pSg - Ved,7,42,42,36,42,0,0,0,0
+2024-08-01 16:36:43 __main__ INFO     meronyms - member,7,19,27,10,27,6,27,0,0
+2024-08-01 16:37:33 __main__ INFO     things - color,7,21,30,8,29,24,37,0,0
+2024-08-01 16:38:23 __main__ INFO     hyponyms - misc,7,7,28,7,29,1,22,0,0
+2024-08-01 16:39:22 __main__ INFO     adj - superlative,7,32,36,30,38,0,0,0,0
+2024-08-01 16:40:26 __main__ INFO     verb+tion_irreg,7,40,41,35,41,0,0,0,0
+2024-08-01 16:41:29 __main__ INFO     synonyms - exact,7,3,18,3,18,0,0,0,0
+2024-08-01 16:42:31 __main__ INFO     hypernyms - animals,7,36,42,18,42,12,33,0,0
+2024-08-01 16:43:02 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_weight_8_27.pt does not exist, skipping
+2024-08-01 16:43:02 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_bias_8_27.pt does not exist, skipping
+2024-08-01 16:43:33 __main__ INFO     country - capital,7,20,28,20,28,0,0,0,0
+2024-08-01 16:44:04 __main__ INFO     name - nationality,7,12,19,6,18,2,18,0,0
+2024-08-01 16:44:04 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 16:44:04 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 16:44:40 __main__ INFO     animal - youth,7,18,29,14,27,7,27,0,0
+2024-08-01 16:45:35 __main__ INFO     verb_Ving - 3pSg,7,38,42,15,42,0,0,0,0
+2024-08-01 16:46:21 __main__ INFO     noun+less_reg,7,41,41,40,41,0,0,0,0
+2024-08-01 16:47:07 __main__ INFO     verb+able_reg,7,36,40,33,40,0,0,0,0
+2024-08-01 16:47:38 __main__ INFO     UK_city - county,7,8,11,5,11,0,0,0,0
+2024-08-01 16:48:17 __main__ INFO     antonyms - binary,7,29,37,29,36,0,0,0,0
+2024-08-01 16:48:58 __main__ INFO     verb_inf - 3pSg,7,42,42,41,42,0,0,0,0
+2024-08-01 16:49:35 __main__ INFO     re+verb_reg,7,33,33,19,36,36,36,0,0
+2024-08-01 16:50:11 __main__ INFO     verb_inf - Ved,7,39,41,35,42,0,0,0,0
+2024-08-01 16:50:48 __main__ INFO     country - language,7,20,33,5,32,7,32,0,0
+2024-08-01 16:51:24 __main__ INFO     meronyms - part,7,15,28,15,28,5,28,0,0
+2024-08-01 16:52:02 __main__ INFO     verb_Ving - Ved,7,40,41,17,41,0,0,0,0
+2024-08-01 16:52:38 __main__ INFO     animal - shelter,7,14,23,6,23,10,27,0,0
+2024-08-01 16:53:14 __main__ INFO     hypernyms - misc,7,17,26,11,24,6,24,0,0
+2024-08-01 16:53:53 __main__ INFO     meronyms - substance,7,22,35,11,33,4,35,0,0
+2024-08-01 16:54:33 __main__ INFO     noun - plural_irreg,7,41,42,41,42,0,0,0,0
+2024-08-01 16:55:11 __main__ INFO     un+adj_reg,7,38,40,34,41,2,40,0,0
+2024-08-01 16:55:50 __main__ INFO     verb+ment_irreg,7,41,42,40,42,1,42,0,0
+2024-08-01 16:56:31 __main__ INFO     adj+ness_reg,7,36,38,35,36,1,35,0,0
+2024-08-01 16:57:15 __main__ INFO     over+adj_reg,7,34,42,2,42,41,42,0,0
+2024-08-01 16:58:00 __main__ INFO     verb+er_irreg,7,31,39,29,40,0,0,0,0
+2024-08-01 16:58:44 __main__ INFO     adj+ly_reg,7,36,41,36,41,0,0,0,0
+2024-08-01 16:59:26 __main__ INFO     name - occupation,7,27,36,18,34,5,35,0,0
+2024-08-01 17:00:06 __main__ INFO     synonyms - intensity,7,7,14,6,14,1,20,0,0
+2024-08-01 17:00:45 __main__ INFO     animal - sound,7,19,26,15,26,3,23,0,0
+2024-08-01 17:01:30 __main__ INFO     noun - plural_reg,7,42,42,42,42,0,0,0,0
+2024-08-01 17:02:10 __main__ INFO     Ving - verb_inf,7,35,42,26,42,0,0,0,0
+2024-08-01 17:02:45 __main__ INFO     male - female,7,12,25,11,27,0,0,0,0
+2024-08-01 17:03:21 __main__ INFO     verb_3pSg - Ved,7,42,42,35,42,0,0,0,0
+2024-08-01 17:03:52 __main__ INFO     meronyms - member,7,17,29,9,26,4,24,0,0
+2024-08-01 17:04:25 __main__ INFO     things - color,7,22,32,5,29,20,32,0,0
+2024-08-01 17:04:53 __main__ INFO     hyponyms - misc,7,11,31,10,31,1,25,0,0
+2024-08-01 17:05:33 __main__ INFO     adj - superlative,7,32,37,30,37,0,0,0,0
+2024-08-01 17:06:07 __main__ INFO     verb+tion_irreg,7,40,41,36,41,0,0,0,0
+2024-08-01 17:06:29 __main__ INFO     synonyms - exact,7,3,17,3,19,0,0,0,0
+2024-08-01 17:07:01 __main__ INFO     hypernyms - animals,7,31,38,18,38,14,38,0,0
+2024-08-01 17:07:09 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_weight_8_27.pt does not exist, skipping
+2024-08-01 17:07:09 llra.build INFO     8_27_approx/country - capital/ottawa/s_o_bias_8_27.pt does not exist, skipping
+2024-08-01 17:07:36 __main__ INFO     country - capital,7,19,27,18,27,0,0,0,0

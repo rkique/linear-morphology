@@ -1,0 +1,272 @@
+2024-07-24 12:33:33 root INFO     loading model + tokenizer
+2024-07-24 12:33:50 root INFO     model + tokenizer loaded
+2024-07-24 12:33:50 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+er_irreg
+2024-07-24 12:33:50 root INFO     building operator verb+er_irreg
+2024-07-24 12:33:55 root INFO     loading model + tokenizer
+2024-07-24 12:34:12 root INFO     model + tokenizer loaded
+2024-07-24 12:34:12 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+er_irreg
+2024-07-24 12:34:12 root INFO     building operator verb+er_irreg
+2024-07-24 12:34:36 root INFO     loading model + tokenizer
+2024-07-24 12:34:53 root INFO     model + tokenizer loaded
+2024-07-24 12:34:53 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+er_irreg
+2024-07-24 12:34:53 root INFO     building operator verb+er_irreg
+2024-07-24 12:35:27 root INFO     loading model + tokenizer
+2024-07-24 12:35:44 root INFO     model + tokenizer loaded
+2024-07-24 12:35:44 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+er_irreg
+2024-07-24 12:35:44 root INFO     building operator verb+er_irreg
+2024-07-24 12:35:45 root INFO     [order_1_approx] starting weight calculation for If you intrude something, you are a intruder
+If you write something, you are a writer
+If you receive something, you are a receiver
+If you subscribe something, you are a subscriber
+If you recommend something, you are a recommender
+If you provide something, you are a provider
+If you organize something, you are a organizer
+If you discover something, you are a
+2024-07-24 12:35:45 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:38:40 root INFO     loading model + tokenizer
+2024-07-24 12:38:57 root INFO     model + tokenizer loaded
+2024-07-24 12:38:57 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+er_irreg
+2024-07-24 12:38:57 root INFO     building operator verb+er_irreg
+2024-07-24 12:38:58 root INFO     [order_1_approx] starting weight calculation for If you provide something, you are a provider
+If you write something, you are a writer
+If you organize something, you are a organizer
+If you receive something, you are a receiver
+If you recommend something, you are a recommender
+If you intrude something, you are a intruder
+If you subscribe something, you are a subscriber
+If you discover something, you are a
+2024-07-24 12:38:58 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:42:56 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.6768,  0.3218, -0.2957,  ...,  0.4124, -0.7314,  0.4390],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.2695e+00,  3.9062e-03, -2.8203e+00,  ..., -6.3594e+00,
+        -8.9966e-02,  1.2949e+00], device='cuda:1', dtype=torch.float16,
+       grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0051,  0.0101,  0.0081,  ...,  0.0113, -0.0017, -0.0098],
+        [ 0.0070, -0.0112,  0.0048,  ...,  0.0129,  0.0095, -0.0003],
+        [ 0.0042,  0.0094, -0.0089,  ...,  0.0013, -0.0130,  0.0043],
+        ...,
+        [-0.0060,  0.0032, -0.0117,  ..., -0.0126, -0.0078, -0.0077],
+        [ 0.0065,  0.0220,  0.0018,  ...,  0.0034, -0.0198,  0.0043],
+        [-0.0098, -0.0061,  0.0009,  ...,  0.0122,  0.0090,  0.0043]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.4375, -0.1896, -2.7090,  ..., -6.1289, -0.1797,  1.3906]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 12:42:57 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you provide something, you are a provider
+If you write something, you are a writer
+If you organize something, you are a organizer
+If you receive something, you are a receiver
+If you recommend something, you are a recommender
+If you intrude something, you are a intruder
+If you subscribe something, you are a subscriber
+If you discover something, you are a
+2024-07-24 12:42:57 root INFO     [order_1_approx] starting weight calculation for If you discover something, you are a discoverer
+If you receive something, you are a receiver
+If you organize something, you are a organizer
+If you recommend something, you are a recommender
+If you write something, you are a writer
+If you provide something, you are a provider
+If you subscribe something, you are a subscriber
+If you intrude something, you are a
+2024-07-24 12:42:57 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:46:57 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.9966, -1.4033,  0.3677,  ...,  0.6450, -1.2969,  1.6943],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 5.2852,  0.9287, -4.4258,  ..., -0.7412,  0.1093,  2.7773],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0046,  0.0026,  0.0082,  ..., -0.0003, -0.0006, -0.0126],
+        [ 0.0002,  0.0047,  0.0009,  ..., -0.0030,  0.0111, -0.0042],
+        [ 0.0019,  0.0142, -0.0065,  ...,  0.0062, -0.0090,  0.0140],
+        ...,
+        [-0.0026, -0.0055,  0.0020,  ..., -0.0002,  0.0048, -0.0008],
+        [-0.0008, -0.0023,  0.0094,  ...,  0.0042, -0.0021, -0.0078],
+        [ 0.0019,  0.0132,  0.0086,  ..., -0.0039, -0.0005,  0.0026]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 5.3164,  1.0312, -4.6758,  ..., -0.7080,  0.0580,  3.1387]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 12:46:58 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you discover something, you are a discoverer
+If you receive something, you are a receiver
+If you organize something, you are a organizer
+If you recommend something, you are a recommender
+If you write something, you are a writer
+If you provide something, you are a provider
+If you subscribe something, you are a subscriber
+If you intrude something, you are a
+2024-07-24 12:46:58 root INFO     [order_1_approx] starting weight calculation for If you receive something, you are a receiver
+If you subscribe something, you are a subscriber
+If you write something, you are a writer
+If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you recommend something, you are a recommender
+If you provide something, you are a provider
+If you organize something, you are a
+2024-07-24 12:46:58 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:50:59 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.6221,  0.4856, -0.3308,  ..., -0.3242,  0.0609,  0.4136],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.3809,  1.8057,  0.6865,  ..., -2.0117,  1.0791,  5.1133],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 9.7198e-03, -4.2801e-03, -3.0212e-03,  ...,  2.2659e-03,
+          5.2490e-03, -2.1805e-02],
+        [ 6.3858e-03, -4.2229e-03,  5.8212e-03,  ...,  5.4550e-03,
+         -1.9073e-05, -4.5166e-03],
+        [ 5.3482e-03,  9.0790e-04,  5.4283e-03,  ..., -2.1706e-03,
+          9.4757e-03,  2.6836e-03],
+        ...,
+        [-1.6737e-03,  3.9024e-03,  1.4763e-03,  ..., -1.5381e-02,
+          9.3307e-03,  1.2817e-02],
+        [ 7.7019e-03,  8.5144e-03, -6.9809e-03,  ...,  3.6240e-03,
+          2.1553e-04,  1.7197e-02],
+        [ 1.7853e-03, -1.4923e-02, -3.2043e-04,  ..., -1.4824e-02,
+          1.4702e-02,  1.5259e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.8965,  1.7939,  0.7920,  ..., -1.4785,  0.4829,  4.8359]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 12:51:00 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you receive something, you are a receiver
+If you subscribe something, you are a subscriber
+If you write something, you are a writer
+If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you recommend something, you are a recommender
+If you provide something, you are a provider
+If you organize something, you are a
+2024-07-24 12:51:00 root INFO     [order_1_approx] starting weight calculation for If you subscribe something, you are a subscriber
+If you write something, you are a writer
+If you recommend something, you are a recommender
+If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you receive something, you are a receiver
+If you organize something, you are a organizer
+If you provide something, you are a
+2024-07-24 12:51:00 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:55:00 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.7153,  0.8359, -0.7607,  ...,  0.0199, -0.2581,  0.4307],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.9102,  0.6279,  0.8223,  ..., -3.9121, -1.0234,  2.1836],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0058,  0.0032,  0.0137,  ...,  0.0238, -0.0005, -0.0070],
+        [ 0.0064,  0.0004,  0.0140,  ..., -0.0031,  0.0085, -0.0041],
+        [-0.0140, -0.0004, -0.0110,  ...,  0.0036,  0.0039, -0.0124],
+        ...,
+        [-0.0065,  0.0115, -0.0183,  ..., -0.0150, -0.0003,  0.0092],
+        [ 0.0153,  0.0134, -0.0147,  ...,  0.0070, -0.0073,  0.0026],
+        [ 0.0049,  0.0070,  0.0011,  ..., -0.0197,  0.0075,  0.0035]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.1680,  0.6533,  1.3760,  ..., -3.4180, -0.8149,  1.3828]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 12:55:01 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you subscribe something, you are a subscriber
+If you write something, you are a writer
+If you recommend something, you are a recommender
+If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you receive something, you are a receiver
+If you organize something, you are a organizer
+If you provide something, you are a
+2024-07-24 12:55:01 root INFO     [order_1_approx] starting weight calculation for If you intrude something, you are a intruder
+If you provide something, you are a provider
+If you recommend something, you are a recommender
+If you organize something, you are a organizer
+If you discover something, you are a discoverer
+If you write something, you are a writer
+If you subscribe something, you are a subscriber
+If you receive something, you are a
+2024-07-24 12:55:01 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 12:59:01 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-1.0527, -0.2419, -0.1010,  ...,  0.4026, -0.4604,  1.0469],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.6523,  0.5503, -2.4199,  ..., -3.8340,  1.0186,  1.7900],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0087, -0.0122,  0.0004,  ..., -0.0013,  0.0001, -0.0069],
+        [-0.0004, -0.0038,  0.0088,  ..., -0.0012,  0.0038,  0.0004],
+        [ 0.0027,  0.0088, -0.0031,  ..., -0.0029,  0.0021,  0.0146],
+        ...,
+        [-0.0164, -0.0099,  0.0053,  ..., -0.0034,  0.0097, -0.0074],
+        [ 0.0156, -0.0012, -0.0030,  ...,  0.0105, -0.0179,  0.0069],
+        [-0.0072,  0.0056, -0.0067,  ..., -0.0015,  0.0159,  0.0071]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.6445,  0.5659, -2.5684,  ..., -3.2969,  0.1992,  1.8818]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 12:59:02 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you intrude something, you are a intruder
+If you provide something, you are a provider
+If you recommend something, you are a recommender
+If you organize something, you are a organizer
+If you discover something, you are a discoverer
+If you write something, you are a writer
+If you subscribe something, you are a subscriber
+If you receive something, you are a
+2024-07-24 12:59:02 root INFO     [order_1_approx] starting weight calculation for If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you write something, you are a writer
+If you subscribe something, you are a subscriber
+If you organize something, you are a organizer
+If you receive something, you are a receiver
+If you provide something, you are a provider
+If you recommend something, you are a
+2024-07-24 12:59:02 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6
+2024-07-24 13:03:03 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1482,  0.8438, -0.1127,  ...,  0.4312, -1.2734,  0.4653],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.7700, -0.7837, -1.6396,  ..., -3.4453,  1.1650,  2.2227],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0080,  0.0139,  0.0187,  ...,  0.0054,  0.0072, -0.0046],
+        [ 0.0032,  0.0025,  0.0055,  ..., -0.0028,  0.0155,  0.0151],
+        [ 0.0164,  0.0031,  0.0028,  ...,  0.0111,  0.0112,  0.0119],
+        ...,
+        [-0.0087, -0.0163, -0.0080,  ..., -0.0037,  0.0097,  0.0032],
+        [ 0.0071,  0.0019, -0.0024,  ..., -0.0003, -0.0129,  0.0330],
+        [ 0.0139,  0.0027,  0.0103,  ..., -0.0100,  0.0156, -0.0011]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.8447, -0.4443, -1.8359,  ..., -3.6094,  1.0977,  0.6777]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-24 13:03:04 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for If you discover something, you are a discoverer
+If you intrude something, you are a intruder
+If you write something, you are a writer
+If you subscribe something, you are a subscriber
+If you organize something, you are a organizer
+If you receive something, you are a receiver
+If you provide something, you are a provider
+If you recommend something, you are a
+2024-07-24 13:03:04 root INFO     [order_1_approx] starting weight calculation for If you organize something, you are a organizer
+If you write something, you are a writer
+If you recommend something, you are a recommender
+If you provide something, you are a provider
+If you intrude something, you are a intruder
+If you discover something, you are a discoverer
+If you receive something, you are a receiver
+If you subscribe something, you are a
+2024-07-24 13:03:04 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.6

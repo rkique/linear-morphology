@@ -1,3 +1,9 @@
+#This script was used to produce test results for GPT-J.
+#Given: folder names containing individual Jacobian and W2V (E(o - s)) tensors
+#Given: device number, N_TRIALS, start & end layers for Jacobian, beta for LRE
+#Builds LRE, Jacobian, Bias, and W2V approximators
+#Tests each relation over N_TRIALS, returning the highest # correct for each method as well as the LM correct 
+
 import torch
 import sys
 sys.path.append('..')
@@ -18,17 +24,18 @@ import logging
 from baukit.baukit import parameter_names, get_parameter
 import torch.nn as nn
 
-logger = logging.getLogger(__name__)
 #MAKE SURE TO CHANGE THIS EACH RUN
-RESULTS_FILE = 'results/Friday_Cuda1_W2V_3_9.txt'
+DEVICE_NUM = 1
+RESULTS_FILE = f'results/42Thursday_GPU2_Cuda{DEVICE_NUM}_3_9.txt'
 
+
+logger = logging.getLogger(__name__)
 logging.basicConfig(
     filename=RESULTS_FILE,
     level=logging.INFO,
     format = logging_utils.DEFAULT_FORMAT,
     datefmt=logging_utils.DEFAULT_DATEFMT,
 )
-
 logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
 model = GPTJForCausalLM.from_pretrained("EleutherAI/gpt-j-6B", revision="float16", torch_dtype=torch.float16, low_cpu_mem_usage=True)
@@ -37,7 +44,7 @@ tokenizer.pad_token = tokenizer.eos_token
 
 mt = models.ModelAndTokenizer(model,tokenizer)
 
-device = 'cuda:1'
+device = f'cuda:{DEVICE_NUM}'
 model.to(device)
 
 build.determine_device(mt)
@@ -46,38 +53,38 @@ end = 27
 
 #OBTAIN LRE WEIGHTS
 relations = [
-#  'name - nationality',
-#  'animal - youth',
-#  'verb_Ving - 3pSg',
-#  'noun+less_reg',
-#  'verb+able_reg',
-#  'UK_city - county',
-#  'antonyms - binary',
-#  'verb_inf - 3pSg',
-#  're+verb_reg',
-#  'verb_inf - Ved',
-#  'country - language',
-#  'meronyms - part',
-#  'verb_Ving - Ved',
-#  'animal - shelter',
-#  'hypernyms - misc',
-#  'meronyms - substance',
-#  'noun - plural_irreg',
-#  'un+adj_reg',
-#  'verb+ment_irreg',
-#  'adj+ness_reg',
-#  'over+adj_reg',
-#  'verb+er_irreg',
-#  'adj+ly_reg',
-#  'name - occupation',
-#  'synonyms - intensity',
-#  'animal - sound',
-#  'noun - plural_reg',
-#  'Ving - verb_inf',
-#  'male - female',
-#  'verb_3pSg - Ved',
-#  'meronyms - member',
-#  'things - color',
+ 'name - nationality',
+ 'animal - youth',
+ 'verb_Ving - 3pSg',
+ 'noun+less_reg',
+ 'verb+able_reg',
+ 'UK_city - county',
+ 'antonyms - binary',
+ 'verb_inf - 3pSg',
+ 're+verb_reg',
+ 'verb_inf - Ved',
+ 'country - language',
+ 'meronyms - part',
+ 'verb_Ving - Ved',
+ 'animal - shelter',
+ 'hypernyms - misc',
+ 'meronyms - substance',
+ 'noun - plural_irreg',
+ 'un+adj_reg',
+ 'verb+ment_irreg',
+ 'adj+ness_reg',
+ 'over+adj_reg',
+ 'verb+er_irreg',
+ 'adj+ly_reg',
+ 'name - occupation',
+ 'synonyms - intensity',
+ 'animal - sound',
+ 'noun - plural_reg',
+ 'Ving - verb_inf',
+ 'male - female',
+ 'verb_3pSg - Ved',
+ 'meronyms - member',
+ 'things - color',
  'hyponyms - misc',
  'adj - superlative',
  #'.ipynb_checkpoints',
@@ -159,7 +166,7 @@ for beta in [7]:
             prompt_template = relation.prompt_templates[0]
             
             wb_dicts = [weight_and_bias(i, relation.name) for i in range(3,10)]
-            offsets = [make_offset_dict(i, relation.name) for i in range(3,10)]
+            # offsets = [make_offset_dict(i, relation.name) for i in range(3,10)]
             
             #We want to show that the bias is necessary and sufficient for conveying morphology
             #To show sufficient:            top_no_bias_correct / lm_at_top_no_bias_correct should be high 
@@ -180,17 +187,17 @@ for beta in [7]:
                 clozed_answers = []
                 
                 wb_dict = get_dict(wb_dicts, start)
-                offset_dict = get_dict(offsets, start)
+                #offset_dict = get_dict(offsets, start)
                 
                 if wb_dict is None:
                     continue
                     
                 j_samples = wb_dict['j_samples']
                 weight,bias = wb_dict['weight'], wb_dict['bias']
-                offset = offset_dict['offset']
+                #offset = offset_dict['offset']
                 
                 #Do not use the training examples for ICL or testing purposes.
-                test_samples = [x for x in relation.samples if x not in j_samples]
+                test_samples = [x for x in relation.samples if x.subject not in j_samples]
                 for x in test_samples:
                     test_samples_no_x = [t for t in test_samples if t != x]
                     samples = [x] + random.sample(test_samples_no_x, N_ICL - 1)
@@ -229,13 +236,13 @@ for beta in [7]:
                         no_weight_preds = build.get_object(mt, no_weight_hs)[0]
 
                         #use W2v
-                        w2v_hs = reg_hs + offset
-                        w2v_preds = build.get_object(mt, w2v_hs)[0]
+                        # w2v_hs = reg_hs + offset
+                        # w2v_preds = build.get_object(mt, w2v_hs)[0]
                         
                         reg_preds = [x.strip() for x in reg_preds]
                         no_bias_preds = [x.strip() for x in no_bias_preds]
                         no_weight_preds = [x.strip() for x in no_weight_preds]
-                        w2v_preds = [x.strip() for x in w2v_preds]
+                        # w2v_preds = [x.strip() for x in w2v_preds]
                         
                         if(metrics.any_is_nontrivial_prefix(predictions=[reg_preds[0]], targets=objs)):
                             reg_correct += 1
@@ -246,8 +253,8 @@ for beta in [7]:
                         if(metrics.any_is_nontrivial_prefix(predictions=[no_weight_preds[0]], targets=objs)):
                             no_weight_correct += 1
 
-                        if(metrics.any_is_nontrivial_prefix(predictions=[w2v_preds[0]], targets=objs)):
-                            w2v_correct += 1
+                        # if(metrics.any_is_nontrivial_prefix(predictions=[w2v_preds[0]], targets=objs)):
+                        #     w2v_correct += 1
                         
                         lm_correct += 1
                         

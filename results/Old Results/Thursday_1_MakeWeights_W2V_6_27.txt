@@ -1,0 +1,1418 @@
+2024-07-25 16:55:39 root INFO     loading model + tokenizer
+2024-07-25 16:55:57 root INFO     model + tokenizer loaded
+2024-07-25 16:55:57 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-25 16:55:57 root INFO     building operator UK_city - county
+2024-07-25 16:56:19 root INFO     loading model + tokenizer
+2024-07-25 16:56:47 root INFO     loading model + tokenizer
+2024-07-25 16:57:04 root INFO     model + tokenizer loaded
+2024-07-25 16:57:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-25 16:57:04 root INFO     building operator UK_city - county
+2024-07-25 16:57:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-25 16:57:04 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-25 16:58:46 root INFO     loading model + tokenizer
+2024-07-25 16:59:03 root INFO     model + tokenizer loaded
+2024-07-25 16:59:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-25 16:59:03 root INFO     building operator UK_city - county
+2024-07-25 16:59:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-25 16:59:03 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-25 16:59:47 root INFO     loading model + tokenizer
+2024-07-25 17:00:04 root INFO     model + tokenizer loaded
+2024-07-25 17:00:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-25 17:00:04 root INFO     building operator UK_city - county
+2024-07-25 17:00:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-25 17:00:04 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-25 17:00:22 root INFO     total operator prediction time: 18.407862186431885 seconds
+2024-07-25 17:00:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-25 17:00:22 root INFO     building operator animal - youth
+2024-07-25 17:00:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-25 17:00:22 root INFO     [W2VEstimator] using 6 and 27 layers on animal - youth
+2024-07-25 17:00:34 root INFO     total operator prediction time: 11.30667233467102 seconds
+2024-07-25 17:00:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-25 17:00:34 root INFO     building operator animal - sound
+2024-07-25 17:00:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-25 17:00:34 root INFO     [W2VEstimator] using 6 and 27 layers on animal - sound
+2024-07-25 17:01:02 root INFO     total operator prediction time: 27.81337857246399 seconds
+2024-07-26 08:29:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 08:29:45 root INFO     building operator things - color
+2024-07-26 08:29:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 08:29:45 root INFO     [W2VEstimator] using 6 and 27 layers on things - color
+2024-07-26 08:30:05 root INFO     loading model + tokenizer
+2024-07-26 08:30:23 root INFO     model + tokenizer loaded
+2024-07-26 08:30:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:30:23 root INFO     building operator UK_city - county
+2024-07-26 08:30:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:30:23 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-26 08:30:42 root INFO     total operator prediction time: 18.663435697555542 seconds
+2024-07-26 08:30:42 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 08:30:42 root INFO     building operator animal - youth
+2024-07-26 08:30:42 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 08:30:42 root INFO     [W2VEstimator] using 6 and 27 layers on animal - youth
+2024-07-26 08:30:53 root INFO     total operator prediction time: 11.678133010864258 seconds
+2024-07-26 08:30:53 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 08:30:53 root INFO     building operator animal - sound
+2024-07-26 08:30:53 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 08:30:53 root INFO     [W2VEstimator] using 6 and 27 layers on animal - sound
+2024-07-26 08:31:05 root INFO     total operator prediction time: 11.395950555801392 seconds
+2024-07-26 08:31:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 08:31:05 root INFO     building operator things - color
+2024-07-26 08:31:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 08:31:05 root INFO     [W2VEstimator] using 6 and 27 layers on things - color
+2024-07-26 08:31:12 root INFO     total operator prediction time: 7.181413650512695 seconds
+2024-07-26 08:31:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 08:31:12 root INFO     building operator country - capital
+2024-07-26 08:31:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 08:31:12 root INFO     [W2VEstimator] using 6 and 27 layers on country - capital
+2024-07-26 08:31:26 root INFO     total operator prediction time: 13.902493715286255 seconds
+2024-07-26 08:31:26 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 08:31:26 root INFO     building operator name - occupation
+2024-07-26 08:31:26 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 08:31:26 root INFO     [W2VEstimator] using 6 and 27 layers on name - occupation
+2024-07-26 08:33:05 root INFO     loading model + tokenizer
+2024-07-26 08:33:22 root INFO     model + tokenizer loaded
+2024-07-26 08:33:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:33:22 root INFO     building operator UK_city - county
+2024-07-26 08:33:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:33:22 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-26 08:35:02 root INFO     loading model + tokenizer
+2024-07-26 08:35:19 root INFO     model + tokenizer loaded
+2024-07-26 08:35:19 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:35:19 root INFO     building operator UK_city - county
+2024-07-26 08:35:19 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:35:19 root INFO     [W2VEstimator] using 6 and 27 layers on UK_city - county
+2024-07-26 08:35:38 root INFO     total operator prediction time: 18.30250310897827 seconds
+2024-07-26 08:35:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 08:35:38 root INFO     building operator animal - youth
+2024-07-26 08:35:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 08:35:38 root INFO     [W2VEstimator] using 6 and 27 layers on animal - youth
+2024-07-26 08:35:49 root INFO     total operator prediction time: 11.207108497619629 seconds
+2024-07-26 08:35:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 08:35:49 root INFO     building operator animal - sound
+2024-07-26 08:35:49 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 08:35:49 root INFO     [W2VEstimator] using 6 and 27 layers on animal - sound
+2024-07-26 08:36:00 root INFO     total operator prediction time: 11.06888461112976 seconds
+2024-07-26 08:36:00 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 08:36:00 root INFO     building operator things - color
+2024-07-26 08:36:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 08:36:00 root INFO     [W2VEstimator] using 6 and 27 layers on things - color
+2024-07-26 08:36:07 root INFO     total operator prediction time: 7.011214256286621 seconds
+2024-07-26 08:36:07 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 08:36:07 root INFO     building operator country - capital
+2024-07-26 08:36:07 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 08:36:07 root INFO     [W2VEstimator] using 6 and 27 layers on country - capital
+2024-07-26 08:36:21 root INFO     total operator prediction time: 13.708974599838257 seconds
+2024-07-26 08:36:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 08:36:21 root INFO     building operator name - occupation
+2024-07-26 08:36:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 08:36:21 root INFO     [W2VEstimator] using 6 and 27 layers on name - occupation
+2024-07-26 08:36:32 root INFO     total operator prediction time: 11.11249327659607 seconds
+2024-07-26 08:36:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 08:36:32 root INFO     building operator male - female
+2024-07-26 08:36:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 08:36:32 root INFO     [W2VEstimator] using 6 and 27 layers on male - female
+2024-07-26 08:36:41 root INFO     total operator prediction time: 9.474659442901611 seconds
+2024-07-26 08:36:41 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 08:36:41 root INFO     building operator animal - shelter
+2024-07-26 08:36:41 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 08:36:41 root INFO     [W2VEstimator] using 6 and 27 layers on animal - shelter
+2024-07-26 08:36:51 root INFO     total operator prediction time: 9.262394905090332 seconds
+2024-07-26 08:36:51 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 08:36:51 root INFO     building operator country - language
+2024-07-26 08:36:51 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 08:36:51 root INFO     [W2VEstimator] using 6 and 27 layers on country - language
+2024-07-26 08:37:04 root INFO     total operator prediction time: 13.19481873512268 seconds
+2024-07-26 08:37:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 08:37:04 root INFO     building operator name - nationality
+2024-07-26 08:37:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 08:37:04 root INFO     [W2VEstimator] using 6 and 27 layers on name - nationality
+2024-07-26 08:37:11 root INFO     total operator prediction time: 7.1191136837005615 seconds
+2024-07-26 08:37:11 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 08:37:11 root INFO     building operator verb+ment_irreg
+2024-07-26 08:37:11 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 08:37:11 root INFO     [W2VEstimator] using 6 and 27 layers on verb+ment_irreg
+2024-07-26 08:37:18 root INFO     total operator prediction time: 7.427966594696045 seconds
+2024-07-26 08:37:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 08:37:18 root INFO     building operator noun+less_reg
+2024-07-26 08:37:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 08:37:18 root INFO     [W2VEstimator] using 6 and 27 layers on noun+less_reg
+2024-07-26 08:37:26 root INFO     total operator prediction time: 7.401998996734619 seconds
+2024-07-26 08:37:26 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 08:37:26 root INFO     building operator adj+ness_reg
+2024-07-26 08:37:26 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 08:37:26 root INFO     [W2VEstimator] using 6 and 27 layers on adj+ness_reg
+2024-07-26 08:37:35 root INFO     total operator prediction time: 8.903718948364258 seconds
+2024-07-26 08:37:35 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 08:37:35 root INFO     building operator re+verb_reg
+2024-07-26 08:37:35 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 08:37:35 root INFO     [W2VEstimator] using 6 and 27 layers on re+verb_reg
+2024-07-26 08:37:43 root INFO     total operator prediction time: 8.545019388198853 seconds
+2024-07-26 08:37:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 08:37:43 root INFO     building operator un+adj_reg
+2024-07-26 08:37:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:37:43 root INFO     [W2VEstimator] using 6 and 27 layers on un+adj_reg
+2024-07-26 08:37:50 root INFO     total operator prediction time: 7.261324644088745 seconds
+2024-07-26 08:37:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 08:37:50 root INFO     building operator verb+able_reg
+2024-07-26 08:37:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 08:37:50 root INFO     [W2VEstimator] using 6 and 27 layers on verb+able_reg
+2024-07-26 08:38:01 root INFO     total operator prediction time: 10.893757104873657 seconds
+2024-07-26 08:38:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 08:38:01 root INFO     building operator verb+tion_irreg
+2024-07-26 08:38:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 08:38:01 root INFO     [W2VEstimator] using 6 and 27 layers on verb+tion_irreg
+2024-07-26 08:38:09 root INFO     total operator prediction time: 7.153751850128174 seconds
+2024-07-26 08:38:09 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 08:38:09 root INFO     building operator adj+ly_reg
+2024-07-26 08:38:09 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 08:38:09 root INFO     [W2VEstimator] using 6 and 27 layers on adj+ly_reg
+2024-07-26 08:38:17 root INFO     total operator prediction time: 8.633200883865356 seconds
+2024-07-26 08:38:17 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 08:38:17 root INFO     building operator over+adj_reg
+2024-07-26 08:38:17 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 08:38:17 root INFO     [W2VEstimator] using 6 and 27 layers on over+adj_reg
+2024-07-26 08:38:28 root INFO     total operator prediction time: 10.694763660430908 seconds
+2024-07-26 08:38:28 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 08:38:28 root INFO     building operator verb+er_irreg
+2024-07-26 08:38:28 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 08:38:28 root INFO     [W2VEstimator] using 6 and 27 layers on verb+er_irreg
+2024-07-26 08:38:38 root INFO     total operator prediction time: 10.267859935760498 seconds
+2024-07-26 08:38:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 08:38:38 root INFO     building operator adj - superlative
+2024-07-26 08:38:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 08:38:38 root INFO     [W2VEstimator] using 6 and 27 layers on adj - superlative
+2024-07-26 08:38:49 root INFO     total operator prediction time: 10.92707347869873 seconds
+2024-07-26 08:38:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 08:38:49 root INFO     building operator verb_3pSg - Ved
+2024-07-26 08:38:49 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 08:38:49 root INFO     [W2VEstimator] using 6 and 27 layers on verb_3pSg - Ved
+2024-07-26 08:38:59 root INFO     total operator prediction time: 9.478351831436157 seconds
+2024-07-26 08:38:59 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 08:38:59 root INFO     building operator noun - plural_reg
+2024-07-26 08:38:59 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:38:59 root INFO     [W2VEstimator] using 6 and 27 layers on noun - plural_reg
+2024-07-26 08:39:07 root INFO     total operator prediction time: 8.871036291122437 seconds
+2024-07-26 08:39:07 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 08:39:07 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 08:39:07 root INFO     [W2VEstimator] using 6 and 27 layers on verb_Ving - 3pSg
+2024-07-26 08:39:16 root INFO     total operator prediction time: 8.62768840789795 seconds
+2024-07-26 08:39:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 08:39:16 root INFO     building operator verb_inf - 3pSg
+2024-07-26 08:39:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 08:39:16 root INFO     [W2VEstimator] using 6 and 27 layers on verb_inf - 3pSg
+2024-07-26 08:39:23 root INFO     total operator prediction time: 6.926957130432129 seconds
+2024-07-26 08:39:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 08:39:23 root INFO     building operator verb_inf - Ved
+2024-07-26 08:39:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 08:39:23 root INFO     [W2VEstimator] using 6 and 27 layers on verb_inf - Ved
+2024-07-26 08:39:36 root INFO     total operator prediction time: 13.038569211959839 seconds
+2024-07-26 08:39:36 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 08:39:36 root INFO     building operator verb_Ving - Ved
+2024-07-26 08:39:36 root INFO     [W2VEstimator] using 6 and 27 layers on verb_Ving - Ved
+2024-07-26 08:39:45 root INFO     total operator prediction time: 8.970340967178345 seconds
+2024-07-26 08:39:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 08:39:45 root INFO     building operator Ving - verb_inf
+2024-07-26 08:39:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 08:39:45 root INFO     [W2VEstimator] using 6 and 27 layers on Ving - verb_inf
+2024-07-26 08:39:55 root INFO     total operator prediction time: 9.902307033538818 seconds
+2024-07-26 08:39:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 08:39:55 root INFO     building operator noun - plural_irreg
+2024-07-26 08:39:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:39:55 root INFO     [W2VEstimator] using 6 and 27 layers on noun - plural_irreg
+2024-07-26 08:40:05 root INFO     total operator prediction time: 9.50669527053833 seconds
+2024-07-26 08:40:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 08:40:05 root INFO     building operator meronyms - member
+2024-07-26 08:40:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 08:40:05 root INFO     [W2VEstimator] using 6 and 27 layers on meronyms - member
+2024-07-26 08:40:15 root INFO     total operator prediction time: 10.324768781661987 seconds
+2024-07-26 08:40:15 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 08:40:15 root INFO     building operator antonyms - binary
+2024-07-26 08:40:15 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:40:15 root INFO     [W2VEstimator] using 6 and 27 layers on antonyms - binary
+2024-07-26 08:40:23 root INFO     total operator prediction time: 7.984018802642822 seconds
+2024-07-26 08:40:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 08:40:23 root INFO     building operator hyponyms - misc
+2024-07-26 08:40:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 08:40:23 root INFO     [W2VEstimator] using 6 and 27 layers on hyponyms - misc
+2024-07-26 08:40:34 root INFO     total operator prediction time: 11.42029094696045 seconds
+2024-07-26 08:40:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 08:40:34 root INFO     building operator hypernyms - animals
+2024-07-26 08:40:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:40:34 root INFO     [W2VEstimator] using 6 and 27 layers on hypernyms - animals
+2024-07-26 08:40:46 root INFO     total operator prediction time: 11.247457265853882 seconds
+2024-07-26 08:40:46 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 08:40:46 root INFO     building operator synonyms - intensity
+2024-07-26 08:40:46 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 08:40:46 root INFO     [W2VEstimator] using 6 and 27 layers on synonyms - intensity
+2024-07-26 08:40:55 root INFO     total operator prediction time: 9.602192401885986 seconds
+2024-07-26 08:40:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 08:40:55 root INFO     building operator meronyms - substance
+2024-07-26 08:40:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 08:40:55 root INFO     [W2VEstimator] using 6 and 27 layers on meronyms - substance
+2024-07-26 08:41:04 root INFO     total operator prediction time: 8.722998857498169 seconds
+2024-07-26 08:41:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 08:41:04 root INFO     building operator hypernyms - misc
+2024-07-26 08:41:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:41:04 root INFO     [W2VEstimator] using 6 and 27 layers on hypernyms - misc
+2024-07-26 08:41:13 root INFO     total operator prediction time: 9.23778223991394 seconds
+2024-07-26 08:41:13 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 08:41:13 root INFO     building operator synonyms - exact
+2024-07-26 08:41:13 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 08:41:13 root INFO     [W2VEstimator] using 6 and 27 layers on synonyms - exact
+2024-07-26 08:41:21 root INFO     total operator prediction time: 7.447872877120972 seconds
+2024-07-26 08:41:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 08:41:21 root INFO     building operator meronyms - part
+2024-07-26 08:41:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 08:41:21 root INFO     [W2VEstimator] using 6 and 27 layers on meronyms - part
+2024-07-26 08:41:30 root INFO     total operator prediction time: 9.339670658111572 seconds
+2024-07-26 08:42:11 root INFO     loading model + tokenizer
+2024-07-26 08:42:28 root INFO     model + tokenizer loaded
+2024-07-26 08:42:28 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:42:28 root INFO     building operator UK_city - county
+2024-07-26 08:42:28 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:42:28 root INFO     [W2VEstimator] using 7 and 27 layers on UK_city - county
+2024-07-26 08:43:16 root INFO     loading model + tokenizer
+2024-07-26 08:43:33 root INFO     model + tokenizer loaded
+2024-07-26 08:43:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:43:33 root INFO     building operator UK_city - county
+2024-07-26 08:43:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:43:33 root INFO     [W2VEstimator] using 7 and 27 layers on UK_city - county
+2024-07-26 08:43:52 root INFO     total operator prediction time: 18.629149913787842 seconds
+2024-07-26 08:43:52 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 08:43:52 root INFO     building operator animal - youth
+2024-07-26 08:43:52 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 08:43:52 root INFO     [W2VEstimator] using 7 and 27 layers on animal - youth
+2024-07-26 08:44:03 root INFO     total operator prediction time: 11.342021703720093 seconds
+2024-07-26 08:44:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 08:44:03 root INFO     building operator animal - sound
+2024-07-26 08:44:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 08:44:03 root INFO     [W2VEstimator] using 7 and 27 layers on animal - sound
+2024-07-26 08:44:15 root INFO     total operator prediction time: 11.295202493667603 seconds
+2024-07-26 08:44:15 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 08:44:15 root INFO     building operator things - color
+2024-07-26 08:44:15 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 08:44:15 root INFO     [W2VEstimator] using 7 and 27 layers on things - color
+2024-07-26 08:44:22 root INFO     total operator prediction time: 7.186499357223511 seconds
+2024-07-26 08:44:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 08:44:22 root INFO     building operator country - capital
+2024-07-26 08:44:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 08:44:22 root INFO     [W2VEstimator] using 7 and 27 layers on country - capital
+2024-07-26 08:44:36 root INFO     total operator prediction time: 13.883962392807007 seconds
+2024-07-26 08:44:36 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 08:44:36 root INFO     building operator name - occupation
+2024-07-26 08:44:36 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 08:44:36 root INFO     [W2VEstimator] using 7 and 27 layers on name - occupation
+2024-07-26 08:44:47 root INFO     total operator prediction time: 11.242622137069702 seconds
+2024-07-26 08:44:47 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 08:44:47 root INFO     building operator male - female
+2024-07-26 08:44:47 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 08:44:47 root INFO     [W2VEstimator] using 7 and 27 layers on male - female
+2024-07-26 08:44:56 root INFO     total operator prediction time: 9.488934993743896 seconds
+2024-07-26 08:44:56 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 08:44:56 root INFO     building operator animal - shelter
+2024-07-26 08:44:56 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 08:44:56 root INFO     [W2VEstimator] using 7 and 27 layers on animal - shelter
+2024-07-26 08:45:06 root INFO     total operator prediction time: 9.36193037033081 seconds
+2024-07-26 08:45:06 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 08:45:06 root INFO     building operator country - language
+2024-07-26 08:45:06 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 08:45:06 root INFO     [W2VEstimator] using 7 and 27 layers on country - language
+2024-07-26 08:45:19 root INFO     total operator prediction time: 13.272828817367554 seconds
+2024-07-26 08:45:19 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 08:45:19 root INFO     building operator name - nationality
+2024-07-26 08:45:19 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 08:45:19 root INFO     [W2VEstimator] using 7 and 27 layers on name - nationality
+2024-07-26 08:45:26 root INFO     total operator prediction time: 7.160918951034546 seconds
+2024-07-26 08:45:26 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 08:45:26 root INFO     building operator verb+ment_irreg
+2024-07-26 08:45:26 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 08:45:26 root INFO     [W2VEstimator] using 7 and 27 layers on verb+ment_irreg
+2024-07-26 08:45:34 root INFO     total operator prediction time: 7.5390424728393555 seconds
+2024-07-26 08:45:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 08:45:34 root INFO     building operator noun+less_reg
+2024-07-26 08:45:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 08:45:34 root INFO     [W2VEstimator] using 7 and 27 layers on noun+less_reg
+2024-07-26 08:45:41 root INFO     total operator prediction time: 7.467628479003906 seconds
+2024-07-26 08:45:41 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 08:45:41 root INFO     building operator adj+ness_reg
+2024-07-26 08:45:41 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 08:45:41 root INFO     [W2VEstimator] using 7 and 27 layers on adj+ness_reg
+2024-07-26 08:45:50 root INFO     total operator prediction time: 9.019330501556396 seconds
+2024-07-26 08:45:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 08:45:50 root INFO     building operator re+verb_reg
+2024-07-26 08:45:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 08:45:50 root INFO     [W2VEstimator] using 7 and 27 layers on re+verb_reg
+2024-07-26 08:45:59 root INFO     total operator prediction time: 8.613462686538696 seconds
+2024-07-26 08:45:59 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 08:45:59 root INFO     building operator un+adj_reg
+2024-07-26 08:45:59 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:45:59 root INFO     [W2VEstimator] using 7 and 27 layers on un+adj_reg
+2024-07-26 08:46:06 root INFO     total operator prediction time: 7.427254915237427 seconds
+2024-07-26 08:46:06 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 08:46:06 root INFO     building operator verb+able_reg
+2024-07-26 08:46:06 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 08:46:06 root INFO     [W2VEstimator] using 7 and 27 layers on verb+able_reg
+2024-07-26 08:46:18 root INFO     total operator prediction time: 11.343209505081177 seconds
+2024-07-26 08:46:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 08:46:18 root INFO     building operator verb+tion_irreg
+2024-07-26 08:46:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 08:46:18 root INFO     [W2VEstimator] using 7 and 27 layers on verb+tion_irreg
+2024-07-26 08:46:25 root INFO     total operator prediction time: 7.206778287887573 seconds
+2024-07-26 08:46:25 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 08:46:25 root INFO     building operator adj+ly_reg
+2024-07-26 08:46:25 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 08:46:25 root INFO     [W2VEstimator] using 7 and 27 layers on adj+ly_reg
+2024-07-26 08:46:34 root INFO     total operator prediction time: 8.779256105422974 seconds
+2024-07-26 08:46:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 08:46:34 root INFO     building operator over+adj_reg
+2024-07-26 08:46:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 08:46:34 root INFO     [W2VEstimator] using 7 and 27 layers on over+adj_reg
+2024-07-26 08:46:44 root INFO     total operator prediction time: 10.797747135162354 seconds
+2024-07-26 08:46:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 08:46:45 root INFO     building operator verb+er_irreg
+2024-07-26 08:46:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 08:46:45 root INFO     [W2VEstimator] using 7 and 27 layers on verb+er_irreg
+2024-07-26 08:46:55 root INFO     total operator prediction time: 10.395430564880371 seconds
+2024-07-26 08:46:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 08:46:55 root INFO     building operator adj - superlative
+2024-07-26 08:46:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 08:46:55 root INFO     [W2VEstimator] using 7 and 27 layers on adj - superlative
+2024-07-26 08:47:06 root INFO     total operator prediction time: 11.152300596237183 seconds
+2024-07-26 08:47:06 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 08:47:06 root INFO     building operator verb_3pSg - Ved
+2024-07-26 08:47:06 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 08:47:06 root INFO     [W2VEstimator] using 7 and 27 layers on verb_3pSg - Ved
+2024-07-26 08:47:16 root INFO     total operator prediction time: 9.6122567653656 seconds
+2024-07-26 08:47:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 08:47:16 root INFO     building operator noun - plural_reg
+2024-07-26 08:47:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:47:16 root INFO     [W2VEstimator] using 7 and 27 layers on noun - plural_reg
+2024-07-26 08:47:25 root INFO     total operator prediction time: 8.921969413757324 seconds
+2024-07-26 08:47:25 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 08:47:25 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 08:47:25 root INFO     [W2VEstimator] using 7 and 27 layers on verb_Ving - 3pSg
+2024-07-26 08:47:33 root INFO     total operator prediction time: 8.7981116771698 seconds
+2024-07-26 08:47:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 08:47:33 root INFO     building operator verb_inf - 3pSg
+2024-07-26 08:47:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 08:47:33 root INFO     [W2VEstimator] using 7 and 27 layers on verb_inf - 3pSg
+2024-07-26 08:47:40 root INFO     total operator prediction time: 7.011131286621094 seconds
+2024-07-26 08:47:40 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 08:47:40 root INFO     building operator verb_inf - Ved
+2024-07-26 08:47:40 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 08:47:40 root INFO     [W2VEstimator] using 7 and 27 layers on verb_inf - Ved
+2024-07-26 08:47:54 root INFO     total operator prediction time: 13.23055911064148 seconds
+2024-07-26 08:47:54 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 08:47:54 root INFO     building operator verb_Ving - Ved
+2024-07-26 08:47:54 root INFO     [W2VEstimator] using 7 and 27 layers on verb_Ving - Ved
+2024-07-26 08:48:03 root INFO     total operator prediction time: 9.121955871582031 seconds
+2024-07-26 08:48:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 08:48:03 root INFO     building operator Ving - verb_inf
+2024-07-26 08:48:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 08:48:03 root INFO     [W2VEstimator] using 7 and 27 layers on Ving - verb_inf
+2024-07-26 08:48:12 root INFO     total operator prediction time: 9.162180662155151 seconds
+2024-07-26 08:48:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 08:48:12 root INFO     building operator noun - plural_irreg
+2024-07-26 08:48:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:48:12 root INFO     [W2VEstimator] using 7 and 27 layers on noun - plural_irreg
+2024-07-26 08:48:21 root INFO     total operator prediction time: 8.703723669052124 seconds
+2024-07-26 08:48:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 08:48:21 root INFO     building operator meronyms - member
+2024-07-26 08:48:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 08:48:21 root INFO     [W2VEstimator] using 7 and 27 layers on meronyms - member
+2024-07-26 08:48:30 root INFO     total operator prediction time: 9.34247875213623 seconds
+2024-07-26 08:48:30 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 08:48:30 root INFO     building operator antonyms - binary
+2024-07-26 08:48:30 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:48:30 root INFO     [W2VEstimator] using 7 and 27 layers on antonyms - binary
+2024-07-26 08:48:38 root INFO     total operator prediction time: 7.571348428726196 seconds
+2024-07-26 08:48:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 08:48:38 root INFO     building operator hyponyms - misc
+2024-07-26 08:48:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 08:48:38 root INFO     [W2VEstimator] using 7 and 27 layers on hyponyms - misc
+2024-07-26 08:48:48 root INFO     total operator prediction time: 10.586974143981934 seconds
+2024-07-26 08:48:48 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 08:48:48 root INFO     building operator hypernyms - animals
+2024-07-26 08:48:48 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:48:48 root INFO     [W2VEstimator] using 7 and 27 layers on hypernyms - animals
+2024-07-26 08:48:59 root INFO     total operator prediction time: 10.502108335494995 seconds
+2024-07-26 08:48:59 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 08:48:59 root INFO     building operator synonyms - intensity
+2024-07-26 08:48:59 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 08:48:59 root INFO     [W2VEstimator] using 7 and 27 layers on synonyms - intensity
+2024-07-26 08:49:08 root INFO     total operator prediction time: 9.390007257461548 seconds
+2024-07-26 08:49:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 08:49:08 root INFO     building operator meronyms - substance
+2024-07-26 08:49:08 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 08:49:08 root INFO     [W2VEstimator] using 7 and 27 layers on meronyms - substance
+2024-07-26 08:49:17 root INFO     total operator prediction time: 8.763128757476807 seconds
+2024-07-26 08:49:17 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 08:49:17 root INFO     building operator hypernyms - misc
+2024-07-26 08:49:17 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:49:17 root INFO     [W2VEstimator] using 7 and 27 layers on hypernyms - misc
+2024-07-26 08:49:26 root INFO     total operator prediction time: 9.39277720451355 seconds
+2024-07-26 08:49:26 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 08:49:26 root INFO     building operator synonyms - exact
+2024-07-26 08:49:26 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 08:49:26 root INFO     [W2VEstimator] using 7 and 27 layers on synonyms - exact
+2024-07-26 08:49:34 root INFO     total operator prediction time: 7.509775400161743 seconds
+2024-07-26 08:49:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 08:49:34 root INFO     building operator meronyms - part
+2024-07-26 08:49:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 08:49:34 root INFO     [W2VEstimator] using 7 and 27 layers on meronyms - part
+2024-07-26 08:49:43 root INFO     total operator prediction time: 9.387171268463135 seconds
+2024-07-26 08:51:42 root INFO     loading model + tokenizer
+2024-07-26 08:52:00 root INFO     model + tokenizer loaded
+2024-07-26 08:52:00 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 08:52:00 root INFO     building operator UK_city - county
+2024-07-26 08:52:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 08:52:00 root INFO     [W2VEstimator] using 8 and 27 layers on UK_city - county
+2024-07-26 08:52:18 root INFO     total operator prediction time: 18.616991996765137 seconds
+2024-07-26 08:52:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 08:52:18 root INFO     building operator animal - youth
+2024-07-26 08:52:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 08:52:18 root INFO     [W2VEstimator] using 8 and 27 layers on animal - youth
+2024-07-26 08:52:30 root INFO     total operator prediction time: 11.389602422714233 seconds
+2024-07-26 08:52:30 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 08:52:30 root INFO     building operator animal - sound
+2024-07-26 08:52:30 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 08:52:30 root INFO     [W2VEstimator] using 8 and 27 layers on animal - sound
+2024-07-26 08:52:41 root INFO     total operator prediction time: 11.366729974746704 seconds
+2024-07-26 08:52:41 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 08:52:41 root INFO     building operator things - color
+2024-07-26 08:52:41 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 08:52:41 root INFO     [W2VEstimator] using 8 and 27 layers on things - color
+2024-07-26 08:52:48 root INFO     total operator prediction time: 7.174885988235474 seconds
+2024-07-26 08:52:48 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 08:52:48 root INFO     building operator country - capital
+2024-07-26 08:52:48 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 08:52:48 root INFO     [W2VEstimator] using 8 and 27 layers on country - capital
+2024-07-26 08:53:02 root INFO     total operator prediction time: 13.85873007774353 seconds
+2024-07-26 08:53:02 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 08:53:02 root INFO     building operator name - occupation
+2024-07-26 08:53:02 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 08:53:02 root INFO     [W2VEstimator] using 8 and 27 layers on name - occupation
+2024-07-26 08:53:13 root INFO     total operator prediction time: 11.228728294372559 seconds
+2024-07-26 08:53:13 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 08:53:13 root INFO     building operator male - female
+2024-07-26 08:53:13 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 08:53:13 root INFO     [W2VEstimator] using 8 and 27 layers on male - female
+2024-07-26 08:53:23 root INFO     total operator prediction time: 9.529033422470093 seconds
+2024-07-26 08:53:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 08:53:23 root INFO     building operator animal - shelter
+2024-07-26 08:53:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 08:53:23 root INFO     [W2VEstimator] using 8 and 27 layers on animal - shelter
+2024-07-26 08:53:32 root INFO     total operator prediction time: 9.421624898910522 seconds
+2024-07-26 08:53:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 08:53:32 root INFO     building operator country - language
+2024-07-26 08:53:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 08:53:32 root INFO     [W2VEstimator] using 8 and 27 layers on country - language
+2024-07-26 08:53:46 root INFO     total operator prediction time: 13.340012550354004 seconds
+2024-07-26 08:53:46 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 08:53:46 root INFO     building operator name - nationality
+2024-07-26 08:53:46 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 08:53:46 root INFO     [W2VEstimator] using 8 and 27 layers on name - nationality
+2024-07-26 08:53:53 root INFO     total operator prediction time: 7.694356679916382 seconds
+2024-07-26 08:53:53 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 08:53:53 root INFO     building operator verb+ment_irreg
+2024-07-26 08:53:53 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 08:53:53 root INFO     [W2VEstimator] using 8 and 27 layers on verb+ment_irreg
+2024-07-26 08:54:01 root INFO     total operator prediction time: 7.731856346130371 seconds
+2024-07-26 08:54:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 08:54:01 root INFO     building operator noun+less_reg
+2024-07-26 08:54:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 08:54:01 root INFO     [W2VEstimator] using 8 and 27 layers on noun+less_reg
+2024-07-26 08:54:09 root INFO     total operator prediction time: 7.5617516040802 seconds
+2024-07-26 08:54:09 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 08:54:09 root INFO     building operator adj+ness_reg
+2024-07-26 08:54:09 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 08:54:09 root INFO     [W2VEstimator] using 8 and 27 layers on adj+ness_reg
+2024-07-26 08:54:18 root INFO     total operator prediction time: 9.033656597137451 seconds
+2024-07-26 08:54:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 08:54:18 root INFO     building operator re+verb_reg
+2024-07-26 08:54:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 08:54:18 root INFO     [W2VEstimator] using 8 and 27 layers on re+verb_reg
+2024-07-26 08:54:27 root INFO     total operator prediction time: 8.994981288909912 seconds
+2024-07-26 08:54:27 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 08:54:27 root INFO     building operator un+adj_reg
+2024-07-26 08:54:27 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:54:27 root INFO     [W2VEstimator] using 8 and 27 layers on un+adj_reg
+2024-07-26 08:54:34 root INFO     total operator prediction time: 7.27850866317749 seconds
+2024-07-26 08:54:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 08:54:34 root INFO     building operator verb+able_reg
+2024-07-26 08:54:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 08:54:34 root INFO     [W2VEstimator] using 8 and 27 layers on verb+able_reg
+2024-07-26 08:54:45 root INFO     total operator prediction time: 10.995035409927368 seconds
+2024-07-26 08:54:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 08:54:45 root INFO     building operator verb+tion_irreg
+2024-07-26 08:54:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 08:54:45 root INFO     [W2VEstimator] using 8 and 27 layers on verb+tion_irreg
+2024-07-26 08:54:52 root INFO     total operator prediction time: 7.1777729988098145 seconds
+2024-07-26 08:54:52 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 08:54:52 root INFO     building operator adj+ly_reg
+2024-07-26 08:54:52 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 08:54:52 root INFO     [W2VEstimator] using 8 and 27 layers on adj+ly_reg
+2024-07-26 08:55:01 root INFO     total operator prediction time: 8.739286184310913 seconds
+2024-07-26 08:55:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 08:55:01 root INFO     building operator over+adj_reg
+2024-07-26 08:55:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 08:55:01 root INFO     [W2VEstimator] using 8 and 27 layers on over+adj_reg
+2024-07-26 08:55:12 root INFO     total operator prediction time: 10.78765058517456 seconds
+2024-07-26 08:55:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 08:55:12 root INFO     building operator verb+er_irreg
+2024-07-26 08:55:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 08:55:12 root INFO     [W2VEstimator] using 8 and 27 layers on verb+er_irreg
+2024-07-26 08:55:22 root INFO     total operator prediction time: 10.494455575942993 seconds
+2024-07-26 08:55:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 08:55:22 root INFO     building operator adj - superlative
+2024-07-26 08:55:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 08:55:22 root INFO     [W2VEstimator] using 8 and 27 layers on adj - superlative
+2024-07-26 08:55:34 root INFO     total operator prediction time: 11.34908938407898 seconds
+2024-07-26 08:55:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 08:55:34 root INFO     building operator verb_3pSg - Ved
+2024-07-26 08:55:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 08:55:34 root INFO     [W2VEstimator] using 8 and 27 layers on verb_3pSg - Ved
+2024-07-26 08:55:43 root INFO     total operator prediction time: 9.680503368377686 seconds
+2024-07-26 08:55:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 08:55:43 root INFO     building operator noun - plural_reg
+2024-07-26 08:55:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:55:43 root INFO     [W2VEstimator] using 8 and 27 layers on noun - plural_reg
+2024-07-26 08:55:52 root INFO     total operator prediction time: 8.654995441436768 seconds
+2024-07-26 08:55:52 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 08:55:52 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 08:55:52 root INFO     [W2VEstimator] using 8 and 27 layers on verb_Ving - 3pSg
+2024-07-26 08:56:01 root INFO     total operator prediction time: 8.665157556533813 seconds
+2024-07-26 08:56:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 08:56:01 root INFO     building operator verb_inf - 3pSg
+2024-07-26 08:56:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 08:56:01 root INFO     [W2VEstimator] using 8 and 27 layers on verb_inf - 3pSg
+2024-07-26 08:56:08 root INFO     total operator prediction time: 7.305318832397461 seconds
+2024-07-26 08:56:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 08:56:08 root INFO     building operator verb_inf - Ved
+2024-07-26 08:56:08 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 08:56:08 root INFO     [W2VEstimator] using 8 and 27 layers on verb_inf - Ved
+2024-07-26 08:56:22 root INFO     total operator prediction time: 13.842681169509888 seconds
+2024-07-26 08:56:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 08:56:22 root INFO     building operator verb_Ving - Ved
+2024-07-26 08:56:22 root INFO     [W2VEstimator] using 8 and 27 layers on verb_Ving - Ved
+2024-07-26 08:56:31 root INFO     total operator prediction time: 9.44480037689209 seconds
+2024-07-26 08:56:31 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 08:56:31 root INFO     building operator Ving - verb_inf
+2024-07-26 08:56:31 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 08:56:31 root INFO     [W2VEstimator] using 8 and 27 layers on Ving - verb_inf
+2024-07-26 08:56:41 root INFO     total operator prediction time: 9.590924501419067 seconds
+2024-07-26 08:56:41 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 08:56:41 root INFO     building operator noun - plural_irreg
+2024-07-26 08:56:41 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 08:56:41 root INFO     [W2VEstimator] using 8 and 27 layers on noun - plural_irreg
+2024-07-26 08:56:50 root INFO     total operator prediction time: 9.100314140319824 seconds
+2024-07-26 08:56:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 08:56:50 root INFO     building operator meronyms - member
+2024-07-26 08:56:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 08:56:50 root INFO     [W2VEstimator] using 8 and 27 layers on meronyms - member
+2024-07-26 08:57:00 root INFO     total operator prediction time: 9.615066528320312 seconds
+2024-07-26 08:57:00 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 08:57:00 root INFO     building operator antonyms - binary
+2024-07-26 08:57:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 08:57:00 root INFO     [W2VEstimator] using 8 and 27 layers on antonyms - binary
+2024-07-26 08:57:07 root INFO     total operator prediction time: 7.724606990814209 seconds
+2024-07-26 08:57:07 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 08:57:07 root INFO     building operator hyponyms - misc
+2024-07-26 08:57:07 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 08:57:07 root INFO     [W2VEstimator] using 8 and 27 layers on hyponyms - misc
+2024-07-26 08:57:18 root INFO     total operator prediction time: 10.731597900390625 seconds
+2024-07-26 08:57:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 08:57:18 root INFO     building operator hypernyms - animals
+2024-07-26 08:57:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:57:18 root INFO     [W2VEstimator] using 8 and 27 layers on hypernyms - animals
+2024-07-26 08:57:29 root INFO     total operator prediction time: 10.57748007774353 seconds
+2024-07-26 08:57:29 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 08:57:29 root INFO     building operator synonyms - intensity
+2024-07-26 08:57:29 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 08:57:29 root INFO     [W2VEstimator] using 8 and 27 layers on synonyms - intensity
+2024-07-26 08:57:38 root INFO     total operator prediction time: 9.273023128509521 seconds
+2024-07-26 08:57:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 08:57:38 root INFO     building operator meronyms - substance
+2024-07-26 08:57:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 08:57:38 root INFO     [W2VEstimator] using 8 and 27 layers on meronyms - substance
+2024-07-26 08:57:47 root INFO     total operator prediction time: 9.050818920135498 seconds
+2024-07-26 08:57:47 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 08:57:47 root INFO     building operator hypernyms - misc
+2024-07-26 08:57:47 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 08:57:47 root INFO     [W2VEstimator] using 8 and 27 layers on hypernyms - misc
+2024-07-26 08:57:57 root INFO     total operator prediction time: 9.51504921913147 seconds
+2024-07-26 08:57:57 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 08:57:57 root INFO     building operator synonyms - exact
+2024-07-26 08:57:57 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 08:57:57 root INFO     [W2VEstimator] using 8 and 27 layers on synonyms - exact
+2024-07-26 08:58:05 root INFO     total operator prediction time: 8.179682970046997 seconds
+2024-07-26 08:58:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 08:58:05 root INFO     building operator meronyms - part
+2024-07-26 08:58:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 08:58:05 root INFO     [W2VEstimator] using 8 and 27 layers on meronyms - part
+2024-07-26 08:58:14 root INFO     total operator prediction time: 9.509669065475464 seconds
+2024-07-26 09:10:36 root INFO     loading model + tokenizer
+2024-07-26 09:11:18 root INFO     loading model + tokenizer
+2024-07-26 09:11:35 root INFO     model + tokenizer loaded
+2024-07-26 09:11:35 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 09:11:35 root INFO     building operator UK_city - county
+2024-07-26 09:11:35 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 09:11:35 root INFO     [W2VEstimator] using 5 and 27 layers on UK_city - county
+2024-07-26 09:14:33 root INFO     loading model + tokenizer
+2024-07-26 09:14:50 root INFO     model + tokenizer loaded
+2024-07-26 09:14:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 09:14:50 root INFO     building operator UK_city - county
+2024-07-26 09:14:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 09:14:50 root INFO     [W2VEstimator] using 5 and 27 layers on UK_city - county
+2024-07-26 09:15:08 root INFO     total operator prediction time: 18.5467746257782 seconds
+2024-07-26 09:15:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 09:15:08 root INFO     building operator animal - youth
+2024-07-26 09:15:08 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 09:15:08 root INFO     [W2VEstimator] using 5 and 27 layers on animal - youth
+2024-07-26 09:15:20 root INFO     total operator prediction time: 11.366047859191895 seconds
+2024-07-26 09:15:20 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 09:15:20 root INFO     building operator animal - sound
+2024-07-26 09:15:20 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 09:15:20 root INFO     [W2VEstimator] using 5 and 27 layers on animal - sound
+2024-07-26 09:15:31 root INFO     total operator prediction time: 11.336542844772339 seconds
+2024-07-26 09:15:31 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 09:15:31 root INFO     building operator things - color
+2024-07-26 09:15:31 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 09:15:31 root INFO     [W2VEstimator] using 5 and 27 layers on things - color
+2024-07-26 09:15:38 root INFO     total operator prediction time: 7.172455787658691 seconds
+2024-07-26 09:15:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 09:15:38 root INFO     building operator country - capital
+2024-07-26 09:15:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 09:15:38 root INFO     [W2VEstimator] using 5 and 27 layers on country - capital
+2024-07-26 09:15:52 root INFO     total operator prediction time: 13.908262729644775 seconds
+2024-07-26 09:15:52 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 09:15:52 root INFO     building operator name - occupation
+2024-07-26 09:15:52 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 09:15:52 root INFO     [W2VEstimator] using 5 and 27 layers on name - occupation
+2024-07-26 09:16:03 root INFO     total operator prediction time: 11.273054599761963 seconds
+2024-07-26 09:16:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 09:16:03 root INFO     building operator male - female
+2024-07-26 09:16:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 09:16:03 root INFO     [W2VEstimator] using 5 and 27 layers on male - female
+2024-07-26 09:16:13 root INFO     total operator prediction time: 9.569409847259521 seconds
+2024-07-26 09:16:13 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 09:16:13 root INFO     building operator animal - shelter
+2024-07-26 09:16:13 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 09:16:13 root INFO     [W2VEstimator] using 5 and 27 layers on animal - shelter
+2024-07-26 09:16:22 root INFO     total operator prediction time: 9.425501823425293 seconds
+2024-07-26 09:16:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 09:16:22 root INFO     building operator country - language
+2024-07-26 09:16:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 09:16:22 root INFO     [W2VEstimator] using 5 and 27 layers on country - language
+2024-07-26 09:16:36 root INFO     total operator prediction time: 13.371125221252441 seconds
+2024-07-26 09:16:36 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 09:16:36 root INFO     building operator name - nationality
+2024-07-26 09:16:36 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 09:16:36 root INFO     [W2VEstimator] using 5 and 27 layers on name - nationality
+2024-07-26 09:16:43 root INFO     total operator prediction time: 7.228812217712402 seconds
+2024-07-26 09:16:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 09:16:43 root INFO     building operator verb+ment_irreg
+2024-07-26 09:16:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 09:16:43 root INFO     [W2VEstimator] using 5 and 27 layers on verb+ment_irreg
+2024-07-26 09:16:51 root INFO     total operator prediction time: 7.52966833114624 seconds
+2024-07-26 09:16:51 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 09:16:51 root INFO     building operator noun+less_reg
+2024-07-26 09:16:51 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 09:16:51 root INFO     [W2VEstimator] using 5 and 27 layers on noun+less_reg
+2024-07-26 09:16:58 root INFO     total operator prediction time: 7.495739698410034 seconds
+2024-07-26 09:16:58 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 09:16:58 root INFO     building operator adj+ness_reg
+2024-07-26 09:16:58 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 09:16:58 root INFO     [W2VEstimator] using 5 and 27 layers on adj+ness_reg
+2024-07-26 09:17:07 root INFO     total operator prediction time: 9.123963117599487 seconds
+2024-07-26 09:17:07 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 09:17:07 root INFO     building operator re+verb_reg
+2024-07-26 09:17:07 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 09:17:07 root INFO     [W2VEstimator] using 5 and 27 layers on re+verb_reg
+2024-07-26 09:17:16 root INFO     total operator prediction time: 8.838874816894531 seconds
+2024-07-26 09:17:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 09:17:16 root INFO     building operator un+adj_reg
+2024-07-26 09:17:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:17:16 root INFO     [W2VEstimator] using 5 and 27 layers on un+adj_reg
+2024-07-26 09:17:24 root INFO     total operator prediction time: 7.440550088882446 seconds
+2024-07-26 09:17:24 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 09:17:24 root INFO     building operator verb+able_reg
+2024-07-26 09:17:24 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 09:17:24 root INFO     [W2VEstimator] using 5 and 27 layers on verb+able_reg
+2024-07-26 09:17:35 root INFO     total operator prediction time: 10.994352579116821 seconds
+2024-07-26 09:17:35 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 09:17:35 root INFO     building operator verb+tion_irreg
+2024-07-26 09:17:35 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 09:17:35 root INFO     [W2VEstimator] using 5 and 27 layers on verb+tion_irreg
+2024-07-26 09:17:42 root INFO     total operator prediction time: 7.128040790557861 seconds
+2024-07-26 09:17:42 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 09:17:42 root INFO     building operator adj+ly_reg
+2024-07-26 09:17:42 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 09:17:42 root INFO     [W2VEstimator] using 5 and 27 layers on adj+ly_reg
+2024-07-26 09:17:50 root INFO     total operator prediction time: 8.745023965835571 seconds
+2024-07-26 09:17:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 09:17:50 root INFO     building operator over+adj_reg
+2024-07-26 09:17:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 09:17:50 root INFO     [W2VEstimator] using 5 and 27 layers on over+adj_reg
+2024-07-26 09:18:01 root INFO     total operator prediction time: 10.869423627853394 seconds
+2024-07-26 09:18:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 09:18:01 root INFO     building operator verb+er_irreg
+2024-07-26 09:18:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 09:18:01 root INFO     [W2VEstimator] using 5 and 27 layers on verb+er_irreg
+2024-07-26 09:18:12 root INFO     total operator prediction time: 10.438291072845459 seconds
+2024-07-26 09:18:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 09:18:12 root INFO     building operator adj - superlative
+2024-07-26 09:18:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 09:18:12 root INFO     [W2VEstimator] using 5 and 27 layers on adj - superlative
+2024-07-26 09:18:23 root INFO     total operator prediction time: 11.14347243309021 seconds
+2024-07-26 09:18:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 09:18:23 root INFO     building operator verb_3pSg - Ved
+2024-07-26 09:18:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 09:18:23 root INFO     [W2VEstimator] using 5 and 27 layers on verb_3pSg - Ved
+2024-07-26 09:18:33 root INFO     total operator prediction time: 9.648772478103638 seconds
+2024-07-26 09:18:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 09:18:33 root INFO     building operator noun - plural_reg
+2024-07-26 09:18:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:18:33 root INFO     [W2VEstimator] using 5 and 27 layers on noun - plural_reg
+2024-07-26 09:18:41 root INFO     total operator prediction time: 8.746395349502563 seconds
+2024-07-26 09:18:41 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 09:18:41 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 09:18:41 root INFO     [W2VEstimator] using 5 and 27 layers on verb_Ving - 3pSg
+2024-07-26 09:18:50 root INFO     total operator prediction time: 8.760480403900146 seconds
+2024-07-26 09:18:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 09:18:50 root INFO     building operator verb_inf - 3pSg
+2024-07-26 09:18:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 09:18:50 root INFO     [W2VEstimator] using 5 and 27 layers on verb_inf - 3pSg
+2024-07-26 09:18:57 root INFO     total operator prediction time: 7.0213611125946045 seconds
+2024-07-26 09:18:57 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 09:18:57 root INFO     building operator verb_inf - Ved
+2024-07-26 09:18:57 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 09:18:57 root INFO     [W2VEstimator] using 5 and 27 layers on verb_inf - Ved
+2024-07-26 09:19:10 root INFO     total operator prediction time: 13.304622173309326 seconds
+2024-07-26 09:19:10 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 09:19:10 root INFO     building operator verb_Ving - Ved
+2024-07-26 09:19:10 root INFO     [W2VEstimator] using 5 and 27 layers on verb_Ving - Ved
+2024-07-26 09:19:20 root INFO     total operator prediction time: 9.178619623184204 seconds
+2024-07-26 09:19:20 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 09:19:20 root INFO     building operator Ving - verb_inf
+2024-07-26 09:19:20 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 09:19:20 root INFO     [W2VEstimator] using 5 and 27 layers on Ving - verb_inf
+2024-07-26 09:19:29 root INFO     total operator prediction time: 9.18899941444397 seconds
+2024-07-26 09:19:29 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 09:19:29 root INFO     building operator noun - plural_irreg
+2024-07-26 09:19:29 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:19:29 root INFO     [W2VEstimator] using 5 and 27 layers on noun - plural_irreg
+2024-07-26 09:19:38 root INFO     total operator prediction time: 8.77978229522705 seconds
+2024-07-26 09:19:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 09:19:38 root INFO     building operator meronyms - member
+2024-07-26 09:19:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 09:19:38 root INFO     [W2VEstimator] using 5 and 27 layers on meronyms - member
+2024-07-26 09:19:47 root INFO     total operator prediction time: 9.353668689727783 seconds
+2024-07-26 09:19:47 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 09:19:47 root INFO     building operator antonyms - binary
+2024-07-26 09:19:47 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:19:47 root INFO     [W2VEstimator] using 5 and 27 layers on antonyms - binary
+2024-07-26 09:19:55 root INFO     total operator prediction time: 7.56083345413208 seconds
+2024-07-26 09:19:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 09:19:55 root INFO     building operator hyponyms - misc
+2024-07-26 09:19:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 09:19:55 root INFO     [W2VEstimator] using 5 and 27 layers on hyponyms - misc
+2024-07-26 09:20:05 root INFO     total operator prediction time: 10.56539011001587 seconds
+2024-07-26 09:20:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 09:20:05 root INFO     building operator hypernyms - animals
+2024-07-26 09:20:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:20:05 root INFO     [W2VEstimator] using 5 and 27 layers on hypernyms - animals
+2024-07-26 09:20:16 root INFO     total operator prediction time: 10.511710166931152 seconds
+2024-07-26 09:20:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 09:20:16 root INFO     building operator synonyms - intensity
+2024-07-26 09:20:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 09:20:16 root INFO     [W2VEstimator] using 5 and 27 layers on synonyms - intensity
+2024-07-26 09:20:25 root INFO     total operator prediction time: 9.301597833633423 seconds
+2024-07-26 09:20:25 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 09:20:25 root INFO     building operator meronyms - substance
+2024-07-26 09:20:25 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 09:20:25 root INFO     [W2VEstimator] using 5 and 27 layers on meronyms - substance
+2024-07-26 09:20:34 root INFO     total operator prediction time: 8.812035322189331 seconds
+2024-07-26 09:20:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 09:20:34 root INFO     building operator hypernyms - misc
+2024-07-26 09:20:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:20:34 root INFO     [W2VEstimator] using 5 and 27 layers on hypernyms - misc
+2024-07-26 09:20:43 root INFO     total operator prediction time: 9.384576797485352 seconds
+2024-07-26 09:20:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 09:20:43 root INFO     building operator synonyms - exact
+2024-07-26 09:20:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 09:20:43 root INFO     [W2VEstimator] using 5 and 27 layers on synonyms - exact
+2024-07-26 09:20:51 root INFO     total operator prediction time: 7.518839120864868 seconds
+2024-07-26 09:20:51 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 09:20:51 root INFO     building operator meronyms - part
+2024-07-26 09:20:51 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 09:20:51 root INFO     [W2VEstimator] using 5 and 27 layers on meronyms - part
+2024-07-26 09:21:00 root INFO     total operator prediction time: 9.403198957443237 seconds
+2024-07-26 09:29:13 root INFO     loading model + tokenizer
+2024-07-26 09:29:30 root INFO     model + tokenizer loaded
+2024-07-26 09:29:30 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 09:29:30 root INFO     building operator UK_city - county
+2024-07-26 09:29:30 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 09:29:30 root INFO     [W2VEstimator] using 4 and 27 layers on UK_city - county
+2024-07-26 09:29:49 root INFO     total operator prediction time: 18.635227918624878 seconds
+2024-07-26 09:29:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 09:29:49 root INFO     building operator animal - youth
+2024-07-26 09:29:49 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 09:29:49 root INFO     [W2VEstimator] using 4 and 27 layers on animal - youth
+2024-07-26 09:30:00 root INFO     total operator prediction time: 11.454249143600464 seconds
+2024-07-26 09:30:00 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 09:30:00 root INFO     building operator animal - sound
+2024-07-26 09:30:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 09:30:00 root INFO     [W2VEstimator] using 4 and 27 layers on animal - sound
+2024-07-26 09:30:12 root INFO     total operator prediction time: 11.470080375671387 seconds
+2024-07-26 09:30:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 09:30:12 root INFO     building operator things - color
+2024-07-26 09:30:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 09:30:12 root INFO     [W2VEstimator] using 4 and 27 layers on things - color
+2024-07-26 09:30:19 root INFO     total operator prediction time: 7.2128355503082275 seconds
+2024-07-26 09:30:19 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 09:30:19 root INFO     building operator country - capital
+2024-07-26 09:30:19 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 09:30:19 root INFO     [W2VEstimator] using 4 and 27 layers on country - capital
+2024-07-26 09:30:33 root INFO     total operator prediction time: 13.993597269058228 seconds
+2024-07-26 09:30:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 09:30:33 root INFO     building operator name - occupation
+2024-07-26 09:30:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 09:30:33 root INFO     [W2VEstimator] using 4 and 27 layers on name - occupation
+2024-07-26 09:30:45 root INFO     total operator prediction time: 11.378927230834961 seconds
+2024-07-26 09:30:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 09:30:45 root INFO     building operator male - female
+2024-07-26 09:30:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 09:30:45 root INFO     [W2VEstimator] using 4 and 27 layers on male - female
+2024-07-26 09:30:54 root INFO     total operator prediction time: 9.684753894805908 seconds
+2024-07-26 09:30:54 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 09:30:54 root INFO     building operator animal - shelter
+2024-07-26 09:30:54 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 09:30:54 root INFO     [W2VEstimator] using 4 and 27 layers on animal - shelter
+2024-07-26 09:31:04 root INFO     total operator prediction time: 9.58313512802124 seconds
+2024-07-26 09:31:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 09:31:04 root INFO     building operator country - language
+2024-07-26 09:31:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 09:31:04 root INFO     [W2VEstimator] using 4 and 27 layers on country - language
+2024-07-26 09:31:17 root INFO     total operator prediction time: 13.45216178894043 seconds
+2024-07-26 09:31:17 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 09:31:17 root INFO     building operator name - nationality
+2024-07-26 09:31:17 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 09:31:17 root INFO     [W2VEstimator] using 4 and 27 layers on name - nationality
+2024-07-26 09:31:25 root INFO     total operator prediction time: 7.237458944320679 seconds
+2024-07-26 09:31:25 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 09:31:25 root INFO     building operator verb+ment_irreg
+2024-07-26 09:31:25 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 09:31:25 root INFO     [W2VEstimator] using 4 and 27 layers on verb+ment_irreg
+2024-07-26 09:31:32 root INFO     total operator prediction time: 7.56256628036499 seconds
+2024-07-26 09:31:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 09:31:32 root INFO     building operator noun+less_reg
+2024-07-26 09:31:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 09:31:32 root INFO     [W2VEstimator] using 4 and 27 layers on noun+less_reg
+2024-07-26 09:31:40 root INFO     total operator prediction time: 7.574138641357422 seconds
+2024-07-26 09:31:40 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 09:31:40 root INFO     building operator adj+ness_reg
+2024-07-26 09:31:40 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 09:31:40 root INFO     [W2VEstimator] using 4 and 27 layers on adj+ness_reg
+2024-07-26 09:31:49 root INFO     total operator prediction time: 9.127656936645508 seconds
+2024-07-26 09:31:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 09:31:49 root INFO     building operator re+verb_reg
+2024-07-26 09:31:49 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 09:31:49 root INFO     [W2VEstimator] using 4 and 27 layers on re+verb_reg
+2024-07-26 09:31:58 root INFO     total operator prediction time: 8.811113357543945 seconds
+2024-07-26 09:31:58 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 09:31:58 root INFO     building operator un+adj_reg
+2024-07-26 09:31:58 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:31:58 root INFO     [W2VEstimator] using 4 and 27 layers on un+adj_reg
+2024-07-26 09:32:05 root INFO     total operator prediction time: 7.6052350997924805 seconds
+2024-07-26 09:32:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 09:32:05 root INFO     building operator verb+able_reg
+2024-07-26 09:32:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 09:32:05 root INFO     [W2VEstimator] using 4 and 27 layers on verb+able_reg
+2024-07-26 09:32:16 root INFO     total operator prediction time: 11.049006462097168 seconds
+2024-07-26 09:32:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 09:32:16 root INFO     building operator verb+tion_irreg
+2024-07-26 09:32:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 09:32:16 root INFO     [W2VEstimator] using 4 and 27 layers on verb+tion_irreg
+2024-07-26 09:32:24 root INFO     total operator prediction time: 7.264246225357056 seconds
+2024-07-26 09:32:24 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 09:32:24 root INFO     building operator adj+ly_reg
+2024-07-26 09:32:24 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 09:32:24 root INFO     [W2VEstimator] using 4 and 27 layers on adj+ly_reg
+2024-07-26 09:32:33 root INFO     total operator prediction time: 8.888432502746582 seconds
+2024-07-26 09:32:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 09:32:33 root INFO     building operator over+adj_reg
+2024-07-26 09:32:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 09:32:33 root INFO     [W2VEstimator] using 4 and 27 layers on over+adj_reg
+2024-07-26 09:32:43 root INFO     total operator prediction time: 10.932598352432251 seconds
+2024-07-26 09:32:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 09:32:43 root INFO     building operator verb+er_irreg
+2024-07-26 09:32:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 09:32:43 root INFO     [W2VEstimator] using 4 and 27 layers on verb+er_irreg
+2024-07-26 09:32:54 root INFO     total operator prediction time: 10.598570823669434 seconds
+2024-07-26 09:32:54 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 09:32:54 root INFO     building operator adj - superlative
+2024-07-26 09:32:54 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 09:32:54 root INFO     [W2VEstimator] using 4 and 27 layers on adj - superlative
+2024-07-26 09:33:05 root INFO     total operator prediction time: 11.237537145614624 seconds
+2024-07-26 09:33:05 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 09:33:05 root INFO     building operator verb_3pSg - Ved
+2024-07-26 09:33:05 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 09:33:05 root INFO     [W2VEstimator] using 4 and 27 layers on verb_3pSg - Ved
+2024-07-26 09:33:15 root INFO     total operator prediction time: 9.926870346069336 seconds
+2024-07-26 09:33:15 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 09:33:15 root INFO     building operator noun - plural_reg
+2024-07-26 09:33:15 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:33:15 root INFO     [W2VEstimator] using 4 and 27 layers on noun - plural_reg
+2024-07-26 09:33:24 root INFO     total operator prediction time: 8.74420166015625 seconds
+2024-07-26 09:33:24 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 09:33:24 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 09:33:24 root INFO     [W2VEstimator] using 4 and 27 layers on verb_Ving - 3pSg
+2024-07-26 09:33:33 root INFO     total operator prediction time: 8.746104001998901 seconds
+2024-07-26 09:33:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 09:33:33 root INFO     building operator verb_inf - 3pSg
+2024-07-26 09:33:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 09:33:33 root INFO     [W2VEstimator] using 4 and 27 layers on verb_inf - 3pSg
+2024-07-26 09:33:40 root INFO     total operator prediction time: 7.079254150390625 seconds
+2024-07-26 09:33:40 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 09:33:40 root INFO     building operator verb_inf - Ved
+2024-07-26 09:33:40 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 09:33:40 root INFO     [W2VEstimator] using 4 and 27 layers on verb_inf - Ved
+2024-07-26 09:33:53 root INFO     total operator prediction time: 13.399154663085938 seconds
+2024-07-26 09:33:53 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 09:33:53 root INFO     building operator verb_Ving - Ved
+2024-07-26 09:33:53 root INFO     [W2VEstimator] using 4 and 27 layers on verb_Ving - Ved
+2024-07-26 09:34:03 root INFO     total operator prediction time: 9.223911762237549 seconds
+2024-07-26 09:34:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 09:34:03 root INFO     building operator Ving - verb_inf
+2024-07-26 09:34:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 09:34:03 root INFO     [W2VEstimator] using 4 and 27 layers on Ving - verb_inf
+2024-07-26 09:34:12 root INFO     total operator prediction time: 9.330518007278442 seconds
+2024-07-26 09:34:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 09:34:12 root INFO     building operator noun - plural_irreg
+2024-07-26 09:34:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:34:12 root INFO     [W2VEstimator] using 4 and 27 layers on noun - plural_irreg
+2024-07-26 09:34:21 root INFO     total operator prediction time: 8.87656307220459 seconds
+2024-07-26 09:34:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 09:34:21 root INFO     building operator meronyms - member
+2024-07-26 09:34:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 09:34:21 root INFO     [W2VEstimator] using 4 and 27 layers on meronyms - member
+2024-07-26 09:34:32 root INFO     total operator prediction time: 11.421975374221802 seconds
+2024-07-26 09:34:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 09:34:32 root INFO     building operator antonyms - binary
+2024-07-26 09:34:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:34:32 root INFO     [W2VEstimator] using 4 and 27 layers on antonyms - binary
+2024-07-26 09:34:40 root INFO     total operator prediction time: 7.747541666030884 seconds
+2024-07-26 09:34:40 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 09:34:40 root INFO     building operator hyponyms - misc
+2024-07-26 09:34:40 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 09:34:40 root INFO     [W2VEstimator] using 4 and 27 layers on hyponyms - misc
+2024-07-26 09:34:51 root INFO     total operator prediction time: 10.73865532875061 seconds
+2024-07-26 09:34:51 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 09:34:51 root INFO     building operator hypernyms - animals
+2024-07-26 09:34:51 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:34:51 root INFO     [W2VEstimator] using 4 and 27 layers on hypernyms - animals
+2024-07-26 09:35:02 root INFO     total operator prediction time: 11.198853015899658 seconds
+2024-07-26 09:35:02 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 09:35:02 root INFO     building operator synonyms - intensity
+2024-07-26 09:35:02 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 09:35:02 root INFO     [W2VEstimator] using 4 and 27 layers on synonyms - intensity
+2024-07-26 09:35:12 root INFO     total operator prediction time: 9.945841073989868 seconds
+2024-07-26 09:35:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 09:35:12 root INFO     building operator meronyms - substance
+2024-07-26 09:35:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 09:35:12 root INFO     [W2VEstimator] using 4 and 27 layers on meronyms - substance
+2024-07-26 09:35:21 root INFO     total operator prediction time: 9.423890352249146 seconds
+2024-07-26 09:35:22 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 09:35:22 root INFO     building operator hypernyms - misc
+2024-07-26 09:35:22 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:35:22 root INFO     [W2VEstimator] using 4 and 27 layers on hypernyms - misc
+2024-07-26 09:35:32 root INFO     total operator prediction time: 10.840835571289062 seconds
+2024-07-26 09:35:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 09:35:32 root INFO     building operator synonyms - exact
+2024-07-26 09:35:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 09:35:32 root INFO     [W2VEstimator] using 4 and 27 layers on synonyms - exact
+2024-07-26 09:35:44 root INFO     total operator prediction time: 11.719481706619263 seconds
+2024-07-26 09:35:44 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 09:35:44 root INFO     building operator meronyms - part
+2024-07-26 09:35:44 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 09:35:44 root INFO     [W2VEstimator] using 4 and 27 layers on meronyms - part
+2024-07-26 09:35:58 root INFO     total operator prediction time: 14.0310537815094 seconds
+2024-07-26 09:38:51 root INFO     loading model + tokenizer
+2024-07-26 09:39:15 root INFO     model + tokenizer loaded
+2024-07-26 09:39:15 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 09:39:15 root INFO     building operator UK_city - county
+2024-07-26 09:39:15 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 09:39:15 root INFO     [W2VEstimator] using 3 and 27 layers on UK_city - county
+2024-07-26 09:39:33 root INFO     total operator prediction time: 18.89676856994629 seconds
+2024-07-26 09:39:34 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 09:39:34 root INFO     building operator animal - youth
+2024-07-26 09:39:34 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 09:39:34 root INFO     [W2VEstimator] using 3 and 27 layers on animal - youth
+2024-07-26 09:39:45 root INFO     total operator prediction time: 11.50351595878601 seconds
+2024-07-26 09:39:45 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 09:39:45 root INFO     building operator animal - sound
+2024-07-26 09:39:45 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 09:39:45 root INFO     [W2VEstimator] using 3 and 27 layers on animal - sound
+2024-07-26 09:39:57 root INFO     total operator prediction time: 11.563196659088135 seconds
+2024-07-26 09:39:57 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 09:39:57 root INFO     building operator things - color
+2024-07-26 09:39:57 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 09:39:57 root INFO     [W2VEstimator] using 3 and 27 layers on things - color
+2024-07-26 09:40:04 root INFO     total operator prediction time: 7.202885389328003 seconds
+2024-07-26 09:40:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 09:40:04 root INFO     building operator country - capital
+2024-07-26 09:40:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 09:40:04 root INFO     [W2VEstimator] using 3 and 27 layers on country - capital
+2024-07-26 09:40:18 root INFO     total operator prediction time: 14.060977935791016 seconds
+2024-07-26 09:40:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 09:40:18 root INFO     building operator name - occupation
+2024-07-26 09:40:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 09:40:18 root INFO     [W2VEstimator] using 3 and 27 layers on name - occupation
+2024-07-26 09:40:29 root INFO     total operator prediction time: 11.412996292114258 seconds
+2024-07-26 09:40:29 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 09:40:29 root INFO     building operator male - female
+2024-07-26 09:40:29 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 09:40:29 root INFO     [W2VEstimator] using 3 and 27 layers on male - female
+2024-07-26 09:40:39 root INFO     total operator prediction time: 9.620912075042725 seconds
+2024-07-26 09:40:39 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 09:40:39 root INFO     building operator animal - shelter
+2024-07-26 09:40:39 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 09:40:39 root INFO     [W2VEstimator] using 3 and 27 layers on animal - shelter
+2024-07-26 09:40:48 root INFO     total operator prediction time: 9.47200083732605 seconds
+2024-07-26 09:40:48 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 09:40:48 root INFO     building operator country - language
+2024-07-26 09:40:48 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 09:40:48 root INFO     [W2VEstimator] using 3 and 27 layers on country - language
+2024-07-26 09:41:02 root INFO     total operator prediction time: 13.426077842712402 seconds
+2024-07-26 09:41:02 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 09:41:02 root INFO     building operator name - nationality
+2024-07-26 09:41:02 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 09:41:02 root INFO     [W2VEstimator] using 3 and 27 layers on name - nationality
+2024-07-26 09:41:09 root INFO     total operator prediction time: 7.190955638885498 seconds
+2024-07-26 09:41:09 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 09:41:09 root INFO     building operator verb+ment_irreg
+2024-07-26 09:41:09 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 09:41:09 root INFO     [W2VEstimator] using 3 and 27 layers on verb+ment_irreg
+2024-07-26 09:41:17 root INFO     total operator prediction time: 7.595721006393433 seconds
+2024-07-26 09:41:17 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 09:41:17 root INFO     building operator noun+less_reg
+2024-07-26 09:41:17 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 09:41:17 root INFO     [W2VEstimator] using 3 and 27 layers on noun+less_reg
+2024-07-26 09:41:24 root INFO     total operator prediction time: 7.606009483337402 seconds
+2024-07-26 09:41:24 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 09:41:24 root INFO     building operator adj+ness_reg
+2024-07-26 09:41:24 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 09:41:24 root INFO     [W2VEstimator] using 3 and 27 layers on adj+ness_reg
+2024-07-26 09:41:33 root INFO     total operator prediction time: 9.076819896697998 seconds
+2024-07-26 09:41:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 09:41:33 root INFO     building operator re+verb_reg
+2024-07-26 09:41:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 09:41:33 root INFO     [W2VEstimator] using 3 and 27 layers on re+verb_reg
+2024-07-26 09:41:42 root INFO     total operator prediction time: 8.86142110824585 seconds
+2024-07-26 09:41:42 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 09:41:42 root INFO     building operator un+adj_reg
+2024-07-26 09:41:42 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:41:42 root INFO     [W2VEstimator] using 3 and 27 layers on un+adj_reg
+2024-07-26 09:41:50 root INFO     total operator prediction time: 7.372931480407715 seconds
+2024-07-26 09:41:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 09:41:50 root INFO     building operator verb+able_reg
+2024-07-26 09:41:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 09:41:50 root INFO     [W2VEstimator] using 3 and 27 layers on verb+able_reg
+2024-07-26 09:42:01 root INFO     total operator prediction time: 11.15099835395813 seconds
+2024-07-26 09:42:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 09:42:01 root INFO     building operator verb+tion_irreg
+2024-07-26 09:42:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 09:42:01 root INFO     [W2VEstimator] using 3 and 27 layers on verb+tion_irreg
+2024-07-26 09:42:11 root INFO     total operator prediction time: 10.25696063041687 seconds
+2024-07-26 09:42:11 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 09:42:11 root INFO     building operator adj+ly_reg
+2024-07-26 09:42:11 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 09:42:11 root INFO     [W2VEstimator] using 3 and 27 layers on adj+ly_reg
+2024-07-26 09:42:20 root INFO     total operator prediction time: 8.953682899475098 seconds
+2024-07-26 09:42:20 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 09:42:20 root INFO     building operator over+adj_reg
+2024-07-26 09:42:20 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 09:42:20 root INFO     [W2VEstimator] using 3 and 27 layers on over+adj_reg
+2024-07-26 09:42:31 root INFO     total operator prediction time: 10.962759494781494 seconds
+2024-07-26 09:42:31 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 09:42:31 root INFO     building operator verb+er_irreg
+2024-07-26 09:42:31 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 09:42:31 root INFO     [W2VEstimator] using 3 and 27 layers on verb+er_irreg
+2024-07-26 09:42:42 root INFO     total operator prediction time: 11.00105595588684 seconds
+2024-07-26 09:42:42 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 09:42:42 root INFO     building operator adj - superlative
+2024-07-26 09:42:42 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 09:42:42 root INFO     [W2VEstimator] using 3 and 27 layers on adj - superlative
+2024-07-26 09:42:56 root INFO     total operator prediction time: 13.545865774154663 seconds
+2024-07-26 09:42:56 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 09:42:56 root INFO     building operator verb_3pSg - Ved
+2024-07-26 09:42:56 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 09:42:56 root INFO     [W2VEstimator] using 3 and 27 layers on verb_3pSg - Ved
+2024-07-26 09:43:07 root INFO     total operator prediction time: 11.292405843734741 seconds
+2024-07-26 09:43:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 09:43:19 root INFO     building operator noun - plural_reg
+2024-07-26 09:43:19 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:43:19 root INFO     [W2VEstimator] using 3 and 27 layers on noun - plural_reg
+2024-07-26 09:43:29 root INFO     total operator prediction time: 10.073620080947876 seconds
+2024-07-26 09:43:30 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 09:43:30 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 09:43:30 root INFO     [W2VEstimator] using 3 and 27 layers on verb_Ving - 3pSg
+2024-07-26 09:43:39 root INFO     total operator prediction time: 9.683145761489868 seconds
+2024-07-26 09:43:39 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 09:43:39 root INFO     building operator verb_inf - 3pSg
+2024-07-26 09:43:39 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 09:43:39 root INFO     [W2VEstimator] using 3 and 27 layers on verb_inf - 3pSg
+2024-07-26 09:43:50 root INFO     total operator prediction time: 10.57323956489563 seconds
+2024-07-26 09:43:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 09:43:50 root INFO     building operator verb_inf - Ved
+2024-07-26 09:43:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 09:43:50 root INFO     [W2VEstimator] using 3 and 27 layers on verb_inf - Ved
+2024-07-26 09:44:08 root INFO     total operator prediction time: 17.4844753742218 seconds
+2024-07-26 09:44:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 09:44:08 root INFO     building operator verb_Ving - Ved
+2024-07-26 09:44:08 root INFO     [W2VEstimator] using 3 and 27 layers on verb_Ving - Ved
+2024-07-26 09:44:21 root INFO     total operator prediction time: 13.409393548965454 seconds
+2024-07-26 09:44:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 09:44:21 root INFO     building operator Ving - verb_inf
+2024-07-26 09:44:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 09:44:21 root INFO     [W2VEstimator] using 3 and 27 layers on Ving - verb_inf
+2024-07-26 09:44:45 root INFO     total operator prediction time: 24.225936889648438 seconds
+2024-07-26 09:44:46 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 09:44:46 root INFO     building operator noun - plural_irreg
+2024-07-26 09:44:46 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 09:44:46 root INFO     [W2VEstimator] using 3 and 27 layers on noun - plural_irreg
+2024-07-26 09:44:55 root INFO     total operator prediction time: 9.056511163711548 seconds
+2024-07-26 09:44:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 09:44:55 root INFO     building operator meronyms - member
+2024-07-26 09:44:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 09:44:55 root INFO     [W2VEstimator] using 3 and 27 layers on meronyms - member
+2024-07-26 09:45:04 root INFO     total operator prediction time: 9.515334844589233 seconds
+2024-07-26 09:45:04 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 09:45:04 root INFO     building operator antonyms - binary
+2024-07-26 09:45:04 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 09:45:04 root INFO     [W2VEstimator] using 3 and 27 layers on antonyms - binary
+2024-07-26 09:45:12 root INFO     total operator prediction time: 7.826917886734009 seconds
+2024-07-26 09:45:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 09:45:12 root INFO     building operator hyponyms - misc
+2024-07-26 09:45:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 09:45:12 root INFO     [W2VEstimator] using 3 and 27 layers on hyponyms - misc
+2024-07-26 09:45:23 root INFO     total operator prediction time: 11.43596363067627 seconds
+2024-07-26 09:45:24 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 09:45:24 root INFO     building operator hypernyms - animals
+2024-07-26 09:45:24 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:45:24 root INFO     [W2VEstimator] using 3 and 27 layers on hypernyms - animals
+2024-07-26 09:45:38 root INFO     total operator prediction time: 14.688221216201782 seconds
+2024-07-26 09:45:38 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 09:45:38 root INFO     building operator synonyms - intensity
+2024-07-26 09:45:38 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 09:45:38 root INFO     [W2VEstimator] using 3 and 27 layers on synonyms - intensity
+2024-07-26 09:45:59 root INFO     total operator prediction time: 20.611900329589844 seconds
+2024-07-26 09:45:59 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 09:45:59 root INFO     building operator meronyms - substance
+2024-07-26 09:45:59 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 09:45:59 root INFO     [W2VEstimator] using 3 and 27 layers on meronyms - substance
+2024-07-26 09:46:08 root INFO     total operator prediction time: 9.21205449104309 seconds
+2024-07-26 09:46:08 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 09:46:08 root INFO     building operator hypernyms - misc
+2024-07-26 09:46:08 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 09:46:08 root INFO     [W2VEstimator] using 3 and 27 layers on hypernyms - misc
+2024-07-26 09:46:18 root INFO     total operator prediction time: 9.979915380477905 seconds
+2024-07-26 09:46:18 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 09:46:18 root INFO     building operator synonyms - exact
+2024-07-26 09:46:18 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 09:46:18 root INFO     [W2VEstimator] using 3 and 27 layers on synonyms - exact
+2024-07-26 09:46:26 root INFO     total operator prediction time: 8.11217212677002 seconds
+2024-07-26 09:46:27 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 09:46:27 root INFO     building operator meronyms - part
+2024-07-26 09:46:27 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 09:46:27 root INFO     [W2VEstimator] using 3 and 27 layers on meronyms - part
+2024-07-26 09:46:37 root INFO     total operator prediction time: 10.258054733276367 seconds
+2024-07-26 09:59:36 root INFO     loading model + tokenizer
+2024-07-26 10:01:31 root INFO     model + tokenizer loaded
+2024-07-26 10:01:31 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on UK_city - county
+2024-07-26 10:01:31 root INFO     building operator UK_city - county
+2024-07-26 10:01:31 lre.operators WARNING  relation has > 1 prompt_templates, will use first (In the United Kingdom, the city of {} is in the county of)
+2024-07-26 10:01:31 root INFO     [W2VEstimator] using 9 and 27 layers on UK_city - county
+2024-07-26 10:01:49 root INFO     total operator prediction time: 18.406156539916992 seconds
+2024-07-26 10:01:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - youth
+2024-07-26 10:01:49 root INFO     building operator animal - youth
+2024-07-26 10:01:49 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The offspring of a {} is referred to as a)
+2024-07-26 10:01:49 root INFO     [W2VEstimator] using 9 and 27 layers on animal - youth
+2024-07-26 10:02:00 root INFO     total operator prediction time: 11.185886144638062 seconds
+2024-07-26 10:02:00 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - sound
+2024-07-26 10:02:00 root INFO     building operator animal - sound
+2024-07-26 10:02:00 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The sound that a {} makes is called a)
+2024-07-26 10:02:00 root INFO     [W2VEstimator] using 9 and 27 layers on animal - sound
+2024-07-26 10:02:12 root INFO     total operator prediction time: 11.156980037689209 seconds
+2024-07-26 10:02:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on things - color
+2024-07-26 10:02:12 root INFO     building operator things - color
+2024-07-26 10:02:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} is colored)
+2024-07-26 10:02:12 root INFO     [W2VEstimator] using 9 and 27 layers on things - color
+2024-07-26 10:02:19 root INFO     total operator prediction time: 7.086044073104858 seconds
+2024-07-26 10:02:19 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - capital
+2024-07-26 10:02:19 root INFO     building operator country - capital
+2024-07-26 10:02:19 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country with {} as its capital is known as)
+2024-07-26 10:02:19 root INFO     [W2VEstimator] using 9 and 27 layers on country - capital
+2024-07-26 10:02:32 root INFO     total operator prediction time: 13.70426893234253 seconds
+2024-07-26 10:02:32 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - occupation
+2024-07-26 10:02:32 root INFO     building operator name - occupation
+2024-07-26 10:02:32 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was known for their work as a )
+2024-07-26 10:02:32 root INFO     [W2VEstimator] using 9 and 27 layers on name - occupation
+2024-07-26 10:02:43 root INFO     total operator prediction time: 11.059727668762207 seconds
+2024-07-26 10:02:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on male - female
+2024-07-26 10:02:43 root INFO     building operator male - female
+2024-07-26 10:02:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A female {} is known as a)
+2024-07-26 10:02:43 root INFO     [W2VEstimator] using 9 and 27 layers on male - female
+2024-07-26 10:02:53 root INFO     total operator prediction time: 9.426579475402832 seconds
+2024-07-26 10:02:53 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on animal - shelter
+2024-07-26 10:02:53 root INFO     building operator animal - shelter
+2024-07-26 10:02:53 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The place {} lives in is called)
+2024-07-26 10:02:53 root INFO     [W2VEstimator] using 9 and 27 layers on animal - shelter
+2024-07-26 10:03:02 root INFO     total operator prediction time: 9.303826808929443 seconds
+2024-07-26 10:03:02 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on country - language
+2024-07-26 10:03:02 root INFO     building operator country - language
+2024-07-26 10:03:02 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The country of {} primarily speaks the language of)
+2024-07-26 10:03:02 root INFO     [W2VEstimator] using 9 and 27 layers on country - language
+2024-07-26 10:03:15 root INFO     total operator prediction time: 13.243042230606079 seconds
+2024-07-26 10:03:15 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on name - nationality
+2024-07-26 10:03:15 root INFO     building operator name - nationality
+2024-07-26 10:03:15 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} was)
+2024-07-26 10:03:15 root INFO     [W2VEstimator] using 9 and 27 layers on name - nationality
+2024-07-26 10:03:23 root INFO     total operator prediction time: 7.175682306289673 seconds
+2024-07-26 10:03:23 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+ment_irreg
+2024-07-26 10:03:23 root INFO     building operator verb+ment_irreg
+2024-07-26 10:03:23 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in a)
+2024-07-26 10:03:23 root INFO     [W2VEstimator] using 9 and 27 layers on verb+ment_irreg
+2024-07-26 10:03:30 root INFO     total operator prediction time: 7.4328999519348145 seconds
+2024-07-26 10:03:30 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun+less_reg
+2024-07-26 10:03:30 root INFO     building operator noun+less_reg
+2024-07-26 10:03:30 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Something without {} is)
+2024-07-26 10:03:30 root INFO     [W2VEstimator] using 9 and 27 layers on noun+less_reg
+2024-07-26 10:03:37 root INFO     total operator prediction time: 7.407907724380493 seconds
+2024-07-26 10:03:37 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ness_reg
+2024-07-26 10:03:37 root INFO     building operator adj+ness_reg
+2024-07-26 10:03:37 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The state of being {} is)
+2024-07-26 10:03:37 root INFO     [W2VEstimator] using 9 and 27 layers on adj+ness_reg
+2024-07-26 10:03:46 root INFO     total operator prediction time: 8.919524431228638 seconds
+2024-07-26 10:03:46 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on re+verb_reg
+2024-07-26 10:03:46 root INFO     building operator re+verb_reg
+2024-07-26 10:03:46 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} again is to)
+2024-07-26 10:03:46 root INFO     [W2VEstimator] using 9 and 27 layers on re+verb_reg
+2024-07-26 10:03:55 root INFO     total operator prediction time: 8.517040967941284 seconds
+2024-07-26 10:03:55 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on un+adj_reg
+2024-07-26 10:03:55 root INFO     building operator un+adj_reg
+2024-07-26 10:03:55 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 10:03:55 root INFO     [W2VEstimator] using 9 and 27 layers on un+adj_reg
+2024-07-26 10:04:02 root INFO     total operator prediction time: 7.284109354019165 seconds
+2024-07-26 10:04:02 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+able_reg
+2024-07-26 10:04:02 root INFO     building operator verb+able_reg
+2024-07-26 10:04:02 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you can {} something, that thing is)
+2024-07-26 10:04:02 root INFO     [W2VEstimator] using 9 and 27 layers on verb+able_reg
+2024-07-26 10:04:13 root INFO     total operator prediction time: 10.86190390586853 seconds
+2024-07-26 10:04:13 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+tion_irreg
+2024-07-26 10:04:13 root INFO     building operator verb+tion_irreg
+2024-07-26 10:04:13 lre.operators WARNING  relation has > 1 prompt_templates, will use first (To {} results in)
+2024-07-26 10:04:13 root INFO     [W2VEstimator] using 9 and 27 layers on verb+tion_irreg
+2024-07-26 10:04:20 root INFO     total operator prediction time: 7.116843223571777 seconds
+2024-07-26 10:04:20 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj+ly_reg
+2024-07-26 10:04:20 root INFO     building operator adj+ly_reg
+2024-07-26 10:04:20 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The adjective form of {} is)
+2024-07-26 10:04:20 root INFO     [W2VEstimator] using 9 and 27 layers on adj+ly_reg
+2024-07-26 10:04:29 root INFO     total operator prediction time: 8.902784824371338 seconds
+2024-07-26 10:04:29 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on over+adj_reg
+2024-07-26 10:04:29 root INFO     building operator over+adj_reg
+2024-07-26 10:04:29 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is too {}, it is)
+2024-07-26 10:04:29 root INFO     [W2VEstimator] using 9 and 27 layers on over+adj_reg
+2024-07-26 10:04:40 root INFO     total operator prediction time: 10.902425050735474 seconds
+2024-07-26 10:04:40 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb+er_irreg
+2024-07-26 10:04:40 root INFO     building operator verb+er_irreg
+2024-07-26 10:04:40 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If you {} something, you are a)
+2024-07-26 10:04:40 root INFO     [W2VEstimator] using 9 and 27 layers on verb+er_irreg
+2024-07-26 10:04:50 root INFO     total operator prediction time: 10.290387153625488 seconds
+2024-07-26 10:04:50 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on adj - superlative
+2024-07-26 10:04:50 root INFO     building operator adj - superlative
+2024-07-26 10:04:50 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If something is the most {}, it is)
+2024-07-26 10:04:50 root INFO     [W2VEstimator] using 9 and 27 layers on adj - superlative
+2024-07-26 10:05:01 root INFO     total operator prediction time: 10.950230121612549 seconds
+2024-07-26 10:05:01 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_3pSg - Ved
+2024-07-26 10:05:01 root INFO     building operator verb_3pSg - Ved
+2024-07-26 10:05:01 lre.operators WARNING  relation has > 1 prompt_templates, will use first (When he {} something, something has been)
+2024-07-26 10:05:01 root INFO     [W2VEstimator] using 9 and 27 layers on verb_3pSg - Ved
+2024-07-26 10:05:11 root INFO     total operator prediction time: 10.084796905517578 seconds
+2024-07-26 10:05:11 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_reg
+2024-07-26 10:05:11 root INFO     building operator noun - plural_reg
+2024-07-26 10:05:11 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 10:05:11 root INFO     [W2VEstimator] using 9 and 27 layers on noun - plural_reg
+2024-07-26 10:05:20 root INFO     total operator prediction time: 8.637806177139282 seconds
+2024-07-26 10:05:20 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - 3pSg
+2024-07-26 10:05:20 root INFO     building operator verb_Ving - 3pSg
+2024-07-26 10:05:20 root INFO     [W2VEstimator] using 9 and 27 layers on verb_Ving - 3pSg
+2024-07-26 10:05:29 root INFO     total operator prediction time: 8.698783159255981 seconds
+2024-07-26 10:05:29 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - 3pSg
+2024-07-26 10:05:29 root INFO     building operator verb_inf - 3pSg
+2024-07-26 10:05:29 lre.operators WARNING  relation has > 1 prompt_templates, will use first (I {}, he)
+2024-07-26 10:05:29 root INFO     [W2VEstimator] using 9 and 27 layers on verb_inf - 3pSg
+2024-07-26 10:05:36 root INFO     total operator prediction time: 6.944911956787109 seconds
+2024-07-26 10:05:36 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_inf - Ved
+2024-07-26 10:05:36 root INFO     building operator verb_inf - Ved
+2024-07-26 10:05:36 lre.operators WARNING  relation has > 1 prompt_templates, will use first (If the present form is {}, the past form is)
+2024-07-26 10:05:36 root INFO     [W2VEstimator] using 9 and 27 layers on verb_inf - Ved
+2024-07-26 10:05:49 root INFO     total operator prediction time: 13.17558765411377 seconds
+2024-07-26 10:05:49 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on verb_Ving - Ved
+2024-07-26 10:05:49 root INFO     building operator verb_Ving - Ved
+2024-07-26 10:05:49 root INFO     [W2VEstimator] using 9 and 27 layers on verb_Ving - Ved
+2024-07-26 10:05:58 root INFO     total operator prediction time: 9.228260517120361 seconds
+2024-07-26 10:05:58 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on Ving - verb_inf
+2024-07-26 10:05:58 root INFO     building operator Ving - verb_inf
+2024-07-26 10:05:58 lre.operators WARNING  relation has > 1 prompt_templates, will use first ({} is the active form of)
+2024-07-26 10:05:58 root INFO     [W2VEstimator] using 9 and 27 layers on Ving - verb_inf
+2024-07-26 10:06:07 root INFO     total operator prediction time: 9.06788682937622 seconds
+2024-07-26 10:06:07 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on noun - plural_irreg
+2024-07-26 10:06:07 root INFO     building operator noun - plural_irreg
+2024-07-26 10:06:07 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The plural form of {} is)
+2024-07-26 10:06:07 root INFO     [W2VEstimator] using 9 and 27 layers on noun - plural_irreg
+2024-07-26 10:06:16 root INFO     total operator prediction time: 8.719074249267578 seconds
+2024-07-26 10:06:16 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - member
+2024-07-26 10:06:16 root INFO     building operator meronyms - member
+2024-07-26 10:06:16 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is a member of a)
+2024-07-26 10:06:16 root INFO     [W2VEstimator] using 9 and 27 layers on meronyms - member
+2024-07-26 10:06:25 root INFO     total operator prediction time: 9.2519690990448 seconds
+2024-07-26 10:06:25 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on antonyms - binary
+2024-07-26 10:06:25 root INFO     building operator antonyms - binary
+2024-07-26 10:06:25 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The opposite of {} is)
+2024-07-26 10:06:25 root INFO     [W2VEstimator] using 9 and 27 layers on antonyms - binary
+2024-07-26 10:06:33 root INFO     total operator prediction time: 7.6055076122283936 seconds
+2024-07-26 10:06:33 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hyponyms - misc
+2024-07-26 10:06:33 root INFO     building operator hyponyms - misc
+2024-07-26 10:06:33 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more specific term for a {} is)
+2024-07-26 10:06:33 root INFO     [W2VEstimator] using 9 and 27 layers on hyponyms - misc
+2024-07-26 10:06:43 root INFO     total operator prediction time: 10.450181245803833 seconds
+2024-07-26 10:06:43 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - animals
+2024-07-26 10:06:43 root INFO     building operator hypernyms - animals
+2024-07-26 10:06:43 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 10:06:43 root INFO     [W2VEstimator] using 9 and 27 layers on hypernyms - animals
+2024-07-26 10:06:54 root INFO     total operator prediction time: 10.354480504989624 seconds
+2024-07-26 10:06:54 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - intensity
+2024-07-26 10:06:54 root INFO     building operator synonyms - intensity
+2024-07-26 10:06:54 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A more intense word for {} is)
+2024-07-26 10:06:54 root INFO     [W2VEstimator] using 9 and 27 layers on synonyms - intensity
+2024-07-26 10:07:03 root INFO     total operator prediction time: 9.199350357055664 seconds
+2024-07-26 10:07:03 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - substance
+2024-07-26 10:07:03 root INFO     building operator meronyms - substance
+2024-07-26 10:07:03 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A {} is made up of)
+2024-07-26 10:07:03 root INFO     [W2VEstimator] using 9 and 27 layers on meronyms - substance
+2024-07-26 10:07:12 root INFO     total operator prediction time: 8.65886378288269 seconds
+2024-07-26 10:07:12 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on hypernyms - misc
+2024-07-26 10:07:12 root INFO     building operator hypernyms - misc
+2024-07-26 10:07:12 lre.operators WARNING  relation has > 1 prompt_templates, will use first (The {} falls into the category of)
+2024-07-26 10:07:12 root INFO     [W2VEstimator] using 9 and 27 layers on hypernyms - misc
+2024-07-26 10:07:21 root INFO     total operator prediction time: 9.296048641204834 seconds
+2024-07-26 10:07:21 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on synonyms - exact
+2024-07-26 10:07:21 root INFO     building operator synonyms - exact
+2024-07-26 10:07:21 lre.operators WARNING  relation has > 1 prompt_templates, will use first (Another word for {} is)
+2024-07-26 10:07:21 root INFO     [W2VEstimator] using 9 and 27 layers on synonyms - exact
+2024-07-26 10:07:28 root INFO     total operator prediction time: 7.415675640106201 seconds
+2024-07-26 10:07:28 __main__ INFO     storing weights: <class 'lre.operators.Word2VecIclEstimator'> on meronyms - part
+2024-07-26 10:07:28 root INFO     building operator meronyms - part
+2024-07-26 10:07:28 lre.operators WARNING  relation has > 1 prompt_templates, will use first (A part of a {} is a)
+2024-07-26 10:07:28 root INFO     [W2VEstimator] using 9 and 27 layers on meronyms - part
+2024-07-26 10:07:38 root INFO     total operator prediction time: 9.307164907455444 seconds

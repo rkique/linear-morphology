@@ -1,0 +1,1649 @@
+2024-07-26 10:58:51 root INFO     loading model + tokenizer
+2024-07-26 10:58:55 root INFO     model + tokenizer loaded
+2024-07-26 10:58:55 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-26 10:58:55 root INFO     building operator meronyms - part
+2024-07-26 11:00:07 root INFO     loading model + tokenizer
+2024-07-26 11:00:25 root INFO     loading model + tokenizer
+2024-07-26 11:00:29 root INFO     model + tokenizer loaded
+2024-07-26 11:00:29 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-26 11:00:29 root INFO     building operator meronyms - part
+2024-07-26 11:02:34 root INFO     loading model + tokenizer
+2024-07-26 11:02:38 root INFO     model + tokenizer loaded
+2024-07-26 11:02:38 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-26 11:02:38 root INFO     building operator meronyms - part
+2024-07-26 11:02:38 root INFO     [order_1_approx] starting weight calculation for A part of a tonne is a kilogram
+A part of a table is a tabletop
+A part of a brush is a bristle
+A part of a seafront is a harbor
+A part of a radio is a receiver
+A part of a shilling is a pence
+A part of a academia is a college
+A part of a jail is a
+2024-07-26 11:02:39 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:05:22 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1274,  0.0350, -0.2373,  ..., -0.0634, -0.3208,  0.0579],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.3066, -6.3984,  1.2227,  ..., -0.7734, -1.0908,  0.9941],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0462, -0.0106,  0.0247,  ..., -0.0176,  0.0143, -0.0076],
+        [-0.0022,  0.0336, -0.0322,  ...,  0.0104, -0.0037, -0.0008],
+        [ 0.0123, -0.0091,  0.0474,  ..., -0.0196, -0.0176,  0.0106],
+        ...,
+        [-0.0018,  0.0013, -0.0181,  ...,  0.0717,  0.0037, -0.0232],
+        [-0.0296, -0.0123, -0.0256,  ..., -0.0025,  0.0313, -0.0083],
+        [ 0.0037,  0.0149, -0.0104,  ..., -0.0043, -0.0074,  0.0119]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.0000, -5.8945,  1.0928,  ..., -0.4175, -1.3809,  0.9590]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:05:23 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a tonne is a kilogram
+A part of a table is a tabletop
+A part of a brush is a bristle
+A part of a seafront is a harbor
+A part of a radio is a receiver
+A part of a shilling is a pence
+A part of a academia is a college
+A part of a jail is a
+2024-07-26 11:05:23 root INFO     [order_1_approx] starting weight calculation for A part of a seafront is a harbor
+A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a radio is a receiver
+A part of a academia is a college
+A part of a table is a tabletop
+A part of a jail is a cell
+A part of a shilling is a
+2024-07-26 11:05:24 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:08:10 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0513, -0.0158, -0.1750,  ...,  0.0543,  0.3694, -0.3401],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.2402,  1.1309, -1.4482,  ...,  0.2542, -1.1992,  0.1191],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.2347e-01, -3.4760e-02,  5.4398e-03,  ..., -4.0131e-03,
+         -5.5847e-03, -1.5915e-02],
+        [-1.3657e-02,  3.6411e-03,  1.9112e-03,  ...,  1.9684e-02,
+          3.5828e-02, -3.5645e-02],
+        [ 2.6184e-02, -3.1036e-02,  2.6947e-02,  ..., -1.2688e-02,
+         -1.2314e-02,  2.0203e-02],
+        ...,
+        [ 3.3340e-03,  5.4626e-02, -9.9182e-05,  ...,  4.1077e-02,
+          1.4076e-03, -4.9255e-02],
+        [ 4.2450e-02,  4.0314e-02,  1.7700e-02,  ...,  1.5991e-02,
+          2.4734e-02, -3.3646e-03],
+        [-8.3542e-03, -1.2756e-02, -4.1199e-04,  ...,  2.1267e-04,
+          1.5274e-02,  3.4760e-02]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.0535,  1.1582, -1.0449,  ...,  1.8408, -0.5825,  0.0941]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:08:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a seafront is a harbor
+A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a radio is a receiver
+A part of a academia is a college
+A part of a table is a tabletop
+A part of a jail is a cell
+A part of a shilling is a
+2024-07-26 11:08:11 root INFO     [order_1_approx] starting weight calculation for A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a academia is a college
+A part of a jail is a cell
+A part of a shilling is a pence
+A part of a table is a tabletop
+A part of a seafront is a harbor
+A part of a radio is a
+2024-07-26 11:08:11 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:10:54 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.3223, -0.1863,  0.0175,  ..., -0.1504, -0.1093, -0.0693],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.7471, -3.2773,  0.9966,  ...,  3.8477,  0.6318,  1.0146],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0639, -0.0186,  0.0040,  ...,  0.0189,  0.0161,  0.0111],
+        [ 0.0011,  0.0116, -0.0163,  ...,  0.0172,  0.0447, -0.0292],
+        [ 0.0250,  0.0097,  0.0127,  ..., -0.0059, -0.0396,  0.0198],
+        ...,
+        [ 0.0240,  0.0468,  0.0139,  ...,  0.0659,  0.0136,  0.0404],
+        [-0.0091, -0.0052, -0.0125,  ..., -0.0057, -0.0007, -0.0060],
+        [-0.0224,  0.0134,  0.0024,  ...,  0.0092,  0.0068,  0.0221]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.8613, -3.0312,  1.2158,  ...,  3.1270,  0.1299,  1.4268]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:10:55 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a academia is a college
+A part of a jail is a cell
+A part of a shilling is a pence
+A part of a table is a tabletop
+A part of a seafront is a harbor
+A part of a radio is a
+2024-07-26 11:10:55 root INFO     [order_1_approx] starting weight calculation for A part of a table is a tabletop
+A part of a shilling is a pence
+A part of a academia is a college
+A part of a seafront is a harbor
+A part of a radio is a receiver
+A part of a jail is a cell
+A part of a brush is a bristle
+A part of a tonne is a
+2024-07-26 11:10:56 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:13:39 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2384, -0.1260,  0.2224,  ...,  0.0096, -0.1057,  0.3572],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.7344, -5.4922,  2.2637,  ..., -2.5547, -0.0322,  0.0959],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.1130, -0.0473,  0.0185,  ..., -0.0171,  0.0337,  0.0359],
+        [-0.0161,  0.0230, -0.0196,  ...,  0.0033,  0.0319, -0.0382],
+        [-0.0239,  0.0158,  0.0519,  ..., -0.0246, -0.0177, -0.0135],
+        ...,
+        [ 0.0050,  0.0083,  0.0215,  ...,  0.0630,  0.0457,  0.0225],
+        [ 0.0356,  0.0107,  0.0427,  ..., -0.0061,  0.0228,  0.0137],
+        [-0.0364, -0.0544, -0.0706,  ...,  0.0346,  0.0106, -0.0345]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.0703, -5.1641,  2.0996,  ..., -1.5459, -0.1489,  0.7520]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:13:40 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a table is a tabletop
+A part of a shilling is a pence
+A part of a academia is a college
+A part of a seafront is a harbor
+A part of a radio is a receiver
+A part of a jail is a cell
+A part of a brush is a bristle
+A part of a tonne is a
+2024-07-26 11:13:40 root INFO     [order_1_approx] starting weight calculation for A part of a radio is a receiver
+A part of a academia is a college
+A part of a table is a tabletop
+A part of a shilling is a pence
+A part of a brush is a bristle
+A part of a tonne is a kilogram
+A part of a jail is a cell
+A part of a seafront is a
+2024-07-26 11:13:40 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:16:27 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0761, -0.0942, -0.1180,  ...,  0.1489, -0.2703, -0.2957],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.4082, -4.2148, -3.2852,  ...,  6.3945, -3.2539, -0.5820],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0562, -0.0179,  0.0283,  ..., -0.0010, -0.0100,  0.0163],
+        [-0.0072,  0.0447, -0.0149,  ...,  0.0143, -0.0094, -0.0191],
+        [-0.0017, -0.0142,  0.0496,  ..., -0.0202, -0.0037,  0.0303],
+        ...,
+        [ 0.0215,  0.0082,  0.0034,  ...,  0.0469, -0.0277, -0.0064],
+        [-0.0100, -0.0042,  0.0037,  ..., -0.0071,  0.0284, -0.0170],
+        [-0.0213, -0.0168, -0.0092,  ...,  0.0040, -0.0135,  0.0384]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.4180, -3.8125, -3.4785,  ...,  6.1602, -3.0898, -0.6943]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:16:28 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a radio is a receiver
+A part of a academia is a college
+A part of a table is a tabletop
+A part of a shilling is a pence
+A part of a brush is a bristle
+A part of a tonne is a kilogram
+A part of a jail is a cell
+A part of a seafront is a
+2024-07-26 11:16:28 root INFO     [order_1_approx] starting weight calculation for A part of a table is a tabletop
+A part of a seafront is a harbor
+A part of a shilling is a pence
+A part of a jail is a cell
+A part of a radio is a receiver
+A part of a brush is a bristle
+A part of a tonne is a kilogram
+A part of a academia is a
+2024-07-26 11:16:28 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:19:11 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0701, -0.1333, -0.3115,  ...,  0.2053, -0.2021, -0.0010],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.8345, -4.0625,  4.9688,  ...,  0.9570, -1.9551, -1.9746],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 5.2979e-02,  7.4654e-03, -3.5019e-03,  ..., -1.1826e-03,
+          2.2064e-02,  2.1881e-02],
+        [ 3.9612e-02,  3.4241e-02,  1.5297e-02,  ...,  1.4778e-02,
+          2.9144e-03, -1.7975e-02],
+        [-1.9135e-02,  4.1351e-03,  1.3374e-02,  ...,  3.0708e-03,
+         -3.5004e-02,  1.5236e-02],
+        ...,
+        [ 2.6062e-02,  1.0887e-02,  1.3374e-02,  ...,  2.8763e-02,
+         -1.8188e-02, -8.0338e-03],
+        [-2.7588e-02,  4.9055e-05, -2.6321e-02,  ...,  9.6283e-03,
+          9.5062e-03,  1.6235e-02],
+        [ 4.5898e-02, -3.2806e-03,  2.6611e-02,  ..., -3.0022e-03,
+          1.4160e-02,  2.7100e-02]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.9302, -4.0039,  5.2227,  ...,  0.9375, -1.8447, -1.9482]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:19:12 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a table is a tabletop
+A part of a seafront is a harbor
+A part of a shilling is a pence
+A part of a jail is a cell
+A part of a radio is a receiver
+A part of a brush is a bristle
+A part of a tonne is a kilogram
+A part of a academia is a
+2024-07-26 11:19:12 root INFO     [order_1_approx] starting weight calculation for A part of a shilling is a pence
+A part of a radio is a receiver
+A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a seafront is a harbor
+A part of a academia is a college
+A part of a jail is a cell
+A part of a table is a
+2024-07-26 11:19:12 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:22:01 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1022, -0.2876, -0.1038,  ...,  0.0319, -0.1659,  0.0942],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.3906, -4.5469,  0.5952,  ..., -0.8066, -1.9404, -0.1294],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0568, -0.0818,  0.0231,  ..., -0.0109,  0.0334,  0.0347],
+        [ 0.0432, -0.0278,  0.0188,  ..., -0.0315,  0.0213,  0.0228],
+        [ 0.0144,  0.0682, -0.0038,  ..., -0.0271, -0.0686,  0.0369],
+        ...,
+        [ 0.0199, -0.0222,  0.0222,  ...,  0.0598,  0.0094,  0.0148],
+        [-0.0251,  0.0664, -0.0063,  ...,  0.0037,  0.0157, -0.0690],
+        [-0.0172, -0.0363,  0.0128,  ..., -0.0319, -0.0079,  0.0244]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.8066, -4.3047,  0.5542,  ..., -0.8496, -2.6035,  0.3354]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:22:02 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a shilling is a pence
+A part of a radio is a receiver
+A part of a tonne is a kilogram
+A part of a brush is a bristle
+A part of a seafront is a harbor
+A part of a academia is a college
+A part of a jail is a cell
+A part of a table is a
+2024-07-26 11:22:03 root INFO     [order_1_approx] starting weight calculation for A part of a shilling is a pence
+A part of a tonne is a kilogram
+A part of a seafront is a harbor
+A part of a table is a tabletop
+A part of a academia is a college
+A part of a radio is a receiver
+A part of a jail is a cell
+A part of a brush is a
+2024-07-26 11:22:03 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:24:49 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1117, -0.0182,  0.0574,  ..., -0.0922, -0.0029,  0.0556],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.1797, -2.6250, -0.9600,  ...,  1.8760, -2.6016, -0.9717],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0801, -0.0292, -0.0016,  ..., -0.0227, -0.0421,  0.0158],
+        [-0.0062, -0.0103,  0.0220,  ..., -0.0233,  0.0032,  0.0130],
+        [-0.0174, -0.0117,  0.0241,  ...,  0.0035, -0.0079, -0.0152],
+        ...,
+        [-0.0124, -0.0161,  0.0076,  ...,  0.0724, -0.0138,  0.0073],
+        [-0.0208,  0.0180, -0.0832,  ...,  0.0228,  0.0432, -0.0671],
+        [-0.0313,  0.0004,  0.0083,  ..., -0.0037,  0.0249,  0.0446]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.1367, -2.3516, -0.4551,  ...,  2.7871, -2.6289, -0.0747]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:24:50 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a shilling is a pence
+A part of a tonne is a kilogram
+A part of a seafront is a harbor
+A part of a table is a tabletop
+A part of a academia is a college
+A part of a radio is a receiver
+A part of a jail is a cell
+A part of a brush is a
+2024-07-26 11:30:08 root INFO     loading model + tokenizer
+2024-07-26 11:30:12 root INFO     model + tokenizer loaded
+2024-07-26 11:30:12 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on synonyms - exact
+2024-07-26 11:30:12 root INFO     building operator synonyms - exact
+2024-07-26 11:31:07 root INFO     loading model + tokenizer
+2024-07-26 11:31:11 root INFO     model + tokenizer loaded
+2024-07-26 11:31:11 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on synonyms - exact
+2024-07-26 11:31:11 root INFO     building operator synonyms - exact
+2024-07-26 11:31:12 root INFO     [order_1_approx] starting weight calculation for Another word for cloth is fabric
+Another word for style is manner
+Another word for mend is repair
+Another word for lady is madam
+Another word for loyal is faithful
+Another word for lazy is indolent
+Another word for mesh is gauze
+Another word for incorrect is
+2024-07-26 11:31:12 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:34:00 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0682,  0.0194, -0.3052,  ...,  0.0247, -0.2876,  0.2539],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.7827, -0.1641,  2.7305,  ...,  1.2998, -2.2539, -2.2930],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0386, -0.0571,  0.0560,  ..., -0.0121, -0.0169,  0.0350],
+        [-0.0186,  0.0083,  0.0164,  ..., -0.0422,  0.0020,  0.0141],
+        [ 0.0028, -0.0264,  0.0361,  ...,  0.0127,  0.0211,  0.0042],
+        ...,
+        [ 0.0004,  0.0210, -0.0094,  ...,  0.0344,  0.0034,  0.0221],
+        [-0.0318, -0.0112,  0.0297,  ...,  0.0305, -0.0056, -0.0731],
+        [-0.0134, -0.0060, -0.0077,  ..., -0.0230,  0.0059,  0.0295]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.9688, -0.2793,  2.3145,  ...,  1.2920, -2.6055, -2.0664]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:34:01 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for cloth is fabric
+Another word for style is manner
+Another word for mend is repair
+Another word for lady is madam
+Another word for loyal is faithful
+Another word for lazy is indolent
+Another word for mesh is gauze
+Another word for incorrect is
+2024-07-26 11:34:02 root INFO     [order_1_approx] starting weight calculation for Another word for cloth is fabric
+Another word for loyal is faithful
+Another word for incorrect is wrong
+Another word for lady is madam
+Another word for lazy is indolent
+Another word for mesh is gauze
+Another word for style is manner
+Another word for mend is
+2024-07-26 11:34:02 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:36:49 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2130,  0.3667, -0.1713,  ..., -0.0907, -0.4351,  0.2314],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.0742, -6.6875,  1.0898,  ...,  3.7617, -5.6680,  0.2715],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 2.3056e-02, -5.2643e-02,  4.2786e-02,  ..., -5.8670e-03,
+         -1.1078e-02, -2.8931e-02],
+        [ 1.2726e-02,  5.1941e-02,  3.1013e-03,  ..., -1.9188e-03,
+          1.1139e-02,  2.1957e-02],
+        [-3.0518e-05, -4.1962e-02,  3.7384e-02,  ..., -1.7303e-02,
+         -1.6876e-02, -2.3804e-03],
+        ...,
+        [ 4.4922e-02,  3.5309e-02,  3.3356e-02,  ...,  5.9082e-02,
+          1.1978e-02, -2.0920e-02],
+        [ 1.9165e-02,  8.0261e-03, -1.5274e-02,  ...,  4.6158e-03,
+          2.9251e-02, -2.3132e-02],
+        [ 3.4851e-02, -1.6861e-02, -2.5528e-02,  ...,  8.3008e-03,
+         -1.3489e-02,  3.9368e-03]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.1250, -5.7578,  1.2783,  ...,  3.2812, -5.5820,  0.0487]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:36:50 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for cloth is fabric
+Another word for loyal is faithful
+Another word for incorrect is wrong
+Another word for lady is madam
+Another word for lazy is indolent
+Another word for mesh is gauze
+Another word for style is manner
+Another word for mend is
+2024-07-26 11:36:50 root INFO     [order_1_approx] starting weight calculation for Another word for lazy is indolent
+Another word for cloth is fabric
+Another word for mend is repair
+Another word for lady is madam
+Another word for mesh is gauze
+Another word for style is manner
+Another word for incorrect is wrong
+Another word for loyal is
+2024-07-26 11:36:50 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:39:37 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0531,  0.1118, -0.0840,  ..., -0.2739,  0.1066,  0.2568],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.9180, -4.4180,  0.0098,  ..., -1.4219, -6.8828, -1.2178],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0375, -0.0001,  0.0099,  ..., -0.0133,  0.0016, -0.0013],
+        [-0.0079,  0.0632, -0.0016,  ..., -0.0583,  0.0184, -0.0199],
+        [-0.0027, -0.0349,  0.0479,  ...,  0.0262, -0.0137, -0.0109],
+        ...,
+        [-0.0045,  0.0266,  0.0097,  ..., -0.0032,  0.0092,  0.0016],
+        [ 0.0073, -0.0062,  0.0062,  ..., -0.0379,  0.0213, -0.0069],
+        [-0.0168, -0.0005, -0.0158,  ..., -0.0129, -0.0189,  0.0457]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.6514, -3.6562, -0.4622,  ..., -1.1211, -7.1719, -1.2041]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:39:38 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for lazy is indolent
+Another word for cloth is fabric
+Another word for mend is repair
+Another word for lady is madam
+Another word for mesh is gauze
+Another word for style is manner
+Another word for incorrect is wrong
+Another word for loyal is
+2024-07-26 11:39:38 root INFO     [order_1_approx] starting weight calculation for Another word for mend is repair
+Another word for incorrect is wrong
+Another word for cloth is fabric
+Another word for style is manner
+Another word for loyal is faithful
+Another word for mesh is gauze
+Another word for lady is madam
+Another word for lazy is
+2024-07-26 11:39:38 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:42:25 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.3066, -0.0720, -0.0422,  ..., -0.1982, -0.0903,  0.2385],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.4082, -2.6289,  0.9199,  ..., -2.5547, -3.5488, -2.5781],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0454,  0.0085, -0.0046,  ..., -0.0336,  0.0362,  0.0003],
+        [ 0.0172,  0.0083, -0.0118,  ..., -0.0474, -0.0162,  0.0331],
+        [-0.0063, -0.0105,  0.0539,  ...,  0.0677,  0.0015,  0.0107],
+        ...,
+        [-0.0134,  0.0096,  0.0165,  ...,  0.0318, -0.0260,  0.0064],
+        [ 0.0328,  0.0340,  0.0248,  ...,  0.0425,  0.0164, -0.0309],
+        [ 0.0404, -0.0138,  0.0035,  ...,  0.0171, -0.0003,  0.0317]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.3496, -1.8750,  0.1821,  ..., -1.8184, -3.8047, -2.3945]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:42:26 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for mend is repair
+Another word for incorrect is wrong
+Another word for cloth is fabric
+Another word for style is manner
+Another word for loyal is faithful
+Another word for mesh is gauze
+Another word for lady is madam
+Another word for lazy is
+2024-07-26 11:42:27 root INFO     [order_1_approx] starting weight calculation for Another word for mesh is gauze
+Another word for lazy is indolent
+Another word for lady is madam
+Another word for style is manner
+Another word for loyal is faithful
+Another word for mend is repair
+Another word for incorrect is wrong
+Another word for cloth is
+2024-07-26 11:42:27 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:45:13 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1155, -0.0648, -0.1396,  ...,  0.1982, -0.1567,  0.2039],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.7617, -3.6797,  1.6895,  ..., -0.5049, -2.8516,  0.9814],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0423, -0.0091,  0.0131,  ..., -0.0225,  0.0081,  0.0158],
+        [ 0.0208,  0.0258,  0.0100,  ..., -0.0146,  0.0038, -0.0242],
+        [-0.0149, -0.0043,  0.0333,  ..., -0.0192, -0.0034, -0.0208],
+        ...,
+        [ 0.0204,  0.0160,  0.0222,  ...,  0.0352, -0.0314, -0.0111],
+        [-0.0285,  0.0025, -0.0105,  ...,  0.0358,  0.0314,  0.0017],
+        [-0.0071,  0.0216,  0.0049,  ..., -0.0165,  0.0040,  0.0309]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.5078, -3.4004,  1.2344,  ..., -0.3433, -2.8730,  1.3086]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:45:14 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for mesh is gauze
+Another word for lazy is indolent
+Another word for lady is madam
+Another word for style is manner
+Another word for loyal is faithful
+Another word for mend is repair
+Another word for incorrect is wrong
+Another word for cloth is
+2024-07-26 11:45:15 root INFO     [order_1_approx] starting weight calculation for Another word for mend is repair
+Another word for lady is madam
+Another word for loyal is faithful
+Another word for incorrect is wrong
+Another word for lazy is indolent
+Another word for cloth is fabric
+Another word for mesh is gauze
+Another word for style is
+2024-07-26 11:45:15 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:48:02 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1561, -0.2168, -0.0894,  ...,  0.0809,  0.0455,  0.2485],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.7061, -1.9023,  0.0559,  ...,  2.9141, -5.8125, -1.6797],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0720,  0.0033,  0.0105,  ..., -0.0107,  0.0290, -0.0381],
+        [ 0.0010,  0.0406,  0.0083,  ...,  0.0071,  0.0218, -0.0080],
+        [ 0.0051, -0.0099,  0.0641,  ..., -0.0008,  0.0171, -0.0113],
+        ...,
+        [-0.0097, -0.0060,  0.0160,  ...,  0.0413, -0.0349, -0.0313],
+        [ 0.0058, -0.0257,  0.0059,  ...,  0.0112,  0.0761,  0.0305],
+        [ 0.0009,  0.0569, -0.0250,  ..., -0.0153, -0.0048,  0.0204]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.0107, -1.2109,  0.5654,  ...,  3.2109, -6.3242, -1.8242]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:48:03 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for mend is repair
+Another word for lady is madam
+Another word for loyal is faithful
+Another word for incorrect is wrong
+Another word for lazy is indolent
+Another word for cloth is fabric
+Another word for mesh is gauze
+Another word for style is
+2024-07-26 11:48:03 root INFO     [order_1_approx] starting weight calculation for Another word for cloth is fabric
+Another word for mend is repair
+Another word for lazy is indolent
+Another word for style is manner
+Another word for incorrect is wrong
+Another word for loyal is faithful
+Another word for lady is madam
+Another word for mesh is
+2024-07-26 11:48:03 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:50:51 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2556, -0.0560,  0.0323,  ...,  0.2339, -0.1759,  0.1445],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.8125, -2.0508,  1.6621,  ...,  0.5181, -3.1914,  1.5273],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0690,  0.0193, -0.0077,  ..., -0.0224,  0.0173, -0.0124],
+        [-0.0119,  0.0320,  0.0149,  ..., -0.0119, -0.0065, -0.0126],
+        [ 0.0435, -0.0147,  0.0579,  ..., -0.0231,  0.0037, -0.0446],
+        ...,
+        [-0.0072, -0.0019,  0.0361,  ...,  0.0726, -0.0370, -0.0051],
+        [-0.0206, -0.0381, -0.0366,  ...,  0.0219,  0.0376, -0.0222],
+        [-0.0489,  0.0192, -0.0191,  ...,  0.0012,  0.0023,  0.0708]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.1670, -2.3008,  1.2324,  ...,  0.6436, -3.1523,  1.6230]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:50:52 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for cloth is fabric
+Another word for mend is repair
+Another word for lazy is indolent
+Another word for style is manner
+Another word for incorrect is wrong
+Another word for loyal is faithful
+Another word for lady is madam
+Another word for mesh is
+2024-07-26 11:50:52 root INFO     [order_1_approx] starting weight calculation for Another word for lazy is indolent
+Another word for mend is repair
+Another word for loyal is faithful
+Another word for mesh is gauze
+Another word for incorrect is wrong
+Another word for cloth is fabric
+Another word for style is manner
+Another word for lady is
+2024-07-26 11:50:52 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+is referred to as a larva
+The offspring of a rabbit is referred to as a bunny
+The offspring of a seal is referred to as a pup
+The offspring of a goat is referred to as a
+2024-07-26 11:48:54 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:48:56 root INFO     loading model + tokenizer
+2024-07-26 11:48:59 root INFO     model + tokenizer loaded
+2024-07-26 11:48:59 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on animal - youth
+2024-07-26 11:48:59 root INFO     building operator animal - youth
+2024-07-26 11:49:00 root INFO     [order_1_approx] starting weight calculation for The offspring of a cat is referred to as a kitten
+The offspring of a beaver is referred to as a kit
+The offspring of a cockroach is referred to as a nymph
+The offspring of a insect is referred to as a larva
+The offspring of a buffalo is referred to as a calf
+The offspring of a fox is referred to as a cub
+The offspring of a woodchuck is referred to as a kit
+The offspring of a whale is referred to as a
+2024-07-26 11:49:00 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:49:44 root INFO     loading model + tokenizer
+2024-07-26 11:49:47 root INFO     model + tokenizer loaded
+2024-07-26 11:49:48 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on verb+ment_irreg
+2024-07-26 11:49:48 root INFO     building operator verb+ment_irreg
+2024-07-26 11:49:48 root INFO     [order_1_approx] starting weight calculation for To reinforce results in a reinforcement
+To announce results in a announcement
+To reimburse results in a reimbursement
+To amuse results in a amusement
+To invest results in a investment
+To resent results in a resentment
+To develop results in a development
+To manage results in a
+2024-07-26 11:49:48 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:53:38 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1365,  0.2939, -0.2002,  ..., -0.0907,  0.0706, -0.1221],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.6177, -1.2373, -2.0215,  ..., -1.7949, -3.9512, -1.3545],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.8250e-02, -4.0710e-02,  2.4139e-02,  ...,  1.8417e-02,
+         -3.5583e-02, -5.9509e-03],
+        [ 3.5934e-03,  3.2990e-02,  2.1301e-02,  ..., -2.8107e-02,
+          7.4158e-02,  3.4302e-02],
+        [ 1.0277e-02, -3.1342e-02,  1.3138e-02,  ...,  3.3203e-02,
+         -2.2247e-02, -1.7181e-02],
+        ...,
+        [ 3.9978e-03,  5.7526e-03,  2.8687e-03,  ..., -9.5673e-03,
+          3.8727e-02, -1.4252e-02],
+        [-7.5912e-03,  8.0185e-03,  2.6302e-03,  ...,  7.6408e-03,
+          9.9182e-05, -2.7954e-02],
+        [-1.3641e-02,  5.3482e-03, -7.3242e-03,  ..., -2.1164e-02,
+         -2.5208e-02, -7.7896e-03]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.5459, -0.5981, -2.0078,  ..., -1.3691, -4.2617, -1.4189]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:53:39 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for Another word for lazy is indolent
+Another word for mend is repair
+Another word for loyal is faithful
+Another word for mesh is gauze
+Another word for incorrect is wrong
+Another word for cloth is fabric
+Another word for style is manner
+Another word for lady is
+2024-07-26 11:53:39 root INFO     total operator prediction time: 1348.4714620113373 seconds
+2024-07-26 11:53:39 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on hypernyms - misc
+2024-07-26 11:53:39 root INFO     building operator hypernyms - misc
+2024-07-26 11:53:40 root INFO     [order_1_approx] starting weight calculation for The mascara falls into the category of makeup
+The croissant falls into the category of pastry
+The sofa falls into the category of furniture
+The dishwasher falls into the category of appliance
+The juicer falls into the category of utensil
+The plum falls into the category of fruit
+The diary falls into the category of journal
+The hamburger falls into the category of
+2024-07-26 11:53:40 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+or([-0.0935,  0.4360,  0.0589,  ...,  0.0676, -0.0822, -0.1030],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.9727, -3.9766,  2.3184,  ...,  1.3916, -1.0088, -3.4180],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0367,  0.0078,  0.0019,  ..., -0.0155, -0.0080,  0.0065],
+        [-0.0275,  0.0291, -0.0042,  ...,  0.0307,  0.0264,  0.0055],
+        [-0.0051, -0.0069,  0.0101,  ...,  0.0324, -0.0095,  0.0126],
+        ...,
+        [ 0.0059,  0.0041,  0.0131,  ...,  0.0530,  0.0282, -0.0002],
+        [-0.0195, -0.0123,  0.0167,  ..., -0.0434,  0.0177, -0.0341],
+        [ 0.0209, -0.0095,  0.0100,  ...,  0.0194,  0.0123,  0.0260]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.1270, -3.5352,  2.4844,  ...,  1.1113, -1.7207, -3.1406]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:52:32 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for To reinforce results in a reinforcement
+To announce results in a announcement
+To reimburse results in a reimbursement
+To amuse results in a amusement
+To invest results in a investment
+To resent results in a resentment
+To develop results in a development
+To manage results in a
+2024-07-26 11:52:32 root INFO     [order_1_approx] starting weight calculation for To amuse results in a amusement
+To develop results in a development
+To invest results in a investment
+To resent results in a resentment
+To reinforce results in a reinforcement
+To announce results in a announcement
+To manage results in a management
+To reimburse results in a
+2024-07-26 11:52:32 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:56:23 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2512,  0.2063, -0.2109,  ...,  0.1924, -0.2085, -0.1553],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.1230, -4.9531,  0.8105,  ..., -2.1523, -3.6523, -1.7617],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0067,  0.0065,  0.0143,  ..., -0.0293, -0.0184, -0.0186],
+        [-0.0019,  0.0355,  0.0077,  ...,  0.0035, -0.0051,  0.0141],
+        [ 0.0035, -0.0007,  0.0101,  ...,  0.0077,  0.0034, -0.0242],
+        ...,
+        [ 0.0029,  0.0078,  0.0169,  ...,  0.0388, -0.0020,  0.0054],
+        [ 0.0198, -0.0355,  0.0064,  ...,  0.0059,  0.0358, -0.0033],
+        [ 0.0222, -0.0251,  0.0143,  ...,  0.0039,  0.0054,  0.0695]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.1934, -5.0469,  0.6455,  ..., -2.0293, -3.3359, -1.6494]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:56:24 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The mascara falls into the category of makeup
+The croissant falls into the category of pastry
+The sofa falls into the category of furniture
+The dishwasher falls into the category of appliance
+The juicer falls into the category of utensil
+The plum falls into the category of fruit
+The diary falls into the category of journal
+The hamburger falls into the category of
+2024-07-26 11:56:25 root INFO     [order_1_approx] starting weight calculation for The plum falls into the category of fruit
+The hamburger falls into the category of sandwich
+The juicer falls into the category of utensil
+The croissant falls into the category of pastry
+The diary falls into the category of journal
+The dishwasher falls into the category of appliance
+The sofa falls into the category of furniture
+The mascara falls into the category of
+2024-07-26 11:56:25 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 11:59:08 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.3955, -0.6934, -0.4763,  ...,  0.1033, -0.3018, -0.1962],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.1562, -2.2812, -0.0338,  ..., -0.0444, -1.4453,  2.2656],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0364,  0.0050,  0.0039,  ..., -0.0164, -0.0206,  0.0142],
+        [-0.0112,  0.0098, -0.0119,  ...,  0.0139,  0.0083,  0.0103],
+        [-0.0211,  0.0069,  0.0280,  ..., -0.0172, -0.0332, -0.0035],
+        ...,
+        [ 0.0217, -0.0077,  0.0226,  ...,  0.0382,  0.0215,  0.0018],
+        [-0.0184,  0.0125,  0.0076,  ..., -0.0075,  0.0352, -0.0062],
+        [ 0.0188, -0.0006, -0.0021,  ..., -0.0292, -0.0414,  0.0420]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.1074, -2.3184,  0.3433,  ..., -0.2101, -1.8359,  2.8086]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 11:59:10 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The plum falls into the category of fruit
+The hamburger falls into the category of sandwich
+The juicer falls into the category of utensil
+The croissant falls into the category of pastry
+The diary falls into the category of journal
+The dishwasher falls into the category of appliance
+The sofa falls into the category of furniture
+The mascara falls into the category of
+2024-07-26 11:59:10 root INFO     [order_1_approx] starting weight calculation for The plum falls into the category of fruit
+The dishwasher falls into the category of appliance
+The mascara falls into the category of makeup
+The juicer falls into the category of utensil
+The sofa falls into the category of furniture
+The hamburger falls into the category of sandwich
+The croissant falls into the category of pastry
+The diary falls into the category of
+2024-07-26 11:59:10 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:01:53 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1111, -0.0503, -0.1144,  ..., -0.0685, -0.2598,  0.1163],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.7690, -4.1953,  1.0547,  ..., -3.0859, -2.3281, -0.2817],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0433,  0.0037,  0.0143,  ...,  0.0165,  0.0275,  0.0006],
+        [-0.0461,  0.0401,  0.0160,  ..., -0.0128, -0.0140,  0.0299],
+        [-0.0025, -0.0298,  0.0090,  ...,  0.0305, -0.0289,  0.0126],
+        ...,
+        [ 0.0030,  0.0227, -0.0085,  ...,  0.0539,  0.0187,  0.0043],
+        [-0.0008, -0.0113,  0.0208,  ...,  0.0170,  0.0488, -0.0110],
+        [ 0.0149,  0.0105, -0.0074,  ..., -0.0296, -0.0035,  0.0514]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.4585, -4.3594,  0.9536,  ..., -2.7949, -2.0312, -0.4727]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:01:54 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The plum falls into the category of fruit
+The dishwasher falls into the category of appliance
+The mascara falls into the category of makeup
+The juicer falls into the category of utensil
+The sofa falls into the category of furniture
+The hamburger falls into the category of sandwich
+The croissant falls into the category of pastry
+The diary falls into the category of
+2024-07-26 12:01:54 root INFO     [order_1_approx] starting weight calculation for The plum falls into the category of fruit
+The mascara falls into the category of makeup
+The diary falls into the category of journal
+The croissant falls into the category of pastry
+The hamburger falls into the category of sandwich
+The sofa falls into the category of furniture
+The dishwasher falls into the category of appliance
+The juicer falls into the category of
+2024-07-26 12:01:54 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:04:37 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0442, -0.2383, -0.0939,  ..., -0.0458, -0.2137, -0.2247],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.7617, -4.7109, -0.1272,  ..., -2.3086, -1.8594,  0.4990],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0184, -0.0043, -0.0097,  ...,  0.0088, -0.0018,  0.0147],
+        [-0.0080,  0.0321,  0.0082,  ...,  0.0023, -0.0121, -0.0270],
+        [-0.0021, -0.0011,  0.0094,  ..., -0.0044, -0.0172,  0.0063],
+        ...,
+        [ 0.0045,  0.0035,  0.0046,  ...,  0.0200, -0.0148,  0.0100],
+        [-0.0067, -0.0006, -0.0023,  ...,  0.0142,  0.0249, -0.0263],
+        [-0.0087,  0.0030,  0.0047,  ..., -0.0026, -0.0054, -0.0013]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.8887, -4.7031,  0.1216,  ..., -2.3984, -1.8135,  0.5703]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:04:38 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The plum falls into the category of fruit
+The mascara falls into the category of makeup
+The diary falls into the category of journal
+The croissant falls into the category of pastry
+The hamburger falls into the category of sandwich
+The sofa falls into the category of furniture
+The dishwasher falls into the category of appliance
+The juicer falls into the category of
+2024-07-26 12:04:39 root INFO     [order_1_approx] starting weight calculation for The hamburger falls into the category of sandwich
+The diary falls into the category of journal
+The sofa falls into the category of furniture
+The mascara falls into the category of makeup
+The dishwasher falls into the category of appliance
+The croissant falls into the category of pastry
+The juicer falls into the category of utensil
+The plum falls into the category of
+2024-07-26 12:04:39 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            2024-07-26 12:07:25 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1088, -0.2666, -0.4644,  ...,  0.1462, -0.0877, -0.3252],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.8579, -5.9570,  1.4033,  ..., -2.1250, -0.4355, -1.3086],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0599,  0.0173, -0.0216,  ...,  0.0327, -0.0060,  0.0045],
+        [-0.0094, -0.0176,  0.0468,  ..., -0.0331, -0.0598,  0.0066],
+        [-0.0375,  0.0079,  0.0010,  ...,  0.0393, -0.0213,  0.0106],
+        ...,
+        [ 0.0130,  0.0350,  0.0148,  ...,  0.0460, -0.0317,  0.0026],
+        [ 0.0087, -0.0269, -0.0107,  ...,  0.0280,  0.0753, -0.0195],
+        [ 0.0015, -0.0230,  0.0519,  ..., -0.0610, -0.0537,  0.0109]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.7759, -5.7422,  1.7119,  ..., -2.5430, -0.3713, -0.6309]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:07:26 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The hamburger falls into the category of sandwich
+The diary falls into the category of journal
+The sofa falls into the category of furniture
+The mascara falls into the category of makeup
+The dishwasher falls into the category of appliance
+The croissant falls into the category of pastry
+The juicer falls into the category of utensil
+The plum falls into the category of
+2024-07-26 12:07:26 root INFO     [order_1_approx] starting weight calculation for The mascara falls into the category of makeup
+The diary falls into the category of journal
+The plum falls into the category of fruit
+The hamburger falls into the category of sandwich
+The croissant falls into the category of pastry
+The dishwasher falls into the category of appliance
+The juicer falls into the category of utensil
+The sofa falls into the category of
+2024-07-26 12:07:26 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:10:13 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0340, -0.2050, -0.0451,  ...,  0.1635, -0.1189, -0.0635],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.8320, -6.0938,  2.6348,  ..., -1.4297, -2.8516,  0.8223],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0475, -0.0364, -0.0102,  ...,  0.0090,  0.0149,  0.0050],
+        [-0.0118,  0.0139,  0.0206,  ..., -0.0049, -0.0213,  0.0118],
+        [-0.0149,  0.0131,  0.0163,  ..., -0.0130, -0.0243,  0.0048],
+        ...,
+        [ 0.0042,  0.0222,  0.0051,  ...,  0.0471,  0.0058, -0.0297],
+        [-0.0102,  0.0197, -0.0021,  ...,  0.0089,  0.0423, -0.0334],
+        [ 0.0181, -0.0416,  0.0275,  ..., -0.0427,  0.0127,  0.0269]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.2505, -6.1211,  2.8340,  ..., -1.5957, -2.1758,  1.1846]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:10:14 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The mascara falls into the category of makeup
+The diary falls into the category of journal
+The plum falls into the category of fruit
+The hamburger falls into the category of sandwich
+The croissant falls into the category of pastry
+The dishwasher falls into the category of appliance
+The juicer falls into the category of utensil
+The sofa falls into the category of
+2024-07-26 12:10:14 root INFO     [order_1_approx] starting weight calculation for The plum falls into the category of fruit
+The juicer falls into the category of utensil
+The sofa falls into the category of furniture
+The hamburger falls into the category of sandwich
+The mascara falls into the category of makeup
+The diary falls into the category of journal
+The dishwasher falls into the category of appliance
+The croissant falls into the category of
+2024-07-26 12:10:14 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+          2024-07-26 12:12:59 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0698, -0.1606, -0.3804,  ...,  0.1250, -0.2563, -0.0292],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.9844, -5.5430, -1.0781,  ..., -1.5361, -3.1699,  1.4209],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0646,  0.0085, -0.0274,  ..., -0.0227, -0.0313,  0.0047],
+        [ 0.0178,  0.0432,  0.0008,  ..., -0.0347,  0.0322,  0.0123],
+        [ 0.0032, -0.0489,  0.0199,  ...,  0.0024, -0.0076,  0.0022],
+        ...,
+        [ 0.0041,  0.0230, -0.0034,  ...,  0.0785, -0.0146, -0.0139],
+        [-0.0112, -0.0015,  0.0064,  ...,  0.0121,  0.0667, -0.0066],
+        [ 0.0100,  0.0318,  0.0005,  ..., -0.0135,  0.0267,  0.0750]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.2871, -6.0156, -0.8184,  ..., -1.6143, -2.4531,  1.3291]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:13:00 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The plum falls into the category of fruit
+The juicer falls into the category of utensil
+The sofa falls into the category of furniture
+The hamburger falls into the category of sandwich
+The mascara falls into the category of makeup
+The diary falls into the category of journal
+The dishwasher falls into the category of appliance
+The croissant falls into the category of
+2024-07-26 12:13:00 root INFO     [order_1_approx] starting weight calculation for The diary falls into the category of journal
+The juicer falls into the category of utensil
+The hamburger falls into the category of sandwich
+The sofa falls into the category of furniture
+The croissant falls into the category of pastry
+The plum falls into the category of fruit
+The mascara falls into the category of makeup
+The dishwasher falls into the category of
+2024-07-26 12:13:00 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+                                                                                                     2024-07-26 12:15:45 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1221,  0.0378, -0.3894,  ...,  0.1678, -0.2920, -0.1787],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.9199, -3.6504,  2.0488,  ..., -1.1094, -3.7441,  1.8965],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0178,  0.0017, -0.0002,  ...,  0.0128,  0.0022,  0.0071],
+        [ 0.0095, -0.0028,  0.0089,  ...,  0.0019, -0.0108,  0.0098],
+        [ 0.0030, -0.0024, -0.0040,  ..., -0.0112, -0.0147,  0.0128],
+        ...,
+        [ 0.0017,  0.0028,  0.0118,  ...,  0.0120, -0.0019,  0.0058],
+        [-0.0012, -0.0015, -0.0058,  ...,  0.0031,  0.0125, -0.0124],
+        [ 0.0051, -0.0047,  0.0069,  ..., -0.0114, -0.0063,  0.0087]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.9165, -3.3867,  2.0137,  ..., -1.1445, -3.6152,  2.0723]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:15:46 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The diary falls into the category of journal
+The juicer falls into the category of utensil
+The hamburger falls into the category of sandwich
+The sofa falls into the category of furniture
+The croissant falls into the category of pastry
+The plum falls into the category of fruit
+The mascara falls into the category of makeup
+The dishwasher falls into the category of
+2024-07-26 12:15:46 root INFO     total operator prediction time: 1326.9287102222443 seconds
+2024-07-26 12:15:46 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - substance
+2024-07-26 12:15:46 root INFO     building operator meronyms - substance
+2024-07-26 12:15:47 root INFO     [order_1_approx] starting weight calculation for A body is made up of flesh
+A wig is made up of hair
+A snow is made up of water
+A diamond is made up of carbon
+A steel is made up of iron
+A mirror is made up of glass
+A glass is made up of silicone
+A wine is made up of
+2024-07-26 12:15:47 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:18:35 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0808,  0.2423, -0.1699,  ..., -0.1050,  0.1152, -0.1284],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.3184, -5.4023,  0.4685,  ..., -3.4258,  0.5488, -4.0781],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0519, -0.0008,  0.0201,  ..., -0.0111,  0.0118, -0.0005],
+        [-0.0156,  0.0720,  0.0100,  ..., -0.0101,  0.0106,  0.0053],
+        [-0.0218, -0.0345,  0.0116,  ..., -0.0071,  0.0147,  0.0251],
+        ...,
+        [ 0.0136, -0.0003,  0.0054,  ...,  0.0520,  0.0052, -0.0086],
+        [ 0.0455,  0.0084, -0.0740,  ...,  0.0097, -0.0020,  0.0307],
+        [ 0.0096,  0.0172,  0.0302,  ..., -0.0262,  0.0219,  0.0432]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.4492, -5.7891,  0.1411,  ..., -3.8516,  0.6001, -4.1523]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:18:36 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A body is made up of flesh
+A wig is made up of hair
+A snow is made up of water
+A diamond is made up of carbon
+A steel is made up of iron
+A mirror is made up of glass
+A glass is made up of silicone
+A wine is made up of
+2024-07-26 12:18:36 root INFO     [order_1_approx] starting weight calculation for A diamond is made up of carbon
+A steel is made up of iron
+A wine is made up of grapes
+A glass is made up of silicone
+A wig is made up of hair
+A body is made up of flesh
+A mirror is made up of glass
+A snow is made up of
+2024-07-26 12:18:36 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+t error is
+2024-07-26 12:17:16 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:17:49 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1267,  0.0739,  0.1475,  ...,  0.1453, -0.1486,  0.0317],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.2207, -6.6172, -1.1035,  ...,  0.3916, -2.3477,  2.7305],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0198, -0.0334,  0.0029,  ...,  0.0274, -0.0202,  0.0062],
+        [-0.0083,  0.0082,  0.0194,  ..., -0.0418,  0.0024, -0.0029],
+        [ 0.0077,  0.0148,  0.0269,  ..., -0.0254,  0.0098, -0.0302],
+        ...,
+        [ 0.0010,  0.0059,  0.0025,  ...,  0.0281,  0.0138, -0.0133],
+        [ 0.0182,  0.0058,  0.0005,  ...,  0.0182,  0.0293, -0.0103],
+        [ 0.0113, -0.0257,  0.0005,  ...,  0.0224, -0.0080,  0.0300]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.3711, -6.1914, -0.7500,  ...,  0.6797, -2.4824,  2.4082]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:17:49 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a rabbit is referred to as a bunny
+The offspring of a gorilla is referred to as a infant
+The offspring of a goat is referred to as a kid
+The offspring of a bear is referred to as a cub
+The offspring of a beetle is referred to as a larva
+The offspring of a seal is referred to as a pup
+The offspring of a monkey is referred to as a infant
+The offspring of a dog is referred to as a
+2024-07-26 12:17:49 root INFO     [order_1_approx] starting weight calculation for The offspring of a seal is referred to as a pup
+The offspring of a beetle is referred to as a larva
+The offspring of a goat is referred to as a kid
+The offspring of a monkey is referred to as a infant
+The offspring of a dog is referred to as a puppy
+The offspring of a bear is referred to as a cub
+The offspring of a rabbit is referred to as a bunny
+The offspring of a gorilla is referred to as a
+2024-07-26 12:17:49 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:21:21 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.3811,  0.3193, -0.1392,  ..., -0.1965,  0.0436,  0.0360],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.9775, -3.0527,  0.1201,  ..., -5.3984,  1.0908, -0.6787],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0288, -0.0368, -0.0131,  ...,  0.0012,  0.0049, -0.0343],
+        [-0.0077,  0.0088,  0.0018,  ...,  0.0147,  0.0046, -0.0100],
+        [ 0.0081, -0.0222,  0.0160,  ...,  0.0236,  0.0048,  0.0292],
+        ...,
+        [ 0.0203,  0.0130, -0.0030,  ...,  0.0337, -0.0058, -0.0224],
+        [ 0.0172,  0.0117, -0.0192,  ...,  0.0366, -0.0012, -0.0066],
+        [-0.0113, -0.0124, -0.0173,  ..., -0.0108, -0.0017, -0.0186]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.3818, -3.2441,  0.0854,  ..., -5.3438,  0.8174, -0.3098]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:21:22 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A diamond is made up of carbon
+A steel is made up of iron
+A wine is made up of grapes
+A glass is made up of silicone
+A wig is made up of hair
+A body is made up of flesh
+A mirror is made up of glass
+A snow is made up of
+2024-07-26 12:21:23 root INFO     [order_1_approx] starting weight calculation for A steel is made up of iron
+A wine is made up of grapes
+A snow is made up of water
+A body is made up of flesh
+A mirror is made up of glass
+A diamond is made up of carbon
+A glass is made up of silicone
+A wig is made up of
+2024-07-26 12:21:23 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+ home is
+2024-07-26 12:20:01 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:24:08 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1489,  0.1326, -0.0865,  ...,  0.0743,  0.0635, -0.0240],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.2051, -6.9883, -2.0840,  ..., -1.2910, -1.8057, -0.2979],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0337, -0.0399, -0.0190,  ...,  0.0299, -0.0047,  0.0222],
+        [-0.0362,  0.0486, -0.0189,  ..., -0.0115,  0.0057, -0.0220],
+        [-0.0147, -0.0052,  0.0311,  ...,  0.0209, -0.0044, -0.0234],
+        ...,
+        [ 0.0308, -0.0004,  0.0087,  ...,  0.0232, -0.0150, -0.0157],
+        [-0.0036,  0.0114, -0.0183,  ...,  0.0202,  0.0247, -0.0331],
+        [ 0.0132, -0.0351,  0.0273,  ...,  0.0021,  0.0229,  0.0540]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.4111, -6.5508, -2.0156,  ..., -1.1133, -1.4102, -0.3579]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:24:09 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A steel is made up of iron
+A wine is made up of grapes
+A snow is made up of water
+A body is made up of flesh
+A mirror is made up of glass
+A diamond is made up of carbon
+A glass is made up of silicone
+A wig is made up of
+2024-07-26 12:24:09 root INFO     [order_1_approx] starting weight calculation for A mirror is made up of glass
+A steel is made up of iron
+A snow is made up of water
+A diamond is made up of carbon
+A wine is made up of grapes
+A wig is made up of hair
+A glass is made up of silicone
+A body is made up of
+2024-07-26 12:24:10 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+child is
+2024-07-26 12:22:46 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:26:56 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1915,  0.1335, -0.0549,  ..., -0.1738, -0.0552, -0.2235],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.5273, -6.1602,  2.4648,  ..., -3.8203, -3.4395,  1.1777],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0055, -0.0023,  0.0022,  ...,  0.0278,  0.0340, -0.0046],
+        [-0.0133,  0.0238,  0.0097,  ..., -0.0242, -0.0220,  0.0114],
+        [ 0.0016, -0.0006, -0.0078,  ..., -0.0111, -0.0050, -0.0163],
+        ...,
+        [-0.0056,  0.0047,  0.0168,  ...,  0.0264,  0.0175, -0.0162],
+        [ 0.0054, -0.0032,  0.0110,  ..., -0.0282,  0.0043,  0.0061],
+        [ 0.0141, -0.0092,  0.0066,  ..., -0.0121, -0.0035,  0.0143]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.1797, -5.8594,  2.6680,  ..., -3.6211, -3.1953,  1.8193]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:26:57 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A mirror is made up of glass
+A steel is made up of iron
+A snow is made up of water
+A diamond is made up of carbon
+A wine is made up of grapes
+A wig is made up of hair
+A glass is made up of silicone
+A body is made up of
+2024-07-26 12:26:57 root INFO     [order_1_approx] starting weight calculation for A wine is made up of grapes
+A wig is made up of hair
+A snow is made up of water
+A body is made up of flesh
+A glass is made up of silicone
+A mirror is made up of glass
+A diamond is made up of carbon
+A steel is made up of
+2024-07-26 12:26:57 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+hing without error is errorless
+Something without law is lawless
+Something without odor is odorless
+Something without child is childless
+Something without home is homeless
+Something without penny is
+2024-07-26 12:25:29 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:29:44 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0454,  0.0276, -0.3291,  ..., -0.0140,  0.2284,  0.1304],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.1641, -5.4883,  0.9688,  ..., -5.6953, -1.5039, -2.0332],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 2.2858e-02, -4.2511e-02, -4.7073e-03,  ...,  1.7700e-02,
+         -3.2867e-02, -4.4006e-02],
+        [-6.6719e-03,  3.6682e-02, -1.2764e-02,  ..., -1.5869e-02,
+          1.4938e-02,  1.0590e-02],
+        [ 1.6113e-02,  2.5269e-02,  2.0142e-02,  ...,  2.7557e-02,
+          2.4292e-02,  5.1003e-03],
+        ...,
+        [ 2.4689e-02, -3.0731e-02,  3.1860e-02,  ..., -7.6294e-06,
+          1.0674e-02, -1.7059e-02],
+        [-3.2837e-02,  2.1027e-02, -4.8340e-02,  ...,  5.1575e-02,
+          2.2675e-02, -1.1322e-02],
+        [ 1.5656e-02,  9.4986e-04, -2.0737e-02,  ..., -4.9866e-02,
+         -6.4392e-03,  2.7237e-02]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.7383, -5.5742,  0.5728,  ..., -4.4883, -2.5078, -1.9385]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:29:45 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A wine is made up of grapes
+A wig is made up of hair
+A snow is made up of water
+A body is made up of flesh
+A glass is made up of silicone
+A mirror is made up of glass
+A diamond is made up of carbon
+A steel is made up of
+2024-07-26 12:29:45 root INFO     [order_1_approx] starting weight calculation for A wig is made up of hair
+A glass is made up of silicone
+A snow is made up of water
+A body is made up of flesh
+A diamond is made up of carbon
+A steel is made up of iron
+A wine is made up of grapes
+A mirror is made up of
+2024-07-26 12:29:45 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:32:33 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1152,  0.0271, -0.1582,  ...,  0.0477, -0.0864, -0.1271],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.3047, -4.1992, -0.4612,  ..., -2.6523, -2.6230,  0.9492],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0218, -0.0248,  0.0065,  ...,  0.0195,  0.0009, -0.0212],
+        [-0.0044,  0.0651,  0.0015,  ...,  0.0245, -0.0081,  0.0005],
+        [ 0.0216, -0.0095,  0.0362,  ...,  0.0222, -0.0320, -0.0046],
+        ...,
+        [ 0.0280,  0.0330, -0.0050,  ...,  0.0224, -0.0252, -0.0066],
+        [-0.0325, -0.0053, -0.0490,  ..., -0.0121,  0.0158, -0.0414],
+        [ 0.0111,  0.0037, -0.0011,  ..., -0.0030,  0.0140,  0.0495]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.5098, -4.4336, -0.6147,  ..., -2.6504, -3.5996,  1.3730]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:32:34 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A wig is made up of hair
+A glass is made up of silicone
+A snow is made up of water
+A body is made up of flesh
+A diamond is made up of carbon
+A steel is made up of iron
+A wine is made up of grapes
+A mirror is made up of
+2024-07-26 12:32:34 root INFO     [order_1_approx] starting weight calculation for A body is made up of flesh
+A snow is made up of water
+A steel is made up of iron
+A glass is made up of silicone
+A wig is made up of hair
+A wine is made up of grapes
+A mirror is made up of glass
+A diamond is made up of
+2024-07-26 12:32:34 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+thout law is
+2024-07-26 12:30:59 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:31:11 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0515, -0.2253, -0.1637,  ..., -0.2986, -0.2600,  0.0728],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.2490, -4.2656, -0.8228,  ...,  1.1719, -3.1172,  1.8809],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0343, -0.0075, -0.0106,  ..., -0.0023, -0.0067,  0.0083],
+        [-0.0107,  0.0038,  0.0076,  ..., -0.0018, -0.0104,  0.0041],
+        [ 0.0032, -0.0010,  0.0297,  ..., -0.0020,  0.0024, -0.0160],
+        ...,
+        [-0.0065,  0.0226, -0.0018,  ...,  0.0105, -0.0064, -0.0008],
+        [ 0.0182, -0.0110,  0.0141,  ...,  0.0177,  0.0302,  0.0359],
+        [-0.0064, -0.0021, -0.0082,  ...,  0.0048, -0.0117,  0.0190]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.3838, -4.1055, -0.5386,  ...,  1.2676, -2.9297,  1.6543]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:31:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a seal is referred to as a pup
+The offspring of a beetle is referred to as a larva
+The offspring of a goat is referred to as a kid
+The offspring of a monkey is referred to as a infant
+The offspring of a dog is referred to as a puppy
+The offspring of a bear is referred to as a cub
+The offspring of a rabbit is referred to as a bunny
+The offspring of a gorilla is referred to as a
+2024-07-26 12:31:11 root INFO     [order_1_approx] starting weight calculation for The offspring of a monkey is referred to as a infant
+The offspring of a dog is referred to as a puppy
+The offspring of a goat is referred to as a kid
+The offspring of a beetle is referred to as a larva
+The offspring of a bear is referred to as a cub
+The offspring of a gorilla is referred to as a infant
+The offspring of a seal is referred to as a pup
+The offspring of a rabbit is referred to as a
+2024-07-26 12:31:11 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:35:23 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1440,  0.0098, -0.3733,  ..., -0.1334,  0.1495,  0.0702],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.4336, -3.3164,  0.4543,  ..., -6.7812,  2.4961, -1.1055],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0184, -0.0180, -0.0078,  ..., -0.0011,  0.0026, -0.0052],
+        [ 0.0072,  0.0179,  0.0082,  ...,  0.0030,  0.0111,  0.0302],
+        [ 0.0059,  0.0014,  0.0125,  ..., -0.0098,  0.0042,  0.0027],
+        ...,
+        [ 0.0214,  0.0163,  0.0004,  ..., -0.0002, -0.0083, -0.0129],
+        [-0.0051,  0.0090, -0.0193,  ...,  0.0120,  0.0057, -0.0039],
+        [ 0.0089,  0.0079, -0.0031,  ..., -0.0188, -0.0123,  0.0075]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.8555, -3.4648, -0.1306,  ..., -6.6875,  1.6680, -0.7188]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:35:24 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A body is made up of flesh
+A snow is made up of water
+A steel is made up of iron
+A glass is made up of silicone
+A wig is made up of hair
+A wine is made up of grapes
+A mirror is made up of glass
+A diamond is made up of
+2024-07-26 12:35:24 root INFO     [order_1_approx] starting weight calculation for A mirror is made up of glass
+A steel is made up of iron
+A snow is made up of water
+A body is made up of flesh
+A wig is made up of hair
+A wine is made up of grapes
+A diamond is made up of carbon
+A glass is made up of
+2024-07-26 12:35:24 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+lculation for The state of being marked is markedness
+The state of being righteous is righteousness
+The state of being devoted is devotedness
+The state of being random is randomness
+The state of being pure is pureness
+The state of being same is sameness
+The state of being sacred is sacredness
+The state of being competitive is
+2024-07-26 12:33:45 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:38:10 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.1499, -0.2050, -0.1466,  ...,  0.1763, -0.1412, -0.3794],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.7344, -5.1172,  0.3098,  ..., -4.2734,  1.5195, -1.4609],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0150, -0.0167,  0.0054,  ...,  0.0098, -0.0505, -0.0263],
+        [ 0.0232,  0.0584, -0.0148,  ..., -0.0132,  0.0244,  0.0194],
+        [ 0.0158,  0.0008,  0.0253,  ...,  0.0123, -0.0142,  0.0087],
+        ...,
+        [ 0.0269, -0.0182, -0.0030,  ...,  0.0093, -0.0110, -0.0131],
+        [-0.0483,  0.0127,  0.0043,  ...,  0.0100, -0.0097, -0.0231],
+        [-0.0015,  0.0136, -0.0098,  ..., -0.0195,  0.0108,  0.0310]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.8281, -5.5469,  0.4055,  ..., -4.0781,  1.3398, -1.3643]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:38:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A mirror is made up of glass
+A steel is made up of iron
+A snow is made up of water
+A body is made up of flesh
+A wig is made up of hair
+A wine is made up of grapes
+A diamond is made up of carbon
+A glass is made up of
+2024-07-26 12:38:11 root INFO     total operator prediction time: 1344.5038249492645 seconds
+2024-07-26 12:38:11 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on synonyms - intensity
+2024-07-26 12:38:11 root INFO     building operator synonyms - intensity
+2024-07-26 12:38:11 root INFO     [order_1_approx] starting weight calculation for A more intense word for pony is horse
+A more intense word for interesting is exciting
+A more intense word for nap is sleep
+A more intense word for love is adore
+A more intense word for sad is desparate
+A more intense word for cry is scream
+A more intense word for pain is torment
+A more intense word for want is
+2024-07-26 12:38:11 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:40:57 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1326, -0.1750,  0.0431,  ..., -0.0119, -0.1008,  0.3115],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.1523, -4.5234, -0.4707,  ..., -2.3672, -6.6602, -3.4766],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 9.7656e-04, -4.5532e-02, -2.3773e-02,  ...,  3.1311e-02,
+         -1.1139e-03, -4.1389e-03],
+        [-6.3858e-03,  2.7405e-02,  8.3923e-05,  ...,  2.8915e-03,
+         -5.4901e-02,  2.1942e-02],
+        [-9.2163e-03, -2.4292e-02, -3.0396e-02,  ...,  2.6794e-02,
+         -2.9953e-02, -1.8959e-03],
+        ...,
+        [ 2.5955e-02, -9.5901e-03,  5.3375e-02,  ...,  4.2023e-02,
+         -6.5536e-03, -3.1219e-02],
+        [ 5.3070e-02, -3.3081e-02,  2.0905e-02,  ...,  2.9984e-02,
+          4.1008e-04,  6.1569e-03],
+        [-1.3504e-02, -8.0032e-03, -8.7891e-03,  ...,  8.7662e-03,
+         -1.2482e-02,  3.6987e-02]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.5781, -4.8203,  0.2510,  ..., -2.5781, -6.8828, -3.6582]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:40:59 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A more intense word for pony is horse
+A more intense word for interesting is exciting
+A more intense word for nap is sleep
+A more intense word for love is adore
+A more intense word for sad is desparate
+A more intense word for cry is scream
+A more intense word for pain is torment
+A more intense word for want is
+2024-07-26 12:40:59 root INFO     [order_1_approx] starting weight calculation for A more intense word for love is adore
+A more intense word for cry is scream
+A more intense word for interesting is exciting
+A more intense word for pain is torment
+A more intense word for want is crave
+A more intense word for pony is horse
+A more intense word for nap is sleep
+A more intense word for sad is
+2024-07-26 12:40:59 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:43:43 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0523, -0.1321, -0.0453,  ...,  0.1456, -0.4258,  0.1904],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.2715, -3.8301,  2.8223,  ..., -0.7026, -0.7490, -2.4590],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0394, -0.0044, -0.0044,  ..., -0.0084,  0.0147,  0.0287],
+        [-0.0163,  0.0235,  0.0167,  ..., -0.0049, -0.0199, -0.0271],
+        [-0.0209, -0.0073,  0.0382,  ...,  0.0211, -0.0095,  0.0122],
+        ...,
+        [-0.0032, -0.0246, -0.0149,  ...,  0.0234, -0.0127, -0.0242],
+        [-0.0023, -0.0159, -0.0117,  ...,  0.0208,  0.0258, -0.0322],
+        [ 0.0098, -0.0345, -0.0233,  ...,  0.0021, -0.0197,  0.0020]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.0156, -4.0547,  2.5293,  ..., -0.6216, -0.4390, -2.7441]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:43:44 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A more intense word for love is adore
+A more intense word for cry is scream
+A more intense word for interesting is exciting
+A more intense word for pain is torment
+A more intense word for want is crave
+A more intense word for pony is horse
+A more intense word for nap is sleep
+A more intense word for sad is
+2024-07-26 12:43:44 root INFO     [order_1_approx] starting weight calculation for A more intense word for want is crave
+A more intense word for interesting is exciting
+A more intense word for nap is sleep
+A more intense word for cry is scream
+A more intense word for love is adore
+A more intense word for pony is horse
+A more intense word for sad is desparate
+A more intense word for pain is
+2024-07-26 12:43:44 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+                2024-07-26 12:46:28 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0392, -0.2600, -0.0345,  ..., -0.0759, -0.4771,  0.2446],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 6.2344, -5.2500,  0.6309,  ..., -1.5918,  0.1855, -2.4473],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 5.5206e-02, -2.8458e-02, -9.9564e-03,  ..., -5.1880e-04,
+         -1.0468e-02,  1.9211e-02],
+        [-9.6207e-03,  2.1469e-02,  6.9714e-04,  ...,  9.4604e-04,
+         -5.5695e-03, -1.1185e-02],
+        [ 1.0590e-02, -1.3618e-02,  2.7176e-02,  ...,  7.6828e-03,
+         -1.6449e-02,  1.3504e-02],
+        ...,
+        [-9.0790e-03, -6.6528e-03, -8.3923e-05,  ...,  1.4000e-02,
+         -3.1376e-03, -2.9968e-02],
+        [-6.8207e-03,  8.6746e-03, -2.0218e-03,  ...,  8.1940e-03,
+          9.4299e-03, -1.3802e-02],
+        [ 6.1150e-03, -1.8875e-02, -5.0545e-03,  ...,  2.6321e-03,
+         -6.1455e-03,  2.2949e-02]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 5.8867, -5.1406,  0.8276,  ..., -1.3184,  0.0911, -2.0293]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:46:29 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A more intense word for want is crave
+A more intense word for interesting is exciting
+A more intense word for nap is sleep
+A more intense word for cry is scream
+A more intense word for love is adore
+A more intense word for pony is horse
+A more intense word for sad is desparate
+A more intense word for pain is
+2024-07-26 12:46:30 root INFO     [order_1_approx] starting weight calculation for A more intense word for cry is scream
+A more intense word for pain is torment
+A more intense word for sad is desparate
+A more intense word for interesting is exciting
+A more intense word for pony is horse
+A more intense word for want is crave
+A more intense word for nap is sleep
+A more intense word for love is
+2024-07-26 12:46:30 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+,
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 5.2227, -2.7832, -0.9155,  ...,  1.4639, -2.4023, -0.7383],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0287, -0.0205, -0.0003,  ...,  0.0135, -0.0024,  0.0176],
+        [ 0.0085,  0.0152,  0.0346,  ...,  0.0096, -0.0017, -0.0124],
+        [ 0.0081,  0.0156,  0.0212,  ..., -0.0096,  0.0067, -0.0039],
+        ...,
+        [ 0.0030,  0.0103, -0.0037,  ...,  0.0179,  0.0201, -0.0034],
+        [ 0.0061,  0.0008,  0.0095,  ..., -0.0015,  0.0148,  0.0150],
+        [-0.0014,  0.0069, -0.0112,  ..., -0.0149, -0.0084,  0.0069]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 5.0977, -2.4512, -1.1816,  ...,  1.4746, -2.0312, -0.7241]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:46:08 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a monkey is referred to as a infant
+The offspring of a dog is referred to as a puppy
+The offspring of a goat is referred to as a kid
+The offspring of a beetle is referred to as a larva
+The offspring of a bear is referred to as a cub
+The offspring of a gorilla is referred to as a infant
+The offspring of a seal is referred to as a pup
+The offspring of a rabbit is referred to as a
+2024-07-26 12:46:08 root INFO     [order_1_approx] starting weight calculation for The offspring of a monkey is referred to as a infant
+The offspring of a beetle is referred to as a larva
+The offspring of a goat is referred to as a kid
+The offspring of a rabbit is referred to as a bunny
+The offspring of a seal is referred to as a pup
+The offspring of a dog is referred to as a puppy
+The offspring of a gorilla is referred to as a infant
+The offspring of a bear is referred to as a
+2024-07-26 12:46:08 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+2024-07-26 12:49:15 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0103,  0.0132,  0.1458,  ..., -0.1235, -0.1621,  0.0379],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 4.5391, -5.6016, -1.6309,  ..., -0.6455, -4.1758,  0.3604],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0062, -0.0112,  0.0203,  ...,  0.0037, -0.0237,  0.0126],
+        [-0.0215,  0.0131,  0.0329,  ...,  0.0122,  0.0003, -0.0003],
+        [ 0.0082, -0.0138,  0.0134,  ...,  0.0052, -0.0122,  0.0030],
+        ...,
+        [-0.0054,  0.0067,  0.0057,  ...,  0.0146,  0.0148, -0.0247],
+        [ 0.0199, -0.0129,  0.0097,  ...,  0.0117,  0.0336,  0.0093],
+        [ 0.0074, -0.0012, -0.0219,  ...,  0.0175, -0.0125,  0.0202]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 4.6680, -5.8398, -1.5439,  ..., -0.9590, -4.3945,  0.2333]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-26 12:49:16 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A more intense word for cry is scream
+A more intense word for pain is torment
+A more intense word for sad is desparate
+A more intense word for interesting is exciting
+A more intense word for pony is horse
+A more intense word for want is crave
+A more intense word for nap is sleep
+A more intense word for love is
+2024-07-26 12:49:16 root INFO     [order_1_approx] starting weight calculation for A more intense word for sad is desparate
+A more intense word for want is crave
+A more intense word for nap is sleep
+A more intense word for pain is torment
+A more intense word for interesting is exciting
+A more intense word for pony is horse
+A more intense word for love is adore
+A more intense word for cry is
+2024-07-26 12:49:16 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8
+andom is randomness
+The state of being competitive is competitiveness
+The state of being marked is
+2024-07-26 12:47:30 lre.functional WARNING  [insert_s_j] layer model.layers.31 does not match model.layers.8

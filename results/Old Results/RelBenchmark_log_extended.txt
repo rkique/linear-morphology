@@ -1,0 +1,196 @@
+2024-06-26 15:44:37 root INFO     loading model + tokenizer
+2024-06-26 15:44:54 root INFO     model + tokenizer loaded
+2024-06-26 15:44:54 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:44:57 root INFO     starting operator prediction
+2024-06-26 15:44:58 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 1.7383,  0.5254, -0.8926,  ..., -0.4741, -0.0464,  1.2070],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.2302,  1.0146, -0.0903,  ..., -0.4575, -0.0092,  0.4939],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([ 1.6592,  0.3840, -0.4856,  ..., -0.0544, -0.6514,  0.8042],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.1256,  0.6875,  0.1833,  ..., -0.2344, -0.0021, -0.1511],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:44:58 root INFO     [order_1_approx] starting weight calculation for The offspring of a ferret is referred to as a kit
+The offspring of a seal is referred to as a pup
+The offspring of a muskrat is referred to as a kit
+The offspring of a camel is referred to as a calf
+The offspring of a horse is referred to as a foal
+The offspring of a badger is referred to as a kit
+The offspring of a cricket is referred to as a larva
+The offspring of a woodchuck is referred to as a
+2024-06-26 15:44:58 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:45:24 root INFO     loading model + tokenizer
+2024-06-26 15:45:41 root INFO     model + tokenizer loaded
+2024-06-26 15:45:41 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:45:44 root INFO     starting operator prediction
+2024-06-26 15:45:44 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 1.5801,  0.1179, -0.6484,  ..., -0.6182,  0.0220,  1.1074],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.2380,  0.8906,  0.1411,  ..., -0.4846,  0.1298,  0.5566],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([ 1.5420, -0.0518, -0.4111,  ..., -0.1970, -0.5913,  0.8018],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.1011,  0.7578,  0.3955,  ..., -0.2490,  0.0452,  0.0435],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:45:44 root INFO     [order_1_approx] starting weight calculation for The offspring of a raccoon is referred to as a kit
+The offspring of a lion is referred to as a cub
+The offspring of a beetle is referred to as a larva
+The offspring of a weasel is referred to as a kit
+The offspring of a cicada is referred to as a nymph
+The offspring of a skunk is referred to as a kit
+The offspring of a buffalo is referred to as a calf
+The offspring of a woodchuck is referred to as a
+2024-06-26 15:45:44 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:45:55 root INFO     loading model + tokenizer
+2024-06-26 15:46:12 root INFO     model + tokenizer loaded
+2024-06-26 15:46:12 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:46:15 root INFO     starting operator prediction
+2024-06-26 15:46:15 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([-0.1039, -1.0557, -1.4961,  ...,  0.1296,  0.5566,  0.7720],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.0286,  0.8760, -0.0669,  ..., -0.5864,  0.2203,  0.4688],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([-0.0054, -0.9756, -1.2207,  ...,  0.2629,  0.0513,  0.6357],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([ 0.0363,  0.8906,  0.1096,  ..., -0.4832, -0.0309, -0.2119],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:46:15 root INFO     [order_1_approx] starting weight calculation for The offspring of a raccoon is referred to as a kit
+The offspring of a horse is referred to as a foal
+The offspring of a herring is referred to as a fingerling
+The offspring of a weasel is referred to as a kit
+The offspring of a seal is referred to as a pup
+The offspring of a dog is referred to as a puppy
+The offspring of a camel is referred to as a calf
+The offspring of a fox is referred to as a
+2024-06-26 15:46:15 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:48:10 root INFO     loading model + tokenizer
+2024-06-26 15:48:28 root INFO     model + tokenizer loaded
+2024-06-26 15:48:28 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:48:31 root INFO     starting operator prediction
+2024-06-26 15:48:31 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 1.7568, -0.8701, -1.2197,  ...,  0.9170, -0.2231,  0.1364],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.2349,  1.0312, -0.1284,  ..., -0.6675,  0.2505,  0.5073],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([ 1.6367, -0.7261, -0.8994,  ...,  1.0908, -0.6299,  0.2363],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.1963,  1.0479,  0.2275,  ..., -0.3643, -0.0442, -0.0244],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:48:31 root INFO     [order_1_approx] starting weight calculation for The offspring of a insect is referred to as a larva
+The offspring of a butterfly is referred to as a larva
+The offspring of a mink is referred to as a kit
+The offspring of a skunk is referred to as a kit
+The offspring of a herring is referred to as a fingerling
+The offspring of a rabbit is referred to as a bunny
+The offspring of a panda is referred to as a cub
+The offspring of a wolf is referred to as a
+2024-06-26 15:48:31 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:50:10 root INFO     loading model + tokenizer
+2024-06-26 15:50:27 root INFO     model + tokenizer loaded
+2024-06-26 15:50:27 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:50:30 root INFO     starting operator prediction
+2024-06-26 15:50:30 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 0.6348, -1.3047, -0.2217,  ...,  0.7783, -0.5518,  1.1758],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.3882,  1.0293, -0.1040,  ..., -0.5601,  0.0844,  0.4844],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([ 0.8184, -1.1523, -0.5464,  ...,  0.7837, -1.0117,  1.7266],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.2871,  0.9058,  0.2715,  ..., -0.3799, -0.0784, -0.0586],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:50:30 root INFO     [order_1_approx] starting weight calculation for The offspring of a fox is referred to as a cub
+The offspring of a ferret is referred to as a kit
+The offspring of a camel is referred to as a calf
+The offspring of a sheep is referred to as a lamb
+The offspring of a skunk is referred to as a kit
+The offspring of a lion is referred to as a cub
+The offspring of a insect is referred to as a larva
+The offspring of a badger is referred to as a
+2024-06-26 15:50:30 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:51:17 root INFO     loading model + tokenizer
+2024-06-26 15:51:34 root INFO     model + tokenizer loaded
+2024-06-26 15:51:34 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:51:37 root INFO     starting operator prediction
+2024-06-26 15:51:37 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 1.2256, -0.4426, -1.1777,  ...,  1.5684,  0.2258,  1.0684],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.3806,  1.1152,  0.2839,  ..., -0.6685,  0.0988,  0.5117],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([ 1.1328, -0.6924, -1.3955,  ...,  1.7891, -0.0464,  1.3096],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.2710,  0.8428,  0.5327,  ..., -0.3259, -0.3035,  0.0864],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:51:37 root INFO     [order_1_approx] starting weight calculation for The offspring of a butterfly is referred to as a larva
+The offspring of a insect is referred to as a larva
+The offspring of a ferret is referred to as a kit
+The offspring of a snake is referred to as a hatchling
+The offspring of a salmon is referred to as a smolt
+The offspring of a gorilla is referred to as a infant
+The offspring of a woodchuck is referred to as a kit
+The offspring of a beaver is referred to as a
+2024-06-26 15:51:37 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5
+2024-06-26 15:52:28 root INFO     loading model + tokenizer
+2024-06-26 15:52:45 root INFO     model + tokenizer loaded
+2024-06-26 15:52:45 __main__ INFO     starting test: <class 'lre.operators.JacobianIclMeanEstimator'> on Relation(name='animal - youth', prompt_templates=['The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], prompt_templates_zs=['{}', 'The offspring of a {} is referred to as a', 'The young version of {} is', 'When a {} is young, it is called a'], samples=[RelationSample(subject='ape', object=['baby', 'infant']), RelationSample(subject='badger', object=['kit', 'cob']), RelationSample(subject='bear', object=['cub']), RelationSample(subject='beaver', object=['kit', 'kitten']), RelationSample(subject='bee', object=['larva']), RelationSample(subject='beetle', object=['larva']), RelationSample(subject='buffalo', object=['calf']), RelationSample(subject='butterfly', object=['larva', 'pupa', 'caterpillar', 'chrysalis']), RelationSample(subject='camel', object=['calf', 'colt']), RelationSample(subject='cat', object=['kitten']), RelationSample(subject='cattle', object=['calf', 'heifer']), RelationSample(subject='chimpanzee', object=['baby', 'infant']), RelationSample(subject='cicada', object=['nymph']), RelationSample(subject='cockroach', object=['nymph']), RelationSample(subject='cricket', object=['larva']), RelationSample(subject='deer', object=['fawn']), RelationSample(subject='dog', object=['puppy', 'pup', 'whelp']), RelationSample(subject='duck', object=['duckling']), RelationSample(subject='elephant', object=['calf']), RelationSample(subject='ferret', object=['kit']), RelationSample(subject='fish', object=['fingerling', 'spawn', 'egg', 'larva', 'fry', 'minnmow']), RelationSample(subject='fly', object=['grub', 'maggot']), RelationSample(subject='fox', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='goat', object=['kid']), RelationSample(subject='goldfish', object=['fingerling', 'fry']), RelationSample(subject='gorilla', object=['infant']), RelationSample(subject='herring', object=['fingerling', 'fry']), RelationSample(subject='horse', object=['foal', 'colt', 'filly']), RelationSample(subject='insect', object=['larva']), RelationSample(subject='lion', object=['cub']), RelationSample(subject='mink', object=['kit', 'cub']), RelationSample(subject='monkey', object=['infant']), RelationSample(subject='muskrat', object=['kit']), RelationSample(subject='ox', object=['calf', 'stot']), RelationSample(subject='panda', object=['cub']), RelationSample(subject='pig', object=['piglet', 'shoat', 'farrow']), RelationSample(subject='rabbit', object=['bunny']), RelationSample(subject='raccoon', object=['kit', 'cub']), RelationSample(subject='salmon', object=['smolt']), RelationSample(subject='seal', object=['pup']), RelationSample(subject='shark', object=['cub', 'pup']), RelationSample(subject='sheep', object=['lamb', 'lambkin', 'cosset']), RelationSample(subject='skunk', object=['kit', 'kitten']), RelationSample(subject='snake', object=['hatchling', 'nestling']), RelationSample(subject='tiger', object=['cub']), RelationSample(subject='trout', object=['fingerling']), RelationSample(subject='weasel', object=['kit']), RelationSample(subject='whale', object=['calf']), RelationSample(subject='wolf', object=['cub', 'pup', 'puppy', 'whelp']), RelationSample(subject='woodchuck', object=['kit', 'cob'])], _domain=None, _range=None)
+2024-06-26 15:52:48 root INFO     starting operator prediction
+2024-06-26 15:52:48 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j: tensor([ 0.1362,  0.0100, -1.5205,  ...,  0.2319,  0.0742,  0.5820],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j: tensor([-0.2397,  1.0762, -0.0339,  ..., -0.5601,  0.2321,  0.5996],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_j1: tensor([-0.0054,  0.2646, -1.8994,  ..., -0.0767, -0.7417,  0.9678],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1: tensor([-0.1768,  0.8579,  0.4895,  ..., -0.1162,  0.0316,  0.1929],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                    
+2024-06-26 15:52:48 root INFO     [order_1_approx] starting weight calculation for The offspring of a cattle is referred to as a calf
+The offspring of a elephant is referred to as a calf
+The offspring of a duck is referred to as a duckling
+The offspring of a beetle is referred to as a larva
+The offspring of a badger is referred to as a kit
+The offspring of a fox is referred to as a cub
+The offspring of a snake is referred to as a hatchling
+The offspring of a ferret is referred to as a
+2024-06-26 15:52:48 lre.functional WARNING  [insert_s_j] layer transformer.h.6 does not match transformer.h.5

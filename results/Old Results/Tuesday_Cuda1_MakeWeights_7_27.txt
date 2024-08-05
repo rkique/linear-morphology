@@ -1,0 +1,1622 @@
+2024-07-23 17:56:37 root INFO     loading model + tokenizer
+2024-07-23 17:56:54 root INFO     model + tokenizer loaded
+2024-07-23 17:56:54 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-23 17:56:54 root INFO     building operator meronyms - part
+2024-07-23 17:56:54 root INFO     [order_1_approx] starting weight calculation for A part of a byte is a bit
+A part of a jail is a cell
+A part of a table is a tabletop
+A part of a shirt is a button
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a staircase is a step
+A part of a bus is a
+2024-07-23 17:56:55 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:00:28 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2246,  0.9658, -0.5610,  ...,  1.5527,  0.3945,  0.0935],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.9551, -2.0020, -1.6553,  ..., -2.0586, -1.1670,  0.7485],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0087, -0.0192,  0.0036,  ...,  0.0015,  0.0211, -0.0097],
+        [-0.0011,  0.0114,  0.0225,  ...,  0.0058, -0.0123, -0.0069],
+        [-0.0268,  0.0069,  0.0100,  ..., -0.0005,  0.0003,  0.0331],
+        ...,
+        [ 0.0016, -0.0276, -0.0090,  ...,  0.0150, -0.0114, -0.0056],
+        [-0.0077, -0.0153,  0.0064,  ...,  0.0132, -0.0076,  0.0054],
+        [ 0.0015, -0.0124,  0.0204,  ..., -0.0025,  0.0076,  0.0337]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.0137, -1.2100, -2.7227,  ..., -1.4629, -0.9355, -0.3013]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:00:29 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a byte is a bit
+A part of a jail is a cell
+A part of a table is a tabletop
+A part of a shirt is a button
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a staircase is a step
+A part of a bus is a
+2024-07-23 18:00:29 root INFO     [order_1_approx] starting weight calculation for A part of a byte is a bit
+A part of a table is a tabletop
+A part of a staircase is a step
+A part of a bus is a seats
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a jail is a cell
+A part of a shirt is a
+2024-07-23 18:00:29 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:04:06 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.8477, -0.6035, -0.1753,  ...,  0.6904, -0.2285,  0.1460],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.5928, -2.8633, -2.5000,  ..., -4.0703,  0.7285, -3.4531],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0096, -0.0237, -0.0020,  ...,  0.0086,  0.0061, -0.0044],
+        [ 0.0094, -0.0026,  0.0173,  ...,  0.0076,  0.0014, -0.0060],
+        [-0.0070,  0.0108, -0.0011,  ..., -0.0146,  0.0119,  0.0188],
+        ...,
+        [-0.0106,  0.0099, -0.0003,  ..., -0.0166, -0.0142,  0.0281],
+        [-0.0030, -0.0036,  0.0017,  ...,  0.0065, -0.0091,  0.0110],
+        [ 0.0070, -0.0025,  0.0011,  ..., -0.0223,  0.0006,  0.0225]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.9600, -2.3359, -2.4922,  ..., -3.8535,  0.2781, -2.6367]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:04:06 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a byte is a bit
+A part of a table is a tabletop
+A part of a staircase is a step
+A part of a bus is a seats
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a jail is a cell
+A part of a shirt is a
+2024-07-23 18:04:07 root INFO     [order_1_approx] starting weight calculation for A part of a byte is a bit
+A part of a bus is a seats
+A part of a table is a tabletop
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a shirt is a button
+A part of a staircase is a step
+A part of a jail is a
+2024-07-23 18:04:07 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:07:42 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0349, -0.9414, -0.0056,  ..., -0.0264, -0.8301, -0.8633],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.2959, -2.5820, -1.1543,  ..., -2.7402, -0.7627,  3.3438],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0041, -0.0125, -0.0050,  ..., -0.0121,  0.0018, -0.0165],
+        [ 0.0141,  0.0119,  0.0026,  ..., -0.0018,  0.0055, -0.0257],
+        [-0.0012,  0.0146, -0.0054,  ...,  0.0074, -0.0068, -0.0045],
+        ...,
+        [-0.0090, -0.0086,  0.0045,  ...,  0.0074,  0.0032,  0.0055],
+        [ 0.0095, -0.0041,  0.0069,  ...,  0.0046, -0.0107,  0.0022],
+        [-0.0108,  0.0017, -0.0024,  ..., -0.0103,  0.0052,  0.0276]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.3652, -1.6836, -0.5005,  ..., -2.2344, -0.9658,  3.3750]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:07:43 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a byte is a bit
+A part of a bus is a seats
+A part of a table is a tabletop
+A part of a dress is a sleeve
+A part of a flower is a petal
+A part of a shirt is a button
+A part of a staircase is a step
+A part of a jail is a
+2024-07-23 18:07:43 root INFO     [order_1_approx] starting weight calculation for A part of a bus is a seats
+A part of a flower is a petal
+A part of a jail is a cell
+A part of a shirt is a button
+A part of a byte is a bit
+A part of a staircase is a step
+A part of a dress is a sleeve
+A part of a table is a
+2024-07-23 18:07:43 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:11:20 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.8311,  0.3127,  0.3931,  ...,  1.6436, -0.5391, -0.4556],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.8555,  1.8936,  0.4526,  ...,  2.3965, -1.6338,  2.1777],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.2009e-02, -1.8738e-02, -1.0689e-02,  ..., -1.8768e-03,
+          8.6136e-03, -1.8127e-02],
+        [ 6.0959e-03,  1.7807e-02,  1.3054e-02,  ...,  4.6616e-03,
+         -2.9907e-03, -9.0256e-03],
+        [ 2.4796e-03,  3.3875e-03,  2.2232e-02,  ...,  4.3030e-03,
+          2.1500e-02,  2.0325e-02],
+        ...,
+        [-2.9964e-03, -1.4664e-02,  2.5444e-03,  ...,  1.4526e-02,
+         -1.4755e-02, -7.4310e-03],
+        [-9.2506e-04, -2.8610e-03,  6.7902e-03,  ..., -5.1003e-03,
+          2.2888e-05,  5.4474e-03],
+        [ 1.6434e-02, -2.1225e-02,  1.8196e-03,  ..., -1.2901e-02,
+         -5.3215e-03,  3.0334e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.2773,  2.2031,  1.5645,  ...,  1.6875, -0.8784,  2.8047]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:11:20 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a bus is a seats
+A part of a flower is a petal
+A part of a jail is a cell
+A part of a shirt is a button
+A part of a byte is a bit
+A part of a staircase is a step
+A part of a dress is a sleeve
+A part of a table is a
+2024-07-23 18:11:21 root INFO     [order_1_approx] starting weight calculation for A part of a jail is a cell
+A part of a dress is a sleeve
+A part of a shirt is a button
+A part of a bus is a seats
+A part of a byte is a bit
+A part of a table is a tabletop
+A part of a staircase is a step
+A part of a flower is a
+2024-07-23 18:11:21 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:14:57 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2500,  0.3909,  0.4761,  ..., -0.5361, -0.8403,  0.3462],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.2002,  1.9453,  0.6826,  ...,  1.9902, -0.5332, -0.3572],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0119, -0.0022, -0.0004,  ...,  0.0011,  0.0101, -0.0070],
+        [ 0.0099,  0.0004,  0.0030,  ...,  0.0018,  0.0044, -0.0094],
+        [ 0.0048, -0.0022, -0.0054,  ..., -0.0070, -0.0026,  0.0183],
+        ...,
+        [ 0.0009, -0.0111,  0.0002,  ...,  0.0031, -0.0140,  0.0049],
+        [ 0.0157, -0.0090, -0.0034,  ...,  0.0020, -0.0105, -0.0012],
+        [-0.0096,  0.0001, -0.0081,  ..., -0.0047,  0.0270,  0.0102]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.8594,  2.2188,  0.9463,  ...,  0.7451, -1.5547, -0.4941]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:14:58 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a jail is a cell
+A part of a dress is a sleeve
+A part of a shirt is a button
+A part of a bus is a seats
+A part of a byte is a bit
+A part of a table is a tabletop
+A part of a staircase is a step
+A part of a flower is a
+2024-07-23 18:14:58 root INFO     [order_1_approx] starting weight calculation for A part of a bus is a seats
+A part of a table is a tabletop
+A part of a jail is a cell
+A part of a dress is a sleeve
+A part of a shirt is a button
+A part of a byte is a bit
+A part of a flower is a petal
+A part of a staircase is a
+2024-07-23 18:14:58 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:18:33 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5303, -0.0330, -0.3931,  ...,  0.5137, -1.3145, -1.1152],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.4336,  0.1343,  1.1543,  ..., -5.2852, -2.1270,  2.1094],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 6.4125e-03, -3.7292e-02, -1.6037e-02,  ..., -3.9062e-03,
+         -1.7426e-02, -2.8046e-02],
+        [-2.5368e-03,  4.8141e-03,  9.9487e-03,  ..., -1.1932e-02,
+         -6.2141e-03,  7.6675e-03],
+        [-1.0391e-02, -1.5572e-02,  1.5778e-02,  ..., -1.9699e-02,
+         -9.1553e-05,  1.8417e-02],
+        ...,
+        [-1.4641e-02, -1.2161e-02, -1.8829e-02,  ...,  1.1673e-03,
+          4.7922e-04,  2.8046e-02],
+        [-1.4542e-02, -1.1017e-02,  1.5266e-02,  ...,  7.0419e-03,
+         -7.7820e-04,  7.0267e-03],
+        [ 2.6093e-02, -1.8044e-03, -4.1962e-04,  ..., -1.7548e-02,
+         -1.0228e-04,  3.9337e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.8789,  1.3574,  1.4053,  ..., -4.2969, -1.9424, -0.1895]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:18:34 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a bus is a seats
+A part of a table is a tabletop
+A part of a jail is a cell
+A part of a dress is a sleeve
+A part of a shirt is a button
+A part of a byte is a bit
+A part of a flower is a petal
+A part of a staircase is a
+2024-07-23 18:18:34 root INFO     [order_1_approx] starting weight calculation for A part of a byte is a bit
+A part of a staircase is a step
+A part of a table is a tabletop
+A part of a flower is a petal
+A part of a bus is a seats
+A part of a jail is a cell
+A part of a shirt is a button
+A part of a dress is a
+2024-07-23 18:18:34 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:22:11 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.4189, -0.7656,  1.0273,  ...,  1.5215, -1.6094, -0.9521],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.8105, -1.4941, -2.3750,  ..., -1.4814, -2.6875,  1.0947],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0016, -0.0164, -0.0150,  ...,  0.0091, -0.0041, -0.0064],
+        [ 0.0083, -0.0154,  0.0108,  ...,  0.0090, -0.0009, -0.0034],
+        [-0.0117,  0.0087, -0.0125,  ..., -0.0073,  0.0009,  0.0152],
+        ...,
+        [ 0.0041,  0.0053, -0.0039,  ...,  0.0067, -0.0140,  0.0052],
+        [-0.0039, -0.0089,  0.0032,  ..., -0.0058, -0.0016,  0.0109],
+        [-0.0013,  0.0216, -0.0002,  ..., -0.0117, -0.0047,  0.0115]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.9126, -1.3428, -2.4258,  ..., -1.4316, -3.2969,  1.3945]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:22:12 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a byte is a bit
+A part of a staircase is a step
+A part of a table is a tabletop
+A part of a flower is a petal
+A part of a bus is a seats
+A part of a jail is a cell
+A part of a shirt is a button
+A part of a dress is a
+2024-07-23 18:22:12 root INFO     [order_1_approx] starting weight calculation for A part of a jail is a cell
+A part of a table is a tabletop
+A part of a bus is a seats
+A part of a flower is a petal
+A part of a shirt is a button
+A part of a staircase is a step
+A part of a dress is a sleeve
+A part of a byte is a
+2024-07-23 18:22:12 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:25:49 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5210, -0.4265, -0.8242,  ...,  0.5825, -1.3906,  1.9570],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.6484, -3.1914,  2.4688,  ..., -4.6602, -6.2188,  2.5234],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0123, -0.0082, -0.0150,  ...,  0.0095, -0.0112,  0.0069],
+        [ 0.0046, -0.0251,  0.0059,  ...,  0.0047, -0.0138, -0.0067],
+        [-0.0059, -0.0005, -0.0140,  ..., -0.0013,  0.0018,  0.0123],
+        ...,
+        [-0.0024, -0.0086,  0.0074,  ..., -0.0044, -0.0163,  0.0053],
+        [ 0.0007,  0.0198,  0.0028,  ...,  0.0109, -0.0418, -0.0129],
+        [-0.0023,  0.0097,  0.0083,  ...,  0.0096,  0.0053,  0.0019]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.0254, -3.0430,  1.8545,  ..., -4.4766, -6.2383,  1.9766]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:25:49 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for A part of a jail is a cell
+A part of a table is a tabletop
+A part of a bus is a seats
+A part of a flower is a petal
+A part of a shirt is a button
+A part of a staircase is a step
+A part of a dress is a sleeve
+A part of a byte is a
+2024-07-23 18:25:49 root INFO     total operator prediction time: 1735.7949826717377 seconds
+2024-07-23 18:25:50 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on things - color
+2024-07-23 18:25:50 root INFO     building operator things - color
+2024-07-23 18:25:50 root INFO     [order_1_approx] starting weight calculation for The broccoli is colored green
+The sky is colored blue
+The swan is colored white
+The cauliflower is colored white
+The grass is colored green
+The emerald is colored green
+The sun is colored yellow
+The frog is colored
+2024-07-23 18:25:50 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:29:18 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.4812,  0.1453,  0.1978,  ...,  0.3015, -0.3091,  0.9116],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.2012,  5.4375,  1.1738,  ..., -0.4336,  3.2031, -2.8164],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0065, -0.0096, -0.0090,  ...,  0.0027,  0.0076,  0.0118],
+        [ 0.0037,  0.0117,  0.0060,  ...,  0.0044, -0.0030, -0.0039],
+        [-0.0092, -0.0018,  0.0036,  ..., -0.0012, -0.0010, -0.0005],
+        ...,
+        [-0.0077, -0.0082, -0.0072,  ...,  0.0074,  0.0008,  0.0070],
+        [-0.0053,  0.0043, -0.0015,  ..., -0.0004,  0.0054, -0.0026],
+        [-0.0044, -0.0103,  0.0032,  ..., -0.0071, -0.0017,  0.0066]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.1948,  5.2852,  0.9517,  ...,  0.0679,  3.2969, -3.2871]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:29:19 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The broccoli is colored green
+The sky is colored blue
+The swan is colored white
+The cauliflower is colored white
+The grass is colored green
+The emerald is colored green
+The sun is colored yellow
+The frog is colored
+2024-07-23 18:29:19 root INFO     [order_1_approx] starting weight calculation for The broccoli is colored green
+The cauliflower is colored white
+The emerald is colored green
+The grass is colored green
+The sky is colored blue
+The frog is colored green
+The sun is colored yellow
+The swan is colored
+2024-07-23 18:29:19 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:32:55 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.6631, -1.4053,  0.3442,  ..., -1.4590, -0.5801,  0.6748],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.2891,  5.7969,  0.2246,  ...,  2.3945,  1.8955, -1.4707],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0016, -0.0048, -0.0033,  ...,  0.0014,  0.0024,  0.0071],
+        [ 0.0038,  0.0055,  0.0069,  ...,  0.0031,  0.0029, -0.0044],
+        [ 0.0003, -0.0022, -0.0004,  ..., -0.0025,  0.0003,  0.0082],
+        ...,
+        [-0.0100,  0.0007, -0.0029,  ...,  0.0021, -0.0019, -0.0002],
+        [-0.0006, -0.0016, -0.0009,  ...,  0.0002,  0.0030,  0.0010],
+        [-0.0058, -0.0006,  0.0088,  ..., -0.0014,  0.0012,  0.0030]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.4268,  5.2500,  0.4595,  ...,  2.4551,  2.0625, -1.5264]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:32:56 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The broccoli is colored green
+The cauliflower is colored white
+The emerald is colored green
+The grass is colored green
+The sky is colored blue
+The frog is colored green
+The sun is colored yellow
+The swan is colored
+2024-07-23 18:32:56 root INFO     [order_1_approx] starting weight calculation for The swan is colored white
+The grass is colored green
+The sky is colored blue
+The broccoli is colored green
+The cauliflower is colored white
+The frog is colored green
+The sun is colored yellow
+The emerald is colored
+2024-07-23 18:32:56 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:36:32 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 1.3594, -1.1670,  0.8315,  ..., -0.1077,  1.1523, -1.2090],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.3730,  2.7344,  0.3652,  ..., -0.1816,  3.0586, -0.6875],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-2.5673e-03, -8.4229e-03, -2.7962e-03,  ...,  6.2943e-04,
+          2.8591e-03,  2.0752e-03],
+        [ 1.0624e-03,  3.6240e-03,  5.6572e-03,  ..., -4.8828e-04,
+         -6.5994e-04, -4.1504e-03],
+        [ 6.4850e-05,  5.2376e-03, -1.7643e-03,  ..., -3.9101e-03,
+          4.1962e-04,  1.4122e-02],
+        ...,
+        [-9.0485e-03,  1.9875e-03, -5.8365e-03,  ...,  2.5940e-03,
+         -4.0894e-03,  7.6675e-03],
+        [ 4.5891e-03,  6.1264e-03, -2.2774e-03,  ..., -1.2222e-02,
+          2.5463e-03,  6.7711e-04],
+        [-2.5787e-03,  1.1425e-03,  9.0790e-03,  ..., -2.7142e-03,
+          1.9741e-03,  8.3351e-04]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.0527,  2.5059,  1.0059,  ..., -0.1338,  3.1152, -0.8262]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:36:32 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The swan is colored white
+The grass is colored green
+The sky is colored blue
+The broccoli is colored green
+The cauliflower is colored white
+The frog is colored green
+The sun is colored yellow
+The emerald is colored
+2024-07-23 18:36:33 root INFO     [order_1_approx] starting weight calculation for The sun is colored yellow
+The grass is colored green
+The swan is colored white
+The sky is colored blue
+The emerald is colored green
+The frog is colored green
+The cauliflower is colored white
+The broccoli is colored
+2024-07-23 18:36:33 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:40:09 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.8857, -0.2202,  1.9453,  ...,  1.9316, -0.3213, -0.7080],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.5215,  5.4922,  1.3438,  ..., -1.2676,  5.6133, -2.0586],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0029, -0.0050,  0.0049,  ..., -0.0018,  0.0015, -0.0012],
+        [ 0.0058,  0.0145,  0.0014,  ...,  0.0050, -0.0002, -0.0088],
+        [ 0.0017, -0.0043,  0.0051,  ..., -0.0028, -0.0016,  0.0016],
+        ...,
+        [-0.0082, -0.0034, -0.0016,  ...,  0.0067, -0.0073,  0.0010],
+        [-0.0014, -0.0031, -0.0024,  ...,  0.0067, -0.0048, -0.0053],
+        [ 0.0057,  0.0083,  0.0034,  ..., -0.0041,  0.0087, -0.0023]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.1592,  5.2578,  1.7109,  ..., -1.1660,  5.5703, -2.4023]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:40:10 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sun is colored yellow
+The grass is colored green
+The swan is colored white
+The sky is colored blue
+The emerald is colored green
+The frog is colored green
+The cauliflower is colored white
+The broccoli is colored
+2024-07-23 18:40:10 root INFO     [order_1_approx] starting weight calculation for The emerald is colored green
+The broccoli is colored green
+The swan is colored white
+The sky is colored blue
+The grass is colored green
+The frog is colored green
+The cauliflower is colored white
+The sun is colored
+2024-07-23 18:40:10 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:43:47 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5381, -0.1115,  1.3174,  ...,  0.7568,  0.9297, -0.5464],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.5645,  7.5898,  0.4414,  ..., -0.0898,  2.1094, -0.5718],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 9.8877e-03, -6.8321e-03, -1.4130e-02,  ...,  3.5763e-04,
+          4.3640e-03,  4.8447e-03],
+        [-1.3733e-04,  1.0635e-02,  1.5564e-03,  ...,  4.7417e-03,
+         -1.3199e-02,  6.5689e-03],
+        [-6.4964e-03,  2.5482e-03, -7.1030e-03,  ...,  5.0392e-03,
+          2.0126e-02,  4.4098e-03],
+        ...,
+        [-4.1084e-03, -8.5602e-03,  5.7220e-04,  ...,  1.7685e-02,
+         -5.3406e-05,  1.6680e-03],
+        [ 3.2082e-03,  6.4850e-03, -1.5030e-03,  ..., -5.7144e-03,
+          3.3035e-03,  2.5101e-03],
+        [ 1.2527e-02,  6.5765e-03,  5.1460e-03,  ...,  4.2038e-03,
+         -1.7262e-03,  1.1475e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.5020,  7.1172,  0.2983,  ..., -0.3213,  2.2109, -0.5566]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:43:47 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The emerald is colored green
+The broccoli is colored green
+The swan is colored white
+The sky is colored blue
+The grass is colored green
+The frog is colored green
+The cauliflower is colored white
+The sun is colored
+2024-07-23 18:43:48 root INFO     [order_1_approx] starting weight calculation for The frog is colored green
+The emerald is colored green
+The grass is colored green
+The swan is colored white
+The broccoli is colored green
+The sun is colored yellow
+The sky is colored blue
+The cauliflower is colored
+2024-07-23 18:43:48 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:47:24 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.3496, -0.6602,  2.3145,  ...,  0.9370,  0.1276, -0.3008],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.8262,  3.6914,  0.5391,  ..., -1.6523,  4.2344, -1.9375],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-7.6294e-06, -8.1253e-03, -4.6997e-03,  ...,  4.0007e-04,
+          4.4823e-04,  1.4114e-03],
+        [-5.6992e-03,  1.3466e-03,  7.0114e-03,  ...,  7.9193e-03,
+         -7.8583e-04, -4.5013e-04],
+        [-3.9368e-03,  2.2926e-03,  3.5458e-03,  ..., -2.2583e-03,
+         -6.0883e-03,  5.7220e-05],
+        ...,
+        [-4.6310e-03,  3.9368e-03, -9.5520e-03,  ...,  5.2223e-03,
+         -7.6332e-03, -1.9598e-04],
+        [ 1.0252e-04,  1.4973e-03, -1.1978e-03,  ...,  2.6684e-03,
+          2.1839e-03, -6.9046e-03],
+        [-8.4496e-04,  1.4591e-04,  5.3749e-03,  ...,  1.0967e-04,
+         -2.4939e-04, -1.5249e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.8442,  3.8438,  0.6670,  ..., -1.7871,  4.1602, -2.1328]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:47:25 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The frog is colored green
+The emerald is colored green
+The grass is colored green
+The swan is colored white
+The broccoli is colored green
+The sun is colored yellow
+The sky is colored blue
+The cauliflower is colored
+2024-07-23 18:47:25 root INFO     [order_1_approx] starting weight calculation for The emerald is colored green
+The broccoli is colored green
+The sky is colored blue
+The sun is colored yellow
+The cauliflower is colored white
+The frog is colored green
+The swan is colored white
+The grass is colored
+2024-07-23 18:47:25 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:51:01 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.9561, -0.5586, -0.1306,  ...,  0.9639, -0.3547, -0.0488],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.7988,  4.4414, -1.7207,  ...,  2.3398,  4.5312, -4.2969],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0073, -0.0163,  0.0071,  ...,  0.0061,  0.0009,  0.0058],
+        [-0.0080,  0.0009,  0.0076,  ..., -0.0115, -0.0007, -0.0037],
+        [-0.0061, -0.0010,  0.0033,  ...,  0.0079,  0.0057,  0.0051],
+        ...,
+        [-0.0107, -0.0062,  0.0040,  ...,  0.0086, -0.0002,  0.0050],
+        [-0.0008, -0.0038, -0.0021,  ...,  0.0059,  0.0083, -0.0064],
+        [-0.0020, -0.0047,  0.0015,  ..., -0.0081, -0.0013,  0.0097]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.9219,  3.4746, -1.3242,  ...,  1.9385,  4.3008, -4.1797]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:51:02 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The emerald is colored green
+The broccoli is colored green
+The sky is colored blue
+The sun is colored yellow
+The cauliflower is colored white
+The frog is colored green
+The swan is colored white
+The grass is colored
+2024-07-23 18:51:02 root INFO     [order_1_approx] starting weight calculation for The sun is colored yellow
+The broccoli is colored green
+The cauliflower is colored white
+The emerald is colored green
+The grass is colored green
+The frog is colored green
+The swan is colored white
+The sky is colored
+2024-07-23 18:51:02 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:54:36 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2324,  0.7324, -0.0665,  ..., -0.3901,  1.5430, -0.3359],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.8418,  5.0664,  0.4551,  ..., -0.2871,  3.6367, -2.0957],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.6525e-02, -1.9333e-02, -1.0773e-02,  ...,  1.2321e-03,
+          5.1689e-03,  1.0843e-03],
+        [ 1.0597e-02,  1.2115e-02,  5.6114e-03,  ..., -2.6493e-03,
+         -3.6125e-03, -8.3771e-03],
+        [-6.5613e-03, -4.8561e-03, -4.2343e-04,  ...,  6.6490e-03,
+          6.9885e-03,  7.7324e-03],
+        ...,
+        [-1.0422e-02, -1.1276e-02, -1.3138e-02,  ...,  1.1948e-02,
+         -7.9346e-03,  5.5923e-03],
+        [ 2.2583e-03,  6.9809e-04,  2.8572e-03,  ..., -4.4403e-03,
+          1.1948e-02,  3.5954e-04],
+        [-3.6583e-03, -3.0518e-05,  1.1765e-02,  ...,  5.7220e-05,
+          6.8092e-03,  1.7624e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.7891,  4.7227,  0.1655,  ..., -0.6133,  3.7988, -1.9990]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:54:37 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sun is colored yellow
+The broccoli is colored green
+The cauliflower is colored white
+The emerald is colored green
+The grass is colored green
+The frog is colored green
+The swan is colored white
+The sky is colored
+2024-07-23 18:54:37 root INFO     total operator prediction time: 1727.8392968177795 seconds
+2024-07-23 18:54:37 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on animal - sound
+2024-07-23 18:54:37 root INFO     building operator animal - sound
+2024-07-23 18:54:38 root INFO     [order_1_approx] starting weight calculation for The sound that a magpie makes is called a chatter
+The sound that a dog makes is called a bark
+The sound that a seal makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a cricket makes is called a chirp
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a
+2024-07-23 18:54:38 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 18:58:12 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.8179,  0.0912,  0.0163,  ...,  0.9790, -1.2256,  1.2344],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.2793,  3.6348,  2.9219,  ...,  0.5293, -3.0098, -8.1875],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.7334e-02, -9.9335e-03, -3.3989e-03,  ...,  2.0889e-02,
+         -4.5166e-03, -7.7362e-03],
+        [ 5.5122e-03,  1.7502e-02,  8.7738e-03,  ...,  7.6828e-03,
+         -3.0518e-05, -8.0109e-03],
+        [-1.3962e-03,  1.3687e-02,  8.0719e-03,  ..., -2.8000e-03,
+          8.7814e-03,  1.3428e-02],
+        ...,
+        [ 8.1940e-03, -5.2109e-03,  8.2169e-03,  ..., -2.1057e-03,
+         -7.6981e-03, -4.0855e-03],
+        [-8.5373e-03, -2.1606e-02, -1.6968e-02,  ..., -1.9852e-02,
+          4.0283e-03,  7.7744e-03],
+        [-1.0208e-02, -1.2684e-03, -1.9341e-03,  ..., -1.5991e-02,
+          3.5439e-03,  1.8219e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.3574,  2.9883,  2.6875,  ...,  1.0928, -2.4805, -8.0469]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 18:58:13 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a magpie makes is called a chatter
+The sound that a dog makes is called a bark
+The sound that a seal makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a cricket makes is called a chirp
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a
+2024-07-23 18:58:13 root INFO     [order_1_approx] starting weight calculation for The sound that a cricket makes is called a chirp
+The sound that a seal makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a ribbit
+The sound that a dog makes is called a bark
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a
+2024-07-23 18:58:13 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:01:48 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2703, -0.3027, -1.7227,  ..., -0.6904, -0.8623, -0.6729],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.9805,  1.5869, -0.1265,  ...,  3.8242, -0.4553, -3.7891],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0116, -0.0094, -0.0083,  ...,  0.0003,  0.0053,  0.0037],
+        [ 0.0080,  0.0059, -0.0007,  ..., -0.0018, -0.0061, -0.0117],
+        [ 0.0043,  0.0056,  0.0096,  ...,  0.0036,  0.0038,  0.0102],
+        ...,
+        [-0.0099,  0.0078,  0.0067,  ...,  0.0159,  0.0092, -0.0117],
+        [-0.0083, -0.0097, -0.0090,  ...,  0.0015,  0.0056,  0.0045],
+        [-0.0169, -0.0111, -0.0054,  ..., -0.0086,  0.0044, -0.0119]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.8438,  1.0439, -0.1884,  ...,  3.8105, -0.7510, -3.3125]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:01:49 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a cricket makes is called a chirp
+The sound that a seal makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a ribbit
+The sound that a dog makes is called a bark
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a
+2024-07-23 19:01:49 root INFO     [order_1_approx] starting weight calculation for The sound that a frog makes is called a ribbit
+The sound that a magpie makes is called a chatter
+The sound that a fly makes is called a buzz
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a dog makes is called a bark
+The sound that a seal makes is called a bark
+The sound that a cricket makes is called a
+2024-07-23 19:01:49 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:05:25 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.5566,  0.5859, -0.1949,  ...,  0.1478, -0.3296,  1.5840],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.5859,  0.1177,  3.9941,  ...,  2.5586, -1.6621, -6.4531],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-2.3136e-03, -1.5213e-02,  5.8594e-03,  ...,  1.0269e-02,
+         -1.1139e-03, -1.2650e-02],
+        [-1.6766e-03, -8.0299e-04, -1.5312e-02,  ..., -2.2888e-05,
+          2.6398e-03, -8.2245e-03],
+        [ 4.9477e-03, -6.0654e-03,  3.5896e-03,  ...,  2.7084e-03,
+          2.8362e-03,  1.1688e-02],
+        ...,
+        [ 4.4670e-03,  9.5978e-03,  3.0308e-03,  ...,  8.7128e-03,
+          4.6387e-03, -2.8439e-03],
+        [ 1.3908e-02,  1.4664e-02, -1.5991e-02,  ..., -1.5152e-02,
+         -2.1172e-03,  6.7635e-03],
+        [-1.6937e-02, -4.0054e-03, -2.9144e-03,  ...,  6.1111e-03,
+          1.0277e-02,  1.0395e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.7656,  0.2262,  3.8398,  ...,  2.0859, -0.5557, -5.7812]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:05:26 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a frog makes is called a ribbit
+The sound that a magpie makes is called a chatter
+The sound that a fly makes is called a buzz
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a dog makes is called a bark
+The sound that a seal makes is called a bark
+The sound that a cricket makes is called a
+2024-07-23 19:05:26 root INFO     [order_1_approx] starting weight calculation for The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a frog makes is called a ribbit
+The sound that a magpie makes is called a chatter
+The sound that a cricket makes is called a chirp
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a fly makes is called a
+2024-07-23 19:05:26 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:09:01 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5571,  0.9790,  1.0967,  ..., -0.4058, -1.0918,  1.2031],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 7.3359,  0.8711,  5.0703,  ...,  3.3652, -2.8066, -6.3008],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0118, -0.0122,  0.0069,  ...,  0.0160, -0.0112, -0.0101],
+        [ 0.0122,  0.0038, -0.0019,  ..., -0.0033,  0.0015, -0.0016],
+        [-0.0136, -0.0062,  0.0131,  ...,  0.0154, -0.0016, -0.0077],
+        ...,
+        [ 0.0117,  0.0037, -0.0026,  ...,  0.0178, -0.0081, -0.0002],
+        [ 0.0047, -0.0168, -0.0189,  ..., -0.0056,  0.0124,  0.0204],
+        [-0.0185,  0.0070, -0.0045,  ..., -0.0001,  0.0045,  0.0332]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 6.1562,  0.3796,  4.4922,  ...,  3.3926, -1.6865, -6.1797]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:09:02 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a frog makes is called a ribbit
+The sound that a magpie makes is called a chatter
+The sound that a cricket makes is called a chirp
+The sound that a mallard makes is called a quack
+The sound that a chicken makes is called a cluck
+The sound that a fly makes is called a
+2024-07-23 19:09:02 root INFO     [order_1_approx] starting weight calculation for The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a chatter
+The sound that a cricket makes is called a chirp
+The sound that a seal makes is called a bark
+The sound that a frog makes is called a ribbit
+The sound that a chicken makes is called a cluck
+The sound that a dog makes is called a
+2024-07-23 19:09:02 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:12:37 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.7061, -0.5908,  0.3792,  ...,  0.3701,  0.0146,  1.0850],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.1523, -0.4697, -2.5410,  ..., -1.8926,  3.5508, -3.2910],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.6891e-02, -8.0032e-03,  1.1040e-02,  ...,  2.6932e-03,
+         -4.3373e-03,  1.0162e-02],
+        [ 6.9885e-03,  1.5312e-02,  6.1073e-03,  ..., -7.9346e-04,
+          1.9608e-03, -1.0262e-02],
+        [-6.4812e-03,  1.0056e-02,  3.8147e-06,  ..., -9.6321e-05,
+         -4.2343e-03,  6.6071e-03],
+        ...,
+        [-6.4926e-03, -1.1948e-02,  1.6830e-02,  ...,  1.3168e-02,
+         -1.6205e-02,  1.1520e-03],
+        [-3.5248e-03, -1.6041e-03, -3.1910e-03,  ..., -1.0498e-02,
+         -7.9041e-03,  1.0666e-02],
+        [-1.2917e-02, -1.0895e-02,  2.7466e-03,  ...,  5.9166e-03,
+         -5.6000e-03,  3.3073e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.5508, -0.1294, -1.9482,  ..., -1.3418,  4.0977, -3.3770]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:12:38 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a chatter
+The sound that a cricket makes is called a chirp
+The sound that a seal makes is called a bark
+The sound that a frog makes is called a ribbit
+The sound that a chicken makes is called a cluck
+The sound that a dog makes is called a
+2024-07-23 19:12:38 root INFO     [order_1_approx] starting weight calculation for The sound that a chicken makes is called a cluck
+The sound that a cricket makes is called a chirp
+The sound that a mallard makes is called a quack
+The sound that a magpie makes is called a chatter
+The sound that a dog makes is called a bark
+The sound that a fly makes is called a buzz
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a
+2024-07-23 19:12:38 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:16:13 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2094,  0.0776,  0.0591,  ..., -0.0059, -0.9824,  1.3867],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.1836,  2.7305, -2.4141,  ...,  0.1199, -3.4004, -4.1914],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-2.5177e-04, -1.4374e-02,  7.9498e-03,  ...,  5.7487e-03,
+         -1.5259e-05,  1.7891e-03],
+        [-7.1068e-03,  8.0414e-03,  1.4786e-02,  ...,  4.6463e-03,
+          2.8667e-03, -1.8494e-02],
+        [-5.2986e-03,  1.0284e-02,  2.0294e-02,  ...,  1.3809e-02,
+          7.2479e-04,  1.1765e-02],
+        ...,
+        [-7.7591e-03, -7.0305e-03, -8.6060e-03,  ..., -5.4512e-03,
+         -3.4637e-03,  1.9272e-02],
+        [ 9.4147e-03, -1.7639e-02, -1.1398e-02,  ..., -1.5656e-02,
+          1.6785e-02,  2.6398e-03],
+        [-2.1164e-02, -1.0696e-02, -7.1564e-03,  ...,  3.3932e-03,
+          1.1017e-02,  4.3564e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.8628,  1.8877, -2.4531,  ...,  0.8730, -2.9102, -4.2422]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:16:14 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a chicken makes is called a cluck
+The sound that a cricket makes is called a chirp
+The sound that a mallard makes is called a quack
+The sound that a magpie makes is called a chatter
+The sound that a dog makes is called a bark
+The sound that a fly makes is called a buzz
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a
+2024-07-23 19:16:14 root INFO     [order_1_approx] starting weight calculation for The sound that a cricket makes is called a chirp
+The sound that a fly makes is called a buzz
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a magpie makes is called a chatter
+The sound that a mallard makes is called a
+2024-07-23 19:16:14 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:19:49 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5005, -0.0796, -0.5610,  ...,  1.1250, -1.2637, -0.1641],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.7207,  3.0781,  3.0723,  ...,  5.7773, -3.3379, -7.3828],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0078, -0.0073,  0.0074,  ...,  0.0059,  0.0016,  0.0045],
+        [ 0.0051,  0.0112,  0.0125,  ...,  0.0119, -0.0029, -0.0113],
+        [-0.0030, -0.0127,  0.0068,  ..., -0.0065,  0.0067, -0.0074],
+        ...,
+        [-0.0011,  0.0022, -0.0019,  ...,  0.0063, -0.0108,  0.0066],
+        [-0.0049,  0.0043, -0.0069,  ...,  0.0018,  0.0107,  0.0140],
+        [-0.0170,  0.0065, -0.0041,  ..., -0.0006,  0.0031,  0.0111]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.5820,  2.9180,  3.4102,  ...,  6.1914, -3.7695, -7.5117]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:19:50 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a cricket makes is called a chirp
+The sound that a fly makes is called a buzz
+The sound that a chicken makes is called a cluck
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a magpie makes is called a chatter
+The sound that a mallard makes is called a
+2024-07-23 19:19:50 root INFO     [order_1_approx] starting weight calculation for The sound that a cricket makes is called a chirp
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a chatter
+The sound that a chicken makes is called a
+2024-07-23 19:19:50 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:23:26 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.4900,  0.4041,  0.7104,  ...,  1.0215, -0.8667,  1.2080],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.7324,  1.4844,  1.6670,  ...,  0.5781, -2.2793, -4.6797],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0012, -0.0104,  0.0007,  ...,  0.0101,  0.0031, -0.0006],
+        [-0.0076,  0.0178,  0.0069,  ...,  0.0014, -0.0001, -0.0075],
+        [-0.0008,  0.0045, -0.0049,  ...,  0.0038, -0.0052,  0.0177],
+        ...,
+        [-0.0172,  0.0145,  0.0028,  ...,  0.0071, -0.0170,  0.0054],
+        [-0.0119,  0.0117, -0.0058,  ..., -0.0011,  0.0211,  0.0018],
+        [-0.0176, -0.0074, -0.0063,  ..., -0.0011,  0.0020, -0.0116]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.2910,  1.2812,  1.0762,  ...,  1.4258, -1.6064, -4.5352]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:23:27 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The sound that a cricket makes is called a chirp
+The sound that a frog makes is called a ribbit
+The sound that a seal makes is called a bark
+The sound that a dog makes is called a bark
+The sound that a mallard makes is called a quack
+The sound that a fly makes is called a buzz
+The sound that a magpie makes is called a chatter
+The sound that a chicken makes is called a
+2024-07-23 19:23:27 root INFO     total operator prediction time: 1729.4674956798553 seconds
+2024-07-23 19:23:27 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on animal - youth
+2024-07-23 19:23:27 root INFO     building operator animal - youth
+2024-07-23 19:23:27 root INFO     [order_1_approx] starting weight calculation for The offspring of a goldfish is referred to as a fingerling
+The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a gorilla is referred to as a
+2024-07-23 19:23:27 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:27:03 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.9272, -2.2422, -1.0742,  ...,  0.9033, -0.8555,  1.3008],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.4023, -2.7383, -2.5137,  ...,  1.0264, -0.1899,  1.5430],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0297, -0.0414,  0.0124,  ...,  0.0080, -0.0135,  0.0005],
+        [ 0.0102, -0.0125,  0.0142,  ..., -0.0007,  0.0053, -0.0162],
+        [-0.0067, -0.0070, -0.0107,  ...,  0.0012,  0.0114,  0.0249],
+        ...,
+        [-0.0057, -0.0047, -0.0065,  ..., -0.0054, -0.0118,  0.0048],
+        [ 0.0174, -0.0073, -0.0116,  ...,  0.0064, -0.0128,  0.0117],
+        [ 0.0015, -0.0012,  0.0146,  ..., -0.0069, -0.0073, -0.0167]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.2656, -2.4844, -3.3809,  ...,  0.5210, -0.3066,  1.6982]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:27:04 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a goldfish is referred to as a fingerling
+The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a gorilla is referred to as a
+2024-07-23 19:27:04 root INFO     [order_1_approx] starting weight calculation for The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a gorilla is referred to as a infant
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a cicada is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a whale is referred to as a
+2024-07-23 19:27:04 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:30:40 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.5942,  0.7900, -0.4331,  ...,  0.1511, -0.0470,  0.4209],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.7510,  0.4014, -0.9028,  ...,  1.5742, -0.3926,  0.8340],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0235, -0.0178,  0.0050,  ...,  0.0100, -0.0032,  0.0158],
+        [ 0.0011,  0.0148,  0.0212,  ..., -0.0136,  0.0041, -0.0273],
+        [-0.0101,  0.0195, -0.0107,  ...,  0.0130,  0.0125,  0.0195],
+        ...,
+        [ 0.0034, -0.0070, -0.0036,  ..., -0.0027, -0.0209, -0.0008],
+        [ 0.0019, -0.0048, -0.0105,  ...,  0.0183, -0.0253,  0.0104],
+        [-0.0040, -0.0293,  0.0056,  ...,  0.0066, -0.0007, -0.0088]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.8721,  0.5889, -1.2627,  ...,  1.5850, -1.0312,  0.6724]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:30:40 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a gorilla is referred to as a infant
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a cicada is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a whale is referred to as a
+2024-07-23 19:30:41 root INFO     [order_1_approx] starting weight calculation for The offspring of a cicada is referred to as a nymph
+The offspring of a whale is referred to as a calf
+The offspring of a camel is referred to as a calf
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a cockroach is referred to as a nymph
+The offspring of a gorilla is referred to as a infant
+The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a
+2024-07-23 19:30:41 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:34:17 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 1.0957,  0.3794, -0.8535,  ...,  0.1819, -0.5078,  1.3770],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-2.2344,  0.6260, -4.7891,  ...,  1.0264,  1.8291,  3.8008],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-7.7362e-03, -8.4686e-03,  1.0857e-02,  ...,  1.2543e-02,
+         -1.1154e-02,  1.2875e-03],
+        [-8.2779e-03, -6.3934e-03,  9.1324e-03,  ...,  1.1627e-02,
+          3.9825e-03, -2.8000e-03],
+        [-8.5831e-05,  5.4436e-03, -6.6299e-03,  ..., -1.3199e-03,
+          2.0020e-02,  1.3771e-02],
+        ...,
+        [ 7.1373e-03, -4.8294e-03,  6.6185e-03,  ..., -1.8829e-02,
+         -1.5175e-02, -1.0078e-02],
+        [ 2.2064e-02, -4.9973e-03, -1.6418e-02,  ...,  2.4700e-04,
+         -8.7433e-03,  1.1986e-02],
+        [-1.8921e-02, -4.5891e-03, -2.9831e-03,  ..., -7.4768e-03,
+          1.5053e-02,  1.5137e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-2.1758,  0.5151, -3.6992,  ...,  0.9941,  2.9316,  2.8027]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:34:18 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a cicada is referred to as a nymph
+The offspring of a whale is referred to as a calf
+The offspring of a camel is referred to as a calf
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a cockroach is referred to as a nymph
+The offspring of a gorilla is referred to as a infant
+The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a
+2024-07-23 19:34:18 root INFO     [order_1_approx] starting weight calculation for The offspring of a goldfish is referred to as a fingerling
+The offspring of a whale is referred to as a calf
+The offspring of a gorilla is referred to as a infant
+The offspring of a cockroach is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a bee is referred to as a larva
+The offspring of a camel is referred to as a
+2024-07-23 19:34:18 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:37:54 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 2.4883, -1.4854, -1.2266,  ...,  0.4473, -0.6631,  1.0547],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.5195, -2.3086, -6.0977,  ..., -1.3672,  2.7969,  3.6934],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0176, -0.0169,  0.0158,  ...,  0.0065,  0.0059, -0.0150],
+        [-0.0047,  0.0070, -0.0064,  ...,  0.0059,  0.0173, -0.0096],
+        [-0.0250,  0.0064,  0.0015,  ..., -0.0119,  0.0287,  0.0271],
+        ...,
+        [-0.0014, -0.0224, -0.0020,  ...,  0.0134,  0.0055, -0.0281],
+        [ 0.0126, -0.0006, -0.0051,  ..., -0.0007, -0.0082,  0.0194],
+        [ 0.0013, -0.0138,  0.0072,  ..., -0.0019,  0.0019, -0.0118]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.2466, -2.1758, -5.6523,  ..., -2.0195,  3.1641,  3.1035]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:37:55 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a goldfish is referred to as a fingerling
+The offspring of a whale is referred to as a calf
+The offspring of a gorilla is referred to as a infant
+The offspring of a cockroach is referred to as a nymph
+The offspring of a buffalo is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a bee is referred to as a larva
+The offspring of a camel is referred to as a
+2024-07-23 19:37:56 root INFO     [order_1_approx] starting weight calculation for The offspring of a gorilla is referred to as a infant
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a camel is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a whale is referred to as a calf
+The offspring of a cockroach is referred to as a nymph
+The offspring of a cicada is referred to as a nymph
+The offspring of a buffalo is referred to as a
+2024-07-23 19:37:56 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:41:31 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0663, -0.7944, -0.3848,  ...,  1.7227, -0.4927,  0.6021],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.0117, -1.0947, -5.5703,  ..., -1.5762,  0.3169,  0.7324],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-1.0117e-02, -5.9738e-03,  2.6398e-03,  ...,  5.0545e-03,
+          1.0910e-02, -2.2491e-02],
+        [-1.1581e-02,  9.2392e-03,  7.6008e-04,  ...,  1.4023e-02,
+          9.1858e-03, -1.7395e-02],
+        [ 4.6158e-03, -2.6855e-03,  7.3471e-03,  ...,  1.3123e-02,
+          2.1255e-02,  5.3406e-05],
+        ...,
+        [-2.4109e-03, -8.2703e-03, -1.3519e-02,  ..., -3.0766e-03,
+          1.7685e-02,  1.8501e-03],
+        [ 3.3035e-03,  6.7444e-03, -8.7814e-03,  ..., -6.6833e-03,
+         -1.1673e-03, -1.1833e-02],
+        [-1.2024e-02, -1.8921e-02, -4.4518e-03,  ...,  9.3536e-03,
+          1.5015e-02,  5.2948e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.7812, -1.0898, -5.5352,  ..., -1.4199,  1.5957,  1.1289]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:41:32 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a gorilla is referred to as a infant
+The offspring of a goldfish is referred to as a fingerling
+The offspring of a camel is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a whale is referred to as a calf
+The offspring of a cockroach is referred to as a nymph
+The offspring of a cicada is referred to as a nymph
+The offspring of a buffalo is referred to as a
+2024-07-23 19:41:33 root INFO     [order_1_approx] starting weight calculation for The offspring of a goldfish is referred to as a fingerling
+The offspring of a gorilla is referred to as a infant
+The offspring of a bee is referred to as a larva
+The offspring of a buffalo is referred to as a calf
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a cockroach is referred to as a
+2024-07-23 19:41:33 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:45:08 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0803, -0.6064,  0.1589,  ...,  0.2271, -0.9492,  0.0941],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.2891, -0.9053, -4.0625,  ...,  1.3467, -1.0742,  1.4912],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-8.4381e-03, -1.1787e-02,  1.0635e-02,  ...,  1.8539e-03,
+         -1.0971e-02, -4.0398e-03],
+        [-1.6737e-03, -6.4735e-03,  8.0566e-03,  ...,  2.1622e-02,
+          1.9875e-03,  1.7166e-03],
+        [-1.1284e-02, -8.9645e-05, -2.2202e-02,  ..., -7.6294e-03,
+          2.4414e-03,  1.2123e-02],
+        ...,
+        [ 2.2240e-03,  5.7144e-03, -2.7370e-03,  ..., -4.2648e-03,
+         -5.3139e-03,  1.4114e-03],
+        [-1.3229e-02, -1.7380e-02, -6.9275e-03,  ..., -9.0408e-03,
+         -9.4757e-03,  2.7298e-02],
+        [-6.8474e-03,  2.1362e-03,  5.2414e-03,  ..., -2.6970e-03,
+          1.2848e-02, -1.6708e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.9512, -1.3975, -4.6797,  ...,  0.8999, -0.8350,  1.4365]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:45:09 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a goldfish is referred to as a fingerling
+The offspring of a gorilla is referred to as a infant
+The offspring of a bee is referred to as a larva
+The offspring of a buffalo is referred to as a calf
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a camel is referred to as a calf
+The offspring of a cockroach is referred to as a
+2024-07-23 19:45:09 root INFO     [order_1_approx] starting weight calculation for The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a gorilla is referred to as a infant
+The offspring of a camel is referred to as a calf
+The offspring of a goldfish is referred to as a
+2024-07-23 19:45:09 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:48:45 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.4546,  0.1451,  0.3472,  ..., -0.4763, -0.1677,  0.4153],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.1348,  0.6626, -0.4712,  ..., -2.9355, -0.3760, -0.3616],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 1.5259e-03, -8.1482e-03,  5.7068e-03,  ...,  1.1101e-02,
+          3.2425e-03,  4.5929e-03],
+        [ 2.9831e-03, -1.3412e-02, -4.4250e-04,  ...,  5.7678e-03,
+          4.1962e-05, -1.9321e-03],
+        [ 2.6150e-03,  8.5678e-03, -3.7231e-03,  ..., -7.0877e-03,
+          6.6109e-03,  1.0025e-02],
+        ...,
+        [ 1.0691e-03,  1.0185e-02, -7.2746e-03,  ..., -7.4883e-03,
+         -9.4757e-03, -1.8311e-03],
+        [ 3.1223e-03,  1.1932e-02, -1.2955e-02,  ...,  1.9588e-03,
+          5.6381e-03,  8.9417e-03],
+        [-5.4932e-03, -1.8890e-02,  7.5607e-03,  ..., -4.4136e-03,
+          1.3412e-02, -8.0109e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.7441,  0.6084, -0.2566,  ..., -2.3066, -0.4585, -0.2507]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:48:46 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a cockroach is referred to as a nymph
+The offspring of a whale is referred to as a calf
+The offspring of a cicada is referred to as a nymph
+The offspring of a gorilla is referred to as a infant
+The offspring of a camel is referred to as a calf
+The offspring of a goldfish is referred to as a
+2024-07-23 19:48:46 root INFO     [order_1_approx] starting weight calculation for The offspring of a goldfish is referred to as a fingerling
+The offspring of a camel is referred to as a calf
+The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a gorilla is referred to as a infant
+The offspring of a whale is referred to as a calf
+The offspring of a cockroach is referred to as a nymph
+The offspring of a cicada is referred to as a
+2024-07-23 19:48:46 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:52:22 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 1.8955, -0.4521, -0.7354,  ...,  0.3235, -0.8164,  0.5615],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 3.4121, -1.5547, -4.0703,  ...,  1.0293, -2.5430,  1.7578],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0049, -0.0068,  0.0007,  ...,  0.0038,  0.0066, -0.0035],
+        [ 0.0027, -0.0014,  0.0052,  ...,  0.0019,  0.0103, -0.0033],
+        [-0.0010,  0.0046, -0.0060,  ..., -0.0105,  0.0190,  0.0109],
+        ...,
+        [ 0.0059, -0.0123, -0.0031,  ...,  0.0016, -0.0061, -0.0106],
+        [ 0.0083, -0.0165, -0.0190,  ..., -0.0035, -0.0106,  0.0205],
+        [-0.0093, -0.0065,  0.0112,  ..., -0.0083,  0.0138,  0.0083]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.1465, -1.9609, -4.2109,  ...,  0.9966, -1.8672,  1.6641]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:52:23 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The offspring of a goldfish is referred to as a fingerling
+The offspring of a camel is referred to as a calf
+The offspring of a buffalo is referred to as a calf
+The offspring of a bee is referred to as a larva
+The offspring of a gorilla is referred to as a infant
+The offspring of a whale is referred to as a calf
+The offspring of a cockroach is referred to as a nymph
+The offspring of a cicada is referred to as a
+2024-07-23 19:52:23 root INFO     total operator prediction time: 1736.4727036952972 seconds
+2024-07-23 19:52:23 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on UK_city - county
+2024-07-23 19:52:23 root INFO     building operator UK_city - county
+2024-07-23 19:52:24 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of hull is in the county of
+2024-07-23 19:52:24 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:55:59 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.9507, -0.5161,  0.0082,  ...,  1.3975, -1.8115,  0.6196],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.9766, -2.2930, -5.7031,  ..., -2.6211,  4.1133,  2.4648],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0331, -0.0040, -0.0127,  ..., -0.0038,  0.0104, -0.0035],
+        [ 0.0033, -0.0138,  0.0052,  ...,  0.0107, -0.0157,  0.0062],
+        [ 0.0097, -0.0097, -0.0211,  ...,  0.0143, -0.0032,  0.0268],
+        ...,
+        [-0.0263, -0.0232,  0.0020,  ...,  0.0055,  0.0048,  0.0110],
+        [-0.0355,  0.0116,  0.0189,  ..., -0.0151, -0.0355, -0.0293],
+        [-0.0016, -0.0071,  0.0161,  ...,  0.0075, -0.0141, -0.0201]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.9141, -3.3750, -6.3750,  ..., -2.7949,  2.9961,  2.1973]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:56:00 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of hull is in the county of
+2024-07-23 19:56:00 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wakefield is in the county of
+2024-07-23 19:56:00 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 19:59:36 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2000, -0.3870,  0.0104,  ...,  0.8936, -0.7109,  0.9634],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.6675, -3.8281, -3.6172,  ..., -1.9287,  1.9648,  0.1541],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0070,  0.0035,  0.0079,  ..., -0.0071,  0.0012, -0.0166],
+        [-0.0002,  0.0022, -0.0011,  ...,  0.0062,  0.0037, -0.0042],
+        [ 0.0071,  0.0032, -0.0118,  ..., -0.0208, -0.0033, -0.0010],
+        ...,
+        [-0.0006, -0.0167,  0.0027,  ..., -0.0034, -0.0094,  0.0006],
+        [-0.0091,  0.0020,  0.0024,  ..., -0.0163,  0.0002,  0.0058],
+        [ 0.0148, -0.0061, -0.0058,  ..., -0.0065,  0.0051,  0.0075]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.4219, -3.4824, -4.1562,  ..., -1.3203,  2.2949,  0.4338]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 19:59:37 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wakefield is in the county of
+2024-07-23 19:59:37 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of norwich is in the county of
+2024-07-23 19:59:37 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:03:10 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-1.3105, -0.7061,  0.2188,  ..., -1.0020, -0.1592,  0.1040],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.7075, -2.2285, -5.2891,  ..., -0.8496,  2.8496,  3.4160],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-1.0612e-02, -3.7975e-03,  2.4281e-03,  ...,  1.9627e-03,
+          1.1642e-02,  3.8795e-03],
+        [ 2.7428e-03, -8.1558e-03, -1.3031e-02,  ...,  1.6953e-02,
+          1.3170e-03, -1.1520e-02],
+        [ 1.4870e-02, -1.2917e-02, -3.0991e-02,  ..., -1.8448e-02,
+         -3.4332e-05,  1.3138e-02],
+        ...,
+        [-8.6975e-04, -1.5701e-02,  1.9135e-02,  ...,  5.0850e-03,
+          1.6861e-03,  1.8631e-02],
+        [ 2.7313e-03,  1.6571e-02, -1.0002e-02,  ..., -1.4206e-02,
+         -5.2834e-04,  1.3710e-02],
+        [ 6.8779e-03, -8.1635e-03,  4.4479e-03,  ...,  2.7962e-03,
+         -7.5912e-03, -2.9831e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.2991, -1.8291, -4.4648,  ..., -2.0977,  3.5332,  2.9648]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:03:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of norwich is in the county of
+2024-07-23 20:03:11 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of exeter is in the county of
+2024-07-23 20:03:11 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:06:44 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.8081, -0.4600, -0.8813,  ...,  1.0977,  0.0186,  0.4961],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.4727,  0.7812, -5.9844,  ..., -2.9434,  4.8516, -0.4172],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-3.5675e-02, -5.8174e-03, -7.7095e-03,  ...,  2.7237e-03,
+          1.5259e-05, -6.4621e-03],
+        [ 3.3607e-03, -1.1696e-02, -1.0139e-02,  ..., -8.1329e-03,
+          2.3994e-03, -6.3744e-03],
+        [-1.6708e-02, -5.7602e-03, -9.0637e-03,  ..., -3.1815e-03,
+          9.7733e-03, -3.8910e-04],
+        ...,
+        [-1.4725e-02, -1.3039e-02, -2.1149e-02,  ..., -2.9755e-02,
+         -2.7924e-02,  3.3493e-03],
+        [-2.7420e-02,  1.5976e-02,  3.0518e-03,  ..., -1.2299e-02,
+          1.5259e-03,  8.4915e-03],
+        [ 5.5771e-03, -2.2278e-03, -3.0136e-04,  ..., -1.1436e-02,
+         -1.9226e-02, -2.3560e-02]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 2.3301,  1.1133, -6.2969,  ..., -3.6855,  5.1914, -0.9189]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:06:45 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of exeter is in the county of
+2024-07-23 20:06:45 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of southampton is in the county of
+2024-07-23 20:06:46 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:10:21 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.3916, -0.7798, -0.0630,  ...,  0.0244, -1.1797,  0.7637],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.9443, -1.6211, -5.6172,  ..., -2.2227,  5.6875,  5.0156],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0083, -0.0070, -0.0193,  ..., -0.0078,  0.0030, -0.0175],
+        [-0.0113,  0.0085, -0.0010,  ...,  0.0050,  0.0047, -0.0011],
+        [ 0.0168,  0.0136, -0.0239,  ..., -0.0004, -0.0061, -0.0168],
+        ...,
+        [ 0.0065, -0.0048, -0.0014,  ..., -0.0054, -0.0150,  0.0096],
+        [-0.0133,  0.0038,  0.0112,  ..., -0.0003, -0.0020,  0.0210],
+        [-0.0127, -0.0047,  0.0039,  ...,  0.0056, -0.0002, -0.0115]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.3604, -0.5166, -6.3008,  ..., -2.7422,  5.6719,  5.2148]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:10:22 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of southampton is in the county of
+2024-07-23 20:10:22 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of lancaster is in the county of
+2024-07-23 20:10:22 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:13:59 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.7842, -0.7881,  0.5063,  ...,  0.3660, -0.0466,  1.0166],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.6299, -3.7188, -3.5195,  ...,  1.1748,  4.6719,  0.0226],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0294,  0.0038, -0.0004,  ...,  0.0061,  0.0093, -0.0031],
+        [ 0.0075, -0.0144, -0.0066,  ...,  0.0089, -0.0047, -0.0063],
+        [ 0.0063,  0.0103, -0.0280,  ..., -0.0071, -0.0012,  0.0097],
+        ...,
+        [-0.0216,  0.0064,  0.0258,  ...,  0.0239, -0.0003,  0.0059],
+        [-0.0139, -0.0019,  0.0056,  ..., -0.0104, -0.0046, -0.0133],
+        [-0.0166, -0.0072, -0.0002,  ...,  0.0139,  0.0108, -0.0123]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.4839, -3.3203, -2.9688,  ...,  0.3511,  4.0117, -0.1503]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:14:00 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of lancaster is in the county of
+2024-07-23 20:14:00 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of swansea is in the county of
+2024-07-23 20:14:00 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:17:36 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-1.7344, -0.2542, -1.4688,  ..., -0.5586, -1.3555,  0.2249],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.4863,  1.4648, -3.2422,  ...,  1.2520,  0.5400,  1.5898],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-4.1565e-02, -1.0262e-02,  2.9221e-03,  ..., -4.1294e-04,
+          2.7069e-02, -2.5482e-03],
+        [ 1.0277e-02, -2.0294e-03, -1.5961e-02,  ...,  2.4582e-02,
+         -3.1677e-02,  9.7961e-03],
+        [-1.6434e-02,  2.2278e-02, -2.6596e-02,  ...,  3.7460e-03,
+         -1.9669e-02,  3.4428e-03],
+        ...,
+        [-4.3518e-02,  2.4261e-03, -1.7441e-02,  ...,  1.6006e-02,
+         -1.2222e-02,  3.5828e-02],
+        [ 1.2726e-02,  1.3237e-02, -7.5607e-03,  ..., -3.1021e-02,
+         -1.8707e-02,  1.3809e-03],
+        [-2.4063e-02, -3.0518e-05,  3.3875e-03,  ...,  3.1921e-02,
+         -1.1230e-02,  2.3117e-03]], device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.5293,  1.3418, -3.1953,  ...,  1.3672,  0.3801,  1.0459]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:17:37 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of wells is in the county of somerset
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of swansea is in the county of
+2024-07-23 20:17:37 root INFO     [order_1_approx] starting weight calculation for In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of
+2024-07-23 20:17:37 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-23 20:21:10 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0944,  0.5518, -0.6353,  ...,  0.9072, -1.8975, -0.3008],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.6299, -1.8535, -5.6289,  ..., -3.4902,  1.9824, -1.7324],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0268, -0.0041,  0.0057,  ...,  0.0029,  0.0092, -0.0038],
+        [ 0.0043, -0.0045, -0.0032,  ..., -0.0086,  0.0012, -0.0049],
+        [ 0.0090,  0.0086, -0.0204,  ...,  0.0115, -0.0017,  0.0203],
+        ...,
+        [ 0.0038,  0.0072, -0.0021,  ...,  0.0014, -0.0006,  0.0077],
+        [-0.0091,  0.0006,  0.0090,  ..., -0.0013, -0.0149, -0.0193],
+        [-0.0089, -0.0075, -0.0044,  ...,  0.0127,  0.0014, -0.0060]],
+       device='cuda:1', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.1973, -1.6279, -6.3281,  ..., -4.2422,  1.6855, -1.4521]],
+       device='cuda:1', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-23 20:21:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for In the United Kingdom, the city of norwich is in the county of norfolk
+In the United Kingdom, the city of southampton is in the county of hampshire
+In the United Kingdom, the city of lancaster is in the county of lancashire
+In the United Kingdom, the city of wakefield is in the county of yorkshire
+In the United Kingdom, the city of swansea is in the county of glamorgan
+In the United Kingdom, the city of hull is in the county of yorkshire
+In the United Kingdom, the city of exeter is in the county of devon
+In the United Kingdom, the city of wells is in the county of
+2024-07-23 20:21:11 root INFO     total operator prediction time: 1727.842668056488 seconds

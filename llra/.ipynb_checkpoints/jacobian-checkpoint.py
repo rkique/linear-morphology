@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
-logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+#logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 
 #Given modeltokenizer, prompt, subject, and layer
 #Returns a dictionary with attn_mlp weights and biases, and saves them to file
@@ -33,6 +33,8 @@ def get_jacobians(mt,
     
     #(1,10,4096)
     h_index, hs = build.get_hidden_states(mt, prompt, subject, i)
+
+    #the next hidden state is used only to estimate the biases.
     _, hs1 = build.get_hidden_states(mt, prompt, subject, i+1)
     
     o_hs = hs[:, -1, :]
@@ -44,6 +46,7 @@ def get_jacobians(mt,
     
     hs = build.layer_norm(hs, (1))
     logging.info(f'{hs.shape=}')
+    
     #computes attention and mlp on the hidden state
     def attn_mlp(hs):
         res = hs

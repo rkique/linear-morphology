@@ -47,7 +47,6 @@ def get_jacobians(mt,
     hs = build.layer_norm(hs, (1))
     logging.info(f'{hs.shape=}')
     
-    #this could be useful.
     #computes attention and mlp on the hidden state
     def attn_mlp(hs):
         res = hs
