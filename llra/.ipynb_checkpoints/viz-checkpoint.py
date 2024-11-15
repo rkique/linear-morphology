@@ -92,9 +92,10 @@ def viz(x_min, x_max, y_min,y_max, title, objs_to_viz,
 
     x0 = proj_subj_hss[:,0]
     y0 = proj_subj_hss[:,1]
-    for text, x, y in zip(objs_to_viz, x0, y0):
-        if 'arrow' in kwargs.keys():
-            plt.arrow(x,y, -x, -y, color='lightcoral', alpha=0.5)
+    for text, x, y, k in zip(objs_to_viz, x0, y0,range(len(x0))):
+        if 'arrow' in kwargs.keys() and k < 5:
+            alpha = k / 5 + 0.1
+            plt.arrow(0,0, x, y, color='lightcoral', alpha=alpha)
         annotations.append(plt.annotate(text, 
                      (x, y), 
                      fontsize=6,
@@ -126,9 +127,10 @@ def viz(x_min, x_max, y_min,y_max, title, objs_to_viz,
         
         x2 = proj_scaled_no_bias_hss[:,0]
         y2 = proj_scaled_no_bias_hss[:,1]
-        for text, x, y in zip(objs_to_viz, x2, y2):
-            if 'arrow' in kwargs.keys():
-                plt.arrow(0,0, x, y, color='lightcoral', alpha=0.5)
+        for text, x, y, k in zip(objs_to_viz, x2, y2, range(len(x0))):
+            if 'arrow' in kwargs.keys() and k < 5:
+                alpha = k / 5 + 0.1
+                plt.arrow(0,0, x, y, color='lightcoral', alpha=alpha)
             annotations.append(plt.annotate(text, 
                          (x, y), 
                          fontsize=6,

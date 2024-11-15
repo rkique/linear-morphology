@@ -1,0 +1,3 @@
+2024-08-01 14:49:20 __main__ INFO     name - nationality,7,10,19,8,18,3,19,0,0
+2024-08-01 14:49:20 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 14:49:20 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping

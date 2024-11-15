@@ -277,7 +277,7 @@ def get_object(mt, z, k=5):
     probs = topk.values.view(5).tolist()
     token_ids = topk.indices.view(5).tolist()
     words = [mt.tokenizer.decode(token_id) for token_id in token_ids]
-    return (token_ids, probs)
+    return (words, probs)
 
 #returns the hidden state of subject for a prompt.
 def get_hidden_state(mt, prompt, subject, h_layer):

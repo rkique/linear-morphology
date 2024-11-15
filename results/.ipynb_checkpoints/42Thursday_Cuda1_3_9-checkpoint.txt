@@ -1,0 +1,6 @@
+2024-08-01 14:46:02 llra.build INFO     4_27_approx/name - nationality/einstein/s_o_weight_4_27.pt does not exist, skipping
+2024-08-01 14:46:06 llra.build INFO     9_27_approx/name - nationality/machiavelli/s_o_weight_9_27.pt does not exist, skipping
+2024-08-01 14:47:45 __main__ INFO     name - nationality,7,11,19,6,16,2,20,0,0
+2024-08-01 14:47:45 llra.build INFO     3_27_approx/animal - youth/insect/s_o_weight_3_27.pt does not exist, skipping
+2024-08-01 14:47:45 llra.build INFO     3_27_approx/animal - youth/insect/s_o_bias_3_27.pt does not exist, skipping
+2024-08-01 14:48:52 __main__ INFO     animal - youth,7,18,27,14,27,7,27,0,0

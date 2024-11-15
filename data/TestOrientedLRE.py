@@ -1,3 +1,6 @@
+#This script tests a strategy for choosing specific Jacobians against randomly selected LRE Jacobians.
+#In the future, this could be helpful when comparing two different mean weight and bias appro
+
 import os
 import sys
 import json
@@ -44,9 +47,6 @@ model.to(device)
 build.determine_device(mt)
 build.determine_params(mt)
 
-
-#OBTAIN LRE WEIGHTS: Method 1
-#Load weights saved with new naming convention
 ignored_relations = ['LORE hypernyms - animals', '.ipynb_checkpoints']
 relations = [x for x in os.listdir('7_27_approx') if x not in ignored_relations]
 

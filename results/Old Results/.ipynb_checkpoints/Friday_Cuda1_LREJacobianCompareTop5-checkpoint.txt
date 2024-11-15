@@ -1,0 +1,592 @@
+2024-07-12 15:57:11 __main__ INFO     using beta=1, iter=0
+2024-07-12 15:57:16 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,24
+2024-07-12 15:57:22 __main__ INFO     animal - youth,beta,1,LRE,18,Jacobian,18,lm,33
+2024-07-12 15:57:27 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,11,Jacobian,33,lm,50
+2024-07-12 15:57:34 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,3,lm,48
+2024-07-12 15:57:40 __main__ INFO     verb+able_reg,beta,1,LRE,5,Jacobian,17,lm,48
+2024-07-12 15:57:45 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,12
+2024-07-12 15:57:50 __main__ INFO     antonyms - binary,beta,1,LRE,5,Jacobian,26,lm,42
+2024-07-12 15:57:56 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,19,Jacobian,18,lm,50
+2024-07-12 15:58:01 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,4,lm,38
+2024-07-12 15:58:08 __main__ INFO     verb_inf - Ved,beta,1,LRE,13,Jacobian,43,lm,49
+2024-07-12 15:58:13 __main__ INFO     country - language,beta,1,LRE,12,Jacobian,7,lm,36
+2024-07-12 15:58:19 __main__ INFO     meronyms - part,beta,1,LRE,6,Jacobian,13,lm,31
+2024-07-12 15:58:26 __main__ INFO     verb_Ving - Ved,beta,1,LRE,14,Jacobian,45,lm,49
+2024-07-12 15:58:31 __main__ INFO     animal - shelter,beta,1,LRE,21,Jacobian,12,lm,30
+2024-07-12 15:58:37 __main__ INFO     hypernyms - misc,beta,1,LRE,10,Jacobian,22,lm,36
+2024-07-12 15:58:42 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,15,lm,39
+2024-07-12 15:58:48 __main__ INFO     noun - plural_irreg,beta,1,LRE,6,Jacobian,44,lm,50
+2024-07-12 15:58:54 __main__ INFO     un+adj_reg,beta,1,LRE,4,Jacobian,31,lm,50
+2024-07-12 15:59:01 __main__ INFO     verb+ment_irreg,beta,1,LRE,7,Jacobian,39,lm,49
+2024-07-12 15:59:07 __main__ INFO     adj+ness_reg,beta,1,LRE,0,Jacobian,10,lm,42
+2024-07-12 15:59:13 __main__ INFO     over+adj_reg,beta,1,LRE,0,Jacobian,1,lm,50
+2024-07-12 15:59:20 __main__ INFO     verb+er_irreg,beta,1,LRE,2,Jacobian,18,lm,47
+2024-07-12 15:59:26 __main__ INFO     adj+ly_reg,beta,1,LRE,7,Jacobian,7,lm,48
+2024-07-12 15:59:32 __main__ INFO     name - occupation,beta,1,LRE,27,Jacobian,28,lm,39
+2024-07-12 15:59:36 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,7,lm,23
+2024-07-12 15:59:41 __main__ INFO     animal - sound,beta,1,LRE,8,Jacobian,11,lm,33
+2024-07-12 15:59:47 __main__ INFO     noun - plural_reg,beta,1,LRE,1,Jacobian,50,lm,50
+2024-07-12 15:59:54 __main__ INFO     Ving - verb_inf,beta,1,LRE,5,Jacobian,11,lm,49
+2024-07-12 16:00:00 __main__ INFO     male - female,beta,1,LRE,2,Jacobian,5,lm,32
+2024-07-12 16:00:06 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,4,Jacobian,47,lm,49
+2024-07-12 16:00:12 __main__ INFO     meronyms - member,beta,1,LRE,11,Jacobian,16,lm,29
+2024-07-12 16:00:19 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,5,lm,24
+2024-07-12 16:00:25 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,2,lm,44
+2024-07-12 16:00:34 __main__ INFO     verb+tion_irreg,beta,1,LRE,3,Jacobian,17,lm,48
+2024-07-12 16:00:40 __main__ INFO     synonyms - exact,beta,1,LRE,0,Jacobian,3,lm,19
+2024-07-12 16:00:48 __main__ INFO     hypernyms - animals,beta,1,LRE,38,Jacobian,31,lm,40
+2024-07-12 16:00:53 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:00:53 __main__ INFO     using beta=1, iter=1
+2024-07-12 16:00:57 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,22
+2024-07-12 16:01:01 __main__ INFO     animal - youth,beta,1,LRE,18,Jacobian,17,lm,32
+2024-07-12 16:01:06 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,12,Jacobian,35,lm,50
+2024-07-12 16:01:11 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,49
+2024-07-12 16:01:17 __main__ INFO     verb+able_reg,beta,1,LRE,3,Jacobian,19,lm,48
+2024-07-12 16:01:22 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,13
+2024-07-12 16:01:28 __main__ INFO     antonyms - binary,beta,1,LRE,7,Jacobian,24,lm,42
+2024-07-12 16:01:33 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,6,Jacobian,9,lm,50
+2024-07-12 16:01:38 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,6,lm,42
+2024-07-12 16:01:44 __main__ INFO     verb_inf - Ved,beta,1,LRE,4,Jacobian,32,lm,49
+2024-07-12 16:01:49 __main__ INFO     country - language,beta,1,LRE,14,Jacobian,13,lm,40
+2024-07-12 16:01:54 __main__ INFO     meronyms - part,beta,1,LRE,3,Jacobian,12,lm,30
+2024-07-12 16:01:59 __main__ INFO     verb_Ving - Ved,beta,1,LRE,19,Jacobian,43,lm,49
+2024-07-12 16:02:03 __main__ INFO     animal - shelter,beta,1,LRE,19,Jacobian,11,lm,30
+2024-07-12 16:02:08 __main__ INFO     hypernyms - misc,beta,1,LRE,18,Jacobian,18,lm,30
+2024-07-12 16:02:16 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,12,lm,40
+2024-07-12 16:02:22 __main__ INFO     noun - plural_irreg,beta,1,LRE,7,Jacobian,43,lm,49
+2024-07-12 16:02:28 __main__ INFO     un+adj_reg,beta,1,LRE,2,Jacobian,30,lm,50
+2024-07-12 16:02:34 __main__ INFO     verb+ment_irreg,beta,1,LRE,12,Jacobian,41,lm,49
+2024-07-12 16:02:38 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,10,lm,42
+2024-07-12 16:02:44 __main__ INFO     over+adj_reg,beta,1,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:02:50 __main__ INFO     verb+er_irreg,beta,1,LRE,2,Jacobian,17,lm,47
+2024-07-12 16:02:55 __main__ INFO     adj+ly_reg,beta,1,LRE,8,Jacobian,7,lm,49
+2024-07-12 16:03:00 __main__ INFO     name - occupation,beta,1,LRE,24,Jacobian,23,lm,41
+2024-07-12 16:03:03 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,5,lm,18
+2024-07-12 16:03:08 __main__ INFO     animal - sound,beta,1,LRE,6,Jacobian,9,lm,31
+2024-07-12 16:03:14 __main__ INFO     noun - plural_reg,beta,1,LRE,2,Jacobian,47,lm,50
+2024-07-12 16:03:20 __main__ INFO     Ving - verb_inf,beta,1,LRE,5,Jacobian,18,lm,50
+2024-07-12 16:03:25 __main__ INFO     male - female,beta,1,LRE,3,Jacobian,5,lm,34
+2024-07-12 16:03:31 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,12,Jacobian,48,lm,49
+2024-07-12 16:03:35 __main__ INFO     meronyms - member,beta,1,LRE,10,Jacobian,12,lm,28
+2024-07-12 16:03:39 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,5,lm,27
+2024-07-12 16:03:45 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,1,lm,44
+2024-07-12 16:03:50 __main__ INFO     verb+tion_irreg,beta,1,LRE,1,Jacobian,13,lm,49
+2024-07-12 16:03:54 __main__ INFO     synonyms - exact,beta,1,LRE,0,Jacobian,1,lm,21
+2024-07-12 16:03:59 __main__ INFO     hypernyms - animals,beta,1,LRE,42,Jacobian,43,lm,45
+2024-07-12 16:04:04 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:04:04 __main__ INFO     using beta=1, iter=2
+2024-07-12 16:04:07 __main__ INFO     name - nationality,beta,1,LRE,11,Jacobian,5,lm,20
+2024-07-12 16:04:12 __main__ INFO     animal - youth,beta,1,LRE,18,Jacobian,18,lm,33
+2024-07-12 16:04:17 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,11,Jacobian,29,lm,50
+2024-07-12 16:04:22 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,49
+2024-07-12 16:04:27 __main__ INFO     verb+able_reg,beta,1,LRE,3,Jacobian,16,lm,48
+2024-07-12 16:04:31 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:04:37 __main__ INFO     antonyms - binary,beta,1,LRE,3,Jacobian,26,lm,43
+2024-07-12 16:04:42 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,9,Jacobian,5,lm,50
+2024-07-12 16:04:46 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,5,lm,41
+2024-07-12 16:04:52 __main__ INFO     verb_inf - Ved,beta,1,LRE,12,Jacobian,37,lm,49
+2024-07-12 16:04:57 __main__ INFO     country - language,beta,1,LRE,14,Jacobian,8,lm,40
+2024-07-12 16:05:01 __main__ INFO     meronyms - part,beta,1,LRE,5,Jacobian,14,lm,31
+2024-07-12 16:05:07 __main__ INFO     verb_Ving - Ved,beta,1,LRE,19,Jacobian,44,lm,49
+2024-07-12 16:05:10 __main__ INFO     animal - shelter,beta,1,LRE,18,Jacobian,10,lm,24
+2024-07-12 16:05:15 __main__ INFO     hypernyms - misc,beta,1,LRE,17,Jacobian,12,lm,31
+2024-07-12 16:05:19 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,11,lm,37
+2024-07-12 16:05:25 __main__ INFO     noun - plural_irreg,beta,1,LRE,8,Jacobian,44,lm,50
+2024-07-12 16:05:30 __main__ INFO     un+adj_reg,beta,1,LRE,3,Jacobian,17,lm,49
+2024-07-12 16:05:36 __main__ INFO     verb+ment_irreg,beta,1,LRE,13,Jacobian,39,lm,49
+2024-07-12 16:05:41 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,9,lm,41
+2024-07-12 16:05:46 __main__ INFO     over+adj_reg,beta,1,LRE,0,Jacobian,1,lm,49
+2024-07-12 16:05:51 __main__ INFO     verb+er_irreg,beta,1,LRE,3,Jacobian,9,lm,47
+2024-07-12 16:05:57 __main__ INFO     adj+ly_reg,beta,1,LRE,8,Jacobian,3,lm,50
+2024-07-12 16:06:02 __main__ INFO     name - occupation,beta,1,LRE,24,Jacobian,19,lm,40
+2024-07-12 16:06:06 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,8,lm,22
+2024-07-12 16:06:10 __main__ INFO     animal - sound,beta,1,LRE,5,Jacobian,9,lm,30
+2024-07-12 16:06:16 __main__ INFO     noun - plural_reg,beta,1,LRE,1,Jacobian,49,lm,50
+2024-07-12 16:06:21 __main__ INFO     Ving - verb_inf,beta,1,LRE,5,Jacobian,18,lm,50
+2024-07-12 16:06:26 __main__ INFO     male - female,beta,1,LRE,2,Jacobian,1,lm,33
+2024-07-12 16:06:31 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,11,Jacobian,49,lm,49
+2024-07-12 16:06:36 __main__ INFO     meronyms - member,beta,1,LRE,9,Jacobian,12,lm,32
+2024-07-12 16:06:40 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,7,lm,29
+2024-07-12 16:06:45 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,1,lm,44
+2024-07-12 16:06:50 __main__ INFO     verb+tion_irreg,beta,1,LRE,1,Jacobian,22,lm,49
+2024-07-12 16:06:54 __main__ INFO     synonyms - exact,beta,1,LRE,1,Jacobian,0,lm,18
+2024-07-12 16:06:59 __main__ INFO     hypernyms - animals,beta,1,LRE,38,Jacobian,27,lm,44
+2024-07-12 16:07:04 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:07:04 __main__ INFO     using beta=1, iter=3
+2024-07-12 16:07:07 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,22
+2024-07-12 16:07:11 __main__ INFO     animal - youth,beta,1,LRE,17,Jacobian,18,lm,29
+2024-07-12 16:07:16 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,12,Jacobian,31,lm,50
+2024-07-12 16:07:21 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,48
+2024-07-12 16:07:27 __main__ INFO     verb+able_reg,beta,1,LRE,3,Jacobian,20,lm,46
+2024-07-12 16:07:31 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,13
+2024-07-12 16:07:36 __main__ INFO     antonyms - binary,beta,1,LRE,1,Jacobian,21,lm,45
+2024-07-12 16:07:41 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,17,Jacobian,12,lm,50
+2024-07-12 16:07:45 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,6,lm,41
+2024-07-12 16:07:51 __main__ INFO     verb_inf - Ved,beta,1,LRE,11,Jacobian,34,lm,49
+2024-07-12 16:07:56 __main__ INFO     country - language,beta,1,LRE,12,Jacobian,8,lm,40
+2024-07-12 16:08:00 __main__ INFO     meronyms - part,beta,1,LRE,6,Jacobian,12,lm,30
+2024-07-12 16:08:06 __main__ INFO     verb_Ving - Ved,beta,1,LRE,13,Jacobian,45,lm,49
+2024-07-12 16:08:10 __main__ INFO     animal - shelter,beta,1,LRE,17,Jacobian,13,lm,29
+2024-07-12 16:08:14 __main__ INFO     hypernyms - misc,beta,1,LRE,20,Jacobian,15,lm,32
+2024-07-12 16:08:18 __main__ INFO     meronyms - substance,beta,1,LRE,0,Jacobian,12,lm,35
+2024-07-12 16:08:24 __main__ INFO     noun - plural_irreg,beta,1,LRE,8,Jacobian,45,lm,50
+2024-07-12 16:08:29 __main__ INFO     un+adj_reg,beta,1,LRE,3,Jacobian,22,lm,50
+2024-07-12 16:08:34 __main__ INFO     verb+ment_irreg,beta,1,LRE,13,Jacobian,41,lm,50
+2024-07-12 16:08:39 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,10,lm,42
+2024-07-12 16:08:44 __main__ INFO     over+adj_reg,beta,1,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:08:49 __main__ INFO     verb+er_irreg,beta,1,LRE,3,Jacobian,17,lm,48
+2024-07-12 16:08:55 __main__ INFO     adj+ly_reg,beta,1,LRE,6,Jacobian,7,lm,48
+2024-07-12 16:09:00 __main__ INFO     name - occupation,beta,1,LRE,28,Jacobian,24,lm,42
+2024-07-12 16:09:04 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,5,lm,20
+2024-07-12 16:09:08 __main__ INFO     animal - sound,beta,1,LRE,6,Jacobian,10,lm,28
+2024-07-12 16:09:14 __main__ INFO     noun - plural_reg,beta,1,LRE,3,Jacobian,49,lm,50
+2024-07-12 16:09:19 __main__ INFO     Ving - verb_inf,beta,1,LRE,4,Jacobian,16,lm,49
+2024-07-12 16:09:24 __main__ INFO     male - female,beta,1,LRE,3,Jacobian,2,lm,33
+2024-07-12 16:09:29 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,4,Jacobian,43,lm,49
+2024-07-12 16:09:33 __main__ INFO     meronyms - member,beta,1,LRE,11,Jacobian,15,lm,31
+2024-07-12 16:09:37 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,6,lm,26
+2024-07-12 16:09:43 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,1,lm,43
+2024-07-12 16:09:48 __main__ INFO     verb+tion_irreg,beta,1,LRE,4,Jacobian,17,lm,49
+2024-07-12 16:09:52 __main__ INFO     synonyms - exact,beta,1,LRE,1,Jacobian,3,lm,23
+2024-07-12 16:09:57 __main__ INFO     hypernyms - animals,beta,1,LRE,36,Jacobian,37,lm,43
+2024-07-12 16:10:02 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:10:02 __main__ INFO     using beta=1, iter=4
+2024-07-12 16:10:05 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,23
+2024-07-12 16:10:10 __main__ INFO     animal - youth,beta,1,LRE,18,Jacobian,19,lm,32
+2024-07-12 16:10:15 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,12,Jacobian,30,lm,50
+2024-07-12 16:10:20 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,48
+2024-07-12 16:10:25 __main__ INFO     verb+able_reg,beta,1,LRE,3,Jacobian,18,lm,47
+2024-07-12 16:10:29 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:10:34 __main__ INFO     antonyms - binary,beta,1,LRE,1,Jacobian,31,lm,42
+2024-07-12 16:10:39 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,14,Jacobian,10,lm,50
+2024-07-12 16:10:44 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,6,lm,42
+2024-07-12 16:10:49 __main__ INFO     verb_inf - Ved,beta,1,LRE,4,Jacobian,34,lm,49
+2024-07-12 16:10:54 __main__ INFO     country - language,beta,1,LRE,13,Jacobian,5,lm,40
+2024-07-12 16:10:58 __main__ INFO     meronyms - part,beta,1,LRE,6,Jacobian,14,lm,33
+2024-07-12 16:11:03 __main__ INFO     verb_Ving - Ved,beta,1,LRE,21,Jacobian,44,lm,49
+2024-07-12 16:11:07 __main__ INFO     animal - shelter,beta,1,LRE,15,Jacobian,10,lm,27
+2024-07-12 16:11:12 __main__ INFO     hypernyms - misc,beta,1,LRE,12,Jacobian,18,lm,32
+2024-07-12 16:11:16 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,11,lm,40
+2024-07-12 16:11:21 __main__ INFO     noun - plural_irreg,beta,1,LRE,9,Jacobian,45,lm,49
+2024-07-12 16:11:26 __main__ INFO     un+adj_reg,beta,1,LRE,2,Jacobian,25,lm,49
+2024-07-12 16:11:32 __main__ INFO     verb+ment_irreg,beta,1,LRE,13,Jacobian,37,lm,50
+2024-07-12 16:11:36 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,10,lm,43
+2024-07-12 16:11:42 __main__ INFO     over+adj_reg,beta,1,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:11:47 __main__ INFO     verb+er_irreg,beta,1,LRE,2,Jacobian,10,lm,47
+2024-07-12 16:11:53 __main__ INFO     adj+ly_reg,beta,1,LRE,9,Jacobian,7,lm,49
+2024-07-12 16:11:57 __main__ INFO     name - occupation,beta,1,LRE,25,Jacobian,12,lm,39
+2024-07-12 16:12:01 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,7,lm,24
+2024-07-12 16:12:05 __main__ INFO     animal - sound,beta,1,LRE,5,Jacobian,9,lm,30
+2024-07-12 16:12:10 __main__ INFO     noun - plural_reg,beta,1,LRE,0,Jacobian,49,lm,50
+2024-07-12 16:12:16 __main__ INFO     Ving - verb_inf,beta,1,LRE,2,Jacobian,17,lm,50
+2024-07-12 16:12:20 __main__ INFO     male - female,beta,1,LRE,3,Jacobian,2,lm,30
+2024-07-12 16:12:25 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,7,Jacobian,46,lm,49
+2024-07-12 16:12:29 __main__ INFO     meronyms - member,beta,1,LRE,10,Jacobian,12,lm,29
+2024-07-12 16:12:33 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,5,lm,25
+2024-07-12 16:12:38 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,2,lm,44
+2024-07-12 16:12:43 __main__ INFO     verb+tion_irreg,beta,1,LRE,3,Jacobian,12,lm,49
+2024-07-12 16:12:47 __main__ INFO     synonyms - exact,beta,1,LRE,1,Jacobian,3,lm,23
+2024-07-12 16:12:52 __main__ INFO     hypernyms - animals,beta,1,LRE,34,Jacobian,40,lm,43
+2024-07-12 16:12:57 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,37
+2024-07-12 16:12:57 __main__ INFO     using beta=1, iter=5
+2024-07-12 16:13:00 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,22
+2024-07-12 16:13:05 __main__ INFO     animal - youth,beta,1,LRE,21,Jacobian,20,lm,37
+2024-07-12 16:13:10 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,12,Jacobian,33,lm,50
+2024-07-12 16:13:15 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,48
+2024-07-12 16:13:20 __main__ INFO     verb+able_reg,beta,1,LRE,3,Jacobian,12,lm,47
+2024-07-12 16:13:24 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:13:29 __main__ INFO     antonyms - binary,beta,1,LRE,8,Jacobian,29,lm,43
+2024-07-12 16:13:34 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,10,Jacobian,16,lm,50
+2024-07-12 16:13:39 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,5,lm,43
+2024-07-12 16:13:44 __main__ INFO     verb_inf - Ved,beta,1,LRE,11,Jacobian,44,lm,49
+2024-07-12 16:13:49 __main__ INFO     country - language,beta,1,LRE,12,Jacobian,5,lm,37
+2024-07-12 16:13:53 __main__ INFO     meronyms - part,beta,1,LRE,5,Jacobian,13,lm,30
+2024-07-12 16:13:58 __main__ INFO     verb_Ving - Ved,beta,1,LRE,12,Jacobian,44,lm,49
+2024-07-12 16:14:02 __main__ INFO     animal - shelter,beta,1,LRE,20,Jacobian,10,lm,30
+2024-07-12 16:14:07 __main__ INFO     hypernyms - misc,beta,1,LRE,19,Jacobian,17,lm,33
+2024-07-12 16:14:11 __main__ INFO     meronyms - substance,beta,1,LRE,0,Jacobian,9,lm,37
+2024-07-12 16:14:17 __main__ INFO     noun - plural_irreg,beta,1,LRE,8,Jacobian,44,lm,50
+2024-07-12 16:14:22 __main__ INFO     un+adj_reg,beta,1,LRE,5,Jacobian,26,lm,49
+2024-07-12 16:14:27 __main__ INFO     verb+ment_irreg,beta,1,LRE,12,Jacobian,29,lm,49
+2024-07-12 16:14:32 __main__ INFO     adj+ness_reg,beta,1,LRE,0,Jacobian,10,lm,43
+2024-07-12 16:14:37 __main__ INFO     over+adj_reg,beta,1,LRE,1,Jacobian,0,lm,49
+2024-07-12 16:14:42 __main__ INFO     verb+er_irreg,beta,1,LRE,2,Jacobian,8,lm,46
+2024-07-12 16:14:47 __main__ INFO     adj+ly_reg,beta,1,LRE,7,Jacobian,19,lm,49
+2024-07-12 16:14:52 __main__ INFO     name - occupation,beta,1,LRE,24,Jacobian,8,lm,41
+2024-07-12 16:14:56 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,5,lm,23
+2024-07-12 16:15:00 __main__ INFO     animal - sound,beta,1,LRE,7,Jacobian,9,lm,30
+2024-07-12 16:15:05 __main__ INFO     noun - plural_reg,beta,1,LRE,2,Jacobian,44,lm,50
+2024-07-12 16:15:11 __main__ INFO     Ving - verb_inf,beta,1,LRE,8,Jacobian,25,lm,50
+2024-07-12 16:15:15 __main__ INFO     male - female,beta,1,LRE,5,Jacobian,5,lm,33
+2024-07-12 16:15:20 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,5,Jacobian,47,lm,49
+2024-07-12 16:15:24 __main__ INFO     meronyms - member,beta,1,LRE,12,Jacobian,8,lm,30
+2024-07-12 16:15:28 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,6,lm,26
+2024-07-12 16:15:33 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,1,lm,44
+2024-07-12 16:15:38 __main__ INFO     verb+tion_irreg,beta,1,LRE,6,Jacobian,21,lm,49
+2024-07-12 16:15:42 __main__ INFO     synonyms - exact,beta,1,LRE,1,Jacobian,5,lm,21
+2024-07-12 16:15:47 __main__ INFO     hypernyms - animals,beta,1,LRE,42,Jacobian,40,lm,45
+2024-07-12 16:15:52 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:15:52 __main__ INFO     using beta=1, iter=6
+2024-07-12 16:15:56 __main__ INFO     name - nationality,beta,1,LRE,12,Jacobian,5,lm,26
+2024-07-12 16:16:00 __main__ INFO     animal - youth,beta,1,LRE,16,Jacobian,16,lm,32
+2024-07-12 16:16:05 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,12,Jacobian,34,lm,50
+2024-07-12 16:16:10 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,48
+2024-07-12 16:16:15 __main__ INFO     verb+able_reg,beta,1,LRE,5,Jacobian,14,lm,46
+2024-07-12 16:16:19 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:16:24 __main__ INFO     antonyms - binary,beta,1,LRE,9,Jacobian,21,lm,43
+2024-07-12 16:16:29 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,21,Jacobian,14,lm,50
+2024-07-12 16:16:34 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,3,lm,37
+2024-07-12 16:16:39 __main__ INFO     verb_inf - Ved,beta,1,LRE,7,Jacobian,30,lm,49
+2024-07-12 16:16:44 __main__ INFO     country - language,beta,1,LRE,11,Jacobian,2,lm,38
+2024-07-12 16:16:48 __main__ INFO     meronyms - part,beta,1,LRE,4,Jacobian,12,lm,28
+2024-07-12 16:16:53 __main__ INFO     verb_Ving - Ved,beta,1,LRE,16,Jacobian,45,lm,49
+2024-07-12 16:16:57 __main__ INFO     animal - shelter,beta,1,LRE,20,Jacobian,14,lm,33
+2024-07-12 16:17:02 __main__ INFO     hypernyms - misc,beta,1,LRE,16,Jacobian,22,lm,35
+2024-07-12 16:17:07 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,10,lm,41
+2024-07-12 16:17:12 __main__ INFO     noun - plural_irreg,beta,1,LRE,6,Jacobian,44,lm,50
+2024-07-12 16:17:17 __main__ INFO     un+adj_reg,beta,1,LRE,1,Jacobian,27,lm,50
+2024-07-12 16:17:22 __main__ INFO     verb+ment_irreg,beta,1,LRE,11,Jacobian,36,lm,49
+2024-07-12 16:17:27 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,10,lm,41
+2024-07-12 16:17:32 __main__ INFO     over+adj_reg,beta,1,LRE,0,Jacobian,0,lm,50
+2024-07-12 16:17:37 __main__ INFO     verb+er_irreg,beta,1,LRE,3,Jacobian,12,lm,46
+2024-07-12 16:17:42 __main__ INFO     adj+ly_reg,beta,1,LRE,8,Jacobian,2,lm,49
+2024-07-12 16:17:47 __main__ INFO     name - occupation,beta,1,LRE,23,Jacobian,10,lm,41
+2024-07-12 16:17:51 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,7,lm,19
+2024-07-12 16:17:55 __main__ INFO     animal - sound,beta,1,LRE,5,Jacobian,8,lm,27
+2024-07-12 16:18:00 __main__ INFO     noun - plural_reg,beta,1,LRE,1,Jacobian,50,lm,50
+2024-07-12 16:18:06 __main__ INFO     Ving - verb_inf,beta,1,LRE,8,Jacobian,13,lm,50
+2024-07-12 16:18:10 __main__ INFO     male - female,beta,1,LRE,2,Jacobian,4,lm,31
+2024-07-12 16:18:16 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,4,Jacobian,48,lm,49
+2024-07-12 16:18:20 __main__ INFO     meronyms - member,beta,1,LRE,5,Jacobian,11,lm,31
+2024-07-12 16:18:23 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,7,lm,24
+2024-07-12 16:18:29 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,0,lm,45
+2024-07-12 16:18:34 __main__ INFO     verb+tion_irreg,beta,1,LRE,2,Jacobian,24,lm,49
+2024-07-12 16:18:37 __main__ INFO     synonyms - exact,beta,1,LRE,0,Jacobian,2,lm,19
+2024-07-12 16:18:42 __main__ INFO     hypernyms - animals,beta,1,LRE,35,Jacobian,40,lm,43
+2024-07-12 16:18:47 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,35
+2024-07-12 16:18:47 __main__ INFO     using beta=1, iter=7
+2024-07-12 16:18:50 __main__ INFO     name - nationality,beta,1,LRE,10,Jacobian,5,lm,20
+2024-07-12 16:18:55 __main__ INFO     animal - youth,beta,1,LRE,18,Jacobian,17,lm,32
+2024-07-12 16:19:00 __main__ INFO     verb_Ving - 3pSg,beta,1,LRE,10,Jacobian,30,lm,50
+2024-07-12 16:19:05 __main__ INFO     noun+less_reg,beta,1,LRE,0,Jacobian,2,lm,48
+2024-07-12 16:19:10 __main__ INFO     verb+able_reg,beta,1,LRE,2,Jacobian,15,lm,49
+2024-07-12 16:19:14 __main__ INFO     UK_city - county,beta,1,LRE,0,Jacobian,0,lm,13
+2024-07-12 16:19:19 __main__ INFO     antonyms - binary,beta,1,LRE,6,Jacobian,33,lm,42
+2024-07-12 16:19:24 __main__ INFO     verb_inf - 3pSg,beta,1,LRE,7,Jacobian,14,lm,50
+2024-07-12 16:19:29 __main__ INFO     re+verb_reg,beta,1,LRE,0,Jacobian,4,lm,42
+2024-07-12 16:19:34 __main__ INFO     verb_inf - Ved,beta,1,LRE,11,Jacobian,44,lm,49
+2024-07-12 16:19:39 __main__ INFO     country - language,beta,1,LRE,12,Jacobian,12,lm,37
+2024-07-12 16:19:43 __main__ INFO     meronyms - part,beta,1,LRE,5,Jacobian,11,lm,30
+2024-07-12 16:19:48 __main__ INFO     verb_Ving - Ved,beta,1,LRE,15,Jacobian,44,lm,49
+2024-07-12 16:19:52 __main__ INFO     animal - shelter,beta,1,LRE,19,Jacobian,12,lm,28
+2024-07-12 16:19:56 __main__ INFO     hypernyms - misc,beta,1,LRE,22,Jacobian,19,lm,30
+2024-07-12 16:20:01 __main__ INFO     meronyms - substance,beta,1,LRE,1,Jacobian,11,lm,38
+2024-07-12 16:20:06 __main__ INFO     noun - plural_irreg,beta,1,LRE,9,Jacobian,44,lm,50
+2024-07-12 16:20:11 __main__ INFO     un+adj_reg,beta,1,LRE,2,Jacobian,29,lm,49
+2024-07-12 16:20:16 __main__ INFO     verb+ment_irreg,beta,1,LRE,12,Jacobian,36,lm,50
+2024-07-12 16:20:21 __main__ INFO     adj+ness_reg,beta,1,LRE,1,Jacobian,10,lm,42
+2024-07-12 16:20:27 __main__ INFO     over+adj_reg,beta,1,LRE,0,Jacobian,0,lm,50
+2024-07-12 16:20:32 __main__ INFO     verb+er_irreg,beta,1,LRE,2,Jacobian,16,lm,47
+2024-07-12 16:20:37 __main__ INFO     adj+ly_reg,beta,1,LRE,7,Jacobian,13,lm,48
+2024-07-12 16:20:42 __main__ INFO     name - occupation,beta,1,LRE,25,Jacobian,21,lm,41
+2024-07-12 16:20:45 __main__ INFO     synonyms - intensity,beta,1,LRE,0,Jacobian,6,lm,22
+2024-07-12 16:20:49 __main__ INFO     animal - sound,beta,1,LRE,5,Jacobian,9,lm,29
+2024-07-12 16:20:55 __main__ INFO     noun - plural_reg,beta,1,LRE,1,Jacobian,48,lm,50
+2024-07-12 16:21:00 __main__ INFO     Ving - verb_inf,beta,1,LRE,7,Jacobian,17,lm,49
+2024-07-12 16:21:04 __main__ INFO     male - female,beta,1,LRE,2,Jacobian,3,lm,35
+2024-07-12 16:21:09 __main__ INFO     verb_3pSg - Ved,beta,1,LRE,9,Jacobian,49,lm,49
+2024-07-12 16:21:14 __main__ INFO     meronyms - member,beta,1,LRE,9,Jacobian,14,lm,31
+2024-07-12 16:21:18 __main__ INFO     hyponyms - misc,beta,1,LRE,0,Jacobian,5,lm,26
+2024-07-12 16:21:23 __main__ INFO     adj - superlative,beta,1,LRE,0,Jacobian,0,lm,44
+2024-07-12 16:21:28 __main__ INFO     verb+tion_irreg,beta,1,LRE,4,Jacobian,19,lm,49
+2024-07-12 16:21:31 __main__ INFO     synonyms - exact,beta,1,LRE,1,Jacobian,4,lm,20
+2024-07-12 16:21:36 __main__ INFO     hypernyms - animals,beta,1,LRE,36,Jacobian,37,lm,45
+2024-07-12 16:21:41 __main__ INFO     country - capital,beta,1,LRE,0,Jacobian,0,lm,35
+2024-07-12 16:21:41 __main__ INFO     using beta=3.33, iter=0
+2024-07-12 16:21:44 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,5,lm,22
+2024-07-12 16:21:48 __main__ INFO     animal - youth,beta,3.33,LRE,22,Jacobian,15,lm,31
+2024-07-12 16:21:54 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,28,lm,50
+2024-07-12 16:21:59 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,49
+2024-07-12 16:22:04 __main__ INFO     verb+able_reg,beta,3.33,LRE,18,Jacobian,15,lm,47
+2024-07-12 16:22:08 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,11
+2024-07-12 16:22:12 __main__ INFO     antonyms - binary,beta,3.33,LRE,32,Jacobian,34,lm,40
+2024-07-12 16:22:17 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,44,Jacobian,9,lm,50
+2024-07-12 16:22:22 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,6,lm,45
+2024-07-12 16:22:28 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,48,Jacobian,43,lm,49
+2024-07-12 16:22:32 __main__ INFO     country - language,beta,3.33,LRE,12,Jacobian,9,lm,38
+2024-07-12 16:22:36 __main__ INFO     meronyms - part,beta,3.33,LRE,14,Jacobian,11,lm,27
+2024-07-12 16:22:42 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,46,Jacobian,46,lm,49
+2024-07-12 16:22:46 __main__ INFO     animal - shelter,beta,3.33,LRE,21,Jacobian,9,lm,26
+2024-07-12 16:22:50 __main__ INFO     hypernyms - misc,beta,3.33,LRE,25,Jacobian,16,lm,33
+2024-07-12 16:22:54 __main__ INFO     meronyms - substance,beta,3.33,LRE,11,Jacobian,7,lm,38
+2024-07-12 16:23:00 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,41,Jacobian,44,lm,50
+2024-07-12 16:23:05 __main__ INFO     un+adj_reg,beta,3.33,LRE,16,Jacobian,32,lm,50
+2024-07-12 16:23:10 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,32,Jacobian,38,lm,48
+2024-07-12 16:23:15 __main__ INFO     adj+ness_reg,beta,3.33,LRE,9,Jacobian,11,lm,41
+2024-07-12 16:23:20 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,49
+2024-07-12 16:23:25 __main__ INFO     verb+er_irreg,beta,3.33,LRE,9,Jacobian,5,lm,48
+2024-07-12 16:23:30 __main__ INFO     adj+ly_reg,beta,3.33,LRE,31,Jacobian,18,lm,49
+2024-07-12 16:23:35 __main__ INFO     name - occupation,beta,3.33,LRE,33,Jacobian,18,lm,41
+2024-07-12 16:23:39 __main__ INFO     synonyms - intensity,beta,3.33,LRE,4,Jacobian,7,lm,21
+2024-07-12 16:23:43 __main__ INFO     animal - sound,beta,3.33,LRE,10,Jacobian,10,lm,29
+2024-07-12 16:23:48 __main__ INFO     noun - plural_reg,beta,3.33,LRE,49,Jacobian,48,lm,50
+2024-07-12 16:23:53 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,21,Jacobian,16,lm,50
+2024-07-12 16:23:57 __main__ INFO     male - female,beta,3.33,LRE,7,Jacobian,4,lm,29
+2024-07-12 16:24:03 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,39,Jacobian,48,lm,49
+2024-07-12 16:24:07 __main__ INFO     meronyms - member,beta,3.33,LRE,15,Jacobian,18,lm,32
+2024-07-12 16:24:11 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,4,lm,25
+2024-07-12 16:24:16 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,1,lm,43
+2024-07-12 16:24:21 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,15,Jacobian,18,lm,49
+2024-07-12 16:24:24 __main__ INFO     synonyms - exact,beta,3.33,LRE,3,Jacobian,2,lm,21
+2024-07-12 16:24:29 __main__ INFO     hypernyms - animals,beta,3.33,LRE,35,Jacobian,36,lm,39
+2024-07-12 16:24:33 __main__ INFO     country - capital,beta,3.33,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:24:33 __main__ INFO     using beta=3.33, iter=1
+2024-07-12 16:24:37 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,5,lm,22
+2024-07-12 16:24:41 __main__ INFO     animal - youth,beta,3.33,LRE,25,Jacobian,18,lm,33
+2024-07-12 16:24:47 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,33,lm,50
+2024-07-12 16:24:52 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,49
+2024-07-12 16:24:57 __main__ INFO     verb+able_reg,beta,3.33,LRE,16,Jacobian,13,lm,46
+2024-07-12 16:25:01 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:25:06 __main__ INFO     antonyms - binary,beta,3.33,LRE,31,Jacobian,29,lm,43
+2024-07-12 16:25:11 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,48,Jacobian,17,lm,50
+2024-07-12 16:25:15 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,6,lm,43
+2024-07-12 16:25:21 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,47,Jacobian,46,lm,49
+2024-07-12 16:25:26 __main__ INFO     country - language,beta,3.33,LRE,13,Jacobian,12,lm,39
+2024-07-12 16:25:30 __main__ INFO     meronyms - part,beta,3.33,LRE,14,Jacobian,11,lm,29
+2024-07-12 16:25:35 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,48,Jacobian,45,lm,49
+2024-07-12 16:25:39 __main__ INFO     animal - shelter,beta,3.33,LRE,21,Jacobian,12,lm,31
+2024-07-12 16:25:43 __main__ INFO     hypernyms - misc,beta,3.33,LRE,26,Jacobian,15,lm,31
+2024-07-12 16:25:48 __main__ INFO     meronyms - substance,beta,3.33,LRE,11,Jacobian,11,lm,37
+2024-07-12 16:25:53 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,46,Jacobian,44,lm,50
+2024-07-12 16:25:58 __main__ INFO     un+adj_reg,beta,3.33,LRE,24,Jacobian,31,lm,50
+2024-07-12 16:26:03 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,40,Jacobian,38,lm,50
+2024-07-12 16:26:08 __main__ INFO     adj+ness_reg,beta,3.33,LRE,11,Jacobian,10,lm,42
+2024-07-12 16:26:13 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:26:18 __main__ INFO     verb+er_irreg,beta,3.33,LRE,8,Jacobian,16,lm,46
+2024-07-12 16:26:24 __main__ INFO     adj+ly_reg,beta,3.33,LRE,33,Jacobian,7,lm,49
+2024-07-12 16:26:29 __main__ INFO     name - occupation,beta,3.33,LRE,31,Jacobian,19,lm,42
+2024-07-12 16:26:32 __main__ INFO     synonyms - intensity,beta,3.33,LRE,6,Jacobian,6,lm,24
+2024-07-12 16:26:37 __main__ INFO     animal - sound,beta,3.33,LRE,10,Jacobian,9,lm,33
+2024-07-12 16:26:42 __main__ INFO     noun - plural_reg,beta,3.33,LRE,50,Jacobian,50,lm,50
+2024-07-12 16:26:47 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,15,Jacobian,19,lm,50
+2024-07-12 16:26:52 __main__ INFO     male - female,beta,3.33,LRE,3,Jacobian,1,lm,33
+2024-07-12 16:26:57 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,25,Jacobian,46,lm,49
+2024-07-12 16:27:01 __main__ INFO     meronyms - member,beta,3.33,LRE,15,Jacobian,13,lm,30
+2024-07-12 16:27:05 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,4,lm,25
+2024-07-12 16:27:10 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,1,lm,44
+2024-07-12 16:27:15 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,14,Jacobian,19,lm,49
+2024-07-12 16:27:18 __main__ INFO     synonyms - exact,beta,3.33,LRE,3,Jacobian,1,lm,22
+2024-07-12 16:27:24 __main__ INFO     hypernyms - animals,beta,3.33,LRE,43,Jacobian,39,lm,45
+2024-07-12 16:27:28 __main__ INFO     country - capital,beta,3.33,LRE,1,Jacobian,1,lm,35
+2024-07-12 16:27:28 __main__ INFO     using beta=3.33, iter=2
+2024-07-12 16:27:32 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,6,lm,22
+2024-07-12 16:27:36 __main__ INFO     animal - youth,beta,3.33,LRE,25,Jacobian,19,lm,33
+2024-07-12 16:27:41 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,32,lm,50
+2024-07-12 16:27:46 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,49
+2024-07-12 16:27:51 __main__ INFO     verb+able_reg,beta,3.33,LRE,16,Jacobian,18,lm,46
+2024-07-12 16:27:55 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,12
+2024-07-12 16:28:00 __main__ INFO     antonyms - binary,beta,3.33,LRE,24,Jacobian,24,lm,43
+2024-07-12 16:28:05 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,49,Jacobian,10,lm,50
+2024-07-12 16:28:10 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,5,lm,43
+2024-07-12 16:28:16 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,48,Jacobian,45,lm,49
+2024-07-12 16:28:20 __main__ INFO     country - language,beta,3.33,LRE,13,Jacobian,11,lm,39
+2024-07-12 16:28:25 __main__ INFO     meronyms - part,beta,3.33,LRE,13,Jacobian,14,lm,32
+2024-07-12 16:28:30 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,47,Jacobian,45,lm,49
+2024-07-12 16:28:34 __main__ INFO     animal - shelter,beta,3.33,LRE,22,Jacobian,12,lm,27
+2024-07-12 16:28:38 __main__ INFO     hypernyms - misc,beta,3.33,LRE,27,Jacobian,12,lm,32
+2024-07-12 16:28:43 __main__ INFO     meronyms - substance,beta,3.33,LRE,11,Jacobian,12,lm,40
+2024-07-12 16:28:48 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,45,Jacobian,45,lm,50
+2024-07-12 16:28:53 __main__ INFO     un+adj_reg,beta,3.33,LRE,13,Jacobian,17,lm,50
+2024-07-12 16:28:58 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,39,Jacobian,33,lm,50
+2024-07-12 16:29:03 __main__ INFO     adj+ness_reg,beta,3.33,LRE,9,Jacobian,9,lm,42
+2024-07-12 16:29:08 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:29:14 __main__ INFO     verb+er_irreg,beta,3.33,LRE,9,Jacobian,14,lm,47
+2024-07-12 16:29:19 __main__ INFO     adj+ly_reg,beta,3.33,LRE,32,Jacobian,18,lm,49
+2024-07-12 16:29:24 __main__ INFO     name - occupation,beta,3.33,LRE,31,Jacobian,9,lm,42
+2024-07-12 16:29:27 __main__ INFO     synonyms - intensity,beta,3.33,LRE,6,Jacobian,7,lm,23
+2024-07-12 16:29:32 __main__ INFO     animal - sound,beta,3.33,LRE,11,Jacobian,10,lm,33
+2024-07-12 16:29:37 __main__ INFO     noun - plural_reg,beta,3.33,LRE,43,Jacobian,50,lm,50
+2024-07-12 16:29:42 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,32,Jacobian,19,lm,50
+2024-07-12 16:29:46 __main__ INFO     male - female,beta,3.33,LRE,4,Jacobian,3,lm,29
+2024-07-12 16:29:52 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,35,Jacobian,47,lm,49
+2024-07-12 16:29:56 __main__ INFO     meronyms - member,beta,3.33,LRE,16,Jacobian,14,lm,32
+2024-07-12 16:30:00 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,5,lm,24
+2024-07-12 16:30:05 __main__ INFO     adj - superlative,beta,3.33,LRE,5,Jacobian,1,lm,44
+2024-07-12 16:30:10 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,14,Jacobian,14,lm,49
+2024-07-12 16:30:14 __main__ INFO     synonyms - exact,beta,3.33,LRE,1,Jacobian,1,lm,22
+2024-07-12 16:30:20 __main__ INFO     hypernyms - animals,beta,3.33,LRE,31,Jacobian,34,lm,41
+2024-07-12 16:30:26 __main__ INFO     country - capital,beta,3.33,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:30:26 __main__ INFO     using beta=3.33, iter=3
+2024-07-12 16:30:30 __main__ INFO     name - nationality,beta,3.33,LRE,10,Jacobian,4,lm,23
+2024-07-12 16:30:35 __main__ INFO     animal - youth,beta,3.33,LRE,22,Jacobian,16,lm,31
+2024-07-12 16:30:40 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,34,lm,50
+2024-07-12 16:30:46 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,47
+2024-07-12 16:30:51 __main__ INFO     verb+able_reg,beta,3.33,LRE,19,Jacobian,21,lm,48
+2024-07-12 16:30:58 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,11
+2024-07-12 16:31:07 __main__ INFO     antonyms - binary,beta,3.33,LRE,30,Jacobian,27,lm,42
+2024-07-12 16:31:13 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,49,Jacobian,11,lm,50
+2024-07-12 16:31:21 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,6,lm,44
+2024-07-12 16:31:29 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,48,Jacobian,30,lm,49
+2024-07-12 16:31:37 __main__ INFO     country - language,beta,3.33,LRE,12,Jacobian,4,lm,39
+2024-07-12 16:31:45 __main__ INFO     meronyms - part,beta,3.33,LRE,14,Jacobian,12,lm,29
+2024-07-12 16:31:52 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,46,Jacobian,43,lm,49
+2024-07-12 16:32:01 __main__ INFO     animal - shelter,beta,3.33,LRE,22,Jacobian,13,lm,31
+2024-07-12 16:32:08 __main__ INFO     hypernyms - misc,beta,3.33,LRE,29,Jacobian,19,lm,33
+2024-07-12 16:32:16 __main__ INFO     meronyms - substance,beta,3.33,LRE,12,Jacobian,11,lm,37
+2024-07-12 16:32:23 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,46,Jacobian,45,lm,49
+2024-07-12 16:32:30 __main__ INFO     un+adj_reg,beta,3.33,LRE,14,Jacobian,20,lm,48
+2024-07-12 16:32:37 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,38,Jacobian,41,lm,50
+2024-07-12 16:32:44 __main__ INFO     adj+ness_reg,beta,3.33,LRE,11,Jacobian,10,lm,43
+2024-07-12 16:32:51 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,49
+2024-07-12 16:32:59 __main__ INFO     verb+er_irreg,beta,3.33,LRE,12,Jacobian,6,lm,46
+2024-07-12 16:33:06 __main__ INFO     adj+ly_reg,beta,3.33,LRE,36,Jacobian,5,lm,50
+2024-07-12 16:33:14 __main__ INFO     name - occupation,beta,3.33,LRE,30,Jacobian,26,lm,41
+2024-07-12 16:33:21 __main__ INFO     synonyms - intensity,beta,3.33,LRE,5,Jacobian,6,lm,24
+2024-07-12 16:33:28 __main__ INFO     animal - sound,beta,3.33,LRE,11,Jacobian,10,lm,29
+2024-07-12 16:33:36 __main__ INFO     noun - plural_reg,beta,3.33,LRE,47,Jacobian,48,lm,50
+2024-07-12 16:33:44 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,20,Jacobian,15,lm,49
+2024-07-12 16:33:51 __main__ INFO     male - female,beta,3.33,LRE,9,Jacobian,3,lm,35
+2024-07-12 16:34:00 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,43,Jacobian,43,lm,49
+2024-07-12 16:34:08 __main__ INFO     meronyms - member,beta,3.33,LRE,18,Jacobian,18,lm,30
+2024-07-12 16:34:14 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,3,lm,23
+2024-07-12 16:34:22 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,1,lm,43
+2024-07-12 16:34:30 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,24,Jacobian,28,lm,49
+2024-07-12 16:34:37 __main__ INFO     synonyms - exact,beta,3.33,LRE,3,Jacobian,1,lm,20
+2024-07-12 16:34:45 __main__ INFO     hypernyms - animals,beta,3.33,LRE,33,Jacobian,35,lm,42
+2024-07-12 16:34:53 __main__ INFO     country - capital,beta,3.33,LRE,1,Jacobian,1,lm,36
+2024-07-12 16:34:53 __main__ INFO     using beta=3.33, iter=4
+2024-07-12 16:34:59 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,5,lm,23
+2024-07-12 16:35:06 __main__ INFO     animal - youth,beta,3.33,LRE,25,Jacobian,19,lm,34
+2024-07-12 16:35:13 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,44,Jacobian,31,lm,50
+2024-07-12 16:35:21 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,48
+2024-07-12 16:35:29 __main__ INFO     verb+able_reg,beta,3.33,LRE,17,Jacobian,16,lm,47
+2024-07-12 16:35:37 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,11
+2024-07-12 16:35:44 __main__ INFO     antonyms - binary,beta,3.33,LRE,30,Jacobian,32,lm,43
+2024-07-12 16:35:51 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,49,Jacobian,17,lm,50
+2024-07-12 16:35:58 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,4,lm,43
+2024-07-12 16:36:07 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,47,Jacobian,41,lm,49
+2024-07-12 16:36:15 __main__ INFO     country - language,beta,3.33,LRE,12,Jacobian,11,lm,38
+2024-07-12 16:36:21 __main__ INFO     meronyms - part,beta,3.33,LRE,13,Jacobian,12,lm,26
+2024-07-12 16:36:28 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,45,Jacobian,44,lm,49
+2024-07-12 16:36:35 __main__ INFO     animal - shelter,beta,3.33,LRE,21,Jacobian,10,lm,29
+2024-07-12 16:36:43 __main__ INFO     hypernyms - misc,beta,3.33,LRE,26,Jacobian,17,lm,31
+2024-07-12 16:36:49 __main__ INFO     meronyms - substance,beta,3.33,LRE,13,Jacobian,11,lm,38
+2024-07-12 16:36:57 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,44,Jacobian,45,lm,49
+2024-07-12 16:37:04 __main__ INFO     un+adj_reg,beta,3.33,LRE,25,Jacobian,25,lm,49
+2024-07-12 16:37:11 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,33,Jacobian,39,lm,50
+2024-07-12 16:37:19 __main__ INFO     adj+ness_reg,beta,3.33,LRE,11,Jacobian,11,lm,43
+2024-07-12 16:37:27 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:37:35 __main__ INFO     verb+er_irreg,beta,3.33,LRE,12,Jacobian,10,lm,47
+2024-07-12 16:37:42 __main__ INFO     adj+ly_reg,beta,3.33,LRE,24,Jacobian,11,lm,49
+2024-07-12 16:37:50 __main__ INFO     name - occupation,beta,3.33,LRE,33,Jacobian,18,lm,40
+2024-07-12 16:37:56 __main__ INFO     synonyms - intensity,beta,3.33,LRE,4,Jacobian,4,lm,22
+2024-07-12 16:38:02 __main__ INFO     animal - sound,beta,3.33,LRE,9,Jacobian,9,lm,30
+2024-07-12 16:38:10 __main__ INFO     noun - plural_reg,beta,3.33,LRE,47,Jacobian,48,lm,50
+2024-07-12 16:38:18 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,18,Jacobian,22,lm,49
+2024-07-12 16:38:25 __main__ INFO     male - female,beta,3.33,LRE,4,Jacobian,0,lm,31
+2024-07-12 16:38:34 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,41,Jacobian,46,lm,49
+2024-07-12 16:38:40 __main__ INFO     meronyms - member,beta,3.33,LRE,16,Jacobian,18,lm,29
+2024-07-12 16:38:47 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,5,lm,27
+2024-07-12 16:38:55 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,2,lm,43
+2024-07-12 16:39:02 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,18,Jacobian,23,lm,49
+2024-07-12 16:39:09 __main__ INFO     synonyms - exact,beta,3.33,LRE,3,Jacobian,2,lm,19
+2024-07-12 16:39:16 __main__ INFO     hypernyms - animals,beta,3.33,LRE,33,Jacobian,31,lm,43
+2024-07-12 16:39:24 __main__ INFO     country - capital,beta,3.33,LRE,0,Jacobian,0,lm,36
+2024-07-12 16:39:24 __main__ INFO     using beta=3.33, iter=5
+2024-07-12 16:39:29 __main__ INFO     name - nationality,beta,3.33,LRE,10,Jacobian,5,lm,21
+2024-07-12 16:39:36 __main__ INFO     animal - youth,beta,3.33,LRE,26,Jacobian,18,lm,35
+2024-07-12 16:39:44 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,28,lm,50
+2024-07-12 16:39:51 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,49
+2024-07-12 16:39:59 __main__ INFO     verb+able_reg,beta,3.33,LRE,15,Jacobian,18,lm,48
+2024-07-12 16:40:06 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,13
+2024-07-12 16:40:13 __main__ INFO     antonyms - binary,beta,3.33,LRE,23,Jacobian,24,lm,42
+2024-07-12 16:40:20 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,49,Jacobian,16,lm,50
+2024-07-12 16:40:27 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,4,lm,42
+2024-07-12 16:40:35 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,48,Jacobian,35,lm,49
+2024-07-12 16:40:42 __main__ INFO     country - language,beta,3.33,LRE,12,Jacobian,11,lm,38
+2024-07-12 16:40:48 __main__ INFO     meronyms - part,beta,3.33,LRE,12,Jacobian,12,lm,29
+2024-07-12 16:40:56 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,48,Jacobian,44,lm,49
+2024-07-12 16:41:02 __main__ INFO     animal - shelter,beta,3.33,LRE,21,Jacobian,9,lm,28
+2024-07-12 16:41:09 __main__ INFO     hypernyms - misc,beta,3.33,LRE,23,Jacobian,15,lm,31
+2024-07-12 16:41:16 __main__ INFO     meronyms - substance,beta,3.33,LRE,12,Jacobian,11,lm,39
+2024-07-12 16:41:23 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,46,Jacobian,44,lm,50
+2024-07-12 16:41:31 __main__ INFO     un+adj_reg,beta,3.33,LRE,22,Jacobian,29,lm,50
+2024-07-12 16:41:37 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,30,Jacobian,34,lm,50
+2024-07-12 16:41:45 __main__ INFO     adj+ness_reg,beta,3.33,LRE,9,Jacobian,11,lm,44
+2024-07-12 16:41:52 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,49
+2024-07-12 16:42:00 __main__ INFO     verb+er_irreg,beta,3.33,LRE,12,Jacobian,10,lm,48
+2024-07-12 16:42:08 __main__ INFO     adj+ly_reg,beta,3.33,LRE,39,Jacobian,12,lm,49
+2024-07-12 16:42:15 __main__ INFO     name - occupation,beta,3.33,LRE,32,Jacobian,3,lm,41
+2024-07-12 16:42:21 __main__ INFO     synonyms - intensity,beta,3.33,LRE,6,Jacobian,7,lm,22
+2024-07-12 16:42:27 __main__ INFO     animal - sound,beta,3.33,LRE,10,Jacobian,9,lm,30
+2024-07-12 16:42:35 __main__ INFO     noun - plural_reg,beta,3.33,LRE,48,Jacobian,48,lm,50
+2024-07-12 16:42:43 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,19,Jacobian,22,lm,49
+2024-07-12 16:42:51 __main__ INFO     male - female,beta,3.33,LRE,9,Jacobian,3,lm,37
+2024-07-12 16:42:59 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,32,Jacobian,47,lm,49
+2024-07-12 16:43:06 __main__ INFO     meronyms - member,beta,3.33,LRE,16,Jacobian,13,lm,29
+2024-07-12 16:43:12 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,5,lm,28
+2024-07-12 16:43:19 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,0,lm,45
+2024-07-12 16:43:27 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,14,Jacobian,12,lm,49
+2024-07-12 16:43:33 __main__ INFO     synonyms - exact,beta,3.33,LRE,2,Jacobian,2,lm,24
+2024-07-12 16:43:40 __main__ INFO     hypernyms - animals,beta,3.33,LRE,34,Jacobian,34,lm,42
+2024-07-12 16:43:47 __main__ INFO     country - capital,beta,3.33,LRE,1,Jacobian,1,lm,36
+2024-07-12 16:43:47 __main__ INFO     using beta=3.33, iter=6
+2024-07-12 16:43:53 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,5,lm,23
+2024-07-12 16:44:00 __main__ INFO     animal - youth,beta,3.33,LRE,25,Jacobian,20,lm,34
+2024-07-12 16:44:07 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,28,lm,50
+2024-07-12 16:44:15 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,3,lm,47
+2024-07-12 16:44:23 __main__ INFO     verb+able_reg,beta,3.33,LRE,18,Jacobian,18,lm,47
+2024-07-12 16:44:29 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,11
+2024-07-12 16:44:36 __main__ INFO     antonyms - binary,beta,3.33,LRE,29,Jacobian,30,lm,40
+2024-07-12 16:44:42 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,49,Jacobian,19,lm,50
+2024-07-12 16:44:49 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,4,lm,43
+2024-07-12 16:44:57 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,48,Jacobian,36,lm,49
+2024-07-12 16:45:05 __main__ INFO     country - language,beta,3.33,LRE,13,Jacobian,13,lm,39
+2024-07-12 16:45:11 __main__ INFO     meronyms - part,beta,3.33,LRE,13,Jacobian,13,lm,28
+2024-07-12 16:45:19 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,47,Jacobian,46,lm,49
+2024-07-12 16:45:25 __main__ INFO     animal - shelter,beta,3.33,LRE,19,Jacobian,11,lm,29
+2024-07-12 16:45:31 __main__ INFO     hypernyms - misc,beta,3.33,LRE,26,Jacobian,15,lm,30
+2024-07-12 16:45:38 __main__ INFO     meronyms - substance,beta,3.33,LRE,12,Jacobian,13,lm,39
+2024-07-12 16:45:46 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,45,Jacobian,43,lm,50
+2024-07-12 16:45:53 __main__ INFO     un+adj_reg,beta,3.33,LRE,20,Jacobian,33,lm,49
+2024-07-12 16:46:00 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,32,Jacobian,32,lm,49
+2024-07-12 16:46:07 __main__ INFO     adj+ness_reg,beta,3.33,LRE,10,Jacobian,10,lm,43
+2024-07-12 16:46:13 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,50
+2024-07-12 16:46:20 __main__ INFO     verb+er_irreg,beta,3.33,LRE,6,Jacobian,9,lm,47
+2024-07-12 16:46:26 __main__ INFO     adj+ly_reg,beta,3.33,LRE,28,Jacobian,2,lm,49
+2024-07-12 16:46:33 __main__ INFO     name - occupation,beta,3.33,LRE,37,Jacobian,14,lm,42
+2024-07-12 16:46:36 __main__ INFO     synonyms - intensity,beta,3.33,LRE,5,Jacobian,7,lm,25
+2024-07-12 16:46:41 __main__ INFO     animal - sound,beta,3.33,LRE,11,Jacobian,9,lm,30
+2024-07-12 16:46:48 __main__ INFO     noun - plural_reg,beta,3.33,LRE,45,Jacobian,50,lm,50
+2024-07-12 16:46:54 __main__ INFO     Ving - verb_inf,beta,3.33,LRE,26,Jacobian,18,lm,49
+2024-07-12 16:47:00 __main__ INFO     male - female,beta,3.33,LRE,2,Jacobian,2,lm,35
+2024-07-12 16:47:07 __main__ INFO     verb_3pSg - Ved,beta,3.33,LRE,43,Jacobian,48,lm,49
+2024-07-12 16:47:12 __main__ INFO     meronyms - member,beta,3.33,LRE,17,Jacobian,12,lm,29
+2024-07-12 16:47:16 __main__ INFO     hyponyms - misc,beta,3.33,LRE,0,Jacobian,6,lm,29
+2024-07-12 16:47:22 __main__ INFO     adj - superlative,beta,3.33,LRE,6,Jacobian,1,lm,44
+2024-07-12 16:47:29 __main__ INFO     verb+tion_irreg,beta,3.33,LRE,21,Jacobian,22,lm,49
+2024-07-12 16:47:34 __main__ INFO     synonyms - exact,beta,3.33,LRE,2,Jacobian,1,lm,17
+2024-07-12 16:47:40 __main__ INFO     hypernyms - animals,beta,3.33,LRE,38,Jacobian,32,lm,40
+2024-07-12 16:47:46 __main__ INFO     country - capital,beta,3.33,LRE,0,Jacobian,0,lm,35
+2024-07-12 16:47:46 __main__ INFO     using beta=3.33, iter=7
+2024-07-12 16:47:50 __main__ INFO     name - nationality,beta,3.33,LRE,12,Jacobian,5,lm,23
+2024-07-12 16:47:54 __main__ INFO     animal - youth,beta,3.33,LRE,25,Jacobian,19,lm,34
+2024-07-12 16:48:00 __main__ INFO     verb_Ving - 3pSg,beta,3.33,LRE,43,Jacobian,33,lm,50
+2024-07-12 16:48:05 __main__ INFO     noun+less_reg,beta,3.33,LRE,2,Jacobian,2,lm,49
+2024-07-12 16:48:11 __main__ INFO     verb+able_reg,beta,3.33,LRE,16,Jacobian,19,lm,47
+2024-07-12 16:48:16 __main__ INFO     UK_city - county,beta,3.33,LRE,0,Jacobian,0,lm,11
+2024-07-12 16:48:23 __main__ INFO     antonyms - binary,beta,3.33,LRE,29,Jacobian,28,lm,42
+2024-07-12 16:48:28 __main__ INFO     verb_inf - 3pSg,beta,3.33,LRE,43,Jacobian,8,lm,50
+2024-07-12 16:48:33 __main__ INFO     re+verb_reg,beta,3.33,LRE,1,Jacobian,5,lm,40
+2024-07-12 16:48:39 __main__ INFO     verb_inf - Ved,beta,3.33,LRE,47,Jacobian,41,lm,49
+2024-07-12 16:48:46 __main__ INFO     country - language,beta,3.33,LRE,13,Jacobian,9,lm,39
+2024-07-12 16:48:50 __main__ INFO     meronyms - part,beta,3.33,LRE,15,Jacobian,13,lm,31
+2024-07-12 16:48:56 __main__ INFO     verb_Ving - Ved,beta,3.33,LRE,46,Jacobian,42,lm,49
+2024-07-12 16:49:03 __main__ INFO     animal - shelter,beta,3.33,LRE,21,Jacobian,10,lm,28
+2024-07-12 16:49:10 __main__ INFO     hypernyms - misc,beta,3.33,LRE,28,Jacobian,20,lm,30
+2024-07-12 16:49:17 __main__ INFO     meronyms - substance,beta,3.33,LRE,13,Jacobian,10,lm,40
+2024-07-12 16:49:26 __main__ INFO     noun - plural_irreg,beta,3.33,LRE,46,Jacobian,45,lm,49
+2024-07-12 16:49:34 __main__ INFO     un+adj_reg,beta,3.33,LRE,14,Jacobian,22,lm,50
+2024-07-12 16:49:41 __main__ INFO     verb+ment_irreg,beta,3.33,LRE,34,Jacobian,36,lm,47
+2024-07-12 16:49:50 __main__ INFO     adj+ness_reg,beta,3.33,LRE,10,Jacobian,9,lm,42
+2024-07-12 16:49:59 __main__ INFO     over+adj_reg,beta,3.33,LRE,1,Jacobian,0,lm,49

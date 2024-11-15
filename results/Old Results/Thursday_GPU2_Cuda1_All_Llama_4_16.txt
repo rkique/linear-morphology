@@ -1,0 +1,45 @@
+2024-08-01 09:56:46 __main__ INFO     name - nationality,7,24,28,20,27,3,28,0,0
+2024-08-01 09:58:04 __main__ INFO     animal - youth,7,17,22,10,23,12,22,0,0
+2024-08-01 10:00:18 __main__ INFO     verb_Ving - 3pSg,7,34,49,15,49,0,0,0,0
+2024-08-01 10:02:54 __main__ INFO     noun+less_reg,7,40,47,39,48,5,48,0,0
+2024-08-01 10:04:12 llra.build INFO     llama_13_31_approx/verb+able_reg/afford/s_o_weight_13_31.pt does not exist, skipping
+2024-08-01 10:04:18 llra.build INFO     llama_13_31_approx/verb+able_reg/afford/s_o_bias_13_31.pt does not exist, skipping
+2024-08-01 10:05:53 __main__ INFO     verb+able_reg,7,46,50,38,50,2,49,0,0
+2024-08-01 10:08:15 __main__ INFO     UK_city - county,7,14,20,12,20,1,21,0,0
+2024-08-01 10:10:37 __main__ INFO     antonyms - binary,7,33,45,30,45,3,43,0,0
+2024-08-01 10:13:03 __main__ INFO     verb_inf - 3pSg,7,50,50,47,50,2,50,0,0
+2024-08-01 10:15:49 __main__ INFO     re+verb_reg,7,48,50,1,50,50,50,0,0
+2024-08-01 10:18:52 __main__ INFO     verb_inf - Ved,7,48,49,47,49,2,49,0,0
+2024-08-01 10:21:29 __main__ INFO     country - language,7,36,39,19,39,11,41,0,0
+2024-08-01 10:22:37 __main__ INFO     meronyms - part,7,8,36,6,32,1,29,0,0
+2024-08-01 10:26:30 __main__ INFO     verb_Ving - Ved,7,47,49,35,49,0,0,0,0
+2024-08-01 10:29:23 __main__ INFO     animal - shelter,7,15,27,9,30,15,33,0,0
+2024-08-01 10:30:57 __main__ INFO     hypernyms - misc,7,25,36,22,35,9,31,0,0
+2024-08-01 10:32:53 __main__ INFO     meronyms - substance,7,20,35,13,38,13,38,0,0
+2024-08-01 10:35:40 __main__ INFO     noun - plural_irreg,7,38,48,34,48,1,47,0,0
+2024-08-01 10:38:36 __main__ INFO     un+adj_reg,7,50,50,4,50,50,50,0,0
+2024-08-01 10:41:39 __main__ INFO     verb+ment_irreg,7,41,50,39,50,10,50,0,0
+2024-08-01 10:44:15 __main__ INFO     adj+ness_reg,7,45,46,43,46,2,46,0,0
+2024-08-01 10:46:36 __main__ INFO     over+adj_reg,7,50,50,0,0,50,50,0,0
+2024-08-01 10:49:06 __main__ INFO     verb+er_irreg,7,44,47,41,47,2,47,0,0
+2024-08-01 10:51:17 __main__ INFO     adj+ly_reg,7,49,49,49,49,3,49,0,0
+2024-08-01 10:53:39 __main__ INFO     name - occupation,7,43,47,39,46,18,48,0,0
+2024-08-01 10:55:48 __main__ INFO     synonyms - intensity,7,11,30,10,30,3,28,0,0
+2024-08-01 10:57:59 __main__ INFO     animal - sound,7,25,29,17,29,3,27,0,0
+2024-08-01 11:00:21 __main__ INFO     noun - plural_reg,7,50,50,50,50,2,50,0,0
+2024-08-01 11:02:38 __main__ INFO     Ving - verb_inf,7,50,50,31,50,1,50,0,0
+2024-08-01 11:03:10 llra.build INFO     llama_10_31_approx/male - female/sculptor/s_o_weight_10_31.pt does not exist, skipping
+2024-08-01 11:03:10 llra.build INFO     llama_10_31_approx/male - female/sculptor/s_o_bias_10_31.pt does not exist, skipping
+2024-08-01 11:04:38 __main__ INFO     male - female,7,12,39,11,38,3,38,0,0
+2024-08-01 11:06:37 __main__ INFO     verb_3pSg - Ved,7,49,49,48,48,2,49,0,0
+2024-08-01 11:08:24 __main__ INFO     meronyms - member,7,18,35,13,33,3,35,0,0
+2024-08-01 11:10:27 __main__ INFO     things - color,7,43,49,26,49,35,49,0,0
+2024-08-01 11:12:24 __main__ INFO     hyponyms - misc,7,9,28,8,29,6,29,0,0
+2024-08-01 11:14:26 __main__ INFO     adj - superlative,7,33,39,31,39,1,39,0,0
+2024-08-01 11:16:48 __main__ INFO     verb+tion_irreg,7,43,49,35,48,3,48,0,0
+2024-08-01 11:16:55 llra.build INFO     llama_6_31_approx/synonyms - exact/airplane/s_o_weight_6_31.pt does not exist, skipping
+2024-08-01 11:16:55 llra.build INFO     llama_6_31_approx/synonyms - exact/airplane/s_o_bias_6_31.pt does not exist, skipping
+2024-08-01 11:17:45 llra.build INFO     llama_13_31_approx/synonyms - exact/incorrect/s_o_weight_13_31.pt does not exist, skipping
+2024-08-01 11:17:47 llra.build INFO     llama_13_31_approx/synonyms - exact/harbor/s_o_bias_13_31.pt does not exist, skipping
+2024-08-01 11:17:47 llra.build INFO     llama_13_31_approx/synonyms - exact/incorrect/s_o_bias_13_31.pt does not exist, skipping
+2024-08-01 11:17:47 llra.build INFO     llama_13_31_approx/synonyms - exact/list/s_o_bias_13_31.pt does not exist, skipping

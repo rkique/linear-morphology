@@ -1,3 +1,4 @@
+
 from dataclasses import dataclass
 from typing import Sequence
 #ArrayLike is list OR tuple OR np.array OR tensor
@@ -7,10 +8,7 @@ from lre.lretyping import ArrayLike, StrSequence
 import numpy as np
 from dataclasses_json import DataClassJsonMixin
 
-#matching any character prefix makes for a potentially flawed analysis: does it work in practice?
-#Let's match 2+ characters in the prediction.
-
-
+#matching any character prefix makes for a potentially flawed analysis. Let's match 2+ characters in the prediction.
 #Checks if a prediction is a substring of the target string.
 def is_nontrivial_prefix(prediction: str, target: str) -> bool:
     target = target.lower().strip()
@@ -22,7 +20,6 @@ def is_nontrivial_prefix(prediction: str, target: str) -> bool:
 def any_is_nontrivial_prefix(predictions: StrSequence, targets: list[str]) -> bool:
     return any(any(is_nontrivial_prefix(p, target) for p in predictions) for target in targets)
 
-#TODO: look at tokenized outputs.
 #recall@1: top1 is correct, recall@2: top2 is correct.
 def recall(predictions: Sequence[StrSequence], targets: StrSequence) -> list[float]:
     _validate_same_length(predictions=predictions, target=targets)

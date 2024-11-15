@@ -1,0 +1,366 @@
+2024-07-16 10:52:47 root INFO     loading model + tokenizer
+2024-07-16 10:53:03 root INFO     model + tokenizer loaded
+2024-07-16 10:53:03 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on old country capital
+2024-07-16 10:53:03 root INFO     building operator old country capital
+2024-07-16 10:53:04 root INFO     [order_1_approx] starting weight calculation for Colombia B
+Germany B
+Argentina B
+Japan T
+Canada O
+South Korea S
+Saudi Arabia R
+United States
+2024-07-16 10:53:04 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 10:59:43 root INFO     loading model + tokenizer
+2024-07-16 11:00:00 root INFO     model + tokenizer loaded
+2024-07-16 11:00:00 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on old country capital
+2024-07-16 11:00:00 root INFO     building operator old country capital
+2024-07-16 11:00:01 root INFO     [order_1_approx] starting weight calculation for The capital city of Mexico is ['M', 'e', 'x', 'i', 'c', 'o', ' ', 'C', 'i', 't', 'y']
+The capital city of Pakistan is ['I', 's', 'l', 'a', 'm', 'a', 'b', 'a', 'd']
+The capital city of Russia is ['M', 'o', 's', 'c', 'o', 'w']
+The capital city of Canada is ['O', 't', 't', 'a', 'w', 'a']
+The capital city of Peru is ['L', 'i', 'm', 'a']
+The capital city of Germany is ['B', 'e', 'r', 'l', 'i', 'n']
+The capital city of Saudi Arabia is ['R', 'i', 'y', 'a', 'd', 'h']
+The capital city of Colombia is
+2024-07-16 11:00:01 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:01:00 root INFO     loading model + tokenizer
+2024-07-16 11:01:16 root INFO     model + tokenizer loaded
+2024-07-16 11:01:16 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on old country capital
+2024-07-16 11:01:16 root INFO     building operator old country capital
+2024-07-16 11:02:22 root INFO     loading model + tokenizer
+2024-07-16 11:02:38 root INFO     model + tokenizer loaded
+2024-07-16 11:02:38 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on old country capital
+2024-07-16 11:02:38 root INFO     building operator old country capital
+2024-07-16 11:02:39 root INFO     [order_1_approx] starting weight calculation for The capital city of Turkey is Ankara
+The capital city of Pakistan is Islamabad
+The capital city of Colombia is Bogot\u00e1
+The capital city of Argentina is Buenos Aires
+The capital city of Peru is Lima
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is Riyadh
+The capital city of Japan is
+2024-07-16 11:02:39 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:06:51 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.8101,  0.1172,  0.4688,  ..., -0.0338, -0.4028,  0.4600],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.6489,  0.5039, -2.5020,  ..., -1.9102, -0.3154, -1.3359],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0101,  0.0038,  0.0136,  ...,  0.0073,  0.0196, -0.0224],
+        [ 0.0055,  0.0052,  0.0235,  ...,  0.0181,  0.0044,  0.0093],
+        [ 0.0055, -0.0065, -0.0088,  ..., -0.0032, -0.0049, -0.0036],
+        ...,
+        [-0.0036,  0.0019,  0.0259,  ...,  0.0157, -0.0006,  0.0121],
+        [ 0.0042, -0.0036, -0.0300,  ..., -0.0239, -0.0196, -0.0018],
+        [-0.0186, -0.0029,  0.0120,  ..., -0.0036,  0.0131, -0.0154]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.7583, -0.0098, -2.0449,  ..., -2.4082,  0.3657, -1.9180]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:06:51 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Turkey is Ankara
+The capital city of Pakistan is Islamabad
+The capital city of Colombia is Bogot\u00e1
+The capital city of Argentina is Buenos Aires
+The capital city of Peru is Lima
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is Riyadh
+The capital city of Japan is
+2024-07-16 11:06:52 root INFO     [order_1_approx] starting weight calculation for The capital city of Turkey is Ankara
+The capital city of Peru is Lima
+The capital city of Pakistan is Islamabad
+The capital city of Argentina is Buenos Aires
+The capital city of Colombia is Bogot\u00e1
+The capital city of Japan is Tokyo
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is
+2024-07-16 11:06:52 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:11:04 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.7651, -0.9536,  0.2993,  ..., -0.4087,  0.2363,  0.3379],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-2.1797, -1.4707, -0.9688,  ..., -1.3984,  1.1846,  0.1863],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0010, -0.0005,  0.0034,  ..., -0.0085,  0.0009, -0.0182],
+        [-0.0147,  0.0097,  0.0125,  ...,  0.0409,  0.0109,  0.0165],
+        [ 0.0083,  0.0026, -0.0276,  ..., -0.0125, -0.0201, -0.0091],
+        ...,
+        [-0.0105, -0.0010, -0.0131,  ...,  0.0126, -0.0104, -0.0015],
+        [ 0.0377, -0.0322, -0.0095,  ..., -0.0559,  0.0088, -0.0126],
+        [ 0.0018, -0.0139, -0.0043,  ...,  0.0006,  0.0069, -0.0191]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-2.3242, -1.5576, -0.7490,  ..., -0.3359,  2.0020,  0.7246]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:11:05 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Turkey is Ankara
+The capital city of Peru is Lima
+The capital city of Pakistan is Islamabad
+The capital city of Argentina is Buenos Aires
+The capital city of Colombia is Bogot\u00e1
+The capital city of Japan is Tokyo
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is
+2024-07-16 11:11:06 root INFO     [order_1_approx] starting weight calculation for The capital city of Peru is Lima
+The capital city of Colombia is Bogot\u00e1
+The capital city of Saudi Arabia is Riyadh
+The capital city of Turkey is Ankara
+The capital city of Japan is Tokyo
+The capital city of Pakistan is Islamabad
+The capital city of Argentina is Buenos Aires
+The capital city of Spain is
+2024-07-16 11:11:06 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:15:18 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.6030,  0.1306, -0.2029,  ...,  0.4050, -0.2465,  0.0194],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.2949,  0.0625,  0.2261,  ...,  1.0381, -0.0884, -3.6836],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0083,  0.0068,  0.0018,  ..., -0.0021,  0.0153, -0.0088],
+        [ 0.0006,  0.0106,  0.0329,  ...,  0.0186, -0.0041, -0.0128],
+        [-0.0144,  0.0084, -0.0276,  ...,  0.0047,  0.0043,  0.0084],
+        ...,
+        [-0.0049, -0.0016,  0.0330,  ...,  0.0345, -0.0133, -0.0204],
+        [-0.0022, -0.0018, -0.0239,  ...,  0.0054,  0.0061, -0.0020],
+        [-0.0060, -0.0151, -0.0036,  ..., -0.0196,  0.0083,  0.0006]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 0.9331, -0.3977, -0.0074,  ...,  0.4863,  0.4175, -4.0273]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:15:19 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Peru is Lima
+The capital city of Colombia is Bogot\u00e1
+The capital city of Saudi Arabia is Riyadh
+The capital city of Turkey is Ankara
+The capital city of Japan is Tokyo
+The capital city of Pakistan is Islamabad
+The capital city of Argentina is Buenos Aires
+The capital city of Spain is
+2024-07-16 11:15:19 root INFO     [order_1_approx] starting weight calculation for The capital city of Argentina is Buenos Aires
+The capital city of Colombia is Bogot\u00e1
+The capital city of Japan is Tokyo
+The capital city of Turkey is Ankara
+The capital city of Spain is Madrid
+The capital city of Pakistan is Islamabad
+The capital city of Saudi Arabia is Riyadh
+The capital city of Peru is
+2024-07-16 11:15:20 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:19:33 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.3582, -0.2013, -1.3281,  ...,  0.3496,  1.0400,  0.1194],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-2.7422,  1.0059, -0.7026,  ...,  0.6348,  2.7422,  1.4443],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0058,  0.0073, -0.0044,  ...,  0.0007,  0.0017, -0.0016],
+        [-0.0058,  0.0071,  0.0275,  ...,  0.0096, -0.0093, -0.0068],
+        [ 0.0004, -0.0056, -0.0221,  ...,  0.0041,  0.0102,  0.0096],
+        ...,
+        [ 0.0056,  0.0144,  0.0253,  ...,  0.0009, -0.0116, -0.0006],
+        [-0.0117, -0.0161,  0.0024,  ..., -0.0008, -0.0012, -0.0018],
+        [ 0.0154, -0.0167, -0.0047,  ...,  0.0048,  0.0036, -0.0014]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.7949,  0.8198, -1.8418,  ...,  0.9150,  2.2070,  0.3760]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:19:33 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Argentina is Buenos Aires
+The capital city of Colombia is Bogot\u00e1
+The capital city of Japan is Tokyo
+The capital city of Turkey is Ankara
+The capital city of Spain is Madrid
+The capital city of Pakistan is Islamabad
+The capital city of Saudi Arabia is Riyadh
+The capital city of Peru is
+2024-07-16 11:19:34 root INFO     [order_1_approx] starting weight calculation for The capital city of Peru is Lima
+The capital city of Pakistan is Islamabad
+The capital city of Turkey is Ankara
+The capital city of Saudi Arabia is Riyadh
+The capital city of Spain is Madrid
+The capital city of Argentina is Buenos Aires
+The capital city of Japan is Tokyo
+The capital city of Colombia is
+2024-07-16 11:19:34 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:23:43 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0669,  0.5898, -0.6519,  ...,  1.1602,  0.8936,  0.3462],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-2.7695,  0.3101,  3.8906,  ..., -1.8887, -1.3408,  3.4727],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0130, -0.0036, -0.0043,  ...,  0.0230, -0.0030, -0.0064],
+        [ 0.0114, -0.0002,  0.0125,  ...,  0.0231, -0.0048,  0.0094],
+        [-0.0279, -0.0140, -0.0456,  ...,  0.0265,  0.0058, -0.0089],
+        ...,
+        [ 0.0096,  0.0051,  0.0180,  ...,  0.0184,  0.0125,  0.0160],
+        [ 0.0140, -0.0193,  0.0131,  ..., -0.0274,  0.0030,  0.0103],
+        [ 0.0044, -0.0088, -0.0138,  ...,  0.0255,  0.0148, -0.0310]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-2.0938, -0.2007,  1.6035,  ..., -3.0234,  0.0566,  2.5703]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:23:44 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Peru is Lima
+The capital city of Pakistan is Islamabad
+The capital city of Turkey is Ankara
+The capital city of Saudi Arabia is Riyadh
+The capital city of Spain is Madrid
+The capital city of Argentina is Buenos Aires
+The capital city of Japan is Tokyo
+The capital city of Colombia is
+2024-07-16 11:23:44 root INFO     [order_1_approx] starting weight calculation for The capital city of Peru is Lima
+The capital city of Saudi Arabia is Riyadh
+The capital city of Japan is Tokyo
+The capital city of Pakistan is Islamabad
+The capital city of Spain is Madrid
+The capital city of Colombia is Bogot\u00e1
+The capital city of Turkey is Ankara
+The capital city of Argentina is
+2024-07-16 11:23:44 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:27:55 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-2.8149e-01,  6.2744e-01, -5.4980e-01,  ..., -2.8687e-01,
+         7.4609e-01, -2.7466e-04], device='cuda:0', dtype=torch.float16,
+       grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.1328,  2.8594, -3.4355,  ...,  0.3994, -0.4976, -1.9932],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0081,  0.0070, -0.0041,  ...,  0.0137,  0.0054, -0.0058],
+        [ 0.0019, -0.0075,  0.0147,  ...,  0.0163,  0.0088, -0.0065],
+        [ 0.0007,  0.0153, -0.0128,  ...,  0.0050,  0.0005,  0.0122],
+        ...,
+        [-0.0010, -0.0045,  0.0230,  ...,  0.0109, -0.0161,  0.0048],
+        [-0.0096, -0.0146,  0.0029,  ..., -0.0187,  0.0277,  0.0042],
+        [-0.0044, -0.0075, -0.0161,  ..., -0.0165, -0.0089,  0.0047]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.2393,  2.7793, -3.7012,  ...,  0.9258, -0.2783, -1.4111]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:27:56 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Peru is Lima
+The capital city of Saudi Arabia is Riyadh
+The capital city of Japan is Tokyo
+The capital city of Pakistan is Islamabad
+The capital city of Spain is Madrid
+The capital city of Colombia is Bogot\u00e1
+The capital city of Turkey is Ankara
+The capital city of Argentina is
+2024-07-16 11:27:56 root INFO     [order_1_approx] starting weight calculation for The capital city of Japan is Tokyo
+The capital city of Argentina is Buenos Aires
+The capital city of Pakistan is Islamabad
+The capital city of Spain is Madrid
+The capital city of Peru is Lima
+The capital city of Colombia is Bogot\u00e1
+The capital city of Saudi Arabia is Riyadh
+The capital city of Turkey is
+2024-07-16 11:27:57 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:32:10 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.3149,  0.4121, -0.4614,  ..., -0.6235, -0.1089,  0.2556],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.1783,  2.2812,  0.5664,  ...,  2.5605,  2.0879, -6.2734],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0006, -0.0071,  0.0026,  ...,  0.0102,  0.0315, -0.0293],
+        [-0.0145, -0.0307,  0.0159,  ...,  0.0097, -0.0134,  0.0084],
+        [ 0.0100,  0.0090, -0.0145,  ...,  0.0004, -0.0150, -0.0269],
+        ...,
+        [-0.0186, -0.0077,  0.0006,  ...,  0.0247,  0.0052,  0.0048],
+        [ 0.0066, -0.0167, -0.0133,  ..., -0.0136,  0.0119,  0.0285],
+        [ 0.0003,  0.0005,  0.0011,  ...,  0.0074,  0.0248, -0.0285]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.4893,  2.0020, -0.3149,  ...,  2.6738,  2.8965, -6.0820]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:32:11 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Japan is Tokyo
+The capital city of Argentina is Buenos Aires
+The capital city of Pakistan is Islamabad
+The capital city of Spain is Madrid
+The capital city of Peru is Lima
+The capital city of Colombia is Bogot\u00e1
+The capital city of Saudi Arabia is Riyadh
+The capital city of Turkey is
+2024-07-16 11:32:11 root INFO     [order_1_approx] starting weight calculation for The capital city of Japan is Tokyo
+The capital city of Argentina is Buenos Aires
+The capital city of Peru is Lima
+The capital city of Turkey is Ankara
+The capital city of Colombia is Bogot\u00e1
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is Riyadh
+The capital city of Pakistan is
+2024-07-16 11:32:11 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-16 11:36:25 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.1035,  0.0009, -0.3552,  ..., -0.3584,  0.5044,  0.0632],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 0.6860, -2.4551,  0.2993,  ...,  0.9951,  2.7246,  0.8696],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0042, -0.0082, -0.0078,  ...,  0.0407,  0.0064, -0.0064],
+        [ 0.0161, -0.0163,  0.0402,  ...,  0.0013, -0.0032,  0.0074],
+        [-0.0037,  0.0113, -0.0255,  ...,  0.0056, -0.0016, -0.0112],
+        ...,
+        [ 0.0004, -0.0053,  0.0368,  ..., -0.0114, -0.0073,  0.0171],
+        [ 0.0003,  0.0083, -0.0049,  ..., -0.0026, -0.0077,  0.0082],
+        [-0.0104, -0.0051, -0.0039,  ...,  0.0160, -0.0054, -0.0100]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.1895, -1.3223,  0.1814,  ...,  0.9717,  2.3184, -0.5522]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-16 11:36:26 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The capital city of Japan is Tokyo
+The capital city of Argentina is Buenos Aires
+The capital city of Peru is Lima
+The capital city of Turkey is Ankara
+The capital city of Colombia is Bogot\u00e1
+The capital city of Spain is Madrid
+The capital city of Saudi Arabia is Riyadh
+The capital city of Pakistan is
+2024-07-16 11:36:26 root INFO     total operator prediction time: 2028.0289063453674 seconds
+2024-07-16 14:40:55 root INFO     loading model + tokenizer
+2024-07-16 14:41:12 root INFO     model + tokenizer loaded
+2024-07-16 14:41:12 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-16 14:41:12 root INFO     building operator meronyms - part
+2024-07-16 14:41:13 root INFO     [order_1_approx] starting weight calculation for A part of a pub is a barbarroomtaproomsaloonginmill
+A part of a dress is a sleeveslideplastronzipzipperfastenerhemlinebodicenecklinewaistlinebeltslide_fastenerzip_fastener
+A part of a gun is a triggerholdersafetyextractorclipmagazinebarrelhammerviewfindergunsightstockcartridgeremoverchamberejectorcockcatchfindermechanismgunstocklockactionmuzzlekeygunlockcartridge_holdergun_muzzlegun-sightaction_mechanismgun_chambergun_triggerfiring_mechanismsafety_lockcartridge_extractorfiring_chambercartridge_ejectorview_findercartridge_clipgun_barrelsafety_catchcartridge_remover
+A part of a litre is a millilitreccmlmillilitercldldecilitermilcubic_centimetrecentiliterdecilitrecubic_centimetercentilitrecubic_millimetercubic_millimetre
+A part of a movie is a scenesubtitlesfootagecreditepisodeshotsequencecreditscaption
+A part of a byte is a bit
+A part of a deer is a antlerantlerswithersflagscut
+A part of a radio is a
+2024-07-16 14:41:13 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7
+2024-07-16 14:41:49 root INFO     loading model + tokenizer
+2024-07-16 14:42:05 root INFO     model + tokenizer loaded
+2024-07-16 14:42:05 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on meronyms - part
+2024-07-16 14:42:05 root INFO     building operator meronyms - part
+2024-07-16 14:42:06 root INFO     [order_1_approx] starting weight calculation for A part of a academia is a college
+A part of a jail is a cell
+A part of a piano is a keyboard
+A part of a brush is a bristle
+A part of a gramm is a milligram
+A part of a door is a hinge
+A part of a day is a hour
+A part of a tripod is a
+2024-07-16 14:42:06 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.7

@@ -1,0 +1,1244 @@
+2024-07-15 11:03:44 __main__ INFO     using beta=33.3, iter=0
+2024-07-15 11:03:47 root INFO     balzac ['literary', 'french', 'guild', 'fetch', 'rely'] ['recourse', 'literary', 'fetch', 'rely', 'resort']
+2024-07-15 11:03:47 root INFO     confucius ['lat', 'classical', 'loc', 'lou', 'curs'] ['curs', 'classical', 'lax', 'lobe', 'loc']
+2024-07-15 11:03:48 __main__ INFO     name - nationality,beta,33.3,LRE,5,Jacobian,2,lm,24
+2024-07-15 11:03:50 root INFO     ape ['we', 'lit', 'kit', 'Kit', 'young'] ['we', 'lit', 'UA', 'Kit', 'lit']
+2024-07-15 11:03:51 root INFO     bear ['cub', 'kit', 'kit', 'we', 'kits'] ['kit', 'cub', 'kit', 'we', 'kits']
+2024-07-15 11:03:51 root INFO     beaver ['kit', 'kit', 'lit', 'be', 'kits'] ['lit', 'kit', 'kit', 'be', 'kits']
+2024-07-15 11:03:51 root INFO     bee ['pup', 'kit', 'p', 'we', 'lar'] ['pup', 'kit', 'p', 'we', 'lar']
+2024-07-15 11:03:52 __main__ INFO     animal - youth,beta,33.3,LRE,19,Jacobian,18,lm,34
+2024-07-15 11:03:55 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:03:55 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:03:55 root INFO     allowing ['allowing', 'enabling', 'permitting', 'allows', 'is'] ['allowing', 'permitting', 'enabling', 'requiring', 'allows']
+2024-07-15 11:03:55 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'appar'] ['appearing', 'app', 'appearances', 'appar', 'Appearances']
+2024-07-15 11:03:55 root INFO     applying ['applying', 'app', 'applic', 'applications', 'applies'] ['applying', 'app', 'applic', 'applications', 'application']
+2024-07-15 11:03:57 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,42,Jacobian,33,lm,50
+2024-07-15 11:04:00 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:04:00 root INFO     art ['art', 'art', 'Art', 'artist', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:04:00 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:04:00 root INFO     breath ['breath', 'Breath', 'breat', 'breathing', 'breathe'] ['breath', 'Breath', 'breat', 'breathe', 'breathing']
+2024-07-15 11:04:00 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'Car', 'car']
+2024-07-15 11:04:02 __main__ INFO     noun+less_reg,beta,33.3,LRE,3,Jacobian,2,lm,48
+2024-07-15 11:04:05 root INFO     accept ['accept', 'acceptable', 'Accept', 'acceptance', 'accept'] ['Accept', 'accept', 'accept', 'acceptance', 'acceptable']
+2024-07-15 11:04:05 root INFO     adapt ['adapt', 'ad', 'adopt', 'ad', 'adapt'] ['adapt', 'Ad', 'ad', 'ad', 'adapt']
+2024-07-15 11:04:05 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'adapt'] ['adjust', 'adjust', 'adjustable', 'adjustment', 'Adjust']
+2024-07-15 11:04:05 root INFO     admire ['Ad', 'admire', 'ad', 'admiration', 'admirable'] ['Ad', 'ad', 'admire', 'admiration', 'Ad']
+2024-07-15 11:04:07 __main__ INFO     verb+able_reg,beta,33.3,LRE,21,Jacobian,19,lm,48
+2024-07-15 11:04:11 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,12
+2024-07-15 11:04:14 root INFO     after ['before', 'after', 'ahead', 'before', 'pres'] ['before', 'before', 'after', 'ahead', 'al']
+2024-07-15 11:04:14 root INFO     ahead ['behind', 'behind', 'astern', 'after', 'ahead'] ['behind', 'behind', 'astern', 'hereafter', 'after']
+2024-07-15 11:04:14 root INFO     anterior ['posterior', 'poster', 'subsequent', 'pres', 'al'] ['posterior', 'subsequent', 'poster', 'al', 'pres']
+2024-07-15 11:04:14 root INFO     backward ['forward', 'forwards', 'forward', 'up', 'advance'] ['forward', 'forward', 'forwards', 'up', 'advance']
+2024-07-15 11:04:14 root INFO     before ['after', 'after', 'afterwards', 'behind', 'afterward'] ['after', 'after', 'afterwards', 'afterward', 'behind']
+2024-07-15 11:04:16 __main__ INFO     antonyms - binary,beta,33.3,LRE,33,Jacobian,33,lm,45
+2024-07-15 11:04:18 root INFO     accept ['accept', 'accept', 'accepted', 'accepts', 'Accept'] ['accept', 'accept', 'accepted', 'Accept', 'Accept']
+2024-07-15 11:04:18 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'achieved', 'achieves'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'achieved']
+2024-07-15 11:04:18 root INFO     add ['add', 'adds', 'include', 'ad', 'add'] ['add', 'adds', 'add', 'addr', 'include']
+2024-07-15 11:04:18 root INFO     agree ['agree', 'agreement', 'agrees', 'agreed', 'agree'] ['agree', 'agreement', 'agree', 'agreed', 'Agreement']
+2024-07-15 11:04:19 root INFO     allow ['allow', 'allow', 'allows', 'Allow', 'permit'] ['allow', 'allow', 'Allow', 'Allow', 'permit']
+2024-07-15 11:04:21 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,40,Jacobian,21,lm,50
+2024-07-15 11:04:23 root INFO     acquire ['re', 'reconsider', 'recal', 'reg', 'rethink'] ['reconsider', 'recal', 'reg', 'rethink', 're']
+2024-07-15 11:04:23 root INFO     adjust ['reconsider', 'reass', 'recal', 're', 'rethink'] ['reconsider', 'reass', 'recal', 'rethink', 'revise']
+2024-07-15 11:04:23 root INFO     appear ['red', 'reapp', 'reconsider', 'ré', 'reg'] ['red', 'ré', 'reapp', 'reconsider', 'reg']
+2024-07-15 11:04:23 root INFO     apply ['revisit', 'reg', 'reconsider', 'ré', 'Revis'] ['Revis', 'ré', 'revisit', ':[', 'Ré']
+2024-07-15 11:04:23 root INFO     appoint ['recon', 're', 'reapp', 'reass', 'appra'] ['recon', 'oversee', 'reapp', 'appoint', 'appra']
+2024-07-15 11:04:26 __main__ INFO     re+verb_reg,beta,33.3,LRE,6,Jacobian,6,lm,44
+2024-07-15 11:04:28 root INFO     accept ['accept', 'accept', 'accepted', 'Accept', 'Accept'] ['accept', 'accept', 'Accept', 'accepted', 'Accept']
+2024-07-15 11:04:28 root INFO     achieve ['achieve', 'achieved', 'Achieve', 'accomplish', 'achievable'] ['achieve', 'Achieve', 'achieved', 'accomplish', 'chieve']
+2024-07-15 11:04:28 root INFO     add ['add', 'add', 'added', 'address', 'adding'] ['add', 'add', 'Add', 'address', 'added']
+2024-07-15 11:04:28 root INFO     agree ['agree', 'agreed', 'agree', 'agreement', 'agreeing'] ['agree', 'agree', 'agreement', 'agreeing', 'agreed']
+2024-07-15 11:04:28 root INFO     allow ['allow', 'allow', 'Allow', 'allowed', 'allowing'] ['allow', 'allow', 'Allow', 'Allow', 'allowance']
+2024-07-15 11:04:31 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,48,Jacobian,36,lm,49
+2024-07-15 11:04:33 root INFO     argentina ['cast', 'nor', 'port', 'english', 'the'] ['cast', 'nor', 'port', 'the', 'english']
+2024-07-15 11:04:33 root INFO     australia ['english', 'cast', 'nor', 'eng', 'port'] ['english', 'cast', 'nor', 'eng', 'the']
+2024-07-15 11:04:33 root INFO     bahamas ['nor', 'cast', 'the', 'english', 'port'] ['nor', 'cast', 'the', 'english', 'port']
+2024-07-15 11:04:35 __main__ INFO     country - language,beta,33.3,LRE,12,Jacobian,12,lm,38
+2024-07-15 11:04:38 root INFO     apartment ['room', 'floor', 'sill', 'do', 'term'] ['room', 'floor', 'sill', 'do', 'term']
+2024-07-15 11:04:38 root INFO     bird ['bird', 'pigeon', 'bird', 'dove', 'goose'] ['bird', 'pigeon', 'bird', 'dove', 'nesting']
+2024-07-15 11:04:39 __main__ INFO     meronyms - part,beta,33.3,LRE,13,Jacobian,12,lm,31
+2024-07-15 11:04:42 root INFO     adding ['adding', 'being', 'added', 'adding', 'Adding'] ['adding', 'adding', 'Adding', 'being', 'added']
+2024-07-15 11:04:42 root INFO     agreeing ['agreeing', 'agreed', 'ag', 'agreements', 'agreement'] ['agreeing', 'agreed', 'ag', 'agreements', 'agree']
+2024-07-15 11:04:42 root INFO     allowing ['allowed', 'allowing', 'being', 'is', 'been'] ['allowing', 'allowed', 'being', 'allowed', 'is']
+2024-07-15 11:04:42 root INFO     announcing ['been', 'being', 'announced', 'is', 'announced'] ['being', 'been', 'announced', 'announcing', 'is']
+2024-07-15 11:04:42 root INFO     appearing ['appearing', 'app', 'appar', 'appeared', 'being'] ['appearing', 'app', 'appar', 'App', 'being']
+2024-07-15 11:04:45 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,47,Jacobian,46,lm,49
+2024-07-15 11:04:47 root INFO     bat ['flight', 'wing', 'flying', 'wings', 'cave'] ['flight', 'wing', 'wings', 'flying', 'Flight']
+2024-07-15 11:04:47 root INFO     bear ['den', 'bur', 'reserve', 'wedge', 'cave'] ['den', 'wedge', 'reserve', 'bur', 'barr']
+2024-07-15 11:04:48 __main__ INFO     animal - shelter,beta,33.3,LRE,18,Jacobian,12,lm,28
+2024-07-15 11:04:51 root INFO     blender ['pant', 'wet', 'smooth', 'liquid', 'food'] ['wet', 'moist', 'smooth', 'pant', 'powered']
+2024-07-15 11:04:51 root INFO     bracelet ['jewelry', 'necklace', 'bracelet', 'jew', 'wrist'] ['jewelry', 'necklace', 'bracelet', 'wrist', 'jew']
+2024-07-15 11:04:51 root INFO     brooch ['jewelry', 'jewels', 'ornament', 'jew', 'jew'] ['jewelry', 'jew', 'jewels', 'necklace', 'ornament']
+2024-07-15 11:04:51 root INFO     cake ['cake', 'cakes', 'desserts', 'dessert', 'edible'] ['cakes', 'cake', 'desserts', 'dessert', 'baked']
+2024-07-15 11:04:52 __main__ INFO     hypernyms - misc,beta,33.3,LRE,21,Jacobian,16,lm,31
+2024-07-15 11:04:55 root INFO     beach ['oceans', 'o', 'ocean', 'surf', 'all'] ['oceans', 'o', 'oa', 'Sea', 'sea']
+2024-07-15 11:04:55 root INFO     beard ['hair', 'fur', '...', 'clothes', '...)'] ['ori', 'hair', 'clothes', 'oren', 'fur']
+2024-07-15 11:04:57 __main__ INFO     meronyms - substance,beta,33.3,LRE,16,Jacobian,12,lm,40
+2024-07-15 11:04:59 root INFO     ability ['abilities', 'Abilities', 'Ability', 'ability', 'Allow'] ['Abilities', 'abilities', 'Ability', 'Allow', 'ability']
+2024-07-15 11:04:59 root INFO     academy ['acad', 'Acad', 'academy', 'Academy', 'academ'] ['acad', 'Acad', 'academy', 'Academy', 'academ']
+2024-07-15 11:04:59 root INFO     activity ['activities', 'Activities', 'activ', 'activity', 'Activity'] ['activities', 'Activities', 'activ', 'Activ', 'Activity']
+2024-07-15 11:04:59 root INFO     agency ['agencies', 'agency', 'Agency', 'agency', 'Ag'] ['agencies', 'Agency', 'agency', 'agency', 'Ag']
+2024-07-15 11:04:59 root INFO     analysis ['analyses', 'analysis', 'analyze', 'Analy', 'Analysis'] ['analyses', 'Analy', 'Analysis', 'analy', 'analysis']
+2024-07-15 11:05:02 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,47,Jacobian,45,lm,48
+2024-07-15 11:05:04 root INFO     acceptable ['un', 'inc', 'uner', 'uncond', 'una'] ['un', 'inc', 'uner', 'una', 'uncond']
+2024-07-15 11:05:04 root INFO     affected ['un', 'inc', 'uner', 'ign', 'unt'] ['inc', 'uner', 'un', 'ign', 'unt']
+2024-07-15 11:05:04 root INFO     authorized ['unauthorized', 'una', 'un', 'uner', 'disav'] ['unauthorized', 'una', 'un', 'uner', 'ign']
+2024-07-15 11:05:04 root INFO     available ['un', 'unavailable', 'inc', 'Un', 'unob'] ['un', 'inc', 'ir', 'uner', 'unavailable']
+2024-07-15 11:05:07 __main__ INFO     un+adj_reg,beta,33.3,LRE,26,Jacobian,20,lm,49
+2024-07-15 11:05:09 root INFO     accomplish ['endeavor', 'fulfilling', 'act', 'fulfillment', 'emphasizing'] ['endeavor', 'fulfilling', 'act', 'emphasizing', 'admon']
+2024-07-15 11:05:09 root INFO     achieve ['achieving', 'en', 'achievement', 'ac', 'act'] ['en', 'ac', 'achieving', 'kus', 'ampa']
+2024-07-15 11:05:09 root INFO     acknowledge ['fulfil', 'acknowledgment', 'fulfillment', 'fulfilling', 'acknowledgement'] ['fulfil', 'acknowledgment', 'fulfilling', 'acknowledgement', 'fulfillment']
+2024-07-15 11:05:09 root INFO     adjust ['insistence', 'assurance', 'adequate', 'advis', 'admon'] ['advis', 'insistence', 'adequate', 'assurance', 'admon']
+2024-07-15 11:05:09 root INFO     advertise ['advertising', 'advert', 'advertisement', 'advertis', 'advertise'] ['advert', 'advertis', 'advertising', 'advertise', 'advertisement']
+2024-07-15 11:05:12 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,41,Jacobian,37,lm,50
+2024-07-15 11:05:14 root INFO     amazing ['amazing', 'amaz', 'amaz', 'Amazing', 'awesome'] ['amazing', 'amaz', 'amaz', 'Amazing', 'Amazing']
+2024-07-15 11:05:14 root INFO     attractive ['attractiveness', 'attractive', 'attract', 'attractions', 'att'] ['attractiveness', 'attractive', 'attract', 'att', 'attractions']
+2024-07-15 11:05:14 root INFO     aware ['aware', 'Aware', 'aware', 'WARE', 'Awareness'] ['aware', 'Aware', 'WARE', 'aware', 'Awareness']
+2024-07-15 11:05:14 root INFO     broken ['broken', 'Broken', 'BR', 'how', 'BR'] ['Broken', 'broken', 'BR', 'broken', 'Bro']
+2024-07-15 11:05:14 root INFO     careful ['careful', 'cautious', 'Care', 'CARE', 'precautions'] ['careful', 'Care', 'cautious', 'CARE', 'precautions']
+2024-07-15 11:05:16 __main__ INFO     adj+ness_reg,beta,33.3,LRE,12,Jacobian,10,lm,43
+2024-07-15 11:05:19 root INFO     ambitious ['ambitious', 'arrogant', 'boast', 'aggressive', 'big'] ['ambitious', 'arrogant', 'aggressive', 'big', 'boast']
+2024-07-15 11:05:19 root INFO     arching ['open', 'available', 'Greek', 'friendly', 'helpful'] ['ARK', 'AR', 'open', 'Arabic', 'Greek']
+2024-07-15 11:05:19 root INFO     booked ['book', 'booked', 'over', 'book', 'books'] ['book', 'booked', 'book', 'books', 'Book']
+2024-07-15 11:05:19 root INFO     charged ['charged', 'heated', 'electric', 'chemically', 'hot'] ['charged', 'heated', 'electric', 'chemically', 'Charg']
+2024-07-15 11:05:19 root INFO     compensated ['compens', 'compensated', 'over', 'generously', 'excessively'] ['compensated', 'compens', 'generously', 'excessively', 'individual']
+2024-07-15 11:05:21 __main__ INFO     over+adj_reg,beta,33.3,LRE,2,Jacobian,1,lm,50
+2024-07-15 11:05:24 root INFO     achieve ['!', '!', 'a', 'er', '-'] ['!', '!', 'a', 'er', '009']
+2024-07-15 11:05:24 root INFO     advertise ['advertisement', 'advertis', 'advert', 'advertise', 'advertising'] ['advertisement', 'advertisement', 'advert', 'advertising', 'advertise']
+2024-07-15 11:05:24 root INFO     announce ['announcer', 'announ', 'ann', '!', 'speaker'] ['ann', 'announ', 'announcer', 'Ann', 'anni']
+2024-07-15 11:05:24 root INFO     bake ['baker', 'bake', '!', 'b', 'baking'] ['bake', 'Bake', 'baking', '!', 'baker']
+2024-07-15 11:05:24 root INFO     begin ['-', '9', '{', '!', 'l'] ['9', 'l', '{', '0', '!']
+2024-07-15 11:05:26 __main__ INFO     verb+er_irreg,beta,33.3,LRE,23,Jacobian,10,lm,47
+2024-07-15 11:05:29 root INFO     actual ['Att', 'att', 'Authent', 'auditor', 'Actually'] ['Att', 'Authent', 'TA', 'Actual', 'adata']
+2024-07-15 11:05:29 root INFO     additional ['additional', 'add', 'add', 'Additional', 'additionally'] ['additional', 'add', 'addle', 'Add', 'Additional']
+2024-07-15 11:05:29 root INFO     apparent ['apparent', 'App', 'app', 'apparently', 'Apparently'] ['apparent', 'App', 'app', 'Appears', 'App']
+2024-07-15 11:05:29 root INFO     beautiful ['Beautiful', 'beaut', 'beautiful', 'Beaut', 'Beaut'] ['Beautiful', 'beaut', 'Beaut', 'Beaut', 'beautiful']
+2024-07-15 11:05:31 __main__ INFO     adj+ly_reg,beta,33.3,LRE,12,Jacobian,0,lm,48
+2024-07-15 11:05:34 root INFO     andersen ['philosopher', 'philos', 'phil', 'theorist', 'thinker'] ['philos', 'predic', 'philosopher', 'pro', 'ph']
+2024-07-15 11:05:34 root INFO     aristotle ['philosopher', 'Aristotle', 'philos', 'philosophers', 'logic'] ['Aristotle', 'philosopher', 'philos', 'logic', 'philosophers']
+2024-07-15 11:05:34 root INFO     balzac ['essay', 'essays', 'philos', 'pamph', 'thinker'] ['essays', 'sentences', 'essay', 'pamph', 'pens']
+2024-07-15 11:05:34 root INFO     beethoven ['composer', 'music', 'pian', 'poet', 'piano'] ['composer', 'piano', 'music', 'pian', 'po']
+2024-07-15 11:05:34 root INFO     caesar ['philosopher', 'ph', 'ruler', 'philos', 'monarch'] ['philosopher', 'ruler', 'ph', 'monarch', 'king']
+2024-07-15 11:05:36 __main__ INFO     name - occupation,beta,33.3,LRE,35,Jacobian,27,lm,42
+2024-07-15 11:05:38 root INFO     afraid ['scared', 'scare', 'afraid', 'frightened', 'terrified'] ['scared', 'frightened', 'scare', 'afraid', 'terrified']
+2024-07-15 11:05:38 root INFO     angry ['wrath', 'rage', 'gr', 'furious', 'enraged'] ['wrath', 'rage', 'enraged', 'furious', 'gr']
+2024-07-15 11:05:38 root INFO     ask ['to', 'accuse', 'occupy', 'query', 'speak'] ['to', 'query', 'accuse', 'occupy', 'speak']
+2024-07-15 11:05:39 root INFO     boring ['boring', 'tedious', 'dull', 'irritating', 'stink'] ['stink', 'boring', 'irritating', 'tedious', 'dull']
+2024-07-15 11:05:40 __main__ INFO     synonyms - intensity,beta,33.3,LRE,10,Jacobian,11,lm,23
+2024-07-15 11:05:42 root INFO     bear ['grow', 'roar', 'grunt', 'bear', 'h'] ['grow', 'roar', 'bear', 'grunt', 'requ']
+2024-07-15 11:05:42 root INFO     bee ['bee', 'buzzing', 'buzz', 'hive', 'Buzz'] ['bee', 'buzzing', 'hive', 'buzz', 'Buzz']
+2024-07-15 11:05:44 __main__ INFO     animal - sound,beta,33.3,LRE,11,Jacobian,10,lm,31
+2024-07-15 11:05:46 root INFO     album ['albums', 'Album', 'album', 'al', 'album'] ['albums', 'Album', 'album', 'album', 'al']
+2024-07-15 11:05:46 root INFO     application ['Applications', 'applications', 'Applications', 'Application', 'application'] ['Applications', 'applications', 'Applications', 'Application', 'application']
+2024-07-15 11:05:46 root INFO     area ['areas', 'Areas', 'area', 'Area', 'regions'] ['areas', 'Areas', 'Area', 'area', 'Area']
+2024-07-15 11:05:46 root INFO     car ['cars', 'Cars', 'cars', 'car', 'CAR'] ['cars', 'Cars', 'cars', 'car', 'CAR']
+2024-07-15 11:05:46 root INFO     college ['colleges', 'Colleges', 'College', 'College', 'college'] ['Colleges', 'colleges', 'College', 'College', 'Universities']
+2024-07-15 11:05:49 __main__ INFO     noun - plural_reg,beta,33.3,LRE,50,Jacobian,49,lm,50
+2024-07-15 11:05:51 root INFO     achieving ['achieving', 'being', 'applying', 'achieve', 'making'] ['achieving', 'applying', 'ach', 'making', 'promoting']
+2024-07-15 11:05:51 root INFO     adding ['adding', 'doing', 'making', 'applying', 'adding'] ['adding', 'adding', 'doing', 'making', 'applying']
+2024-07-15 11:05:51 root INFO     allowing ['allowing', 'permitting', 'allow', 'enabling', 'assisting'] ['allowing', 'permitting', 'supporting', 'assisting', 'allow']
+2024-07-15 11:05:51 root INFO     appearing ['applying', 'occur', 'appear', 'being', 'occurring'] ['applying', 'occurring', 'presenting', 'requiring', 'being']
+2024-07-15 11:05:51 root INFO     applying ['applying', 'apply', 'promoting', 'performing', 'operating'] ['applying', 'apply', 'promoting', 'application', 'supporting']
+2024-07-15 11:05:54 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,40,Jacobian,34,lm,49
+2024-07-15 11:05:56 root INFO     batman ['uncle', 'armored', 'dad', 'boy', 'mac'] ['armored', 'ilot', 'armor', 'rol', 'boy']
+2024-07-15 11:05:56 root INFO     boar ['pig', 'wolf', 'bo', 'pork', 'buck'] ['pig', 'wolf', 'pork', 'buck', 'bo']
+2024-07-15 11:05:56 root INFO     boy ['boy', 'boy', 'Boy', 'brother', 'Boy'] ['boy', 'boy', 'Boy', 'Boy', 'boys']
+2024-07-15 11:05:58 __main__ INFO     male - female,beta,33.3,LRE,7,Jacobian,5,lm,31
+2024-07-15 11:06:00 root INFO     adds ['added', 'included', 'adds', 'to', 'adding'] ['added', 'adds', 'adding', 'Added', 'added']
+2024-07-15 11:06:00 root INFO     agrees ['agreed', 'agrees', 'agree', 'approved', 'agreement'] ['agreed', 'agrees', 'agree', 'agreement', 'agreeing']
+2024-07-15 11:06:00 root INFO     allows ['allowed', 'permitted', 'authorized', 'enabled', 'to'] ['permitted', 'allowed', 'permits', 'authorized', 'permitting']
+2024-07-15 11:06:00 root INFO     announces ['announced', 'announced', 'announcement', 'announcements', 'announces'] ['announced', 'announcements', 'announcement', 'announced', 'announces']
+2024-07-15 11:06:00 root INFO     appears ['app', 'appar', 'appeared', 'perceived', 'permitted'] ['app', 'per', 'appar', 'Appearances', 'Appears']
+2024-07-15 11:06:03 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,49,Jacobian,47,lm,49
+2024-07-15 11:06:05 root INFO     antelope ['herd', 'flock', 'tribe', 'ph', 'herds'] ['herd', 'flock', 'ph', 'pe', 'bachelor']
+2024-07-15 11:06:05 root INFO     bee ['bee', 'bees', 'bee', 'hive', 'b'] ['bee', 'bee', 'bees', 'Bee', 'Bee']
+2024-07-15 11:06:05 root INFO     bird ['bird', 'flock', 'birds', 'bird', 'feather'] ['bird', 'bird', 'flock', 'birds', 'Bird']
+2024-07-15 11:06:05 root INFO     book ['Book', 'book', 'Books', 'Book', 'BOOK'] ['Book', 'Books', 'Book', 'book', 'book']
+2024-07-15 11:06:07 __main__ INFO     meronyms - member,beta,33.3,LRE,21,Jacobian,14,lm,30
+2024-07-15 11:06:09 root INFO     boat ['an', 'canoe', 'boat', 'Abram', 'a'] ['an', 'Abram', 'vana', 'canoe', 'boat']
+2024-07-15 11:06:09 root INFO     book ['an', 'a', 'the', 'A', 'ha'] ['an', 'a', 'A', 'Abram', 'vana']
+2024-07-15 11:06:11 __main__ INFO     hyponyms - misc,beta,33.3,LRE,4,Jacobian,4,lm,29
+2024-07-15 11:06:13 root INFO     able ['able', 'Able', 'abled', 'capable', 'able'] ['abled', 'Able', 'able', 'abe', 'ABLE']
+2024-07-15 11:06:13 root INFO     angry ['angry', 'anger', 'Angry', 'ang', 'anger'] ['angry', 'anger', 'Angry', 'anger', 'Anger']
+2024-07-15 11:06:13 root INFO     cheap ['cheap', 'Cheap', 'cheaply', 'che', 'cheapest'] ['cheap', 'Cheap', 'che', 'cheaply', 'cheapest']
+2024-07-15 11:06:13 root INFO     clever ['clever', 'cle', 'Clever', 'cunning', 'cle'] ['clever', 'Clever', 'cle', 'Cle', 'ingenious']
+2024-07-15 11:06:13 root INFO     costly ['cost', 'costly', 'cost', 'pric', 'pricey'] ['cost', 'cost', 'costly', 'pricey', 'pric']
+2024-07-15 11:06:16 __main__ INFO     adj - superlative,beta,33.3,LRE,3,Jacobian,2,lm,44
+2024-07-15 11:06:18 root INFO     accuse [':', '"', ':', '``', "'"] [':', ':', '``', '"', "''"]
+2024-07-15 11:06:18 root INFO     admire ['admiration', 'appreci', 'making', 'observing', 'realizing'] ['appreci', 'insisting', 'Ad', 'observing', 'admiration']
+2024-07-15 11:06:18 root INFO     allege ["'", '"', '`', 'alleging', ':'] ['allege', 'alleging', "'", '`', ':']
+2024-07-15 11:06:18 root INFO     aspire ['aspiration', 'aspire', 'aspirations', 'aspir', 'ambition'] ['aspiration', 'aspire', 'aspir', 'aspirations', 'Des']
+2024-07-15 11:06:18 root INFO     authorize ['authorization', ':', ':', '`', '['] [':', ':', 'authorization', '`', 'Author']
+2024-07-15 11:06:21 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,26,Jacobian,20,lm,49
+2024-07-15 11:06:23 root INFO     airplane ['not', 'in', 'called', 'for', 'all'] ['not', 'called', 'in', 'for', 'oros']
+2024-07-15 11:06:23 root INFO     auto ['asc', 'in', 'declare', 'seize', 'rely'] ['oser', 'ingly', 'awan', 'oway', 'alian']
+2024-07-15 11:06:23 root INFO     baby ['oros', 'referring', 'drop', 'ean', '='] ['oros', 'icals', 'ors', 'ean', 'agos']
+2024-07-15 11:06:24 __main__ INFO     synonyms - exact,beta,33.3,LRE,2,Jacobian,2,lm,19
+2024-07-15 11:06:26 root INFO     allosaurus ['dinosaur', 'dinosaurs', 'lizard', 'crocod', 'rept'] ['dinosaur', 'dinosaurs', 'Dino', 'lizard', 'crocod']
+2024-07-15 11:06:26 root INFO     anaconda ['snake', 'boa', 'venom', 'Snake', 'serpent'] ['boa', 'Snake', 'snake', 'ser', 'ream']
+2024-07-15 11:06:26 root INFO     ant ['ants', 'insect', 'beetle', 'Bee', 'ant'] ['ants', 'Bee', 'insect', 'beetle', 'nect']
+2024-07-15 11:06:26 root INFO     beaver ['aquatic', 'water', 'amphib', 'Water', 'water'] ['aquatic', 'water', 'Water', 'water', 'amphib']
+2024-07-15 11:06:26 root INFO     bee ['Bee', 'bee', 'bees', 'insect', 'buzzing'] ['Bee', 'bees', 'bee', 'bees', 'Bees']
+2024-07-15 11:06:28 __main__ INFO     hypernyms - animals,beta,33.3,LRE,31,Jacobian,23,lm,41
+2024-07-15 11:06:31 root INFO     abuja ['the', 'federation', 'net', 'y', 'ju'] ['eth', 'ily', 'federation', 'istic', 'oint']
+2024-07-15 11:06:31 root INFO     ankara ['eth', 'ethe', 'al', 'the', 'the'] ['eth', 'ethe', 'al', 'igil', 'inge']
+2024-07-15 11:06:31 root INFO     baghdad ['ira', 'gulf', 'the', 'bay', 'der'] ['ira', 'gulf', 'gha', 'igil', 'itter']
+2024-07-15 11:06:33 __main__ INFO     country - capital,beta,33.3,LRE,0,Jacobian,0,lm,36
+2024-07-15 11:06:33 __main__ INFO     using beta=33.3, iter=1
+2024-07-15 11:06:35 root INFO     balzac ['recourse', 'profession', "\\'", 'reliable', 'par'] ['recourse', "\\'", 'profession', 'consult', 'rely']
+2024-07-15 11:06:35 root INFO     confucius ['classical', 'loc', 'lou', 'quote', 'traditional'] ['classical', 'quote', 'curs', 'loc', 'loc']
+2024-07-15 11:06:36 __main__ INFO     name - nationality,beta,33.3,LRE,2,Jacobian,2,lm,20
+2024-07-15 11:06:38 root INFO     ape ['we', 'kit', 'lit', 'pup', 'Kit'] ['we', 'lit', 'Kit', 'the', 'kit']
+2024-07-15 11:06:39 root INFO     bear ['cub', 'kit', 'kit', 'kits', 'we'] ['cub', 'kit', 'kit', 'we', 'kits']
+2024-07-15 11:06:39 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:06:41 __main__ INFO     animal - youth,beta,33.3,LRE,21,Jacobian,18,lm,36
+2024-07-15 11:06:43 root INFO     adding ['adding', 'adding', 'Adding', 'is', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:06:43 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:06:43 root INFO     allowing ['allowing', 'permitting', 'enabling', 'allows', 'is'] ['allowing', 'permitting', 'enabling', 'requiring', 'allows']
+2024-07-15 11:06:43 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'appar'] ['appearing', 'app', 'appearances', 'appar', 'appears']
+2024-07-15 11:06:43 root INFO     applying ['applying', 'app', 'applies', 'applic', 'applications'] ['applying', 'app', 'applic', 'applications', 'applies']
+2024-07-15 11:06:46 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,40,Jacobian,32,lm,50
+2024-07-15 11:06:48 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:06:48 root INFO     art ['art', 'artist', 'Art', 'art', 'arts'] ['art', 'Art', 'art', 'artist', 'arts']
+2024-07-15 11:06:48 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:06:48 root INFO     breath ['breath', 'Breath', 'breat', 'breathing', 'breathe'] ['breath', 'Breath', 'breat', 'breathing', 'breathe']
+2024-07-15 11:06:48 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:06:50 __main__ INFO     noun+less_reg,beta,33.3,LRE,2,Jacobian,2,lm,49
+2024-07-15 11:06:53 root INFO     accept ['Accept', 'accept', 'acceptable', 'acceptance', 'Accept'] ['Accept', 'Accept', 'acceptance', 'accept', 'accept']
+2024-07-15 11:06:53 root INFO     adapt ['adapt', 'ad', 'Ad', 'Ad', 'adopt'] ['Ad', 'adapt', 'Adapt', 'Ad', 'adapt']
+2024-07-15 11:06:53 root INFO     adjust ['adjust', 'adjustable', 'adjust', 'adjustment', 'Adjust'] ['adjust', 'adjust', 'adjustable', 'adjustment', 'Adjust']
+2024-07-15 11:06:53 root INFO     admire ['admire', 'adm', 'Ad', 'admirable', 'Ad'] ['Ad', 'admire', 'adm', 'ad', 'Ad']
+2024-07-15 11:06:56 __main__ INFO     verb+able_reg,beta,33.3,LRE,19,Jacobian,13,lm,48
+2024-07-15 11:07:00 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,14
+2024-07-15 11:07:02 root INFO     after ['before', 'ahead', 'over', 'ahead', 'fore'] ['before', 'ahead', 'ahead', 'over', 'before']
+2024-07-15 11:07:02 root INFO     ahead ['behind', 'behind', 'ahead', 'succeeding', 'hereafter'] ['behind', 'behind', 'succeeding', 'erve', 'ahead']
+2024-07-15 11:07:02 root INFO     anterior ['posterior', 'subsequent', 'superior', 'succeeding', 'successor'] ['posterior', 'subsequent', 'superior', 'succeeding', 'successor']
+2024-07-15 11:07:02 root INFO     backward ['forward', 'forwards', 'forward', 'front', 'ahead'] ['forward', 'forwards', 'forward', 'Forward', 'front']
+2024-07-15 11:07:02 root INFO     before ['after', 'after', 'afterwards', 'succeeding', 'afterward'] ['after', 'after', 'afterwards', 'ago', 'succeeding']
+2024-07-15 11:07:04 __main__ INFO     antonyms - binary,beta,33.3,LRE,32,Jacobian,32,lm,41
+2024-07-15 11:07:06 root INFO     accept ['accept', 'accepted', 'Accept', 'accept', 'acceptance'] ['accept', 'accepted', 'Accept', 'accept', 'acceptance']
+2024-07-15 11:07:07 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'accomplish', 'achieves'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'accomplish']
+2024-07-15 11:07:07 root INFO     add ['add', 'adds', 'address', 'include', 'addr'] ['add', 'address', 'adds', 'addr', 'include']
+2024-07-15 11:07:07 root INFO     agree ['agree', 'agreement', 'agrees', 'agreed', 'agree'] ['agree', 'agreement', 'agree', 'agreed', 'Agreement']
+2024-07-15 11:07:07 root INFO     allow ['allow', 'allow', 'permit', 'Allow', 'Allow'] ['allow', 'allow', 'permit', 'Allow', 'Allow']
+2024-07-15 11:07:09 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,41,Jacobian,25,lm,50
+2024-07-15 11:07:11 root INFO     adjust ['reconsider', 'reass', 'recal', 're', 'recon'] ['reconsider', 'recal', 'reass', 're', 'rect']
+2024-07-15 11:07:11 root INFO     appear ['red', 'reapp', 'ré', 're', 'revisit'] ['red', ':', 'ARP', 'ré', ':"']
+2024-07-15 11:07:11 root INFO     apply [':', ':[', 'ré', 'revisit', 'work'] [':', ':[', 'works', '「', ':-']
+2024-07-15 11:07:12 root INFO     appoint ['re', 'reapp', 'recon', 'appra', 'reass'] ['appoint', 'escort', 'oversee', 'reapp', 'app']
+2024-07-15 11:07:13 __main__ INFO     re+verb_reg,beta,33.3,LRE,5,Jacobian,4,lm,40
+2024-07-15 11:07:16 root INFO     accept ['accept', 'accepted', 'accept', 'Accept', 'Accept'] ['accept', 'accept', 'Accept', 'accepted', 'Accept']
+2024-07-15 11:07:16 root INFO     achieve ['achieve', 'achieved', 'Achieve', 'achievable', 'chieve'] ['achieve', 'Achieve', 'achieved', 'achievable', 'chieve']
+2024-07-15 11:07:16 root INFO     add ['add', 'add', 'added', 'ad', 'address'] ['add', 'add', 'Add', 'Add', 'ad']
+2024-07-15 11:07:16 root INFO     agree ['agree', 'agreed', 'agreement', 'agreeing', 'agrees'] ['agree', 'agreement', 'agreed', 'agreeing', 'agree']
+2024-07-15 11:07:16 root INFO     allow ['allow', 'allowed', 'allow', 'Allow', 'Allow'] ['allow', 'Allow', 'allow', 'Allow', 'allowed']
+2024-07-15 11:07:19 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,49,Jacobian,40,lm,50
+2024-07-15 11:07:21 root INFO     argentina ['port', 'english', 'the', 'nor', 'cast'] ['port', 'the', 'english', 'nor', 'cast']
+2024-07-15 11:07:21 root INFO     australia ['english', 'eng', 'the', 'port', 'nor'] ['english', 'eng', 'the', 'port', 'nor']
+2024-07-15 11:07:21 root INFO     bahamas ['the', 'english', 'nor', 'port', 'cast'] ['the', 'nor', 'english', 'port', 'cast']
+2024-07-15 11:07:23 __main__ INFO     country - language,beta,33.3,LRE,12,Jacobian,12,lm,40
+2024-07-15 11:07:26 root INFO     bird ['bird', 'wing', 'fish', 'feather', 'whole'] ['bird', 'wing', 'fish', 'feather', 'bird']
+2024-07-15 11:07:27 __main__ INFO     meronyms - part,beta,33.3,LRE,15,Jacobian,16,lm,25
+2024-07-15 11:07:30 root INFO     adding ['being', 'adding', 'added', 'is', 'been'] ['adding', 'being', 'Adams', 'adding', 'added']
+2024-07-15 11:07:30 root INFO     agreeing ['agreed', 'agreeing', 'approved', 'ag', 'agreement'] ['agreed', 'agreeing', 'ag', 'agreement', 'approved']
+2024-07-15 11:07:30 root INFO     allowing ['allowed', 'allowing', 'permitted', 'is', 'allowed'] ['allowed', 'allowing', 'permitted', 'allowed', 'is']
+2024-07-15 11:07:30 root INFO     announcing ['been', 'is', 'being', 'currently', 'occasionally'] ['is', 'been', 'being', 'are', 'annually']
+2024-07-15 11:07:30 root INFO     appearing ['app', 'appearing', 'appeared', 'App', 'appar'] ['app', 'appearing', 'App', 'ap', 'appar']
+2024-07-15 11:07:32 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,44,Jacobian,42,lm,49
+2024-07-15 11:07:35 root INFO     baboon ['troop', 'monkeys', 'monkey', 'Monkey', 'bab'] ['monkeys', 'Monkey', 'monkey', 'troop', 'vocal']
+2024-07-15 11:07:35 root INFO     bat ['flight', 'wing', 'wings', 'flying', 'Flight'] ['flight', 'wings', 'wing', 'Flight', 'Flight']
+2024-07-15 11:07:36 __main__ INFO     animal - shelter,beta,33.3,LRE,8,Jacobian,5,lm,31
+2024-07-15 11:07:39 root INFO     blender ['kitchen', 'food', 'juice', 'liquid', 'appliance'] ['juice', 'powered', 'kitchen', 'Food', 'liquid']
+2024-07-15 11:07:39 root INFO     bracelet ['jewelry', 'jew', 'personal', 'jew', 'Cl'] ['jewelry', 'jew', 'jew', 'personal', 'cl']
+2024-07-15 11:07:39 root INFO     brooch ['feminine', 'jewelry', 'Women', 'Female', 'female'] ['Women', 'Female', 'femin', 'feminine', 'female']
+2024-07-15 11:07:39 root INFO     cake ['desserts', 'food', 'dessert', 'edible', 'foods'] ['desserts', 'dessert', 'edible', 'baking', 'foods']
+2024-07-15 11:07:40 __main__ INFO     hypernyms - misc,beta,33.3,LRE,20,Jacobian,16,lm,30
+2024-07-15 11:07:43 root INFO     bag ['poly', 'pl', 'nylon', 'canvas', 'synthetic'] ['pl', 'canvas', 'PU', 'net', 'nylon']
+2024-07-15 11:07:43 root INFO     beach ['coral', '...', 'sea', 'underwater', 'Sea'] ['Sea', 'coral', 'SEA', 'Sea', 'underwater']
+2024-07-15 11:07:43 root INFO     beard ['fur', 'hair', 'A', 'A', '...'] ['A', 'fur', 'hair', 'hair', 'man']
+2024-07-15 11:07:43 root INFO     body ['fat', 'parts', '...', 'A', 'A'] ['A', 'AU', 'ANN', 'oa', 'ANT']
+2024-07-15 11:07:45 __main__ INFO     meronyms - substance,beta,33.3,LRE,18,Jacobian,12,lm,38
+2024-07-15 11:07:47 root INFO     ability ['Abilities', 'abilities', 'Ability', 'ability', 'Allow'] ['Abilities', 'abilities', 'Ability', 'Ability', 'Allow']
+2024-07-15 11:07:47 root INFO     academy ['acad', 'Acad', 'academy', 'Academy', 'academia'] ['acad', 'Acad', 'Academy', 'academy', 'Academic']
+2024-07-15 11:07:47 root INFO     activity ['Activities', 'activities', 'activ', 'Activity', 'Activ'] ['Activities', 'activities', 'activ', 'Activ', 'Activity']
+2024-07-15 11:07:47 root INFO     agency ['agencies', 'Agency', 'agency', 'agency', 'Agents'] ['agencies', 'Agency', 'agency', 'agency', 'Agents']
+2024-07-15 11:07:47 root INFO     analysis ['analyses', 'analysis', 'analys', 'analyze', 'Analysis'] ['analyses', 'analysis', 'analy', 'Analysis', 'Analy']
+2024-07-15 11:07:50 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,45,Jacobian,42,lm,50
+2024-07-15 11:07:52 root INFO     able ['incapable', 'un', 'inc', 'inf', 'unus'] ['incapable', 'inc', 'un', 'una', 'occup']
+2024-07-15 11:07:52 root INFO     acceptable ['unacceptable', 'un', 'reject', 'condemn', 'una'] ['unacceptable', 'un', 'una', 'reject', 'condemn']
+2024-07-15 11:07:52 root INFO     affected ['inc', 'un', 'acc', 'U', 'una'] ['inc', 'un', 'acc', 'U', 'una']
+2024-07-15 11:07:52 root INFO     authorized ['unauthorized', 'authorized', 'una', 'authorized', 'auth'] ['unauthorized', 'authorized', 'una', 'authorized', 'auth']
+2024-07-15 11:07:52 root INFO     available ['unavailable', 'inf', 'un', 'U', 'inc'] ['unavailable', 'inf', 'inc', 'un', 'una']
+2024-07-15 11:07:55 __main__ INFO     un+adj_reg,beta,33.3,LRE,38,Jacobian,36,lm,50
+2024-07-15 11:07:57 root INFO     accomplish ['endeavor', 'accomplishment', 'accomplish', 'appointment', 'admon'] ['endeavor', 'app', 'apt', 'accomplish', 'accomplishment']
+2024-07-15 11:07:57 root INFO     achieve ['achieving', 'achievement', 'apt', 'ac', 'highlighting'] ['apt', 'ac', 'achieving', 'escap', 'api']
+2024-07-15 11:07:57 root INFO     acknowledge ['acknowledgment', 'acknowledgement', 'acknowledging', 'acknowled', 'admon'] ['acknowledgment', 'acknowledgement', 'acknowledging', 'acknowled', 'Acknowled']
+2024-07-15 11:07:57 root INFO     adjust ['adjustment', 'adjust', 'adjusting', 'adequate', 'adjust'] ['adjustment', 'adjust', 'adjusting', 'app', 'adjust']
+2024-07-15 11:07:57 root INFO     advertise ['advertisement', 'advertising', 'advertis', 'advert', 'advertisements'] ['advertisement', 'advertising', 'advertis', 'advertising', 'advert']
+2024-07-15 11:08:00 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,48,Jacobian,45,lm,50
+2024-07-15 11:08:02 root INFO     amazing ['amazing', 'amaz', 'amaz', 'astounding', 'awesome'] ['amazing', 'amaz', 'amaz', 'Amazing', 'astounding']
+2024-07-15 11:08:02 root INFO     attractive ['attractiveness', 'attractive', 'attract', 'attractions', 'att'] ['attractiveness', 'attractive', 'att', 'attract', 'attractions']
+2024-07-15 11:08:02 root INFO     aware ['aware', 'Aware', 'aware', 'WARE', 'Awareness'] ['aware', 'Aware', 'WARE', 'aware', 'avis']
+2024-07-15 11:08:02 root INFO     broken ['broken', 'Broken', 'BR', 'broken', 'how'] ['broken', 'BR', 'broken', 'Broken', 'Bro']
+2024-07-15 11:08:02 root INFO     careful ['careful', 'cautious', 'Care', 'CARE', 'precautions'] ['careful', 'cautious', 'Care', 'CARE', 'precautions']
+2024-07-15 11:08:04 __main__ INFO     adj+ness_reg,beta,33.3,LRE,11,Jacobian,10,lm,43
+2024-07-15 11:08:07 root INFO     ambitious ['ambitious', 'arrogant', 'ambition', 'aggressive', 'arrog'] ['ambitious', 'arrogant', 'BA', 'ambition', 'BA']
+2024-07-15 11:08:07 root INFO     arching ['AR', 'ar', 'AR', 'arch', 'ARS'] ['AR', 'ARS', 'ARC', 'ARK', 'AR']
+2024-07-15 11:08:07 root INFO     booked ['booked', 'book', 'book', 'Book', 'booking'] ['booked', 'book', 'book', 'Book', 'booking']
+2024-07-15 11:08:07 root INFO     charged ['charged', 'charged', 'charge', 'charges', 'charging'] ['charged', 'charged', 'charge', 'charges', 'Charg']
+2024-07-15 11:08:07 root INFO     compensated ['compensated', 'compens', 'generously', 'excessively', 'compensation'] ['compensated', 'compens', 'compensation', 'generously', 'reimb']
+2024-07-15 11:08:10 __main__ INFO     over+adj_reg,beta,33.3,LRE,2,Jacobian,1,lm,50
+2024-07-15 11:08:12 root INFO     achieve ['a', '!', 'a', '-', '!'] ['a', '!', 'a', 'ac', '!']
+2024-07-15 11:08:12 root INFO     advertise ['ad', 'advertis', 'advert', 'advertise', 'advertisement'] ['ad', 'advertisement', 'advertisement', 'advert', 'advertis']
+2024-07-15 11:08:12 root INFO     announce ['announcer', 'announ', '!', 'speaker', '.'] ['announ', 'announcer', '!', 'WARN', 'ann']
+2024-07-15 11:08:12 root INFO     bake ['!', 'bake', 'Bake', 'baker', '-'] ['Bake', '!', 'bake', 'baking', 'baker']
+2024-07-15 11:08:12 root INFO     begin ['!', 'a', '', 'is', '('] ['!', 'a', 'a', 'anc', 'is']
+2024-07-15 11:08:15 __main__ INFO     verb+er_irreg,beta,33.3,LRE,19,Jacobian,10,lm,48
+2024-07-15 11:08:17 root INFO     according ['WD', '):', 'idas', 'JA', 'aiden'] ['WD', 'JA', 'aiden', 'idas', 'wd']
+2024-07-15 11:08:17 root INFO     actual ['Att', 'att', 'Actual', 'O', 'Actually'] ['Att', 'Actual', 'Authent', 'ota', 'Alternative']
+2024-07-15 11:08:17 root INFO     additional ['Add', 'Altern', 'Alternative', 'Site', 'Att'] ['ADA', 'Altern', 'Alternative', 'Add', 'Site']
+2024-07-15 11:08:17 root INFO     apparent ['apparent', 'apparently', 'App', 'ap', 'appearance'] ['apparent', 'App', 'app', 'Ap', 'aph']
+2024-07-15 11:08:17 root INFO     beautiful ['beautiful', 'Beautiful', 'beaut', 'Beaut', 'beauty'] ['Beautiful', 'Beaut', 'beaut', 'beautiful', 'beauty']
+2024-07-15 11:08:19 __main__ INFO     adj+ly_reg,beta,33.3,LRE,11,Jacobian,0,lm,49
+2024-07-15 11:08:22 root INFO     aristotle ['natural', 'philosopher', 'log', 'Aristotle', 'metaph'] ['natural', 'log', 'Aristotle', 'philosopher', 'logic']
+2024-07-15 11:08:22 root INFO     balzac ['essay', '18', '`', 'proverb', '.'] ['18', '`', 'essay', 'IF', 'French']
+2024-07-15 11:08:22 root INFO     beethoven ['composer', 'pian', 'piano', 'poet', 'conductor'] ['composer', 'pian', 'piano', 'conductor', 'cant']
+2024-07-15 11:08:24 __main__ INFO     name - occupation,beta,33.3,LRE,30,Jacobian,23,lm,44
+2024-07-15 11:08:27 root INFO     afraid ['in', 'ins', 'all', 'dam', 'hold'] ['in', 'ins', 'major', 'IN', 'ind']
+2024-07-15 11:08:27 root INFO     angry ['rage', 'enraged', 'en', 'rampage', 'irrit'] ['rage', 'enraged', 'rampage', 'irrit', 'IN']
+2024-07-15 11:08:27 root INFO     ask ['en', 'in', 'numerous', 'query', 'hold'] ['igator', 'en', 'query', 'indices', 'aron']
+2024-07-15 11:08:27 root INFO     boring ['en', 'irritating', 'in', 'infamous', 'irrit'] ['en', 'irritating', 'in', 'infamous', 'enumer']
+2024-07-15 11:08:28 __main__ INFO     synonyms - intensity,beta,33.3,LRE,3,Jacobian,3,lm,20
+2024-07-15 11:08:30 root INFO     bee ['bee', 'buzzing', 'buzz', 'his', 'ker'] ['bee', 'buzzing', 'buzz', 'hive', 'ker']
+2024-07-15 11:08:30 root INFO     cat ['his', 'pur', 'me', 'kitten', 'sne'] ['his', 'pur', 'kitten', 'me', 'whisk']
+2024-07-15 11:08:32 __main__ INFO     animal - sound,beta,33.3,LRE,12,Jacobian,10,lm,31
+2024-07-15 11:08:34 root INFO     album ['Album', 'albums', 'album', 'album', 'al'] ['Album', 'album', 'albums', 'album', 'altar']
+2024-07-15 11:08:34 root INFO     application ['Applications', 'applications', 'Applications', 'Application', 'application'] ['Applications', 'Applications', 'applications', 'Application', 'application']
+2024-07-15 11:08:34 root INFO     area ['Areas', 'areas', 'Area', 'area', 'Area'] ['Areas', 'areas', 'Area', 'Area', 'area']
+2024-07-15 11:08:34 root INFO     car ['cars', 'Cars', 'cars', 'automobiles', 'car'] ['cars', 'Cars', 'cars', 'automobiles', 'car']
+2024-07-15 11:08:34 root INFO     college ['Colleges', 'colleges', 'College', 'College', 'college'] ['Colleges', 'colleges', 'College', 'College', 'college']
+2024-07-15 11:08:37 __main__ INFO     noun - plural_reg,beta,33.3,LRE,50,Jacobian,49,lm,50
+2024-07-15 11:08:39 root INFO     achieving ['avoiding', 'assisting', 'achieving', 'involving', 'attending'] ['avoiding', 'assisting', 'achieving', 'pursuing', 'attending']
+2024-07-15 11:08:39 root INFO     adding ['adding', 'advising', 'assisting', 'addressing', 'avoiding'] ['adding', 'addressing', 'advising', 'assisting', 'adding']
+2024-07-15 11:08:39 root INFO     allowing ['allowing', 'following', 'assisting', 'permitting', 'requiring'] ['allowing', 'permitting', 'assisting', 'following', 'requiring']
+2024-07-15 11:08:39 root INFO     appearing ['applying', 'attending', 'avoiding', 'assisting', 'occurring'] ['applying', 'attending', 'avoiding', 'assisting', 'observing']
+2024-07-15 11:08:39 root INFO     applying ['applying', 'following', 'assisting', 'pursuing', 'follow'] ['applying', 'following', 'assisting', 'pursuing', 'addressing']
+2024-07-15 11:08:42 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,18,Jacobian,9,lm,50
+2024-07-15 11:08:44 root INFO     actor ['male', 'man', 'actor', 'father', 'gentleman'] ['male', 'man', 'actor', 'father', 'gentleman']
+2024-07-15 11:08:44 root INFO     batman ['male', 'father', 'man', 'boy', 'sir'] ['male', 'father', 'sir', 'man', 'boy']
+2024-07-15 11:08:44 root INFO     boar ['male', 'father', 'bo', 'boy', 'man'] ['father', 'male', 'bo', 'boy', 'man']
+2024-07-15 11:08:44 root INFO     brother ['brother', 'brother', 'boy', 'father', 'male'] ['brother', 'brother', 'boy', 'father', 'brothers']
+2024-07-15 11:08:46 __main__ INFO     male - female,beta,33.3,LRE,1,Jacobian,1,lm,34
+2024-07-15 11:08:49 root INFO     adds ['added', 'adding', 'included', 'located', 'to'] ['added', 'adding', 'add', 'adds', 'added']
+2024-07-15 11:08:49 root INFO     agrees ['agreed', 'agreement', 'con', '', 'agreeing'] ['agreed', 'agreement', 'agreeing', 'agrees', 'inc']
+2024-07-15 11:08:49 root INFO     allows ['allowed', 'permitted', 'located', 'being', 'to'] ['allowed', 'permitted', 'allowing', 'permitting', 'located']
+2024-07-15 11:08:49 root INFO     announces ['announced', 'located', 'announcing', 'announcement', 'Ann'] ['announced', 'announcing', 'Ann', 'announcement', 'announcements']
+2024-07-15 11:08:49 root INFO     appears ['located', 'appeared', 'appears', 'appear', 'occurred'] ['appears', 'located', 'appear', 'appeared', 'appearing']
+2024-07-15 11:08:51 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,48,Jacobian,46,lm,49
+2024-07-15 11:08:54 root INFO     antelope ['pr', 'herd', 'u', 'Pr', 'sa'] ['pr', 'u', 'Pr', 'sa', 'ini']
+2024-07-15 11:08:54 root INFO     bee ['bee', 'hive', 'sting', 'bee', 'Bee'] ['bee', 'bee', 'sting', 'hive', 'Bee']
+2024-07-15 11:08:54 root INFO     bird ['flock', 'bird', 'flight', 'av', 'fly'] ['bird', 'Av', 'flight', 'Flight', 'av']
+2024-07-15 11:08:54 root INFO     book ['pr', 'book', 'par', 'AB', 'ac'] ['AB', 'oir', 'abo', 'afa', 'ac']
+2024-07-15 11:08:55 __main__ INFO     meronyms - member,beta,33.3,LRE,19,Jacobian,12,lm,29
+2024-07-15 11:08:58 root INFO     bag ['a', 'carry', 'purse', 'our', 'ha'] ['carried', 'carry', 'our', 'purse', 'accessory']
+2024-07-15 11:08:58 root INFO     boat ['an', 'our', 'canoe', 'a', 'Abram'] ['an', 'Abram', 'our', 'canoe', 'shall']
+2024-07-15 11:08:58 root INFO     book ['an', 'a', 'the', 'A', 'our'] ['an', 'a', 'A', 'the', 'our']
+2024-07-15 11:08:59 __main__ INFO     hyponyms - misc,beta,33.3,LRE,3,Jacobian,3,lm,29
+2024-07-15 11:09:01 root INFO     able ['able', 'Able', 'able', 'capable', 'abled'] ['able', 'Able', 'ABLE', 'abled', 'able']
+2024-07-15 11:09:02 root INFO     angry ['anger', 'angry', 'Angry', 'ang', 'Anger'] ['anger', 'angry', 'Angry', 'Anger', 'anger']
+2024-07-15 11:09:02 root INFO     cheap ['cheap', 'Cheap', 'che', 'cheapest', 'cheaply'] ['cheap', 'Cheap', 'che', 'cheaply', 'cheapest']
+2024-07-15 11:09:02 root INFO     clever ['clever', 'Clever', 'cle', 'smarter', 'ingenious'] ['clever', 'Clever', 'cle', 'smarter', 'ingenious']
+2024-07-15 11:09:02 root INFO     costly ['cost', 'costly', 'pric', 'cheapest', 'wealth'] ['cost', 'costly', 'cost', 'pricey', 'pric']
+2024-07-15 11:09:04 __main__ INFO     adj - superlative,beta,33.3,LRE,3,Jacobian,2,lm,44
+2024-07-15 11:09:06 root INFO     accuse ['the', 'realizing', 'to', 'taking', 'making'] ['realizing', 'the', 'taking', 'to', 'direct']
+2024-07-15 11:09:06 root INFO     admire ['admiration', 'enjoying', 'appreci', 'admire', 'appreciation'] ['admiration', 'enjoying', 'appreci', 'admire', 'observing']
+2024-07-15 11:09:06 root INFO     allege ['the', 'realizing', 'observing', 'seeking', ':'] ['observing', 'realizing', ':', 'seeking', 'taking']
+2024-07-15 11:09:07 root INFO     aspire ['aspiration', 'endeavor', 'habit', 'aspire', 'seeking'] ['aspire', 'aspiration', 'endeavor', 'habit', 'pursuing']
+2024-07-15 11:09:07 root INFO     authorize [':', ':', ',', '[', 'Author'] [':', ':', 'Author', ',', 'oto']
+2024-07-15 11:09:09 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,24,Jacobian,19,lm,49
+2024-07-15 11:09:11 root INFO     airplane ['new', 'grand', 'known', 'do', 'had'] ['new', 'new', 'defenders', 'gin', 'lean']
+2024-07-15 11:09:11 root INFO     auto ['newcomers', 'referring', 'guardians', 'representations', 'new'] ['newcomers', 'ingly', 'representations', 'descendants', 'referring']
+2024-07-15 11:09:11 root INFO     bicycle ['offs', 'new', 'do', 'new', 'gin'] ['offs', 'new', 'lean', 'gin', 'man']
+2024-07-15 11:09:11 root INFO     child ['babies', 'parents', 'parent', 'generation', 'grandchildren'] ['babies', 'parents', 'parent', 'generation', 'grandchildren']
+2024-07-15 11:09:12 __main__ INFO     synonyms - exact,beta,33.3,LRE,0,Jacobian,0,lm,20
+2024-07-15 11:09:15 root INFO     allosaurus ['large', 'dinosaur', 'rapt', 'therap', 'arch'] ['large', 'adv', 'dinosaur', 'iva', 'large']
+2024-07-15 11:09:15 root INFO     anaconda ['boa', 'venom', 'hy', 'fel', 'rap'] ['boa', 'oc', 'rap', 'iva', 'una']
+2024-07-15 11:09:15 root INFO     ant ['insect', 'eus', 'mite', 'inver', 'order'] ['Bee', 'mite', 'eus', 'WAR', 'social']
+2024-07-15 11:09:15 root INFO     beaver ['water', 'water', 'aquatic', 'lag', 'quadru'] ['water', 'water', 'lag', 'Water', 'aquatic']
+2024-07-15 11:09:15 root INFO     bee ['insect', 'bee', 'Bee', 'bees', 'buzzing'] ['Bee', 'bees', 'bees', 'bee', 'insect']
+2024-07-15 11:09:17 __main__ INFO     hypernyms - animals,beta,33.3,LRE,32,Jacobian,24,lm,42
+2024-07-15 11:09:19 root INFO     abuja ['jun', 'jud', 'gap', 'vision', 'ju'] ['jun', 'vision', 'gap', 'vice', 'qa']
+2024-07-15 11:09:19 root INFO     ankara ['ira', 'ir', 'rom', 'al', 'ire'] ['ira', 'ir', 'rom', 'irk', 'al']
+2024-07-15 11:09:19 root INFO     baghdad ['ira', 'vision', 'tale', 'democracy', 'nicknamed'] ['vision', 'tale', 'mission', 'beh', 'oil']
+2024-07-15 11:09:22 __main__ INFO     country - capital,beta,33.3,LRE,0,Jacobian,0,lm,37
+2024-07-15 11:09:22 __main__ INFO     using beta=33.3, iter=2
+2024-07-15 11:09:24 root INFO     balzac ['fr', 'par', 'z', '`', 'french'] ['`', 'rely', 'erville', 'fr', 'recourse']
+2024-07-15 11:09:24 root INFO     confucius ['sc', 'ch', 'r', 'lat', 'polish'] ['ch', 'sc', 'lat', 'r', 'lou']
+2024-07-15 11:09:25 __main__ INFO     name - nationality,beta,33.3,LRE,8,Jacobian,1,lm,20
+2024-07-15 11:09:27 root INFO     ape ['we', 'lit', 'Kit', 'kit', 'pr'] ['we', 'UA', 'lit', 'pr', 'Kit']
+2024-07-15 11:09:27 root INFO     bear ['cub', 'kit', 'kit', 'kits', 'we'] ['cub', 'kit', 'lit', 'kit', 'kits']
+2024-07-15 11:09:27 root INFO     beaver ['kit', 'kit', 'lit', 'kits', 'be'] ['lit', 'kit', 'kit', 'be', 'kits']
+2024-07-15 11:09:27 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:09:29 __main__ INFO     animal - youth,beta,33.3,LRE,22,Jacobian,19,lm,35
+2024-07-15 11:09:31 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:09:31 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:09:31 root INFO     allowing ['allowing', 'permitting', 'is', 'allows', 'enabling'] ['allowing', 'permitting', 'enabling', 'allows', 'requiring']
+2024-07-15 11:09:32 root INFO     appearing ['appearing', 'app', 'appearances', 'appar', 'appears'] ['appearing', 'app', 'appearances', 'Appearances', 'appar']
+2024-07-15 11:09:32 root INFO     applying ['applying', 'app', 'applies', 'applic', 'applications'] ['applying', 'app', 'applic', 'applications', 'applies']
+2024-07-15 11:09:34 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,39,Jacobian,31,lm,50
+2024-07-15 11:09:36 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:09:36 root INFO     art ['art', 'art', 'Art', 'artist', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:09:37 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:09:37 root INFO     breath ['breath', 'Breath', 'breathe', 'breathing', 'breat'] ['breath', 'Breath', 'breathe', 'breathing', 'breat']
+2024-07-15 11:09:37 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:09:39 __main__ INFO     noun+less_reg,beta,33.3,LRE,3,Jacobian,2,lm,49
+2024-07-15 11:09:41 root INFO     accept ['accept', 'acceptable', 'Accept', 'acceptance', 'accepting'] ['Accept', 'acceptance', 'accept', 'accept', 'accepting']
+2024-07-15 11:09:41 root INFO     adapt ['adapt', 'adapt', 'adopt', 'ad', 'adaptive'] ['adapt', 'adapt', 'Adapt', 'Ad', 'adopt']
+2024-07-15 11:09:41 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'adjusting'] ['adjustable', 'adjust', 'adjust', 'adjustment', 'Adjust']
+2024-07-15 11:09:42 root INFO     admire ['appreci', 'admire', 'admirable', 'adm', 'admiration'] ['admire', 'appreci', 'admirable', 'adm', 'admiration']
+2024-07-15 11:09:44 __main__ INFO     verb+able_reg,beta,33.3,LRE,22,Jacobian,18,lm,47
+2024-07-15 11:09:48 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,11
+2024-07-15 11:09:50 root INFO     after ['before', 'before', 'ahead', 'ahead', 'ago'] ['before', 'before', 'ahead', 'ahead', 'ago']
+2024-07-15 11:09:50 root INFO     ahead ['behind', 'behind', 'Behind', 'astern', 'after'] ['behind', 'behind', 'Behind', 'bes', 'astern']
+2024-07-15 11:09:50 root INFO     anterior ['posterior', 'subsequent', 'Poster', 'poster', 'latter'] ['posterior', 'Poster', 'subsequent', 'poster', 'iste']
+2024-07-15 11:09:50 root INFO     backward ['forward', 'forward', 'forwards', 'front', 'ahead'] ['forward', 'forward', 'forwards', 'front', 'ahead']
+2024-07-15 11:09:51 root INFO     before ['after', 'after', 'afterwards', 'afterward', 'succeeding'] ['after', 'after', 'afterwards', 'afterward', 'succeeding']
+2024-07-15 11:09:53 __main__ INFO     antonyms - binary,beta,33.3,LRE,35,Jacobian,33,lm,43
+2024-07-15 11:09:55 root INFO     accept ['accept', 'accepted', 'accepts', 'Accept', 'accept'] ['accept', 'accepted', 'accept', 'Accept', 'acceptance']
+2024-07-15 11:09:55 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'achieves', 'achievable'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'achievable']
+2024-07-15 11:09:55 root INFO     add ['add', 'adds', 'add', 'added', 'Add'] ['add', 'add', 'adds', 'Add', 'added']
+2024-07-15 11:09:55 root INFO     agree ['agree', 'agreement', 'agreed', 'agree', 'agrees'] ['agree', 'agreement', 'agree', 'agreed', 'Agreement']
+2024-07-15 11:09:55 root INFO     allow ['allow', 'allow', 'Allow', 'Allow', 'allows'] ['allow', 'allow', 'Allow', 'Allow', 'allowed']
+2024-07-15 11:09:57 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,39,Jacobian,18,lm,50
+2024-07-15 11:10:00 root INFO     adjust ['reconsider', 'recal', 'reass', 'rethink', 're'] ['reconsider', 'recal', 'reass', 'rethink', 'repro']
+2024-07-15 11:10:00 root INFO     appear ['red', 'recal', 'recon', 'reg', 'reapp'] ['red', ':', 'ré', 'reg', 'recal']
+2024-07-15 11:10:00 root INFO     apply ['English', ':', 'works', ':[', 'Revis'] ['English', ':[', ':', 'works', 'AB']
+2024-07-15 11:10:00 root INFO     appoint ['re', 'recon', 'reapp', 'reass', 'oversee'] ['oversee', 'escort', 'recon', 'appoint', 'reapp']
+2024-07-15 11:10:02 __main__ INFO     re+verb_reg,beta,33.3,LRE,4,Jacobian,3,lm,40
+2024-07-15 11:10:04 root INFO     accept ['accept', 'accepted', 'accept', 'accepting', 'acceptable'] ['accept', 'accept', 'accepted', 'accepting', 'Accept']
+2024-07-15 11:10:04 root INFO     achieve ['achieve', 'achieved', 'accomplish', 'improve', 'achievable'] ['achieve', 'achieved', 'accomplish', 'Achieve', 'improve']
+2024-07-15 11:10:04 root INFO     add ['add', 'add', 'added', 'address', 'adding'] ['add', 'add', 'address', 'Add', 'adding']
+2024-07-15 11:10:04 root INFO     agree ['agree', 'agree', 'agreeing', 'agreed', 'agreement'] ['agree', 'agree', 'agreeing', 'agreement', 'agrees']
+2024-07-15 11:10:04 root INFO     allow ['allow', 'allow', 'allowed', 'Allow', 'enable'] ['allow', 'allow', 'Allow', 'enable', 'permit']
+2024-07-15 11:10:07 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,47,Jacobian,42,lm,49
+2024-07-15 11:10:09 root INFO     argentina ['port', 'cast', 'nor', 'the', 'es'] ['port', 'cast', 'nor', 'the', 'es']
+2024-07-15 11:10:09 root INFO     australia ['cast', 'port', 'english', 'nor', 'eng'] ['cast', 'port', 'nor', 'english', 'eng']
+2024-07-15 11:10:10 root INFO     bahamas ['nor', 'the', 'port', 'cast', 'english'] ['nor', 'the', 'port', 'cast', 'english']
+2024-07-15 11:10:12 __main__ INFO     country - language,beta,33.3,LRE,11,Jacobian,7,lm,39
+2024-07-15 11:10:14 root INFO     apartment ['room', 'balcony', 'side', 'apartment', 'suite'] ['room', 'balcony', 'apartment', 'suite', 'side']
+2024-07-15 11:10:14 root INFO     bird ['bird', 'wing', 'pigeon', 'Bird', 'bird'] ['bird', 'bird', 'Bird', 'wing', 'pigeon']
+2024-07-15 11:10:14 root INFO     brush ['brush', 'brush', 'Brus', 'brist', 'picture'] ['brush', 'brush', 'Brus', 'Brush', 'brushed']
+2024-07-15 11:10:16 __main__ INFO     meronyms - part,beta,33.3,LRE,15,Jacobian,15,lm,27
+2024-07-15 11:10:18 root INFO     adding ['adding', 'added', 'adding', 'being', 'acting'] ['adding', 'adding', 'added', 'being', 'Adding']
+2024-07-15 11:10:18 root INFO     agreeing ['agreeing', 'agreed', 'ag', 'approved', '='] ['agreeing', 'agreed', 'ag', 'agree', 'agreement']
+2024-07-15 11:10:18 root INFO     allowing ['allowing', 'allowed', 'permitted', 'being', 'allowed'] ['allowing', 'allowed', 'allowed', 'permitting', 'being']
+2024-07-15 11:10:18 root INFO     announcing ['being', 'announced', 'been', 'announcing', 'is'] ['being', 'announcing', 'announced', 'being', 'is']
+2024-07-15 11:10:18 root INFO     appearing ['appearing', 'being', 'appeared', 'app', 'appar'] ['appearing', 'app', 'being', 'appeared', 'appar']
+2024-07-15 11:10:21 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,47,Jacobian,46,lm,49
+2024-07-15 11:10:23 root INFO     ape ['ape', 'monkey', 'branch', 'tree', 'forest'] ['ape', 'monkey', 'apes', 'branch', 'gorilla']
+2024-07-15 11:10:23 root INFO     bat ['flight', 'wing', 'flying', 'wings', 'bat'] ['flight', 'wing', 'wings', 'flying', 'Flight']
+2024-07-15 11:10:23 root INFO     bear ['bur', 'den', 'bear', 'wedge', 'reserve'] ['bur', 'den', 'wedge', 'bear', 'roup']
+2024-07-15 11:10:25 __main__ INFO     animal - shelter,beta,33.3,LRE,11,Jacobian,9,lm,29
+2024-07-15 11:10:27 root INFO     bracelet ['jewelry', 'personal', 'jew', 'wearable', 'hand'] ['jewelry', 'personal', 'jew', 'wrist', 'wearable']
+2024-07-15 11:10:27 root INFO     brooch ['jewelry', 'cl', 'cl', 'jewels', 'Cl'] ['Cl', 'cl', 'cl', 'jew', 'ilk']
+2024-07-15 11:10:27 root INFO     cake ['food', 'edible', 'baking', 'cake', 'desserts'] ['edible', 'baking', 'desserts', 'cake', 'dessert']
+2024-07-15 11:10:28 __main__ INFO     hypernyms - misc,beta,33.3,LRE,23,Jacobian,18,lm,27
+2024-07-15 11:10:31 root INFO     bag ['material', 'cord', 'threads', 'string', 'tw'] ['cord', 'string', 'threads', 'material', 'kn']
+2024-07-15 11:10:31 root INFO     beach ['all', 'floating', 'seas', 'products', 'surf'] ['floating', 'seas', 'Sea', 'products', 'surf']
+2024-07-15 11:10:31 root INFO     beard ['sc', 'hair', 'long', 'whisk', 'coarse'] ['sc', 'long', 'dread', 'hair', 'whisk']
+2024-07-15 11:10:33 __main__ INFO     meronyms - substance,beta,33.3,LRE,14,Jacobian,12,lm,37
+2024-07-15 11:10:35 root INFO     ability ['abilities', 'Abilities', 'Ability', 'ability', 'Ability'] ['Abilities', 'abilities', 'Ability', 'Ability', 'ability']
+2024-07-15 11:10:35 root INFO     academy ['acad', 'Acad', 'academy', 'Academy', 'academia'] ['acad', 'Acad', 'academy', 'Academy', 'academia']
+2024-07-15 11:10:35 root INFO     activity ['Activities', 'activities', 'activ', 'activity', 'Activity'] ['Activities', 'activities', 'activ', 'Activity', 'Activ']
+2024-07-15 11:10:35 root INFO     agency ['agencies', 'Agency', 'agency', 'agency', 'Agents'] ['agencies', 'Agency', 'agency', 'agency', 'Agent']
+2024-07-15 11:10:35 root INFO     analysis ['analyses', 'analysis', 'Analysis', 'Analy', 'analysis'] ['analyses', 'Analysis', 'analysis', 'analysis', 'Analy']
+2024-07-15 11:10:38 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,45,Jacobian,43,lm,50
+2024-07-15 11:10:40 root INFO     acceptable ['un', 'uner', 'unacceptable', 'inc', 'ineligible'] ['uner', 'un', 'inc', 'U', 're']
+2024-07-15 11:10:40 root INFO     affected ['uner', 'U', 'unt', 'inc', 'ign'] ['uner', 'U', 'unt', 'inc', 'ign']
+2024-07-15 11:10:40 root INFO     authorized ['unauthorized', 'U', 'uner', 'una', 'dis'] ['unauthorized', 'una', 'U', 'uner', 'ign']
+2024-07-15 11:10:40 root INFO     available ['uner', 'un', 'U', 'un', 'U'] ['uner', 'U', 'un', 'inc', 'U']
+2024-07-15 11:10:43 __main__ INFO     un+adj_reg,beta,33.3,LRE,25,Jacobian,18,lm,49
+2024-07-15 11:10:45 root INFO     accomplish ['endeavor', 'app', 'deliberate', 'ac', 'apt'] ['app', 'apt', 'ac', 'endeavor', 'aff']
+2024-07-15 11:10:45 root INFO     achieve ['ac', 'en', 'app', 'apt', 'ass'] ['ac', 'app', 'apt', 'asc', 'ass']
+2024-07-15 11:10:45 root INFO     acknowledge ['ack', 'acknowledgment', 'acknowled', 'acknowledgement', 'acknowledging'] ['ack', 'acknowled', 'acknowledgment', 'ac', 'acon']
+2024-07-15 11:10:45 root INFO     adjust ['advis', 'adjustment', 'app', 'adequate', 'adjusting'] ['app', 'advis', 'adjust', 'ass', 'adjusting']
+2024-07-15 11:10:48 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,35,Jacobian,27,lm,49
+2024-07-15 11:10:50 root INFO     amazing ['amazing', 'amaz', 'amaz', 'aw', 'astounding'] ['amaz', 'amazing', 'amaz', 'am', 'Amazing']
+2024-07-15 11:10:50 root INFO     attractive ['attractiveness', 'attractive', 'attract', 'attractions', 'att'] ['attractive', 'attractiveness', 'attract', 'att', 'attractions']
+2024-07-15 11:10:50 root INFO     aware ['aware', 'Aware', 'aware', 'WARE', 'Awareness'] ['aware', 'Aware', 'WARE', 'avis', 'aware']
+2024-07-15 11:10:50 root INFO     broken ['broken', 'Broken', 'how', 'being', 'BR'] ['Broken', 'BR', 'Bro', 'broken', 'broken']
+2024-07-15 11:10:50 root INFO     careful ['careful', 'cautious', 'Care', 'CARE', 'precautions'] ['careful', 'Care', 'cautious', 'CARE', 'precautions']
+2024-07-15 11:10:52 __main__ INFO     adj+ness_reg,beta,33.3,LRE,11,Jacobian,10,lm,42
+2024-07-15 11:10:55 root INFO     ambitious ['ambitious', 'arrogant', 'boast', 'aggressive', 'overs'] ['ambitious', 'arrogant', 'boast', 'aggressive', 'ambition']
+2024-07-15 11:10:55 root INFO     arching ['arch', 'AR', 'AR', 'ar', 'Arabic'] ['AR', 'ARS', 'AR', 'ARK', 'Arabic']
+2024-07-15 11:10:55 root INFO     booked ['book', 'booked', 'book', 'booking', 'Book'] ['book', 'booked', 'book', 'Book', 'booking']
+2024-07-15 11:10:55 root INFO     charged ['charged', 'charged', 'charges', 'charge', 'Charg'] ['charged', 'charged', 'Charg', 'charges', 'Charg']
+2024-07-15 11:10:55 root INFO     compensated ['compensated', 'compens', 'generously', 'recomp', 'reimb'] ['compensated', 'compens', 'generously', 'recomp', 'compensation']
+2024-07-15 11:10:57 __main__ INFO     over+adj_reg,beta,33.3,LRE,2,Jacobian,1,lm,50
+2024-07-15 11:11:00 root INFO     achieve ['ac', 'en', 'a', 'er', '!'] ['a', 'na', 'ac', 'er', 'ac']
+2024-07-15 11:11:00 root INFO     advertise ['ad', 'advertisement', 'advert', 'a', 'advertis'] ['ad', 'advertisement', 'advert', 'advertisement', 'ads']
+2024-07-15 11:11:00 root INFO     bake ['oven', 'baker', 'bake', '!', 'bn'] ['oven', 'bake', 'bn', 'BB', 'Bake']
+2024-07-15 11:11:00 root INFO     begin ['en', 'a', 'a', 'b', '!'] ['a', 'BB', 'ben', 'nb', 'ber']
+2024-07-15 11:11:02 __main__ INFO     verb+er_irreg,beta,33.3,LRE,12,Jacobian,5,lm,47
+2024-07-15 11:11:05 root INFO     according ['WD', 'idas', 'IDA', 'ofer', 'dd'] ['WD', 'IDA', 'idas', 'FER', 'wd']
+2024-07-15 11:11:05 root INFO     actual ['account', 'region', 'refere', 'attribute', 'actor'] ['Att', 'account', 'actor', 'attribute', 'refere']
+2024-07-15 11:11:05 root INFO     additional ['additional', 'Additional', 'additionally', 'add', 'Intern'] ['additional', 'Additional', 'add', 'additionally', 'Add']
+2024-07-15 11:11:05 root INFO     apparent ['apparent', 'apparently', 'Apparently', 'appearance', 'App'] ['apparent', 'apparently', 'Appears', 'App', 'ape']
+2024-07-15 11:11:05 root INFO     beautiful ['beautiful', 'beaut', 'Beaut', 'Beautiful', 'beauty'] ['Beaut', 'Beautiful', 'beautiful', 'beaut', 'beauty']
+2024-07-15 11:11:07 __main__ INFO     adj+ly_reg,beta,33.3,LRE,15,Jacobian,7,lm,48
+2024-07-15 11:11:10 root INFO     aristotle ['Aristotle', 'natural', 'philosopher', 'logic', 'empir'] ['Aristotle', 'logic', 'natural', 'empir', 'logically']
+2024-07-15 11:11:10 root INFO     balzac ['essay', 'essays', '18', 'proverb', 'philos'] ['18', 'essay', 'essays', 'proverb', 'É']
+2024-07-15 11:11:10 root INFO     beethoven ['composer', 'pian', 'poet', 'piano', 'philos'] ['composer', 'pian', 'piano', 'poet', 'philos']
+2024-07-15 11:11:12 __main__ INFO     name - occupation,beta,33.3,LRE,31,Jacobian,20,lm,43
+2024-07-15 11:11:14 root INFO     afraid ['scared', 'afraid', 'scare', 'panic', 'do'] ['scared', 'afraid', 'panic', 'scare', 'terrified']
+2024-07-15 11:11:14 root INFO     angry ['aze', 'wrath', 'rage', 'irrit', 'alone'] ['aze', 'alone', 'oses', 'ople', 'olls']
+2024-07-15 11:11:15 root INFO     ask ['to', 'vary', 'have', 'tolerate', 'occupy'] ['vary', 'to', 'have', 'tolerate', 'occupy']
+2024-07-15 11:11:15 root INFO     boring ['dull', 'tedious', 'do', 'boring', 'distract'] ['tedious', 'dull', 'do', 'uls', 'popular']
+2024-07-15 11:11:16 __main__ INFO     synonyms - intensity,beta,33.3,LRE,8,Jacobian,7,lm,23
+2024-07-15 11:11:18 root INFO     bee ['bee', 'buzzing', 'buzz', 'hive', 'ker'] ['bee', 'buzzing', 'buzz', 'hive', 'Buzz']
+2024-07-15 11:11:18 root INFO     cat ['his', 'pur', 'me', 'kitten', 'whisk'] ['his', 'pur', 'kitten', 'me', 'mia']
+2024-07-15 11:11:20 __main__ INFO     animal - sound,beta,33.3,LRE,10,Jacobian,9,lm,29
+2024-07-15 11:11:22 root INFO     album ['albums', 'Album', 'album', 'album', 'al'] ['album', 'Album', 'albums', 'album', 'alog']
+2024-07-15 11:11:22 root INFO     application ['Applications', 'applications', 'Applications', 'Application', 'application'] ['Applications', 'Applications', 'applications', 'Application', 'application']
+2024-07-15 11:11:22 root INFO     area ['Areas', 'areas', 'Authorities', 'arteries', 'agencies'] ['Areas', 'areas', 'Authorities', 'arteries', 'Area']
+2024-07-15 11:11:22 root INFO     car ['cars', 'Cars', 'cars', 'automobiles', 'car'] ['cars', 'Cars', 'cars', 'automobiles', 'car']
+2024-07-15 11:11:22 root INFO     college ['Colleges', 'colleges', 'college', 'College', 'College'] ['Colleges', 'colleges', 'College', 'College', 'college']
+2024-07-15 11:11:25 __main__ INFO     noun - plural_reg,beta,33.3,LRE,50,Jacobian,49,lm,50
+2024-07-15 11:11:27 root INFO     achieving ['achieving', 'following', 'being', 'operating', 'assisting'] ['achieving', 'following', 'assisting', 'applying', 'operating']
+2024-07-15 11:11:27 root INFO     adding ['applying', 'adding', 'addressing', 'advancing', 'assisting'] ['addressing', 'advancing', 'applying', 'adding', 'advising']
+2024-07-15 11:11:27 root INFO     allowing ['allowing', 'following', 'requiring', 'assisting', 'permitting'] ['allowing', 'following', 'permitting', 'assisting', 'requiring']
+2024-07-15 11:11:27 root INFO     appearing ['appear', 'appar', 'following', 'occur', 'appearing'] ['appearing', 'applying', 'appar', 'appearance', 'following']
+2024-07-15 11:11:27 root INFO     applying ['applying', 'following', 'apply', 'follow', 'application'] ['applying', 'following', 'applications', 'application', 'Application']
+2024-07-15 11:11:30 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,30,Jacobian,20,lm,50
+2024-07-15 11:11:32 root INFO     actor ['man', 'actor', 'male', 'father', 'stage'] ['man', 'actor', 'male', 'father', 'stage']
+2024-07-15 11:11:32 root INFO     batman ['bat', 'Batman', 'Batman', 'knight', 'superhero'] ['bat', 'Batman', 'Batman', 'knight', 'boy']
+2024-07-15 11:11:32 root INFO     boar ['bull', 'beef', 'daddy', 'pap', 'buck'] ['bull', 'beef', 'daddy', 'pap', 'buck']
+2024-07-15 11:11:32 root INFO     brother ['brother', 'brother', 'brothers', 'father', 'sister'] ['brother', 'brother', 'brothers', 'father', 'sister']
+2024-07-15 11:11:34 __main__ INFO     male - female,beta,33.3,LRE,4,Jacobian,3,lm,31
+2024-07-15 11:11:36 root INFO     adds ['added', 'included', 'to', 'being', 'adds'] ['added', 'adds', 'included', 'Added', 'to']
+2024-07-15 11:11:36 root INFO     agrees ['agreed', 'agrees', 'agree', 'agreement', 'agreeing'] ['agreed', 'agrees', 'agree', 'agreement', 'agreeing']
+2024-07-15 11:11:36 root INFO     allows ['allowed', 'permitted', 'enabled', 'located', 'authorized'] ['permitted', 'allowed', 'permits', 'enabled', 'allows']
+2024-07-15 11:11:37 root INFO     announces ['announced', 'announced', 'announcements', 'announcement', 'announcing'] ['announced', 'announced', 'announcements', 'announcement', 'announcing']
+2024-07-15 11:11:37 root INFO     appears ['appeared', 'appears', 'appearing', 'appear', 'permitted'] ['appeared', 'appears', 'app', 'appearing', 'appear']
+2024-07-15 11:11:39 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,48,Jacobian,48,lm,49
+2024-07-15 11:11:41 root INFO     antelope ['herd', 'park', 'bachelor', 'pr', 'herds'] ['antle', 'pas', 'herd', 'elope', 'Af']
+2024-07-15 11:11:42 root INFO     bee ['bee', 'hive', 'bees', 'pod', 'bee'] ['bee', 'bees', 'hive', 'bee', 'Bee']
+2024-07-15 11:11:42 root INFO     bird ['bird', 'birds', 'bird', 'Bird', 'feathers'] ['bird', 'birds', 'bird', 'Bird', 'feathers']
+2024-07-15 11:11:42 root INFO     book ['book', 'ba', 'bloom', 'pen', 'be'] ['book', 'bloom', 'ba', 'writers', 'obook']
+2024-07-15 11:11:43 __main__ INFO     meronyms - member,beta,33.3,LRE,19,Jacobian,12,lm,31
+2024-07-15 11:11:46 root INFO     boat ['an', 'a', 'the', 'also', 'our'] ['an', 'a', 'our', 'also', 'the']
+2024-07-15 11:11:46 root INFO     book ['an', 'a', 'the', 'A', 'also'] ['an', 'a', 'the', 'A', 'classical']
+2024-07-15 11:11:47 __main__ INFO     hyponyms - misc,beta,33.3,LRE,1,Jacobian,2,lm,27
+2024-07-15 11:11:49 root INFO     able ['able', 'abled', 'Able', 'able', 'enabled'] ['abled', 'Able', 'able', 'abe', 'able']
+2024-07-15 11:11:49 root INFO     angry ['angry', 'anger', 'Angry', 'Anger', 'ang'] ['angry', 'anger', 'Anger', 'anger', 'Angry']
+2024-07-15 11:11:49 root INFO     cheap ['cheap', 'Cheap', 'che', 'cheaply', 'cheat'] ['cheap', 'Cheap', 'che', 'cheaply', 'Che']
+2024-07-15 11:11:50 root INFO     clever ['clever', 'Clever', 'cunning', 'cle', 'cle'] ['clever', 'Clever', 'Cle', 'cle', 'cunning']
+2024-07-15 11:11:50 root INFO     costly ['cost', 'costly', 'cost', 'costs', 'pricey'] ['cost', 'cost', 'costly', 'costs', 'Cost']
+2024-07-15 11:11:52 __main__ INFO     adj - superlative,beta,33.3,LRE,2,Jacobian,1,lm,44
+2024-07-15 11:11:54 root INFO     accuse [':', '"', ':', "'", 'Acc'] [':', 'Acc', "''", ':', '"']
+2024-07-15 11:11:54 root INFO     admire ['admiration', 'admire', 'enjoying', 'exhibiting', 'observing'] ['admiration', 'admire', 'enjoying', 'exhibiting', 'observing']
+2024-07-15 11:11:54 root INFO     allege [':', "'", ':', "''", '«'] [':', 'allege', "''", ':', 'Alleg']
+2024-07-15 11:11:54 root INFO     aspire ['Ex', 'aspire', 'Des', 'En', 'Res'] ['Des', 'Ex', 'aspire', 'En', 'Acer']
+2024-07-15 11:11:54 root INFO     authorize [':', ':', ':"', 'Author', '`'] [':', ':', ':"', 'Author', 'Loc']
+2024-07-15 11:11:57 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,20,Jacobian,14,lm,49
+2024-07-15 11:11:59 root INFO     auto ['vans', 'steer', 'motor', 'veh', 'makers'] ['vans', 'olis', 'umer', 'maker', 'makers']
+2024-07-15 11:12:00 __main__ INFO     synonyms - exact,beta,33.3,LRE,2,Jacobian,1,lm,19
+2024-07-15 11:12:02 root INFO     allosaurus ['rapt', 'rept', 'dinosaur', 'lizard', 'reptiles'] ['rapt', 'lizard', 'dinosaur', 'raph', 'rept']
+2024-07-15 11:12:02 root INFO     anaconda ['snake', 'venom', 'predatory', 'large', 'rept'] ['snake', 'venom', 'large', 'predatory', 'snakes']
+2024-07-15 11:12:02 root INFO     ant ['inver', 'insect', 'term', 'ver', 'vern'] ['inver', 'insect', 'vern', 'ver', 'term']
+2024-07-15 11:12:02 root INFO     beaver ['water', 'small', 'aquatic', 'large', 'quad'] ['water', 'small', 'aquatic', 'large', 'rodents']
+2024-07-15 11:12:03 root INFO     bee ['insect', 'bee', 'inver', 'insects', 'bees'] ['insect', 'bee', 'bees', 'inver', 'Bee']
+2024-07-15 11:12:05 __main__ INFO     hypernyms - animals,beta,33.3,LRE,36,Jacobian,31,lm,41
+2024-07-15 11:12:07 root INFO     abuja ['ju', 'united', 'jun', 'mine', 'republic'] ['jun', 'ju', 'uj', 'mine', 'anta']
+2024-07-15 11:12:07 root INFO     ankara ['republic', 'bul', 'ire', 'arm', 'irit'] ['irit', 'irt', 'ire', 'ail', 'ulet']
+2024-07-15 11:12:07 root INFO     baghdad ['ira', 'Iraq', 'oil', 'association', 'known'] ['ira', 'Iraq', 'Iraqis', 'Iraq', 'oil']
+2024-07-15 11:12:09 __main__ INFO     country - capital,beta,33.3,LRE,0,Jacobian,0,lm,36
+2024-07-15 11:12:09 __main__ INFO     using beta=33.3, iter=3
+2024-07-15 11:12:12 root INFO     balzac ['fr', 'french', 'par', 'recourse', 'z'] ['recourse', 'fr', '`', 'par', '`']
+2024-07-15 11:12:12 root INFO     confucius ['ch', 'traditional', 'classical', 'tal', 'c'] ['traditional', 'classical', 'TC', 'traditional', 'ch']
+2024-07-15 11:12:13 __main__ INFO     name - nationality,beta,33.3,LRE,6,Jacobian,2,lm,22
+2024-07-15 11:12:15 root INFO     ape ['we', 'the', 'pr', 'monkey', 'lit'] ['we', 'the', 'pr', 'UA', 'pr']
+2024-07-15 11:12:15 root INFO     badger ['kit', 'kit', 'kits', 'pup', 'lit'] ['kit', 'kit', 'lit', 'kits', 'lit']
+2024-07-15 11:12:15 root INFO     bear ['cub', 'kit', 'kit', 'we', 'pup'] ['kit', 'cub', 'kit', 'we', 'kits']
+2024-07-15 11:12:15 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:12:17 __main__ INFO     animal - youth,beta,33.3,LRE,21,Jacobian,19,lm,36
+2024-07-15 11:12:19 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:12:20 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:12:20 root INFO     allowing ['allowing', 'permitting', 'enabling', 'is', 'allows'] ['allowing', 'permitting', 'enabling', 'requiring', 'providing']
+2024-07-15 11:12:20 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'appar'] ['appearing', 'app', 'appearances', 'Appearances', 'appar']
+2024-07-15 11:12:20 root INFO     applying ['applying', 'app', 'applies', 'applic', 'applications'] ['applying', 'app', 'applic', 'applications', 'applies']
+2024-07-15 11:12:22 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,40,Jacobian,31,lm,50
+2024-07-15 11:12:24 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:12:25 root INFO     art ['art', 'art', 'artist', 'Art', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:12:25 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:12:25 root INFO     breath ['breath', 'Breath', 'breathe', 'breathing', 'breat'] ['breath', 'Breath', 'breathe', 'breathing', 'breat']
+2024-07-15 11:12:25 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:12:27 __main__ INFO     noun+less_reg,beta,33.3,LRE,2,Jacobian,2,lm,49
+2024-07-15 11:12:29 root INFO     accept ['accept', 'Accept', 'acceptance', 'acceptable', 'accept'] ['Accept', 'accept', 'accept', 'acceptance', 'Accept']
+2024-07-15 11:12:29 root INFO     adapt ['adapt', 'adapt', 'Adapt', 'ad', 'Adapt'] ['adapt', 'Adapt', 'adapt', 'Adapt', 'Ad']
+2024-07-15 11:12:30 root INFO     adjust ['adjust', 'adjust', 'adjustable', 'Adjust', 'Adjust'] ['adjust', 'adjust', 'adjustable', 'Adjust', 'Adjust']
+2024-07-15 11:12:30 root INFO     admire ['Ad', 'admire', 'admiration', 'ad', 'Ad'] ['Ad', 'admire', 'admiration', 'ad', 'Admir']
+2024-07-15 11:12:32 __main__ INFO     verb+able_reg,beta,33.3,LRE,19,Jacobian,16,lm,47
+2024-07-15 11:12:36 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,11
+2024-07-15 11:12:38 root INFO     after ['before', 'meet', 'count', 'preced', 'instead'] ['before', 'meet', 'est', 'pilot', 'before']
+2024-07-15 11:12:39 root INFO     ahead ['posterior', 'behind', 'rear', 'after', 'ally'] ['posterior', 'behind', 'ally', 'behind', 'after']
+2024-07-15 11:12:39 root INFO     anterior ['posterior', 'subsequent', 'Poster', 'poster', 'superior'] ['posterior', 'subsequent', 'Poster', 'poster', 'superior']
+2024-07-15 11:12:39 root INFO     backward ['forward', 'forwards', 'forward', 'Forward', 'Forward'] ['forward', 'forwards', 'forward', 'Forward', 'Forward']
+2024-07-15 11:12:39 root INFO     before ['after', 'After', 'est', 'count', 'after'] ['after', 'After', 'after', 'est', 'count']
+2024-07-15 11:12:41 __main__ INFO     antonyms - binary,beta,33.3,LRE,32,Jacobian,26,lm,43
+2024-07-15 11:12:43 root INFO     accept ['accept', 'Accept', 'accepted', 'acceptance', 'Accept'] ['accept', 'Accept', 'acceptance', 'accepted', 'Accept']
+2024-07-15 11:12:43 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'accomplish', 'achieves'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'accomplish']
+2024-07-15 11:12:43 root INFO     add ['add', 'adds', 'Add', 'addr', 'added'] ['add', 'addr', 'Add', 'Add', 'added']
+2024-07-15 11:12:43 root INFO     agree ['agree', 'agreement', 'Agreement', 'agreed', 'agree'] ['agree', 'agreement', 'Agreement', 'agree', 'agreed']
+2024-07-15 11:12:43 root INFO     allow ['allow', 'Allow', 'allow', 'Allow', 'allowed'] ['allow', 'allow', 'Allow', 'Allow', 'allowed']
+2024-07-15 11:12:46 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,25,Jacobian,10,lm,50
+2024-07-15 11:12:48 root INFO     acquire ['re', 'recal', 'reconsider', 'reg', 'red'] ['recal', 'reg', 'rethink', 'red', 'reconsider']
+2024-07-15 11:12:48 root INFO     appear ['red', 'recon', 'reconsider', 'reapp', 'recons'] ['red', 'Revis', 'ré', 'recon', 'recons']
+2024-07-15 11:12:48 root INFO     apply ['revisit', 'reg', 'Revis', 'ré', 're'] [':[', 'AB', 'Revis', 'REG', ':']
+2024-07-15 11:12:48 root INFO     appoint ['re', 'reapp', 'recon', 'reass', 'rel'] ['reapp', 'recon', 're', 'escort', 'oversee']
+2024-07-15 11:12:50 __main__ INFO     re+verb_reg,beta,33.3,LRE,4,Jacobian,5,lm,40
+2024-07-15 11:16:19 __main__ INFO     using beta=33.3, iter=0
+2024-07-15 11:16:22 root INFO     balzac ['french', 'rely', "\\'", 'fr', 'recourse'] ['recourse', 'rely', "\\'", '{"', 'consult']
+2024-07-15 11:16:22 root INFO     confucius ['lou', 'not', 'lat', 'classical', 'sc'] ['lou', 'classical', 'not', 'whence', 'loc']
+2024-07-15 11:16:23 __main__ INFO     name - nationality,beta,33.3,LRE,6,Jacobian,5,lm,23
+2024-07-15 11:16:25 root INFO     ape ['we', 'lit', 'kit', 'Kit', 'young'] ['we', 'Kit', 'lit', 'UA', 'lit']
+2024-07-15 11:16:25 root INFO     bear ['cub', 'kit', 'we', 'kit', 'pup'] ['kit', 'cub', 'kit', 'we', 'lit']
+2024-07-15 11:16:26 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:16:27 __main__ INFO     animal - youth,beta,33.3,LRE,19,Jacobian,19,lm,34
+2024-07-15 11:16:30 root INFO     adding ['adding', 'adding', 'is', 'add', 'including'] ['adding', 'adding', 'Adding', 'add', 'Adding']
+2024-07-15 11:16:30 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'advertisers', 'Advertising'] ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers']
+2024-07-15 11:16:30 root INFO     allowing ['allowing', 'permitting', 'allows', 'enabling', 'is'] ['allowing', 'permitting', 'enabling', 'allows', 'requiring']
+2024-07-15 11:16:30 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'appar'] ['appearing', 'app', 'appearances', 'appar', 'Appearances']
+2024-07-15 11:16:30 root INFO     applying ['applying', 'app', 'applic', 'applications', 'applies'] ['applying', 'app', 'applic', 'applications', 'application']
+2024-07-15 11:16:33 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,41,Jacobian,29,lm,50
+2024-07-15 11:16:35 root INFO     arm ['arm', 'arm', 'Arm', 'ARM', 'ARM'] ['arm', 'arm', 'Arm', 'ARM', 'ARM']
+2024-07-15 11:16:35 root INFO     art ['art', 'artist', 'Art', 'art', 'artwork'] ['art', 'Art', 'art', 'artist', 'artwork']
+2024-07-15 11:16:35 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:16:35 root INFO     breath ['breath', 'Breath', 'breat', 'breathe', 'breathing'] ['breath', 'Breath', 'breathe', 'breat', 'breathing']
+2024-07-15 11:16:35 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:16:38 __main__ INFO     noun+less_reg,beta,33.3,LRE,2,Jacobian,2,lm,49
+2024-07-15 11:16:40 root INFO     accept ['acceptable', 'accept', 'Accept', 'acceptable', 'acceptance'] ['Accept', 'accept', 'acceptable', 'acceptable', 'accept']
+2024-07-15 11:16:40 root INFO     adapt ['adapt', 'adapt', 'Adapt', 'ad', 'Adapt'] ['adapt', 'Adapt', 'adapt', 'Adapt', 'Ad']
+2024-07-15 11:16:40 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'Adjust', 'Adjust'] ['adjust', 'adjustable', 'adjust', 'Adjust', 'Adjust']
+2024-07-15 11:16:40 root INFO     admire ['Ad', 'admire', 'admirable', 'adm', 'ad'] ['Ad', 'ad', 'ador', 'admire', 'adm']
+2024-07-15 11:16:43 __main__ INFO     verb+able_reg,beta,33.3,LRE,18,Jacobian,13,lm,45
+2024-07-15 11:16:47 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,12
+2024-07-15 11:16:49 root INFO     after ['out', 'out', 'before', 'come', 'instead'] ['out', 'out', 'before', 'before', 'instead']
+2024-07-15 11:16:49 root INFO     ahead ['behind', 'behind', 'out', 'out', 'bes'] ['behind', 'out', 'behind', 'out', 'bes']
+2024-07-15 11:16:49 root INFO     anterior ['posterior', 'subsequent', 'inter', 'out', 're'] ['posterior', 'inter', 'out', 'subsequent', 're']
+2024-07-15 11:16:49 root INFO     backward ['out', 'out', 'up', 'outward', 'forward'] ['out', 'up', 'forward', 'out', 'outward']
+2024-07-15 11:16:49 root INFO     before ['after', 'after', 'out', 'behind', 'out'] ['after', 'after', 'out', 'out', 'behind']
+2024-07-15 11:16:51 __main__ INFO     antonyms - binary,beta,33.3,LRE,30,Jacobian,29,lm,44
+2024-07-15 11:16:54 root INFO     accept ['accept', 'acceptance', 'Accept', 'accepted', 'Accept'] ['accept', 'acceptance', 'Accept', 'Accept', 'accepted']
+2024-07-15 11:16:54 root INFO     achieve ['achieve', 'Achieve', 'achieves', 'achievement', 'achieved'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'achieved']
+2024-07-15 11:16:54 root INFO     add ['add', 'Add', 'adds', 'Add', 'adding'] ['add', 'Add', 'Add', 'adding', 'ADD']
+2024-07-15 11:16:54 root INFO     agree ['agreement', 'agree', 'Agreement', 'agreed', 'agreeing'] ['agreement', 'Agreement', 'agree', 'agreed', 'agree']
+2024-07-15 11:16:54 root INFO     allow ['allow', 'Allow', 'allow', 'Allow', 'allowed'] ['allow', 'Allow', 'allow', 'Allow', 'allowed']
+2024-07-15 11:16:56 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,29,Jacobian,11,lm,50
+2024-07-15 11:18:35 __main__ INFO     using beta=33.3, iter=0
+2024-07-15 11:18:38 root INFO     balzac ['fr', 'french', 'ze', 'z', 'par'] ['fr', 'ze', 'french', 'par', '`']
+2024-07-15 11:18:38 root INFO     confucius ['sc', 'lat', 'ch', 'ancient', 'classical'] ['lat', 'ch', 'sc', 'classical', 'ancient']
+2024-07-15 11:18:39 __main__ INFO     name - nationality,beta,33.3,LRE,9,Jacobian,5,lm,23
+2024-07-15 11:18:41 root INFO     ape ['we', 'kit', 'lit', 'Kit', 'pup'] ['we', 'lit', 'Kit', 'UA', 'the']
+2024-07-15 11:18:42 root INFO     bear ['cub', 'kit', 'pup', 'kits', 'kit'] ['cub', 'kit', 'kits', 'kit', 'lit']
+2024-07-15 11:18:42 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:18:43 __main__ INFO     animal - youth,beta,33.3,LRE,19,Jacobian,17,lm,33
+2024-07-15 11:18:46 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:18:46 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:18:46 root INFO     allowing ['allowing', 'permitting', 'enabling', 'allows', 'requiring'] ['allowing', 'permitting', 'enabling', 'requiring', 'authorizing']
+2024-07-15 11:18:46 root INFO     appearing ['appearing', 'app', 'appearances', 'Appearances', 'approaching'] ['appearing', 'app', 'appearances', 'Appearances', 'approaching']
+2024-07-15 11:18:46 root INFO     applying ['applying', 'app', 'applic', 'applies', 'applications'] ['applying', 'app', 'applic', 'applications', 'apply']
+2024-07-15 11:18:48 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,38,Jacobian,30,lm,50
+2024-07-15 11:18:51 root INFO     arm ['arm', 'arm', 'Arm', 'ARM', 'ARM'] ['arm', 'arm', 'Arm', 'ARM', 'ARM']
+2024-07-15 11:18:51 root INFO     art ['art', 'art', 'artist', 'Art', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:18:51 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:18:51 root INFO     breath ['breath', 'Breath', 'breat', 'breathe', 'breathing'] ['breath', 'Breath', 'breat', 'breathe', 'breathing']
+2024-07-15 11:18:51 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:18:53 __main__ INFO     noun+less_reg,beta,33.3,LRE,2,Jacobian,2,lm,49
+2024-07-15 11:18:56 root INFO     accept ['Accept', 'accept', 'acceptable', 'acceptance', 'accept'] ['Accept', 'accept', 'acceptance', 'accept', 'Accept']
+2024-07-15 11:18:56 root INFO     adapt ['adapt', 'ad', 'adapt', 'adopt', 'adaptive'] ['adapt', 'adapt', 'ad', 'Ad', 'Adapt']
+2024-07-15 11:18:56 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'acceptable'] ['adjustable', 'adjust', 'adjust', 'adjustment', 'Adjust']
+2024-07-15 11:18:56 root INFO     admire ['admire', 'appreci', 'adm', 'admirable', 'admiration'] ['admire', 'appreci', 'adm', 'admiration', 'admirable']
+2024-07-15 11:18:59 __main__ INFO     verb+able_reg,beta,33.3,LRE,20,Jacobian,18,lm,47
+2024-07-15 11:19:02 root INFO     belfast ['hold', 'souls', 'fusion', 'hug', 'inherent'] ['hold', 'souls', 'fusion', 'inherent', 'vibration']
+2024-07-15 11:19:03 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,13
+2024-07-15 11:19:05 root INFO     after ['en', 'aim', 'im', 'err', 'meet'] ['aim', 'err', 'meet', 'en', 'im']
+2024-07-15 11:19:05 root INFO     ahead ['behind', 'behind', 'Behind', 'backward', 'back'] ['behind', 'behind', 'Behind', 'Behind', 'back']
+2024-07-15 11:19:05 root INFO     anterior ['posterior', 'rear', 'subsequent', 'iste', 'sole'] ['posterior', 'iste', 'sole', 'ist', 'cod']
+2024-07-15 11:19:05 root INFO     backward ['forward', 'forward', 'forwards', 'onward', 'front'] ['forward', 'forward', 'forwards', 'onward', 'Forward']
+2024-07-15 11:19:05 root INFO     before ['after', 'behind', 'after', 'behind', 'aft'] ['after', 'after', 'behind', 'behind', 'ago']
+2024-07-15 11:19:07 __main__ INFO     antonyms - binary,beta,33.3,LRE,31,Jacobian,31,lm,44
+2024-07-15 11:19:10 root INFO     accept ['accept', 'Accept', 'acceptance', 'Accept', 'accepted'] ['accept', 'Accept', 'acceptance', 'Accept', 'accepted']
+2024-07-15 11:19:10 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'Achievement', 'achieves'] ['achieve', 'Achieve', 'Achievement', 'achievement', 'Achievements']
+2024-07-15 11:19:10 root INFO     add ['add', 'adds', 'Add', 'added', 'add'] ['add', 'Add', 'Add', 'add', 'adds']
+2024-07-15 11:19:10 root INFO     agree ['agree', 'agreement', 'Agreement', 'agreed', 'agre'] ['agree', 'agreement', 'Agreement', 'agree', 'agreed']
+2024-07-15 11:19:10 root INFO     allow ['allow', 'allow', 'Allow', 'Allow', 'avoid'] ['allow', 'allow', 'Allow', 'Allow', 'allowance']
+2024-07-15 11:19:12 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,27,Jacobian,10,lm,50
+2024-07-15 11:19:15 root INFO     appear ['red', 'reapp', 'recon', 'reconsider', 'recal'] ['red', 'reapp', 'recon', 'ré', 'reconsider']
+2024-07-15 11:19:15 root INFO     apply ['revisit', 'reg', 'reconsider', 'Revis', 'recal'] [':[', 'Revis', ':', 'revisit', ':']
+2024-07-15 11:19:15 root INFO     appoint ['re', 'reapp', 'reass', 'recon', 'oversee'] ['escort', 'appoint', 'oversee', 'reapp', 'admon']
+2024-07-15 11:19:17 __main__ INFO     re+verb_reg,beta,33.3,LRE,6,Jacobian,6,lm,42
+2024-07-15 11:19:19 root INFO     accept ['accept', 'accepted', 'accept', 'Accept', 'accepting'] ['accept', 'accepted', 'accept', 'Accept', 'accepting']
+2024-07-15 11:19:19 root INFO     achieve ['achieve', 'achieved', 'Achieve', 'achievable', 'achievement'] ['achieve', 'Achieve', 'achieved', 'achievement', 'achievable']
+2024-07-15 11:19:19 root INFO     add ['add', 'add', 'added', 'ad', 'Add'] ['add', 'add', 'Add', 'added', 'adding']
+2024-07-15 11:19:20 root INFO     agree ['agree', 'agreed', 'agreeing', 'agreement', 'agree'] ['agree', 'agree', 'agreeing', 'agreement', 'agreed']
+2024-07-15 11:19:20 root INFO     allow ['allow', 'Allow', 'allowed', 'allow', 'allowing'] ['allow', 'Allow', 'allow', 'allowing', 'allowed']
+2024-07-15 11:19:22 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,48,Jacobian,42,lm,49
+2024-07-15 11:19:25 root INFO     argentina ['cast', 'es', 'port', 'english', 'the'] ['cast', 'es', 'port', 'the', 'nor']
+2024-07-15 11:19:25 root INFO     australia ['english', 'cast', 'es', 'eng', 'the'] ['cast', 'english', 'es', 'eng', 'the']
+2024-07-15 11:19:25 root INFO     bahamas ['the', 'cast', 'english', 'es', 'nor'] ['the', 'cast', 'es', 'english', 'nor']
+2024-07-15 11:19:27 __main__ INFO     country - language,beta,33.3,LRE,11,Jacobian,11,lm,38
+2024-07-15 11:19:29 root INFO     apartment ['room', 'floor', 'wall', 'do', 'rooms'] ['room', 'rooms', 'floor', 'wall', 'do']
+2024-07-15 11:19:29 root INFO     bird ['bird', 'pigeon', 'bird', 'wing', 'goose'] ['bird', 'pigeon', 'bird', 'wing', 'goose']
+2024-07-15 11:19:31 __main__ INFO     meronyms - part,beta,33.3,LRE,13,Jacobian,12,lm,28
+2024-07-15 11:19:33 root INFO     adding ['adding', 'adding', 'added', 'addressing', 'Adding'] ['adding', 'adding', 'addressing', 'Adding', 'added']
+2024-07-15 11:19:33 root INFO     agreeing ['agreeing', 'agreed', 'agreement', 'Agreement', 'agreements'] ['agreeing', 'agreed', 'agreement', 'Agreement', 'agreements']
+2024-07-15 11:19:33 root INFO     allowing ['allowing', 'allowed', 'allowed', 'permitted', 'allow'] ['allowing', 'allowed', 'allowed', 'authorizing', 'permitting']
+2024-07-15 11:19:33 root INFO     announcing ['announced', 'announcing', 'announced', 'announ', 'announcements'] ['announced', 'announcing', 'announced', 'announcements', 'announ']
+2024-07-15 11:19:33 root INFO     appearing ['appearing', 'app', 'appeared', 'appear', 'appears'] ['appearing', 'app', 'appear', 'appeared', 'appears']
+2024-07-15 11:19:36 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,47,Jacobian,46,lm,49
+2024-07-15 11:19:40 __main__ INFO     animal - shelter,beta,33.3,LRE,23,Jacobian,13,lm,29
+2024-07-15 11:19:42 root INFO     blender ['kitchen', 'dish', 'appliance', 'dishes', 'kitchens'] ['kitchen', 'Food', 'kitchens', 'dish', 'Kit']
+2024-07-15 11:19:42 root INFO     bracelet ['jewelry', 'personal', 'jew', 'hand', 'wrist'] ['jewelry', 'personal', 'jew', 'wrist', 'Personal']
+2024-07-15 11:19:43 root INFO     brooch ['jewelry', 'jew', 'jew', 'jewel', 'ornament'] ['jewelry', 'jew', 'jew', 'Jew', 'jewels']
+2024-07-15 11:19:43 root INFO     cake ['baking', 'cake', 'desserts', 'dessert', 'cakes'] ['baking', 'cake', 'desserts', 'cakes', 'bake']
+2024-07-15 11:19:44 __main__ INFO     hypernyms - misc,beta,33.3,LRE,23,Jacobian,20,lm,29
+2024-07-15 11:19:46 root INFO     bag ['poly', 'kn', 'pl', 'PU', 'synthetic'] ['PU', 'kn', 'pl', 'stretch', 'poly']
+2024-07-15 11:19:46 root INFO     beach ['many', 'waves', 'mostly', 'rays', 'o'] ['o', 'Sea', 'waves', 'rays', 'sea']
+2024-07-15 11:19:47 root INFO     beard ['hair', 'long', 'grain', 'gr', 'fibers'] ['hair', 'A', 'long', 'AG', 'AC']
+2024-07-15 11:19:49 __main__ INFO     meronyms - substance,beta,33.3,LRE,15,Jacobian,10,lm,40
+2024-07-15 11:19:51 root INFO     ability ['Abilities', 'abilities', 'Ability', 'ability', 'Ability'] ['Abilities', 'Ability', 'abilities', 'Ability', 'ability']
+2024-07-15 11:19:51 root INFO     academy ['acad', 'Acad', 'academy', 'Academy', 'academia'] ['Acad', 'acad', 'academy', 'Academy', 'academia']
+2024-07-15 11:19:51 root INFO     activity ['Activities', 'activities', 'Activity', 'activity', 'activ'] ['Activities', 'activities', 'Activity', 'activ', 'Activity']
+2024-07-15 11:19:51 root INFO     agency ['agencies', 'Agency', 'agency', 'agency', 'Agents'] ['agencies', 'Agency', 'agency', 'agency', 'Agent']
+2024-07-15 11:19:51 root INFO     analysis ['analyses', 'analysis', 'Analysis', 'Analy', 'analys'] ['analyses', 'Analysis', 'analysis', 'analysis', 'Analy']
+2024-07-15 11:19:54 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,46,Jacobian,41,lm,50
+2024-07-15 11:19:56 root INFO     able ['incapable', 'ineligible', 'inf', 'unus', 'incompetent'] ['ineligible', 'incapable', 'inf', 'accomplish', 'inc']
+2024-07-15 11:19:56 root INFO     acceptable ['unacceptable', 'reject', 'includ', 'disagree', 'rep'] ['reject', 'unacceptable', 'includ', 're', 'uner']
+2024-07-15 11:19:56 root INFO     affected ['uner', 'inc', 'ine', 'inqu', 'ign'] ['uner', 'inc', 'ine', 'inqu', 'ign']
+2024-07-15 11:19:56 root INFO     authorized ['unauthorized', 'auth', 'authorized', 'una', 'auth'] ['unauthorized', 'auth', 'una', 'authorized', 'auth']
+2024-07-15 11:19:56 root INFO     available ['inf', 'unavailable', 'indisp', 'inf', 'uner'] ['inf', 'unavailable', 'inf', 'uner', 'indisp']
+2024-07-15 11:19:59 __main__ INFO     un+adj_reg,beta,33.3,LRE,35,Jacobian,33,lm,50
+2024-07-15 11:20:01 root INFO     accomplish ['app', 'endeavor', 'appointment', 'com', 'ac'] ['app', 'com', 'apt', 'ac', 'endeavor']
+2024-07-15 11:20:01 root INFO     achieve ['appointment', 'app', 'apt', 'achieving', 'highlighting'] ['app', 'apt', 'ass', 'appointment', 'ac']
+2024-07-15 11:20:01 root INFO     acknowledge ['acknowledgment', 'acknowledgement', 'ack', 'acknowled', 'acknowledging'] ['ack', 'acknowledgment', 'acknowledgement', 'acknowled', 'app']
+2024-07-15 11:20:01 root INFO     adjust ['adjustment', 'app', 'adjust', 'app', 'adjust'] ['app', 'adjust', 'adjustment', 'adjust', 'app']
+2024-07-15 11:20:01 root INFO     advertise ['advertisement', 'advertising', 'advert', 'advertis', 'advertising'] ['advertisement', 'advertising', 'advert', 'advertising', 'advertis']
+2024-07-15 11:20:04 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,47,Jacobian,43,lm,50
+2024-07-15 11:20:06 root INFO     amazing ['amazing', 'amaz', 'Amazing', 'awesome', 'astounding'] ['amazing', 'amaz', 'Amazing', 'Amazing', 'amazingly']
+2024-07-15 11:20:06 root INFO     attractive ['attractiveness', 'attractive', 'attract', 'att', 'attraction'] ['attractiveness', 'attractive', 'attract', 'att', 'attr']
+2024-07-15 11:20:06 root INFO     aware ['aware', 'Aware', 'aware', 'WARE', 'Awareness'] ['aware', 'Aware', 'WARE', 'Awareness', 'aware']
+2024-07-15 11:20:06 root INFO     broken ['broken', 'Broken', 'how', 'BR', 'broken'] ['Broken', 'broken', 'broken', 'Bro', 'BR']
+2024-07-15 11:20:08 __main__ INFO     adj+ness_reg,beta,33.3,LRE,11,Jacobian,10,lm,42
+2024-07-15 11:20:11 root INFO     ambitious ['ambitious', 'extravagant', 'arrogant', 'aggressive', 'oversized'] ['ambitious', 'extravagant', 'ambitions', 'aggressive', 'ambition']
+2024-07-15 11:20:11 root INFO     arching ['Arabic', 'open', 'arch', 'helpful', 'AR'] ['Arabic', 'ARS', 'AR', 'ARK', 'ARC']
+2024-07-15 11:20:11 root INFO     booked ['book', 'booked', 'book', 'Book', 'Book'] ['book', 'booked', 'book', 'Book', 'BOOK']
+2024-07-15 11:20:11 root INFO     charged ['charged', 'charge', 'charged', 'Charg', 'electric'] ['charged', 'charged', 'Charg', 'charge', 'electric']
+2024-07-15 11:20:11 root INFO     compensated ['compensated', 'compens', 'generously', 'recomp', 'compensate'] ['compensated', 'compens', 'generously', 'recomp', 'compensate']
+2024-07-15 11:20:14 __main__ INFO     over+adj_reg,beta,33.3,LRE,2,Jacobian,1,lm,50
+2024-07-15 11:20:16 root INFO     achieve ['!', 'achie', '!', 'en', 'ac'] ['!', 'aba', 'bol', 'mac', '!']
+2024-07-15 11:20:16 root INFO     advertise ['advert', 'advertisement', 'advertis', 'advertising', 'advertisements'] ['advertisement', 'advert', 'advertisements', 'advertisement', 'advertising']
+2024-07-15 11:20:16 root INFO     announce ['announ', 'announcer', 'announcements', 'broadcast', 'loudspe'] ['announ', 'announcer', 'announcements', 'announcing', 'ann']
+2024-07-15 11:20:16 root INFO     bake ['bake', 'Bake', 'baking', 'baker', 'oven'] ['Bake', 'baking', 'bake', 'BB', 'BA']
+2024-07-15 11:20:16 root INFO     begin [':', '!', '.', '^', '^'] ['anc', 'll', '9', 'ig', 'B']
+2024-07-15 11:20:19 __main__ INFO     verb+er_irreg,beta,33.3,LRE,23,Jacobian,11,lm,47
+2024-07-15 11:20:21 root INFO     according ['instead', 'WD', 'Domain', ')(', 'Account'] ['WD', 'Account', 'idas', 'Domain', 'adata']
+2024-07-15 11:20:21 root INFO     actual ['account', 'fact', 'Att', 'actually', 'exper'] ['Att', 'account', 'fact', 'att', 'exper']
+2024-07-15 11:20:21 root INFO     additional ['additional', 'Additional', 'Add', 'alternative', 'Intern'] ['Additional', 'add', 'additional', 'Add', 'Intern']
+2024-07-15 11:20:21 root INFO     apparent ['apparent', 'apparently', 'App', 'app', 'ap'] ['apparent', 'App', 'app', 'App', 'ape']
+2024-07-15 11:20:21 root INFO     beautiful ['Beaut', 'beautifully', 'beaut', 'beauty', 'aest'] ['Beaut', 'beaut', 'Beaut', 'beautifully', 'beauty']
+2024-07-15 11:20:24 __main__ INFO     adj+ly_reg,beta,33.3,LRE,24,Jacobian,7,lm,50
+2024-07-15 11:20:26 root INFO     aristotle ['natural', 'log', 'Aristotle', 'logic', 'moral'] ['Aristotle', 'natural', 'log', 'logic', 'categories']
+2024-07-15 11:20:26 root INFO     balzac ['essay', 'novelist', 'essays', 'french', 'literary'] ['essay', 'essays', 'sentences', 'én', 'paragraphs']
+2024-07-15 11:20:26 root INFO     beethoven ['composer', 'pian', 'piano', 'conductor', 'po'] ['composer', 'pian', 'piano', 'phon', 'conductor']
+2024-07-15 11:20:29 __main__ INFO     name - occupation,beta,33.3,LRE,23,Jacobian,11,lm,41
+2024-07-15 11:20:31 root INFO     afraid ['do', 'scared', 'afraid', 'DO', 'lo'] ['DO', 'do', 'scared', 'panic', 'hold']
+2024-07-15 11:20:31 root INFO     angry ['alone', 'rage', 'ople', 'DO', 'irrit'] ['alone', 'ople', 'DO', 'olls', 'iles']
+2024-07-15 11:20:31 root INFO     boring ['do', 'DO', 'hl', 'uls', 'HL'] ['hl', 'do', 'uls', 'DO', 'rist']
+2024-07-15 11:20:32 __main__ INFO     synonyms - intensity,beta,33.3,LRE,5,Jacobian,4,lm,22
+2024-07-15 11:20:35 root INFO     bee ['bee', 'buzz', 'buzzing', 'ker', 'his'] ['bee', 'buzzing', 'buzz', 'hive', 'ker']
+2024-07-15 11:20:35 root INFO     cat ['his', 'pur', 'kitten', 'me', 'sne'] ['his', 'kitten', 'pur', 'me', 'whisk']
+2024-07-15 11:20:36 __main__ INFO     animal - sound,beta,33.3,LRE,10,Jacobian,9,lm,29
+2024-07-15 11:20:39 root INFO     album ['albums', 'Album', 'album', 'album', 'al'] ['Album', 'albums', 'album', 'album', 'alog']
+2024-07-15 11:20:39 root INFO     application ['applications', 'Applications', 'Applications', 'application', 'Application'] ['Applications', 'applications', 'Applications', 'Application', 'application']
+2024-07-15 11:20:39 root INFO     area ['Areas', 'areas', 'Area', 'area', 'Area'] ['Areas', 'areas', 'Area', 'area', 'Area']
+2024-07-15 11:20:39 root INFO     car ['cars', 'Cars', 'cars', 'car', 'automobiles'] ['cars', 'Cars', 'cars', 'car', 'automobiles']
+2024-07-15 11:20:39 root INFO     college ['colleges', 'Colleges', 'College', 'college', 'college'] ['Colleges', 'colleges', 'College', 'college', 'college']
+2024-07-15 11:20:41 __main__ INFO     noun - plural_reg,beta,33.3,LRE,49,Jacobian,49,lm,50
+2024-07-15 11:20:44 root INFO     achieving ['achieving', 'pursuing', 'promoting', 'managing', 'maintaining'] ['achieving', 'pursuing', 'promoting', 'managing', 'maintaining']
+2024-07-15 11:20:44 root INFO     adding ['adding', 'advising', 'assisting', 'adding', 'attaching'] ['adding', 'adding', 'advising', 'assisting', 'attaching']
+2024-07-15 11:20:44 root INFO     allowing ['allowing', 'permitting', 'assisting', 'supporting', 'requiring'] ['allowing', 'permitting', 'assisting', 'supporting', 'requiring']
+2024-07-15 11:20:44 root INFO     appearing ['appearing', 'applying', 'occurring', 'assisting', 'attending'] ['appearing', 'applying', 'presenting', 'assisting', 'occurring']
+2024-07-15 11:20:44 root INFO     applying ['applying', 'apply', 'application', 'following', 'appl'] ['applying', 'application', 'apply', 'Application', 'applications']
+2024-07-15 11:20:47 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,36,Jacobian,26,lm,50
+2024-07-15 11:20:49 root INFO     batman ['bachelor', 'knight', 'boy', 'boy', 'soldier'] ['boy', 'Batman', 'bachelor', 'Batman', 'soldier']
+2024-07-15 11:20:49 root INFO     boar ['stag', 'bo', 'ro', 'bas', 'boa'] ['stag', 'bo', 'boa', 'ro', 'bas']
+2024-07-15 11:20:51 __main__ INFO     male - female,beta,33.3,LRE,5,Jacobian,4,lm,29
+2024-07-15 11:20:53 root INFO     adds ['added', 'adds', 'adding', 'to', 'included'] ['added', 'adds', 'adding', 'Added', 'added']
+2024-07-15 11:20:53 root INFO     agrees ['agreed', 'agrees', 'approved', 'agree', 'agreeing'] ['agreed', 'agrees', 'agree', 'agreeing', 'approved']
+2024-07-15 11:20:53 root INFO     allows ['allowed', 'permitted', 'allows', 'allowing', 'allow'] ['allowed', 'permitted', 'allows', 'allowing', 'allow']
+2024-07-15 11:20:53 root INFO     announces ['announced', 'offered', 'announcement', 'announ', 'announced'] ['announced', 'announcement', 'announcements', 'announces', 'announced']
+2024-07-15 11:20:53 root INFO     appears ['appeared', 'appears', 'appear', 'appearing', 'permitted'] ['appears', 'appeared', 'appear', 'app', 'appearing']
+2024-07-15 11:20:56 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,49,Jacobian,49,lm,49
+2024-07-15 11:20:58 root INFO     antelope ['herd', 'animal', 'wildlife', 'herds', 'zo'] ['herd', 'animal', 'animal', 'animals', 'wildlife']
+2024-07-15 11:20:58 root INFO     bee ['bee', 'be', 'hive', 'bees', 'bl'] ['bee', 'be', 'bees', 'bl', 'hive']
+2024-07-15 11:20:58 root INFO     bird ['bird', 'birds', 'species', 'wildlife', 'forest'] ['bird', 'birds', 'wildlife', 'fly', 'bird']
+2024-07-15 11:20:58 root INFO     book ['book', 'books', 'chapter', 'reading', 'writer'] ['book', 'books', 'reading', 'writer', 'book']
+2024-07-15 11:21:00 __main__ INFO     meronyms - member,beta,33.3,LRE,13,Jacobian,9,lm,32
+2024-07-15 11:21:02 root INFO     boat ['an', 'canoe', 'axe', 'u', 'a'] ['canoe', 'an', 'ka', 'axe', 'u']
+2024-07-15 11:21:02 root INFO     book ['an', 'a', 'ha', 'the', 'any'] ['an', 'a', 'ha', 'any', 'classical']
+2024-07-15 11:21:04 __main__ INFO     hyponyms - misc,beta,33.3,LRE,5,Jacobian,5,lm,26
+2024-07-15 11:21:06 root INFO     able ['Able', 'able', 'able', 'abled', 'abe'] ['Able', 'abled', 'able', 'abe', 'ABLE']
+2024-07-15 11:21:06 root INFO     angry ['angry', 'anger', 'Angry', 'ang', 'Anger'] ['angry', 'anger', 'Angry', 'Anger', 'anger']
+2024-07-15 11:21:06 root INFO     cheap ['cheap', 'Cheap', 'che', 'cheaply', 'che'] ['cheap', 'Cheap', 'che', 'cheaply', 'Che']
+2024-07-15 11:21:06 root INFO     clever ['clever', 'Clever', 'Cle', 'cle', 'cle'] ['clever', 'Clever', 'Cle', 'cle', 'Cle']
+2024-07-15 11:21:06 root INFO     costly ['costly', 'cost', 'cost', 'pricey', 'costs'] ['cost', 'costly', 'cost', 'pricey', 'costs']
+2024-07-15 11:21:09 __main__ INFO     adj - superlative,beta,33.3,LRE,1,Jacobian,1,lm,44
+2024-07-15 11:21:11 root INFO     accuse ['"', ':', ':', 'making', 'the'] [':', ':', '"', 'making', 'accus']
+2024-07-15 11:21:11 root INFO     admire ['admiration', 'making', 'appreci', 'accent', 'appreciation'] ['admiration', 'appreci', 'accent', 'making', 'observing']
+2024-07-15 11:21:11 root INFO     allege [':', 'ab', 'the', 'making', '"'] [':', 'bel', 'ab', 'making', '"']
+2024-07-15 11:21:11 root INFO     aspire ['aspiration', 'conce', 'appreci', 'pursuing', 'ass'] ['aspiration', 'conce', 'appreci', 'pursuing', 'aspire']
+2024-07-15 11:21:11 root INFO     authorize ['authorization', ':', ':', 'Authorization', '`'] ['authorization', ':', 'Authorization', 'Author', 'Ver']
+2024-07-15 11:21:14 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,29,Jacobian,21,lm,49
+2024-07-15 11:21:16 root INFO     airplane ['herald', 'mir', 'or', 'cum', 'modes'] ['herald', 'Lod', 'mir', 'modes', 'mir']
+2024-07-15 11:21:16 root INFO     auto ['ure', 'dared', 'har', 'oser', 'orea'] ['ure', 'oser', 'olis', 'umer', 'orea']
+2024-07-15 11:21:16 root INFO     baby ['bloom', 'bless', 'bl', 'mum', 'ga'] ['bloom', 'ura', 'amara', 'bless', 'Aurora']
+2024-07-15 11:21:16 root INFO     bicycle ['b', 'tri', 'umb', 'buck', 'modes'] ['bits', 'umb', 'tri', 'bies', 'bl']
+2024-07-15 11:21:17 __main__ INFO     synonyms - exact,beta,33.3,LRE,4,Jacobian,3,lm,19
+2024-07-15 11:21:19 root INFO     allosaurus ['rept', 'lizard', 'dinosaur', 'rapt', 'large'] ['lizard', 'rept', 'dinosaur', 'rapt', 'crocod']
+2024-07-15 11:21:19 root INFO     anaconda ['snake', 'rept', 'canine', 'venom', 'cat'] ['snake', 'Snake', 'elt', 'canine', 'boa']
+2024-07-15 11:21:19 root INFO     ant ['insect', 'inver', 'ver', 'verte', 'lower'] ['insect', 'inver', 'ver', 'term', 'term']
+2024-07-15 11:21:19 root INFO     beaver ['water', 'aquatic', 'quadru', 'quad', 'amphib'] ['water', 'aquatic', 'quadru', 'water', 'Water']
+2024-07-15 11:21:20 root INFO     bee ['insect', 'bee', 'inver', 'insects', 'bees'] ['insect', 'Bee', 'bee', 'inver', 'bees']
+2024-07-15 11:21:22 __main__ INFO     hypernyms - animals,beta,33.3,LRE,36,Jacobian,33,lm,43
+2024-07-15 11:21:24 root INFO     abuja ['eth', 'the', 'ibe', 'ist', 'istic'] ['ibe', 'eth', 'istic', 'ethe', 'ist']
+2024-07-15 11:21:24 root INFO     ankara ['eth', 'ethe', 'republic', 'ike', 'the'] ['eth', 'ethe', 'ike', 'igil', 'eman']
+2024-07-15 11:21:24 root INFO     baghdad ['the', 'ira', 'gulf', 'eth', 'itter'] ['ira', 'itter', 'adan', 'inel', 'eth']
+2024-07-15 11:21:26 __main__ INFO     country - capital,beta,33.3,LRE,0,Jacobian,0,lm,35
+2024-07-15 11:21:26 __main__ INFO     using beta=33.3, iter=1
+2024-07-15 11:21:29 root INFO     balzac ['fr', 'french', 'literary', 'z', '`'] ['literary', 'fr', '`', 'recourse', 'french']
+2024-07-15 11:21:29 root INFO     confucius ['ch', 'lat', 'ancient', 'classical', 'primitive'] ['classical', 'ch', 'ancient', 'primitive', 'traditional']
+2024-07-15 11:21:30 __main__ INFO     name - nationality,beta,33.3,LRE,7,Jacobian,7,lm,22
+2024-07-15 11:21:32 root INFO     ape ['we', 'lit', 'kit', 'Kit', 'young'] ['we', 'lit', 'Kit', 'kit', 'UA']
+2024-07-15 11:21:32 root INFO     bear ['cub', 'kit', 'kit', 'kits', 'pup'] ['cub', 'kit', 'lit', 'kit', 'kits']
+2024-07-15 11:21:32 root INFO     beaver ['kit', 'kit', 'lit', 'kits', 'pup'] ['kit', 'kit', 'lit', 'kits', 'be']
+2024-07-15 11:21:32 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:21:34 __main__ INFO     animal - youth,beta,33.3,LRE,21,Jacobian,18,lm,35
+2024-07-15 11:21:36 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:21:37 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:21:37 root INFO     allowing ['allowing', 'permitting', 'enabling', 'allows', 'is'] ['allowing', 'permitting', 'enabling', 'requiring', 'allows']
+2024-07-15 11:21:37 root INFO     appearing ['appearing', 'app', 'appearances', 'Appears', 'Appearances'] ['appearing', 'app', 'appearances', 'Appearances', 'approaching']
+2024-07-15 11:21:37 root INFO     applying ['applying', 'app', 'applic', 'applications', 'applies'] ['applying', 'app', 'applic', 'applications', 'applies']
+2024-07-15 11:21:39 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,38,Jacobian,32,lm,50
+2024-07-15 11:21:42 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:21:42 root INFO     art ['art', 'artist', 'art', 'Art', 'arts'] ['art', 'art', 'Art', 'artist', 'arts']
+2024-07-15 11:21:42 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:21:42 root INFO     breath ['breath', 'Breath', 'breat', 'breathe', 'breathing'] ['breath', 'Breath', 'breat', 'breathe', 'breathing']
+2024-07-15 11:21:42 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:21:44 __main__ INFO     noun+less_reg,beta,33.3,LRE,2,Jacobian,1,lm,48
+2024-07-15 11:21:47 root INFO     accept ['accept', 'acceptance', 'Accept', 'acceptable', 'accept'] ['Accept', 'accept', 'acceptance', 'accept', 'Accept']
+2024-07-15 11:21:47 root INFO     adapt ['adapt', 'adapt', 'adopt', 'Adapt', 'Adapt'] ['adapt', 'adapt', 'Adapt', 'Adapt', 'adopt']
+2024-07-15 11:21:47 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'Adjust'] ['adjust', 'adjustable', 'adjust', 'adjustment', 'Adjust']
+2024-07-15 11:21:47 root INFO     admire ['admire', 'admirable', 'appreci', 'admiration', 'adm'] ['admire', 'admirable', 'admiration', 'appreci', 'ador']
+2024-07-15 11:21:49 __main__ INFO     verb+able_reg,beta,33.3,LRE,19,Jacobian,13,lm,48
+2024-07-15 11:21:53 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,11
+2024-07-15 11:21:56 root INFO     after ['before', 'ahead', 'ago', 'come', 'before'] ['before', 'before', 'ahead', 'ago', 'come']
+2024-07-15 11:21:56 root INFO     ahead ['behind', 'behind', 'bes', 'ahead', 'ago'] ['behind', 'behind', 'bes', 'ago', 'ahead']
+2024-07-15 11:21:56 root INFO     anterior ['posterior', 'iste', 're', 'subsequent', 'accommod'] ['posterior', 'iste', 're', 'subsequent', 'accommod']
+2024-07-15 11:21:56 root INFO     backward ['forward', 'forwards', 'forward', 'up', 'ahead'] ['forward', 'forward', 'forwards', 'up', 'ahead']
+2024-07-15 11:21:56 root INFO     before ['after', 'after', 'behind', 'behind', 'ago'] ['after', 'after', 'behind', 'behind', 'ago']
+2024-07-15 11:21:58 __main__ INFO     antonyms - binary,beta,33.3,LRE,26,Jacobian,27,lm,42
+2024-07-15 11:22:00 root INFO     accept ['accept', 'Accept', 'accepted', 'acceptance', 'accept'] ['accept', 'Accept', 'acceptance', 'Accept', 'accept']
+2024-07-15 11:22:00 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'achieved', 'achieves'] ['achieve', 'Achieve', 'achievement', 'achieved', 'Achievement']
+2024-07-15 11:22:00 root INFO     add ['add', 'adds', 'added', 'adding', 'addr'] ['add', 'added', 'adding', 'addr', 'Add']
+2024-07-15 11:22:00 root INFO     agree ['agree', 'agreement', 'Agreement', 'agreed', 'agree'] ['agreement', 'agree', 'Agreement', 'agree', 'agreed']
+2024-07-15 11:22:01 root INFO     allow ['allow', 'allow', 'Allow', 'Allow', 'allowed'] ['allow', 'allow', 'Allow', 'Allow', 'allowed']
+2024-07-15 11:22:03 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,29,Jacobian,11,lm,50
+2024-07-15 11:22:05 root INFO     acquire ['re', 'recal', 'reconsider', 'reg', 'red'] ['recal', 'reg', 'reconsider', 'red', 'rethink']
+2024-07-15 11:22:05 root INFO     adjust ['reconsider', 'recal', 'reass', 're', 'recon'] ['reconsider', 'recal', 'reass', 'recon', 're']
+2024-07-15 11:22:05 root INFO     appear ['red', 'reapp', 'ré', 're', 'reconsider'] ['red', 'ré', 'ARP', 'errone', ':']
+2024-07-15 11:22:05 root INFO     apply ['reg', 'revisit', 'reconsider', 'recal', 're'] ['Revis', 'Reg', 'REG', 'reg', ':[']
+2024-07-15 11:22:06 root INFO     appoint ['recon', 're', 'reapp', 'reass', 'appoint'] ['appoint', 'escort', 'oversee', 'carefully', 'recon']
+2024-07-15 11:22:08 __main__ INFO     re+verb_reg,beta,33.3,LRE,5,Jacobian,5,lm,45
+2024-07-15 11:22:10 root INFO     accept ['accept', 'accepted', 'Accept', 'accept', 'Accept'] ['accept', 'Accept', 'accept', 'accepted', 'Accept']
+2024-07-15 11:22:10 root INFO     achieve ['achieve', 'achieved', 'Achieve', 'accomplish', 'accomplished'] ['achieve', 'achieved', 'Achieve', 'accomplish', 'achievable']
+2024-07-15 11:22:10 root INFO     add ['add', 'add', 'added', 'Add', 'Add'] ['add', 'add', 'Add', 'Add', 'added']
+2024-07-15 11:22:10 root INFO     agree ['agree', 'agreed', 'agreement', 'ag', 'Ag'] ['agree', 'agreement', 'ag', 'agreed', 'agree']
+2024-07-15 11:22:10 root INFO     allow ['allow', 'allow', 'Allow', 'allowed', 'Allow'] ['allow', 'Allow', 'allow', 'Allow', 'allowed']
+2024-07-15 11:22:13 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,46,Jacobian,39,lm,49
+2024-07-15 11:22:15 root INFO     argentina ['english', 'nor', 'port', 'the', 'french'] ['english', 'nor', 'port', 'the', 'french']
+2024-07-15 11:22:16 root INFO     australia ['english', 'nor', 'the', 'port', 'french'] ['english', 'nor', 'the', 'port', 'french']
+2024-07-15 11:22:16 root INFO     bahamas ['nor', 'english', 'the', 'port', 'cast'] ['nor', 'the', 'english', 'port', 'cast']
+2024-07-15 11:22:18 __main__ INFO     country - language,beta,33.3,LRE,13,Jacobian,13,lm,38
+2024-07-15 11:22:20 root INFO     apartment ['term', 'several', 'set', 'room', 'floor'] ['term', 'terms', 'several', 'various', 'room']
+2024-07-15 11:22:20 root INFO     bird ['bird', 'wing', 'squ', 'chicken', 'fish'] ['bird', 'wing', 'chicken', 'bird', 'squ']
+2024-07-15 11:22:20 root INFO     brush ['brush', 'brush', 'wood', 'Western', 'set'] ['brush', 'brush', 'SB', 'Western', 'wood']
+2024-07-15 11:22:22 __main__ INFO     meronyms - part,beta,33.3,LRE,14,Jacobian,14,lm,26
+2024-07-15 11:22:24 root INFO     adding ['adding', 'adding', 'added', 'Adding', 'being'] ['adding', 'adding', 'Adding', 'added', 'Adding']
+2024-07-15 11:22:24 root INFO     agreeing ['agreeing', 'agreed', 'ag', 'agreements', '='] ['agreeing', 'agreed', 'ag', 'agreements', 'Ag']
+2024-07-15 11:22:24 root INFO     allowing ['allowed', 'allowing', 'is', 'being', 'permitted'] ['allowing', 'allowed', 'is', 'allowed', 'being']
+2024-07-15 11:22:24 root INFO     announcing ['been', 'being', 'is', 'announced', 'announcing'] ['being', 'announcing', 'been', 'is', 'announced']
+2024-07-15 11:22:24 root INFO     appearing ['appearing', 'app', 'appar', 'appeared', 'appe'] ['appearing', 'app', 'appar', 'apping', 'appearances']
+2024-07-15 11:22:27 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,46,Jacobian,44,lm,49
+2024-07-15 11:22:29 root INFO     bat ['flight', 'flying', 'cricket', 'wing', 'fly'] ['flight', 'wings', 'flying', 'Flight', 'cricket']
+2024-07-15 11:22:31 __main__ INFO     animal - shelter,beta,33.3,LRE,10,Jacobian,6,lm,29
+2024-07-15 11:22:33 root INFO     blender ['Food', 'The', 'Â', 'Ã', 'Meat'] ['Meat', 'Food', 'The', 'Ingredients', 'Ã']
+2024-07-15 11:22:33 root INFO     bracelet ['jewelry', 'bracelet', 'wrist', 'jew', 'necklace'] ['bracelet', 'wrist', 'jewelry', 'necklace', 'beads']
+2024-07-15 11:22:33 root INFO     brooch ['jewelry', 'jewels', 'ornament', 'jew', 'jewel'] ['jewelry', 'jewels', 'jew', 'pierced', 'ornament']
+2024-07-15 11:22:33 root INFO     cake ['cake', 'cakes', 'edible', 'dessert', 'bakery'] ['cakes', 'cake', 'cake', 'bakery', 'edible']
+2024-07-15 11:22:35 __main__ INFO     hypernyms - misc,beta,33.3,LRE,22,Jacobian,16,lm,29
+2024-07-15 11:22:37 root INFO     atmosphere ['floating', 'natural', 'fine', 'n', 'air'] ['floating', 'active', 'MW', 'Ne', 'TX']
+2024-07-15 11:22:37 root INFO     beach ['products', 'all', 'Sea', 'sea', 'floating'] ['Sea', 'Sea', 'SEA', 'products', 'SEA']
+2024-07-15 11:22:37 root INFO     beard ['long', 'ant', 'man', 'br', 'foll'] ['AC', 'TC', 'long', 'foll', 'ant']
+2024-07-15 11:22:39 __main__ INFO     meronyms - substance,beta,33.3,LRE,10,Jacobian,11,lm,38
+2024-07-15 11:22:41 root INFO     ability ['Abilities', 'abilities', 'Ability', 'ability', 'Allow'] ['Abilities', 'abilities', 'Ability', 'ability', 'Allow']
+2024-07-15 11:22:42 root INFO     academy ['acad', 'Acad', 'academy', 'Academy', 'academia'] ['acad', 'Acad', 'academy', 'Academy', 'academia']
+2024-07-15 11:22:42 root INFO     activity ['activities', 'Activities', 'Activity', 'activity', 'activ'] ['Activities', 'activities', 'Activity', 'Activ', 'activ']
+2024-07-15 11:22:42 root INFO     agency ['agencies', 'agency', 'Agency', 'agency', 'Agents'] ['agencies', 'agency', 'Agency', 'agency', 'Agents']
+2024-07-15 11:22:42 root INFO     analysis ['analyses', 'Analy', 'analyze', 'analysis', 'Analysis'] ['analyses', 'Analy', 'Analysis', 'analy', 'analyze']
+2024-07-15 11:22:44 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,45,Jacobian,45,lm,49
+2024-07-15 11:22:47 root INFO     acceptable ['unacceptable', 'un', 'objectionable', 'unsu', 'undesirable'] ['unacceptable', 'un', 'includ', 'objectionable', 'ineligible']
+2024-07-15 11:22:47 root INFO     affected ['un', 'uner', 'unaffected', 'uncont', 'undis'] ['uner', 'un', 'unaffected', 'acc', 'inc']
+2024-07-15 11:22:47 root INFO     authorized ['unauthorized', 'authorized', 'authorised', 'authorized', 'una'] ['unauthorized', 'authorized', 'authorized', 'authorised', 'una']
+2024-07-15 11:22:47 root INFO     available ['unavailable', 'Un', 'inf', 'unob', 'ineligible'] ['unavailable', 'ineligible', 'inf', 'Un', 'inel']
+2024-07-15 11:22:49 __main__ INFO     un+adj_reg,beta,33.3,LRE,40,Jacobian,38,lm,49
+2024-07-15 11:22:52 root INFO     accomplish ['endeavor', 'fulfilling', 'fulfill', 'fulfillment', 'act'] ['endeavor', 'fulfilling', 'fulfill', 'com', 'act']
+2024-07-15 11:22:52 root INFO     achieve ['achieving', 'achieve', 'achievement', 'en', 'ac'] ['achieving', 'ac', 'en', 'achieve', 'Achieve']
+2024-07-15 11:22:52 root INFO     acknowledge ['acknowledgment', 'acknowledgement', 'fulfil', 'fulfillment', 'confirmation'] ['acknowledgment', 'acknowledgement', 'fulfil', 'ack', 'confirmation']
+2024-07-15 11:22:52 root INFO     adjust ['adjustment', 'assurance', 'adequate', 'advis', 'assumption'] ['advis', 'adequate', 'adjustment', 'adjust', 'assumption']
+2024-07-15 11:22:52 root INFO     advertise ['advert', 'advertisement', 'advertising', 'advertise', 'advertis'] ['advert', 'advertising', 'advertise', 'advertisement', 'advertis']
+2024-07-15 11:22:54 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,45,Jacobian,42,lm,50
+2024-07-15 11:22:57 root INFO     amazing ['amazing', 'amaz', 'amaz', 'astounding', 'Amazing'] ['amaz', 'amazing', 'amaz', 'Amazing', 'am']
+2024-07-15 11:22:57 root INFO     attractive ['attractive', 'attractiveness', 'attract', 'attractions', 'att'] ['attractive', 'attractiveness', 'att', 'attract', 'attractions']
+2024-07-15 11:22:57 root INFO     aware ['aware', 'Aware', 'WARE', 'aware', 'Awareness'] ['aware', 'Aware', 'WARE', 'aware', 'avid']
+2024-07-15 11:22:57 root INFO     broken ['broken', 'Broken', 'BR', 'how', 'break'] ['Broken', 'broken', 'broken', 'Bro', 'BR']
+2024-07-15 11:22:59 __main__ INFO     adj+ness_reg,beta,33.3,LRE,11,Jacobian,10,lm,42
+2024-07-15 11:23:02 root INFO     ambitious ['ambitious', 'overs', 'ambition', 'ambitions', 'undertaking'] ['ambitious', 'ambitions', 'ambition', 'assing', 'Americas']
+2024-07-15 11:23:02 root INFO     arching ['arch', 'AR', 'ARC', 'AR', 'ARK'] ['ARC', 'AR', 'ARK', 'ARS', 'AR']
+2024-07-15 11:23:02 root INFO     booked ['booked', 'book', 'Book', 'booking', 'book'] ['booked', 'Book', 'book', 'book', 'booking']
+2024-07-15 11:23:02 root INFO     charged ['charged', 'charged', 'Charg', 'charge', 'charging'] ['charged', 'charged', 'Charg', 'charge', 'Charg']
+2024-07-15 11:23:02 root INFO     compensated ['compensated', 'compens', 'compensation', 'recomp', 'compensate'] ['compensated', 'compens', 'compensation', 'recomp', 'compensate']
+2024-07-15 11:23:04 __main__ INFO     over+adj_reg,beta,33.3,LRE,2,Jacobian,0,lm,49
+2024-07-15 11:23:07 root INFO     achieve ['a', 'a', 'er', '!', '!'] ['a', 'er', 'a', '!', 'ac']
+2024-07-15 11:23:07 root INFO     advertise ['ad', 'advertis', 'advertisement', 'advertise', 'advert'] ['ad', 'advertisement', 'advertise', 'advert', 'advertis']
+2024-07-15 11:23:07 root INFO     announce ['.', '!', '', 'en', 'a'] ['ann', 'à', 'arrest', 'an', '!']
+2024-07-15 11:23:07 root INFO     bake ['!', 'bake', 'baker', '[', 'Bake'] ['Bake', 'bake', '!', 'baker', 'baking']
+2024-07-15 11:23:07 root INFO     begin ['a', 'en', '', 'a', 'is'] ['a', 'a', 'en', '!', 'is']
+2024-07-15 11:23:10 __main__ INFO     verb+er_irreg,beta,33.3,LRE,15,Jacobian,7,lm,47
+2024-07-15 11:23:12 root INFO     according ['subscribed', ')(', 'ofer', 'idas', '::::::::'] ['idas', 'IDA', 'ofer', 'WD', 'DERR']
+2024-07-15 11:23:12 root INFO     actual ['actual', 'actually', 'region', 'Actual', 'Att'] ['Actual', 'actual', 'Att', 'actual', 'Act']
+2024-07-15 11:23:12 root INFO     additional ['Intern', 'additional', 'Add', 'Account', 'Att'] ['Intern', 'Add', 'Account', 'Additional', 'add']
+2024-07-15 11:23:12 root INFO     apparent ['apparently', 'apparent', 'appearance', 'Apparently', 'Apparently'] ['apparent', 'apparently', 'appearance', 'Apparently', 'Appears']
+2024-07-15 11:23:12 root INFO     beautiful ['beaut', 'beautiful', 'Beaut', 'Beaut', 'Beautiful'] ['beaut', 'Beaut', 'Beaut', 'beautiful', 'Beautiful']
+2024-07-15 11:23:15 __main__ INFO     adj+ly_reg,beta,33.3,LRE,11,Jacobian,4,lm,49
+2024-07-15 11:23:17 root INFO     andersen ['philosopher', 'pro', 'phil', 'p', 'po'] ['pro', 'per', 'p', 'po', 'ph']
+2024-07-15 11:23:17 root INFO     aristotle ['Aristotle', 'philosopher', 'Arist', 'philos', 'mathematician'] ['Aristotle', 'Arist', 'philosopher', 'philos', 'log']
+2024-07-15 11:23:17 root INFO     balzac ['novelist', 'essay', 'french', 'franc', 'French'] ['Frenchman', 'franc', 'novelist', 'French', 'french']
+2024-07-15 11:23:17 root INFO     beethoven ['composer', 'pian', 'poet', 'music', 'musician'] ['composer', 'piano', 'pian', 'music', 'po']
+2024-07-15 11:23:19 __main__ INFO     name - occupation,beta,33.3,LRE,35,Jacobian,29,lm,41
+2024-07-15 11:23:22 root INFO     afraid ['scared', 'terrified', 'afraid', 'scare', 'anxious'] ['scared', 'terrified', 'afraid', 'frightened', 'scare']
+2024-07-15 11:23:22 root INFO     angry ['wrath', 'enraged', 'furious', 'rage', 'pissed'] ['wrath', 'enraged', 'raged', 'pissed', 'ups']
+2024-07-15 11:23:22 root INFO     boring ['tedious', 'en', 'BS', 'annoying', 'stupid'] ['BS', 'ann', 'yl', 'uls', 'ply']
+2024-07-15 11:23:23 __main__ INFO     synonyms - intensity,beta,33.3,LRE,8,Jacobian,7,lm,23
+2024-07-15 11:23:25 root INFO     bee ['bee', 'buzz', 'buzzing', 'hive', 'sting'] ['bee', 'hive', 'buzzing', 'buzz', 'sting']
+2024-07-15 11:23:25 root INFO     cat ['his', 'me', 'kitten', 'pur', 'cat'] ['kitten', 'his', 'me', 'pur', 'cat']
+2024-07-15 11:23:27 __main__ INFO     animal - sound,beta,33.3,LRE,11,Jacobian,9,lm,30
+2024-07-15 11:23:29 root INFO     album ['Album', 'albums', 'album', 'album', 'al'] ['album', 'Album', 'albums', 'album', 'alog']
+2024-07-15 11:23:29 root INFO     application ['Applications', 'applications', 'Application', 'Applications', 'application'] ['Applications', 'Application', 'Applications', 'applications', 'application']
+2024-07-15 11:23:30 root INFO     area ['Areas', 'areas', 'Area', 'area', 'Area'] ['Areas', 'Area', 'areas', 'area', 'Area']
+2024-07-15 11:23:30 root INFO     car ['cars', 'Cars', 'cars', 'car', 'automobiles'] ['cars', 'Cars', 'cars', 'car', 'Vehicles']
+2024-07-15 11:23:30 root INFO     college ['Colleges', 'colleges', 'College', 'college', 'College'] ['Colleges', 'colleges', 'College', 'College', 'college']
+2024-07-15 11:23:32 __main__ INFO     noun - plural_reg,beta,33.3,LRE,49,Jacobian,49,lm,50
+2024-07-15 11:23:35 root INFO     achieving ['achieving', 'achieve', 'be', 'pursuing', 'being'] ['achieving', 'pursuing', 'advancing', 'applying', 'achieve']
+2024-07-15 11:23:35 root INFO     adding ['adding', 'applying', 'advising', 'add', 'addressing'] ['adding', 'applying', 'addressing', 'advising', 'adding']
+2024-07-15 11:23:35 root INFO     allowing ['following', 'allowing', 'assisting', 'requiring', 'supporting'] ['following', 'allowing', 'supporting', 'assisting', 'requiring']
+2024-07-15 11:23:35 root INFO     appearing ['applying', 'appearing', 'appear', 'presenting', 'occurring'] ['applying', 'appearing', 'presenting', 'occurring', 'advancing']
+2024-07-15 11:23:35 root INFO     applying ['applying', 'apply', 'follow', 'following', 'application'] ['applying', 'follow', 'apply', 'following', 'application']
+2024-07-15 11:23:37 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,35,Jacobian,29,lm,50
+2024-07-15 11:23:40 root INFO     actor ['male', 'man', 'father', 'daddy', 'gentleman'] ['male', 'father', 'man', 'daddy', 'father']
+2024-07-15 11:23:40 root INFO     batman ['male', 'sir', 'boy', 'captain', 'knight'] ['sir', 'boy', 'male', 'captain', 'boy']
+2024-07-15 11:23:40 root INFO     boar ['father', 'daddy', 'male', 'bo', 'buck'] ['father', 'daddy', 'male', 'bo', 'buck']
+2024-07-15 11:23:40 root INFO     boy ['boy', 'boy', 'father', 'brother', 'boys'] ['boy', 'boy', 'father', 'brother', 'boys']
+2024-07-15 11:23:40 root INFO     brother ['brother', 'brother', 'father', 'boy', 'brothers'] ['brother', 'brother', 'father', 'brothers', 'father']
+2024-07-15 11:23:42 __main__ INFO     male - female,beta,33.3,LRE,3,Jacobian,3,lm,34
+2024-07-15 11:23:44 root INFO     adds ['added', 'to', 'being', 'has', 'been'] ['added', 'to', 'adds', 'being', 'Loc']
+2024-07-15 11:23:44 root INFO     agrees ['agreed', 'agrees', 'agree', 'agreement', 'agreeing'] ['agreed', 'agrees', 'agree', 'agreement', 'agreeing']
+2024-07-15 11:23:44 root INFO     allows ['allowed', 'permitted', 'allows', 'to', 'has'] ['allowed', 'permitted', 'allows', 'permits', 'to']
+2024-07-15 11:23:44 root INFO     announces ['announced', 'to', 'has', 'being', 'been'] ['announced', 'announces', 'to', 'has', 'being']
+2024-07-15 11:23:44 root INFO     appears ['appears', 'appeared', 'appear', 'app', 'permitted'] ['appears', 'appear', 'appeared', 'app', 'Appears']
+2024-07-15 11:23:47 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,48,Jacobian,48,lm,49
+2024-07-15 11:23:49 root INFO     antelope ['herd', 'animal', 'sheep', 'elephant', 'herds'] ['herd', 'animal', 'sheep', 'elephant', 'animal']
+2024-07-15 11:23:49 root INFO     bee ['bee', 'brain', 'bob', 'bees', 'bee'] ['bee', 'bee', 'bees', 'bob', 'brain']
+2024-07-15 11:23:49 root INFO     bird ['bird', 'flock', 'Bird', 'bird', 'birds'] ['bird', 'Bird', 'bird', 'Bird', 'birds']
+2024-07-15 11:23:49 root INFO     book ['book', 'Book', 'book', 'writer', 'bookstore'] ['book', 'Book', 'book', 'Reader', 'BOOK']
+2024-07-15 11:23:51 __main__ INFO     meronyms - member,beta,33.3,LRE,17,Jacobian,7,lm,32
+2024-07-15 11:23:53 root INFO     boat ['an', 'a', 'the', 'car', 'our'] ['an', 'a', 'the', 'ka', 'our']
+2024-07-15 11:23:53 root INFO     book ['an', 'a', 'the', 'A', 'album'] ['an', 'a', 'the', 'A', 'our']
+2024-07-15 11:23:55 __main__ INFO     hyponyms - misc,beta,33.3,LRE,7,Jacobian,5,lm,27
+2024-07-15 11:23:57 root INFO     able ['able', 'Able', 'abled', 'enabled', 'ABLE'] ['Able', 'abled', 'ABLE', 'able', 'ADA']
+2024-07-15 11:23:57 root INFO     angry ['angry', 'anger', 'Angry', 'Anger', 'ang'] ['angry', 'Angry', 'anger', 'Anger', 'anger']
+2024-07-15 11:23:57 root INFO     cheap ['cheap', 'Cheap', 'che', 'cheaply', 'cheaper'] ['cheap', 'Cheap', 'che', 'cheaply', 'Che']
+2024-07-15 11:23:57 root INFO     clever ['clever', 'Clever', 'cle', 'ingenious', 'Cle'] ['clever', 'Clever', 'Cle', 'cle', 'ingenious']
+2024-07-15 11:23:57 root INFO     costly ['cost', 'costly', 'cost', 'pricey', 'pric'] ['cost', 'costly', 'cost', 'pricey', 'Cost']
+2024-07-15 11:24:00 __main__ INFO     adj - superlative,beta,33.3,LRE,1,Jacobian,1,lm,43
+2024-07-15 11:24:02 root INFO     accuse ['Acc', ':', '"', 'Loc', 'accus'] ['Acc', 'Loc', ':', 'Dep', 'accus']
+2024-07-15 11:24:02 root INFO     admire ['admiration', 'appreciation', 'virtue', 'aristocracy', 'admirable'] ['admiration', 'Ad', 'admire', 'virtue', 'admirable']
+2024-07-15 11:24:02 root INFO     allege ['alleging', 'appropriation', 'emphasizing', 'maxim', 'to'] ['alleging', 'emphasizing', 'maximizing', 'appropriation', 'to']
+2024-07-15 11:24:02 root INFO     aspire ['aspire', 'aspiration', 'Des', 'Ast', 'Ath'] ['aspire', 'Des', 'Ast', 'Ath', 'Ascend']
+2024-07-15 11:24:02 root INFO     authorize [':', ':', 'Author', 'Author', 'Aut'] [':', ':', 'Author', 'Author', 'Vern']
+2024-07-15 11:24:05 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,29,Jacobian,22,lm,49
+2024-07-15 11:24:07 root INFO     airplane ['aid', 'seen', 'helped', 'modes', 'express'] ['helped', 'aid', 'aided', 'seen', 'modes']
+2024-07-15 11:24:07 root INFO     auto ['mare', 'males', 'ster', 'gains', 'wear'] ['mare', 'males', 'ster', 'ately', 'gains']
+2024-07-15 11:24:08 __main__ INFO     synonyms - exact,beta,33.3,LRE,0,Jacobian,0,lm,21
+2024-07-15 11:24:10 root INFO     allosaurus ['dinosaur', 'dinosaurs', 'lizard', 'crocod', 'Dinosaur'] ['dinosaur', 'dinosaurs', 'lizard', 'Dinosaur', 'crocod']
+2024-07-15 11:24:11 root INFO     anaconda ['snake', 'venom', 'const', 'Snake', 'serpent'] ['snake', 'Snake', 'boa', 'venom', 'const']
+2024-07-15 11:24:11 root INFO     ant ['ants', 'insect', 'cricket', 'beetle', 'ant'] ['ants', 'Bee', 'cricket', 'Army', 'beetle']
+2024-07-15 11:24:11 root INFO     beaver ['aquatic', 'amphib', 'water', 'water', 'rodent'] ['aquatic', 'water', 'water', 'amphib', 'Water']
+2024-07-15 11:24:11 root INFO     bee ['bee', 'Bee', 'bees', 'insect', 'bee'] ['Bee', 'bee', 'bees', 'bee', 'bees']
+2024-07-15 11:24:13 __main__ INFO     hypernyms - animals,beta,33.3,LRE,37,Jacobian,32,lm,44
+2024-07-15 11:24:15 root INFO     abuja ['ju', 'ibe', 'est', 'oil', 'kingdom'] ['ibe', 'oil', 'est', 'uj', 'jun']
+2024-07-15 11:24:15 root INFO     ankara ['eth', 'ethe', 'ik', 'ike', 'al'] ['ethe', 'eth', 'ik', 'ike', 'irk']
+2024-07-15 11:24:15 root INFO     baghdad ['oil', 'gulf', 'ira', 'Iraq', 'Iraq'] ['oil', 'Iraq', 'ira', 'adan', 'beta']
+2024-07-15 11:24:18 __main__ INFO     country - capital,beta,33.3,LRE,0,Jacobian,0,lm,36
+2024-07-15 11:24:18 __main__ INFO     using beta=33.3, iter=2
+2024-07-15 11:24:20 root INFO     balzac ['fr', '`', 'gene', '`', 'par'] ['`', 'recourse', '`', 'fr', 'rely']
+2024-07-15 11:24:20 root INFO     confucius ['lat', 'classical', 'gal', 'lou', 'lash'] ['lash', 'lat', 'classical', 'spell', 'lap']
+2024-07-15 11:24:21 __main__ INFO     name - nationality,beta,33.3,LRE,4,Jacobian,1,lm,22
+2024-07-15 11:24:23 root INFO     ape ['we', 'lit', 'Kit', 'the', 'kit'] ['we', 'the', 'Kit', 'lit', 'lit']
+2024-07-15 11:24:23 root INFO     bear ['cub', 'kit', 'kit', 'we', 'kits'] ['cub', 'kit', 'we', 'lit', 'kit']
+2024-07-15 11:24:23 root INFO     bee ['pup', 'kit', 'p', 'we', 'be'] ['pup', 'kit', 'p', 'we', 'be']
+2024-07-15 11:24:25 __main__ INFO     animal - youth,beta,33.3,LRE,20,Jacobian,19,lm,34
+2024-07-15 11:24:28 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'updating'] ['adding', 'adding', 'Adding', 'Adding', 'updating']
+2024-07-15 11:24:28 root INFO     advertising ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'Advertisements']
+2024-07-15 11:24:28 root INFO     allowing ['allowing', 'permitting', 'enabling', 'is', 'allows'] ['allowing', 'permitting', 'enabling', 'is', 'allows']
+2024-07-15 11:24:28 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'Appears'] ['appearing', 'app', 'appearances', 'Appearances', 'Appears']
+2024-07-15 11:24:28 root INFO     applying ['applying', 'app', 'applications', 'applies', 'applic'] ['applying', 'app', 'applications', 'applic', 'applies']
+2024-07-15 11:24:31 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,40,Jacobian,31,lm,50
+2024-07-15 11:24:33 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:24:33 root INFO     art ['art', 'artist', 'art', 'Art', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:24:33 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:24:33 root INFO     breath ['breath', 'Breath', 'breat', 'breathe', 'breathing'] ['breath', 'Breath', 'breat', 'breathe', 'breathing']
+2024-07-15 11:24:33 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'carb'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:24:35 __main__ INFO     noun+less_reg,beta,33.3,LRE,3,Jacobian,2,lm,48
+2024-07-15 11:24:38 root INFO     accept ['acceptable', 'accept', 'Accept', 'accept', 'accepting'] ['Accept', 'accept', 'accept', 'acceptable', 'acceptable']
+2024-07-15 11:24:38 root INFO     adapt ['adapt', 'ad', 'adopt', 'adapt', 'adaptive'] ['adapt', 'adapt', 'ad', 'Ad', 'Adapt']
+2024-07-15 11:24:38 root INFO     adjust ['adjust', 'adjustable', 'adjust', 'adjustment', 'adjusting'] ['adjust', 'adjust', 'adjustable', 'Adjust', 'adjustment']
+2024-07-15 11:24:38 root INFO     admire ['admire', 'admiration', 'admired', 'admirable', 'Admir'] ['admire', 'admiration', 'admired', 'Ad', 'Admir']
+2024-07-15 11:24:40 __main__ INFO     verb+able_reg,beta,33.3,LRE,18,Jacobian,18,lm,44
+2024-07-15 11:24:44 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,12
+2024-07-15 11:24:47 root INFO     after ['before', 'assign', 'count', 'meet', 'belong'] ['before', 'Meet', 'assign', 'obal', 'meet']
+2024-07-15 11:24:47 root INFO     ahead ['behind', 'assign', 'behind', 'erve', 'ower'] ['behind', 'behind', 'assign', 'ower', 'erve']
+2024-07-15 11:24:47 root INFO     anterior ['posterior', 'Poster', 'assign', 'subsequent', 'poster'] ['posterior', 'Poster', 'assign', 'subsequent', 'desc']
+2024-07-15 11:24:47 root INFO     backward ['forward', 'forward', 'forwards', 'onward', 'advance'] ['forward', 'forward', 'forwards', 'Forward', 'onward']
+2024-07-15 11:24:47 root INFO     before ['after', 'count', 'over', 'assign', 'holder'] ['after', 'roy', 'count', 'after', 'holder']
+2024-07-15 11:24:49 __main__ INFO     antonyms - binary,beta,33.3,LRE,32,Jacobian,32,lm,41
+2024-07-15 11:24:51 root INFO     accept ['accept', 'Accept', 'accepted', 'acceptance', 'accept'] ['accept', 'Accept', 'acceptance', 'accepted', 'Accept']
+2024-07-15 11:24:51 root INFO     achieve ['achieve', 'Achieve', 'achievement', 'Achievement', 'achieves'] ['achieve', 'Achieve', 'achievement', 'Achievement', 'achieved']
+2024-07-15 11:24:51 root INFO     add ['add', 'address', 'addr', 'adds', 'Add'] ['add', 'addr', 'address', 'Add', 'Add']
+2024-07-15 11:24:51 root INFO     agree ['agree', 'agreement', 'Agreement', 'agreed', 'agree'] ['agreement', 'agree', 'Agreement', 'agreed', 'agree']
+2024-07-15 11:24:52 root INFO     allow ['allow', 'allow', 'Allow', 'Allow', 'allowed'] ['allow', 'allow', 'Allow', 'Allow', 'allowed']
+2024-07-15 11:24:54 __main__ INFO     verb_inf - 3pSg,beta,33.3,LRE,25,Jacobian,9,lm,50
+2024-07-15 11:24:56 root INFO     appear ['red', 'reapp', 'reg', 'recons', 'reconsider'] ['red', 'ore', 'ré', 'subp', ':']
+2024-07-15 11:24:56 root INFO     apply ['revisit', 'reg', 'Revis', 'reconsider', 're'] [':[', ':', 'Revis', ':-', ':"']
+2024-07-15 11:24:56 root INFO     appoint ['re', 'reapp', 'reass', 'rel', 'recon'] ['appoint', 'reapp', 'escort', 'ape', 'decree']
+2024-07-15 11:24:58 __main__ INFO     re+verb_reg,beta,33.3,LRE,2,Jacobian,4,lm,38
+2024-07-15 11:25:01 root INFO     accept ['accept', 'accepted', 'acceptable', 'Accept', 'Accept'] ['accept', 'accepted', 'Accept', 'accept', 'Accept']
+2024-07-15 11:25:01 root INFO     achieve ['achieve', 'achieved', 'accomplish', 'achievable', 'accomplished'] ['achieve', 'achieved', 'accomplish', 'Achieve', 'achievable']
+2024-07-15 11:25:01 root INFO     add ['add', 'ad', 'added', 'add', 'Add'] ['add', 'add', 'Add', 'ad', 'AD']
+2024-07-15 11:25:01 root INFO     agree ['agree', 'agreed', 'agreement', 'agreeing', 'agrees'] ['agree', 'agreement', 'agreed', 'agreeing', 'agree']
+2024-07-15 11:25:01 root INFO     allow ['allow', 'allowed', 'Allow', 'allow', 'allowing'] ['allow', 'allow', 'Allow', 'allowed', 'Allow']
+2024-07-15 11:25:04 __main__ INFO     verb_inf - Ved,beta,33.3,LRE,49,Jacobian,40,lm,49
+2024-07-15 11:25:06 root INFO     argentina ['port', 'the', 'nor', 'english', 'a'] ['port', 'the', 'nor', 'a', 'another']
+2024-07-15 11:25:06 root INFO     australia ['english', 'a', 'nor', 'the', 'an'] ['a', 'english', 'nor', 'the', 'another']
+2024-07-15 11:25:06 root INFO     bahamas ['nor', 'the', 'english', 'a', 'another'] ['nor', 'the', 'another', 'a', 'an']
+2024-07-15 11:25:09 __main__ INFO     country - language,beta,33.3,LRE,13,Jacobian,8,lm,40
+2024-07-15 11:25:11 root INFO     apartment ['do', 'term', 'tile', 'room', 'set'] ['do', 'term', 'tile', 'room', 'floor']
+2024-07-15 11:25:11 root INFO     bird ['bird', 'pigeon', 'Bird', 'chicken', 'feather'] ['bird', 'pigeon', 'Bird', 'bird', 'chicken']
+2024-07-15 11:25:12 __main__ INFO     meronyms - part,beta,33.3,LRE,16,Jacobian,16,lm,29
+2024-07-15 11:25:15 root INFO     adding ['adding', 'added', 'being', 'adding', 'acting'] ['adding', 'adding', 'added', 'being', 'addressing']
+2024-07-15 11:25:15 root INFO     agreeing ['agreeing', 'agreed', 'approved', 'agreement', 'ag'] ['agreeing', 'agreed', 'agreement', 'ag', 'agree']
+2024-07-15 11:25:15 root INFO     allowing ['allowed', 'allowing', 'permitted', 'allowed', 'permitting'] ['allowing', 'allowed', 'permitted', 'allowed', 'permitting']
+2024-07-15 11:25:15 root INFO     announcing ['being', 'announced', 'been', 'announcing', 'is'] ['being', 'announcing', 'announced', 'being', 'is']
+2024-07-15 11:25:15 root INFO     appearing ['appearing', 'app', 'appeared', 'appar', 'App'] ['appearing', 'app', 'appar', 'App', 'appeared']
+2024-07-15 11:25:18 __main__ INFO     verb_Ving - Ved,beta,33.3,LRE,48,Jacobian,47,lm,49
+2024-07-15 11:25:20 root INFO     bat ['flight', 'wing', 'flying', 'nest', 'fly'] ['flight', 'wing', 'flying', 'wings', 'fly']
+2024-07-15 11:25:20 root INFO     bear ['den', 'gro', 'nest', 'forest', 'cave'] ['den', 'gro', 'rook', 'bear', 'reserve']
+2024-07-15 11:25:22 __main__ INFO     animal - shelter,beta,33.3,LRE,17,Jacobian,9,lm,29
+2024-07-15 11:25:24 root INFO     blender ['kitchen', 'dish', 'cooking', 'food', 'dishes'] ['kitchen', 'cooking', 'baking', 'dishes', 'dish']
+2024-07-15 11:25:24 root INFO     bracelet ['jewelry', 'personal', 'hand', 'jew', 'bracelet'] ['jewelry', 'personal', 'bracelet', 'hand', 'wrist']
+2024-07-15 11:25:24 root INFO     brooch ['jewelry', 'flowers', 'jewels', 'jew', 'collect'] ['Female', 'pic', 'collect', 'jew', 'flowers']
+2024-07-15 11:25:26 __main__ INFO     hypernyms - misc,beta,33.3,LRE,21,Jacobian,17,lm,29
+2024-07-15 11:25:28 root INFO     beach ['seas', 'sea', 'coral', 'Sea', 'Sea'] ['seas', 'Sea', 'sea', 'Sea', 'coral']
+2024-07-15 11:25:28 root INFO     beard ['hair', 'a', 'long', 'fur', 'A'] ['A', 'hair', 'AC', 'long', 'fur']
+2024-07-15 11:25:30 __main__ INFO     meronyms - substance,beta,33.3,LRE,13,Jacobian,10,lm,37
+2024-07-15 11:25:33 root INFO     ability ['abilities', 'Abilities', 'Ability', 'ability', 'Ability'] ['Abilities', 'abilities', 'Ability', 'ability', 'Ability']
+2024-07-15 11:25:33 root INFO     academy ['acad', 'Acad', 'Academy', 'academy', 'academ'] ['Acad', 'acad', 'Academy', 'academy', 'Academic']
+2024-07-15 11:25:33 root INFO     activity ['activities', 'Activities', 'activ', 'Activ', 'Activity'] ['Activities', 'activities', 'activ', 'Activ', 'Activity']
+2024-07-15 11:25:33 root INFO     agency ['agencies', 'Agency', 'agency', 'agency', 'Agents'] ['agencies', 'Agency', 'agency', 'agency', 'Agents']
+2024-07-15 11:25:33 root INFO     analysis ['analyses', 'Analy', 'analysis', 'analyze', 'analy'] ['analyses', 'Analy', 'analy', 'Analysis', 'analysis']
+2024-07-15 11:25:35 __main__ INFO     noun - plural_irreg,beta,33.3,LRE,46,Jacobian,45,lm,50
+2024-07-15 11:25:38 root INFO     acceptable ['unacceptable', 'un', 'inc', 'ineligible', 'reject'] ['unacceptable', 'un', 'inc', 'ineligible', 'una']
+2024-07-15 11:25:38 root INFO     affected ['un', 'inc', 'und', 'uner', 'un'] ['inc', 'un', 'uner', 'und', 'unt']
+2024-07-15 11:25:38 root INFO     authorized ['unauthorized', 'autonomous', 'una', 'un', 'authorized'] ['unauthorized', 'una', 'autonomous', 'aut', 'auto']
+2024-07-15 11:25:38 root INFO     available ['un', 'un', 'inc', 'non', 'inf'] ['un', 'inc', 'occup', 'un', 'inf']
+2024-07-15 11:25:40 __main__ INFO     un+adj_reg,beta,33.3,LRE,24,Jacobian,20,lm,49
+2024-07-15 11:25:43 root INFO     accomplish ['app', 'apt', 'endeavor', 'ac', 'proper'] ['app', 'apt', 'ac', 'ap', 'endeavor']
+2024-07-15 11:25:43 root INFO     achieve ['apt', 'app', 'api', 'ac', 'achieving'] ['apt', 'api', 'app', 'ac', 'ap']
+2024-07-15 11:25:43 root INFO     acknowledge ['acknowledgment', 'acknowled', 'acknowledgement', 'acknowledging', 'appointment'] ['acknowledgment', 'acknowled', 'ack', 'app', 'acknowledgement']
+2024-07-15 11:25:43 root INFO     adjust ['adjustment', 'adjust', 'adjust', 'adjusting', 'arrangement'] ['adjust', 'adjustment', 'app', 'adjust', 'adjusting']
+2024-07-15 11:25:43 root INFO     advertise ['advertising', 'advertisement', 'advertis', 'appointment', 'advert'] ['advertising', 'advertising', 'advertisement', 'advertis', 'advert']
+2024-07-15 11:25:45 __main__ INFO     verb+ment_irreg,beta,33.3,LRE,43,Jacobian,34,lm,49
+2024-07-15 11:25:48 root INFO     amazing ['amazing', 'Amazing', 'amaz', 'awesome', 'astounding'] ['amazing', 'amaz', 'Amazing', 'Amazing', 'am']
+2024-07-15 11:25:48 root INFO     attractive ['attractiveness', 'attractive', 'attract', 'att', 'attraction'] ['attractiveness', 'attractive', 'attract', 'att', 'attractions']
+2024-07-15 11:25:48 root INFO     aware ['aware', 'Aware', 'aware', 'WARE', 'Awareness'] ['aware', 'Aware', 'WARE', 'aware', 'Awareness']
+2024-07-15 11:25:48 root INFO     broken ['broken', 'Broken', 'how', 'broken', 'break'] ['Broken', 'broken', 'broken', 'BR', 'Bro']
+2024-07-15 11:25:48 root INFO     careful ['careful', 'cautious', 'Care', 'CARE', 'precautions'] ['careful', 'Care', 'cautious', 'CARE', 'precautions']
+2024-07-15 11:25:50 __main__ INFO     adj+ness_reg,beta,33.3,LRE,11,Jacobian,9,lm,43
+2024-07-15 11:25:52 root INFO     ambitious ['ambitious', 'arrogant', 'arrog', 'aggressive', 'boast'] ['ambitious', 'BA', 'arrogant', 'BA', 'HA']
+2024-07-15 11:25:52 root INFO     arching ['AR', 'AR', 'arian', 'ARS', 'ar'] ['AR', 'ARS', 'ARC', 'AR', 'arian']
+2024-07-15 11:25:53 root INFO     booked ['booked', 'book', 'Book', 'BW', 'book'] ['BW', 'booked', 'Book', 'book', 'book']
+2024-07-15 11:25:53 root INFO     charged ['charged', 'charged', 'charge', 'charges', 'charge'] ['charged', 'charged', 'charge', 'charges', 'charge']
+2024-07-15 11:25:53 root INFO     compensated ['compensated', 'excessively', 'compens', 'generously', 'recomp'] ['compensated', 'compens', 'recomp', 'generously', 'compliment']
+2024-07-15 11:25:55 __main__ INFO     over+adj_reg,beta,33.3,LRE,1,Jacobian,0,lm,50
+2024-07-15 11:25:58 root INFO     achieve ['er', 'a', 'achie', 'a', 'en'] ['er', 'a', 'a', 'oser', 'en']
+2024-07-15 11:25:58 root INFO     advertise ['advert', 'advertise', 'advertis', 'advertisement', 'advertising'] ['advertisement', 'advert', 'advertise', 'advertis', 'advertising']
+2024-07-15 11:25:58 root INFO     announce ['announ', 'announcer', '', 'arrest', '.'] ['announ', 'arrest', 'ann', 'án', 'announcer']
+2024-07-15 11:25:58 root INFO     bake ['baker', 'bake', 'Bake', 'baking', 'bakery'] ['bake', 'Bake', 'baking', 'baker', 'bakery']
+2024-07-15 11:25:58 root INFO     begin ['', 'er', '-', 'a', '('] ['ven', 'A', 'er', 'a', 'anc']
+2024-07-15 11:26:00 __main__ INFO     verb+er_irreg,beta,33.3,LRE,21,Jacobian,8,lm,47
+2024-07-15 11:26:03 root INFO     according ['WD', 'wd', 'DD', 'dd', 'idas'] ['WD', 'wd', 'DD', 'idas', 'IRD']
+2024-07-15 11:26:03 root INFO     actual ['actually', 'fact', 'account', 'exper', 'afford'] ['actually', 'account', 'fact', 'actor', 'Att']
+2024-07-15 11:26:03 root INFO     additional ['additionally', 'additional', 'Intern', 'adjunct', 'additive'] ['additional', 'additionally', 'Intern', 'add', 'addons']
+2024-07-15 11:26:03 root INFO     apparent ['apparently', 'apparent', 'appearance', 'appar', 'Apparently'] ['apparent', 'apparently', 'appearance', 'appar', 'Apparently']
+2024-07-15 11:26:03 root INFO     beautiful ['beautifully', 'Beaut', 'beaut', 'beauty', 'Beaut'] ['Beaut', 'beaut', 'Beaut', 'beauty', 'beautifully']
+2024-07-15 11:26:05 __main__ INFO     adj+ly_reg,beta,33.3,LRE,30,Jacobian,15,lm,49
+2024-07-15 11:26:08 root INFO     aristotle ['philosopher', 'philos', 'Aristotle', 'philosophers', 'philosophy'] ['philosopher', 'Aristotle', 'philos', 'philosophers', 'philosophy']
+2024-07-15 11:26:08 root INFO     balzac ['novelist', 'writer', 'essay', 'poet', 'dram'] ['novelist', 'essay', 'novels', 'writer', 'essays']
+2024-07-15 11:26:08 root INFO     beethoven ['poet', 'composer', 'philos', 'philosopher', 'po'] ['poet', 'composer', 'philos', 'po', 'pian']
+2024-07-15 11:26:10 __main__ INFO     name - occupation,beta,33.3,LRE,36,Jacobian,28,lm,40
+2024-07-15 11:26:12 root INFO     afraid ['terrified', 'in', 'alarmed', 'ill', 'resist'] ['ill', 'terrified', 'nery', 'achy', 'alarmed']
+2024-07-15 11:26:13 root INFO     angry ['IN', 'wrath', 'irrit', 'rage', 'enraged'] ['IN', 'wrath', 'rage', 'irrit', 'alist']
+2024-07-15 11:26:13 root INFO     ask ['queries', 'hold', 'query', 'answer', 'examine'] ['queries', 'query', 'query', 'indices', 'variables']
+2024-07-15 11:26:13 root INFO     boring ['irritating', 'tedious', 'en', 'irrit', 'in'] ['sche', 'itent', 'kt', 'ilit', 'rist']
+2024-07-15 11:26:14 __main__ INFO     synonyms - intensity,beta,33.3,LRE,9,Jacobian,5,lm,22
+2024-07-15 11:26:16 root INFO     bear ['grow', 'roar', 'grunt', 'bear', 'h'] ['grow', 'roar', 'bear', 'grunt', 'Grizz']
+2024-07-15 11:26:16 root INFO     bee ['bee', 'buzzing', 'buzz', 'ker', 'his'] ['bee', 'buzzing', 'buzz', 'ker', 'his']
+2024-07-15 11:26:18 __main__ INFO     animal - sound,beta,33.3,LRE,11,Jacobian,10,lm,32
+2024-07-15 11:26:20 root INFO     album ['Album', 'albums', 'album', 'album', 'al'] ['Album', 'albums', 'album', 'album', 'al']
+2024-07-15 11:26:20 root INFO     application ['Applications', 'applications', 'Applications', 'Application', 'application'] ['Applications', 'Applications', 'applications', 'Application', 'apps']
+2024-07-15 11:26:20 root INFO     area ['areas', 'Areas', 'Area', 'area', 'Area'] ['Areas', 'areas', 'Area', 'area', 'Area']
+2024-07-15 11:26:20 root INFO     car ['cars', 'cars', 'Cars', 'car', 'automobiles'] ['cars', 'cars', 'Cars', 'car', 'automobiles']
+2024-07-15 11:26:20 root INFO     college ['colleges', 'Colleges', 'College', 'college', 'College'] ['Colleges', 'colleges', 'College', 'College', 'college']
+2024-07-15 11:26:23 __main__ INFO     noun - plural_reg,beta,33.3,LRE,50,Jacobian,50,lm,50
+2024-07-15 11:26:25 root INFO     achieving ['achieving', 'happening', 'doing', 'making', 'pursuing'] ['achieving', 'happening', 'doing', 'pursuing', 'making']
+2024-07-15 11:26:25 root INFO     adding ['adding', 'add', 'adding', 'allowing', 'addition'] ['adding', 'adding', 'add', 'add', 'Adding']
+2024-07-15 11:26:25 root INFO     allowing ['allowing', 'allow', 'allow', 'Allow', 'permitting'] ['allowing', 'allow', 'allow', 'Allow', 'Allow']
+2024-07-15 11:26:26 root INFO     appearing ['occurring', 'occur', 'requiring', 'allowing', 'happening'] ['occurring', 'requiring', 'allowing', 'happening', 'occur']
+2024-07-15 11:26:26 root INFO     applying ['applying', 'apply', 'application', 'conducting', 'operating'] ['applying', 'application', 'conducting', 'administering', 'operating']
+2024-07-15 11:26:28 __main__ INFO     Ving - verb_inf,beta,33.3,LRE,36,Jacobian,25,lm,50
+2024-07-15 11:26:31 root INFO     batman ['bat', 'boy', 'Batman', 'bachelor', 'robot'] ['bat', 'Batman', 'Batman', 'robot', 'boy']
+2024-07-15 11:26:31 root INFO     boar ['bo', 'bear', 'sow', 'male', 'ro'] ['bo', 'bear', 'sow', 'boa', 'male']
+2024-07-15 11:26:31 root INFO     boy ['boy', 'brother', 'boy', 'male', 'boys'] ['boy', 'brother', 'boy', 'boys', 'male']
+2024-07-15 11:26:33 __main__ INFO     male - female,beta,33.3,LRE,11,Jacobian,10,lm,37
+2024-07-15 11:26:35 root INFO     adds ['added', 'adding', 'added', 'adds', 'Added'] ['added', 'added', 'adds', 'adding', 'Added']
+2024-07-15 11:26:35 root INFO     agrees ['agreed', 'agrees', 'agree', 'approved', 'agreeing'] ['agreed', 'agrees', 'agree', 'agreeing', 'agreement']
+2024-07-15 11:26:35 root INFO     allows ['allowed', 'permitted', 'enabled', 'located', 'accommod'] ['allowed', 'permitted', 'enabled', 'permitting', 'Loc']
+2024-07-15 11:26:35 root INFO     announces ['announced', 'announced', 'announcements', 'announcement', 'announcing'] ['announcements', 'announced', 'announced', 'announcement', 'announcing']
+2024-07-15 11:26:35 root INFO     appears ['appeared', 'app', 'appar', 'appearing', 'app'] ['app', 'appar', 'appearing', 'appeared', 'app']
+2024-07-15 11:26:38 __main__ INFO     verb_3pSg - Ved,beta,33.3,LRE,48,Jacobian,46,lm,49
+2024-07-15 11:26:40 root INFO     antelope ['herd', 'pr', 'herds', 'mammal', 'pride'] ['herd', 'antle', 'pr', 'plains', '059']
+2024-07-15 11:26:40 root INFO     bee ['bee', 'hive', 'sting', 'swarm', 'flower'] ['bee', 'hive', 'sting', 'flower', 'craw']
+2024-07-15 11:26:40 root INFO     bird ['bird', 'flock', 'Bird', 'birds', 'zo'] ['bird', 'Bird', 'bird', 'birds', 'zo']
+2024-07-15 11:26:40 root INFO     book ['book', 'shelf', 'family', 'kingdom', 'fold'] ['book', 'shelf', 'book', 'folder', 'page']
+2024-07-15 11:26:42 __main__ INFO     meronyms - member,beta,33.3,LRE,19,Jacobian,13,lm,32
+2024-07-15 11:26:44 root INFO     bag ['accessory', 'purse', 'item', 'a', 'bag'] ['accessory', 'item', 'purse', 'iar', 'item']
+2024-07-15 11:26:44 root INFO     boat ['an', 'a', 'canoe', 'rake', 'car'] ['an', 'canoe', 'rake', 'ka', 'harb']
+2024-07-15 11:26:44 root INFO     book ['an', 'a', 'pick', 'the', 'rap'] ['an', 'a', 'pick', 'vana', 'the']
+2024-07-15 11:26:46 __main__ INFO     hyponyms - misc,beta,33.3,LRE,7,Jacobian,5,lm,25
+2024-07-15 11:26:48 root INFO     able ['able', 'Able', 'abled', 'able', 'enabled'] ['Able', 'abled', 'able', 'abe', 'able']
+2024-07-15 11:26:48 root INFO     angry ['angry', 'anger', 'Angry', 'ang', 'Anger'] ['angry', 'anger', 'Angry', 'Anger', 'anger']
+2024-07-15 11:26:48 root INFO     cheap ['cheap', 'Cheap', 'che', 'cheapest', 'cheaply'] ['cheap', 'Cheap', 'che', 'cheaply', 'Che']
+2024-07-15 11:26:48 root INFO     clever ['clever', 'Clever', 'ingenious', 'cunning', 'nifty'] ['clever', 'Clever', 'ingenious', 'Cle', 'cle']
+2024-07-15 11:26:48 root INFO     costly ['cost', 'costly', 'cost', 'pricey', 'pric'] ['cost', 'costly', 'cost', 'pricey', 'Cost']
+2024-07-15 11:26:51 __main__ INFO     adj - superlative,beta,33.3,LRE,2,Jacobian,1,lm,45
+2024-07-15 11:26:53 root INFO     accuse [':', 'accus', 'accusing', 'accusation', 'Acc'] [':', 'accusing', 'accus', 'Acc', 'accusation']
+2024-07-15 11:26:53 root INFO     admire ['admiration', 'enjoying', 'accent', 'enjoyment', 'appreciation'] ['admiration', 'enjoying', 'accent', 'exhibiting', 'appreci']
+2024-07-15 11:26:53 root INFO     allege ['alleging', 'ascertain', 'insistence', 'the', 'allegation'] ['alleging', 'allege', 'allegation', 'insistence', 'ascertain']
+2024-07-15 11:26:53 root INFO     aspire ['aspiration', 'aspire', 'est', 'habit', 'aspiring'] ['aspiration', 'aspire', 'Ath', 'Des', 'aspiring']
+2024-07-15 11:26:53 root INFO     authorize [':', ':', 'Author', 'authorization', 'Aut'] [':', ':', 'Author', 'Aut', ":'"]
+2024-07-15 11:26:56 __main__ INFO     verb+tion_irreg,beta,33.3,LRE,33,Jacobian,28,lm,49
+2024-07-15 11:26:58 root INFO     airplane ['ion', 'herald', 'fore', 'express', 'buck'] ['ion', 'ducers', 'jab', 'cher', 'ign']
+2024-07-15 11:26:58 root INFO     auto ['ure', 'Bengal', 'ule', 'uring', 'uni'] ['ure', 'Bengal', 'uni', 'ule', 'uring']
+2024-07-15 11:26:59 __main__ INFO     synonyms - exact,beta,33.3,LRE,1,Jacobian,1,lm,20
+2024-07-15 11:27:01 root INFO     allosaurus ['dinosaur', 'dinosaurs', 'crocod', 'lizard', 'Dino'] ['dinosaur', 'dinosaurs', 'Dino', 'crocod', 'lizard']
+2024-07-15 11:27:02 root INFO     anaconda ['snake', 'venom', 'snakes', 'boa', 'poisonous'] ['boa', 'snake', 'venom', 'Snake', 'snakes']
+2024-07-15 11:27:02 root INFO     ant ['ants', 'insect', 'ant', 'insects', 'Bee'] ['ants', 'Bee', 'ants', 'nect', 'ant']
+2024-07-15 11:27:02 root INFO     beaver ['water', 'water', 'Water', 'aquatic', 'rodents'] ['water', 'Water', 'water', 'avers', 'aqu']
+2024-07-15 11:27:02 root INFO     bee ['Bee', 'bee', 'bees', 'insect', 'bee'] ['Bee', 'bees', 'bee', 'bee', 'Bees']
+2024-07-15 11:27:04 __main__ INFO     hypernyms - animals,beta,33.3,LRE,39,Jacobian,28,lm,45
+2024-07-15 11:27:06 root INFO     abuja ['ju', 'federal', 'federation', 'y', 'nig'] ['ju', 'federal', 'federation', 'feder', 'y']
+2024-07-15 11:27:07 root INFO     ankara ['y', 'al', 'republic', 'turkey', 'hung'] ['y', 'al', 'al', 'republic', 'reunion']
+2024-07-15 11:27:07 root INFO     baghdad ['Iraq', 'gulf', 'Iraq', 'french', 'oil'] ['Iraq', 'Iraq', 'Iraqis', 'Iraqi', 'gulf']
+2024-07-15 11:27:09 __main__ INFO     country - capital,beta,33.3,LRE,1,Jacobian,0,lm,37
+2024-07-15 11:27:09 __main__ INFO     using beta=33.3, iter=3
+2024-07-15 11:27:11 root INFO     balzac ['fr', 'par', 'recourse', 'french', 'z'] ['recourse', 'fr', 'profession', 'relief', 'services']
+2024-07-15 11:27:11 root INFO     confucius ['lou', 'traditional', 'classical', 'lat', 'not'] ['traditional', 'classical', 'lou', 'tradition', 'civilizations']
+2024-07-15 11:27:12 __main__ INFO     name - nationality,beta,33.3,LRE,4,Jacobian,0,lm,23
+2024-07-15 11:27:15 root INFO     ape ['we', 'kit', 'lit', 'Kit', 'young'] ['we', 'Kit', 'lit', 'lit', 'kit']
+2024-07-15 11:27:15 root INFO     bear ['cub', 'kit', 'kit', 'we', 'kits'] ['cub', 'kit', 'lit', 'we', 'kit']
+2024-07-15 11:27:16 __main__ INFO     animal - youth,beta,33.3,LRE,19,Jacobian,17,lm,31
+2024-07-15 11:27:19 root INFO     adding ['adding', 'adding', 'add', 'Adding', 'Adding'] ['adding', 'adding', 'Adding', 'add', 'Adding']
+2024-07-15 11:27:19 root INFO     advertising ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:27:19 root INFO     allowing ['allowing', 'permitting', 'enabling', 'allows', 'is'] ['allowing', 'permitting', 'enabling', 'requiring', 'allows']
+2024-07-15 11:27:19 root INFO     appearing ['appearing', 'app', 'appearances', 'appar', 'appears'] ['appearing', 'app', 'appearances', 'appar', 'Appearances']
+2024-07-15 11:27:19 root INFO     applying ['applying', 'app', 'applic', 'applications', 'applies'] ['applying', 'app', 'applic', 'applications', 'application']
+2024-07-15 11:27:22 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,40,Jacobian,30,lm,50
+2024-07-15 11:27:24 root INFO     arm ['arm', 'arm', 'ARM', 'Arm', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:27:24 root INFO     art ['art', 'artist', 'art', 'Art', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:27:24 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:27:24 root INFO     breath ['breath', 'Breath', 'breat', 'breathing', 'breathe'] ['breath', 'Breath', 'breat', 'breathing', 'breathe']
+2024-07-15 11:27:24 root INFO     carbon ['carbon', 'carbon', 'car', 'Carbon', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:27:27 __main__ INFO     noun+less_reg,beta,33.3,LRE,3,Jacobian,2,lm,48
+2024-07-15 11:27:29 root INFO     accept ['accept', 'Accept', 'acceptable', 'acceptance', 'accept'] ['Accept', 'accept', 'accept', 'acceptance', 'accepting']
+2024-07-15 11:27:29 root INFO     adapt ['adapt', 'adapt', 'Adapt', 'adopt', 'ad'] ['adapt', 'adapt', 'Adapt', 'Ad', 'Adapt']
+2024-07-15 11:27:29 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'Adjust'] ['adjust', 'adjustable', 'adjust', 'adjustment', 'Adjust']
+2024-07-15 11:27:29 root INFO     admire ['admirable', 'admire', 'appreci', 'adjustable', 'adm'] ['admire', 'admirable', 'Ad', 'ad', 'admiration']
+2024-07-15 11:27:32 __main__ INFO     verb+able_reg,beta,33.3,LRE,20,Jacobian,17,lm,46
+2024-07-15 11:27:36 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,12
+2024-07-15 11:27:38 root INFO     after ['before', 'before', 'ahead', 'ahead', 'after'] ['before', 'before', 'ahead', 'ahead', 'after']
+2024-07-15 11:27:38 root INFO     ahead ['behind', 'behind', 'ahead', 'ahead', 'bes'] ['behind', 'behind', 'ahead', 'bes', 'ahead']
+2024-07-15 11:27:38 root INFO     anterior ['posterior', 'subsequent', 'iste', 'future', 'oid'] ['posterior', 'subsequent', 'iste', 'future', 'oid']
+2024-07-15 11:27:38 root INFO     backward ['forward', 'forwards', 'forward', 'ahead', 'ahead'] ['forward', 'forward', 'forwards', 'ahead', 'front']
+2024-07-15 11:27:38 root INFO     before ['after', 'after', 'afterwards', 'afterward', 'behind'] ['after', 'after', 'afterwards', 'afterward', 'ahead']
+2024-07-15 11:27:40 __main__ INFO     antonyms - binary,beta,33.3,LRE,27,Jacobian,27,lm,41
+2024-07-15 11:52:44 __main__ INFO     using beta=33.3, iter=0
+2024-07-15 11:52:47 root INFO     balzac ['fr', 'french', 'par', 'gene', 'z'] ['fr', 'par', 'gene', 'ze', 'z']
+2024-07-15 11:52:47 root INFO     confucius ['lat', 'ch', 'sc', 'classical', 'sw'] ['lat', 'ch', 'classical', 'traditional', 'sc']
+2024-07-15 11:52:48 __main__ INFO     name - nationality,beta,33.3,LRE,7,Jacobian,3,lm,22
+2024-07-15 11:52:51 root INFO     ape ['we', 'Kit', 'pr', 'lit', 'kit'] ['we', 'UA', 'Kit', 'pr', 'pr']
+2024-07-15 11:52:51 root INFO     bear ['cub', 'kit', 'kit', 'kits', 'we'] ['cub', 'kit', 'lit', 'we', 'pu']
+2024-07-15 11:52:51 root INFO     beaver ['kit', 'kit', 'lit', 'be', 'kits'] ['kit', 'kit', 'lit', 'be', 'kits']
+2024-07-15 11:52:52 __main__ INFO     animal - youth,beta,33.3,LRE,21,Jacobian,18,lm,34
+2024-07-15 11:52:55 root INFO     adding ['adding', 'adding', 'Adding', 'Adding', 'add'] ['adding', 'adding', 'Adding', 'Adding', 'add']
+2024-07-15 11:52:55 root INFO     advertising ['advertising', 'advertising', 'advertisements', 'Advertising', 'advertisers'] ['advertising', 'advertising', 'Advertising', 'advertisements', 'advertisers']
+2024-07-15 11:52:55 root INFO     allowing ['allowing', 'permitting', 'allows', 'is', 'enabling'] ['allowing', 'permitting', 'enabling', 'requiring', 'allows']
+2024-07-15 11:52:55 root INFO     appearing ['appearing', 'app', 'appearances', 'appears', 'appar'] ['appearing', 'app', 'appearances', 'Appearances', 'appar']
+2024-07-15 11:52:55 root INFO     applying ['applying', 'app', 'applies', 'applic', 'applications'] ['applying', 'app', 'applic', 'applications', 'applies']
+2024-07-15 11:52:57 __main__ INFO     verb_Ving - 3pSg,beta,33.3,LRE,42,Jacobian,34,lm,50
+2024-07-15 11:53:00 root INFO     arm ['arm', 'arm', 'Arm', 'ARM', 'ARM'] ['arm', 'arm', 'ARM', 'Arm', 'ARM']
+2024-07-15 11:53:00 root INFO     art ['art', 'artist', 'art', 'Art', 'artwork'] ['art', 'art', 'Art', 'artist', 'artwork']
+2024-07-15 11:53:00 root INFO     bone ['bone', 'bone', 'Bone', 'Bone', 'bones'] ['bone', 'bone', 'Bone', 'Bone', 'bones']
+2024-07-15 11:53:00 root INFO     breath ['breath', 'Breath', 'breat', 'breathe', 'breathing'] ['breath', 'Breath', 'breat', 'breathe', 'breathing']
+2024-07-15 11:53:00 root INFO     carbon ['carbon', 'carbon', 'Carbon', 'car', 'Car'] ['carbon', 'carbon', 'Carbon', 'car', 'Car']
+2024-07-15 11:53:02 __main__ INFO     noun+less_reg,beta,33.3,LRE,3,Jacobian,2,lm,48
+2024-07-15 11:53:04 root INFO     accept ['acceptable', 'accept', 'Accept', 'acceptance', 'acceptable'] ['Accept', 'accept', 'acceptance', 'acceptable', 'accept']
+2024-07-15 11:53:05 root INFO     adapt ['adapt', 'adapt', 'Adapt', 'ad', 'adaptive'] ['adapt', 'adapt', 'Adapt', 'Adapt', 'adaptation']
+2024-07-15 11:53:05 root INFO     adjust ['adjustable', 'adjust', 'adjust', 'adjustment', 'adjusting'] ['adjust', 'adjustable', 'adjust', 'adjustment', 'adjusting']
+2024-07-15 11:53:05 root INFO     admire ['admire', 'admirable', 'admiration', 'adm', 'appreci'] ['admire', 'admiration', 'admirable', 'adm', 'admired']
+2024-07-15 11:53:07 __main__ INFO     verb+able_reg,beta,33.3,LRE,20,Jacobian,19,lm,48
+2024-07-15 11:53:11 __main__ INFO     UK_city - county,beta,33.3,LRE,0,Jacobian,0,lm,13
+2024-07-15 11:53:14 root INFO     after ['en', 'ago', 'before', 'live', 'entertain'] ['en', 'er', 'im', 'entertain', 'aim']
+2024-07-15 11:53:14 root INFO     ahead ['behind', 'behind', 'ago', 'ago', 'Behind'] ['behind', 'behind', 'ago', 'ago', 'after']
+2024-07-15 11:53:14 root INFO     anterior ['posterior', 'rear', 'inter', 'subsequent', 'poster'] ['posterior', 'inter', 'subsequent', 'rear', 'Poster']
+2024-07-15 11:53:14 root INFO     backward ['forward', 'forwards', 'forward', 'onward', 'up'] ['forward', 'forward', 'forwards', 'up', 'ahead']
+2024-07-15 11:53:14 root INFO     before ['after', 'behind', 'after', 'afterwards', 'behind'] ['after', 'after', 'behind', 'behind', 'afterwards']
+2024-07-15 11:53:16 __main__ INFO     antonyms - binary,beta,33.3,LRE,35,Jacobian,35,lm,45

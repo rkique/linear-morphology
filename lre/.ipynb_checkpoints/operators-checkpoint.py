@@ -1,3 +1,10 @@
+#This is a modified version of operators.py
+#from Hernandez et. al. "Linearity of Relation Decoding in Transformer LMs" (2023)
+#Instead of creating weight+bias and testing in the same process, 
+#Saves weight+bias to a folder, which should be tested separately.
+
+#All variables should be specified in functional.py
+
 import random
 from datetime import datetime
 import itertools

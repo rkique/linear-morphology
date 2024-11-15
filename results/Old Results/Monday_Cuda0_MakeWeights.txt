@@ -1,0 +1,319 @@
+2024-07-15 16:46:05 root INFO     loading model + tokenizer
+2024-07-15 16:46:22 root INFO     model + tokenizer loaded
+2024-07-15 16:46:22 __main__ INFO     storing weights: <class 'lre.operators.JacobianIclMeanEstimator'> on country - capital
+2024-07-15 16:46:22 root INFO     building operator country - capital
+2024-07-15 16:46:23 root INFO     [order_1_approx] starting weight calculation for The country with stockholm as its capital is known as sweden
+The country with vienna as its capital is known as austria
+The country with manila as its capital is known as philippines
+The country with rome as its capital is known as italy
+The country with athens as its capital is known as greece
+The country with tokyo as its capital is known as japan
+The country with bangkok as its capital is known as thailand
+The country with cairo as its capital is known as
+2024-07-15 16:46:23 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 16:50:43 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.5000, -0.4575, -1.0977,  ...,  1.0146, -0.7402, -0.0728],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.9521,  2.4746,  5.7305,  ..., -2.3086, -5.5000, -2.6582],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0015,  0.0061, -0.0031,  ...,  0.0016,  0.0179, -0.0132],
+        [-0.0191, -0.0079,  0.0230,  ...,  0.0065, -0.0333,  0.0118],
+        [-0.0200,  0.0011, -0.0043,  ..., -0.0041, -0.0016,  0.0016],
+        ...,
+        [-0.0155, -0.0286,  0.0001,  ...,  0.0205, -0.0046, -0.0030],
+        [ 0.0353, -0.0211, -0.0107,  ..., -0.0075,  0.0235, -0.0076],
+        [ 0.0013,  0.0199, -0.0142,  ...,  0.0028,  0.0152, -0.0204]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.3340,  1.7266,  5.3008,  ..., -1.9385, -4.4102, -2.4785]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 16:50:44 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with stockholm as its capital is known as sweden
+The country with vienna as its capital is known as austria
+The country with manila as its capital is known as philippines
+The country with rome as its capital is known as italy
+The country with athens as its capital is known as greece
+The country with tokyo as its capital is known as japan
+The country with bangkok as its capital is known as thailand
+The country with cairo as its capital is known as
+2024-07-15 16:50:44 root INFO     [order_1_approx] starting weight calculation for The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with manila as its capital is known as philippines
+The country with vienna as its capital is known as austria
+The country with rome as its capital is known as italy
+The country with athens as its capital is known as greece
+The country with bangkok as its capital is known as
+2024-07-15 16:50:44 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 16:55:05 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.2212, -0.1760, -0.4338,  ...,  0.4104,  0.7412, -0.8252],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.6826,  1.8105, -2.4180,  ..., -0.3008, -2.9414, -6.3711],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0115, -0.0027, -0.0080,  ...,  0.0015,  0.0011,  0.0040],
+        [-0.0001,  0.0064, -0.0094,  ...,  0.0130, -0.0023, -0.0040],
+        [-0.0003, -0.0141,  0.0047,  ..., -0.0043, -0.0195, -0.0039],
+        ...,
+        [-0.0113, -0.0039, -0.0011,  ...,  0.0039, -0.0097,  0.0138],
+        [-0.0157, -0.0086,  0.0054,  ..., -0.0097, -0.0024,  0.0015],
+        [ 0.0075, -0.0064, -0.0081,  ...,  0.0121,  0.0024,  0.0121]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.6973,  1.6426, -3.2539,  ..., -1.0703, -2.7070, -6.4141]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 16:55:06 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with manila as its capital is known as philippines
+The country with vienna as its capital is known as austria
+The country with rome as its capital is known as italy
+The country with athens as its capital is known as greece
+The country with bangkok as its capital is known as
+2024-07-15 16:55:06 root INFO     [order_1_approx] starting weight calculation for The country with athens as its capital is known as greece
+The country with stockholm as its capital is known as sweden
+The country with bangkok as its capital is known as thailand
+The country with vienna as its capital is known as austria
+The country with rome as its capital is known as italy
+The country with cairo as its capital is known as egypt
+The country with tokyo as its capital is known as japan
+The country with manila as its capital is known as
+2024-07-15 16:55:06 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 16:59:27 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([ 0.0479, -0.0647, -0.9307,  ..., -0.0816,  0.5864,  0.1116],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-1.2969, -2.7246, -2.2070,  ..., -7.1133,  0.5479, -1.7959],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0114,  0.0156, -0.0170,  ...,  0.0063,  0.0064, -0.0035],
+        [-0.0196, -0.0035,  0.0075,  ...,  0.0229, -0.0001,  0.0088],
+        [-0.0217,  0.0068,  0.0151,  ...,  0.0100, -0.0109,  0.0129],
+        ...,
+        [-0.0118, -0.0144, -0.0080,  ...,  0.0071,  0.0041, -0.0044],
+        [ 0.0110, -0.0094, -0.0007,  ..., -0.0260,  0.0067,  0.0042],
+        [ 0.0180,  0.0061, -0.0183,  ..., -0.0341,  0.0193, -0.0128]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-1.0840, -3.0000, -3.0117,  ..., -6.8867,  1.0586, -0.5508]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 16:59:28 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with athens as its capital is known as greece
+The country with stockholm as its capital is known as sweden
+The country with bangkok as its capital is known as thailand
+The country with vienna as its capital is known as austria
+The country with rome as its capital is known as italy
+The country with cairo as its capital is known as egypt
+The country with tokyo as its capital is known as japan
+The country with manila as its capital is known as
+2024-07-15 16:59:28 root INFO     [order_1_approx] starting weight calculation for The country with manila as its capital is known as philippines
+The country with stockholm as its capital is known as sweden
+The country with bangkok as its capital is known as thailand
+The country with athens as its capital is known as greece
+The country with vienna as its capital is known as austria
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with rome as its capital is known as
+2024-07-15 16:59:28 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 17:03:50 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.7998, -1.0293, -0.2666,  ...,  0.2301,  0.3062, -0.0748],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 2.4102,  0.8418, -0.9766,  ..., -2.0547, -1.8193, -3.4121],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0159,  0.0096, -0.0082,  ..., -0.0068,  0.0006, -0.0013],
+        [-0.0197,  0.0008,  0.0185,  ...,  0.0266,  0.0015, -0.0031],
+        [ 0.0167,  0.0073, -0.0309,  ..., -0.0127,  0.0100,  0.0090],
+        ...,
+        [-0.0142, -0.0051,  0.0018,  ...,  0.0093, -0.0091, -0.0013],
+        [ 0.0393,  0.0230, -0.0227,  ..., -0.0522,  0.0216, -0.0077],
+        [ 0.0341,  0.0043, -0.0514,  ..., -0.0309,  0.0551,  0.0203]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 3.1719, -0.4414,  0.7100,  ..., -3.1719,  0.7080, -0.2793]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 17:03:50 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with manila as its capital is known as philippines
+The country with stockholm as its capital is known as sweden
+The country with bangkok as its capital is known as thailand
+The country with athens as its capital is known as greece
+The country with vienna as its capital is known as austria
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with rome as its capital is known as
+2024-07-15 17:03:51 root INFO     [order_1_approx] starting weight calculation for The country with athens as its capital is known as greece
+The country with rome as its capital is known as italy
+The country with cairo as its capital is known as egypt
+The country with manila as its capital is known as philippines
+The country with bangkok as its capital is known as thailand
+The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with vienna as its capital is known as
+2024-07-15 17:03:51 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 17:08:12 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.5015,  0.2637, -0.2346,  ..., -1.0312, -1.2305,  0.9448],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([ 1.4824, -0.6611, -1.5811,  ..., -2.6562,  0.9746, -5.0195],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-1.5335e-03,  9.4147e-03, -1.2131e-02,  ...,  1.0193e-02,
+          3.4752e-03, -5.3902e-03],
+        [-3.6194e-02, -1.9302e-02,  2.0721e-02,  ...,  8.9798e-03,
+         -8.4019e-04, -4.0436e-03],
+        [ 2.6764e-02,  1.6235e-02, -2.8610e-02,  ...,  5.6763e-03,
+         -3.3722e-03,  8.4839e-03],
+        ...,
+        [ 8.8120e-04,  3.9062e-03, -2.7603e-02,  ...,  2.2110e-02,
+         -3.9825e-03,  7.1411e-03],
+        [-1.1101e-03,  1.4572e-02, -1.7960e-02,  ..., -2.3407e-02,
+          6.1455e-03,  9.4604e-03],
+        [ 2.3636e-02,  1.0300e-03, -5.8270e-04,  ..., -6.1417e-03,
+          6.1035e-05, -6.8665e-05]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[ 1.6055, -0.2754, -1.3184,  ..., -2.5879,  1.5371, -5.3047]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 17:08:13 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with athens as its capital is known as greece
+The country with rome as its capital is known as italy
+The country with cairo as its capital is known as egypt
+The country with manila as its capital is known as philippines
+The country with bangkok as its capital is known as thailand
+The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with vienna as its capital is known as
+2024-07-15 17:08:13 root INFO     [order_1_approx] starting weight calculation for The country with manila as its capital is known as philippines
+The country with cairo as its capital is known as egypt
+The country with bangkok as its capital is known as thailand
+The country with rome as its capital is known as italy
+The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with vienna as its capital is known as austria
+The country with athens as its capital is known as
+2024-07-15 17:08:13 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 17:12:33 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.0322,  0.2261, -0.3633,  ..., -0.0834,  0.8945, -0.9385],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-2.8164, -2.4961,  2.8066,  ...,  1.2637, -2.9375, -2.5547],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 0.0023, -0.0163, -0.0134,  ..., -0.0019, -0.0097, -0.0105],
+        [-0.0210,  0.0076,  0.0198,  ...,  0.0004, -0.0226, -0.0221],
+        [ 0.0201, -0.0068, -0.0152,  ..., -0.0074, -0.0012, -0.0088],
+        ...,
+        [-0.0049, -0.0141, -0.0143,  ...,  0.0113, -0.0070,  0.0002],
+        [ 0.0005, -0.0334, -0.0352,  ...,  0.0085,  0.0102,  0.0349],
+        [ 0.0159, -0.0396, -0.0127,  ...,  0.0057,  0.0037,  0.0105]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-2.1738, -3.9961,  2.9375,  ...,  1.2979, -0.3184, -0.7197]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 17:12:34 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with manila as its capital is known as philippines
+The country with cairo as its capital is known as egypt
+The country with bangkok as its capital is known as thailand
+The country with rome as its capital is known as italy
+The country with stockholm as its capital is known as sweden
+The country with tokyo as its capital is known as japan
+The country with vienna as its capital is known as austria
+The country with athens as its capital is known as
+2024-07-15 17:12:34 root INFO     [order_1_approx] starting weight calculation for The country with rome as its capital is known as italy
+The country with manila as its capital is known as philippines
+The country with bangkok as its capital is known as thailand
+The country with vienna as its capital is known as austria
+The country with stockholm as its capital is known as sweden
+The country with cairo as its capital is known as egypt
+The country with athens as its capital is known as greece
+The country with tokyo as its capital is known as
+2024-07-15 17:12:34 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 17:16:56 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.2598,  0.2023,  0.5698,  ...,  0.2068,  0.4548, -0.5566],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-0.4541, -2.8281,  0.1738,  ..., -5.5977, -1.3281, -1.5518],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[-0.0112, -0.0074, -0.0052,  ...,  0.0130,  0.0030, -0.0101],
+        [-0.0145,  0.0060,  0.0075,  ...,  0.0046,  0.0052, -0.0100],
+        [ 0.0016,  0.0158,  0.0001,  ..., -0.0013, -0.0113, -0.0157],
+        ...,
+        [ 0.0072,  0.0110, -0.0120,  ...,  0.0043, -0.0062, -0.0248],
+        [-0.0008, -0.0068,  0.0033,  ..., -0.0091, -0.0114,  0.0072],
+        [ 0.0193,  0.0088, -0.0150,  ..., -0.0047,  0.0005, -0.0181]],
+       device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-0.6396, -3.5703, -0.0828,  ..., -5.3008, -0.5283,  0.0732]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 17:16:57 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with rome as its capital is known as italy
+The country with manila as its capital is known as philippines
+The country with bangkok as its capital is known as thailand
+The country with vienna as its capital is known as austria
+The country with stockholm as its capital is known as sweden
+The country with cairo as its capital is known as egypt
+The country with athens as its capital is known as greece
+The country with tokyo as its capital is known as
+2024-07-15 17:16:57 root INFO     [order_1_approx] starting weight calculation for The country with manila as its capital is known as philippines
+The country with vienna as its capital is known as austria
+The country with athens as its capital is known as greece
+The country with rome as its capital is known as italy
+The country with bangkok as its capital is known as thailand
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with stockholm as its capital is known as
+2024-07-15 17:16:57 lre.functional WARNING  [insert_s_j] layer transformer.h.27 does not match transformer.h.3
+2024-07-15 17:21:19 root INFO     [order_1_approx] weight calculation finished 
+
+                        s_j=tensor([-0.7334,  0.9019, -0.3313,  ...,  0.1108,  0.8818, -0.2318],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        o_j1=tensor([-5.4375,  0.0679, -2.1523,  ..., -2.8594, -1.7090, -6.2734],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SelectBackward0>) 
+
+                        s_o_weight: tensor([[ 2.5009e-02,  9.0885e-04, -7.0877e-03,  ..., -1.3962e-03,
+          1.2268e-02, -1.2589e-02],
+        [-3.8971e-02,  1.5167e-02,  1.7380e-02,  ...,  6.8970e-03,
+         -1.8372e-02,  8.6746e-03],
+        [ 9.7809e-03, -1.4893e-02,  7.3128e-03,  ..., -1.1795e-02,
+         -9.0561e-03, -1.1284e-02],
+        ...,
+        [-1.6800e-02,  2.4223e-03,  8.0109e-05,  ...,  1.4893e-02,
+         -9.9258e-03,  1.4053e-02],
+        [-2.8572e-03,  2.1534e-03, -3.9787e-03,  ..., -1.2497e-02,
+          1.0765e-02, -2.3689e-03],
+        [ 2.7313e-02, -2.2125e-03, -2.2308e-02,  ..., -1.6113e-02,
+         -6.4468e-03, -6.9389e-03]], device='cuda:0', dtype=torch.float16) 
+
+                        s_o_bias=tensor([[-4.8359, -0.7007, -3.1758,  ..., -3.6992, -1.2754, -5.1914]],
+       device='cuda:0', dtype=torch.float16, grad_fn=<SubBackward0>) 
+
+                    
+2024-07-15 17:21:20 lre.operators INFO     sem1 [Jacobian] Finished order_1_approx for The country with manila as its capital is known as philippines
+The country with vienna as its capital is known as austria
+The country with athens as its capital is known as greece
+The country with rome as its capital is known as italy
+The country with bangkok as its capital is known as thailand
+The country with tokyo as its capital is known as japan
+The country with cairo as its capital is known as egypt
+The country with stockholm as its capital is known as
+2024-07-15 17:21:20 root INFO     total operator prediction time: 2098.00865983963 seconds
