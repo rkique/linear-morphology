@@ -1,0 +1,311 @@
+{
+    "name": "german",
+    "prompt_templates": [
+        "Die Pluralform von {} ist"
+    ],
+    "prompt_templates_zs": [
+    "Die Pluralform von {} ist"
+    ],
+"samples": [
+    {
+        "subject": "Apfel",
+        "object": [
+            "Äpfel"
+        ]
+    },
+    {
+        "subject": "Katze",
+        "object": [
+            "Katzen"
+        ]
+    },
+    {
+        "subject": "Hund",
+        "object": [
+            "Hunde"
+        ]
+    },
+    {
+        "subject": "Haus",
+        "object": [
+            "Häuser"
+        ]
+    },
+    {
+        "subject": "Buch",
+        "object": [
+            "Bücher"
+        ]
+    },
+    {
+        "subject": "Kind",
+        "object": [
+            "Kinder"
+        ]
+    },
+    {
+        "subject": "Freund",
+        "object": [
+            "Freunde"
+        ]
+    },
+    {
+        "subject": "Auto",
+        "object": [
+            "Autos"
+        ]
+    },
+    {
+        "subject": "Blume",
+        "object": [
+            "Blumen"
+        ]
+    },
+    {
+        "subject": "Baum",
+        "object": [
+            "Bäume"
+        ]
+    },
+    {
+        "subject": "Vogel",
+        "object": [
+            "Vögel"
+        ]
+    },
+    {
+        "subject": "Stuhl",
+        "object": [
+            "Stühle"
+        ]
+    },
+    {
+        "subject": "Tisch",
+        "object": [
+            "Tische"
+        ]
+    },
+    {
+        "subject": "Fisch",
+        "object": [
+            "Fische"
+        ]
+    },
+    {
+        "subject": "Fenster",
+        "object": [
+            "Fenster"
+        ]
+    },
+    {
+        "subject": "Tür",
+        "object": [
+            "Türen"
+        ]
+    },
+    {
+        "subject": "Schlüssel",
+        "object": [
+            "Schlüssel"
+        ]
+    },
+    {
+        "subject": "Straße",
+        "object": [
+            "Straßen"
+        ]
+    },
+    {
+        "subject": "Fluss",
+        "object": [
+            "Flüsse"
+        ]
+    },
+    {
+        "subject": "Stadt",
+        "object": [
+            "Städte"
+        ]
+    },
+    {
+        "subject": "Jahr",
+        "object": [
+            "Jahre"
+        ]
+    },
+    {
+        "subject": "Mädchen",
+        "object": [
+            "Mädchen"
+        ]
+    },
+    {
+        "subject": "Junge",
+        "object": [
+            "Jungen"
+        ]
+    },
+    {
+        "subject": "Brief",
+        "object": [
+            "Briefe"
+        ]
+    },
+    {
+        "subject": "Film",
+        "object": [
+            "Filme"
+        ]
+    },
+    {
+        "subject": "Bett",
+        "object": [
+            "Betten"
+        ]
+    },
+    {
+        "subject": "Schuh",
+        "object": [
+            "Schuhe"
+        ]
+    },
+    {
+        "subject": "Stift",
+        "object": [
+            "Stifte"
+        ]
+    },
+    {
+        "subject": "Zimmer",
+        "object": [
+            "Zimmer"
+        ]
+    },
+    {
+        "subject": "Lied",
+        "object": [
+            "Lieder"
+        ]
+    },
+    {
+        "subject": "Stern",
+        "object": [
+            "Sterne"
+        ]
+    },
+    {
+        "subject": "Computer",
+        "object": [
+            "Computer"
+        ]
+    },
+    {
+        "subject": "Schule",
+        "object": [
+            "Schulen"
+        ]
+    },
+    {
+        "subject": "Sprache",
+        "object": [
+            "Sprachen"
+        ]
+    },
+    {
+        "subject": "Zeitung",
+        "object": [
+            "Zeitungen"
+        ]
+    },
+    {
+        "subject": "Lehrer",
+        "object": [
+            "Lehrer"
+        ]
+    },
+    {
+        "subject": "Berg",
+        "object": [
+            "Berge"
+        ]
+    },
+    {
+        "subject": "Wald",
+        "object": [
+            "Wälder"
+        ]
+    },
+    {
+        "subject": "Telefon",
+        "object": [
+            "Telefone"
+        ]
+    },
+    {
+        "subject": "Bild",
+        "object": [
+            "Bilder"
+        ]
+    },
+    {
+        "subject": "Mutter",
+        "object": [
+            "Mütter"
+        ]
+    },
+    {
+        "subject": "Vater",
+        "object": [
+            "Väter"
+        ]
+    },
+    {
+        "subject": "Sonne",
+        "object": [
+            "Sonnen"
+        ]
+    },
+    {
+        "subject": "Lampe",
+        "object": [
+            "Lampen"
+        ]
+    },
+    {
+        "subject": "Freundin",
+        "object": [
+            "Freundinnen"
+        ]
+    },
+    {
+        "subject": "Insel",
+        "object": [
+            "Inseln"
+        ]
+    },
+    {
+        "subject": "Tasse",
+        "object": [
+            "Tassen"
+        ]
+    },
+    {
+        "subject": "Fahrrad",
+        "object": [
+            "Fahrräder"
+        ]
+    },
+    {
+        "subject": "Meer",
+        "object": [
+            "Meere"
+        ]
+    },
+    {
+        "subject": "Wand",
+        "object": [
+            "Wände"
+        ]
+    }
+]
+}

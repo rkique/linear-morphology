@@ -1,0 +1,293 @@
+{
+    "name": "czech",
+    "prompt_templates": [
+        "Množné číslo {} je"
+    ],
+    "prompt_templates_zs": [
+    "Množné číslo {} je"
+    ],
+"samples": [
+    {
+        "subject": "pes",
+        "object": [
+            "psi"
+        ]
+    },
+    {
+        "subject": "žena",
+        "object": [
+            "ženy"
+        ]
+    },
+    {
+        "subject": "auto",
+        "object": [
+            "auta"
+        ]
+    },
+    {
+        "subject": "knížka",
+        "object": [
+            "knížky"
+        ]
+    },
+    {
+        "subject": "stůl",
+        "object": [
+            "stoly"
+        ]
+    },
+    {
+        "subject": "strom",
+        "object": [
+            "stromy"
+        ]
+    },
+    {
+        "subject": "město",
+        "object": [
+            "města"
+        ]
+    },
+    {
+        "subject": "muž",
+        "object": [
+            "muži"
+        ]
+    },
+    {
+        "subject": "dítě",
+        "object": [
+            "děti"
+        ]
+    },
+    {
+        "subject": "květina",
+        "object": [
+            "květiny"
+        ]
+    },
+    {
+        "subject": "tělo",
+        "object": [
+            "těla"
+        ]
+    },
+    {
+        "subject": "přítel",
+        "object": [
+            "přátelé"
+        ]
+    },
+    {
+        "subject": "zvíře",
+        "object": [
+            "zvířata"
+        ]
+    },
+    {
+        "subject": "krabice",
+        "object": [
+            "krabice"
+        ]
+    },
+    {
+        "subject": "letadlo",
+        "object": [
+            "letadla"
+        ]
+    },
+    {
+        "subject": "telefon",
+        "object": [
+            "telefony"
+        ]
+    },
+    {
+        "subject": "okno",
+        "object": [
+            "okna"
+        ]
+    },
+    {
+        "subject": "kniha",
+        "object": [
+            "knihy"
+        ]
+    },
+    {
+        "subject": "počítač",
+        "object": [
+            "počítače"
+        ]
+    },
+    {
+        "subject": "stavení",
+        "object": [
+            "stavení"
+        ]
+    },
+    {
+        "subject": "sklenice",
+        "object": [
+            "sklenice"
+        ]
+    },
+    {
+        "subject": "stavení",
+        "object": [
+            "stavení"
+        ]
+    },
+    {
+        "subject": "rodina",
+        "object": [
+            "rodiny"
+        ]
+    },
+    {
+        "subject": "práce",
+        "object": [
+            "práce"
+        ]
+    },
+    {
+        "subject": "srdce",
+        "object": [
+            "srdce"
+        ]
+    },
+    {
+        "subject": "nádraží",
+        "object": [
+            "nádraží"
+        ]
+    },
+    {
+        "subject": "třída",
+        "object": [
+            "třídy"
+        ]
+    },
+    {
+        "subject": "voda",
+        "object": [
+            "vody"
+        ]
+    },
+    {
+        "subject": "kolega",
+        "object": [
+            "kolegové"
+        ]
+    },
+    {
+        "subject": "zákazník",
+        "object": [
+            "zákazníci"
+        ]
+    },
+    {
+        "subject": "řeka",
+        "object": [
+            "řeky"
+        ]
+    },
+    {
+        "subject": "jablko",
+        "object": [
+            "jablka"
+        ]
+    },
+    {
+        "subject": "hory",
+        "object": [
+            "hory"
+        ]
+    },
+    {
+        "subject": "skupina",
+        "object": [
+            "skupiny"
+        ]
+    },
+    {
+        "subject": "kluk",
+        "object": [
+            "kluci"
+        ]
+    },
+    {
+        "subject": "holka",
+        "object": [
+            "holky"
+        ]
+    },
+    {
+        "subject": "automobil",
+        "object": [
+            "automobily"
+        ]
+    },
+    {
+        "subject": "včela",
+        "object": [
+            "včely"
+        ]
+    },
+    {
+        "subject": "pes",
+        "object": [
+            "psi"
+        ]
+    },
+    {
+        "subject": "lampa",
+        "object": [
+            "lampy"
+        ]
+    },
+    {
+        "subject": "měsíc",
+        "object": [
+            "měsíce"
+        ]
+    },
+    {
+        "subject": "jablko",
+        "object": [
+            "jablka"
+        ]
+    },
+    {
+        "subject": "úkol",
+        "object": [
+            "úkoly"
+        ]
+    },
+    {
+        "subject": "knedlík",
+        "object": [
+            "knedlíky"
+        ]
+    },
+    {
+        "subject": "zámek",
+        "object": [
+            "zámky"
+        ]
+    },
+    {
+        "subject": "město",
+        "object": [
+            "města"
+        ]
+    },
+    {
+        "subject": "zahrada",
+        "object": [
+            "zahrady"
+        ]
+    }
+]
+}

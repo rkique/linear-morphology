@@ -1,0 +1,376 @@
+{
+    "name": "nesneler - renk",
+    "prompt_templates": [
+        "{} rengi"
+    ],
+    "prompt_templates_zs": [
+        "{} rengi"
+    ],
+    "samples": [
+        {
+            "subject": "karınca",
+            "object": [
+                "siyah",
+                "kahverengi",
+                "kırmızı"
+            ]
+        },
+        {
+            "subject": "elma",
+            "object": [
+                "kırmızı",
+                "turuncu",
+                "sarı",
+                "altın rengi"
+            ]
+        },
+        {
+            "subject": "tahta",
+            "object": [
+                "siyah",
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "kan",
+            "object": [
+                "kırmızı"
+            ]
+        },
+        {
+            "subject": "yaban mersini",
+            "object": [
+                "mavi",
+                "siyah"
+            ]
+        },
+        {
+            "subject": "brokoli",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "morarma",
+            "object": [
+                "mavi",
+                "mor"
+            ]
+        },
+        {
+            "subject": "lahana",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "havuç",
+            "object": [
+                "turuncu",
+                "kırmızı",
+                "sarı"
+            ]
+        },
+        {
+            "subject": "karnabahar",
+            "object": [
+                "beyaz",
+                "yeşil",
+                "sarı",
+                "sarımsı"
+            ]
+        },
+        {
+            "subject": "kereviz",
+            "object": [
+                "yeşil",
+                "beyaz",
+                "kahverengi"
+            ]
+        },
+        {
+            "subject": "kiraz",
+            "object": [
+                "kırmızı",
+                "sarı",
+                "siyah"
+            ]
+        },
+        {
+            "subject": "çikolata",
+            "object": [
+                "beyaz",
+                "kahverengi",
+                "siyah"
+            ]
+        },
+        {
+            "subject": "bulut",
+            "object": [
+                "beyaz",
+                "gri"
+            ]
+        },
+        {
+            "subject": "kömür",
+            "object": [
+                "siyah"
+            ]
+        },
+        {
+            "subject": "kahve",
+            "object": [
+                "siyah",
+                "kahverengi"
+            ]
+        },
+        {
+            "subject": "kızılcık",
+            "object": [
+                "kırmızı",
+                "mor",
+                "pembe"
+            ]
+        },
+        {
+            "subject": "krema",
+            "object": [
+                "beyaz"
+            ]
+        },
+        {
+            "subject": "karga",
+            "object": [
+                "siyah"
+            ]
+        },
+        {
+            "subject": "salatalık",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "zümrüt",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "buzdolabı",
+            "object": [
+                "beyaz",
+                "gümüş",
+                "siyah"
+            ]
+        },
+        {
+            "subject": "kurbağa",
+            "object": [
+                "yeşil",
+                "kahverengi",
+                "gri"
+            ]
+        },
+        {
+            "subject": "üzüm",
+            "object": [
+                "siyah",
+                "kırmızı",
+                "yeşil",
+                "mor"
+            ]
+        },
+        {
+            "subject": "çimen",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "yaprak",
+            "object": [
+                "yeşil",
+                "kırmızı",
+                "sarı"
+            ]
+        },
+        {
+            "subject": "süt",
+            "object": [
+                "beyaz"
+            ]
+        },
+        {
+            "subject": "kağıt",
+            "object": [
+                "beyaz",
+                "renkli"
+            ]
+        },
+        {
+            "subject": "maydanoz",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "şakayık",
+            "object": [
+                "kırmızı",
+                "beyaz",
+                "pembe",
+                "mor"
+            ]
+        },
+        {
+            "subject": "biber",
+            "object": [
+                "siyah",
+                "kırmızı",
+                "yeşil",
+                "sarı",
+                "turuncu"
+            ]
+        },
+        {
+            "subject": "patates",
+            "object": [
+                "kahverengi"
+            ]
+        },
+        {
+            "subject": "turp",
+            "object": [
+                "kırmızı",
+                "pembe",
+                "beyaz",
+                "yeşil",
+                "siyah"
+            ]
+        },
+        {
+            "subject": "kuzgun",
+            "object": [
+                "siyah"
+            ]
+        },
+        {
+            "subject": "gül",
+            "object": [
+                "kırmızı",
+                "sarı",
+                "pembe",
+                "beyaz",
+                "mavi"
+            ]
+        },
+        {
+            "subject": "yakut",
+            "object": [
+                "kırmızı"
+            ]
+        },
+        {
+            "subject": "tuz",
+            "object": [
+                "beyaz"
+            ]
+        },
+        {
+            "subject": "safir",
+            "object": [
+                "mavi"
+            ]
+        },
+        {
+            "subject": "deniz",
+            "object": [
+                "mavi",
+                "yeşil",
+                "gri"
+            ]
+        },
+        {
+            "subject": "gökyüzü",
+            "object": [
+                "mavi",
+                "gri"
+            ]
+        },
+        {
+            "subject": "kar",
+            "object": [
+                "beyaz"
+            ]
+        },
+        {
+            "subject": "toprak",
+            "object": [
+                "siyah",
+                "kahverengi",
+                "koyu"
+            ]
+        },
+        {
+            "subject": "ıspanak",
+            "object": [
+                "yeşil"
+            ]
+        },
+        {
+            "subject": "şeker",
+            "object": [
+                "beyaz",
+                "kahverengi"
+            ]
+        },
+        {
+            "subject": "güneş",
+            "object": [
+                "sarı",
+                "altın rengi"
+            ]
+        },
+        {
+            "subject": "kuğu",
+            "object": [
+                "beyaz",
+                "siyah",
+                "gri"
+            ]
+        },
+        {
+            "subject": "çay",
+            "object": [
+                "siyah",
+                "yeşil",
+                "beyaz",
+                "kırmızı",
+                "kahverengi",
+                "sarı"
+            ]
+        },
+        {
+            "subject": "domates",
+            "object": [
+                "kırmızı"
+            ]
+        },
+        {
+            "subject": "diş macunu",
+            "object": [
+                "beyaz"
+            ]
+        },
+        {
+            "subject": "yoğurt",
+            "object": [
+                "beyaz",
+                "pembe"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

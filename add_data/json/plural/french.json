@@ -1,0 +1,304 @@
+{
+    "name": "french",
+    "prompt_templates": [
+        "La forme plurielle de {} est"
+    ],
+    "prompt_templates_zs": [
+    "La forme plurielle de {} est"
+    ], "samples": [
+    {
+        "subject": "chat",
+        "object": [
+            "chats"
+        ]
+    },
+    {
+        "subject": "chien",
+        "object": [
+            "chiens"
+        ]
+    },
+    {
+        "subject": "fleur",
+        "object": [
+            "fleurs"
+        ]
+    },
+    {
+        "subject": "ami",
+        "object": [
+            "amis"
+        ]
+    },
+    {
+        "subject": "voiture",
+        "object": [
+            "voitures"
+        ]
+    },
+    {
+        "subject": "maison",
+        "object": [
+            "maisons"
+        ]
+    },
+    {
+        "subject": "livre",
+        "object": [
+            "livres"
+        ]
+    },
+    {
+        "subject": "pays",
+        "object": [
+            "pays"
+        ]
+    },
+    {
+        "subject": "animal",
+        "object": [
+            "animaux"
+        ]
+    },
+    {
+        "subject": "papillon",
+        "object": [
+            "papillons"
+        ]
+    },
+    {
+        "subject": "chien",
+        "object": [
+            "chiens"
+        ]
+    },
+    {
+        "subject": "homme",
+        "object": [
+            "hommes"
+        ]
+    },
+    {
+        "subject": "femme",
+        "object": [
+            "femmes"
+        ]
+    },
+    {
+        "subject": "enfant",
+        "object": [
+            "enfants"
+        ]
+    },
+    {
+        "subject": "bureau",
+        "object": [
+            "bureaux"
+        ]
+    },
+    {
+        "subject": "château",
+        "object": [
+            "châteaux"
+        ]
+    },
+    {
+        "subject": "ciel",
+        "object": [
+            "cieux"
+        ]
+    },
+    {
+        "subject": "feuille",
+        "object": [
+            "feuilles"
+        ]
+    },
+    {
+        "subject": "rivière",
+        "object": [
+            "rivières"
+        ]
+    },
+    {
+        "subject": "ami",
+        "object": [
+            "amis"
+        ]
+    },
+    {
+        "subject": "cheval",
+        "object": [
+            "chevaux"
+        ]
+    },
+    {
+        "subject": "gâteau",
+        "object": [
+            "gâteaux"
+        ]
+    },
+    {
+        "subject": "vache",
+        "object": [
+            "vaches"
+        ]
+    },
+    {
+        "subject": "fenêtre",
+        "object": [
+            "fenêtres"
+        ]
+    },
+    {
+        "subject": "porte",
+        "object": [
+            "portes"
+        ]
+    },
+    {
+        "subject": "école",
+        "object": [
+            "écoles"
+        ]
+    },
+    {
+        "subject": "panier",
+        "object": [
+            "paniers"
+        ]
+    },
+    {
+        "subject": "jouet",
+        "object": [
+            "jouets"
+        ]
+    },
+    {
+        "subject": "film",
+        "object": [
+            "films"
+        ]
+    },
+    {
+        "subject": "livre",
+        "object": [
+            "livres"
+        ]
+    },
+    {
+        "subject": "vêtement",
+        "object": [
+            "vêtements"
+        ]
+    },
+    {
+        "subject": "sac",
+        "object": [
+            "sacs"
+        ]
+    },
+    {
+        "subject": "fête",
+        "object": [
+            "fêtes"
+        ]
+    },
+    {
+        "subject": "mer",
+        "object": [
+            "mers"
+        ]
+    },
+    {
+        "subject": "chemin",
+        "object": [
+            "chemins"
+        ]
+    },
+    {
+        "subject": "montagne",
+        "object": [
+            "montagnes"
+        ]
+    },
+    {
+        "subject": "ami",
+        "object": [
+            "amis"
+        ]
+    },
+    {
+        "subject": "idée",
+        "object": [
+            "idées"
+        ]
+    },
+    {
+        "subject": "téléphone",
+        "object": [
+            "téléphones"
+        ]
+    },
+    {
+        "subject": "lien",
+        "object": [
+            "liens"
+        ]
+    },
+    {
+        "subject": "message",
+        "object": [
+            "messages"
+        ]
+    },
+    {
+        "subject": "médicament",
+        "object": [
+            "médicaments"
+        ]
+    },
+    {
+        "subject": "comédie",
+        "object": [
+            "comedies"
+        ]
+    },
+    {
+        "subject": "saison",
+        "object": [
+            "saisons"
+        ]
+    },
+    {
+        "subject": "instrument",
+        "object": [
+            "instruments"
+        ]
+    },
+    {
+        "subject": "fleur",
+        "object": [
+            "fleurs"
+        ]
+    },
+    {
+        "subject": "chose",
+        "object": [
+            "choses"
+        ]
+    },
+    {
+        "subject": "drapeau",
+        "object": [
+            "drapeaux"
+        ]
+    },
+    {
+        "subject": "bureau",
+        "object": [
+            "bureaux"
+        ]
+    }
+]
+}

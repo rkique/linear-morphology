@@ -1,0 +1,375 @@
+
+{
+    "name": "czech",
+    "prompt_templates": [
+        "Barva {} je"
+    ],
+    "prompt_templates_zs": [
+       "Barva {} je"
+    ],
+    "samples": [
+        {
+            "subject": "mravenec",
+            "object": [
+                "černá",
+                "hnědá",
+                "červená"
+            ]
+        },
+        {
+            "subject": "jablko",
+            "object": [
+                "červená",
+                "oranžová",
+                "žlutá",
+                "zlatá"
+            ]
+        },
+        {
+            "subject": "tabule",
+            "object": [
+                "černá",
+                "zelená"
+            ]
+        },
+        {
+            "subject": "krev",
+            "object": [
+                "červená"
+            ]
+        },
+        {
+            "subject": "borůvka",
+            "object": [
+                "modrá",
+                "černá"
+            ]
+        },
+        {
+            "subject": "brokolice",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "modřina",
+            "object": [
+                "modrá",
+                "fialová"
+            ]
+        },
+        {
+            "subject": "zelí",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "mrkev",
+            "object": [
+                "oranžová",
+                "červená",
+                "žlutá"
+            ]
+        },
+        {
+            "subject": "květák",
+            "object": [
+                "bílá",
+                "zelená",
+                "žlutá",
+                "nažloutlá"
+            ]
+        },
+        {
+            "subject": "celer",
+            "object": [
+                "zelená",
+                "bílá",
+                "hnědá"
+            ]
+        },
+        {
+            "subject": "třešeň",
+            "object": [
+                "červená",
+                "žlutá",
+                "černá"
+            ]
+        },
+        {
+            "subject": "čokoláda",
+            "object": [
+                "bílá",
+                "hnědá",
+                "černá"
+            ]
+        },
+        {
+            "subject": "mrak",
+            "object": [
+                "bílá",
+                "šedá"
+            ]
+        },
+        {
+            "subject": "uhlí",
+            "object": [
+                "černá"
+            ]
+        },
+        {
+            "subject": "káva",
+            "object": [
+                "černá",
+                "hnědá"
+            ]
+        },
+        {
+            "subject": "brusinka",
+            "object": [
+                "červená",
+                "fialová",
+                "růžová"
+            ]
+        },
+        {
+            "subject": "smetana",
+            "object": [
+                "bílá"
+            ]
+        },
+        {
+            "subject": "vrána",
+            "object": [
+                "černá"
+            ]
+        },
+        {
+            "subject": "okurka",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "smaragd",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "lednice",
+            "object": [
+                "bílá",
+                "stříbrná",
+                "černá"
+            ]
+        },
+        {
+            "subject": "žába",
+            "object": [
+                "zelená",
+                "hnědá",
+                "šedá"
+            ]
+        },
+        {
+            "subject": "hrozny",
+            "object": [
+                "černá",
+                "červená",
+                "zelená",
+                "fialová"
+            ]
+        },
+        {
+            "subject": "tráva",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "list",
+            "object": [
+                "zelená",
+                "červená",
+                "žlutá"
+            ]
+        },
+        {
+            "subject": "mléko",
+            "object": [
+                "bílá"
+            ]
+        },
+        {
+            "subject": "papír",
+            "object": [
+                "bílá",
+                "barevná"
+            ]
+        },
+        {
+            "subject": "petržel",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "pivoňka",
+            "object": [
+                "červená",
+                "bílá",
+                "růžová",
+                "fialová"
+            ]
+        },
+        {
+            "subject": "pepř",
+            "object": [
+                "černá",
+                "červená",
+                "zelená",
+                "žlutá",
+                "oranžová"
+            ]
+        },
+        {
+            "subject": "brambora",
+            "object": [
+                "hnědá"
+            ]
+        },
+        {
+            "subject": "ředkev",
+            "object": [
+                "červená",
+                "růžová",
+                "bílá",
+                "zelená",
+                "černá"
+            ]
+        },
+        {
+            "subject": "havran",
+            "object": [
+                "černá"
+            ]
+        },
+        {
+            "subject": "růže",
+            "object": [
+                "červená",
+                "žlutá",
+                "růžová",
+                "bílá",
+                "modrá"
+            ]
+        },
+        {
+            "subject": "rubín",
+            "object": [
+                "červená"
+            ]
+        },
+        {
+            "subject": "sůl",
+            "object": [
+                "bílá"
+            ]
+        },
+        {
+            "subject": "safír",
+            "object": [
+                "modrá"
+            ]
+        },
+        {
+            "subject": "moře",
+            "object": [
+                "modrá",
+                "zelená",
+                "šedá"
+            ]
+        },
+        {
+            "subject": "nebe",
+            "object": [
+                "modrá",
+                "šedá"
+            ]
+        },
+        {
+            "subject": "sníh",
+            "object": [
+                "bílá"
+            ]
+        },
+        {
+            "subject": "půda",
+            "object": [
+                "černá",
+                "hnědá",
+                "tmavá"
+            ]
+        },
+        {
+            "subject": "špenát",
+            "object": [
+                "zelená"
+            ]
+        },
+        {
+            "subject": "cukr",
+            "object": [
+                "bílá",
+                "hnědá"
+            ]
+        },
+        {
+            "subject": "slunce",
+            "object": [
+                "žlutá",
+                "zlatá"
+            ]
+        },
+        {
+            "subject": "labuť",
+            "object": [
+                "bílá",
+                "černá",
+                "šedá"
+            ]
+        },
+        {
+            "subject": "čaj",
+            "object": [
+                "černá",
+                "zelená",
+                "bílá",
+                "červená",
+                "hnědá",
+                "žlutá"
+            ]
+        },
+        {
+            "subject": "rajče",
+            "object": [
+                "červená"
+            ]
+        },
+        {
+            "subject": "zubní pasta",
+            "object": [
+                "bílá"
+            ]
+        },
+        {
+            "subject": "jogurt",
+            "object": [
+                "bílá",
+                "růžová"
+            ]
+        }
+    ]
+}

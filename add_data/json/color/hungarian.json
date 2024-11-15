@@ -1,0 +1,381 @@
+{
+    "name": "dolgok - színek",
+    "prompt_templates": [
+        "A(z) {} színe"
+    ],
+    "prompt_templates_zs": [
+        "A(z) {} színe"
+    ],
+    "samples": [
+        {
+            "subject": "hangya",
+            "object": [
+                "fekete",
+                "barna",
+                "piros"
+            ]
+        },
+        {
+            "subject": "alma",
+            "object": [
+                "piros",
+                "narancs",
+                "sárga",
+                "arany"
+            ]
+        },
+        {
+            "subject": "tábla",
+            "object": [
+                "fekete",
+                "zöld"
+            ]
+        },
+        {
+            "subject": "vér",
+            "object": [
+                "piros"
+            ]
+        },
+        {
+            "subject": "áfonya",
+            "object": [
+                "kék",
+                "fekete"
+            ]
+        },
+        {
+            "subject": "brokkoli",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "zúzódás",
+            "object": [
+                "kék",
+                "lila"
+            ]
+        },
+        {
+            "subject": "káposzta",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "répa",
+            "object": [
+                "narancs",
+                "piros",
+                "sárga"
+            ]
+        },
+        {
+            "subject": "karfiol",
+            "object": [
+                "fehér",
+                "zöld",
+                "sárga",
+                "sárgás"
+            ]
+        },
+        {
+            "subject": "zeller",
+            "object": [
+                "zöld",
+                "fehér",
+                "barna"
+            ]
+        },
+        {
+            "subject": "cseresznye",
+            "object": [
+                "piros",
+                "sárga",
+                "fekete"
+            ]
+        },
+        {
+            "subject": "csokoládé",
+            "object": [
+                "fehér",
+                "barna",
+                "fekete"
+            ]
+        },
+        {
+            "subject": "felhő",
+            "object": [
+                "fehér",
+                "szürke",
+                "szürkés"
+            ]
+        },
+        {
+            "subject": "szén",
+            "object": [
+                "fekete"
+            ]
+        },
+        {
+            "subject": "kávé",
+            "object": [
+                "fekete",
+                "barna"
+            ]
+        },
+        {
+            "subject": "áfonya",
+            "object": [
+                "piros",
+                "lila",
+                "rózsaszín"
+            ]
+        },
+        {
+            "subject": "tejszín",
+            "object": [
+                "fehér"
+            ]
+        },
+        {
+            "subject": "holló",
+            "object": [
+                "fekete"
+            ]
+        },
+        {
+            "subject": "uborka",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "smaragd",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "hűtőszekrény",
+            "object": [
+                "fehér",
+                "ezüst",
+                "fekete"
+            ]
+        },
+        {
+            "subject": "béka",
+            "object": [
+                "zöld",
+                "barna",
+                "szürke",
+                "szürkés"
+            ]
+        },
+        {
+            "subject": "szőlő",
+            "object": [
+                "fekete",
+                "piros",
+                "zöld",
+                "lila"
+            ]
+        },
+        {
+            "subject": "fű",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "levelek",
+            "object": [
+                "zöld",
+                "piros",
+                "sárga"
+            ]
+        },
+        {
+            "subject": "tej",
+            "object": [
+                "fehér"
+            ]
+        },
+        {
+            "subject": "papír",
+            "object": [
+                "fehér",
+                "színes"
+            ]
+        },
+        {
+            "subject": "petrezselyem",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "bazsarózsa",
+            "object": [
+                "piros",
+                "fehér",
+                "rózsaszín",
+                "lila"
+            ]
+        },
+        {
+            "subject": "paprika",
+            "object": [
+                "fekete",
+                "piros",
+                "zöld",
+                "sárga",
+                "narancs"
+            ]
+        },
+        {
+            "subject": "burgonya",
+            "object": [
+                "barna"
+            ]
+        },
+        {
+            "subject": "retek",
+            "object": [
+                "piros",
+                "rózsaszín",
+                "fehér",
+                "zöld",
+                "fekete"
+            ]
+        },
+        {
+            "subject": "varjú",
+            "object": [
+                "fekete"
+            ]
+        },
+        {
+            "subject": "rózsa",
+            "object": [
+                "piros",
+                "sárga",
+                "rózsaszín",
+                "fehér",
+                "kék"
+            ]
+        },
+        {
+            "subject": "rubin",
+            "object": [
+                "piros"
+            ]
+        },
+        {
+            "subject": "só",
+            "object": [
+                "fehér"
+            ]
+        },
+        {
+            "subject": "zafír",
+            "object": [
+                "kék"
+            ]
+        },
+        {
+            "subject": "tenger",
+            "object": [
+                "kék",
+                "zöld",
+                "szürke",
+                "szürkés"
+            ]
+        },
+        {
+            "subject": "ég",
+            "object": [
+                "kék",
+                "szürke",
+                "szürkés"
+            ]
+        },
+        {
+            "subject": "hó",
+            "object": [
+                "fehér"
+            ]
+        },
+        {
+            "subject": "föld",
+            "object": [
+                "fekete",
+                "barna",
+                "sötét"
+            ]
+        },
+        {
+            "subject": "spenót",
+            "object": [
+                "zöld"
+            ]
+        },
+        {
+            "subject": "cukor",
+            "object": [
+                "fehér",
+                "barna"
+            ]
+        },
+        {
+            "subject": "nap",
+            "object": [
+                "sárga",
+                "arany"
+            ]
+        },
+        {
+            "subject": "hattyú",
+            "object": [
+                "fehér",
+                "fekete",
+                "szürke",
+                "szürkés"
+            ]
+        },
+        {
+            "subject": "tea",
+            "object": [
+                "fekete",
+                "zöld",
+                "fehér",
+                "piros",
+                "barna",
+                "sárga"
+            ]
+        },
+        {
+            "subject": "paradicsom",
+            "object": [
+                "piros"
+            ]
+        },
+        {
+            "subject": "fogkrém",
+            "object": [
+                "fehér"
+            ]
+        },
+        {
+            "subject": "joghurt",
+            "object": [
+                "fehér",
+                "rózsaszín"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

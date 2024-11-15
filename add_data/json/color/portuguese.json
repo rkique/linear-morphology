@@ -1,0 +1,378 @@
+{
+    "name": "coisas - cor",
+    "prompt_templates": [
+        "O(a) {} é colorido(a)",
+        "A cor de {} é"
+    ],
+    "prompt_templates_zs": [
+        "O(a) {} é colorido(a)",
+        "A cor de {} é"
+    ],
+    "samples": [
+        {
+            "subject": "formiga",
+            "object": [
+                "preta",
+                "marrom",
+                "vermelha"
+            ]
+        },
+        {
+            "subject": "maçã",
+            "object": [
+                "vermelha",
+                "laranja",
+                "amarela",
+                "dourada"
+            ]
+        },
+        {
+            "subject": "quadro-negro",
+            "object": [
+                "preto",
+                "verde"
+            ]
+        },
+        {
+            "subject": "sangue",
+            "object": [
+                "vermelho"
+            ]
+        },
+        {
+            "subject": "mirtilo",
+            "object": [
+                "azul",
+                "preto"
+            ]
+        },
+        {
+            "subject": "brócolis",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "hematoma",
+            "object": [
+                "azul",
+                "roxo"
+            ]
+        },
+        {
+            "subject": "repolho",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "cenoura",
+            "object": [
+                "laranja",
+                "vermelha",
+                "amarela"
+            ]
+        },
+        {
+            "subject": "couve-flor",
+            "object": [
+                "branca",
+                "verde",
+                "amarela",
+                "amarelada"
+            ]
+        },
+        {
+            "subject": "aipo",
+            "object": [
+                "verde",
+                "branco",
+                "marrom"
+            ]
+        },
+        {
+            "subject": "cereja",
+            "object": [
+                "vermelha",
+                "amarela",
+                "preta"
+            ]
+        },
+        {
+            "subject": "chocolate",
+            "object": [
+                "branco",
+                "marrom",
+                "preto"
+            ]
+        },
+        {
+            "subject": "nuvem",
+            "object": [
+                "branca",
+                "cinza"
+            ]
+        },
+        {
+            "subject": "carvão",
+            "object": [
+                "preto"
+            ]
+        },
+        {
+            "subject": "café",
+            "object": [
+                "preto",
+                "marrom"
+            ]
+        },
+        {
+            "subject": "oxicoco",
+            "object": [
+                "vermelho",
+                "roxo",
+                "rosa"
+            ]
+        },
+        {
+            "subject": "creme",
+            "object": [
+                "branco"
+            ]
+        },
+        {
+            "subject": "corvo",
+            "object": [
+                "preto"
+            ]
+        },
+        {
+            "subject": "pepino",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "esmeralda",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "geladeira",
+            "object": [
+                "branca",
+                "prateada",
+                "preta"
+            ]
+        },
+        {
+            "subject": "sapo",
+            "object": [
+                "verde",
+                "marrom",
+                "cinza"
+            ]
+        },
+        {
+            "subject": "uvas",
+            "object": [
+                "pretas",
+                "vermelhas",
+                "verdes",
+                "roxas"
+            ]
+        },
+        {
+            "subject": "grama",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "folhas",
+            "object": [
+                "verdes",
+                "vermelhas",
+                "amarelas"
+            ]
+        },
+        {
+            "subject": "leite",
+            "object": [
+                "branco"
+            ]
+        },
+        {
+            "subject": "papel",
+            "object": [
+                "branco",
+                "colorido"
+            ]
+        },
+        {
+            "subject": "salsa",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "peônia",
+            "object": [
+                "vermelha",
+                "branca",
+                "rosa",
+                "roxa"
+            ]
+        },
+        {
+            "subject": "pimenta",
+            "object": [
+                "preta",
+                "vermelha",
+                "verde",
+                "amarela",
+                "laranja"
+            ]
+        },
+        {
+            "subject": "batata",
+            "object": [
+                "marrom"
+            ]
+        },
+        {
+            "subject": "rabanete",
+            "object": [
+                "vermelho",
+                "rosa",
+                "branco",
+                "verde",
+                "preto"
+            ]
+        },
+        {
+            "subject": "corvo",
+            "object": [
+                "preto"
+            ]
+        },
+        {
+            "subject": "rosa",
+            "object": [
+                "vermelha",
+                "amarela",
+                "rosa",
+                "branca",
+                "azul"
+            ]
+        },
+        {
+            "subject": "rubi",
+            "object": [
+                "vermelho"
+            ]
+        },
+        {
+            "subject": "sal",
+            "object": [
+                "branco"
+            ]
+        },
+        {
+            "subject": "safira",
+            "object": [
+                "azul"
+            ]
+        },
+        {
+            "subject": "mar",
+            "object": [
+                "azul",
+                "verde",
+                "cinza"
+            ]
+        },
+        {
+            "subject": "céu",
+            "object": [
+                "azul",
+                "cinza"
+            ]
+        },
+        {
+            "subject": "neve",
+            "object": [
+                "branca"
+            ]
+        },
+        {
+            "subject": "solo",
+            "object": [
+                "preto",
+                "marrom",
+                "escuro"
+            ]
+        },
+        {
+            "subject": "espinafre",
+            "object": [
+                "verde"
+            ]
+        },
+        {
+            "subject": "açúcar",
+            "object": [
+                "branco",
+                "marrom"
+            ]
+        },
+        {
+            "subject": "sol",
+            "object": [
+                "amarelo",
+                "dourado"
+            ]
+        },
+        {
+            "subject": "cisne",
+            "object": [
+                "branco",
+                "preto",
+                "cinza"
+            ]
+        },
+        {
+            "subject": "chá",
+            "object": [
+                "preto",
+                "verde",
+                "branco",
+                "vermelho",
+                "marrom",
+                "amarelo"
+            ]
+        },
+        {
+            "subject": "tomate",
+            "object": [
+                "vermelho"
+            ]
+        },
+        {
+            "subject": "pasta de dente",
+            "object": [
+                "branca"
+            ]
+        },
+        {
+            "subject": "iogurte",
+            "object": [
+                "branco",
+                "rosa"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -1,0 +1,298 @@
+{
+    "name": "serbian",
+    "prompt_templates": [
+        "Pluralski oblik od {} je"
+    ],
+    "prompt_templates_zs": [
+    "Pluralski oblik od {} je"
+    ], "samples": [
+    {
+        "subject": "pas",
+        "object": [
+            "psi"
+        ]
+    },
+    {
+        "subject": "devojka",
+        "object": [
+            "devojke"
+        ]
+    },
+    {
+        "subject": "automobil",
+        "object": [
+            "automobili"
+        ]
+    },
+    {
+        "subject": "knjiga",
+        "object": [
+            "knjige"
+        ]
+    },
+    {
+        "subject": "sto",
+        "object": [
+            "stolovi"
+        ]
+    },
+    {
+        "subject": "roda",
+        "object": [
+            "rode"
+        ]
+    },
+    {
+        "subject": "dom",
+        "object": [
+            "domovi"
+        ]
+    },
+    {
+        "subject": "mladić",
+        "object": [
+            "mladići"
+        ]
+    },
+    {
+        "subject": "žena",
+        "object": [
+            "žene"
+        ]
+    },
+    {
+        "subject": "cvijet",
+        "object": [
+            "cvjetovi"
+        ]
+    },
+    {
+        "subject": "društvo",
+        "object": [
+            "društva"
+        ]
+    },
+    {
+        "subject": "grad",
+        "object": [
+            "gradovi"
+        ]
+    },
+    {
+        "subject": "mesto",
+        "object": [
+            "mesta"
+        ]
+    },
+    {
+        "subject": "telo",
+        "object": [
+            "tela"
+        ]
+    },
+    {
+        "subject": "knjigovodstvo",
+        "object": [
+            "knjigovodstva"
+        ]
+    },
+    {
+        "subject": "jaje",
+        "object": [
+            "jaja"
+        ]
+    },
+    {
+        "subject": "detinjstvo",
+        "object": [
+            "detinjstva"
+        ]
+    },
+    {
+        "subject": "prijatelj",
+        "object": [
+            "prijatelji"
+        ]
+    },
+    {
+        "subject": "meso",
+        "object": [
+            "mesa"
+        ]
+    },
+    {
+        "subject": "planina",
+        "object": [
+            "planine"
+        ]
+    },
+    {
+        "subject": "zemlja",
+        "object": [
+            "zemlje"
+        ]
+    },
+    {
+        "subject": "ruka",
+        "object": [
+            "ruke"
+        ]
+    },
+    {
+        "subject": "kamen",
+        "object": [
+            "kameni"
+        ]
+    },
+    {
+        "subject": "okno",
+        "object": [
+            "okna"
+        ]
+    },
+    {
+        "subject": "nebo",
+        "object": [
+            "nebesa"
+        ]
+    },
+    {
+        "subject": "posao",
+        "object": [
+            "poslovi"
+        ]
+    },
+    {
+        "subject": "brat",
+        "object": [
+            "braća"
+        ]
+    },
+    {
+        "subject": "sestra",
+        "object": [
+            "sestre"
+        ]
+    },
+    {
+        "subject": "stablo",
+        "object": [
+            "stabla"
+        ]
+    },
+    {
+        "subject": "zrak",
+        "object": [
+            "zračni"
+        ]
+    },
+    {
+        "subject": "ljubav",
+        "object": [
+            "ljubavi"
+        ]
+    },
+    {
+        "subject": "avion",
+        "object": [
+            "avioni"
+        ]
+    },
+    {
+        "subject": "kamen",
+        "object": [
+            "kameni"
+        ]
+    },
+    {
+        "subject": "tkanina",
+        "object": [
+            "tkanine"
+        ]
+    },
+    {
+        "subject": "svetlo",
+        "object": [
+            "svetla"
+        ]
+    },
+    {
+        "subject": "račun",
+        "object": [
+            "računi"
+        ]
+    },
+    {
+        "subject": "problem",
+        "object": [
+            "problemi"
+        ]
+    },
+    {
+        "subject": "jezero",
+        "object": [
+            "jezerca"
+        ]
+    },
+    {
+        "subject": "kompjuter",
+        "object": [
+            "kompjuteri"
+        ]
+    },
+    {
+        "subject": "telefon",
+        "object": [
+            "telefoni"
+        ]
+    },
+    {
+        "subject": "slika",
+        "object": [
+            "slike"
+        ]
+    },
+    {
+        "subject": "prozor",
+        "object": [
+            "prozori"
+        ]
+    },
+    {
+        "subject": "nova",
+        "object": [
+            "nove"
+        ]
+    },
+    {
+        "subject": "kralj",
+        "object": [
+            "kraljevi"
+        ]
+    },
+    {
+        "subject": "voće",
+        "object": [
+            "voća"
+        ]
+    },
+    {
+        "subject": "vreme",
+        "object": [
+            "vremena"
+        ]
+    },
+    {
+        "subject": "pismo",
+        "object": [
+            "pisma"
+        ]
+    },
+    {
+        "subject": "društvo",
+        "object": [
+            "društva"
+        ]
+    }
+]
+}

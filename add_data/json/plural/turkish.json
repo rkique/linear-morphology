@@ -1,0 +1,305 @@
+{
+    "name": "turkish",
+    "prompt_templates": [
+        "{} kelimesinin çoğul hali"
+    ],
+    "prompt_templates_zs": [
+    "{} kelimesinin çoğul hali"
+    ],
+"samples": [
+    {
+        "subject": "elma",
+        "object": [
+            "elmalar"
+        ]
+    },
+    {
+        "subject": "kedi",
+        "object": [
+            "kediler"
+        ]
+    },
+    {
+        "subject": "köpek",
+        "object": [
+            "köpekler"
+        ]
+    },
+    {
+        "subject": "ev",
+        "object": [
+            "evler"
+        ]
+    },
+    {
+        "subject": "kitap",
+        "object": [
+            "kitaplar"
+        ]
+    },
+    {
+        "subject": "çocuk",
+        "object": [
+            "çocuklar"
+        ]
+    },
+    {
+        "subject": "arkadaş",
+        "object": [
+            "arkadaşlar"
+        ]
+    },
+    {
+        "subject": "araba",
+        "object": [
+            "arabalar"
+        ]
+    },
+    {
+        "subject": "çiçek",
+        "object": [
+            "çiçekler"
+        ]
+    },
+    {
+        "subject": "ağaç",
+        "object": [
+            "ağaçlar"
+        ]
+    },
+    {
+        "subject": "kuş",
+        "object": [
+            "kuşlar"
+        ]
+    },
+    {
+        "subject": "sandalye",
+        "object": [
+            "sandalyeler"
+        ]
+    },
+    {
+        "subject": "masa",
+        "object": [
+            "masalar"
+        ]
+    },
+    {
+        "subject": "balık",
+        "object": [
+            "balıklar"
+        ]
+    },
+    {
+        "subject": "pencere",
+        "object": [
+            "pencereler"
+        ]
+    },
+    {
+        "subject": "kapı",
+        "object": [
+            "kapılar"
+        ]
+    },
+    {
+        "subject": "anahtar",
+        "object": [
+            "anahtarlar"
+        ]
+    },
+    {
+        "subject": "yol",
+        "object": [
+            "yollar"
+        ]
+    },
+    {
+        "subject": "nehir",
+        "object": [
+            "nehirler"
+        ]
+    },
+    {
+        "subject": "şehir",
+        "object": [
+            "şehirler"
+        ]
+    },
+    {
+        "subject": "yıl",
+        "object": [
+            "yıllar"
+        ]
+    },
+    {
+        "subject": "kız",
+        "object": [
+            "kızlar"
+        ]
+    },
+    {
+        "subject": "erkek",
+        "object": [
+            "erkekler"
+        ]
+    },
+    {
+        "subject": "mektup",
+        "object": [
+            "mektuplar"
+        ]
+    },
+    {
+        "subject": "film",
+        "object": [
+            "filmler"
+        ]
+    },
+    {
+        "subject": "yatak",
+        "object": [
+            "yataklar"
+        ]
+    },
+    {
+        "subject": "ayakkabı",
+        "object": [
+            "ayakkabılar"
+        ]
+    },
+    {
+        "subject": "kalem",
+        "object": [
+            "kalemler"
+        ]
+    },
+    {
+        "subject": "oda",
+        "object": [
+            "odalar"
+        ]
+    },
+    {
+        "subject": "şarkı",
+        "object": [
+            "şarkılar"
+        ]
+    },
+    {
+        "subject": "yıldız",
+        "object": [
+            "yıldızlar"
+        ]
+    },
+    {
+        "subject": "bilgisayar",
+        "object": [
+            "bilgisayarlar"
+        ]
+    },
+    {
+        "subject": "okul",
+        "object": [
+            "okullar"
+        ]
+    },
+    {
+        "subject": "dil",
+        "object": [
+            "diller"
+        ]
+    },
+    {
+        "subject": "gazete",
+        "object": [
+            "gazeteler"
+        ]
+    },
+    {
+        "subject": "öğretmen",
+        "object": [
+            "öğretmenler"
+        ]
+    },
+    {
+        "subject": "dağ",
+        "object": [
+            "dağlar"
+        ]
+    },
+    {
+        "subject": "orman",
+        "object": [
+            "ormanlar"
+        ]
+    },
+    {
+        "subject": "telefon",
+        "object": [
+            "telefonlar"
+        ]
+    },
+    {
+        "subject": "resim",
+        "object": [
+            "resimler"
+        ]
+    },
+    {
+        "subject": "anne",
+        "object": [
+            "anneler"
+        ]
+    },
+    {
+        "subject": "baba",
+        "object": [
+            "babalar"
+        ]
+    },
+    {
+        "subject": "güneş",
+        "object": [
+            "güneşler"
+        ]
+    },
+    {
+        "subject": "lamba",
+        "object": [
+            "lambalar"
+        ]
+    },
+    {
+        "subject": "ada",
+        "object": [
+            "adalar"
+        ]
+    },
+    {
+        "subject": "fincan",
+        "object": [
+            "fincanlar"
+        ]
+    },
+    {
+        "subject": "bisiklet",
+        "object": [
+            "bisikletler"
+        ]
+    },
+    {
+        "subject": "deniz",
+        "object": [
+            "denizler"
+        ]
+    },
+    {
+        "subject": "duvar",
+        "object": [
+            "duvarlar"
+        ]
+    }
+]
+}

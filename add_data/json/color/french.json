@@ -1,0 +1,381 @@
+{
+    "name": "french",
+    "prompt_templates": [
+        "La couleur de {} est"
+    ],
+    "prompt_templates_zs": [
+        "La couleur de {} est"
+    ],
+    "samples": [
+        {
+            "subject": "fourmi",
+            "object": [
+                "noir",
+                "marron",
+                "rouge"
+            ]
+        },
+        {
+            "subject": "pomme",
+            "object": [
+                "rouge",
+                "orange",
+                "jaune",
+                "dorée"
+            ]
+        },
+        {
+            "subject": "tableau noir",
+            "object": [
+                "noir",
+                "vert"
+            ]
+        },
+        {
+            "subject": "sang",
+            "object": [
+                "rouge"
+            ]
+        },
+        {
+            "subject": "myrtille",
+            "object": [
+                "bleu",
+                "noir"
+            ]
+        },
+        {
+            "subject": "brocoli",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "ecchymose",
+            "object": [
+                "bleu",
+                "violet"
+            ]
+        },
+        {
+            "subject": "chou",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "carotte",
+            "object": [
+                "orange",
+                "rouge",
+                "jaune"
+            ]
+        },
+        {
+            "subject": "chou-fleur",
+            "object": [
+                "blanc",
+                "vert",
+                "jaune",
+                "jaunâtre"
+            ]
+        },
+        {
+            "subject": "céleri",
+            "object": [
+                "vert",
+                "blanc",
+                "marron"
+            ]
+        },
+        {
+            "subject": "cerise",
+            "object": [
+                "rouge",
+                "jaune",
+                "noir"
+            ]
+        },
+        {
+            "subject": "chocolat",
+            "object": [
+                "blanc",
+                "marron",
+                "noir"
+            ]
+        },
+        {
+            "subject": "nuage",
+            "object": [
+                "blanc",
+                "gris",
+                "grisâtre"
+            ]
+        },
+        {
+            "subject": "charbon",
+            "object": [
+                "noir"
+            ]
+        },
+        {
+            "subject": "café",
+            "object": [
+                "noir",
+                "marron"
+            ]
+        },
+        {
+            "subject": "canneberge",
+            "object": [
+                "rouge",
+                "violet",
+                "rose"
+            ]
+        },
+        {
+            "subject": "crème",
+            "object": [
+                "blanc"
+            ]
+        },
+        {
+            "subject": "corbeau",
+            "object": [
+                "noir"
+            ]
+        },
+        {
+            "subject": "concombre",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "émeraude",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "réfrigérateur",
+            "object": [
+                "blanc",
+                "argenté",
+                "noir"
+            ]
+        },
+        {
+            "subject": "grenouille",
+            "object": [
+                "vert",
+                "marron",
+                "gris",
+                "grisâtre"
+            ]
+        },
+        {
+            "subject": "raisins",
+            "object": [
+                "noir",
+                "rouge",
+                "vert",
+                "violet"
+            ]
+        },
+        {
+            "subject": "herbe",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "feuilles",
+            "object": [
+                "vert",
+                "rouge",
+                "jaune"
+            ]
+        },
+        {
+            "subject": "lait",
+            "object": [
+                "blanc"
+            ]
+        },
+        {
+            "subject": "papier",
+            "object": [
+                "blanc",
+                "coloré"
+            ]
+        },
+        {
+            "subject": "persil",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "pivoine",
+            "object": [
+                "rouge",
+                "blanc",
+                "rose",
+                "violet"
+            ]
+        },
+        {
+            "subject": "poivron",
+            "object": [
+                "noir",
+                "rouge",
+                "vert",
+                "jaune",
+                "orange"
+            ]
+        },
+        {
+            "subject": "pomme de terre",
+            "object": [
+                "marron"
+            ]
+        },
+        {
+            "subject": "radis",
+            "object": [
+                "rouge",
+                "rose",
+                "blanc",
+                "vert",
+                "noir"
+            ]
+        },
+        {
+            "subject": "corbeau",
+            "object": [
+                "noir"
+            ]
+        },
+        {
+            "subject": "rose",
+            "object": [
+                "rouge",
+                "jaune",
+                "rose",
+                "blanc",
+                "bleu"
+            ]
+        },
+        {
+            "subject": "rubis",
+            "object": [
+                "rouge"
+            ]
+        },
+        {
+            "subject": "sel",
+            "object": [
+                "blanc"
+            ]
+        },
+        {
+            "subject": "saphir",
+            "object": [
+                "bleu"
+            ]
+        },
+        {
+            "subject": "mer",
+            "object": [
+                "bleu",
+                "vert",
+                "gris",
+                "grisâtre"
+            ]
+        },
+        {
+            "subject": "ciel",
+            "object": [
+                "bleu",
+                "gris",
+                "grisâtre"
+            ]
+        },
+        {
+            "subject": "neige",
+            "object": [
+                "blanc"
+            ]
+        },
+        {
+            "subject": "sol",
+            "object": [
+                "noir",
+                "marron",
+                "sombre"
+            ]
+        },
+        {
+            "subject": "épinard",
+            "object": [
+                "vert"
+            ]
+        },
+        {
+            "subject": "sucre",
+            "object": [
+                "blanc",
+                "marron"
+            ]
+        },
+        {
+            "subject": "soleil",
+            "object": [
+                "jaune",
+                "or"
+            ]
+        },
+        {
+            "subject": "cygne",
+            "object": [
+                "blanc",
+                "noir",
+                "gris",
+                "grisâtre"
+            ]
+        },
+        {
+            "subject": "thé",
+            "object": [
+                "noir",
+                "vert",
+                "blanc",
+                "rouge",
+                "marron",
+                "jaune"
+            ]
+        },
+        {
+            "subject": "tomate",
+            "object": [
+                "rouge"
+            ]
+        },
+        {
+            "subject": "dentifrice",
+            "object": [
+                "blanc"
+            ]
+        },
+        {
+            "subject": "yaourt",
+            "object": [
+                "blanc",
+                "rose"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

@@ -1,0 +1,383 @@
+{
+    "name": "things - color",
+    "prompt_templates": [
+        "The {} is colored",
+        "The color of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The {} is colored",
+        "The color of {} is"
+    ],
+    "samples": [
+        {
+            "subject": "ant",
+            "object": [
+                "black",
+                "brown",
+                "red"
+            ]
+        },
+        {
+            "subject": "apple",
+            "object": [
+                "red",
+                "orange",
+                "yellow",
+                "golden"
+            ]
+        },
+        {
+            "subject": "blackboard",
+            "object": [
+                "black",
+                "green"
+            ]
+        },
+        {
+            "subject": "blood",
+            "object": [
+                "red"
+            ]
+        },
+        {
+            "subject": "blueberry",
+            "object": [
+                "blue",
+                "black"
+            ]
+        },
+        {
+            "subject": "broccoli",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "bruise",
+            "object": [
+                "blue",
+                "purple"
+            ]
+        },
+        {
+            "subject": "cabbage",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "carrot",
+            "object": [
+                "orange",
+                "red",
+                "yellow"
+            ]
+        },
+        {
+            "subject": "cauliflower",
+            "object": [
+                "white",
+                "green",
+                "yellow",
+                "yellowish"
+            ]
+        },
+        {
+            "subject": "celery",
+            "object": [
+                "green",
+                "white",
+                "brown"
+            ]
+        },
+        {
+            "subject": "cherry",
+            "object": [
+                "red",
+                "yellow",
+                "black"
+            ]
+        },
+        {
+            "subject": "chocolate",
+            "object": [
+                "white",
+                "brown",
+                "black"
+            ]
+        },
+        {
+            "subject": "cloud",
+            "object": [
+                "white",
+                "gray",
+                "grey"
+            ]
+        },
+        {
+            "subject": "coal",
+            "object": [
+                "black"
+            ]
+        },
+        {
+            "subject": "coffee",
+            "object": [
+                "black",
+                "brown"
+            ]
+        },
+        {
+            "subject": "cranberry",
+            "object": [
+                "red",
+                "purple",
+                "pink"
+            ]
+        },
+        {
+            "subject": "cream",
+            "object": [
+                "white"
+            ]
+        },
+        {
+            "subject": "crow",
+            "object": [
+                "black"
+            ]
+        },
+        {
+            "subject": "cucumber",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "emerald",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "fridge",
+            "object": [
+                "white",
+                "silver",
+                "black"
+            ]
+        },
+        {
+            "subject": "frog",
+            "object": [
+                "green",
+                "brown",
+                "grey",
+                "gray"
+            ]
+        },
+        {
+            "subject": "grapes",
+            "object": [
+                "black",
+                "red",
+                "green",
+                "purple"
+            ]
+        },
+        {
+            "subject": "grass",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "leaves",
+            "object": [
+                "green",
+                "red",
+                "yellow"
+            ]
+        },
+        {
+            "subject": "milk",
+            "object": [
+                "white"
+            ]
+        },
+        {
+            "subject": "paper",
+            "object": [
+                "white",
+                "color"
+            ]
+        },
+        {
+            "subject": "parsley",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "peony",
+            "object": [
+                "red",
+                "white",
+                "pink",
+                "purple"
+            ]
+        },
+        {
+            "subject": "pepper",
+            "object": [
+                "black",
+                "red",
+                "green",
+                "yellow",
+                "orange"
+            ]
+        },
+        {
+            "subject": "potato",
+            "object": [
+                "brown"
+            ]
+        },
+        {
+            "subject": "radish",
+            "object": [
+                "red",
+                "pink",
+                "white",
+                "green",
+                "black"
+            ]
+        },
+        {
+            "subject": "raven",
+            "object": [
+                "black"
+            ]
+        },
+        {
+            "subject": "rose",
+            "object": [
+                "red",
+                "yellow",
+                "pink",
+                "white",
+                "blue"
+            ]
+        },
+        {
+            "subject": "ruby",
+            "object": [
+                "red"
+            ]
+        },
+        {
+            "subject": "salt",
+            "object": [
+                "white"
+            ]
+        },
+        {
+            "subject": "sapphire",
+            "object": [
+                "blue"
+            ]
+        },
+        {
+            "subject": "sea",
+            "object": [
+                "blue",
+                "green",
+                "gray",
+                "grey"
+            ]
+        },
+        {
+            "subject": "sky",
+            "object": [
+                "blue",
+                "gray",
+                "grey"
+            ]
+        },
+        {
+            "subject": "snow",
+            "object": [
+                "white"
+            ]
+        },
+        {
+            "subject": "soil",
+            "object": [
+                "black",
+                "brown",
+                "dark"
+            ]
+        },
+        {
+            "subject": "spinach",
+            "object": [
+                "green"
+            ]
+        },
+        {
+            "subject": "sugar",
+            "object": [
+                "white",
+                "brown"
+            ]
+        },
+        {
+            "subject": "sun",
+            "object": [
+                "yellow",
+                "gold"
+            ]
+        },
+        {
+            "subject": "swan",
+            "object": [
+                "white",
+                "black",
+                "gray",
+                "grey"
+            ]
+        },
+        {
+            "subject": "tea",
+            "object": [
+                "black",
+                "green",
+                "white",
+                "red",
+                "brown",
+                "yellow"
+            ]
+        },
+        {
+            "subject": "tomato",
+            "object": [
+                "red"
+            ]
+        },
+        {
+            "subject": "toothpaste",
+            "object": [
+                "white"
+            ]
+        },
+        {
+            "subject": "yoghurt",
+            "object": [
+                "white",
+                "pink"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}

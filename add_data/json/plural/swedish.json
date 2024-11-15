@@ -1,0 +1,313 @@
+{
+    "name": "swedish",
+    "prompt_templates": [
+        "Den plurala formen av {} är"
+    ],
+    "prompt_templates_zs": [
+    "Den plurala formen av {} är"
+    ],
+    "samples": [
+    {
+        "subject": "äpplet",
+        "object": [
+            "äpplen"
+        ]
+    },
+    {
+        "subject": "katten",
+        "object": [
+            "katter"
+        ]
+    },
+    {
+        "subject": "hunden",
+        "object": [
+            "hundar"
+        ]
+    },
+    {
+        "subject": "huset",
+        "object": [
+            "hus"
+        ]
+    },
+    {
+        "subject": "boken",
+        "object": [
+            "böcker"
+        ]
+    },
+    {
+        "subject": "barnet",
+        "object": [
+            "barn"
+        ]
+    },
+    {
+        "subject": "vännen",
+        "object": [
+            "vänner"
+        ]
+    },
+    {
+        "subject": "bilen",
+        "object": [
+            "bilar"
+        ]
+    },
+    {
+        "subject": "blomman",
+        "object": [
+            "blommor"
+        ]
+    },
+    {
+        "subject": "trädet",
+        "object": [
+            "träd"
+        ]
+    },
+    {
+        "subject": "fågeln",
+        "object": [
+            "fåglar"
+        ]
+    },
+    {
+        "subject": "stolen",
+        "object": [
+            "stolar"
+        ]
+    },
+    {
+        "subject": "bordet",
+        "object": [
+            "bord"
+        ]
+    },
+    {
+        "subject": "fisken",
+        "object": [
+            "fiskar"
+        ]
+    },
+    {
+        "subject": "fönstret",
+        "object": [
+            "fönster"
+        ]
+    },
+    {
+        "subject": "dörren",
+        "object": [
+            "dörrar"
+        ]
+    },
+    {
+        "subject": "nyckeln",
+        "object": [
+            "nycklar"
+        ]
+    },
+    {
+        "subject": "vägen",
+        "object": [
+            "vägar"
+        ]
+    },
+    {
+        "subject": "floden",
+        "object": [
+            "floder"
+        ]
+    },
+    {
+        "subject": "staden",
+        "object": [
+            "städer"
+        ]
+    },
+    {
+        "subject": "året",
+        "object": [
+            "år"
+        ]
+    },
+    {
+        "subject": "flickan",
+        "object": [
+            "flickor"
+        ]
+    },
+    {
+        "subject": "pojken",
+        "object": [
+            "pojkar"
+        ]
+    },
+    {
+        "subject": "brevet",
+        "object": [
+            "brev"
+        ]
+    },
+    {
+        "subject": "filmen",
+        "object": [
+            "filmer"
+        ]
+    },
+    {
+        "subject": "sängen",
+        "object": [
+            "sängar"
+        ]
+    },
+    {
+        "subject": "skon",
+        "object": [
+            "skor"
+        ]
+    },
+    {
+        "subject": "pennan",
+        "object": [
+            "pennor"
+        ]
+    },
+    {
+        "subject": "rummet",
+        "object": [
+            "rum"
+        ]
+    },
+    {
+        "subject": "sången",
+        "object": [
+            "sånger"
+        ]
+    },
+    {
+        "subject": "stjärnan",
+        "object": [
+            "stjärnor"
+        ]
+    },
+    {
+        "subject": "datorn",
+        "object": [
+            "datorer"
+        ]
+    },
+    {
+        "subject": "skolan",
+        "object": [
+            "skolor"
+        ]
+    },
+    {
+        "subject": "språket",
+        "object": [
+            "språk"
+        ]
+    },
+    {
+        "subject": "tidningen",
+        "object": [
+            "tidningar"
+        ]
+    },
+    {
+        "subject": "läraren",
+        "object": [
+            "lärare"
+        ]
+    },
+    {
+        "subject": "berget",
+        "object": [
+            "berg"
+        ]
+    },
+    {
+        "subject": "skogen",
+        "object": [
+            "skogar"
+        ]
+    },
+    {
+        "subject": "telefonen",
+        "object": [
+            "telefoner"
+        ]
+    },
+    {
+        "subject": "bilden",
+        "object": [
+            "bilder"
+        ]
+    },
+    {
+        "subject": "mamman",
+        "object": [
+            "mammor"
+        ]
+    },
+    {
+        "subject": "pappan",
+        "object": [
+            "pappor"
+        ]
+    },
+    {
+        "subject": "solen",
+        "object": [
+            "solar"
+        ]
+    },
+    {
+        "subject": "lampan",
+        "object": [
+            "lampor"
+        ]
+    },
+    {
+        "subject": "väninnan",
+        "object": [
+            "väninnor"
+        ]
+    },
+    {
+        "subject": "ön",
+        "object": [
+            "öar"
+        ]
+    },
+    {
+        "subject": "koppen",
+        "object": [
+            "koppar"
+        ]
+    },
+    {
+        "subject": "cykeln",
+        "object": [
+            "cyklar"
+        ]
+    },
+    {
+        "subject": "havet",
+        "object": [
+            "hav"
+        ]
+    },
+    {
+        "subject": "väggen",
+        "object": [
+            "väggar"
+        ]
+    }
+],
+    "_domain": null,
+    "_range": null
+}

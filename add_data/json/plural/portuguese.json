@@ -1,0 +1,311 @@
+{
+    "name": "portuguese",
+    "prompt_templates": [
+        "A forma plural de {} é"
+    ],
+    "prompt_templates_zs": [
+    "A forma plural de {} é"
+    ],
+    "samples": [
+    {
+        "subject": "gato",
+        "object": [
+            "gatos"
+        ]
+    },
+    {
+        "subject": "cachorro",
+        "object": [
+            "cachorros"
+        ]
+    },
+    {
+        "subject": "flor",
+        "object": [
+            "flores"
+        ]
+    },
+    {
+        "subject": "amigo",
+        "object": [
+            "amigos"
+        ]
+    },
+    {
+        "subject": "carro",
+        "object": [
+            "carros"
+        ]
+    },
+    {
+        "subject": "casa",
+        "object": [
+            "casas"
+        ]
+    },
+    {
+        "subject": "livro",
+        "object": [
+            "livros"
+        ]
+    },
+    {
+        "subject": "país",
+        "object": [
+            "países"
+        ]
+    },
+    {
+        "subject": "animal",
+        "object": [
+            "animais"
+        ]
+    },
+    {
+        "subject": "papel",
+        "object": [
+            "papéis"
+        ]
+    },
+    {
+        "subject": "homem",
+        "object": [
+            "homens"
+        ]
+    },
+    {
+        "subject": "mulher",
+        "object": [
+            "mulheres"
+        ]
+    },
+    {
+        "subject": "menino",
+        "object": [
+            "meninos"
+        ]
+    },
+    {
+        "subject": "menina",
+        "object": [
+            "meninas"
+        ]
+    },
+    {
+        "subject": "escola",
+        "object": [
+            "escolas"
+        ]
+    },
+    {
+        "subject": "livraria",
+        "object": [
+            "livrarias"
+        ]
+    },
+    {
+        "subject": "cachoeira",
+        "object": [
+            "cachoeiras"
+        ]
+    },
+    {
+        "subject": "caneta",
+        "object": [
+            "canetas"
+        ]
+    },
+    {
+        "subject": "janela",
+        "object": [
+            "janelas"
+        ]
+    },
+    {
+        "subject": "porta",
+        "object": [
+            "portas"
+        ]
+    },
+    {
+        "subject": "praia",
+        "object": [
+            "praias"
+        ]
+    },
+    {
+        "subject": "floresta",
+        "object": [
+            "florestas"
+        ]
+    },
+    {
+        "subject": "monte",
+        "object": [
+            "montes"
+        ]
+    },
+    {
+        "subject": "lago",
+        "object": [
+            "lagos"
+        ]
+    },
+    {
+        "subject": "rádio",
+        "object": [
+            "rádios"
+        ]
+    },
+    {
+        "subject": "museu",
+        "object": [
+            "museus"
+        ]
+    },
+    {
+        "subject": "telefone",
+        "object": [
+            "telefones"
+        ]
+    },
+    {
+        "subject": "relogio",
+        "object": [
+            "relógios"
+        ]
+    },
+    {
+        "subject": "coração",
+        "object": [
+            "corações"
+        ]
+    },
+    {
+        "subject": "pão",
+        "object": [
+            "pães"
+        ]
+    },
+    {
+        "subject": "leite",
+        "object": [
+            "leites"
+        ]
+    },
+    {
+        "subject": "perro",
+        "object": [
+            "perros"
+        ]
+    },
+    {
+        "subject": "espaço",
+        "object": [
+            "espaços"
+        ]
+    },
+    {
+        "subject": "hospital",
+        "object": [
+            "hospitais"
+        ]
+    },
+    {
+        "subject": "cômodo",
+        "object": [
+            "cômodos"
+        ]
+    },
+    {
+        "subject": "campo",
+        "object": [
+            "campos"
+        ]
+    },
+    {
+        "subject": "jogo",
+        "object": [
+            "jogos"
+        ]
+    },
+    {
+        "subject": "trabalho",
+        "object": [
+            "trabalhos"
+        ]
+    },
+    {
+        "subject": "guerra",
+        "object": [
+            "guerras"
+        ]
+    },
+    {
+        "subject": "cidade",
+        "object": [
+            "cidades"
+        ]
+    },
+    {
+        "subject": "trilha",
+        "object": [
+            "trilhas"
+        ]
+    },
+    {
+        "subject": "rocha",
+        "object": [
+            "rochas"
+        ]
+    },
+    {
+        "subject": "escuridão",
+        "object": [
+            "escuridões"
+        ]
+    },
+    {
+        "subject": "cultura",
+        "object": [
+            "culturas"
+        ]
+    },
+    {
+        "subject": "idéia",
+        "object": [
+            "idéias"
+        ]
+    },
+    {
+        "subject": "amiga",
+        "object": [
+            "amigas"
+        ]
+    },
+    {
+        "subject": "sol",
+        "object": [
+            "sóis"
+        ]
+    },
+    {
+        "subject": "luz",
+        "object": [
+            "luzes"
+        ]
+    },
+    {
+        "subject": "esporte",
+        "object": [
+            "esportes"
+        ]
+    },
+    {
+        "subject": "relatório",
+        "object": [
+            "relatórios"
+        ]
+    }
+]
+}

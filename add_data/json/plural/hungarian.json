@@ -1,0 +1,305 @@
+{
+    "name": "hungarian",
+    "prompt_templates": [
+        "A {} többes száma az"
+    ],
+    "prompt_templates_zs": [
+    "A {} többes száma az"
+    ],
+    "samples": [
+    {
+        "subject": "könyv",
+        "object": [
+            "könyvek"
+        ]
+    },
+    {
+        "subject": "asztal",
+        "object": [
+            "asztalok"
+        ]
+    },
+    {
+        "subject": "autó",
+        "object": [
+            "autók"
+        ]
+    },
+    {
+        "subject": "gyerek",
+        "object": [
+            "gyerekek"
+        ]
+    },
+    {
+        "subject": "nap",
+        "object": [
+            "napok"
+        ]
+    },
+    {
+        "subject": "madár",
+        "object": [
+            "madarak"
+        ]
+    },
+    {
+        "subject": "virág",
+        "object": [
+            "virágok"
+        ]
+    },
+    {
+        "subject": "szék",
+        "object": [
+            "székek"
+        ]
+    },
+    {
+        "subject": "épület",
+        "object": [
+            "épületek"
+        ]
+    },
+    {
+        "subject": "ház",
+        "object": [
+            "házak"
+        ]
+    },
+    {
+        "subject": "város",
+        "object": [
+            "városok"
+        ]
+    },
+    {
+        "subject": "ember",
+        "object": [
+            "emberek"
+        ]
+    },
+    {
+        "subject": "híd",
+        "object": [
+            "hidak"
+        ]
+    },
+    {
+        "subject": "kép",
+        "object": [
+            "képek"
+        ]
+    },
+    {
+        "subject": "szoba",
+        "object": [
+            "szobák"
+        ]
+    },
+    {
+        "subject": "kert",
+        "object": [
+            "kertek"
+        ]
+    },
+    {
+        "subject": "ajtó",
+        "object": [
+            "ajtók"
+        ]
+    },
+    {
+        "subject": "film",
+        "object": [
+            "filmek"
+        ]
+    },
+    {
+        "subject": "telefon",
+        "object": [
+            "telefonok"
+        ]
+    },
+    {
+        "subject": "munka",
+        "object": [
+            "munkák"
+        ]
+    },
+    {
+        "subject": "hal",
+        "object": [
+            "halak"
+        ]
+    },
+    {
+        "subject": "tér",
+        "object": [
+            "terek"
+        ]
+    },
+    {
+        "subject": "iskola",
+        "object": [
+            "iskolák"
+        ]
+    },
+    {
+        "subject": "tanár",
+        "object": [
+            "tanárok"
+        ]
+    },
+    {
+        "subject": "asztalos",
+        "object": [
+            "asztalosok"
+        ]
+    },
+    {
+        "subject": "kocsi",
+        "object": [
+            "kocsik"
+        ]
+    },
+    {
+        "subject": "falu",
+        "object": [
+            "falvak"
+        ]
+    },
+    {
+        "subject": "fény",
+        "object": [
+            "fények"
+        ]
+    },
+    {
+        "subject": "asztalka",
+        "object": [
+            "asztalkák"
+        ]
+    },
+    {
+        "subject": "lány",
+        "object": [
+            "lányok"
+        ]
+    },
+    {
+        "subject": "fiú",
+        "object": [
+            "fiúk"
+        ]
+    },
+    {
+        "subject": "központ",
+        "object": [
+            "központok"
+        ]
+    },
+    {
+        "subject": "szakács",
+        "object": [
+            "szakácsok"
+        ]
+    },
+    {
+        "subject": "papír",
+        "object": [
+            "papírok"
+        ]
+    },
+    {
+        "subject": "számítógép",
+        "object": [
+            "számítógépek"
+        ]
+    },
+    {
+        "subject": "hegy",
+        "object": [
+            "hegyek"
+        ]
+    },
+    {
+        "subject": "kutya",
+        "object": [
+            "kutyák"
+        ]
+    },
+    {
+        "subject": "macska",
+        "object": [
+            "macskák"
+        ]
+    },
+    {
+        "subject": "kertész",
+        "object": [
+            "kertészek"
+        ]
+    },
+    {
+        "subject": "szak",
+        "object": [
+            "szakok"
+        ]
+    },
+    {
+        "subject": "napló",
+        "object": [
+            "naplók"
+        ]
+    },
+    {
+        "subject": "tanulmány",
+        "object": [
+            "tanulmányok"
+        ]
+    },
+    {
+        "subject": "munkahely",
+        "object": [
+            "munkahelyek"
+        ]
+    },
+    {
+        "subject": "folyó",
+        "object": [
+            "folyók"
+        ]
+    },
+    {
+        "subject": "fa",
+        "object": [
+            "fák"
+        ]
+    },
+    {
+        "subject": "szakértő",
+        "object": [
+            "szakértők"
+        ]
+    },
+    {
+        "subject": "óra",
+        "object": [
+            "órák"
+        ]
+    },
+    {
+        "subject": "park",
+        "object": [
+            "parkok"
+        ]
+    },
+    {
+        "subject": "üveg",
+        "object": [
+            "üvegek"
+        ]
+    }
+]
+}

@@ -1,0 +1,376 @@
+{
+    "name": "things - color",
+    "prompt_templates": [
+        "Boja {} je"
+    ],
+    "prompt_templates_zs": [
+        "Boja {} je"
+    ],
+    "samples": [
+        {
+            "subject": "mrav",
+            "object": [
+                "crna",
+                "braon",
+                "crvena"
+            ]
+        },
+        {
+            "subject": "jabuka",
+            "object": [
+                "crvena",
+                "narandžasta",
+                "žuta",
+                "zlatna"
+            ]
+        },
+        {
+            "subject": "tabla",
+            "object": [
+                "crna",
+                "zelena"
+            ]
+        },
+        {
+            "subject": "krv",
+            "object": [
+                "crvena"
+            ]
+        },
+        {
+            "subject": "borovnica",
+            "object": [
+                "plava",
+                "crna"
+            ]
+        },
+        {
+            "subject": "brokoli",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "modrica",
+            "object": [
+                "plava",
+                "ljubičasta"
+            ]
+        },
+        {
+            "subject": "kupus",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "šargarepa",
+            "object": [
+                "narandžasta",
+                "crvena",
+                "žuta"
+            ]
+        },
+        {
+            "subject": "karfiol",
+            "object": [
+                "bela",
+                "zelena",
+                "žuta",
+                "žućkasta"
+            ]
+        },
+        {
+            "subject": "celer",
+            "object": [
+                "zelena",
+                "bela",
+                "braon"
+            ]
+        },
+        {
+            "subject": "trešnja",
+            "object": [
+                "crvena",
+                "žuta",
+                "crna"
+            ]
+        },
+        {
+            "subject": "čokolada",
+            "object": [
+                "bela",
+                "braon",
+                "crna"
+            ]
+        },
+        {
+            "subject": "oblak",
+            "object": [
+                "bela",
+                "siva"
+            ]
+        },
+        {
+            "subject": "ugalj",
+            "object": [
+                "crna"
+            ]
+        },
+        {
+            "subject": "kafa",
+            "object": [
+                "crna",
+                "braon"
+            ]
+        },
+        {
+            "subject": "brusnica",
+            "object": [
+                "crvena",
+                "ljubičasta",
+                "ružičasta"
+            ]
+        },
+        {
+            "subject": "krema",
+            "object": [
+                "bela"
+            ]
+        },
+        {
+            "subject": "vrana",
+            "object": [
+                "crna"
+            ]
+        },
+        {
+            "subject": "krastavac",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "smaragd",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "frižider",
+            "object": [
+                "bela",
+                "srebrna",
+                "crna"
+            ]
+        },
+        {
+            "subject": "žaba",
+            "object": [
+                "zelena",
+                "braon",
+                "siva"
+            ]
+        },
+        {
+            "subject": "grožđe",
+            "object": [
+                "crna",
+                "crvena",
+                "zelena",
+                "ljubičasta"
+            ]
+        },
+        {
+            "subject": "trava",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "lišće",
+            "object": [
+                "zelena",
+                "crvena",
+                "žuta"
+            ]
+        },
+        {
+            "subject": "mleko",
+            "object": [
+                "bela"
+            ]
+        },
+        {
+            "subject": "papir",
+            "object": [
+                "bela",
+                "u boji"
+            ]
+        },
+        {
+            "subject": "peršun",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "božur",
+            "object": [
+                "crvena",
+                "bela",
+                "ružičasta",
+                "ljubičasta"
+            ]
+        },
+        {
+            "subject": "biber",
+            "object": [
+                "crna",
+                "crvena",
+                "zelena",
+                "žuta",
+                "narandžasta"
+            ]
+        },
+        {
+            "subject": "krompir",
+            "object": [
+                "braon"
+            ]
+        },
+        {
+            "subject": "rotkva",
+            "object": [
+                "crvena",
+                "ružičasta",
+                "bela",
+                "zelena",
+                "crna"
+            ]
+        },
+        {
+            "subject": "gavran",
+            "object": [
+                "crna"
+            ]
+        },
+        {
+            "subject": "ruža",
+            "object": [
+                "crvena",
+                "žuta",
+                "ružičasta",
+                "bela",
+                "plava"
+            ]
+        },
+        {
+            "subject": "rubin",
+            "object": [
+                "crvena"
+            ]
+        },
+        {
+            "subject": "so",
+            "object": [
+                "bela"
+            ]
+        },
+        {
+            "subject": "safir",
+            "object": [
+                "plava"
+            ]
+        },
+        {
+            "subject": "more",
+            "object": [
+                "plava",
+                "zelena",
+                "siva"
+            ]
+        },
+        {
+            "subject": "nebo",
+            "object": [
+                "plava",
+                "siva"
+            ]
+        },
+        {
+            "subject": "sneg",
+            "object": [
+                "bela"
+            ]
+        },
+        {
+            "subject": "zemlja",
+            "object": [
+                "crna",
+                "braon",
+                "tamna"
+            ]
+        },
+        {
+            "subject": "spanać",
+            "object": [
+                "zelena"
+            ]
+        },
+        {
+            "subject": "šećer",
+            "object": [
+                "bela",
+                "braon"
+            ]
+        },
+        {
+            "subject": "sunce",
+            "object": [
+                "žuta",
+                "zlatna"
+            ]
+        },
+        {
+            "subject": "labud",
+            "object": [
+                "bela",
+                "crna",
+                "siva"
+            ]
+        },
+        {
+            "subject": "čaj",
+            "object": [
+                "crna",
+                "zelena",
+                "bela",
+                "crvena",
+                "braon",
+                "žuta"
+            ]
+        },
+        {
+            "subject": "paradajz",
+            "object": [
+                "crvena"
+            ]
+        },
+        {
+            "subject": "pasta za zube",
+            "object": [
+                "bela"
+            ]
+        },
+        {
+            "subject": "jogurt",
+            "object": [
+                "bela",
+                "ružičasta"
+            ]
+        }
+    ],
+    "_domain": null,
+    "_range": null
+}
